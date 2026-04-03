@@ -125,12 +125,11 @@ export default function AcceptedByMarquee({
                 width: 'auto',
                 objectFit: 'contain' as const,
                 flexShrink: 0,
-                opacity: isDark ? 0.6 : 0.85,
+                opacity: isDark ? 0.75 : 0.85,
                 transition: 'opacity 0.3s',
-                ...(isDark ? { filter: 'brightness(0) invert(1)' } : {}),
               }}
               onMouseEnter={(e) => { (e.target as HTMLImageElement).style.opacity = '1' }}
-              onMouseLeave={(e) => { (e.target as HTMLImageElement).style.opacity = isDark ? '0.6' : '0.85' }}
+              onMouseLeave={(e) => { (e.target as HTMLImageElement).style.opacity = isDark ? '0.75' : '0.85' }}
             />
           ))}
         </div>
