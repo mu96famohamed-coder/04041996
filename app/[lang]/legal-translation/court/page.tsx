@@ -15,10 +15,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/legal-translation/court/`,
-      'x-default': `https://enotarydubai.ae/en/legal-translation/court/`,
+      canonical: `https://www.enotarydubai.ae/${lang}/legal-translation/court/`,
+      'x-default': `https://www.enotarydubai.ae/en/legal-translation/court/`,
         languages: Object.fromEntries(
-        LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/legal-translation/court/`])
+        LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/legal-translation/court/`])
       ),
     },
   }

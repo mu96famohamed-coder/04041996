@@ -15,10 +15,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/corporate/moa-amendment/`,
-      'x-default': `https://enotarydubai.ae/en/corporate/moa-amendment/`,
+      canonical: `https://www.enotarydubai.ae/${lang}/corporate/moa-amendment/`,
+      'x-default': `https://www.enotarydubai.ae/en/corporate/moa-amendment/`,
         languages: Object.fromEntries(
-        LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/corporate/moa-amendment/`])
+        LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/corporate/moa-amendment/`])
       ),
     },
   }

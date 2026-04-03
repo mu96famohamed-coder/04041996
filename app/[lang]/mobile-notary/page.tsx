@@ -15,10 +15,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/mobile-notary/`,
-      'x-default': `https://enotarydubai.ae/en/mobile-notary/`,
+      canonical: `https://www.enotarydubai.ae/${lang}/mobile-notary/`,
+      'x-default': `https://www.enotarydubai.ae/en/mobile-notary/`,
         languages: Object.fromEntries(
-        LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/mobile-notary/`])
+        LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/mobile-notary/`])
       ),
     },
   }

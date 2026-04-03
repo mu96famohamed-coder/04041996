@@ -24,9 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en       ?? `${t(type.title, lang)} Dubai 2026 | E-Notary Dubai`,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en ?? t(type.desc, lang),
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/attestation/${slug}/`,
-      'x-default': `https://enotarydubai.ae/en/attestation/${slug}/`,
-        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/attestation/${slug}/`])),
+      canonical: `https://www.enotarydubai.ae/${lang}/attestation/${slug}/`,
+      'x-default': `https://www.enotarydubai.ae/en/attestation/${slug}/`,
+        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/attestation/${slug}/`])),
     },
   }
 }

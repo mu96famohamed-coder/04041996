@@ -59,9 +59,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title,
     description,
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/blog/${slug}/`,
-      'x-default': `https://enotarydubai.ae/en/blog/${slug}/`,
-      languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/blog/${slug}/`]))
+      canonical: `https://www.enotarydubai.ae/${lang}/blog/${slug}/`,
+      'x-default': `https://www.enotarydubai.ae/en/blog/${slug}/`,
+      languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/blog/${slug}/`]))
     },
   }
 }

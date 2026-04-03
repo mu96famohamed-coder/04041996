@@ -25,14 +25,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: titles[lang] || titles.en,
     description: descs[lang] || descs.en,
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/about/`,
-      'x-default': `https://enotarydubai.ae/en/about/`,
-        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/about/`])),
+      canonical: `https://www.enotarydubai.ae/${lang}/about/`,
+      'x-default': `https://www.enotarydubai.ae/en/about/`,
+        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/about/`])),
     },
     openGraph: {
       title: titles[lang] || titles.en,
       description: descs[lang] || descs.en,
-      url: `https://enotarydubai.ae/${lang}/about/`,
+      url: `https://www.enotarydubai.ae/${lang}/about/`,
     },
   }
 }

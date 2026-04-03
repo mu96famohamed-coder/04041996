@@ -17,7 +17,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: 'anthropic-ai',  disallow: ['/'] },
       { userAgent: 'Claude-Web',    disallow: ['/'] },
     ],
-    sitemap: 'https://enotarydubai.ae/sitemap.xml',
-    host: 'https://enotarydubai.ae',
+    sitemap: 'https://www.enotarydubai.ae/sitemap.xml',
+    host: 'https://www.enotarydubai.ae',
   }
 }

@@ -86,7 +86,7 @@ export function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'LegalService',
-    '@id': 'https://enotarydubai.ae/#business',
+    '@id': 'https://www.enotarydubai.ae/#business',
     name: 'E-Notary Dubai',
     alternateName: 'E-Notary Dubai',
     description: 'Private notary support service in Dubai — POA drafting, MOFA attestation, eviction notices, legal translation. Same-day service.',

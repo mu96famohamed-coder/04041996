@@ -23,9 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       zh: '关于迪拜授权书、认证、驱逐通知和公证的所有问题解答。',
       es: 'Respuestas sobre POA, autenticación, desalojo y notarización en Dubái.',
     } as Record<string,string>)[lang] || 'FAQ about notary support in Dubai.',
-    alternates: { canonical: `https://enotarydubai.ae/${lang}/faq/`,
-      'x-default': `https://enotarydubai.ae/en/faq/`,
-      languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/faq/`]))
+    alternates: { canonical: `https://www.enotarydubai.ae/${lang}/faq/`,
+      'x-default': `https://www.enotarydubai.ae/en/faq/`,
+      languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/faq/`]))
     },
   }
 }

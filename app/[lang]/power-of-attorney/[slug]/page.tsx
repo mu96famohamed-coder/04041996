@@ -26,9 +26,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en       ?? `${t(type.title, lang)} Dubai | E-Notary Dubai`,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en ?? t(type.desc, lang),
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/power-of-attorney/${slug}/`,
-      'x-default': `https://enotarydubai.ae/en/power-of-attorney/${slug}/`,
-        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/power-of-attorney/${slug}/`])),
+      canonical: `https://www.enotarydubai.ae/${lang}/power-of-attorney/${slug}/`,
+      'x-default': `https://www.enotarydubai.ae/en/power-of-attorney/${slug}/`,
+        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/power-of-attorney/${slug}/`])),
     },
   }
 }

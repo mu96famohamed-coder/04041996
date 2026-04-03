@@ -15,10 +15,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/power-of-attorney/vehicle/export/`,
-      'x-default': `https://enotarydubai.ae/en/power-of-attorney/vehicle/export/`,
+      canonical: `https://www.enotarydubai.ae/${lang}/power-of-attorney/vehicle/export/`,
+      'x-default': `https://www.enotarydubai.ae/en/power-of-attorney/vehicle/export/`,
         languages: Object.fromEntries(
-        LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/power-of-attorney/vehicle/export/`])
+        LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/power-of-attorney/vehicle/export/`])
       ),
     },
   }

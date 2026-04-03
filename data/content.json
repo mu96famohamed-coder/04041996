@@ -11535,51 +11535,51 @@
         {
           "type": "heading",
           "text": {
-            "en": "The Only Two Legally Valid Delivery Methods",
-            "ar": "الطريقتان الوحيدتان الصالحتان قانوناً",
-            "ru": "Только два законных метода вручения",
-            "zh": "两种唯一合法有效的送达方式",
-            "es": "Los Únicos Dos Métodos de Entrega Legalmente Válidos"
+            "en": "How Your Eviction Notice Gets Legally Served",
+            "ar": "كيف يتم تبليغ إنذار الإخلاء بشكل قانوني",
+            "ru": "Как юридически вручается уведомление о выселении",
+            "zh": "您的驱逐通知如何合法送达",
+            "es": "Cómo Se Entrega Legalmente Su Aviso de Desalojo"
           }
         },
         {
           "type": "compare",
           "left": {
             "title": {
-              "en": "✅ Method 1 — UAE Notary Public (Recommended)",
-              "ar": "✅ الطريقة الأولى — كاتب العدل الإماراتي (الموصى بها)",
-              "ru": "✅ Метод 1 — Нотариус ОАЭ (рекомендуется)",
-              "zh": "✅ 方式一——阿联酋公证人（推荐）",
-              "es": "✅ Método 1 — Notario Público de los EAU (Recomendado)"
+              "en": "✅ Method 1 — Tableegh Legal Notification (Recommended)",
+              "ar": "✅ الطريقة الأولى — شركة تبليغ للإعلانات القانونية (الموصى بها)",
+              "ru": "✅ Метод 1 — Tableegh юридическое уведомление (рекомендуется)",
+              "zh": "✅ 方式一——Tableegh法律通知（推荐）",
+              "es": "✅ Método 1 — Notificación Legal Tableegh (Recomendado)"
             },
             "items": [
               {
-                "en": "A licensed Notary Public physically visits the tenant's address",
-                "ar": "كاتب عدل مرخَّص يزور عنوان المستأجر شخصياً",
-                "ru": "Лицензированный нотариус лично посещает адрес арендатора",
-                "zh": "持牌公证人亲自前往租客地址",
-                "es": "Un Notario Público con licencia visita físicamente el domicilio del inquilino"
+                "en": "Tableegh — a nationally accredited UAE legal notification company — delivers the notice on behalf of the Notary Public",
+                "ar": "شركة تبليغ — شركة إعلانات قانونية معتمدة وطنياً — تقوم بتسليم الإنذار بالنيابة عن كاتب العدل",
+                "ru": "Tableegh — национально аккредитованная компания юридических уведомлений ОАЭ — доставляет уведомление от имени нотариуса",
+                "zh": "Tableegh——阿联酋全国认证的法律通知公司——代表公证人送达通知",
+                "es": "Tableegh — empresa de notificación legal acreditada nacionalmente en los EAU — entrega el aviso en nombre del Notario Público"
               },
               {
-                "en": "Creates a certified delivery record accepted by all UAE courts",
-                "ar": "يُنشئ سجل تسليم معتمداً مقبولاً من جميع المحاكم الإماراتية",
-                "ru": "Создаёт сертифицированную запись о вручении, принимаемую всеми судами ОАЭ",
-                "zh": "创建所有阿联酋法院都接受的经认证送达记录",
-                "es": "Crea un registro de entrega certificado aceptado por todos los tribunales de los EAU"
+                "en": "Field visit: a Tableegh representative physically visits the tenant's address to serve the notice",
+                "ar": "الانتقال الميداني: ممثل شركة تبليغ يزور عنوان المستأجر شخصياً لتسليم الإنذار",
+                "ru": "Выезд на место: представитель Tableegh лично посещает адрес арендатора для вручения уведомления",
+                "zh": "实地访问：Tableegh代表亲自前往租客地址送达通知",
+                "es": "Visita en campo: un representante de Tableegh visita físicamente el domicilio del inquilino para entregar el aviso"
               },
               {
-                "en": "Tenant cannot claim \"I never received it\" — even if they refuse to open the door",
-                "ar": "لا يستطيع المستأجر الادعاء بأنه لم يستلم الإشعار — حتى لو رفض فتح الباب",
-                "ru": "Арендатор не может заявить «я не получал» — даже если откажется открыть дверь",
-                "zh": "租客不能声称\"我从未收到\"——即使他们拒绝开门",
-                "es": "El inquilino no puede alegar \"nunca lo recibí\" — incluso si se niega a abrir la puerta"
+                "en": "Certified email: Tableegh can also serve the notice via official email with delivery confirmation",
+                "ar": "البريد الإلكتروني المعتمد: يمكن لشركة تبليغ أيضاً تسليم الإنذار عبر البريد الإلكتروني الرسمي مع تأكيد التسليم",
+                "ru": "Сертифицированная электронная почта: Tableegh также может вручить уведомление по официальной электронной почте с подтверждением доставки",
+                "zh": "认证电子邮件：Tableegh也可以通过官方电子邮件附送达确认来送达通知",
+                "es": "Correo electrónico certificado: Tableegh también puede entregar el aviso por correo electrónico oficial con confirmación de entrega"
               },
               {
-                "en": "Strongest legal protection for the landlord",
-                "ar": "أقوى حماية قانونية للمالك",
-                "ru": "Наивысшая правовая защита для арендодателя",
-                "zh": "为房东提供最强的法律保护",
-                "es": "Mayor protección legal para el propietario"
+                "en": "Creates a certified delivery record accepted by all UAE courts — strongest legal protection for the landlord",
+                "ar": "يُنشئ سجل تسليم معتمداً مقبولاً من جميع المحاكم الإماراتية — أقوى حماية قانونية للمالك",
+                "ru": "Создаёт сертифицированную запись о вручении, принимаемую всеми судами ОАЭ — наивысшая правовая защита для арендодателя",
+                "zh": "创建所有阿联酋法院都接受的经认证送达记录——为房东提供最强的法律保护",
+                "es": "Crea un registro de entrega certificado aceptado por todos los tribunales de los EAU — mayor protección legal para el propietario"
               }
             ]
           },
@@ -11780,11 +11780,11 @@
           "type": "law",
           "ref": "Dubai Law No. 33 of 2008 — Article 25",
           "text": {
-            "en": "Valid eviction notices must be served through: (1) Notary Public or (2) Registered Mail with acknowledgment of receipt. No other delivery method creates legal notice. The notice period begins from the date of confirmed delivery — not from the date the notice was drafted or sent.",
-            "ar": "يجب تسليم إشعارات الإخلاء الصالحة عبر: (1) كاتب العدل أو (2) البريد المسجَّل مع إشعار الاستلام. لا تُنشئ أي طريقة تسليم أخرى إشعاراً قانونياً. تبدأ فترة الإشعار من تاريخ التسليم المؤكَّد — لا من تاريخ صياغة الإشعار أو إرساله.",
-            "ru": "Действительные уведомления о выселении должны быть вручены через: (1) нотариуса или (2) заказным письмом с уведомлением о вручении. Никакой другой метод доставки не создаёт юридического уведомления. Срок уведомления начинается с даты подтверждённого вручения.",
-            "zh": "有效的驱逐通知必须通过以下方式送达：(1) 公证人或 (2) 附回执的挂号信。任何其他送达方式均不产生法律通知效力。通知期从确认送达之日起算——而非通知起草或发送之日。",
-            "es": "Los avisos de desalojo válidos deben servirse mediante: (1) Notario Público o (2) Correo Certificado con acuse de recibo. Ningún otro método de entrega crea aviso legal. El período de aviso comienza desde la fecha de entrega confirmada — no desde la fecha en que se redactó o envió el aviso."
+            "en": "Valid eviction notices must be served through: (1) Notary Public or (2) Registered Mail with acknowledgment of receipt. No other delivery method creates legal notice. The notice period begins from the date of confirmed delivery — not from the date the notice was drafted or sent. E-Notary Dubai arranges legal service through Tableegh — a nationally accredited legal notification company approved by UAE courts — acting as the authorized agent for delivery.",
+            "ar": "يجب تسليم إشعارات الإخلاء الصالحة عبر: (1) كاتب العدل أو (2) البريد المسجَّل مع إشعار الاستلام. لا تُنشئ أي طريقة تسليم أخرى إشعاراً قانونياً. تبدأ فترة الإشعار من تاريخ التسليم المؤكَّد — لا من تاريخ صياغة الإشعار أو إرساله. يتولى E-Notary Dubai ترتيب التبليغ القانوني عبر شركة تبليغ — شركة إعلانات قانونية معتمدة وطنياً من المحاكم الإماراتية — كوكيل معتمد للتسليم.",
+            "ru": "Действительные уведомления о выселении должны быть вручены через: (1) нотариуса или (2) заказным письмом с уведомлением о вручении. Никакой другой метод доставки не создаёт юридического уведомления. Срок уведомления начинается с даты подтверждённого вручения. E-Notary Dubai организует юридическое вручение через Tableegh — национально аккредитованную компанию юридических уведомлений, одобренную судами ОАЭ.",
+            "zh": "有效的驱逐通知必须通过以下方式送达：(1) 公证人或 (2) 附回执的挂号信。任何其他送达方式均不产生法律通知效力。通知期从确认送达之日起算——而非通知起草或发送之日。E-Notary Dubai通过Tableegh——阿联酋法院批准的全国认证法律通知公司——作为授权送达代理安排法律送达。",
+            "es": "Los avisos de desalojo válidos deben servirse mediante: (1) Notario Público o (2) Correo Certificado con acuse de recibo. Ningún otro método de entrega crea aviso legal. El período de aviso comienza desde la fecha de entrega confirmada. E-Notary Dubai gestiona la entrega legal a través de Tableegh — empresa de notificación legal acreditada nacionalmente y aprobada por los tribunales de los EAU."
           }
         },
         {
@@ -12885,99 +12885,96 @@
         {
           "type": "heading",
           "text": {
-            "en": "What Can and Cannot Be E-Notarized",
-            "ar": "ما يمكن وما لا يمكن توثيقه إلكترونياً",
-            "ru": "Что можно и нельзя заверить электронно",
-            "zh": "什么可以和不能进行电子公证",
-            "es": "Qué Puede y No Puede E-Notarizarse"
+            "en": "All Document Types — Fully E-Notarized",
+            "ar": "جميع أنواع المستندات — توثيق إلكتروني كامل",
+            "ru": "Все типы документов — полная электронная нотаризация",
+            "zh": "所有文件类型——完整电子公证",
+            "es": "Todos los Tipos de Documentos — Completamente E-Notarizados"
           }
         },
         {
-          "type": "compare",
-          "left": {
-            "title": {
-              "en": "✅ Can be e-notarized:",
-              "ar": "✅ يمكن توثيقه إلكترونياً:",
-              "ru": "✅ Можно заверить электронно:",
-              "zh": "✅ 可以进行电子公证:",
-              "es": "✅ Puede ser e-notarizado:"
-            },
-            "items": [
-              {
-                "en": "General Power of Attorney (most common)",
-                "ar": "الوكالة العامة (الأكثر شيوعاً)",
-                "ru": "Генеральная доверенность (наиболее распространённая)",
-                "zh": "一般授权委托书（最常见）",
-                "es": "Poder Notarial General (más común)"
-              },
-              {
-                "en": "Special / Limited Powers of Attorney",
-                "ar": "الوكالات الخاصة / المحدودة",
-                "ru": "Специальные / ограниченные доверенности",
-                "zh": "特定/限制性授权委托书",
-                "es": "Poderes Notariales Especiales / Limitados"
-              },
-              {
-                "en": "Affidavits and statutory declarations",
-                "ar": "الإقرارات بالحلف والتصريحات القانونية",
-                "ru": "Аффидевиты и официальные декларации",
-                "zh": "宣誓书和法定声明",
-                "es": "Affidavits y declaraciones estatutarias"
-              },
-              {
-                "en": "Company Powers of Attorney",
-                "ar": "توكيلات الشركات",
-                "ru": "Корпоративные доверенности",
-                "zh": "公司授权委托书",
-                "es": "Poderes Notariales Corporativos"
-              },
-              {
-                "en": "Certified true copies (most document types)",
-                "ar": "النسخ المصدَّقة الحقيقية (معظم أنواع الوثائق)",
-                "ru": "Заверенные копии (большинство видов документов)",
-                "zh": "经认证的真实副本（大多数文件类型）",
-                "es": "Copias fieles certificadas (la mayoría de tipos de documentos)"
-              }
-            ]
+          "type": "checklist",
+          "title": {
+            "en": "✅ Documents that can be e-notarized remotely:",
+            "ar": "✅ المستندات التي يمكن توثيقها إلكترونياً عن بُعد:",
+            "ru": "✅ Документы, которые можно заверить электронно удалённо:",
+            "zh": "✅ 可远程电子公证的文件：",
+            "es": "✅ Documentos que pueden ser e-notarizados remotamente:"
           },
-          "right": {
-            "title": {
-              "en": "❌ Cannot be e-notarized:",
-              "ar": "❌ لا يمكن توثيقه إلكترونياً:",
-              "ru": "❌ Нельзя заверить электронно:",
-              "zh": "❌ 不能进行电子公证:",
-              "es": "❌ No puede ser e-notarizado:"
+          "items": [
+            {
+              "en": "General Power of Attorney (most common)",
+              "ar": "الوكالة العامة (الأكثر شيوعاً)",
+              "ru": "Генеральная доверенность (наиболее распространённая)",
+              "zh": "一般授权委托书（最常见）",
+              "es": "Poder Notarial General (más común)"
             },
-            "items": [
-              {
-                "en": "Real Estate POAs for immediate DLD transactions (DLD requires in-person notarization)",
-                "ar": "التوكيلات العقارية للمعاملات الفورية في دائرة الأراضي (تشترط الدائرة التوثيق الشخصي)",
-                "ru": "Доверенности на недвижимость для немедленных сделок DLD (DLD требует личного заверения)",
-                "zh": "用于即时土地局交易的房地产授权委托书（土地局要求亲自公证）",
-                "es": "POAs inmobiliarios para transacciones inmediatas en DLD (DLD requiere notarización en persona)"
-              },
-              {
-                "en": "Documents requiring physical presence of both parties simultaneously",
-                "ar": "الوثائق التي تشترط الحضور الشخصي المتزامن لكلا الطرفين",
-                "ru": "Документы, требующие одновременного физического присутствия обеих сторон",
-                "zh": "需要双方同时亲自到场的文件",
-                "es": "Documentos que requieren la presencia física simultánea de ambas partes"
-              },
-              {
-                "en": "Last Wills and Testaments (require in-person Notary or DIFC registration)",
-                "ar": "الوصايا الأخيرة (تتطلب توثيقاً شخصياً أو تسجيلاً في DIFC)",
-                "ru": "Завещания (требуют личного нотариуса или регистрации DIFC)",
-                "zh": "最后遗嘱（需要亲自公证或DIFC登记）",
-                "es": "Testamentos (requieren Notario en persona o registro DIFC)"
-              },
-              {
-                "en": "Documents where the receiving authority specifically requires an original paper form",
-                "ar": "الوثائق التي تشترط الجهة المتلقية صراحةً صيغة ورقية أصلية",
-                "ru": "Документы, в которых принимающий орган специально требует оригинальную бумажную форму",
-                "zh": "接收机构明确要求纸质原件的文件",
-                "es": "Documentos donde la autoridad receptora requiere específicamente un formulario original en papel"
-              }
-            ]
+            {
+              "en": "Special / Limited Powers of Attorney",
+              "ar": "الوكالات الخاصة / المحدودة",
+              "ru": "Специальные / ограниченные доверенности",
+              "zh": "特定/限制性授权委托书",
+              "es": "Poderes Notariales Especiales / Limitados"
+            },
+            {
+              "en": "Real Estate Powers of Attorney (including DLD transactions)",
+              "ar": "توكيلات العقارات (بما في ذلك معاملات دائرة الأراضي والأملاك)",
+              "ru": "Доверенности на недвижимость (включая сделки DLD)",
+              "zh": "房地产授权委托书（包括土地局交易）",
+              "es": "Poderes Notariales Inmobiliarios (incluidas transacciones DLD)"
+            },
+            {
+              "en": "Affidavits and statutory declarations",
+              "ar": "الإقرارات بالحلف والتصريحات القانونية",
+              "ru": "Аффидевиты и официальные декларации",
+              "zh": "宣誓书和法定声明",
+              "es": "Affidavits y declaraciones estatutarias"
+            },
+            {
+              "en": "Company Powers of Attorney",
+              "ar": "توكيلات الشركات",
+              "ru": "Корпоративные доверенности",
+              "zh": "公司授权委托书",
+              "es": "Poderes Notariales Corporativos"
+            },
+            {
+              "en": "Last Wills and Testaments",
+              "ar": "الوصايا والعهود الأخيرة",
+              "ru": "Завещания",
+              "zh": "最后遗嘱",
+              "es": "Testamentos y Últimas Voluntades"
+            },
+            {
+              "en": "Certified true copies (all document types)",
+              "ar": "النسخ المصدَّقة الحقيقية (جميع أنواع المستندات)",
+              "ru": "Заверенные копии (все виды документов)",
+              "zh": "经认证的真实副本（所有文件类型）",
+              "es": "Copias fieles certificadas (todos los tipos de documentos)"
+            },
+            {
+              "en": "Any document requiring notarization under UAE law",
+              "ar": "أي مستند يتطلب التوثيق بموجب القانون الإماراتي",
+              "ru": "Любой документ, требующий нотариального заверения по законодательству ОАЭ",
+              "zh": "根据阿联酋法律需要公证的任何文件",
+              "es": "Cualquier documento que requiera notarización bajo la ley de los EAU"
+            }
+          ]
+        },
+        {
+          "type": "info",
+          "title": {
+            "en": "Legal Basis",
+            "ar": "الأساس القانوني",
+            "ru": "Правовая основа",
+            "zh": "法律依据",
+            "es": "Base Legal"
+          },
+          "text": {
+            "en": "Under Federal Decree-Law No. 20 of 2022, remote e-notarization by a licensed UAE Private Notary is legally equivalent to in-person notarization for all document types.",
+            "ar": "بموجب المرسوم بقانون اتحادي رقم 20 لسنة 2022، يُعد التوثيق الإلكتروني عن بُعد من قِبَل كاتب عدل خاص مرخَّص في الإمارات مكافئاً قانونياً للتوثيق الشخصي لجميع أنواع المستندات.",
+            "ru": "Согласно Федеральному декрету-закону №20 от 2022 года, дистанционная электронная нотаризация лицензированным частным нотариусом ОАЭ юридически эквивалентна нотаризации при личном присутствии для всех типов документов.",
+            "zh": "根据2022年第20号联邦法令，由持牌阿联酋私人公证人进行的远程电子公证在法律上等同于所有文件类型的当面公证。",
+            "es": "Según el Decreto-Ley Federal No. 20 de 2022, la e-notarización remota por un Notario Privado con licencia de los EAU es legalmente equivalente a la notarización en persona para todos los tipos de documentos."
           }
         }
       ]

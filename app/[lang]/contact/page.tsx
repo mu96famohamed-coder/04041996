@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       zh: '联系E-Notary Dubai了解授权书、外交部认证和驱逐通知。5分钟内WhatsApp回复。',
       es: 'Contacte E-Notary Dubai para POA, MOFA, desalojo y soporte notarial. Respuesta en 5 min por WhatsApp.',
     } as Record<string,string>)[lang] || 'Contact E-Notary Dubai for notary support.',
-    alternates: { canonical: `https://enotarydubai.ae/${lang}/contact/`,
-      'x-default': `https://enotarydubai.ae/en/contact/`,
-      languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/contact/`]))
+    alternates: { canonical: `https://www.enotarydubai.ae/${lang}/contact/`,
+      'x-default': `https://www.enotarydubai.ae/en/contact/`,
+      languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/contact/`]))
     },
   }
 }

@@ -15,10 +15,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/corporate/shareholder-agreement/`,
-      'x-default': `https://enotarydubai.ae/en/corporate/shareholder-agreement/`,
+      canonical: `https://www.enotarydubai.ae/${lang}/corporate/shareholder-agreement/`,
+      'x-default': `https://www.enotarydubai.ae/en/corporate/shareholder-agreement/`,
         languages: Object.fromEntries(
-        LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/corporate/shareholder-agreement/`])
+        LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/corporate/shareholder-agreement/`])
       ),
     },
   }

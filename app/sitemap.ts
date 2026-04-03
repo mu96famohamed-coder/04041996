@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 import { LANGS } from '@/lib/i18n'
 
-const BASE = 'https://enotarydubai.ae'
+const BASE = 'https://www.enotarydubai.ae'
 
 const STATIC_PATHS = [
   '/',
@@ -108,14 +108,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       else if (['/what-is-tableegh','/why-poa-rejected-dubai','/document-rejection','/last-will-testament-dubai'].includes(path)) priority = 0.8
       else if (['/faq','/pricing','/about','/contact','/blog'].includes(path)) priority = 0.65
 
+      const cleanPath = path === '/' ? '' : path
       entries.push({
-        url: `${BASE}/${lang}${path}/`,
+        url: `${BASE}/${lang}${cleanPath}/`,
         lastModified: new Date(),
         changeFrequency: path === '/' ? 'weekly' : ['faq','about','contact','pricing'].includes(path.slice(1)) ? 'monthly' : 'monthly',
         priority,
         alternates: {
           languages: Object.fromEntries(
-            LANGS.map((l) => [`${l}-AE`, `${BASE}/${l}${path}/`])
+            LANGS.map((l) => [`${l}-AE`, `${BASE}/${l}${cleanPath}/`])
           ),
         },
       })

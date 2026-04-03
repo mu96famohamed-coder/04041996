@@ -89,7 +89,7 @@ export default function ServicePage({
 
   return (
     <>
-      <ServiceSchema name={t(title, lang)} url={`https://enotarydubai.ae/${lang}/`} description={t(description, lang)}/>
+      <ServiceSchema name={t(title, lang)} url={`https://www.enotarydubai.ae/${lang}/`} description={t(description, lang)}/>
       {faqItems && faqItems.length > 0 && <FAQSchema items={faqItems} lang={lang}/>}
 
       {/* ── HERO ── */}

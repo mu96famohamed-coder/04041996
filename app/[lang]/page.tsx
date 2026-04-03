@@ -26,14 +26,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: Lan
     description: descs[lang] || descs.en,
     robots: 'index, follow',
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/`,
+      canonical: `https://www.enotarydubai.ae/${lang}/`,
       languages: {
-        'en-AE': 'https://enotarydubai.ae/en/',
-        'ar-AE': 'https://enotarydubai.ae/ar/',
-        'ru-AE': 'https://enotarydubai.ae/ru/',
-        'zh-AE': 'https://enotarydubai.ae/zh/',
-        'es-AE': 'https://enotarydubai.ae/es/',
-        'x-default': 'https://enotarydubai.ae/en/',
+        'en-AE': 'https://www.enotarydubai.ae/en/',
+        'ar-AE': 'https://www.enotarydubai.ae/ar/',
+        'ru-AE': 'https://www.enotarydubai.ae/ru/',
+        'zh-AE': 'https://www.enotarydubai.ae/zh/',
+        'es-AE': 'https://www.enotarydubai.ae/es/',
+        'x-default': 'https://www.enotarydubai.ae/en/',
       },
     },
   }

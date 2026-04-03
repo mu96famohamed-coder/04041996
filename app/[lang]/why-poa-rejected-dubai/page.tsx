@@ -15,10 +15,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     alternates: {
-      canonical: `https://enotarydubai.ae/${lang}/why-poa-rejected-dubai/`,
-      'x-default': `https://enotarydubai.ae/en/why-poa-rejected-dubai/`,
+      canonical: `https://www.enotarydubai.ae/${lang}/why-poa-rejected-dubai/`,
+      'x-default': `https://www.enotarydubai.ae/en/why-poa-rejected-dubai/`,
         languages: Object.fromEntries(
-        LANGS.map((l) => [`${l}-AE`, `https://enotarydubai.ae/${l}/why-poa-rejected-dubai/`])
+        LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/why-poa-rejected-dubai/`])
       ),
     },
   }
