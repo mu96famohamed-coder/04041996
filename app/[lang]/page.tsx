@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { type Lang, t, services, steps, faq, cta, site, trust_badges, LANGS } from '@/lib/i18n'
 import FAQSection from '@/components/FAQSection'
 import { FAQSchema } from '@/components/SchemaMarkup'
+import AcceptedByMarquee from '@/components/AcceptedByMarquee'
 
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: Lang }> }): Promise<Metadata> {
@@ -144,7 +145,6 @@ export default async function HomePage({ params }: Props) {
                 {[
                   {num:'10,000+', a:{en:'Documents',ar:'وثيقة',ru:'Документов',zh:'文件',es:'Documentos'}, b:{en:'Notarized',ar:'موثقة',ru:'Заверено',zh:'公证完成',es:'Notarizados'}},
                   {num:'100%', a:{en:'First-Time',ar:'من الأولى',ru:'С первого раза',zh:'一次通过',es:'Primera Vez'}, b:{en:'Accepted',ar:'مقبولة',ru:'Принято',zh:'获批',es:'Aceptado'}},
-                  {num:'5', a:{en:'Min Reply',ar:'دقائق رد',ru:'Мин ответ',zh:'分钟回复',es:'Min Resp.'}, b:{en:'WhatsApp',ar:'واتساب',ru:'WhatsApp',es:'WhatsApp'}},
                   {num:'7', a:{en:'Days/Week',ar:'أيام أسبوعياً',ru:'Дней/неделю',zh:'天/周',es:'Días/Semana'}, b:{en:'Support',ar:'دعم',ru:'Поддержка',zh:'支持',es:'Soporte'}},
                 ].map((s,i) => (
                   <div key={i} className="flex items-center gap-2">
@@ -167,19 +167,16 @@ export default async function HomePage({ params }: Props) {
             </div>
           </div>
         </div>
-        {/* Trust bar */}
-        <div className="relative border-t border-navy-800">
-          <div className="mx-auto max-w-7xl px-4 lg:px-8 py-3.5">
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-2">
-              <span className="text-xs text-navy-500 font-medium shrink-0">{t(H.accepted, lang)}:</span>
-              {trust_badges.map((b: any) => (
-                <div key={b.name} className="flex items-center gap-2 px-2 py-1 bg-white/5 rounded-lg">
-                  {b.logo && <img src={b.logo} alt={b.name} className="h-6 w-auto object-contain" />}
-                  <span className="text-xs font-semibold text-navy-300">{b.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* Trust bar — infinite scrolling marquee */}
+        <div className="relative border-t border-navy-800" dir="ltr">
+          <AcceptedByMarquee
+            variant="light"
+            logoHeight={56}
+            gap={14}
+            speed={50}
+            title={t(H.accepted, lang)}
+            showTitle={true}
+          />
         </div>
       </section>
 

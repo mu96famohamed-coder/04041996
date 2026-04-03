@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { type Lang, t, footer, site, cta } from '@/lib/i18n'
+import AcceptedByMarquee from './AcceptedByMarquee'
 
 interface Props { lang: Lang }
 
@@ -176,27 +177,16 @@ export default function Footer({ lang }: Props) {
           </div>
         </div>
 
-        {/* ── Authority logos strip ── */}
-        <div className="mt-10 pt-8 border-t border-navy-800">
-          <p className="text-[10px] text-navy-500 uppercase tracking-widest text-center mb-4">
-            {t({ en: 'Accepted by All UAE Government Entities', ar: 'مقبول لدى جميع الجهات الحكومية الإماراتية', ru: 'Принимается всеми органами ОАЭ', zh: '所有阿联酋政府机构接受', es: 'Aceptado por todas las autoridades de los EAU' }, lang)}
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-6">
-            {[
-              { src: '/assets/logos/dubai_courts.png', name: 'Dubai Courts' },
-              { src: '/assets/logos/dld.png',          name: 'DLD' },
-              { src: '/assets/logos/rta.png',          name: 'RTA' },
-              { src: '/assets/logos/mofa.png',         name: 'MOFA' },
-              { src: '/assets/logos/mohre.png',        name: 'MOHRE' },
-              { src: '/assets/logos/moj.png',          name: 'MOJ' },
-              { src: '/assets/logos/rdc.png',          name: 'RDC' },
-            ].map((logo) => (
-              <div key={logo.name} className="flex items-center gap-1.5 hover:opacity-80 transition-opacity">
-                <img src={logo.src} alt={logo.name} className="h-6 w-auto opacity-50 filter brightness-0 invert" />
-                <span className="text-[10px] text-navy-400 font-semibold hidden sm:inline">{logo.name}</span>
-              </div>
-            ))}
-          </div>
+        {/* ── Authority logos marquee ── */}
+        <div className="mt-10 pt-8 border-t border-navy-800" dir="ltr">
+          <AcceptedByMarquee
+            variant="dark"
+            logoHeight={40}
+            gap={14}
+            speed={40}
+            title={t({ en: 'Accepted by All UAE Government Entities', ar: 'مقبول لدى جميع الجهات الحكومية الإماراتية', ru: 'Принимается всеми органами ОАЭ', zh: '所有阿联酋政府机构接受', es: 'Aceptado por todas las autoridades de los EAU' }, lang)}
+            showTitle={true}
+          />
         </div>
 
         {/* ── Bottom bar ── */}

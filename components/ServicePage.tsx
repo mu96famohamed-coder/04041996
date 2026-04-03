@@ -2,6 +2,7 @@ import Link from 'next/link'
 import FAQSection from './FAQSection'
 import RichContent, { type RichBlock } from './RichContent'
 import { FAQSchema, ServiceSchema } from './SchemaMarkup'
+import AcceptedByMarquee from './AcceptedByMarquee'
 import { type Lang, t, site, getWaUrl } from '@/lib/i18n'
 
 export interface FAQItem {
@@ -167,29 +168,18 @@ export default function ServicePage({
                     {t({en:'Accepted',ar:'مقبولة',ru:'Принято',zh:'接受率',es:'Aceptado'}, lang)}
                   </div>
                 </div>
-                <div className="hero-stat-sep" />
-                <div className="hero-stat-item">
-                  <span className="hero-stat-num">5</span>
-                  <div className="hero-stat-label">
-                    <strong>{t({en:'Min Reply',ar:'دقائق رد',ru:'Мин ответ',zh:'分钟回复',es:'Min Resp.'}, lang)}</strong>
-                    WhatsApp
-                  </div>
-                </div>
               </div>
 
-              {/* Authority logos — always LTR regardless of page language */}
-              <div className="mb-6">
-                <span className="block text-[10px] text-navy-500 uppercase tracking-[.12em] mb-2.5 font-medium">
-                  {t(L.accepted_by, lang)}:
-                </span>
-                <div className="authority-logos-strip">
-                  {['dubai_courts','dld','rta','mofa','mohre','rdc','moj'].map(name => (
-                    <img key={name}
-                      src={`/assets/logos/white/${name}.png`}
-                      alt={name.replace(/_/g,' ').toUpperCase()}
-                    />
-                  ))}
-                </div>
+              {/* Authority logos — infinite scrolling marquee */}
+              <div className="mb-6" dir="ltr">
+                <AcceptedByMarquee
+                  variant="dark"
+                  logoHeight={44}
+                  gap={14}
+                  speed={50}
+                  title={t(L.accepted_by, lang)}
+                  showTitle={true}
+                />
               </div>
 
               {/* CTA buttons */}
