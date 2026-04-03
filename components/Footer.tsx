@@ -180,8 +180,8 @@ export default function Footer({ lang }: Props) {
         {/* ── Authority logos marquee ── */}
         <div className="mt-10 pt-8 border-t border-navy-800" dir="ltr">
           <AcceptedByMarquee
-            variant="dark"
-            logoHeight={40}
+            variant="light"
+            logoHeight={48}
             gap={14}
             speed={40}
             title={t({ en: 'Accepted by All UAE Government Entities', ar: 'مقبول لدى جميع الجهات الحكومية الإماراتية', ru: 'Принимается всеми органами ОАЭ', zh: '所有阿联酋政府机构接受', es: 'Aceptado por todas las autoridades de los EAU' }, lang)}

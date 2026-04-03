@@ -173,8 +173,8 @@ export default function ServicePage({
               {/* Authority logos — infinite scrolling marquee */}
               <div className="mb-6" dir="ltr">
                 <AcceptedByMarquee
-                  variant="dark"
-                  logoHeight={44}
+                  variant="light"
+                  logoHeight={56}
                   gap={14}
                   speed={50}
                   title={t(L.accepted_by, lang)}
