@@ -65,7 +65,7 @@ export function ServiceSchema({
       '@type': 'Organization',
       name: 'E-Notary Dubai',
       url: 'https://enotarydubai.ae',
-      telephone: '+971526883066',
+      telephone: '+971528997280',
       address: {
         '@type': 'PostalAddress',
         addressLocality: 'Dubai',
@@ -91,7 +91,7 @@ export function LocalBusinessSchema() {
     alternateName: 'E-Notary Dubai',
     description: 'Private notary support service in Dubai — POA drafting, MOFA attestation, eviction notices, legal translation. Same-day service.',
     url: 'https://enotarydubai.ae',
-    telephone: '+971526883066',
+    telephone: '+971528997280',
     email: 'info@enotarydubai.ae',
     address: {
       '@type': 'PostalAddress',
@@ -111,7 +111,7 @@ export function LocalBusinessSchema() {
     ],
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: '+971526883066',
+      telephone: '+971528997280',
       contactType: 'customer service',
       availableLanguage: ['English', 'Arabic', 'Russian', 'Chinese', 'Spanish'],
     },
@@ -132,7 +132,7 @@ export function LocalBusinessSchema() {
       ],
     },
     sameAs: [
-      'https://wa.me/971526883066',
+      'https://wa.me/971528997280',
     ],
   }
   return (
