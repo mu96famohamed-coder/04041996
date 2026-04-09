@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LANGS, type Lang, t, site } from '@/lib/i18n'
+import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
 
 interface Props { params: Promise<{ lang: Lang }> }
 export async function generateStaticParams() { return LANGS.map((lang) => ({ lang })) }
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: descs[lang] || descs.en,
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/pricing/`,
-      languages: Object.fromEntries(LANGS.map(l => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/pricing/`])),
+      languages: Object.fromEntries(LANGS.map(l => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/pricing/`])),
         'x-default': `https://www.enotarydubai.ae/en/pricing/`,
     },
   }
@@ -55,11 +55,9 @@ const SERVICES = {
     { slug: 'power-of-attorney/vehicle', en:'Vehicle POA', ar:'وكالة مركبة', ru:'Доверенность на авто', zh:'车辆授权书', es:'POA de Vehículo' },
     { slug: 'power-of-attorney/special', en:'Special POA', ar:'وكالة خاصة', ru:'Специальная доверенность', zh:'特别授权书', es:'POA Especial' },
     { slug: 'power-of-attorney/court', en:'Court / Litigation POA', ar:'وكالة قضائية', ru:'Судебная доверенность', zh:'法院授权书', es:'POA Judicial' },
-    { slug: 'power-of-attorney/marriage', en:'Marriage POA', ar:'توكيل زواج', ru:'Брачная доверенность', zh:'婚姻授权书', es:'POA Matrimonial' },
-    { slug: 'power-of-attorney/divorce', en:'Divorce POA', ar:'توكيل طلاق', ru:'Доверенность на развод', zh:'离婚授权书', es:'POA de Divorcio' },
     { slug: 'power-of-attorney/child-travel', en:'Child Travel Authorisation', ar:'إذن سفر طفل', ru:'Разрешение на выезд ребёнка', zh:'儿童旅行授权', es:'Autorización Viaje Menor' },
-    { slug: 'power-of-attorney/inheritance', en:'Inheritance POA', ar:'توكيل الميراث', ru:'Доверенность на наследство', zh:'继承授权书', es:'POA de Herencia' },
-    { slug: 'power-of-attorney/company-formation', en:'Company Formation POA', ar:'توكيل تأسيس شركة', ru:'Доверенность на регистрацию', zh:'公司注册授权书', es:'POA Formación Empresa' },
+    { slug: 'power-of-attorney/inheritance', en:'Inheritance POA', ar:'وكالة الميراث', ru:'Доверенность на наследство', zh:'继承授权书', es:'POA de Herencia' },
+    { slug: 'power-of-attorney/company-formation', en:'Company Formation POA', ar:'وكالة تأسيس شركة', ru:'Доверенность на регистрацию', zh:'公司注册授权书', es:'POA Formación Empresa' },
     { slug: 'power-of-attorney/property-gifting', en:'Property Gifting POA', ar:'وكالة هبة عقارية', ru:'Доверенность на дарение', zh:'房产赠与授权书', es:'POA Donación Propiedad' },
     { slug: 'power-of-attorney/mohre', en:'MOHRE / Labour POA', ar:'وكالة وزارة الموارد البشرية', ru:'Доверенность MOHRE', zh:'MOHRE劳工授权书', es:'POA MOHRE / Laboral' },
   ],

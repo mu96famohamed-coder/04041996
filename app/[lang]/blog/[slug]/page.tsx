@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LANGS, type Lang, t, site , getPageMeta } from '@/lib/i18n'
+import { LANGS, type Lang, t, site , getPageMeta, HREFLANG_MAP } from '@/lib/i18n'
 import content from '@/data/content.json'
 import FAQSection from '@/components/FAQSection'
 
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/blog/${slug}/`,
       'x-default': `https://www.enotarydubai.ae/en/blog/${slug}/`,
-      languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/blog/${slug}/`]))
+      languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/blog/${slug}/`]))
     },
   }
 }
@@ -149,64 +149,80 @@ export default async function BlogArticlePage({ params }: Props) {
           </p>
         ) : (
           <div className="space-y-8">
-            {sections.map((sec, i) => {
-              const secTitle = getText(sec)
-              if (!secTitle) return null
+            {sections.length > 0 ? (() => {
+              /* ── Smart content distribution ──────────────────────────────
+               * 1. Paragraphs: 1:1 with sections (para[i] → section[i])
+               * 2. List items: evenly distributed across sections
+               * 3. All h2 sections always render (even without paragraphs)
+               */
+              const sCount = sections.length
+              const listsPerSec = listItems.length > 0 ? Math.floor(listItems.length / sCount) : 0
+              const listsRemainder = listItems.length > 0 ? listItems.length % sCount : 0
+              let listOffset = 0
 
-              // Get paragraphs for this section (2-3 per section)
-              const sectionParas = paragraphs.slice(i * 2, i * 2 + 3)
-              // Get list items for this section
-              const sectionLis = listItems.slice(i * 3, i * 3 + 5)
+              return sections.map((sec, i) => {
+                const secTitle = getText(sec)
+                if (!secTitle) return null
 
-              return (
-                <div key={i}>
-                  <h2 className="font-serif text-xl font-bold text-navy-900 mb-4 pb-2 border-b border-navy-100">
-                    {secTitle}
-                  </h2>
-                  {sectionParas.map((p, j) => {
-                    const txt = getText(p)
-                    return txt ? (
-                      <p key={j} className="text-navy-600 leading-relaxed mb-3 text-sm">{txt}</p>
-                    ) : null
-                  })}
-                  {sectionLis.length > 0 && (
-                    <ul className="mt-3 space-y-1.5">
-                      {sectionLis.map((li, j) => {
-                        const txt = getText(li)
-                        return txt ? (
-                          <li key={j} className="flex items-start gap-2 text-sm text-navy-600">
-                            <span className="text-gold-500 font-bold mt-0.5 shrink-0">→</span>
-                            {txt}
-                          </li>
-                        ) : null
-                      })}
-                    </ul>
-                  )}
-                </div>
-              )
-            })}
+                // 1:1 paragraph mapping
+                const secPara = i < paragraphs.length ? paragraphs[i] : null
 
-            {/* Standalone paragraphs (when no sections) */}
-            {sections.length === 0 && paragraphs.map((p, i) => {
-              const txt = getText(p)
-              return txt ? (
-                <p key={i} className="text-navy-600 leading-relaxed mb-4 text-sm">{txt}</p>
-              ) : null
-            })}
+                // Evenly distributed list items (extra items go to earlier sections)
+                const listsForThis = listsPerSec + (i < listsRemainder ? 1 : 0)
+                const secLis = listItems.slice(listOffset, listOffset + listsForThis)
+                listOffset += listsForThis
 
-            {/* Standalone list items */}
-            {sections.length === 0 && listItems.length > 0 && (
-              <ul className="space-y-2">
-                {listItems.map((li, i) => {
-                  const txt = getText(li)
+                const paraText = secPara ? getText(secPara) : ''
+
+                return (
+                  <div key={i}>
+                    <h2 className="font-serif text-xl font-bold text-navy-900 mb-4 pb-2 border-b border-navy-100">
+                      {secTitle}
+                    </h2>
+                    {paraText && (
+                      <p className="text-navy-600 leading-relaxed mb-3 text-sm">{paraText}</p>
+                    )}
+                    {secLis.length > 0 && (
+                      <ul className="mt-3 space-y-1.5">
+                        {secLis.map((li, j) => {
+                          const txt = getText(li)
+                          return txt ? (
+                            <li key={j} className="flex items-start gap-2 text-sm text-navy-600">
+                              <span className="text-gold-500 font-bold mt-0.5 shrink-0">→</span>
+                              {txt}
+                            </li>
+                          ) : null
+                        })}
+                      </ul>
+                    )}
+                  </div>
+                )
+              })
+            })() : (
+              <>
+                {/* Standalone paragraphs (when no sections) */}
+                {paragraphs.map((p, i) => {
+                  const txt = getText(p)
                   return txt ? (
-                    <li key={i} className="flex items-start gap-2 text-sm text-navy-600">
-                      <span className="text-gold-500 font-bold mt-0.5 shrink-0">→</span>
-                      {txt}
-                    </li>
+                    <p key={i} className="text-navy-600 leading-relaxed mb-4 text-sm">{txt}</p>
                   ) : null
                 })}
-              </ul>
+
+                {/* Standalone list items */}
+                {listItems.length > 0 && (
+                  <ul className="space-y-2">
+                    {listItems.map((li, i) => {
+                      const txt = getText(li)
+                      return txt ? (
+                        <li key={i} className="flex items-start gap-2 text-sm text-navy-600">
+                          <span className="text-gold-500 font-bold mt-0.5 shrink-0">→</span>
+                          {txt}
+                        </li>
+                      ) : null
+                    })}
+                  </ul>
+                )}
+              </>
             )}
           </div>
         )}

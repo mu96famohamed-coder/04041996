@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LANGS, type Lang, t, site } from '@/lib/i18n'
+import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
 
 interface Props { params: Promise<{ lang: Lang }> }
 export async function generateStaticParams() { return LANGS.map((l) => ({ lang: l })) }
@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/about/`,
       'x-default': `https://www.enotarydubai.ae/en/about/`,
-        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/about/`])),
+        languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/about/`])),
     },
     openGraph: {
       title: titles[lang] || titles.en,
@@ -59,7 +59,7 @@ const WHY_POINTS = [
 ]
 
 const SERVICES = [
-  { en: 'All types of Power of Attorney (General, Real Estate, Vehicle, Bank, Court, Corporate)', ar: 'جميع أنواع التوكيلات (عامة، عقارية، مركبة، مصرفية، قضائية، شركاتية)', ru: 'Все виды доверенностей (общие, недвижимость, транспорт, банк, суд, корпоративные)', zh: '所有类型授权委托书（一般、房产、车辆、银行、法院、企业）', es: 'Todos los tipos de Poderes Notariales', href: 'power-of-attorney' },
+  { en: 'All types of Power of Attorney (General, Real Estate, Vehicle, Bank, Court, Corporate)', ar: 'جميع أنواع الوكالات (العامة، العقارية، المركبات، المصرفية، القضائية، الشركاتية)', ru: 'Все виды доверенностей (общие, недвижимость, транспорт, банк, суд, корпоративные)', zh: '所有类型授权委托书（一般、房产、车辆、银行、法院、企业）', es: 'Todos los tipos de Poderes Notariales', href: 'power-of-attorney' },
   { en: 'Affidavits and Sworn Statements', ar: 'الإقرارات والتصريحات', ru: 'Аффидевиты и присяжные заявления', zh: '宣誓书及宣誓声明', es: 'Declaraciones Juradas', href: 'affidavit' },
   { en: 'Signature Authentication', ar: 'تصديق التوقيع', ru: 'Удостоверение подписи', zh: '签名认证', es: 'Autenticación de Firma', href: 'signature-notarization' },
   { en: 'Certified True Copies', ar: 'النسخ المصدقة', ru: 'Заверенные копии', zh: '公证副本', es: 'Copias Certificadas', href: 'certified-true-copy' },

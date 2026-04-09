@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
-import { LANGS } from '@/lib/i18n'
+import { LANGS, HREFLANG_MAP } from '@/lib/i18n'
 
 const BASE = 'https://www.enotarydubai.ae'
 
@@ -18,8 +18,6 @@ const STATIC_PATHS = [
   '/power-of-attorney/bank',
   '/power-of-attorney/special',
   '/power-of-attorney/court',
-  '/power-of-attorney/marriage',
-  '/power-of-attorney/divorce',
   '/power-of-attorney/child-travel',
   '/power-of-attorney/inheritance',
   '/power-of-attorney/company-formation',
@@ -116,7 +114,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority,
         alternates: {
           languages: Object.fromEntries(
-            LANGS.map((l) => [`${l}-AE`, `${BASE}/${l}${cleanPath}/`])
+            LANGS.map((l) => [HREFLANG_MAP[l], `${BASE}/${l}${cleanPath}/`])
           ),
         },
       })

@@ -19,7 +19,7 @@ function buildNav(lang: Lang) {
     // ── 1. POWER OF ATTORNEY — Mega Menu (3 columns) ──────────────────────────
     {
       key: 'poa',
-      label: { en: 'Power of Attorney', ar: 'التوكيلات الرسمية', ru: 'Доверенности', zh: '授权委托书', es: 'Poderes Notariales' },
+      label: { en: 'Power of Attorney', ar: 'الوكالات الرسمية', ru: 'Доверенности', zh: '授权委托书', es: 'Poderes Notariales' },
       mega: true,
       cols: [
         {
@@ -28,9 +28,7 @@ function buildNav(lang: Lang) {
             { href: `/${l}/power-of-attorney/general`,           label: { en: 'General POA',         ar: 'وكالة عامة',      ru: 'Генеральная',     zh: '一般授权书',   es: 'POA General' } },
             { href: `/${l}/power-of-attorney/special`,           label: { en: 'Special POA',         ar: 'وكالة خاصة',      ru: 'Специальная',     zh: '特别授权书',   es: 'POA Especial' } },
             { href: `/${l}/power-of-attorney/child-travel`,      label: { en: 'Child Travel Auth.',  ar: 'إذن سفر طفل',     ru: 'Выезд ребёнка',   zh: '儿童旅行授权', es: 'Viaje Menor' } },
-            { href: `/${l}/power-of-attorney/inheritance`,       label: { en: 'Inheritance POA',     ar: 'توكيل ميراث',     ru: 'На наследство',   zh: '继承授权书',   es: 'Herencia' } },
-            { href: `/${l}/power-of-attorney/marriage`,          label: { en: 'Marriage POA',        ar: 'توكيل زواج',      ru: 'Свадебная',       zh: '婚姻授权书',   es: 'Matrimonio' } },
-            { href: `/${l}/power-of-attorney/divorce`,           label: { en: 'Divorce POA',         ar: 'توكيل طلاق',      ru: 'Развод',          zh: '离婚授权书',   es: 'Divorcio' } },
+            { href: `/${l}/power-of-attorney/inheritance`,       label: { en: 'Inheritance POA',     ar: 'وكالة ميراث',     ru: 'На наследство',   zh: '继承授权书',   es: 'Herencia' } },
             { href: `/${l}/power-of-attorney/court`,             label: { en: 'Court Case POA',      ar: 'وكالة قضائية',    ru: 'Судебная',        zh: '法院授权书',   es: 'Judicial' } },
           ],
         },
@@ -57,7 +55,7 @@ function buildNav(lang: Lang) {
           ],
         },
       ],
-      cta: { href: `/${l}/power-of-attorney`, label: { en: 'All 13 POA Types →', ar: '← جميع أنواع التوكيلات (13)', ru: 'Все 13 типов →', zh: '全部13种 →', es: 'Los 13 Tipos →' } },
+      cta: { href: `/${l}/power-of-attorney`, label: { en: 'All 13 POA Types →', ar: '← جميع أنواع الوكالات (13)', ru: 'Все 13 типов →', zh: '全部13种 →', es: 'Los 13 Tipos →' } },
     },
 
     // ── 2. CORPORATE ─────────────────────────────────────────────────────────
@@ -103,8 +101,8 @@ function buildNav(lang: Lang) {
         { href: `/${l}/eviction-notice`,               label: { en: 'Eviction Notice',         ar: 'إشعار الإخلاء',       ru: 'Уведомление о выселении',  zh: '驱逐通知',      es: 'Desalojo' } },
         { href: `/${l}/rdc-support`,                   label: { en: 'RDC Support',             ar: 'دعم مركز النزاعات',    ru: 'Поддержка RDC',            zh: 'RDC支持',        es: 'RDC' } },
         { href: `/${l}/legal-notice`,                  label: { en: 'Legal Notice',            ar: 'إنذار قانوني',         ru: 'Юридическое уведомление',  zh: '法律通知',      es: 'Aviso Legal' } },
-        { href: `/${l}/legal-notice/poa-cancellation`, label: { en: '↳ POA Cancellation Notice', ar: '↳ إنذار إلغاء توكيل', ru: '↳ Отмена доверенности',   zh: '↳ 撤销授权通知', es: '↳ Aviso Cancelación' } },
-        { href: `/${l}/poa-cancellation`,              label: { en: 'POA Cancellation',        ar: 'إلغاء التوكيل',        ru: 'Отмена доверенности',      zh: '撤销授权委托书', es: 'Cancelación POA' } },
+        { href: `/${l}/legal-notice/poa-cancellation`, label: { en: '↳ POA Cancellation Notice', ar: '↳ إنذار إلغاء وكالة', ru: '↳ Отмена доверенности',   zh: '↳ 撤销授权通知', es: '↳ Aviso Cancelación' } },
+        { href: `/${l}/poa-cancellation`,              label: { en: 'POA Cancellation',        ar: 'إلغاء الوكالة',        ru: 'Отмена доверенности',      zh: '撤销授权委托书', es: 'Cancelación POA' } },
         { href: `/${l}/last-will-testament-dubai`,     label: { en: 'Last Will & Testament',   ar: 'الوصية الأخيرة',       ru: 'Завещание',                zh: '遗嘱',          es: 'Testamento' } },
         { href: `/${l}/what-is-tableegh`,              label: { en: 'What is Tableegh?',       ar: 'ما هو التبليغ؟',        ru: 'Что такое Tableegh?',      zh: '什么是Tableegh?', es: '¿Qué es Tableegh?' } },
       ],
@@ -119,7 +117,7 @@ function buildNav(lang: Lang) {
         { href: `/${l}/faq`,                     label: { en: 'FAQ',                 ar: 'الأسئلة الشائعة',      ru: 'FAQ',                    zh: '常见问题',    es: 'FAQ' } },
         { href: `/${l}/pricing`,                 label: { en: 'All Services',        ar: 'جميع الخدمات',         ru: 'Все услуги',             zh: '全部服务',    es: 'Servicios' } },
         { href: `/${l}/document-rejection`,      label: { en: 'Document Rejected?',  ar: 'وثيقة مرفوضة؟',        ru: 'Документ отклонён?',     zh: '文件被拒？',  es: '¿Doc. Rechazado?' } },
-        { href: `/${l}/why-poa-rejected-dubai`,  label: { en: 'Why POA Rejected?',   ar: 'لماذا رُفض التوكيل؟',   ru: 'Почему отказали в POA?', zh: '为何授权被拒？', es: '¿Por Qué Rechazan POA?' } },
+        { href: `/${l}/why-poa-rejected-dubai`,  label: { en: 'Why POA Rejected?',   ar: 'لماذا رُفضت الوكالة؟',   ru: 'Почему отказали в POA?', zh: '为何授权被拒？', es: '¿Por Qué Rechazan POA?' } },
         { href: `/${l}/about`,                   label: { en: 'About Us',            ar: 'عن الشركة',             ru: 'О нас',                  zh: '关于我们',    es: 'Nosotros' } },
         { href: `/${l}/contact`,                 label: { en: 'Contact',             ar: 'تواصل معنا',            ru: 'Контакты',               zh: '联系我们',    es: 'Contacto' } },
       ],
@@ -207,7 +205,12 @@ export default function Navbar({ lang }: Props) {
                       <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
                       <div
                         className="absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 z-50 p-5"
-                        style={{ width: 720, insetInlineStart: isRTL ? 'auto' : '-8px', insetInlineEnd: isRTL ? '-8px' : 'auto' }}
+                        style={{
+                          width: 'min(720px, calc(100vw - 2rem))',
+                          left: '50%',
+                          transform: 'translateX(-50%)',
+                          maxWidth: 'calc(100vw - 2rem)',
+                        }}
                         onMouseEnter={() => openDropdown(item.key)}
                         onMouseLeave={scheduleClose}
                       >
@@ -261,7 +264,12 @@ export default function Navbar({ lang }: Props) {
                       <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
                       <div
                         className="absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 p-2 z-50"
-                        style={{ minWidth: 260, insetInlineStart: isRTL ? 'auto' : '-4px', insetInlineEnd: isRTL ? '-4px' : 'auto' }}
+                        style={{
+                          minWidth: 260,
+                          maxWidth: 'calc(100vw - 2rem)',
+                          insetInlineStart: isRTL ? 'auto' : '-4px',
+                          insetInlineEnd: isRTL ? '-4px' : 'auto',
+                        }}
                         onMouseEnter={() => openDropdown(item.key)}
                         onMouseLeave={scheduleClose}
                       >
@@ -313,7 +321,7 @@ export default function Navbar({ lang }: Props) {
               href={`tel:${site.phone}`}
               className="hidden md:flex items-center gap-1.5 text-sm font-semibold text-navy-300 hover:text-white px-3 py-1.5 rounded-lg border border-navy-700 hover:border-navy-500 transition-colors whitespace-nowrap"
             >
-              {site.phone_display}
+              <span dir="ltr" className="inline-block">{site.phone_display}</span>
             </a>
 
             {/* WhatsApp CTA */}
@@ -427,7 +435,7 @@ export default function Navbar({ lang }: Props) {
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/>
                 </svg>
-                {site.phone_display}
+                <span dir="ltr" className="inline-block">{site.phone_display}</span>
               </a>
               <a
                 href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}

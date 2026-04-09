@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LANGS, type Lang, t , getPageMeta } from '@/lib/i18n'
+import { LANGS, type Lang, t , getPageMeta, HREFLANG_MAP } from '@/lib/i18n'
 import content from '@/data/content.json'
 
 interface Props { params: Promise<{ lang: Lang }> }
@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/blog/`,
       'x-default': `https://www.enotarydubai.ae/en/blog/`,
-        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/blog/`])),
+        languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/blog/`])),
     },
   }
 }

@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { LANGS, type Lang, t, services, getPageContent, getPageBlocks, getPageFaq, getServiceFaq } from '@/lib/i18n'
+import { LANGS, type Lang, t, services, getPageContent, getPageBlocks, getPageFaq, getServiceFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 
 interface Props { params: Promise<{ lang: Lang; slug: string }> }
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/attestation/${slug}/`,
       'x-default': `https://www.enotarydubai.ae/en/attestation/${slug}/`,
-        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/attestation/${slug}/`])),
+        languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/attestation/${slug}/`])),
     },
   }
 }

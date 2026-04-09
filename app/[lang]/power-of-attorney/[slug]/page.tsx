@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { LANGS, type Lang, t, services, getPageContent, getPageBlocks, getPageFaq, getServiceFaq, getRequiredDocs } from '@/lib/i18n'
+import { LANGS, type Lang, t, services, getPageContent, getPageBlocks, getPageFaq, getServiceFaq, getRequiredDocs, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 
 interface Props {
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/power-of-attorney/${slug}/`,
       'x-default': `https://www.enotarydubai.ae/en/power-of-attorney/${slug}/`,
-        languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/power-of-attorney/${slug}/`])),
+        languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/power-of-attorney/${slug}/`])),
     },
   }
 }
@@ -42,8 +42,6 @@ const FAQ_KEY: Record<string, string> = {
   'child-travel':     'poa_child_travel',
   court:              'poa_court',
   inheritance:        'poa_inheritance',
-  marriage:           'poa_marriage',
-  divorce:            'poa_divorce',
   mohre:              'poa_mohre',
   'company-formation':'poa_company_formation',
   'property-gifting': 'poa_property_gifting',

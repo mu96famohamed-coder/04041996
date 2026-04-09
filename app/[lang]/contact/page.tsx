@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { LANGS, type Lang, t, site } from '@/lib/i18n'
+import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
 
 interface Props { params: Promise<{ lang: Lang }> }
 export async function generateStaticParams() { return LANGS.map((l) => ({ lang: l })) }
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     } as Record<string,string>)[lang] || 'Contact E-Notary Dubai for notary support.',
     alternates: { canonical: `https://www.enotarydubai.ae/${lang}/contact/`,
       'x-default': `https://www.enotarydubai.ae/en/contact/`,
-      languages: Object.fromEntries(LANGS.map((l) => [`${l}-AE`, `https://www.enotarydubai.ae/${l}/contact/`]))
+      languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/contact/`]))
     },
   }
 }

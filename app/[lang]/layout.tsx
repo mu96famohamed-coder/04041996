@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Script from 'next/script'
 import '../globals.css'
 import { notFound } from 'next/navigation'
 import { isValidLang, getDir, getFontClass, LANGS, type Lang, site } from '@/lib/i18n'
@@ -42,7 +43,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'en-AE': 'https://www.enotarydubai.ae/en/',
         'ar-AE': 'https://www.enotarydubai.ae/ar/',
         'ru-AE': 'https://www.enotarydubai.ae/ru/',
-        'zh-AE': 'https://www.enotarydubai.ae/zh/',
+        'zh-Hans-AE': 'https://www.enotarydubai.ae/zh/',
         'es-AE': 'https://www.enotarydubai.ae/es/',
         'x-default': 'https://www.enotarydubai.ae/en/',
       },
@@ -77,12 +78,19 @@ export default async function LangLayout({ children, params }: Props) {
         <meta name="geo.position" content="25.2048;55.2708" />
         <meta name="ICBM" content="25.2048, 55.2708" />
         <LocalBusinessSchema />
-        <script async src={`https://www.googletagmanager.com/gtag/js?id=${site.ga}`} />
-        <script dangerouslySetInnerHTML={{
-          __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${site.ga}');`
-        }} />
       </head>
       <body className={`${fontClass} antialiased bg-white text-navy-900`}>
+        {/* Google Analytics — loaded via next/script for proper scheduling,
+            hydration safety, and compatibility with static generation. */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${site.ga}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${site.ga}');`}
+        </Script>
+        {/* Invisible HTML watermark (defense-in-depth content tracking) */}
+        <div aria-hidden="true" style={{ display: 'none' }} data-owner="enotarydubai.ae" data-ref="ENDX-2026" />
         <a href="#main-content" className="skip-link">{
           lang === 'ar' ? 'انتقل إلى المحتوى' :
           lang === 'ru' ? 'Перейти к содержимому' :

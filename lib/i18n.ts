@@ -33,6 +33,32 @@ export function generateLangParams() {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// Hreflang helpers — Chinese requires script subtag (zh-Hans) for proper
+// Google indexing of Simplified Chinese targeting Chinese investors in Dubai.
+// ─────────────────────────────────────────────────────────────────────────────
+export const HREFLANG_MAP: Record<Lang, string> = {
+  en: 'en-AE',
+  ar: 'ar-AE',
+  ru: 'ru-AE',
+  zh: 'zh-Hans-AE',
+  es: 'es-AE',
+}
+
+/** Get the hreflang code for a given language (e.g. 'zh' -> 'zh-Hans-AE') */
+export function getHreflang(lang: Lang): string {
+  return HREFLANG_MAP[lang]
+}
+
+/** Build the alternates.languages object for a given URL path.
+ *  Path should start with '/' and end with '/' (e.g. '/about/'). */
+export function buildHreflangAlternates(path: string): Record<string, string> {
+  const base = 'https://www.enotarydubai.ae'
+  return Object.fromEntries(
+    LANGS.map((l) => [HREFLANG_MAP[l], `${base}/${l}${path}`])
+  )
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // RichBlock — Union type defined HERE as the single source of truth.
 // All components that render rich content should import RichBlock from i18n,
 // NOT from a sibling component, to avoid circular-import TypeScript errors.
