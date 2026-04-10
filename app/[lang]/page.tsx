@@ -76,31 +76,9 @@ const H = {
   same_day: { en:'Same-Day', ar:'نفس اليوم', ru:'День в день', zh:'当日', es:'Mismo Día' },
 }
 
-const POA_COLORS = [
-  'from-blue-500/10 to-blue-500/5 border-blue-100 hover:border-blue-200',
-  'from-emerald-500/10 to-emerald-500/5 border-emerald-100 hover:border-emerald-200',
-  'from-amber-500/10 to-amber-500/5 border-amber-100 hover:border-amber-200',
-  'from-purple-500/10 to-purple-500/5 border-purple-100 hover:border-purple-200',
-  'from-rose-500/10 to-rose-500/5 border-rose-100 hover:border-rose-200',
-  'from-cyan-500/10 to-cyan-500/5 border-cyan-100 hover:border-cyan-200',
-  'from-orange-500/10 to-orange-500/5 border-orange-100 hover:border-orange-200',
-  'from-teal-500/10 to-teal-500/5 border-teal-100 hover:border-teal-200',
-  'from-indigo-500/10 to-indigo-500/5 border-indigo-100 hover:border-indigo-200',
-  'from-pink-500/10 to-pink-500/5 border-pink-100 hover:border-pink-200',
-  'from-lime-500/10 to-lime-500/5 border-lime-100 hover:border-lime-200',
-  'from-sky-500/10 to-sky-500/5 border-sky-100 hover:border-sky-200',
-  'from-violet-500/10 to-violet-500/5 border-violet-100 hover:border-violet-200',
-]
-
-const CORP_COLORS = [
-  'from-slate-500/10 to-slate-500/5 border-slate-200 hover:border-slate-300',
-  'from-zinc-500/10 to-zinc-500/5 border-zinc-200 hover:border-zinc-300',
-  'from-stone-500/10 to-stone-500/5 border-stone-200 hover:border-stone-300',
-  'from-neutral-500/10 to-neutral-500/5 border-neutral-200 hover:border-neutral-300',
-  'from-gray-500/10 to-gray-500/5 border-gray-200 hover:border-gray-300',
-  'from-blue-600/10 to-blue-600/5 border-blue-200 hover:border-blue-300',
-  'from-indigo-600/10 to-indigo-600/5 border-indigo-200 hover:border-indigo-300',
-]
+const UNIFIED_CARD_STYLE = 'from-slate-500/10 to-slate-500/5 border-slate-200 hover:border-slate-300'
+const POA_COLORS = [UNIFIED_CARD_STYLE]
+const CORP_COLORS = [UNIFIED_CARD_STYLE]
 
 const CORP_SERVICES = [
   { slug: 'moa', en: 'MOA Notarization', ar: 'توثيق عقد التأسيس', ru: 'Нотариальное заверение MOA', zh: 'MOA公证', es: 'Notarización de MOA', desc_en: 'Company formation & DED registration', desc_ar: 'تأسيس الشركة وتسجيل DED', desc_ru: 'Регистрация компании в DED', desc_es: 'Constitución y registro DED' },
@@ -162,7 +140,7 @@ export default async function HomePage({ params }: Props) {
             <div className="hidden lg:flex items-center justify-center">
               <div className="relative">
                 <div className="absolute -inset-4 rounded-3xl" style={{background:'radial-gradient(ellipse at center, rgba(212,180,58,.07) 0%, transparent 70%)'}} />
-                <img src="/assets/hero/poa-doc.png" alt="UAE Notary Document" className="relative w-80 h-auto" style={{filter:'drop-shadow(0 0 40px rgba(212,180,58,.13))'}} />
+                <img src="/assets/hero/poa-doc.png" alt="UAE Notary Document" className="relative w-[480px] xl:w-[500px] h-auto" style={{filter:'drop-shadow(0 0 40px rgba(212,180,58,.13))'}} />
               </div>
             </div>
           </div>

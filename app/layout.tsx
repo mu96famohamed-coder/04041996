@@ -3,6 +3,11 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'E-Notary Dubai — Notary Support Dubai',
   description: 'Professional notary support services in Dubai, UAE',
+  icons: {
+    icon: '/favicon.svg',
+    shortcut: '/favicon.svg',
+    apple: '/favicon.svg',
+  },
 }
 
 // Root layout — intentionally minimal.

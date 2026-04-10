@@ -3821,18 +3821,18 @@
             },
             {
               "title": {
-                "en": "Both parties attend the Notary — 30 minutes",
-                "ar": "يحضر الطرفان أمام كاتب العدل — 30 دقيقة",
-                "ru": "Обе стороны являются к нотариусу — 30 минут",
-                "zh": "双方出席公证——30分钟",
-                "es": "Ambas partes asisten al Notario — 30 minutos"
+                "en": "The principal meets the Notary — 5 to 15 minutes",
+                "ar": "يحضر الموكِّل أمام كاتب العدل — من 5 إلى 15 دقيقة",
+                "ru": "Доверитель встречается с нотариусом — 5–15 минут",
+                "zh": "委托人与公证人会面——5到15分钟",
+                "es": "El otorgante se reúne con el Notario — 5 a 15 minutos"
               },
               "body": {
-                "en": "The principal (you) and agent bring valid passports and/or Emirates IDs. The Notary verifies identities, reads the document aloud, and both parties confirm understanding and consent before signing.",
-                "ar": "يُحضر الموكِّل (أنت) والوكيل جوازات سفرهما السارية و/أو هوياتهما الإماراتية. يتحقق كاتب العدل من الهويات ويقرأ الوثيقة بصوت عالٍ ويؤكد كلا الطرفين الفهم والموافقة قبل التوقيع.",
-                "ru": "Доверитель (вы) и поверенный предъявляют действующие паспорта и/или Emirates ID. Нотариус проверяет личности, зачитывает документ вслух, и обе стороны подтверждают понимание и согласие перед подписанием.",
-                "zh": "委托人（您）和代理人携带有效护照和/或酋长国身份证。公证人核实身份，大声朗读文件，双方在签字前确认理解和同意。",
-                "es": "El otorgante (usted) y el agente traen pasaportes válidos y/o Emirates IDs. El Notario verifica identidades, lee el documento en voz alta, y ambas partes confirman comprensión y consentimiento antes de firmar."
+                "en": "You (the principal) attend a short video call with the Notary — no physical visit needed. You bring your valid passport or Emirates ID. The agent does not need to attend at any point. The Notary verifies your identity, reads the document aloud, and you confirm understanding and consent before signing. E-Notary Dubai prepares, drafts, and coordinates the entire appointment on your behalf.",
+                "ar": "تحضر أنت (الموكِّل) مكالمة فيديو قصيرة مع كاتب العدل — دون الحاجة إلى زيارة فعلية. تُحضر جواز سفرك الساري أو هويتك الإماراتية. لا يحتاج الوكيل إلى الحضور في أي مرحلة. يتحقق كاتب العدل من هويتك، ويقرأ الوثيقة بصوت عالٍ، وتؤكد فهمك وموافقتك قبل التوقيع. تقوم E-Notary Dubai بإعداد الوكالة وصياغتها وتنسيق الموعد بالكامل نيابةً عنك.",
+                "ru": "Вы (доверитель) проходите короткий видеозвонок с нотариусом — личное посещение не требуется. Вы предъявляете действующий паспорт или Emirates ID. Поверенному не нужно присутствовать ни на одном этапе. Нотариус проверяет вашу личность, зачитывает документ вслух, и вы подтверждаете понимание и согласие перед подписанием. E-Notary Dubai готовит, составляет и координирует всю процедуру от вашего имени.",
+                "zh": "您（委托人）通过简短的视频通话与公证人会面——无需亲自到场。您需携带有效护照或阿联酋身份证。代理人在任何阶段均无需出席。公证人核实您的身份，大声朗读文件，您在签字前确认理解和同意。E-Notary Dubai 代您准备、起草并协调整个预约流程。",
+                "es": "Usted (el otorgante) asiste a una breve videollamada con el Notario — sin necesidad de visita física. Trae su pasaporte válido o Emirates ID. El apoderado no necesita asistir en ningún momento. El Notario verifica su identidad, lee el documento en voz alta, y usted confirma comprensión y consentimiento antes de firmar. E-Notary Dubai prepara, redacta y coordina toda la cita en su nombre."
               }
             },
             {
@@ -22068,11 +22068,11 @@
           "es": "Antes de nada, debe definir exactamente qué está autorizando. Los tipos comunes de POA en Dubái incluyen: POA General (amplia autoridad), POA Inmobiliaria (transacciones de propiedad), POA Bancaria (operaciones de cuenta), POA Judicial (representación legal), POA de Constitución de Empresa, y especializadas como consentimiento de viaje de menores o POA de herencia."
         },
         {
-          "en": "Both the principal (person giving authority) and the agent (person receiving authority) typically need to appear before the Notary Public. In cases where one party is abroad, the POA can be notarized at a UAE embassy and then MOFA-attested, or done via video call notarization.",
-          "ar": "يجب أن يحضر الموكِّل (مانح الصلاحية) والوكيل (المُخوَّل) عادةً أمام كاتب العدل. إذا كان أحد الطرفين في الخارج، يمكن توثيق الوكالة في سفارة إماراتية ثم تصديقها من وزارة الخارجية، أو عبر خدمة التوثيق بالفيديو.",
-          "ru": "Как правило, перед нотариусом должны явиться и доверитель (лицо, выдающее полномочия), и поверенный (лицо, их получающее). Если одна из сторон находится за рубежом, доверенность может быть заверена в посольстве ОАЭ с последующей аттестацией МОИД или через видеосвязь.",
-          "zh": "通常，委托人（授予权力的人）和被委托人（接受权力的人）均需在公证人面前出席。如果一方在海外，可以在阿联酋大使馆公证后经外交部认证，或通过视频公证服务完成。",
-          "es": "Tanto el poderdante (quien otorga la autoridad) como el apoderado (quien la recibe) generalmente deben comparecer ante el Notario Público. Si una parte está en el extranjero, el POA puede notarizarse en una embajada de los EAU y luego ser atestado por el Ministerio de Relaciones Exteriores, o realizarse mediante notarización por videollamada."
+          "en": "Only the principal (the person granting authority) needs to appear before the Notary — typically via a short secure video call. The agent does not need to attend at any stage; we only need a copy of the agent's passport or Emirates ID to name them in the document. If the principal is abroad, the POA can be notarized at a UAE embassy and then MOFA-attested, or completed through our video-notary service. E-Notary Dubai prepares everything and coordinates the Notary appointment on your behalf.",
+          "ar": "يحتاج الموكِّل فقط (الشخص الذي يمنح الصلاحية) إلى الحضور أمام كاتب العدل — عادةً عبر مكالمة فيديو آمنة قصيرة. لا يحتاج الوكيل إلى الحضور في أي مرحلة؛ نحتاج فقط إلى نسخة من جواز سفره أو هويته الإماراتية لذكر اسمه في الوثيقة. إذا كان الموكِّل في الخارج، يمكن توثيق الوكالة في سفارة إماراتية ثم تصديقها من وزارة الخارجية، أو إنجازها عبر خدمة التوثيق بالفيديو لدينا. تقوم E-Notary Dubai بإعداد كل شيء وتنسيق موعد كاتب العدل نيابةً عنك.",
+          "ru": "Только доверитель (лицо, выдающее полномочия) должен явиться к нотариусу — как правило, через короткий защищённый видеозвонок. Поверенному не нужно присутствовать ни на одном этапе; нам нужна только копия его паспорта или Emirates ID, чтобы указать его в документе. Если доверитель находится за рубежом, доверенность может быть нотариально заверена в посольстве ОАЭ с последующей легализацией MOFA, или оформлена через нашу услугу видеонотариата. E-Notary Dubai готовит всё и координирует приём у нотариуса от вашего имени.",
+          "zh": "只有委托人（授予权力的人）需要在公证人面前出席——通常通过简短的安全视频通话。代理人在任何阶段都无需出席；我们只需要代理人护照或阿联酋身份证的副本，以便在文件中写明其姓名。如果委托人在海外，可以在阿联酋大使馆公证后经外交部认证，或通过我们的视频公证服务完成。E-Notary Dubai 代您准备一切并协调公证人预约。",
+          "es": "Solo el otorgante (quien concede la autoridad) necesita comparecer ante el Notario — normalmente mediante una breve videollamada segura. El apoderado no necesita asistir en ninguna etapa; solo necesitamos una copia de su pasaporte o Emirates ID para nombrarlo en el documento. Si el otorgante está en el extranjero, el POA puede notarizarse en una embajada de los EAU y luego ser autenticado por MOFA, o completarse a través de nuestro servicio de video-notarización. E-Notary Dubai prepara todo y coordina la cita con el Notario en su nombre."
         },
         {
           "en": "If the POA will be used outside the UAE, it needs MOFA attestation. We handle the full chain. If the destination country is a member of the Hague Convention, you may need an Apostille instead of embassy attestation. We confirm the correct process for your specific destination country.",
