@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingWA from '@/components/FloatingWA'
 import { LocalBusinessSchema } from '@/components/SchemaMarkup'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 
 interface Props {
   children: React.ReactNode
@@ -103,6 +104,7 @@ export default async function LangLayout({ children, params }: Props) {
         <Footer lang={lang as Lang} />
         {/* FloatingWA handles both WhatsApp button AND scroll-to-top in React */}
         <FloatingWA lang={lang as Lang} />
+        <SpeedInsights />
       </body>
     </html>
   )
