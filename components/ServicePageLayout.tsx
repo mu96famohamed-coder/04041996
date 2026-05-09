@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { type Lang, t, site, cta } from '@/lib/i18n'
 import FAQSection from '@/components/FAQSection'
+import { BreadcrumbSchema } from '@/components/SchemaMarkup'
 
 interface FAQItem {
   q: Record<string, string>
@@ -42,8 +43,22 @@ export default function ServicePageLayout({
   const waUrl = `https://wa.me/${site.phone.replace(/\D/g,'')}?text=${encodeURIComponent(waMessage)}`
   const isRtl = lang === 'ar'
 
+  // BreadcrumbList JSON-LD — built from the same `breadcrumbs` prop that
+  // drives the visible UI nav. Items with an href become linked entries;
+  // the final item (usually without href) still gets a canonical URL
+  // derived from the current language so crawlers see a complete chain.
+  const breadcrumbSchemaItems = (breadcrumbs || []).map((crumb) => {
+    const origin = 'https://www.enotarydubai.ae'
+    const path = crumb.href ?? `/${lang}/`
+    const url = path.startsWith('http')
+      ? path
+      : `${origin}${path.startsWith('/') ? path : `/${path}`}`
+    return { name: crumb.label, url }
+  })
+
   return (
     <>
+      {breadcrumbSchemaItems.length > 0 && <BreadcrumbSchema items={breadcrumbSchemaItems}/>}
       {/* Hero */}
       <section className="bg-navy-900 py-10 sm:py-14">
         <div className="mx-auto max-w-5xl px-4 lg:px-8">
@@ -146,7 +161,7 @@ export default function ServicePageLayout({
       {faqItems && faqItems.length > 0 && (
         <section className="bg-navy-50 py-12 border-t border-navy-100">
           <div className="mx-auto max-w-4xl px-4 lg:px-8">
-            <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 mb-8 inline-block">
+            <h2 id="faq-heading" className="gold-line font-serif text-2xl font-bold text-navy-900 mb-8 inline-block">
               {t(LABELS.faq_title, lang)}
             </h2>
             <FAQSection items={faqItems} lang={lang} />

@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 import { LANGS, type Lang, t, services, getPageContent, getPageBlocks, getPageFaq, getServiceFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
+import { LegalServiceSchema } from '@/components/SchemaMarkup'
 
 interface Props { params: Promise<{ lang: Lang; slug: string }> }
 
@@ -61,14 +62,17 @@ export default async function AttestationPage({ params }: Props) {
   }
 
   return (
-    <ServicePage
-      lang={lang}
-      title={pageTitle}
-      subtitle={SUBTITLE}
-      description={seo?.meta_description ?? type.desc}
-      waMessage={waMessage}
-      faqItems={faqItems.length > 0 ? faqItems : undefined}
-      richBlocks={getPageBlocks(pageSlug)}
-    />
+    <>
+      <LegalServiceSchema lang={lang} path={`/attestation/${slug}`} />
+      <ServicePage
+        lang={lang}
+        title={pageTitle}
+        subtitle={SUBTITLE}
+        description={seo?.meta_description ?? type.desc}
+        waMessage={waMessage}
+        faqItems={faqItems.length > 0 ? faqItems : undefined}
+        richBlocks={getPageBlocks(pageSlug)}
+      />
+    </>
   )
 }

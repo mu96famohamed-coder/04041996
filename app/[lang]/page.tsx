@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 import { type Lang, t, services, steps, faq, cta, site, trust_badges, LANGS } from '@/lib/i18n'
 import FAQSection from '@/components/FAQSection'
-import { FAQSchema } from '@/components/SchemaMarkup'
+import { FAQSchema, LegalServiceSchema } from '@/components/SchemaMarkup'
 import AcceptedByMarquee from '@/components/AcceptedByMarquee'
 
 
@@ -97,6 +97,7 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
+      <LegalServiceSchema lang={lang} path="/" />
       <FAQSchema items={faq.general} lang={lang} />
 
       {/* HERO */}
@@ -243,7 +244,7 @@ export default async function HomePage({ params }: Props) {
           <p className="overline-label mb-2">{t({en:'Tenant & Landlord',ar:'مستأجر ومالك',ru:'Арендатор и арендодатель',zh:'租客及房东',es:'Inquilino y Propietario'}, lang)}</p>
           <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 sm:text-3xl mb-8">{t(H.tenancy_h, lang)}</h2>
           <div className="grid gap-4 sm:grid-cols-2">
-            <Link href={`/${lang}/eviction-notice`} className="service-card group">
+            <Link href={`/${lang}/legal-notice/eviction`} className="service-card group">
               <h3 className="font-bold text-navy-900 text-sm mb-2">{t(services.eviction_notice.title, lang)}</h3>
               <p className="text-xs text-navy-500 leading-relaxed mb-3">{t(services.eviction_notice.desc, lang)}</p>
               <span className="text-xs font-semibold text-gold-600">{t(cta.learn_more, lang)} →</span>
@@ -304,7 +305,7 @@ export default async function HomePage({ params }: Props) {
       <section className="bg-navy-50 py-14 border-t border-navy-100">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
           <div className="text-center mb-10">
-            <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 sm:text-3xl inline-block">{t(H.faq_h, lang)}</h2>
+            <h2 id="faq-heading" className="gold-line font-serif text-2xl font-bold text-navy-900 sm:text-3xl inline-block">{t(H.faq_h, lang)}</h2>
           </div>
           <FAQSection items={faq.general} lang={lang} />
           <div className="text-center mt-8">

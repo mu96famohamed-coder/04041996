@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import FAQSection from './FAQSection'
 import RichContent, { type RichBlock } from './RichContent'
-import { FAQSchema, ServiceSchema } from './SchemaMarkup'
+import { FAQSchema, BreadcrumbSchema } from './SchemaMarkup'
 import AcceptedByMarquee from './AcceptedByMarquee'
 import { type Lang, t, site, getWaUrl } from '@/lib/i18n'
 
@@ -88,9 +88,22 @@ export default function ServicePage({
     return tx && !shouldSkip(s)
   })
 
+  // BreadcrumbList JSON-LD — built from the same `breadcrumb` prop that drives
+  // the visible UI nav, with Home prepended to match what users see.
+  const breadcrumbSchemaItems =
+    breadcrumb && breadcrumb.length > 0
+      ? [
+          { name: t(L.home, lang), url: `https://www.enotarydubai.ae/${lang}/` },
+          ...breadcrumb.map((crumb) => ({
+            name: crumb.label,
+            url: `https://www.enotarydubai.ae/${lang}${crumb.href}/`.replace(/\/+$/, '/'),
+          })),
+        ]
+      : []
+
   return (
     <>
-      <ServiceSchema name={t(title, lang)} url={`https://www.enotarydubai.ae/${lang}/`} description={t(description, lang)}/>
+      {breadcrumbSchemaItems.length > 0 && <BreadcrumbSchema items={breadcrumbSchemaItems}/>}
       {faqItems && faqItems.length > 0 && <FAQSchema items={faqItems} lang={lang}/>}
 
       {/* ── HERO ── */}
@@ -229,7 +242,11 @@ export default function ServicePage({
           <div className="lg:grid lg:grid-cols-[1fr_280px] lg:gap-10">
 
             {/* ── Left: main content ── */}
-            <div className="space-y-10 min-w-0">
+            <article
+              className="space-y-10 min-w-0"
+              itemScope
+              itemType="https://schema.org/Service"
+            >
 
               {/* When richBlocks has content, skip generic sections to avoid duplication */}
               {richBlocks && richBlocks.length > 0 ? null : (
@@ -338,7 +355,7 @@ export default function ServicePage({
               {/* FAQ */}
               {faqItems && faqItems.length > 0 && (
                 <div>
-                  <h2 className="gold-line font-serif text-xl font-bold text-navy-900 mb-6">
+                  <h2 id="faq-heading" className="gold-line font-serif text-xl font-bold text-navy-900 mb-6">
                     {t(L.faq_h, lang)}
                   </h2>
                   <FAQSection items={faqItems} lang={lang}/>
@@ -363,10 +380,10 @@ export default function ServicePage({
                   </a>
                 </div>
               </div>
-            </div>
+            </article>
 
             {/* ── Sticky Sidebar (desktop only) ── */}
-            <div className="hidden lg:block">
+            <aside className="hidden lg:block" aria-label="Service Navigation">
               <div className="sticky top-20 space-y-3">
 
                 {/* CTA card */}
@@ -422,7 +439,7 @@ export default function ServicePage({
                   </div>
                 )}
               </div>
-            </div>
+            </aside>
 
           </div>
         </div>

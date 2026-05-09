@@ -20,7 +20,7 @@ export default function FAQSection({ items, lang, variant = 'default' }: Props) 
   const isDark = variant === 'dark'
 
   return (
-    <div className="space-y-2">
+    <section className="space-y-2" aria-labelledby="faq-heading">
       {items.map((item, i) => {
         const isOpen = open === i
         const question = t(item.q, lang)
@@ -71,6 +71,6 @@ export default function FAQSection({ items, lang, variant = 'default' }: Props) 
           </div>
         )
       })}
-    </div>
+    </section>
   )
 }

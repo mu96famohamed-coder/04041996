@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
 
+import { LegalServiceSchema } from '@/components/SchemaMarkup'
 interface Props { params: Promise<{ lang: Lang }> }
 export async function generateStaticParams() { return LANGS.map((lang) => ({ lang })) }
 
@@ -79,7 +80,7 @@ const SERVICES = {
     { slug: 'legal-translation', en:'Legal Translation', ar:'ترجمة قانونية', ru:'Юридический перевод', zh:'法律翻译', es:'Traducción Legal' },
   ],
   tenancy: [
-    { slug: 'eviction-notice', en:'Eviction Notice (Article 25)', ar:'إشعار إخلاء (المادة 25)', ru:'Уведомление о выселении', zh:'驱逐通知（第25条）', es:'Aviso de Desalojo (Art. 25)' },
+    { slug: 'legal-notice/eviction', en:'Eviction Notice (Article 25)', ar:'إشعار إخلاء (المادة 25)', ru:'Уведомление о выселении', zh:'驱逐通知（第25条）', es:'Aviso de Desalojo (Art. 25)' },
     { slug: 'legal-notice', en:'Legal Notice (All Types)', ar:'إنذار قانوني (جميع الأنواع)', ru:'Юридическое уведомление', zh:'法律通知', es:'Notificación Legal' },
     { slug: 'rdc-support', en:'RDC Case Support', ar:'دعم مركز فض النزاعات', ru:'Поддержка RDC', zh:'RDC案件支持', es:'Apoyo RDC' },
     { slug: 'legal-notice/poa-cancellation', en:'POA Cancellation Notice', ar:'إشعار إلغاء الوكالة', ru:'Уведомление об отзыве доверенности', zh:'授权书取消通知', es:'Cancelación de POA' },
@@ -120,6 +121,7 @@ export default async function ServicesPage({ params }: Props) {
 
   return (
     <div className="bg-white min-h-screen">
+      <LegalServiceSchema lang={lang} path="/pricing" />
       {/* Hero */}
       <div className="hero-bg py-14">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">

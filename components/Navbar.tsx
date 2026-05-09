@@ -98,7 +98,7 @@ function buildNav(lang: Lang) {
       key: 'tenancy',
       label: { en: 'Tenancy & Legal', ar: 'الإيجار والقانون', ru: 'Аренда и право', zh: '租赁与法律', es: 'Arrendamiento' },
       items: [
-        { href: `/${l}/eviction-notice`,               label: { en: 'Eviction Notice',         ar: 'إشعار الإخلاء',       ru: 'Уведомление о выселении',  zh: '驱逐通知',      es: 'Desalojo' } },
+        { href: `/${l}/legal-notice/eviction`,         label: { en: 'Eviction Notice',         ar: 'إشعار الإخلاء',       ru: 'Уведомление о выселении',  zh: '驱逐通知',      es: 'Desalojo' } },
         { href: `/${l}/rdc-support`,                   label: { en: 'RDC Support',             ar: 'دعم مركز النزاعات',    ru: 'Поддержка RDC',            zh: 'RDC支持',        es: 'RDC' } },
         { href: `/${l}/legal-notice`,                  label: { en: 'Legal Notice',            ar: 'إنذار قانوني',         ru: 'Юридическое уведомление',  zh: '法律通知',      es: 'Aviso Legal' } },
         { href: `/${l}/legal-notice/poa-cancellation`, label: { en: '↳ POA Cancellation Notice', ar: '↳ إنذار إلغاء وكالة', ru: '↳ Отмена доверенности',   zh: '↳ 撤销授权通知', es: '↳ Aviso Cancelación' } },

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
-import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
+import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, getServiceFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
+import { LegalServiceSchema } from '@/components/SchemaMarkup'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -27,15 +28,22 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { lang } = await params
   const seo = (getPageContent('/corporate/shareholder-agreement') as any)?.seo
+  let faqItems = getPageFaq('/corporate/shareholder-agreement')
+  if (faqItems.length === 0) {
+    faqItems = getServiceFaq('corporate_shareholder_agreement')
+  }
   return (
-    <ServicePage
-      lang={lang}
-      title={seo?.h1}
-      description={seo?.meta_description}
-      authority={seo?.authority}
-      waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
-      faqItems={getPageFaq('/corporate/shareholder-agreement')}
-      richBlocks={getPageBlocks('/corporate/shareholder-agreement')}
-    />
+    <>
+      <LegalServiceSchema lang={lang} path="/corporate/shareholder-agreement" />
+      <ServicePage
+        lang={lang}
+        title={seo?.h1}
+        description={seo?.meta_description}
+        authority={seo?.authority}
+        waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
+        faqItems={faqItems}
+        richBlocks={getPageBlocks('/corporate/shareholder-agreement')}
+      />
+    </>
   )
 }

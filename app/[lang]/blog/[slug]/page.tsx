@@ -4,6 +4,7 @@ import { LANGS, type Lang, t, site , getPageMeta, HREFLANG_MAP } from '@/lib/i18
 import content from '@/data/content.json'
 import FAQSection from '@/components/FAQSection'
 
+import { ArticleSchema } from '@/components/SchemaMarkup'
 interface Props { params: Promise<{ lang: Lang; slug: string }> }
 
 const BLOG_SLUGS = [
@@ -108,7 +109,15 @@ export default async function BlogArticlePage({ params }: Props) {
   }
 
   return (
-    <div className="bg-white min-h-[80vh]">
+    <article className="bg-white min-h-[80vh]">
+      <ArticleSchema
+        headline={title}
+        url={`https://www.enotarydubai.ae/${lang}/blog/${slug}/`}
+        lang={lang}
+        datePublished={bc?.date}
+        dateModified={bc?.date_updated}
+        description={metaDesc || undefined}
+      />
       {/* Hero */}
       <div className="hero-bg py-12">
         <div className="mx-auto max-w-3xl px-4 lg:px-8">
@@ -230,7 +239,7 @@ export default async function BlogArticlePage({ params }: Props) {
         {/* FAQ section */}
         {faqItems.length > 0 && (
           <div className="mt-12">
-            <h2 className="gold-line font-serif text-xl font-bold text-navy-900 mb-6 inline-block">
+            <h2 id="faq-heading" className="gold-line font-serif text-xl font-bold text-navy-900 mb-6 inline-block">
               {t(LABELS.faq_h, lang)}
             </h2>
             <FAQSection items={faqItems} lang={lang} />
@@ -269,6 +278,6 @@ export default async function BlogArticlePage({ params }: Props) {
           </div>
         </div>
       </div>
-    </div>
+    </article>
   )
 }

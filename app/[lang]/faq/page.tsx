@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { LANGS, type Lang, t, getPageFaq, getServiceFaq, HREFLANG_MAP } from '@/lib/i18n'
 import FAQSection from '@/components/FAQSection'
 
+import { LegalServiceSchema } from '@/components/SchemaMarkup'
 interface Props { params: Promise<{ lang: Lang }> }
 export async function generateStaticParams() { return LANGS.map((lang) => ({ lang })) }
 
@@ -46,9 +47,10 @@ export default async function FAQPage({ params }: Props) {
 
   return (
     <div className="bg-navy-50 min-h-[80vh]">
+      <LegalServiceSchema lang={lang} path="/faq" />
       <div className="hero-bg py-12">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
-          <h1 className="font-serif text-3xl font-bold text-white sm:text-4xl mb-3">
+          <h1 id="faq-heading" className="font-serif text-3xl font-bold text-white sm:text-4xl mb-3">
             {t({ en: 'Frequently Asked Questions', ar: 'الأسئلة الشائعة', ru: 'Часто задаваемые вопросы', zh: '常见问题', es: 'Preguntas Frecuentes' }, lang)}
           </h1>
           <p className="text-navy-300 text-sm">

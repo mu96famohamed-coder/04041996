@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
+import { LegalServiceSchema } from '@/components/SchemaMarkup'
 
 interface Props { params: Promise<{ lang: Lang }> }
 export async function generateStaticParams() { return LANGS.map((l) => ({ lang: l })) }
@@ -66,7 +67,7 @@ const SERVICES = [
   { en: 'Last Will & Testament', ar: 'الوصية الأخيرة', ru: 'Завещание', zh: '遗嘱', es: 'Testamento', href: 'last-will-testament-dubai' },
   { en: 'MOFA Attestation, Apostille, Embassy Attestation', ar: 'تصديق MOFA، الأبوستيل، تصديق السفارة', ru: 'Легализация MOFA, апостиль, аттестация посольства', zh: 'MOFA认证、海牙认证、大使馆认证', es: 'Autenticación MOFA, Apostilla, Autenticación de Embajada', href: 'attestation/mofa' },
   { en: 'Legal Translation (certified & court-accepted)', ar: 'الترجمة القانونية (معتمدة ومقبولة للمحاكم)', ru: 'Юридический перевод (сертифицированный, принимаемый судами)', zh: '法律翻译（认证且获法院接受）', es: 'Traducción Legal (certificada y aceptada por tribunales)', href: 'legal-translation' },
-  { en: 'Eviction Notices (Article 25 compliant, Tableegh delivery)', ar: 'إشعارات الإخلاء (متوافقة مع المادة 25، تسليم عبر تبليغ)', ru: 'Уведомления о выселении (статья 25, доставка Tableegh)', zh: '驱逐通知（符合第25条，经Tableegh送达）', es: 'Avisos de Desalojo (Artículo 25, entrega por Tableegh)', href: 'eviction-notice' },
+  { en: 'Eviction Notices (Article 25 compliant, Tableegh delivery)', ar: 'إشعارات الإخلاء (متوافقة مع المادة 25، تسليم عبر تبليغ)', ru: 'Уведомления о выселении (статья 25, доставка Tableegh)', zh: '驱逐通知（符合第25条，经Tableegh送达）', es: 'Avisos de Desalojo (Artículo 25, entrega por Tableegh)', href: 'legal-notice/eviction' },
   { en: 'Legal Notices (all types)', ar: 'الإنذارات القانونية (جميع الأنواع)', ru: 'Юридические уведомления (все виды)', zh: '法律通知（所有类型）', es: 'Notificaciones Legales (todos los tipos)', href: 'legal-notice' },
   { en: 'RDC Support (Rental Disputes Centre)', ar: 'دعم مركز فض النزاعات الإيجارية', ru: 'Поддержка RDC (Центр по арендным спорам)', zh: 'RDC支持（租赁纠纷中心）', es: 'Soporte RDC (Centro de Disputas de Arrendamiento)', href: 'rdc-support' },
   { en: 'Remote E-Notary via video call (Dubai Courts approved)', ar: 'التوثيق الإلكتروني عن بُعد (معتمد من محاكم دبي)', ru: 'Удалённый е-нотариус по видеосвязи (одобрено Dubai Courts)', zh: '远程视频公证（迪拜法院认可）', es: 'E-Notario Remoto por videollamada (aprobado por Dubai Courts)', href: 'e-notary' },
@@ -79,6 +80,7 @@ export default async function AboutPage({ params }: Props) {
 
   return (
     <div className="bg-white">
+      <LegalServiceSchema lang={lang} path="/about" />
       {/* Hero */}
       <div className="hero-bg py-14">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">

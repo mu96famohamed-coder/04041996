@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LANGS, type Lang, t , getPageMeta, HREFLANG_MAP } from '@/lib/i18n'
+import { LegalServiceSchema } from '@/components/SchemaMarkup'
 import content from '@/data/content.json'
 
 interface Props { params: Promise<{ lang: Lang }> }
@@ -93,6 +94,7 @@ export default async function BlogPage({ params }: Props) {
 
   return (
     <div className="bg-navy-50 min-h-[80vh]">
+      <LegalServiceSchema lang={lang} path="/blog" />
       {/* Hero */}
       <div className="hero-bg py-12">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
 
+import { LegalServiceSchema } from '@/components/SchemaMarkup'
 interface Props { params: Promise<{ lang: Lang }> }
 export async function generateStaticParams() { return LANGS.map((l) => ({ lang: l })) }
 
@@ -65,6 +66,7 @@ export default async function Page({ params }: Props) {
 
   return (
     <div className="bg-white">
+      <LegalServiceSchema lang={lang} path="/contact" />
       {/* Hero */}
       <div className="hero-bg py-14">
         <div className="mx-auto max-w-4xl px-4 lg:px-8 text-center">

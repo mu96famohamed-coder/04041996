@@ -26,7 +26,7 @@ const FOOTER_LINKS = {
     { href: '/legal-translation',     en: 'Legal Translation',     ar: 'ترجمة قانونية',       ru: 'Юридический перевод',        zh: '法律翻译',     es: 'Traducción Legal' },
   ],
   tenancy: [
-    { href: '/eviction-notice',               en: 'Eviction Notice',         ar: 'إشعار الإخلاء',        ru: 'Уведомление о выселении',   zh: '驱逐通知',      es: 'Aviso de Desalojo' },
+    { href: '/legal-notice/eviction',         en: 'Eviction Notice',         ar: 'إشعار الإخلاء',        ru: 'Уведомление о выселении',   zh: '驱逐通知',      es: 'Aviso de Desalojo' },
     { href: '/legal-notice',                  en: 'Legal Notice',            ar: 'إنذار قانوني',          ru: 'Юридическое уведомление',   zh: '法律通知',      es: 'Notificación Legal' },
     { href: '/legal-notice/poa-cancellation', en: 'POA Cancellation Notice', ar: 'إنذار إلغاء وكالة',    ru: 'Уведомление об отмене POA', zh: '撤销授权通知',  es: 'Aviso Cancelación' },
     { href: '/rdc-support',                   en: 'RDC Support',             ar: 'دعم مركز النزاعات',     ru: 'Поддержка RDC',             zh: 'RDC支持',        es: 'Soporte RDC' },

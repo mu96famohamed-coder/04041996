@@ -113,6 +113,29 @@ const nextConfig = {
         destination: '/:lang/power-of-attorney/',
         permanent: true,
       },
+      // 301 permanent: /eviction-notice → /legal-notice/eviction
+      // Preserves the visitor's language when a lang prefix is present.
+      {
+        source: '/:lang(en|ar|ru|zh|es)/eviction-notice',
+        destination: '/:lang/legal-notice/eviction/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/eviction-notice/',
+        destination: '/:lang/legal-notice/eviction/',
+        permanent: true,
+      },
+      // Bare (un-prefixed) variants — fall back to the default language.
+      {
+        source: '/eviction-notice',
+        destination: '/en/legal-notice/eviction/',
+        permanent: true,
+      },
+      {
+        source: '/eviction-notice/',
+        destination: '/en/legal-notice/eviction/',
+        permanent: true,
+      },
     ]
   },
 

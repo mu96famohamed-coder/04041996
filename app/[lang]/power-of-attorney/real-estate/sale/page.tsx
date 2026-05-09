@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
+import { LegalServiceSchema } from '@/components/SchemaMarkup'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -28,14 +29,17 @@ export default async function Page({ params }: Props) {
   const { lang } = await params
   const seo = (getPageContent('/power-of-attorney/real-estate/sale') as any)?.seo
   return (
-    <ServicePage
-      lang={lang}
-      title={seo?.h1}
-      description={seo?.meta_description}
-      authority={seo?.authority}
-      waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
-      faqItems={getPageFaq('/power-of-attorney/real-estate/sale')}
-      richBlocks={getPageBlocks('/power-of-attorney/real-estate/sale')}
-    />
+    <>
+      <LegalServiceSchema lang={lang} path="/power-of-attorney/real-estate/sale" />
+      <ServicePage
+        lang={lang}
+        title={seo?.h1}
+        description={seo?.meta_description}
+        authority={seo?.authority}
+        waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
+        faqItems={getPageFaq('/power-of-attorney/real-estate/sale')}
+        richBlocks={getPageBlocks('/power-of-attorney/real-estate/sale')}
+      />
+    </>
   )
 }
