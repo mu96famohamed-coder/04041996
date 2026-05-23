@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
 import '../globals.css'
 import { notFound } from 'next/navigation'
@@ -11,6 +11,11 @@ import { LocalBusinessSchema } from '@/components/SchemaMarkup'
 interface Props {
   children: React.ReactNode
   params: Promise<{ lang: string }>
+}
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 }
 
 export async function generateStaticParams() {
@@ -71,7 +76,6 @@ export default async function LangLayout({ children, params }: Props) {
   return (
     <html lang={lang} dir={dir}>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="geo.region" content="AE-DU" />
