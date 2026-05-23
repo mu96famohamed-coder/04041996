@@ -30,6 +30,9 @@ interface Props {
   title?: string
   /** Show the title line */
   showTitle?: boolean
+  /** Override the fade-edge colour to match the parent background exactly.
+   *  Defaults to '#FFFFFF' (light) or '#060e1f' (dark). */
+  fadeColor?: string
 }
 
 export default function AcceptedByMarquee({
@@ -39,6 +42,7 @@ export default function AcceptedByMarquee({
   speed = 50,
   title = 'Accepted by All UAE Government Entities',
   showTitle = true,
+  fadeColor: fadeColorProp,
 }: Props) {
   const [isPaused, setIsPaused] = useState(false)
   const [trackWidth, setTrackWidth] = useState(0)
@@ -49,7 +53,7 @@ export default function AcceptedByMarquee({
 
   const isDark = variant === 'dark'
   const bgColor = isDark ? 'transparent' : '#FFFFFF'
-  const fadeColor = isDark ? '#0B1121' : '#FFFFFF'
+  const fadeColor = fadeColorProp ?? (isDark ? '#060e1f' : '#FFFFFF')
   const titleColor = isDark ? '#C9A84C' : '#222222'
 
   useEffect(() => {

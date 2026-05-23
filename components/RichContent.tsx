@@ -7,7 +7,7 @@ import { type Lang, t } from '@/lib/i18n'
 export type RichBlock =
   | { type: 'heading';    text: Record<string,string> }
   | { type: 'para';       text: Record<string,string>; accent?: boolean }
-  | { type: 'warning';    text: Record<string,string>; title?: Record<string,string> }
+  | { type: 'warning';    text?: Record<string,string>; title?: Record<string,string>; items?: Array<Record<string,string>> }
   | { type: 'info';       text: Record<string,string>; title?: Record<string,string> }
   | { type: 'success';    text: Record<string,string>; title?: Record<string,string> }
   | { type: 'steps';      items: Array<{ title: Record<string,string>; body: Record<string,string> }> }
@@ -71,15 +71,28 @@ function ParaBlock({ block, lang }: { block: Extract<RichBlock, {type:'para'}>, 
 
 function WarningBlock({ block, lang }: { block: Extract<RichBlock, {type:'warning'}>, lang: Lang }) {
   const isRTL = lang === 'ar'
+  const hasItems = block.items && block.items.length > 0
   return (
     <div className={`flex gap-0 rounded-xl overflow-hidden my-5 ${isRTL ? 'flex-row-reverse' : ''}`}
       style={{background:'#fffbf0',border:'1px solid rgba(201,162,39,.25)'}}>
       <div style={{width:3,flexShrink:0,background:'#d4b43a'}} />
-      <div className={`flex gap-3 px-4 py-4 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
+      <div className={`flex gap-3 px-4 py-4 w-full ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
         <span className="shrink-0 mt-0.5" style={{color:'#c9a227'}}><AlertIcon /></span>
-        <div className="min-w-0">
+        <div className="min-w-0 w-full">
           {block.title && <p className="text-xs font-bold uppercase tracking-wide mb-1.5" style={{color:'#8a6a00'}}>{t(block.title, lang)}</p>}
-          <p className="text-sm leading-relaxed" style={{color:'#5a4800', fontWeight:300}}>{t(block.text, lang)}</p>
+          {hasItems ? (
+            <ul className="space-y-2">
+              {block.items!.map((item, i) => (
+                <li key={i} className={`flex items-start gap-2 text-sm leading-relaxed ${isRTL ? 'flex-row-reverse' : ''}`}
+                  style={{color:'#5a4800', borderBottom: i < block.items!.length - 1 ? '1px solid rgba(212,180,58,.15)' : 'none', paddingBottom: i < block.items!.length - 1 ? '0.5rem' : 0}}>
+                  <span className="shrink-0 font-bold" style={{color:'#c9a227'}}>{i + 1}.</span>
+                  <span style={{fontWeight:300}}>{t(item, lang)}</span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            block.text && <p className="text-sm leading-relaxed" style={{color:'#5a4800', fontWeight:300}}>{t(block.text, lang)}</p>
+          )}
         </div>
       </div>
     </div>

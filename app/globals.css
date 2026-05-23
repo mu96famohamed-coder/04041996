@@ -9,9 +9,13 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* overflow-x must be on html (not body) to avoid breaking sticky positioning
+       in Chrome/Safari on desktop. Setting overflow on body creates an independent
+       scroll container which prevents position:sticky from anchoring to the viewport. */
+    overflow-x: hidden;
   }
   body {
-    @apply text-navy-900 bg-white overflow-x-hidden;
+    @apply text-navy-900 bg-white;
     font-feature-settings: 'kern' 1, 'liga' 1;
   }
   [dir="rtl"] .flip { transform: scaleX(-1); }

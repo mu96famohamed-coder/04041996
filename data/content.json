@@ -3196,18 +3196,18 @@
         },
         {
           "q": {
-            "en": "Is MOFA attestation the same as apostille?",
-            "ar": "هل تصديق وزارة الخارجية مثل الأبوستيل؟",
-            "ru": "Является ли легализация MOFA тем же, что и апостиль?",
-            "zh": "MOFA认证与海牙认证相同吗？",
-            "es": "¿Es la Autenticación MOFA lo Mismo que la Apostilla?"
+            "en": "Is MOFA attestation required for all UAE documents used abroad?",
+            "ar": "هل تصديق وزارة الخارجية مطلوب لجميع الوثائق الإماراتية المستخدمة في الخارج؟",
+            "ru": "Требуется ли легализация MOFA для всех документов ОАЭ, используемых за рубежом?",
+            "zh": "所有在海外使用的阿联酋文件都需要MOFA认证吗？",
+            "es": "¿Se requiere la autenticación de MOFA para todos los documentos de los EAU utilizados en el extranjero?"
           },
           "a": {
-            "en": "No. MOFA attestation is for non-Hague Convention countries. Apostille is for Hague member countries (UK, USA, EU, India since 2023). We advise which you need based on your destination.",
-            "ar": "شراء أو بيع أو إدارة عقارات إماراتية عبر وكيل مرخص — متوافق مع دائرة الأراضي.",
-            "ru": "Нет. Легализация MOFA предназначена для стран, не участвующих в Гаагской конвенции. Апостиль используется для стран — участниц конвенции (Великобритания, США, ЕС, Индия с 2023 года). Мы подскажем, какой документ Вам необходим, исходя из страны назначения.",
-            "zh": "不一样。MOFA 认证适用于非《海牙公约》成员国，而 Apostille 海牙认证适用于公约成员国（包括英国、美国、欧盟，以及自 2023 年起的印度）。我们将根据您的目的地国家为您提供专业建议。",
-            "es": "No. La autenticación del MOFA es para países que no son miembros del Convenio de La Haya. La Apostilla es para países miembros del Convenio (Reino Unido, Estados Unidos, Unión Europea e India desde 2023). Le asesoraremos sobre cuál necesita en función de su país de destino."
+            "en": "Yes — for most countries. UAE Ministry of Foreign Affairs (MOFA) attestation is required for UAE documents (including notarized POAs) to be legally recognized abroad. The process: notarize the document → MOFA attests → destination country embassy attests if required. Some documents may also need a certified Arabic-to-English translation before MOFA attestation.",
+            "ar": "نعم — بالنسبة لمعظم الدول. يُشترط تصديق وزارة الخارجية الإماراتية على الوثائق الإماراتية (بما فيها الوكالات الموثَّقة) ليُعترف بها قانونياً في الخارج. الإجراء: توثيق الوثيقة ← تصديق وزارة الخارجية ← تصديق سفارة الدولة المقصودة عند الاقتضاء. قد تستلزم بعض الوثائق ترجمةً معتمدة من العربية إلى الإنجليزية قبل التصديق.",
+            "ru": "Да — для большинства стран. Легализация документов ОАЭ (включая нотариально заверенные доверенности) Министерством иностранных дел ОАЭ (MOFA) необходима для их юридического признания за рубежом. Процесс: нотариальное заверение → легализация MOFA → легализация посольством страны назначения (при необходимости).",
+            "zh": "是的——对大多数国家而言。阿联酋外交部（MOFA）认证是阿联酋文件（包括公证授权委托书）在海外获得法律认可的必要条件。流程：公证文件 → MOFA认证 → 目的地国使馆认证（如需要）。",
+            "es": "Sí — para la mayoría de los países. La autenticación del Ministerio de Relaciones Exteriores de los EAU (MOFA) es necesaria para que los documentos de los EAU (incluidos los poderes notariales) sean reconocidos legalmente en el extranjero. El proceso: notarizar el documento → autenticación MOFA → autenticación de la embajada del país de destino si se requiere."
           }
         },
         {
@@ -3235,11 +3235,11 @@
             "es": "¿Puedo Notarizar un POA sin Visitar Dubái?"
           },
           "a": {
-            "en": "Yes. E-Notary Dubai offers fully remote e-notary via video call, approved by Dubai Courts. No travel required.",
+            "en": "Yes. E-Notary Dubai offers fully remote e-notary through Dubai Courts or the UAE Ministry of Justice via a video call, approved by Dubai Courts. No travel required.",
             "ar": "صلاحيات شاملة للشؤون المالية والقانونية والشخصية — مقبولة من كل الجهات الإماراتية.",
-            "ru": "Да. E-Notary Dubai предлагает полностью удалённого электронного нотариуса по видеозвонку, одобренного судами Дубая. Поездка не требуется.",
+            "ru": "Да. E-Notary Dubai предлагает полностью удалённого электронного нотариуса через Суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка, одобренного судами Дубая. Поездка не требуется.",
             "zh": "是的。E-Notary Dubai提供经迪拜法院认可的全程远程视频电子公证服务。无需出行。",
-            "es": "Sí. E-Notary Dubai ofrece e-notario completamente remoto por videollamada, aprobado por los Tribunales de Dubái. Sin viaje."
+            "es": "Sí. E-Notary Dubai ofrece e-notario completamente remoto a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada, aprobado por los Tribunales de Dubái. Sin viaje."
           }
         },
         {
@@ -3894,11 +3894,11 @@
                 "es": "El otorgante se reúne con el Notario — 5 a 15 minutos"
               },
               "body": {
-                "en": "You (the principal) attend a short video call with the Notary — no physical visit needed. You bring your valid passport or Emirates ID. The agent does not need to attend at any point. The Notary verifies your identity, reads the document aloud, and you confirm understanding and consent before signing. E-Notary Dubai prepares, drafts, and coordinates the entire appointment on your behalf.",
-                "ar": "تحضر أنت (الموكِّل) مكالمة فيديو قصيرة مع كاتب العدل — دون الحاجة إلى زيارة فعلية. تُحضر جواز سفرك الساري أو هويتك الإماراتية. لا يحتاج الوكيل إلى الحضور في أي مرحلة. يتحقق كاتب العدل من هويتك، ويقرأ الوثيقة بصوت عالٍ، وتؤكد فهمك وموافقتك قبل التوقيع. تقوم E-Notary Dubai بإعداد الوكالة وصياغتها وتنسيق الموعد بالكامل نيابةً عنك.",
-                "ru": "Вы (доверитель) проходите короткий видеозвонок с нотариусом — личное посещение не требуется. Вы предъявляете действующий паспорт или Emirates ID. Поверенному не нужно присутствовать ни на одном этапе. Нотариус проверяет вашу личность, зачитывает документ вслух, и вы подтверждаете понимание и согласие перед подписанием. E-Notary Dubai готовит, составляет и координирует всю процедуру от вашего имени.",
-                "zh": "您（委托人）通过简短的视频通话与公证人会面——无需亲自到场。您需携带有效护照或阿联酋身份证。代理人在任何阶段均无需出席。公证人核实您的身份，大声朗读文件，您在签字前确认理解和同意。E-Notary Dubai 代您准备、起草并协调整个预约流程。",
-                "es": "Usted (el otorgante) asiste a una breve videollamada con el Notario — sin necesidad de visita física. Trae su pasaporte válido o Emirates ID. El apoderado no necesita asistir en ningún momento. El Notario verifica su identidad, lee el documento en voz alta, y usted confirma comprensión y consentimiento antes de firmar. E-Notary Dubai prepara, redacta y coordina toda la cita en su nombre."
+                "en": "You (the principal) appear before a licensed UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport + OTP. Session is recorded.",
+                "ar": "تمثل أنت (الموكِّل) أمام كاتب عدل إماراتي مرخَّص عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُتحقق الهوية بجواز السفر ورمز OTP. تُسجَّل الجلسة.",
+                "ru": "Вы (доверитель) проходите короткий через Суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка с нотариусом — личное посещение не требуется. Вы предъявляете действующий паспорт или Emirates ID. Поверенному не нужно присутствовать ни на одном этапе. Нотариус проверяет вашу личность, зачитывает документ вслух, и вы подтверждаете понимание и согласие перед подписанием. E-Notary Dubai готовит, составляет и координирует всю процедуру от вашего имени.",
+                "zh": "您（委托人）通过迪拜法院或阿联酋司法部进行视频通话，在持牌公证人前出席。通过护照+OTP验证身份，全程录制。代理人无需出席。",
+                "es": "Usted (el otorgante) comparece ante un notario público de los EAU a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada. Identidad verificada por pasaporte + OTP."
               }
             },
             {
@@ -4355,16 +4355,6 @@
           }
         },
         {
-          "type": "heading",
-          "text": {
-            "en": "When Should You Use a General POA vs a Special POA?",
-            "ar": "متى تستخدم الوكالة العامة مقابل الوكالة الخاصة؟",
-            "ru": "Когда использовать генеральную, а когда специальную доверенность?",
-            "zh": "什么时候应该用一般授权书vs特定授权书？",
-            "es": "¿Cuándo Usar un POA General vs un POA Especial?"
-          }
-        },
-        {
           "type": "warning",
           "title": {
             "en": "4 Situations Where a General POA Will Be Rejected in Dubai",
@@ -4443,6 +4433,16 @@
               "es": "Recoger o presentar documentos en los Tribunales de Dubái, el Ministerio de Justicia o cualquier entidad gubernamental"
             }
           ]
+        },
+        {
+          "type": "heading",
+          "text": {
+            "en": "When Should You Use a General POA vs a Special POA?",
+            "ar": "متى تستخدم الوكالة العامة مقابل الوكالة الخاصة؟",
+            "ru": "Когда использовать генеральную, а когда специальную доверенность?",
+            "zh": "什么时候应该用一般授权书vs特定授权书？",
+            "es": "¿Cuándo Usar un POA General vs un POA Especial?"
+          }
         },
         {
           "type": "compare",
@@ -6998,10 +6998,10 @@
           "es": "Un Poder Notarial Judicial en Dubái autoriza a un abogado o representante legal a comparecer y actuar en su nombre en procedimientos específicos ante los tribunales de Dubái, el RDC o cualquier autoridad judicial de los EAU."
         },
         {
-          "en": "If you are outside the UAE, you can notarize the Court POA via video call with our licensed notary — Dubai Courts notary for UAE Emirates ID holders, Ministry of Justice notary for foreign passport holders. The document is then ready for use in all UAE courts and the RDC.",
+          "en": "If you are outside the UAE, you can notarize the Court POA through Dubai Courts or the UAE Ministry of Justice via a video call with our licensed notary — Dubai Courts notary for UAE Emirates ID holders, Ministry of Justice notary for foreign passport holders. The document is then ready for use in all UAE courts and the RDC.",
           "ar": "إذا كنت خارج الإمارات، يمكنك توثيق الوكالة القضائية عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو مع كاتب عدل إماراتينا المرخص — كاتب عدل محاكم دبي لحاملي الهوية الإماراتية، وكاتب عدل وزارة العدل لحاملي الجوازات الأجنبية. الوثيقة بعدها جاهزة للاستخدام في جميع محاكم الإمارات وRDC.",
           "ru": "Если вы за пределами ОАЭ — заверяете по видеозвонку: Суды Дубая (Emirates ID) или Министерство юстиции (иностранный паспорт). Документ сразу готов для всех судов ОАЭ и RDC.",
-          "zh": "如果您在阿联酋境外，可以通过视频通话公证司法授权委托书：迪拜法院公证人（阿联酋身份证）或司法部公证人（外国护照）。文件随后可在所有阿联酋法院和RDC使用。",
+          "zh": "如果您在阿联酋境外，可以通过迪拜法院或阿联酋司法部进行通过迪拜法院或阿联酋司法部进行视频通话司法授权委托书：迪拜法院公证人（阿联酋身份证）或司法部公证人（外国护照）。文件随后可在所有阿联酋法院和RDC使用。",
           "es": "Si está fuera de los EAU, puede notarizar el Poder Judicial mediante videollamada: los Tribunales de Dubái (Emirates ID) o Ministerio de Justicia (pasaporte extranjero). El documento está listo para todos los tribunales de los EAU y el RDC."
         }
       ],
@@ -7094,11 +7094,11 @@
             "es": "¿Puede un POA Judicial Emitirse para Alguien Fuera de los EAU?"
           },
           "a": {
-            "en": "Yes. The person can notarize the POA at a UAE embassy abroad, or via our video call notarization service. The document is then attested by MOFA and submitted to the court.",
+            "en": "Yes. The person can notarize the POA at a UAE embassy abroad, or through Dubai Courts or the UAE Ministry of Justice via a video call. The document is then accepted by the court.",
             "ar": "نعم. يمكن للموكِّل توثيق الوكالة في إحدى سفارات الإمارات بالخارج، أو عبر خدمة التوثيق بمكالمة الفيديو لدينا. ثم يُصدَّق المستند من وزارة الخارجية الإماراتية (MOFA) ويُقدَّم إلى المحكمة المختصة.",
-            "ru": "Да. Доверенность может быть нотариально заверена в посольстве ОАЭ за границей либо через наш сервис нотариального заверения по видеосвязи. Документ затем легализуется MOFA и подаётся в суд.",
-            "zh": "可以。当事人可在阿联酋驻外使馆办理授权委托书公证，或通过我们的视频通话公证服务远程完成。文件随后将由 MOFA 进行认证，并提交至相关法院。",
-            "es": "Sí. La persona puede notarizar el poder en una embajada de los EAU en el extranjero, o mediante nuestro servicio de notarización mediante videollamada. El documento es posteriormente autenticado por el MOFA y presentado ante el tribunal."
+            "ru": "Да. Доверенность может быть нотариально заверена в посольстве ОАЭ за границей либо через наш сервис нотариального заверения через Суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка. Документ затем легализуется MOFA и подаётся в суд.",
+            "zh": "可以。当事人可在阿联酋驻外使馆办理授权委托书公证，或通过我们的通过迪拜法院或阿联酋司法部进行视频通话服务远程完成。文件随后将由 MOFA 进行认证，并提交至相关法院。",
+            "es": "Sí. La persona puede notarizar el poder en una embajada de los EAU en el extranjero, o a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada."
           }
         },
         {
@@ -9956,18 +9956,18 @@
             },
             {
               "title": {
-                "en": "Notarize via video call — Federal format",
+                "en": "Notarize through Dubai Courts or the UAE Ministry of Justice via a video call — Federal format",
                 "ar": "التوثيق بمكالمة الفيديو — صيغة اتحادية",
                 "ru": "Нотариальное удостоверение посредством видеозвонка — Федеральный формат",
-                "zh": "通过视频通话办理公证——联邦格式",
+                "zh": "通过迪拜法院或阿联酋司法部进行视频通话办理公证——联邦格式",
                 "es": "Notarizar mediante videollamada — formato Federal"
               },
               "body": {
-                "en": "You appear before a UAE Notary Public through the UAE Ministry of Justice via a video call. For MOHRE procedures, Federal format is generally required — confirm with your PRO before notarizing.",
-                "ar": "تمثل أمام كاتب عدل إماراتي عبر وزارة العدل الاتحادية بمكالمة فيديو. للإجراءات في الوزارة، تُشترط عموماً الصيغة الاتحادية — تأكد مع مندوب العلاقات الحكومية قبل التوثيق.",
-                "ru": "Вы предстаёте перед нотариусом ОАЭ посредством видеозвонка через Министерство юстиции ОАЭ. Для процедур MOHRE в целом требуется Федеральный формат — уточните у вашего PRO до нотариального удостоверения.",
+                "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. The POA is issued in Federal format — confirmed before drafting.",
+                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُصدَر الوكالة بالصيغة الاتحادية — يُؤكَّد ذلك قبل الصياغة.",
+                "ru": "Вы предстаёте перед нотариусом ОАЭ через Суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка. Доверенность оформляется в федеральном формате.",
                 "zh": "您通过阿联酋司法部视频通话，在阿联酋公证人面前出现。对于MOHRE程序，通常需要联邦格式——在公证前请向您的PRO确认。",
-                "es": "Comparece ante un notario público de los EAU mediante videollamada a través del Ministerio de Justicia de los EAU. Para los procedimientos de MOHRE, generalmente se requiere el formato Federal — confirme con su PRO antes de notarizar."
+                "es": "Comparece ante un notario público de los EAU a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada. El poder se emite en formato federal."
               }
             },
             {
@@ -15438,7 +15438,7 @@
           },
           "text": {
             "en": "In Dubai, a legal notice only carries enforceable weight when it is: (1) drafted in bilingual Arabic/English format, (2) officially notarized by a UAE Notary Public, and (3) served through the official Tableegh system — either by physical delivery by the notary or via registered mail. WhatsApp messages, emails, and verbal notices have zero legal standing and cannot be used as evidence in Dubai Courts or the RDC.",
-            "ar": "في دبي، الإنذار القانوني لا يحمل وزناً قانونياً إلا إذا كان: (1) مصاغاً بصيغة ثنائية اللغة بالعربية والإنجليزية، (2) موثقاً رسمياً من كاتب عدل إماراتي، (3) مُسلَّماً عبر نظام التبليغ الرسمي — سواء بالتسليم الشخصي من الكاتب أو عبر البريد المسجل. رسائل واتساب والبريد الإلكتروني والإنذارات الشفهية لا قيمة قانونية لها ولا يمكن استخدامها دليلاً في محاكم دبي أو مركز النزاعات الإيجارية.",
+            "ar": "في دبي، الإنذار القانوني لا يحمل وزناً قانونياً إلا إذا كان: (١) مصاغاً بصيغة ثنائية اللغة بالعربية والإنجليزية، (٢) موثقاً رسمياً من كاتب عدل إماراتي، (٣) مُسلَّماً عبر نظام التبليغ الرسمي — سواء بالتسليم الشخصي من الكاتب أو عبر البريد المسجل. رسائل واتساب والبريد الإلكتروني والإنذارات الشفهية لا قيمة قانونية لها ولا يمكن استخدامها دليلاً في محاكم دبي أو مركز النزاعات الإيجارية.",
             "ru": "В Дубае юридическое уведомление имеет принудительную силу только если оно: (1) составлено в двуязычном формате, (2) официально заверено нотариусом ОАЭ, (3) вручено через официальную систему Tableegh. Сообщения WhatsApp и email не имеют юридической силы.",
             "zh": "在迪拜，法律通知只有在以下情况下才具有可执行效力：(1) 以阿拉伯语/英语双语格式起草，(2) 由阿联酋公证人正式公证，(3) 通过官方Tableegh系统送达。WhatsApp消息、电子邮件和口头通知没有任何法律效力。",
             "es": "En Dubái, un aviso legal solo tiene peso ejecutable cuando: (1) está redactado en formato bilingüe árabe/inglés, (2) está oficialmente notarizado por un Notario Público de los EAU, (3) se entrega a través del sistema Tableegh oficial. Los mensajes de WhatsApp y correos electrónicos no tienen validez legal."
@@ -15967,15 +15967,15 @@
         "h1": {
           "en": "E-Notary Dubai 2026",
           "ar": "التوثيق الإلكتروني دبي 2026",
-          "ru": "Электронный нотариус Дубай — заверение по видеосвязи",
-          "zh": "迪拜电子公证——视频通话公证",
+          "ru": "Электронный нотариус Дубай — заверение через Суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка",
+          "zh": "迪拜电子公证——通过迪拜法院或阿联酋司法部进行视频通话",
           "es": "Notario Electrónico Dubái — Notarización por Videollamada"
         },
         "meta_title": {
           "en": "E-Notary Dubai | Remote Online Notarization Support",
           "ar": "الكاتب العدل الإلكتروني دبي | المساعدة في التوثيق عن بعد",
           "ru": "Электронный нотариус Дубай 2026 | Заверение по видеозвонку | E-Notary Dubai",
-          "zh": "迪拜电子公证 2026 | 视频通话公证 | E-Notary Dubai",
+          "zh": "迪拜电子公证 2026 | 通过迪拜法院或阿联酋司法部进行视频通话 | E-Notary Dubai",
           "es": "E-Notario Dubái 2026 | Notarización por Videollamada | E-Notary Dubai"
         },
         "meta_description": {
@@ -15983,7 +15983,7 @@
           "ar": "نقدم خدمات الصياغة والتجهيز لمساعدتك في إتمام التوثيق عن بُعد عبر الأنظمة الرسمية للكاتب العدل بمحاكم دبي ووزارة العدل الاتحادية.",
           "ru": "Нотариальное заверение по видеозвонку с лицензированным нотариусом Судов Дубая. Полностью юридически действительный документ с QR-кодом.",
           "zh": "与迪拜法院持牌公证人视频通话完成公证。完全合法的带QR码文件。适用于阿联酋境内外客户。",
-          "es": "Notarización por videollamada con notario con licencia de los Tribunales de Dubái. Documento plenamente legal con código QR."
+          "es": "Notarización a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada con notario con licencia de los Tribunales de Dubái. Documento plenamente legal con código QR."
         },
         "wa_message": {
           "en": "I need E-Notary remote notarization in Dubai",
@@ -15999,9 +15999,9 @@
           "text": {
             "en": "E-Notary (electronic notarization) in Dubai allows you to notarize documents remotely via a live video call with a UAE-licensed Notary Public — without physically visiting the notary office. The process is legally equivalent to in-person notarization under Federal Decree-Law No. 20 of 2022. You can be anywhere in the world.",
             "ar": "التوثيق الإلكتروني في دبي يتيح توثيق الوثائق عن بُعد عبر مكالمة مرئية مباشرة مع كاتب عدل مرخَّص في الإمارات — دون الحضور الجسدي في مكتب التوثيق. العملية مكافئة قانونياً للتوثيق الشخصي بموجب المرسوم بقانون الاتحادي رقم 20 لسنة 2022. يمكنك أن تكون في أي مكان في العالم.",
-            "ru": "Электронное нотариальное удостоверение в Дубае позволяет нотариально заверять документы дистанционно через живой видеозвонок с лицензированным нотариусом ОАЭ.",
+            "ru": "Электронное нотариальное удостоверение в Дубае позволяет нотариально заверять документы дистанционно через живой через Суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка с лицензированным нотариусом ОАЭ.",
             "zh": "迪拜的电子公证允许您通过与阿联酋持牌公证人的实时视频通话远程公证文件——无需亲自前往公证办公室。根据2022年第20号联邦法令，该程序在法律上等同于亲自公证。您可以在世界任何地方。",
-            "es": "La e-Notarización en Dubái le permite notarizar documentos de forma remota mediante una videollamada en vivo con un Notario Público con licencia de los EAU."
+            "es": "La e-Notarización en Dubái le permite notarizar documentos de forma remota a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada en vivo con un Notario Público con licencia de los EAU."
           }
         },
         {
@@ -16026,11 +16026,11 @@
                 "es": "Contacte a E-Notary Dubai — díganos qué necesita notarizar"
               },
               "body": {
-                "en": "We confirm whether your document type qualifies for e-notarization. We then draft or review the document and send it to you for approval before scheduling the video call.",
+                "en": "We confirm whether your document type qualifies for e-notarization. We then draft or review the document and send it to you for approval before scheduling the through Dubai Courts or the UAE Ministry of Justice via a video call.",
                 "ar": "نتحقق من أهلية نوع وثيقتك للتوثيق الإلكتروني. نُعِدّ الوثيقة أو نراجعها ونرسلها إليك للموافقة قبل جدولة المكالمة المرئية.",
                 "ru": "Мы подтверждаем, подходит ли ваш тип документа для электронного удостоверения. Затем составляем или проверяем документ и отправляем вам на утверждение.",
                 "zh": "我们确认您的文件类型是否符合电子公证条件。然后起草或审查文件，在安排视频通话之前发送给您审批。",
-                "es": "Confirmamos si su tipo de documento califica para e-notarización. Luego redactamos o revisamos el documento y se lo enviamos para aprobación antes de programar la videollamada."
+                "es": "Confirmamos si su tipo de documento califica para e-notarización. Luego redactamos o revisamos el documento y se lo enviamos para aprobación antes de programar la a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada."
               }
             },
             {
@@ -16058,11 +16058,11 @@
                 "es": "Firma digital OTP — Contraseña de Un Solo Uso"
               },
               "body": {
-                "en": "A One-Time Password (OTP) is sent simultaneously to your registered phone number and email. You enter the OTP during the video call — this serves as your legal digital signature on the document.",
+                "en": "A One-Time Password (OTP) is sent simultaneously to your registered phone number and email. You enter the OTP during the through Dubai Courts or the UAE Ministry of Justice via a video call — this serves as your legal digital signature on the document.",
                 "ar": "تُرسَل كلمة مرور لمرة واحدة (OTP) في وقت واحد إلى رقم هاتفك المسجَّل وبريدك الإلكتروني. تُدخِل كلمة المرور خلال المكالمة المرئية — وهذا يُعدّ توقيعك الرقمي القانوني على الوثيقة.",
                 "ru": "Одноразовый пароль (OTP) одновременно отправляется на ваш зарегистрированный номер телефона и email. Вы вводите OTP во время видеозвонка — это служит вашей законной цифровой подписью.",
                 "zh": "一次性密码（OTP）同时发送至您的注册手机号和电子邮件。您在视频通话期间输入OTP——这作为您在文件上的合法数字签名。",
-                "es": "Una Contraseña de Un Solo Uso (OTP) se envía simultáneamente a su número de teléfono registrado y email. Introduce el OTP durante la videollamada — esto sirve como su firma digital legal en el documento."
+                "es": "Una Contraseña de Un Solo Uso (OTP) se envía simultáneamente a su número de teléfono registrado y email. Introduce el OTP durante la a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada — esto sirve como su firma digital legal en el documento."
               }
             },
             {
@@ -17315,11 +17315,11 @@
             "es": "¿Necesito el Documento Original?"
           },
           "a": {
-            "en": "Yes — the original must be presented for verification. For video call notarization, you show the original on camera.",
+            "en": "Yes — the original must be presented for verification. For remote notarization through Dubai Courts or the UAE Ministry of Justice via a video call, you hold the original document up to the camera during the session.",
             "ar": "نعم — يجب تقديم المستند الأصلي للتحقق منه. وفي حالة التوثيق عبر مكالمة الفيديو، يُكتفى بعرض الأصل أمام الكاميرا.",
-            "ru": "Да — оригинал должен быть представлен для проверки. При видеозвонке вы показываете оригинал на камере.",
-            "zh": "是的——必须出示原件进行核实。视频通话公证时，您在摄像头前展示原件。",
-            "es": "Sí — el original debe presentarse para verificación. Para la notarización por videollamada, muestra el original en cámara."
+            "ru": "Да — оригинал должен быть представлен для проверки. При удалённом нотариальном удостоверении через Суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка вы держите оригинал перед камерой.",
+            "zh": "是的——必须出示原件进行核实。通过迪拜法院或阿联酋司法部进行视频通话时，您在摄像头前展示原件。",
+            "es": "Sí — el original debe presentarse para verificación. Para la notarización a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada, muestra el original en cámara."
           }
         },
         {
@@ -24185,11 +24185,11 @@
             "es": "¿Puedo Notarizar un Documento si Estoy Fuera de Dubái?"
           },
           "a": {
-            "en": "Yes. E-Notary Dubai offers fully remote e-notarization via secure video call, officially approved by Dubai Courts. For documents that require physical signing, we guide you through the video call with the Notary Public — fully online, no travel required. The UAE Embassy process if you are abroad.",
-            "ar": "نعم. توفر E-Notary Dubai خدمة التوثيق الإلكتروني عن بُعد بالكامل عبر مكالمة فيديو آمنة، معتمدة رسمياً من محاكم دبي. وللمستندات التي تتطلب توقيعاً مادياً، نرافقكم خلال مكالمة الفيديو مع الكاتب العدل — بالكامل عبر الإنترنت دون الحاجة إلى السفر. كما نوفر إجراءات السفارة الإماراتية في حال وجودكم خارج البلاد.",
-            "ru": "Да. E-Notary Dubai предлагает полностью удалённое электронное нотариальное заверение через защищённый видеозвонок, официально одобрённое судами Дубая. Из любой точки мира.",
+            "en": "Yes. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. You appear before a licensed UAE Notary Public who verifies your identity by passport and OTP. The session is recorded and the notarized document is delivered by email.",
+            "ar": "نعم. يتم التوثيق عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تمثل أمام كاتب عدل إماراتي مرخَّص يتحقق من هويتك بجواز السفر ورمز OTP. تُسجَّل الجلسة وتُسلَّم الوثيقة الموثَّقة بالبريد الإلكتروني.",
+            "ru": "Да. E-Notary Dubai предлагает полностью удалённое электронное нотариальное заверение через защищённый через Суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка, официально одобрённое судами Дубая. Из любой точки мира.",
             "zh": "是的。E-Notary Dubai通过安全视频通话提供全程远程电子公证，经迪拜法院官方认可。从世界任何地方均可。",
-            "es": "Sí. E-Notary Dubai ofrece e-notarización completamente remota mediante videollamada segura, oficialmente aprobada por los Tribunales de Dubái. Desde cualquier parte del mundo."
+            "es": "Sí. La notarización se realiza a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada. Comparece ante un notario público de los EAU quien verifica su identidad por pasaporte y OTP."
           }
         },
         {
@@ -24317,11 +24317,11 @@
                 "es": "¿El proceso es totalmente en línea?"
               },
               "body": {
-                "en": "Yes. For UAE residents with an active UAE Pass, and for non-residents eligible for Federal E-Notary, the entire process can be completed via video call.",
-                "ar": "نعم. بالنسبة للمقيمين في الإمارات الذين لديهم هوية رقمية (UAE Pass) نشطة، ولغير المقيمين المؤهلين لنظام الكاتب العدل الاتحادي الإلكتروني، يمكن إتمام العملية بالكامل عبر مكالمة فيديو.",
-                "ru": "Да. Для резидентов ОАЭ с активным UAE Pass и для нерезидентов, имеющих право на услуги Федерального электронного нотариуса, весь процесс может быть завершен по видеосвязи.",
-                "zh": "是的。对于拥有活跃 UAE Pass 的阿联酋居民，以及有资格使用联邦电子公证的非居民，整个流程都可以通过视频通话完成。",
-                "es": "Sí. Para los residentes de los EAU con un UAE Pass activo, y para los no residentes elegibles para el Notario Electrónico Federal, todo el proceso se puede completar mediante videollamada."
+                "en": "Yes. For UAE residents with an active UAE Pass, and for non-residents eligible for Federal E-Notary, the entire process can be completed through Dubai Courts or the UAE Ministry of Justice via a video call.",
+                "ar": "نعم. بالنسبة للمقيمين في الإمارات الذين لديهم هوية رقمية (UAE Pass) ولغير المقيمين، تُتاح خدمة التوثيق عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو.",
+                "ru": "Да. Для резидентов ОАЭ с активным UAE Pass и для нерезидентов, имеющих право на услуги Федерального электронного нотариуса, весь процесс может быть завершен через Суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка.",
+                "zh": "是的。对于拥有活跃 UAE Pass 的阿联酋居民，以及有资格使用联邦电子公证的非居民，整个流程都可以通过迪拜法院或阿联酋司法部进行视频通话完成。",
+                "es": "Sí. Para los residentes de los EAU con UAE Pass activo, y para no residentes, el servicio de notarización se realiza a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada."
               }
             }
           ]
@@ -25639,13 +25639,6 @@
           "ru": "Саудовская Аравия и страны Залива — апостиль не принимается",
           "zh": "沙特阿拉伯和海湾国家——不接受附加证明书",
           "es": "Arabia Saudita y Países del Golfo — el Apostille no se Acepta"
-        },
-        {
-          "en": "Apostille vs. Embassy Attestation — What Is the Difference?",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何帮助您",
-          "es": "Cómo le Ayudamos"
         }
       ],
       "content": [
@@ -25694,7 +25687,24 @@
           "es": "Diferencia de costo: la apostilla suele ser significativamente más económica y rápida que la autenticación completa de embajada"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "What is the difference between Apostille and Embassy Attestation?",
+            "ar": "ما الفرق بين التصديق بالأبوستيل وتصديق السفارة؟",
+            "ru": "В чём разница между апостилем и аттестацией посольства?",
+            "zh": "公证认证和大使馆认证有什么区别？",
+            "es": "¿Cuál es la diferencia entre Apostilla y Atestación de Embajada?"
+          },
+          "a": {
+            "en": "An Apostille is a standardized certificate issued under the Hague Convention (1961) that authenticates a document for use in any of the 125+ member countries — no further attestation is required. Embassy Attestation is required for countries that are NOT members of the Hague Convention — the document is authenticated by MOFA and then by the destination country's embassy in the UAE. The UAE joined the Hague Apostille Convention in 2021, so UAE documents can now receive an Apostille for use in member countries.",
+            "ar": "الأبوستيل شهادة موحَّدة تُصدَر بموجب اتفاقية لاهاي (1961) تُصادق على وثيقة للاستخدام في أيٍّ من الدول الأعضاء (أكثر من 125 دولة) دون الحاجة إلى مزيد من التصديق. أما تصديق السفارة فيُشترط للدول غير الأعضاء في اتفاقية لاهاي — تُصادَق الوثيقة من وزارة الخارجية ثم من سفارة الدولة المستقبِلة في الإمارات. انضمت الإمارات إلى اتفاقية لاهاي عام 2021، ومن ثَمَّ يمكن للوثائق الإماراتية الآن الحصول على الأبوستيل للاستخدام في الدول الأعضاء.",
+            "ru": "Апостиль — это стандартный сертификат, выдаваемый в соответствии с Гаагской конвенцией (1961), который аутентифицирует документ для использования в любой из 125+ стран-членов. Аттестация посольства требуется для стран, не являющихся членами Гаагской конвенции. ОАЭ присоединились к Гаагской конвенции в 2021 году.",
+            "zh": "海牙认证（Apostille）是根据海牙公约（1961年）颁发的标准化证书，用于在125个以上成员国中认证文件，无需进一步认证。大使馆认证适用于非海牙公约成员国——文件需经外交部认证，然后再由目的国在阿联酋的大使馆认证。阿联酋于2021年加入海牙公约。",
+            "es": "Una Apostilla es un certificado estandarizado emitido bajo la Convención de La Haya (1961) que autentica un documento para uso en cualquiera de los 125+ países miembros. La Atestación de Embajada se requiere para países que NO son miembros de la Convención de La Haya. Los EAU se unieron a la Convención de La Haya en 2021."
+          }
+        }
+      ]
     },
     "mofa-attestation-step-by-step-dubai": {
       "title_en": "MOFA Attestation in Dubai — Complete Step-by-Step Guide 2026 | E-Notary Dubai",
@@ -25744,20 +25754,6 @@
           "ru": "Что дальше: посольская аттестация или апостиль",
           "zh": "下一步：大使馆认证或附加证明书",
           "es": "Qué Sigue: Atestación de Embajada o Apostille"
-        },
-        {
-          "en": "Step 4 — Collect the Attested Document",
-          "ar": "طريقة تقديم الوثائق",
-          "ru": "Способы подачи документов",
-          "zh": "文件提交方式",
-          "es": "Métodos de Presentación de Documentos"
-        },
-        {
-          "en": "After MOFA — Do You Need Embassy Attestation?",
-          "ar": "ما هو تصديق وزارة الخارجية؟",
-          "ru": "После MOFA — нужна ли легализация в посольстве?",
-          "zh": "MOFA认证后——还需要大使馆认证吗？",
-          "es": "Después de MOFA — ¿Necesita Autenticación de Embajada?"
         }
       ],
       "content": [
@@ -25834,7 +25830,24 @@
           "es": "Informes médicos para uso en el extranjero"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "After MOFA attestation, do I need embassy attestation as well?",
+            "ar": "هل أحتاج إلى تصديق السفارة بعد تصديق وزارة الخارجية؟",
+            "ru": "Нужна ли аттестация посольства после аттестации MOFA?",
+            "zh": "外交部认证后还需要大使馆认证吗？",
+            "es": "¿Después de la atestación de MOFA, necesito también atestación de la embajada?"
+          },
+          "a": {
+            "en": "It depends on the destination country. MOFA attestation is the final step for countries that accept UAE-attested documents directly. However, if the destination country is not a member of the Hague Apostille Convention AND requires embassy attestation, you will also need to have the document attested by that country's embassy in the UAE after MOFA. We confirm the exact chain of attestation required for your specific country before starting.",
+            "ar": "يعتمد ذلك على الدولة المستقبِلة. يُعدّ تصديق وزارة الخارجية الخطوة النهائية للدول التي تقبل الوثائق الإماراتية المصدَّقة مباشرةً. غير أنه إذا لم تكن الدولة المستقبِلة عضواً في اتفاقية لاهاي واشترطت تصديق السفارة، فستحتاج أيضاً إلى تصديق وثيقتك لدى سفارة تلك الدولة في الإمارات بعد وزارة الخارجية.",
+            "ru": "Это зависит от страны назначения. Аттестация MOFA является финальным шагом для стран, которые принимают документы ОАЭ напрямую. Однако если страна не является членом Гаагской конвенции и требует аттестации посольства, потребуется дополнительная аттестация в посольстве этой страны в ОАЭ.",
+            "zh": "这取决于目的国。对于直接接受阿联酋认证文件的国家，外交部认证是最后一步。但如果目的国不是海牙公约成员国且需要大使馆认证，则还需要在阿联酋的该国大使馆对文件进行认证。我们会在开始前确认您特定国家所需的认证链。",
+            "es": "Depende del país de destino. La atestación de MOFA es el paso final para países que aceptan directamente documentos atestados por los EAU. Sin embargo, si el país de destino no es miembro de la Convención de La Haya y requiere atestación de embajada, también necesitará la atestación de la embajada de ese país en los EAU después de MOFA."
+          }
+        }
+      ]
     },
     "affidavit-dubai-complete-guide": {
       "title_en": "Affidavits in Dubai — What They Are and When You Need One | E-Notary Dubai",
@@ -25856,34 +25869,6 @@
           "ru": "Что такое аффидевит?",
           "zh": "什么是宣誓书？",
           "es": "¿Qué es un Affidávit?"
-        },
-        {
-          "en": "Common Types of Affidavits in Dubai",
-          "ar": "الأنواع الشائعة للإقرارات في دبي",
-          "ru": "Распространённые виды аффидевитов в Дубае",
-          "zh": "迪拜常见的宣誓书类型",
-          "es": "Tipos Comunes de Affidávits en Dubái"
-        },
-        {
-          "en": "When Are Affidavits Required in Dubai?",
-          "ar": "كيف يُوثَّق الإقرار بالحلف في دبي؟",
-          "ru": "Как нотариально заверяется аффидевит в Дубае?",
-          "zh": "迪拜的宣誓书如何公证？",
-          "es": "¿Cómo se Notariza un Affidávit en Dubái?"
-        },
-        {
-          "en": "What Must an Affidavit Contain?",
-          "ar": "هل يُقبل الإقرار الإماراتي في الخارج؟",
-          "ru": "Принимается ли аффидевит ОАЭ за рубежом?",
-          "zh": "阿联酋宣誓书在海外被接受吗？",
-          "es": "¿Se Acepta un Affidávit de los EAU en el Extranjero?"
-        },
-        {
-          "en": "What to Avoid When Getting an Affidavit",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何帮助您",
-          "es": "Cómo le Ayudamos"
         }
       ],
       "content": [
@@ -26002,7 +25987,40 @@
           "es": "Declaración clara de los hechos que se juran"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "When are affidavits required in Dubai?",
+            "ar": "متى تُطلب الإقرارات في دبي؟",
+            "ru": "Когда в Дубае требуются аффидевиты?",
+            "zh": "在迪拜何时需要宣誓声明？",
+            "es": "¿Cuándo se requieren affidávits en Dubái?"
+          },
+          "a": {
+            "en": "Affidavits are commonly required in Dubai for: court proceedings (as sworn witness statements), immigration applications (proof of marital status, family relationship, or income), property transactions (confirming ownership or identity), employment disputes (confirming facts related to employment), and personal matters (confirming name changes, marital status, or financial standing).",
+            "ar": "تُطلب الإقرارات في دبي عادةً في: الإجراءات القضائية (كإقرارات مُقسَمة أمام المحكمة)، وطلبات الهجرة (إثبات الحالة الاجتماعية أو العلاقة الأسرية أو الدخل)، والمعاملات العقارية (تأكيد الملكية أو الهوية)، وتسوية النزاعات العمالية (تأكيد وقائع تتعلق بالعمل)، والشؤون الشخصية كتأكيد تغيير الاسم أو الحالة الاجتماعية أو الوضع المالي.",
+            "ru": "Аффидевиты в Дубае обычно требуются для судебных разбирательств, иммиграционных заявлений, сделок с недвижимостью, трудовых споров и личных вопросов (подтверждение смены имени, семейного положения или финансового состояния).",
+            "zh": "在迪拜，宣誓声明通常在以下情况下需要：法庭诉讼（作为宣誓证人陈述）、移民申请（证明婚姻状况、家庭关系或收入）、房产交易、劳动纠纷以及个人事务（确认姓名变更、婚姻状况或财务状况）。",
+            "es": "Los affidávits en Dubái son comúnmente requeridos en: procedimientos judiciales, solicitudes de inmigración, transacciones de propiedad, disputas laborales y asuntos personales (confirmación de cambio de nombre, estado civil o situación financiera)."
+          }
+        },
+        {
+          "q": {
+            "en": "What must an affidavit contain to be valid in Dubai?",
+            "ar": "ماذا يجب أن يتضمن الإقرار بالحلف ليكون صحيحاً في دبي؟",
+            "ru": "Что должен содержать аффидевит, чтобы быть действительным в Дубае?",
+            "zh": "宣誓声明在迪拜有效需包含哪些内容？",
+            "es": "¿Qué debe contener un affidávit para ser válido en Dubái?"
+          },
+          "a": {
+            "en": "A valid affidavit in Dubai must include: the full legal name and passport or Emirates ID number of the person making the statement (the deponent); a clear, specific statement of the facts being sworn to; a declaration that the statements are true and made under oath; the date and place of execution; and the signature of a licensed Notary Public who administered the oath. If the affidavit is to be used before UAE government authorities, an Arabic version or certified Arabic translation is required.",
+            "ar": "يجب أن يتضمن الإقرار بالحلف الصحيح في دبي: الاسم القانوني الكامل ورقم جواز السفر أو الهوية للمُقِرّ؛ وبياناً واضحاً ومحدداً للوقائع المُقَرّ بها تحت القَسَم؛ وإقراراً بصحة التصريحات وأدائها تحت القَسَم؛ والتاريخ والمكان؛ وتوقيع كاتب عدل مرخَّص أدار اليمين. إذا كان الإقرار سيُستخدَم أمام الجهات الحكومية الإماراتية، فيلزم وجود نسخة عربية أو ترجمة عربية معتمدة.",
+            "ru": "Действительный аффидевит в Дубае должен содержать: полное юридическое имя и номер паспорта/Emirates ID заявителя; чёткое изложение фактов; заявление о правдивости под присягой; дату и место составления; и подпись лицензированного нотариуса. Если аффидевит будет использоваться перед государственными органами ОАЭ, требуется арабская версия или сертифицированный перевод на арабский язык.",
+            "zh": "迪拜有效的宣誓声明必须包含：声明人的全名及护照或酋长国身份证号码；对所宣誓事实的清晰陈述；关于声明属实且在宣誓下作出的声明；执行日期和地点；以及施行宣誓的持牌公证人的签名。如果宣誓声明将在阿联酋政府机构使用，则需要阿拉伯语版本或经认证的阿拉伯语翻译。",
+            "es": "Un affidávit válido en Dubái debe incluir: el nombre legal completo y el número de pasaporte o Emirates ID del declarante; una declaración clara y específica de los hechos; una declaración de veracidad bajo juramento; la fecha y el lugar de ejecución; y la firma de un notario público con licencia. Si el affidávit se utilizará ante autoridades gubernamentales de los EAU, se requiere una versión en árabe o una traducción certificada al árabe."
+          }
+        }
+      ]
     },
     "how-to-get-poa-dubai": {
       "title_en": "How to Get a POA in Dubai 2026 | E-Notary Dubai",
@@ -26066,20 +26084,6 @@
           "ru": "Сколько времени это занимает?",
           "zh": "需要多长时间？",
           "es": "¿Cuánto Tiempo Toma?"
-        },
-        {
-          "en": "How Much Does a POA Cost in Dubai?",
-          "ar": "كم تكلفة الوكالة الرسمية في دبي؟",
-          "ru": "Сколько стоит доверенность в Дубае?",
-          "zh": "迪拜授权委托书费用是多少？",
-          "es": "¿Cuánto Cuesta una POA en Dubái?"
-        },
-        {
-          "en": "Frequently Asked Questions",
-          "ar": "أسئلة شائعة",
-          "ru": "Часто задаваемые вопросы",
-          "zh": "常见问题",
-          "es": "Preguntas Frecuentes"
         }
       ],
       "content": [
@@ -26188,6 +26192,22 @@
             "zh": "除非文件中指定了到期日，否则授权委托书不会自动过期。但许多机构要求不超过3至6个月的近期授权委托书。我们强烈建议在起草时注明有效期，以避免被拒。",
             "es": "Un POA no vence automáticamente a menos que se especifique una fecha de vencimiento. Sin embargo, muchas autoridades requieren un POA reciente de no más de 3 a 6 meses. Siempre recomendamos especificar un período de validez al redactar para evitar rechazos."
           }
+        },
+        {
+          "q": {
+            "en": "How much does a POA cost in Dubai?",
+            "ar": "كم تبلغ تكلفة الوكالة القانونية في دبي؟",
+            "ru": "Сколько стоит доверенность в Дубае?",
+            "zh": "在迪拜办理授权书需要多少费用？",
+            "es": "¿Cuánto cuesta un POA en Dubái?"
+          },
+          "a": {
+            "en": "The cost of a Power of Attorney in Dubai depends on the type (General, Special, Real Estate, Vehicle, etc.), the notarizing authority (Dubai Courts or UAE Ministry of Justice), and whether MOFA attestation or embassy attestation is required. Contact us via WhatsApp for an exact quote — we provide a full breakdown before you commit.",
+            "ar": "تعتمد تكلفة الوكالة القانونية في دبي على النوع (عامة أو خاصة أو عقارية أو مركبات إلخ)، والجهة المُوثِّقة (محاكم دبي أو وزارة العدل)، ومدى الحاجة إلى تصديق وزارة الخارجية أو السفارة. تواصل معنا عبر واتساب للحصول على عرض سعر دقيق — نُقدِّم لك تفصيلاً كاملاً قبل الالتزام.",
+            "ru": "Стоимость доверенности в Дубае зависит от типа, нотариального органа и необходимости аттестации MOFA или посольства. Свяжитесь с нами через WhatsApp для точной цитаты.",
+            "zh": "迪拜授权书的费用取决于类型（一般、特殊、房产、车辆等）、公证机构（迪拜法院或阿联酋司法部）以及是否需要外交部或大使馆认证。请通过WhatsApp联系我们获取准确报价。",
+            "es": "El costo de un poder notarial en Dubái depende del tipo, la autoridad notarial y si se requiere atestación de MOFA o embajada. Contáctenos por WhatsApp para obtener una cotización exacta."
+          }
         }
       ]
     },
@@ -26211,41 +26231,6 @@
           "ru": "Можно ли уполномочить лицо действовать по моим банковским счетам в ОАЭ?",
           "zh": "可以授权他人操作我在阿联酋的银行账户吗？",
           "es": "¿Puede Autorizarse a Alguien para Operar mis Cuentas Bancarias en los EAU?"
-        },
-        {
-          "en": "What Do UAE Banks Typically Require?",
-          "ar": "ما الذي يجب تضمينه في الوكالة المصرفية؟",
-          "ru": "Что должна содержать банковская доверенность?",
-          "zh": "银行授权委托书应包含什么？",
-          "es": "¿Qué Debe Incluir un POA Bancario?"
-        },
-        {
-          "en": "What Operations Can a Banking POA Cover?",
-          "ar": "هل تقبل البنوك الإماراتية الوكالات الصادرة خارج الإمارات؟",
-          "ru": "Принимают ли банки ОАЭ доверенности, выданные за рубежом?",
-          "zh": "阿联酋银行是否接受在境外签发的授权委托书？",
-          "es": "¿Aceptan los Bancos de los EAU POA Emitidos en el Extranjero?"
-        },
-        {
-          "en": "What Operations Usually Cannot Be Delegated?",
-          "ar": "متطلبات البنوك الرئيسية في الإمارات",
-          "ru": "Требования основных банков ОАЭ",
-          "zh": "阿联酋主要银行的要求",
-          "es": "Requisitos de los Principales Bancos de los EAU"
-        },
-        {
-          "en": "Common Reasons Banks Reject Banking POAs",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何帮助您",
-          "es": "Cómo le Ayudamos"
-        },
-        {
-          "en": "Our Recommendation",
-          "ar": "هل يمكن لشخص آخر تشغيل حسابي البنكي الإماراتي؟",
-          "ru": "Наша рекомендация",
-          "zh": "我们的建议",
-          "es": "Nuestra Recomendación"
         }
       ],
       "content": [
@@ -26364,7 +26349,72 @@
           "es": "El POA no nombra específicamente el banco o la cuenta"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "What do UAE banks typically require to accept a Banking POA?",
+            "ar": "ماذا تشترط البنوك الإماراتية عادةً لقبول وكالة مصرفية؟",
+            "ru": "Что обычно требуют банки ОАЭ для принятия банковской доверенности?",
+            "zh": "阿联酋银行接受银行授权书通常需要什么？",
+            "es": "¿Qué suelen requerir los bancos de los EAU para aceptar un POA bancario?"
+          },
+          "a": {
+            "en": "UAE banks require the original notarized POA document (not a PDF copy), the agent's Emirates ID or passport, and a copy of the principal's passport. The agent presents the original document to the bank before executing any operation. Some banks — particularly for complex or high-value transactions — may require a Special POA naming the specific account number.",
+            "ar": "تشترط البنوك الإماراتية الوثيقة الأصلية الموثَّقة (لا نسخة PDF)، وبطاقة الهوية الإماراتية أو جواز سفر الوكيل، ونسخة من جواز سفر الموكِّل. يُقدِّم الوكيل الوثيقة الأصلية إلى البنك قبل تنفيذ أي عملية. وقد تشترط بعض البنوك — لا سيما في المعاملات المعقدة أو عالية القيمة — وكالةً خاصة تذكر رقم الحساب المحدد.",
+            "ru": "Банки ОАЭ требуют оригинал нотариально заверенной доверенности (не PDF-копию), Emirates ID или паспорт доверенного лица и копию паспорта доверителя. Доверенное лицо предъявляет оригинал документа в банк перед выполнением любой операции.",
+            "zh": "阿联酋银行要求提供原始公证授权书（非PDF副本）、受托人的酋长国身份证或护照，以及委托人护照的复印件。受托人在执行任何操作前须向银行出示原始文件。",
+            "es": "Los bancos de los EAU requieren el documento original notariado (no una copia en PDF), el Emirates ID o pasaporte del agente y una copia del pasaporte del titular. El agente presenta el documento original al banco antes de ejecutar cualquier operación."
+          }
+        },
+        {
+          "q": {
+            "en": "What banking operations can be covered by a Banking POA?",
+            "ar": "ما العمليات المصرفية التي يمكن تغطيتها بالوكالة المصرفية؟",
+            "ru": "Какие банковские операции может охватывать банковская доверенность?",
+            "zh": "银行授权书可以涵盖哪些银行业务？",
+            "es": "¿Qué operaciones bancarias puede cubrir un POA bancario?"
+          },
+          "a": {
+            "en": "A Banking POA can authorize an agent to access and manage bank accounts (deposits, withdrawals, transfers), sign cheques, apply for loans or credit cards, manage standing orders, collect bank statements, and handle correspondence with the bank. Each operation must be explicitly listed in the POA document.",
+            "ar": "تخوّل الوكالة المصرفية الوكيلَ بالوصول إلى الحسابات المصرفية وإدارتها (الإيداع والسحب والتحويل)، وتوقيع الشيكات، وتقديم طلبات القروض أو بطاقات الائتمان، وإدارة الأوامر الدائمة، واستلام كشوف الحسابات. يجب ذكر كل عملية صراحةً في الوثيقة.",
+            "ru": "Банковская доверенность может уполномочивать доверенное лицо на управление счетами, подписание чеков, подачу заявок на кредиты, управление постоянными поручениями и получение банковских выписок.",
+            "zh": "银行授权书可授权受托人管理账户（存款、取款、转账）、签署支票、申请贷款或信用卡、管理长期委托指令以及获取银行对账单。每项操作均须在授权书中明确列出。",
+            "es": "Un POA bancario puede autorizar al agente a gestionar cuentas bancarias, firmar cheques, solicitar préstamos o tarjetas de crédito, gestionar órdenes permanentes y obtener extractos bancarios. Cada operación debe estar explícitamente listada en el documento."
+          }
+        },
+        {
+          "q": {
+            "en": "What banking operations are typically excluded from a Banking POA?",
+            "ar": "ما العمليات المصرفية التي تُستثنى عادةً من الوكالة المصرفية؟",
+            "ru": "Какие банковские операции обычно исключены из банковской доверенности?",
+            "zh": "银行授权书通常排除哪些银行业务？",
+            "es": "¿Qué operaciones bancarias se excluyen típicamente de un POA bancario?"
+          },
+          "a": {
+            "en": "A Banking POA authorizes only the actions explicitly listed in the document — the agent cannot act beyond those listed powers. Actions not explicitly stated (such as closing accounts, accessing online banking credentials, or changing the account holder's personal details) are automatically excluded. Banks will not accept the POA for any operation not clearly named in the document. This is why precise drafting of the POA's scope is essential before notarization.",
+            "ar": "تُخوِّل الوكالة المصرفية الوكيلَ بالأعمال المذكورة صراحةً في الوثيقة فحسب — ولا يحق للوكيل التصرف خارج الصلاحيات المدرجة. الإجراءات غير المذكورة صراحةً — كإغلاق الحسابات أو الوصول إلى بيانات الخدمات المصرفية الإلكترونية أو تغيير البيانات الشخصية لصاحب الحساب — تُستثنى تلقائياً. لن تقبل البنوك الوكالة لأي عملية غير مذكورة فيها صراحةً، ولهذا تكتسب الدقة في صياغة نطاق الوكالة قبل التوثيق أهميةً بالغة.",
+            "ru": "Банковская доверенность уполномочивает только на действия, прямо перечисленные в документе. Действия, не указанные явно — например, закрытие счетов, доступ к онлайн-банкингу или изменение личных данных — автоматически исключаются. Банки не примут доверенность для операции, не указанной в документе. Именно поэтому точное составление доверенности так важно.",
+            "zh": "银行授权书仅授权文件中明确列出的操作——受托人不得超出所列权限行事。未明确说明的操作（如关闭账户、访问网上银行凭据或更改账户持有人个人信息）均自动排除在外。银行不会接受授权书用于文件中未明确列明的任何操作，因此在公证前精确起草授权书范围至关重要。",
+            "es": "Un POA bancario autoriza solo las acciones explícitamente listadas en el documento — el agente no puede actuar más allá de esos poderes. Las acciones no declaradas explícitamente (cerrar cuentas, acceder a credenciales de banca online o cambiar datos personales) quedan automáticamente excluidas. Los bancos no aceptarán el POA para ninguna operación no claramente nombrada en el documento."
+          }
+        },
+        {
+          "q": {
+            "en": "Why would a bank reject a Banking POA?",
+            "ar": "لماذا قد يرفض البنك الوكالة المصرفية؟",
+            "ru": "Почему банк может отклонить банковскую доверенность?",
+            "zh": "银行为什么会拒绝银行授权书？",
+            "es": "¿Por qué un banco podría rechazar un POA bancario?"
+          },
+          "a": {
+            "en": "Common reasons UAE banks reject a Banking POA: (1) The POA does not explicitly list the specific banking operation required — banks accept only what is named; (2) The POA has expired; (3) A photocopy is presented instead of the original notarized document — banks require the original; (4) The scope of the POA is too vague — phrases like 'manage all banking affairs' without specifics may be rejected by compliance officers; (5) The POA lacks the agent's full identification details as they appear on their passport or Emirates ID.",
+            "ar": "الأسباب الشائعة لرفض البنوك الإماراتية الوكالةَ المصرفية: (1) عدم ذكر العملية المصرفية المطلوبة صراحةً — البنوك تقبل فقط ما هو مُسمَّى في الوثيقة؛ (2) انتهاء صلاحية الوكالة؛ (3) تقديم صورة بدلاً من الأصل الموثَّق — تشترط البنوك الوثيقة الأصلية؛ (4) غموض نطاق الوكالة — عبارات مثل 'إدارة جميع الشؤون المصرفية' دون تفاصيل قد يرفضها مسؤولو الامتثال؛ (5) غياب البيانات التعريفية الكاملة للوكيل كما تظهر في جواز سفره أو بطاقة هويته.",
+            "ru": "Причины отказа банков ОАЭ в принятии банковской доверенности: (1) конкретная операция не указана явно; (2) истёк срок действия; (3) предъявлена копия вместо оригинала; (4) слишком расплывчатый объём полномочий; (5) отсутствуют полные идентификационные данные доверенного лица.",
+            "zh": "阿联酋银行拒绝银行授权书的常见原因：(1) 未明确列出所需的具体银行业务；(2) 授权书已过期；(3) 提交复印件而非原始公证文件；(4) 授权范围过于模糊；(5) 受托人身份信息不完整。",
+            "es": "Razones comunes por las que los bancos de los EAU rechazan un POA bancario: (1) La operación bancaria requerida no está listada explícitamente; (2) El POA ha vencido; (3) Se presenta una fotocopia en lugar del documento original notariado; (4) El alcance del POA es demasiado vago; (5) Faltan los datos de identificación completos del agente."
+          }
+        }
+      ]
     },
     "poa-rejected-by-authority-what-to-do": {
       "title_en": "Your POA Was Rejected — Common Reasons and What to Do Next | E-Notary Dubai",
@@ -26518,20 +26568,6 @@
           "ru": "Можно ли использовать доверенность при дарении недвижимости?",
           "zh": "房产赠予可以使用授权委托书吗？",
           "es": "¿Puede Usarse un POA en la Donación de Propiedad?"
-        },
-        {
-          "en": "The Process at Dubai Land Department",
-          "ar": "المستندات المطلوبة لدى دائرة الأراضي والأملاك",
-          "ru": "Документы, необходимые для DLD",
-          "zh": "土地局所需文件",
-          "es": "Documentos Requeridos por el DLD"
-        },
-        {
-          "en": "Can This Be Done via POA if One Party Is Abroad?",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何帮助您",
-          "es": "Cómo le Ayudamos"
         }
       ],
       "content": [
@@ -26615,7 +26651,24 @@
           "es": "Certificado de matrimonio o nacimiento que prueba la relación de primer grado"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "Can a property gift transfer at DLD be done via POA if one party is abroad?",
+            "ar": "هل يمكن إتمام نقل ملكية العقار كهبة في دائرة الأراضي بالوكالة إذا كان أحد الطرفين في الخارج؟",
+            "ru": "Можно ли оформить дарственную на недвижимость в DLD по доверенности, если одна из сторон находится за рубежом?",
+            "zh": "如果一方在境外，DLD的房产赠与转让可以通过授权书完成吗？",
+            "es": "¿Se puede realizar una transferencia de donación de propiedad en DLD mediante POA si una de las partes está en el extranjero?"
+          },
+          "a": {
+            "en": "Yes. If either the donor (the person transferring ownership) or the recipient (the person receiving the property) is outside the UAE, a Special POA can be used to authorize a local representative to complete the transaction at DLD on their behalf. The POA must explicitly name the property (Title Deed number, plot number, and area) and authorize the representative to sign the transfer documents and receive or transfer the property. The POA must also comply with DLD's requirements under Circular No. 29/R/2025.",
+            "ar": "نعم. إذا كان الواهب (المُحوِّل للملكية) أو الموهوب له (المستقبِل للعقار) خارج الإمارات، يمكن استخدام وكالة خاصة لتخويل ممثل محلي بإتمام المعاملة في دائرة الأراضي. يجب أن تذكر الوكالة العقار تحديداً (رقم سند الملكية ورقم القطعة والمنطقة) وتُخوِّل الممثل بالتوقيع على وثائق التحويل.",
+            "ru": "Да. Если даритель или получатель находится за пределами ОАЭ, можно использовать специальную доверенность для уполномочивания местного представителя на завершение сделки в DLD. Доверенность должна конкретно указывать объект недвижимости и соответствовать требованиям Циркуляра № 29/R/2025.",
+            "zh": "可以。如果赠与人（转让所有权的人）或受赠人（接收房产的人）在阿联酋境外，可以使用特别授权书授权当地代理人代表其在DLD完成交易。授权书必须明确列出房产（产权证号码、地块号和区域），并且必须符合第29/R/2025号通知的要求。",
+            "es": "Sí. Si el donante o el receptor está fuera de los EAU, se puede usar un POA especial para autorizar a un representante local a completar la transacción en DLD. El POA debe nombrar específicamente la propiedad y cumplir con los requisitos del Circular No. 29/R/2025."
+          }
+        }
+      ]
     },
     "power-of-attorney-property-sale-dubai": {
       "title_en": "Using a Power of Attorney to Sell Property in Dubai | E-Notary Dubai",
@@ -26651,20 +26704,6 @@
           "ru": "Дарение недвижимости родственнику первой степени — 0,125%",
           "zh": "赠予直系亲属房产——0.125%费率",
           "es": "Donación de Propiedad a Familiar de Primer Grado — 0.125%"
-        },
-        {
-          "en": "Can the Agent Keep the Proceeds from the Sale?",
-          "ar": "اشتراطات دائرة الأراضي والأملاك للوكالة العقارية",
-          "ru": "Требования DLD к доверенности на недвижимость",
-          "zh": "土地局对房地产授权委托书的要求",
-          "es": "Requisitos del DLD para un POA Inmobiliario"
-        },
-        {
-          "en": "What About Property Gifting?",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何帮助您",
-          "es": "Cómo le Ayudamos"
         }
       ],
       "content": [
@@ -26727,7 +26766,24 @@
           "es": "Fecha de emisión y período de validez"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "Can the agent keep the proceeds from the property sale?",
+            "ar": "هل يمكن للوكيل الاحتفاظ بعائدات بيع العقار؟",
+            "ru": "Может ли агент оставить себе выручку от продажи недвижимости?",
+            "zh": "代理人可以保留房产出售所得款项吗？",
+            "es": "¿Puede el agente quedarse con las ganancias de la venta de la propiedad?"
+          },
+          "a": {
+            "en": "Only if explicitly authorized in the POA. Under DLD's requirements (Circular No. 29/R/2025), a Property Sale POA must include a specific clause authorizing the agent to receive the Manager's Cheque (the sale payment) on behalf of the principal. Without this clause, the agent cannot receive the payment — the transaction cannot be completed at DLD. You should only grant this authority to a trusted agent.",
+            "ar": "فقط إذا كان مُخوَّلاً صراحةً في الوكالة. بموجب اشتراطات دائرة الأراضي (التعميم رقم 29/R/2025)، يجب أن تتضمن وكالة بيع العقار بنداً محدداً يُخوِّل الوكيل باستلام الشيك الإداري (دفعة البيع) نيابةً عن الموكِّل. بدون هذا البند لا يمكن للوكيل استلام الدفعة — ولا يمكن إتمام المعاملة في دائرة الأراضي.",
+            "ru": "Только если это прямо указано в доверенности. Согласно требованиям DLD (Циркуляр № 29/R/2025), доверенность на продажу недвижимости должна содержать конкретный пункт, уполномочивающий агента получить менеджерский чек от имени доверителя.",
+            "zh": "仅在授权书中明确授权的情况下才可以。根据DLD的要求（第29/R/2025号通知），房产销售授权书必须包含具体条款，授权代理人代表委托人接收经理支票（销售付款）。没有此条款，代理人无法接收付款，交易也无法在DLD完成。",
+            "es": "Solo si está explícitamente autorizado en el POA. Según los requisitos de DLD (Circular No. 29/R/2025), un POA de venta de propiedad debe incluir una cláusula específica que autorice al agente a recibir el Cheque de Gerente en nombre del principal."
+          }
+        }
+      ]
     },
     "difference-between-general-and-special-poa-uae": {
       "title_en": "General POA vs. Special POA in UAE — What Is the Difference? | E-Notary Dubai",
@@ -26763,20 +26819,6 @@
           "ru": "Можно ли злоупотребить генеральной доверенностью?",
           "zh": "一般授权书可能被滥用吗？",
           "es": "¿Puede Abusarse de un POA General?"
-        },
-        {
-          "en": "When Should You Use a General POA?",
-          "ar": "أيهما تختار لمعاملتك؟",
-          "ru": "Какую выбрать для вашей сделки?",
-          "zh": "哪种适合您的交易？",
-          "es": "¿Cuál Elegir para su Transacción?"
-        },
-        {
-          "en": "Can a General POA Be Misused?",
-          "ar": "كيف نساعدك في دبي",
-          "ru": "Как мы помогаем в Дубае",
-          "zh": "我们如何在迪拜为您提供帮助",
-          "es": "Cómo le Ayudamos en Dubái"
         }
       ],
       "content": [
@@ -26832,7 +26874,40 @@
           "es": "Registro de vehículo: se prefiere POA Especial"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "When should you use a General POA instead of a Special POA?",
+            "ar": "متى يُفضَّل استخدام التوكيل العام بدلاً من الخاص؟",
+            "ru": "Когда следует использовать Генеральную доверенность вместо Специальной?",
+            "zh": "什么时候应该使用一般授权书而不是特别授权书？",
+            "es": "¿Cuándo debería usar un POA General en lugar de un POA Especial?"
+          },
+          "a": {
+            "en": "A General POA is appropriate when: you are relocating abroad for an extended period and need someone to manage all your UAE affairs; you have multiple ongoing tasks across different authorities (DLD, banks, RTA, government offices) that would each require a separate Special POA; or you fully trust the agent with broad authority over your affairs. A Special POA is always safer when the task is specific and limited in scope.",
+            "ar": "يُناسب التوكيل العام الحالات التالية: الانتقال للخارج لفترة ممتدة مع الحاجة إلى إدارة جميع شؤونك الإماراتية؛ وجود مهام متعددة ومتواصلة في جهات مختلفة قد يستلزم كل منها وكالة خاصة منفصلة؛ أو الثقة الكاملة بالوكيل للتصرف بصلاحية واسعة في شؤونك. الوكالة الخاصة أكثر أماناً دائماً عندما تكون المهمة محددة ومحدودة النطاق.",
+            "ru": "Генеральная доверенность подходит, когда вы переезжаете за рубеж на длительный период, у вас несколько текущих задач в разных органах, или вы полностью доверяете агенту. Специальная доверенность всегда безопаснее для конкретных ограниченных задач.",
+            "zh": "一般授权书适用于以下情况：您要长期迁居海外，需要有人管理您在阿联酋的所有事务；您在不同机构有多项持续性任务，每项都需要单独的特别授权书；或者您完全信任代理人对您的事务拥有广泛授权。当任务具体且范围有限时，特别授权书始终更安全。",
+            "es": "Un POA General es apropiado cuando: se reubica en el extranjero por un período extendido; tiene múltiples tareas en diferentes autoridades; o confía plenamente en el agente. Un POA Especial siempre es más seguro cuando la tarea es específica y de alcance limitado."
+          }
+        },
+        {
+          "q": {
+            "en": "Can a General POA be misused by the agent?",
+            "ar": "هل يمكن للوكيل إساءة استخدام التوكيل العام؟",
+            "ru": "Может ли агент злоупотребить Генеральной доверенностью?",
+            "zh": "代理人可以滥用一般授权书吗？",
+            "es": "¿Puede un agente hacer un mal uso de un POA General?"
+          },
+          "a": {
+            "en": "Yes — this is the primary risk of a General POA. Because it grants broad authority, an agent acting under a General POA could technically conduct unauthorized transactions in your name. This is why a General POA should only be granted to a person you fully trust. To limit risk: use a Special POA for high-value transactions (property sales, major bank transfers); specify excluded actions in the POA text; set a specific validity period rather than leaving it open-ended; and revoke the POA immediately when the purpose is fulfilled.",
+            "ar": "نعم — هذه هي المخاطرة الرئيسية في التوكيل العام. لأنه يمنح صلاحية واسعة، فبإمكان الوكيل نظرياً إجراء معاملات غير مرخَّصة باسمك. لذا يجب منح التوكيل العام فقط لشخص تثق به ثقةً تامة. للحدّ من المخاطر: استخدم وكالةً خاصة للمعاملات عالية القيمة؛ وحدِّد الإجراءات المستثناة في نص الوكالة؛ واضبط مدة صلاحية محددة؛ وألغِ الوكالة فور تحقيق الغرض منها.",
+            "ru": "Да — это основной риск Генеральной доверенности. Чтобы снизить риск: используйте Специальную доверенность для высокостоимостных сделок; укажите исключённые действия; установите конкретный срок действия; и немедленно отзывайте доверенность по выполнении цели.",
+            "zh": "可以——这是一般授权书的主要风险。由于它授予广泛权限，代理人理论上可以以您的名义进行未授权的交易。为降低风险：对高价值交易使用特别授权书；在授权书文本中指定排除的行为；设置特定有效期；一旦目的实现立即撤销授权书。",
+            "es": "Sí — este es el riesgo principal de un POA General. Para limitar el riesgo: use un POA Especial para transacciones de alto valor; especifique acciones excluidas en el texto del POA; establezca un período de validez específico; y revoque el POA inmediatamente cuando se cumpla el propósito."
+          }
+        }
+      ]
     },
     "notarize-documents-without-visiting-uae": {
       "title_en": "How to Notarize Documents for Dubai Without Visiting the UAE | E-Notary Dubai",
@@ -26951,27 +27026,6 @@
           "ru": "Как работает услуга E-Notary Dubai в тот же день?",
           "zh": "E-Notary Dubai当天服务如何运作？",
           "es": "¿Cómo Funciona el Servicio el Mismo Día de E-Notary Dubai?"
-        },
-        {
-          "en": "What Affects Timing?",
-          "ar": "ما الوثائق التي يمكن توثيقها في نفس اليوم؟",
-          "ru": "Какие документы можно заверить в тот же день?",
-          "zh": "哪些文件可以当天公证？",
-          "es": "¿Qué Documentos Pueden Notarizarse el Mismo Día?"
-        },
-        {
-          "en": "What Cannot Be Done Same Day?",
-          "ar": "الموعد النهائي لخدمة نفس اليوم",
-          "ru": "Крайний срок для услуги в тот же день",
-          "zh": "当天服务的截止时间",
-          "es": "Fecha Límite para el Servicio el Mismo Día"
-        },
-        {
-          "en": "Mobile Notary — We Come to You",
-          "ar": "الكاتب العدل المتنقل — نأتي إليكم أينما كنتم",
-          "ru": "Выездной нотариус — мы приедем к вам",
-          "zh": "上门公证——我们上门服务",
-          "es": "Notario Móvil — Acudimos a Usted"
         }
       ],
       "content": [
@@ -27083,7 +27137,40 @@
           "es": "Apostilla — 1-3 días hábiles después de la notarización"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "What factors affect same-day notarization timing?",
+            "ar": "ما العوامل التي تؤثر على توقيت التوثيق في نفس اليوم؟",
+            "ru": "Какие факторы влияют на сроки нотариального заверения в тот же день?",
+            "zh": "哪些因素会影响当天公证的时间？",
+            "es": "¿Qué factores afectan el tiempo de notarización el mismo día?"
+          },
+          "a": {
+            "en": "Several factors can affect whether a notarization can be completed the same day: the number of signatories (each principal needs a separate video call appointment); whether MOFA attestation is required (this adds processing time beyond same-day); and document readiness — all required information must be confirmed before the appointment is scheduled. Contact us via WhatsApp to confirm same-day availability for your specific document.",
+            "ar": "تؤثر عدة عوامل على إمكانية إتمام التوثيق في نفس اليوم: عدد الموقِّعين (كل موكِّل يحتاج موعد مكالمة فيديو منفصلاً)؛ ومدى الحاجة إلى تصديق وزارة الخارجية (الذي يضيف وقت معالجة يتجاوز نفس اليوم)؛ واكتمال الوثائق — يجب تأكيد جميع المعلومات المطلوبة قبل تحديد الموعد. تواصل معنا عبر واتساب للتأكد من توافر خدمة نفس اليوم لوثيقتك.",
+            "ru": "На возможность нотариального заверения в тот же день влияют: количество подписантов (каждому доверителю нужна отдельная запись на видеозвонок); необходимость аттестации MOFA (это добавляет время сверх одного дня); и готовность документов. Свяжитесь с нами через WhatsApp для подтверждения доступности услуги в тот же день.",
+            "zh": "影响当天能否完成公证的因素包括：签署人数量（每位委托人需要单独的视频通话预约）；是否需要外交部认证（这会增加超出当天的处理时间）；以及文件准备情况——预约前必须确认所有所需信息。请通过WhatsApp联系我们，确认您具体文件的当天服务可用性。",
+            "es": "Varios factores pueden afectar si una notarización puede completarse el mismo día: el número de firmantes (cada principal necesita una cita de videollamada separada); si se requiere atestación de MOFA (esto añade tiempo de procesamiento más allá del mismo día); y la disponibilidad de documentos. Contáctenos por WhatsApp para confirmar la disponibilidad del servicio el mismo día."
+          }
+        },
+        {
+          "q": {
+            "en": "What cannot be notarized same day?",
+            "ar": "ما الذي لا يمكن توثيقه في نفس اليوم؟",
+            "ru": "Что нельзя нотариально заверить в тот же день?",
+            "zh": "哪些文件不能当天公证？",
+            "es": "¿Qué no se puede notarizar el mismo día?"
+          },
+          "a": {
+            "en": "While most Powers of Attorney and notarial documents can be completed same day, the following cannot: documents requiring MOFA (Ministry of Foreign Affairs) attestation — this takes 2-3 business days; documents requiring embassy attestation — this typically takes 5-10 business days; and documents requiring certified legal translation before notarization — translation adds 1-2 business days.",
+            "ar": "رغم أن معظم الوكالات والوثائق الرسمية يمكن إتمامها في نفس اليوم، ثمة استثناءات: الوثائق التي تستلزم تصديق وزارة الخارجية (تستغرق يومين إلى ثلاثة أيام عمل)؛ والوثائق التي تستلزم تصديق السفارة (تستغرق عادةً خمسة إلى عشرة أيام عمل)؛ والوثائق التي تستلزم ترجمة قانونية معتمدة قبل التوثيق.",
+            "ru": "Документы, требующие аттестации MOFA (2-3 рабочих дня), аттестации посольства (5-10 рабочих дней) или сертифицированного юридического перевода (1-2 рабочих дня), не могут быть оформлены в тот же день.",
+            "zh": "需要外交部认证（2-3个工作日）、大使馆认证（通常5-10个工作日）或公证前需要经认证法律翻译（增加1-2个工作日）的文件无法当天完成公证。",
+            "es": "Los documentos que requieren atestación de MOFA (2-3 días hábiles), atestación de embajada (5-10 días hábiles) o traducción legal certificada antes de la notarización (1-2 días hábiles) no pueden completarse el mismo día."
+          }
+        }
+      ]
     },
     "mofa-attestation-guide": {
       "title_en": "MOFA Attestation Guide Dubai: Step-by-Step 2026 | E-Notary Dubai",
@@ -27209,20 +27296,6 @@
           "ru": "Доверенности компаний свободных зон — особые требования",
           "zh": "自由区公司授权书——特殊要求",
           "es": "POA de Empresas de Zona Franca — Requisitos Especiales"
-        },
-        {
-          "en": "Can a Company Give Someone a General POA?",
-          "ar": "المستندات المطلوبة للوكالة الشركاتية",
-          "ru": "Документы, необходимые для корпоративной доверенности",
-          "zh": "公司授权书所需文件",
-          "es": "Documentos Requeridos para un POA Corporativo"
-        },
-        {
-          "en": "Free Zone Companies — Special Considerations",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何为您提供帮助",
-          "es": "Cómo le Ayudamos"
         }
       ],
       "content": [
@@ -27278,7 +27351,24 @@
           "es": "Sello de empresa"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "Can a company (LLC or Free Zone) give someone a General POA?",
+            "ar": "هل يمكن لشركة (ذات مسؤولية محدودة أو منطقة حرة) منح شخص توكيلاً عاماً؟",
+            "ru": "Может ли компания (ООО или компания в Свободной зоне) выдать кому-либо Генеральную доверенность?",
+            "zh": "一家公司（有限责任公司或自由区公司）可以授予某人一般授权书吗？",
+            "es": "¿Puede una empresa (LLC o Zona Franca) otorgar un POA General a alguien?"
+          },
+          "a": {
+            "en": "Yes. A UAE company can issue a Power of Attorney authorizing an individual or another entity to act on its behalf. For an LLC, this requires a Board Resolution (قرار مجلس الإدارة) approving the POA and specifying the scope of authority. For Free Zone companies (DMCC, DAFZA, Hamriyah, etc.), the process follows the same steps: Board Resolution, then the authorized signatory on the Trade License meets with the Notary via a video call through Dubai Courts or the UAE Ministry of Justice to sign and notarize the POA. Required documents: Trade License, MOA, Emirates IDs of partners, and Emirates ID of the agent.",
+            "ar": "نعم. يمكن للشركة الإماراتية إصدار وكالة قانونية تُخوِّل فرداً أو جهةً للتصرف نيابةً عنها. يستلزم ذلك في الشركات ذات المسؤولية المحدودة قراراً من مجلس الإدارة يُقرِّر الوكالة ويحدد نطاق الصلاحية. وفي شركات المناطق الحرة (مركز دبي للسلع المتعددة وسواه)، تسير العملية بالخطوات ذاتها: قرار مجلس الإدارة، ثم اجتماع المفوَّض بالتوقيع في الرخصة التجارية مع كاتب العدل عبر مكالمة فيديو من خلال محاكم دبي أو وزارة العدل الاتحادية لتوقيع الوكالة وتوثيقها. الوثائق المطلوبة: الرخصة التجارية، وعقد التأسيس، وبطاقات هوية الشركاء، وبطاقة هوية الوكيل.",
+            "ru": "Да. Компания ОАЭ может выдать доверенность, уполномочивающую физическое или юридическое лицо действовать от её имени. Для ООО требуется Решение Совета директоров. Для компаний Свободных зон (DMCC и др.) процесс аналогичный: Решение Совета, затем уполномоченное лицо встречается с нотариусом через видеозвонок через суды Дубая или Министерство юстиции ОАЭ. Необходимые документы: Торговая лицензия, MOA, Emirates ID партнёров и агента.",
+            "zh": "是的。阿联酋公司可以发出授权书，授权个人或其他实体代表其行事。对于有限责任公司，这需要董事会决议批准授权书并明确权限范围。对于自由区公司（DMCC等），流程相同：董事会决议，然后营业执照上的授权签署人通过迪拜法院或阿联酋司法部视频通话与公证人会面签署并公证授权书。所需文件：营业执照、章程大纲、合伙人酋长国身份证和代理人酋长国身份证。",
+            "es": "Sí. Una empresa de los EAU puede emitir un POA que autorice a un individuo u otra entidad a actuar en su nombre. Para una LLC, esto requiere una Resolución de la Junta que apruebe el POA. Para empresas de Zonas Francas (DMCC, etc.), el proceso sigue los mismos pasos: Resolución de la Junta, luego el firmante autorizado en la Licencia Comercial se reúne con el Notario mediante videollamada a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU. Documentos requeridos: Licencia Comercial, MOA, Emirates IDs de socios y del agente."
+          }
+        }
+      ]
     },
     "corporate-documents-dubai": {
       "title_en": "Corporate Documents in Dubai: MOA, Board Resolutions & SHA | E-Notary Dubai",
@@ -27410,20 +27500,6 @@
           "ru": "Сроки рассмотрения дел",
           "zh": "案件处理时间",
           "es": "Plazos de los Casos"
-        },
-        {
-          "en": "What Happens at RDC — The Process",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何帮助您",
-          "es": "Cómo le Ayudamos"
-        },
-        {
-          "en": "How Long Does an RDC Case Take?",
-          "ar": "ما هو مركز RDC دبي؟",
-          "ru": "Сколько времени занимает дело в RDC?",
-          "zh": "RDC案件需要多长时间？",
-          "es": "¿Cuánto Tarda un Caso en el RDC?"
         }
       ],
       "content": [
@@ -27486,7 +27562,24 @@
           "es": "Cualquier evidencia relevante: fotos, informes, mensajes"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "How long does an RDC case take in Dubai?",
+            "ar": "كم تستغرق قضية مركز تسوية النزاعات الإيجارية في دبي؟",
+            "ru": "Сколько длится дело в RDC (Центре разрешения споров по аренде) в Дубае?",
+            "zh": "迪拜租赁纠纷中心案件需要多长时间？",
+            "es": "¿Cuánto tiempo tarda un caso en el RDC de Dubái?"
+          },
+          "a": {
+            "en": "The duration of an RDC (Rental Disputes Centre) case in Dubai depends on its complexity. Simple cases (unpaid rent, minor disputes) are typically resolved in 1-3 months. Cases involving eviction notices, contested facts, or multiple hearings may take 3-6 months. Cases appealed to the Court of Appeal or Court of Cassation can take 6-18 months. Providing all required documents at the first hearing significantly reduces the timeline.",
+            "ar": "تعتمد مدة قضية مركز تسوية النزاعات الإيجارية في دبي على مدى تعقيدها. تُحسَم القضايا البسيطة (الإيجار غير المدفوع والنزاعات البسيطة) عادةً في شهر إلى ثلاثة أشهر. وقد تستغرق قضايا الإخلاء والوقائع المتنازع عليها أو التي تتضمن جلسات متعددة من ثلاثة إلى ستة أشهر. وقد تمتد القضايا المطعون فيها أمام محكمة الاستئناف أو النقض من ستة أشهر إلى ثمانية عشر شهراً.",
+            "ru": "Продолжительность дела в RDC зависит от его сложности. Простые дела (неоплаченная аренда) обычно решаются за 1-3 месяца. Дела с выселением или оспариваемыми фактами могут занять 3-6 месяцев. Дела в апелляции — 6-18 месяцев.",
+            "zh": "迪拜租赁纠纷中心案件的持续时间取决于其复杂程度。简单案件（未付租金、小纠纷）通常在1-3个月内解决。涉及驱逐通知、争议事实或多次听证的案件可能需要3-6个月。上诉至上诉法院或破产法院的案件可能需要6-18个月。",
+            "es": "La duración de un caso en el RDC depende de su complejidad. Los casos simples (alquiler impago, disputas menores) se resuelven típicamente en 1-3 meses. Los casos de desalojo o con hechos disputados pueden tomar 3-6 meses. Los casos apelados pueden tomar 6-18 meses."
+          }
+        }
+      ]
     },
     "eviction-notice-requirements-dubai": {
       "title_en": "Eviction Notice Requirements Dubai 2026 | E-Notary Dubai",
@@ -27529,20 +27622,6 @@
           "ru": "Что происходит при вручении ненадлежащим методом?",
           "zh": "如果通过未经授权的方式送达会怎样？",
           "es": "¿Qué Pasa si Entrega por Método No Autorizado?"
-        },
-        {
-          "en": "What Happens if You Serve an Invalid Notice?",
-          "ar": "خدمة فورية في نفس اليوم",
-          "ru": "Срочное оформление в тот же день",
-          "zh": "当天快速服务",
-          "es": "Servicio Urgente el Mismo Día"
-        },
-        {
-          "en": "Frequently Asked Questions",
-          "ar": "الأسئلة الشائعة",
-          "ru": "Часто задаваемые вопросы",
-          "zh": "常见问题",
-          "es": "Preguntas Frecuentes"
         }
       ],
       "content": [
@@ -27619,7 +27698,24 @@
           "es": "Incumplimiento del contrato de arrendamiento: aviso de 30 días"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "What happens if you serve an invalid eviction notice in Dubai?",
+            "ar": "ماذا يحدث إذا سلّمت إشعار إخلاء غير صحيح في دبي؟",
+            "ru": "Что произойдёт, если вы вручите недействительное уведомление о выселении в Дубае?",
+            "zh": "在迪拜发出无效驱逐通知会发生什么？",
+            "es": "¿Qué sucede si sirve una notificación de desalojo inválida en Dubái?"
+          },
+          "a": {
+            "en": "Serving an invalid eviction notice in Dubai has serious consequences. The notice is legally void — the tenant is not required to vacate, and if they do not, you cannot file for eviction at RDC based on that notice. You must restart the process with a new valid notice and wait out the full notice period again (12 months for personal use, 3-12 months for other reasons). Invalid notices served via WhatsApp or SMS are also void under Dubai Law No. 33/2008.",
+            "ar": "تسليم إشعار إخلاء غير صحيح له عواقب خطيرة. الإشعار باطل قانوناً — المستأجر غير ملزم بالإخلاء، وإذا رفض، لا يمكنك تقديم طلب إخلاء في مركز تسوية النزاعات الإيجارية بناءً على ذلك الإشعار. يجب إعادة الإجراء بإشعار صحيح جديد وانتظار فترة الإشعار كاملة من جديد.",
+            "ru": "Недействительное уведомление о выселении юридически ничтожно — арендатор не обязан освобождать жильё. Вы должны начать процесс заново с новым действительным уведомлением и ждать полный срок уведомления снова.",
+            "zh": "发出无效驱逐通知在法律上无效——租户无需搬出。如果租户拒绝，您无法凭该通知向租赁纠纷解决中心提起驱逐申请。您必须重新开始程序，发出新的有效通知，并再次等待完整的通知期。",
+            "es": "Una notificación de desalojo inválida es legalmente nula. El inquilino no está obligado a desocupar y no puede presentar una solicitud de desalojo en el RDC basada en esa notificación. Debe reiniciar el proceso con una nueva notificación válida y esperar el período de notificación completo nuevamente."
+          }
+        }
+      ]
     },
     "last-will-testament-dubai-expats": {
       "title_en": "Why Every Expat in Dubai Needs a Will — And How to Make One | E-Notary Dubai",
@@ -27648,27 +27744,6 @@
           "ru": "Где можно зарегистрировать завещание в Дубае?",
           "zh": "在迪拜可以在哪里登记遗嘱？",
           "es": "¿Dónde Puede Registrarse un Testamento en Dubái?"
-        },
-        {
-          "en": "What Can a Dubai Will Cover?",
-          "ar": "ماذا يحدث إذا توفيت بدون وصية في الإمارات؟",
-          "ru": "Что происходит, если вы умерли без завещания в ОАЭ?",
-          "zh": "如果您在阿联酋没有遗嘱去世会发生什么？",
-          "es": "¿Qué Sucede si Fallece sin Testamento en los EAU?"
-        },
-        {
-          "en": "Can I Specify Guardianship in a Dubai Will?",
-          "ar": "ما الذي يمكن للوصية أن تشمله؟",
-          "ru": "Что может охватывать завещание?",
-          "zh": "遗嘱可以涵盖什么？",
-          "es": "¿Qué Puede Cubrir un Testamento?"
-        },
-        {
-          "en": "How Long Does It Take?",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何帮助您",
-          "es": "Cómo le Ayudamos"
         }
       ],
       "content": [
@@ -27738,7 +27813,56 @@
           "es": "Instrucciones para distribución de activos fuera de los EAU"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "What can a Dubai Will cover?",
+            "ar": "ماذا يمكن أن تتضمن الوصية في دبي؟",
+            "ru": "Что может охватывать завещание в Дубае?",
+            "zh": "迪拜遗嘱可以涵盖哪些内容？",
+            "es": "¿Qué puede cubrir un testamento en Dubái?"
+          },
+          "a": {
+            "en": "A Will notarized in Dubai (through Dubai Courts or the UAE Ministry of Justice via a video call) can cover: distribution of UAE-based assets (bank accounts, investment portfolios, real estate, vehicles, and business shares); appointment of guardians for minor children; nomination of executors to administer the estate; and specific bequests — leaving particular assets to named individuals. The Will must be notarized by a licensed Notary Public to be legally enforceable in the UAE.",
+            "ar": "تستطيع الوصية الموثَّقة في دبي (عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو) أن تتضمن: توزيع الأصول الإماراتية (حسابات بنكية ومحافظ استثمارية وعقارات ومركبات وحصص تجارية)؛ وتعيين أوصياء على الأطفال القاصرين؛ وتسمية منفِّذي الوصية؛ وتحديد وصايا بعينها — ترك أصول محددة لأشخاص مُسمَّين. يجب أن تُوثَّق الوصية لدى كاتب عدل مرخَّص لتكون قابلة للتنفيذ قانونياً في الإمارات.",
+            "ru": "Завещание, заверенное в Дубае (через суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка), может охватывать: распределение активов в ОАЭ (банковские счета, недвижимость, автомобили, доли в бизнесе); назначение опекунов для несовершеннолетних; назначение исполнителей завещания; конкретные завещательные отказы. Завещание должно быть нотариально заверено лицензированным нотариусом.",
+            "zh": "在迪拜公证的遗嘱（通过迪拜法院或阿联酋司法部视频通话）可以涵盖：阿联酋境内资产的分配（银行账户、投资组合、房产、车辆和商业股份）；未成年子女监护人的任命；遗嘱执行人的指定；以及特定遗产的遗赠——将特定资产留给指定人员。遗嘱须经持牌公证人公证方可在阿联酋具有法律效力。",
+            "es": "Un testamento notariado en Dubái (a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada) puede cubrir: distribución de activos en los EAU (cuentas bancarias, carteras de inversión, bienes inmuebles, vehículos y participaciones empresariales); nombramiento de tutores para hijos menores; designación de albaceas; y legados específicos. El testamento debe ser notariado por un notario público con licencia."
+          }
+        },
+        {
+          "q": {
+            "en": "Can I specify guardianship for my children in a Dubai Will?",
+            "ar": "هل يمكنني تحديد الوصاية على أطفالي في وصية دبي؟",
+            "ru": "Могу ли я указать опекуна для своих детей в завещании Дубая?",
+            "zh": "我可以在迪拜遗嘱中指定子女监护人吗？",
+            "es": "¿Puedo especificar la tutela de mis hijos en un testamento de Dubái?"
+          },
+          "a": {
+            "en": "Yes. Expatriates can appoint a guardian for their minor children in a Will notarized through Dubai Courts or the UAE Ministry of Justice via a video call. The appointed guardian will be responsible for the children's care and upbringing if both parents pass away. Without a notarized Will, guardianship decisions default to UAE courts applying UAE Personal Status Law, which may not reflect the parents' wishes.",
+            "ar": "نعم. يمكن للمغتربين تعيين وصيّ على أطفالهم القاصرين في وصية موثَّقة عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. يكون الوصيّ المُعيَّن مسؤولاً عن رعاية الأطفال وتربيتهم في حال وفاة الوالدين. بدون وصية موثَّقة، تعود قرارات الوصاية إلى المحاكم الإماراتية وفق قانون الأحوال الشخصية الإماراتي، وهو ما قد لا يعكس رغبات الوالدين.",
+            "ru": "Да. Иностранные граждане могут назначить опекуна для своих несовершеннолетних детей в завещании, заверенном через суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка. Без нотариально заверенного завещания решения об опеке принимают суды ОАЭ по законодательству ОАЭ о личном статусе.",
+            "zh": "是的。外籍人士可以在通过迪拜法院或阿联酋司法部视频通话公证的遗嘱中为未成年子女指定监护人。如果没有公证遗嘱，监护权决定将由阿联酋法院根据阿联酋个人身份法作出，这可能不符合父母的意愿。",
+            "es": "Sí. Los expatriados pueden nombrar un tutor para sus hijos menores en un testamento notariado a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada. Sin un testamento notariado, los tribunales de los EAU decidirán sobre la tutela según la ley local de estatuto personal."
+          }
+        },
+        {
+          "q": {
+            "en": "How long does it take to register a Will in Dubai?",
+            "ar": "كم يستغرق تسجيل الوصية في دبي؟",
+            "ru": "Сколько времени занимает регистрация завещания в Дубае?",
+            "zh": "在迪拜注册遗嘱需要多长时间？",
+            "es": "¿Cuánto tiempo lleva registrar un testamento en Dubái?"
+          },
+          "a": {
+            "en": "The process is completed through Dubai Courts or the UAE Ministry of Justice via a video call. Timing depends on document readiness and appointment availability. Most notarizations are completed the same day or within 1-2 business days once all documents are prepared. Contact us via WhatsApp to confirm the timeline for your specific situation.",
+            "ar": "تتم العملية عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تعتمد المدة على اكتمال الوثائق وتوافر المواعيد. تُنجز معظم التوثيقات في نفس اليوم أو في غضون يوم إلى يومي عمل بعد اكتمال جميع الوثائق. تواصل معنا عبر واتساب للتأكد من الجدول الزمني لحالتك.",
+            "ru": "Процесс осуществляется через суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка. Сроки зависят от готовности документов и наличия записи. Большинство нотариальных заверений завершается в тот же день или в течение 1-2 рабочих дней. Свяжитесь с нами через WhatsApp для уточнения сроков.",
+            "zh": "该过程通过迪拜法院或阿联酋司法部视频通话完成。时间取决于文件准备情况和预约可用性。大多数公证在所有文件准备好后当天或1-2个工作日内完成。请通过WhatsApp联系我们确认您具体情况的时间安排。",
+            "es": "El proceso se completa a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada. El tiempo depende de la disponibilidad de los documentos y de las citas. La mayoría de las notarizaciones se completan el mismo día o en 1-2 días hábiles. Contáctenos por WhatsApp para confirmar el cronograma para su situación específica."
+          }
+        }
+      ]
     },
     "legal-translation-dubai-guide": {
       "title_en": "Legal Translation Dubai 2026 — Complete Guide | E-Notary Dubai",
@@ -27781,13 +27905,6 @@
           "ru": "Сроки и стоимость",
           "zh": "时间和费用",
           "es": "Plazos y Tarifas"
-        },
-        {
-          "en": "How Long Does Legal Translation Take?",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何帮助您",
-          "es": "Cómo le Ayudamos"
         }
       ],
       "content": [
@@ -27850,7 +27967,24 @@
           "es": "POA o documentos legales que necesitan usarse en el extranjero en un idioma distinto al original"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "How long does legal translation take in Dubai?",
+            "ar": "كم يستغرق وقت الترجمة القانونية في دبي؟",
+            "ru": "Сколько времени занимает юридический перевод в Дубае?",
+            "zh": "在迪拜法律翻译需要多长时间？",
+            "es": "¿Cuánto tiempo lleva la traducción legal en Dubái?"
+          },
+          "a": {
+            "en": "Timing depends on the length and complexity of the document. Standard documents (POAs, contracts, certificates) are typically completed within 1-3 business days. Urgent same-day or next-day translation is available for most standard documents — contact us via WhatsApp to confirm availability. Large documents (court judgments, full company files) may require additional time. All certified translations are signed and stamped by a UAE Ministry of Justice licensed legal translator.",
+            "ar": "تعتمد المدة على طول الوثيقة وتعقيدها. تُنجز الوثائق القياسية (وكالات وعقود وشهادات) عادةً في غضون يوم إلى ثلاثة أيام عمل. الترجمة العاجلة في نفس اليوم أو اليوم التالي متاحة لمعظم الوثائق القياسية — تواصل معنا عبر واتساب للتأكد من التوافر. الوثائق الكبيرة (أحكام المحاكم وملفات الشركات الكاملة) قد تستلزم وقتاً إضافياً. جميع الترجمات المعتمدة موقَّعة ومختومة من مترجم قانوني مرخَّص من وزارة العدل الإماراتية.",
+            "ru": "Сроки зависят от объёма и сложности документа. Стандартные документы (доверенности, контракты, сертификаты) обычно выполняются за 1-3 рабочих дня. Срочный перевод в тот же день или на следующий день доступен для большинства стандартных документов — свяжитесь с нами через WhatsApp для подтверждения. Все сертифицированные переводы подписаны и проштампованы лицензированным переводчиком МЮ ОАЭ.",
+            "zh": "时间取决于文件的长度和复杂程度。标准文件（授权书、合同、证书）通常在1-3个工作日内完成。大多数标准文件可提供加急当天或次日翻译——请通过WhatsApp联系我们确认可用性。大型文件（法院判决、完整公司档案）可能需要额外时间。所有认证翻译均由阿联酋司法部持牌法律翻译人员签字盖章。",
+            "es": "El tiempo depende de la longitud y complejidad del documento. Los documentos estándar (POAs, contratos, certificados) generalmente se completan en 1-3 días hábiles. La traducción urgente el mismo día o al día siguiente está disponible para la mayoría de documentos estándar — contáctenos por WhatsApp para confirmar disponibilidad. Todos los documentos traducidos están firmados y sellados por un traductor legal con licencia del Ministerio de Justicia de los EAU."
+          }
+        }
+      ]
     },
     "travelling-minor-child-uae-rules": {
       "title_en": "UAE Rules for Children Travelling Without Both Parents | E-Notary Dubai",
@@ -27893,20 +28027,6 @@
           "ru": "Что происходит, если у вас нет документов?",
           "zh": "如果您没有相关文件会怎样？",
           "es": "¿Qué Ocurre si no Tiene los Documentos?"
-        },
-        {
-          "en": "What if the Parents Are Divorced?",
-          "ar": "خدمة فورية في نفس اليوم",
-          "ru": "Срочное оформление в тот же день",
-          "zh": "当天快速服务",
-          "es": "Servicio Urgente el Mismo Día"
-        },
-        {
-          "en": "What Happens at the Airport if Documents Are Wrong?",
-          "ar": "قواعد الهجرة الإماراتية للقاصرين المسافرين",
-          "ru": "Что происходит в аэропорту, если документы неверны?",
-          "zh": "如果文件有误，在机场会发生什么？",
-          "es": "¿Qué Ocurre en el Aeropuerto si los Documentos son Incorrectos?"
         }
       ],
       "content": [
@@ -27969,7 +28089,40 @@
           "es": "Menor con solo el apellido de un padre en el pasaporte"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "What documents are needed if the parents are divorced and the child is travelling?",
+            "ar": "ما الوثائق المطلوبة إذا كان الوالدان منفصلَين وأراد الطفل السفر؟",
+            "ru": "Какие документы нужны, если родители в разводе и ребёнок путешествует?",
+            "zh": "如果父母离婚，孩子旅行需要哪些文件？",
+            "es": "¿Qué documentos se necesitan si los padres están divorciados y el niño viaja?"
+          },
+          "a": {
+            "en": "If the parents are divorced, the travelling parent must provide: a certified copy of the divorce decree (attested if foreign); a certified copy of the custody order confirming which parent holds legal custody; if the non-custodial parent is required to give consent under the custody order, a notarized Child Travel POA from the non-custodial parent; and the child's valid passport and UAE residence visa (if applicable). UAE immigration authorities are strict — missing any document can result in the child being denied boarding.",
+            "ar": "إذا كان الوالدان منفصلَين، يجب على الوالد المسافر مع الطفل تقديم: نسخة معتمدة من حكم الطلاق (موثَّقة إذا كانت صادرة في الخارج)؛ ونسخة معتمدة من حكم الحضانة يُثبت أيّ الوالدين يملك الحضانة القانونية؛ وإذا اشترط حكم الحضانة موافقة الوالد غير الحاضن، فإن وكالة سفر طفل موثَّقة من الوالد غير الحاضن؛ وجواز سفر الطفل الساري وتأشيرة الإقامة الإماراتية (إن وُجدت). سلطات الهجرة الإماراتية صارمة في هذا الشأن.",
+            "ru": "Путешествующий родитель должен предоставить: заверенную копию решения о разводе; заверенную копию решения об опеке; нотариально заверенную доверенность на поездку ребёнка от второго родителя (если требуется по решению об опеке); и действительный паспорт ребёнка.",
+            "zh": "如果父母离婚，旅行的父/母必须提供：离婚判决书的认证副本（如果是外国文件需经认证）；监护令的认证副本，确认哪方父/母拥有法律监护权；如果监护令要求非监护方同意，则需要非监护方的公证儿童旅行授权书；以及孩子的有效护照和阿联酋居留签证（如适用）。",
+            "es": "Si los padres están divorciados, el padre que viaja debe proporcionar: una copia certificada del decreto de divorcio; una copia certificada de la orden de custodia; si la orden de custodia requiere el consentimiento del padre no custodio, un POA de viaje de menores notariado de ese padre; y el pasaporte válido del niño y visa de residencia de los EAU (si aplica)."
+          }
+        },
+        {
+          "q": {
+            "en": "What happens at the airport if a minor's travel documents are incomplete?",
+            "ar": "ماذا يحدث في المطار إذا كانت وثائق سفر القاصر ناقصة؟",
+            "ru": "Что происходит в аэропорту, если документы несовершеннолетнего неполные?",
+            "zh": "如果未成年人的旅行文件不齐全，在机场会发生什么？",
+            "es": "¿Qué sucede en el aeropuerto si los documentos de viaje de un menor están incompletos?"
+          },
+          "a": {
+            "en": "If a minor arrives at UAE immigration or check-in with incomplete or missing travel documents, the child will be denied boarding or entry. For departures from the UAE: the airline's check-in staff and UAE immigration will check the documents — if the required POA or consent letter is missing, the child will not be allowed to board. For arrivals into the UAE: UAE immigration may detain the child until the matter is resolved with the relevant parent or guardian. Do not travel without confirming the exact documents required for your specific situation.",
+            "ar": "إذا وصل قاصر إلى مكتب هجرة الإمارات أو منضدة تسجيل الوصول بوثائق ناقصة، سيُمنع من الصعود إلى الطائرة أو الدخول. للمغادرة من الإمارات: سيتحقق موظفو المطار وإدارة الهجرة من الوثائق — وإذا كانت الوكالة أو خطاب الموافقة مفقوداً، لن يُسمح للطفل بالصعود. للقدوم إلى الإمارات: قد تحتجز إدارة الهجرة الطفلَ حتى حلّ الأمر مع الوالد أو الولي المعني.",
+            "ru": "Если несовершеннолетний прибывает в аэропорт с неполными документами, ему будет отказано в посадке или въезде. При вылете из ОАЭ: без необходимой доверенности ребёнок не будет допущен на борт. При въезде в ОАЭ: иммиграционная служба может задержать ребёнка до урегулирования вопроса.",
+            "zh": "如果未成年人到达阿联酋移民局或值机柜台时旅行文件不齐全，将被拒绝登机或入境。从阿联酋出发时：如果缺少所需的授权书或同意书，孩子将不被允许登机。抵达阿联酋时：移民局可能扣押孩子，直到与相关父/母或监护人解决问题。",
+            "es": "Si un menor llega con documentos incompletos, se le negará el embarque o la entrada. Para las salidas de los EAU: sin el POA o carta de consentimiento requerida, el niño no podrá abordar. Para las llegadas a los EAU: inmigración puede detener al niño hasta que se resuelva el asunto."
+          }
+        }
+      ]
     },
     "eviction-notice-dubai-guide": {
       "title_en": "Eviction Notice Dubai: Complete Legal Guide 2026 | E-Notary Dubai",
@@ -27998,13 +28151,6 @@
           "ru": "Заказная почта — второй допустимый метод",
           "zh": "挂号信——第二种可接受的方式",
           "es": "Correo Certificado — El Segundo Método Aceptado"
-        },
-        {
-          "en": "Related Services",
-          "ar": "رسالة واتساب ليست إشعار إخلاء",
-          "ru": "Сообщение WhatsApp — не уведомление о выселении",
-          "zh": "WhatsApp消息不是驱逐通知",
-          "es": "Un Mensaje de WhatsApp no es un Aviso de Desalojo"
         }
       ],
       "content": [
@@ -28150,27 +28296,6 @@
           "ru": "Может ли адвокат выполнять функции нотариуса?",
           "zh": "律师可以代行公证人的职能吗？",
           "es": "¿Puede un Abogado Realizar Funciones de Notario?"
-        },
-        {
-          "en": "When Do You Need a Lawyer?",
-          "ar": "متى تحتاج الاثنين معاً؟",
-          "ru": "Когда нужны оба?",
-          "zh": "何时两者都需要？",
-          "es": "¿Cuándo Necesita Ambos?"
-        },
-        {
-          "en": "Can the Same Person Be Both?",
-          "ar": "كيف نساعدك",
-          "ru": "Как мы помогаем",
-          "zh": "我们如何帮助您",
-          "es": "Cómo le Ayudamos"
-        },
-        {
-          "en": "Do I Need a Lawyer to Get a POA Notarized?",
-          "ar": "ما الذي يفعله كاتب العدل في دبي؟",
-          "ru": "Нужен ли мне юрист для нотариального заверения доверенности?",
-          "zh": "我需要律师来公证授权书吗？",
-          "es": "¿Necesito un Abogado para Notarizar un POA?"
         }
       ],
       "content": [
@@ -28268,7 +28393,56 @@
           "es": "Necesita asesoramiento legal sobre sus derechos en una situación específica"
         }
       ],
-      "faq": []
+      "faq": [
+        {
+          "q": {
+            "en": "When do you need a lawyer instead of a notary in Dubai?",
+            "ar": "متى تحتاج إلى محامٍ بدلاً من كاتب عدل في دبي؟",
+            "ru": "Когда вам нужен юрист, а не нотариус в Дубае?",
+            "zh": "什么时候需要律师而不是公证人？",
+            "es": "¿Cuándo necesita un abogado en lugar de un notario en Dubái?"
+          },
+          "a": {
+            "en": "You need a lawyer (not a notary) when: you are involved in a dispute or litigation and need legal representation in court; you need legal advice on the terms of a contract before signing; you are negotiating a settlement or mediation; or you need someone to challenge a legal document's validity. A notary public can only authenticate documents and witness signatures — they cannot provide legal advice or represent you in court.",
+            "ar": "تحتاج إلى محامٍ (وليس كاتب عدل) عند: تورطك في نزاع أو قضية قضائية وحاجتك إلى تمثيل قانوني في المحكمة؛ وحاجتك إلى مشورة قانونية حول بنود عقد قبل التوقيع؛ والتفاوض على تسوية أو وساطة؛ أو الحاجة إلى الطعن في صحة وثيقة قانونية. كاتب العدل يُوثِّق الوثائق ويشهد التوقيعات فحسب.",
+            "ru": "Юрист нужен, когда вы участвуете в споре или судебном разбирательстве, нуждаетесь в юридической консультации по условиям контракта или ведёте переговоры об урегулировании. Нотариус только заверяет документы — он не может давать юридические советы или представлять вас в суде.",
+            "zh": "在以下情况下需要律师（而非公证人）：您涉及纠纷或诉讼需要法庭法律代理；您需要就合同条款获得法律建议；您正在进行和解谈判或调解；或者您需要质疑法律文件的有效性。公证人只能认证文件和见证签名，不能提供法律建议或在法庭代理您。",
+            "es": "Necesita un abogado (no un notario) cuando: está involucrado en una disputa o litigio; necesita asesoramiento legal sobre los términos de un contrato; está negociando un acuerdo; o necesita impugnar la validez de un documento legal. Un notario público solo puede autenticar documentos y presenciar firmas."
+          }
+        },
+        {
+          "q": {
+            "en": "Can the same person be both a notary and a lawyer in Dubai?",
+            "ar": "هل يمكن للشخص ذاته أن يكون كاتب عدل ومحاميًا في دبي؟",
+            "ru": "Может ли один человек быть одновременно нотариусом и юристом в Дубае?",
+            "zh": "在迪拜，同一个人可以既是公证人又是律师吗？",
+            "es": "¿Puede la misma persona ser notario y abogado en Dubái?"
+          },
+          "a": {
+            "en": "No. In the UAE, licensed Notary Publics and licensed Lawyers are distinct legal professions regulated by different authorities. Notary Publics are regulated by the Dubai Courts or UAE Ministry of Justice and are authorized specifically to authenticate documents and witness signatures. Lawyers are regulated by the UAE Ministry of Justice and the respective Bar Association and are authorized to provide legal advice and court representation. One person cannot hold both roles simultaneously.",
+            "ar": "لا. في الإمارات، يُعدّ كتّاب العدل المرخَّصون والمحامون المرخَّصون مهنتين قانونيتين مستقلتين تخضعان لجهات تنظيمية مختلفة. يتولى كتابة العدل توثيق الوثائق وتصديق التوقيعات حصراً، بينما يُقدِّم المحامون المشورة القانونية ويُمثِّلون الأطراف أمام المحاكم. لا يمكن لشخص واحد الجمع بين الدورين في آنٍ واحد.",
+            "ru": "Нет. В ОАЭ лицензированные нотариусы и лицензированные юристы — это отдельные юридические профессии, регулируемые разными органами. Один человек не может занимать обе должности одновременно.",
+            "zh": "不可以。在阿联酋，持牌公证人和持牌律师是由不同机构监管的独立法律职业。公证人专门负责认证文件和见证签名，而律师提供法律建议并在法庭代理。一个人不能同时担任两个角色。",
+            "es": "No. En los EAU, los notarios públicos licenciados y los abogados licenciados son profesiones jurídicas distintas reguladas por diferentes autoridades. Una persona no puede ejercer ambos roles simultáneamente."
+          }
+        },
+        {
+          "q": {
+            "en": "Do I need a lawyer to get a POA notarized in Dubai?",
+            "ar": "هل أحتاج إلى محامٍ للحصول على توثيق وكالة قانونية في دبي؟",
+            "ru": "Нужен ли мне юрист для нотариального заверения доверенности в Дубае?",
+            "zh": "在迪拜公证授权书需要律师吗？",
+            "es": "¿Necesito un abogado para notarizar un POA en Dubái?"
+          },
+          "a": {
+            "en": "No. You do not need a lawyer to get a Power of Attorney notarized in Dubai. We handle the full process: drafting the document based on your instructions, coordinating the notarization appointment, and ensuring the POA is correctly structured for the authority or institution that will accept it. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. A lawyer is only needed if you have a legal dispute about the POA's scope or validity after the fact.",
+            "ar": "لا. لا تحتاج إلى محامٍ للحصول على توثيق وكالة قانونية في دبي. نتولى العملية كاملةً: صياغة الوثيقة بناءً على تعليماتك، وتنسيق موعد التوثيق، وضمان هيكلة الوكالة بشكل صحيح للجهة التي ستقبلها. يتم التوثيق عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. لا تحتاج إلى محامٍ إلا إذا نشأ نزاع قانوني حول نطاق الوكالة أو صحتها لاحقاً.",
+            "ru": "Нет. Юрист не нужен для нотариального заверения доверенности в Дубае. Мы берём на себя весь процесс: составление документа по вашим инструкциям, координацию нотариального заверения и обеспечение правильной структуры доверенности. Заверение происходит через суды Дубая или Министерство юстиции ОАЭ посредством видеозвонка. Юрист нужен только при возникновении спора о правомерности или объёме доверенности.",
+            "zh": "不需要。在迪拜公证授权书不需要律师。我们处理整个流程：根据您的指示起草文件，协调公证预约，并确保授权书为接受机构正确构建。公证通过迪拜法院或阿联酋司法部视频通话进行。只有在事后对授权书范围或有效性产生法律纠纷时才需要律师。",
+            "es": "No. No necesita un abogado para notarizar un poder notarial en Dubái. Nos encargamos de todo el proceso: redactar el documento según sus instrucciones, coordinar la cita de notarización y garantizar que el POA esté correctamente estructurado para la autoridad o institución que lo aceptará. La notarización se realiza a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada. Solo necesita un abogado si tiene una disputa legal sobre el alcance o validez del POA."
+          }
+        }
+      ]
     },
     "whatsapp-eviction-notice-dubai-valid": {
       "title_en": "Is a WhatsApp Eviction Notice Valid in Dubai? Law 33 Explained | E-Notary Dubai",
