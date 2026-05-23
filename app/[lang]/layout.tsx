@@ -71,6 +71,7 @@ export default async function LangLayout({ children, params }: Props) {
   return (
     <html lang={lang} dir={dir}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="geo.region" content="AE-DU" />
