@@ -15,6 +15,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
+    openGraph: {
+      title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
+      description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
+      url: `https://www.enotarydubai.ae/${lang}/power-of-attorney/real-estate/sale/`,
+      siteName: 'E-Notary Dubai',
+      locale: ({ en: 'en_US', ar: 'ar_AE', ru: 'ru_RU', zh: 'zh_CN', es: 'es_ES' } as Record<string, string>)[lang],
+      type: 'website',
+    },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/power-of-attorney/real-estate/sale/`,
       'x-default': `https://www.enotarydubai.ae/en/power-of-attorney/real-estate/sale/`,

@@ -1,45 +1,14 @@
-import type { Metadata } from 'next'
-import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
-import ServicePage from '@/components/ServicePage'
-import { LegalServiceSchema } from '@/components/SchemaMarkup'
+import { redirect } from 'next/navigation'
+import { LANGS, type Lang } from '@/lib/i18n'
 
-interface Props { params: Promise<{ lang: Lang }> }
-
+// Safe stub: the real 301 lives in next.config.mjs and fires before this route.
+// This file exists only so a plain re-upload fully replaces the old apostille page
+// without requiring a manual delete on GitHub.
 export async function generateStaticParams() {
   return LANGS.map((l) => ({ lang: l }))
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export default async function Page({ params }: { params: Promise<{ lang: Lang }> }) {
   const { lang } = await params
-  const seo = (getPageContent('/attestation/apostille') as any)?.seo
-  return {
-    title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
-    description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
-    alternates: {
-      canonical: `https://www.enotarydubai.ae/${lang}/attestation/apostille/`,
-      'x-default': `https://www.enotarydubai.ae/en/attestation/apostille/`,
-        languages: Object.fromEntries(
-        LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/attestation/apostille/`])
-      ),
-    },
-  }
-}
-
-export default async function Page({ params }: Props) {
-  const { lang } = await params
-  const seo = (getPageContent('/attestation/apostille') as any)?.seo
-  return (
-    <>
-      <LegalServiceSchema lang={lang} path="/attestation/apostille" />
-      <ServicePage
-        lang={lang}
-        title={seo?.h1}
-        description={seo?.meta_description}
-        authority={seo?.authority}
-        waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
-        faqItems={getPageFaq('/attestation/apostille')}
-        richBlocks={getPageBlocks('/attestation/apostille')}
-      />
-    </>
-  )
+  redirect(`/${lang}/attestation/mofa/`)
 }

@@ -91,7 +91,29 @@ const nextConfig = {
       {
         source: '/',
         destination: '/en/',
-        permanent: false,
+        permanent: true,
+      },
+      // 301 permanent: /attestation/apostille → /attestation/mofa (UAE is not a Hague member)
+      {
+        source: '/:lang(en|ar|ru|zh|es)/attestation/apostille',
+        destination: '/:lang/attestation/mofa/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/attestation/apostille/',
+        destination: '/:lang/attestation/mofa/',
+        permanent: true,
+      },
+      // 301 permanent: deleted apostille blog articles → MOFA attestation guide
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/:slug(what-is-apostille-uae|apostille-vs-embassy-attestation-uae-guide|apostille-vs-attestation)',
+        destination: '/:lang/blog/mofa-attestation-guide/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/:slug(what-is-apostille-uae|apostille-vs-embassy-attestation-uae-guide|apostille-vs-attestation)/',
+        destination: '/:lang/blog/mofa-attestation-guide/',
+        permanent: true,
       },
       {
         source: '/:lang(en|ar|ru|zh|es)/power-of-attorney/marriage',

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
+import { LANGS, type Lang, t, site, HREFLANG_MAP, getPageContent } from '@/lib/i18n'
 
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
 interface Props { params: Promise<{ lang: Lang }> }
@@ -7,22 +7,18 @@ export async function generateStaticParams() { return LANGS.map((l) => ({ lang: 
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params
-  const titles: Record<string, string> = {
-    en: 'Contact E-Notary Dubai — WhatsApp, Email & Office',
-    ar: 'تواصل مع E-Notary Dubai دبي — واتساب، بريد، مكتب',
-    ru: 'Контакты E-Notary Dubai Дубай — WhatsApp, Email и офис',
-    zh: '联系E-Notary Dubai迪拜——WhatsApp、电子邮件和办公室',
-    es: 'Contactar E-Notary Dubai Dubái — WhatsApp, Email y Oficina',
-  }
+  const seo = (getPageContent('/contact') as any)?.seo
   return {
-    title: titles[lang] || titles.en,
-    description: ({
-      en: 'Contact E-Notary Dubai for POA, MOFA attestation, eviction notices and notary support. Reply in 5 minutes via WhatsApp.',
-      ar: 'تواصل مع E-Notary Dubai للوكالات وتصديق الخارجية وإشعارات الإخلاء. رد خلال 5 دقائق عبر واتساب.',
-      ru: 'Свяжитесь с E-Notary Dubai по доверенностям, легализации, выселению. Ответ за 5 минут в WhatsApp.',
-      zh: '联系E-Notary Dubai了解授权书、外交部认证和驱逐通知。5分钟内WhatsApp回复。',
-      es: 'Contacte E-Notary Dubai para POA, MOFA, desalojo y soporte notarial. Respuesta en 5 min por WhatsApp.',
-    } as Record<string,string>)[lang] || 'Contact E-Notary Dubai for notary support.',
+    title: seo?.meta_title?.[lang] ?? seo?.meta_title?.en,
+    description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
+    openGraph: {
+      title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
+      description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
+      url: `https://www.enotarydubai.ae/${lang}/contact/`,
+      siteName: 'E-Notary Dubai',
+      locale: ({ en: 'en_US', ar: 'ar_AE', ru: 'ru_RU', zh: 'zh_CN', es: 'es_ES' } as Record<string, string>)[lang],
+      type: 'website',
+    },
     alternates: { canonical: `https://www.enotarydubai.ae/${lang}/contact/`,
       'x-default': `https://www.enotarydubai.ae/en/contact/`,
       languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/contact/`]))
@@ -55,7 +51,7 @@ const WA_ICON = <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"
 
 const SERVICES = [
   'Power of Attorney (POA)', 'MOFA Attestation', 'Eviction Notice',
-  'Legal Notice', 'Legal Translation', 'E-Notary', 'Apostille',
+  'Legal Notice', 'Legal Translation', 'E-Notary',
   'Affidavit', 'Corporate Documents', 'Other',
 ]
 
@@ -228,7 +224,7 @@ export default async function Page({ params }: Props) {
             {/* Authority logos */}
             <div className="rounded-2xl border border-navy-100 bg-navy-50 p-6">
               <h3 className="text-xs font-bold text-navy-400 uppercase tracking-widest mb-4">
-                {t({ en: 'Accepted by All UAE Government Entities', ar: 'مقبول لدى جميع الجهات الحكومية الإماراتية', ru: 'Принимается всеми органами ОАЭ', zh: '所有阿联酋政府机构接受', es: 'Aceptado por todas las autoridades de los EAU' }, lang)}
+                {t({ en: 'Recognized by UAE Government Entities', ar: 'معترف به لدى الجهات الحكومية الإماراتية', ru: 'Признаётся органами ОАЭ', zh: '获阿联酋各政府机构认可', es: 'Reconocido por las autoridades de los EAU' }, lang)}
               </h3>
               <div className="grid grid-cols-4 gap-4">
                 {[

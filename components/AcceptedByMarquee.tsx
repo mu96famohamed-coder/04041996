@@ -37,7 +37,7 @@ export default function AcceptedByMarquee({
   logoHeight = 56,
   gap = 14,
   speed = 50,
-  title = 'Accepted by All UAE Government Entities',
+  title = 'Recognized by UAE Government Entities',
   showTitle = true,
 }: Props) {
   const [isPaused, setIsPaused] = useState(false)

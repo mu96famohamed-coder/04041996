@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
+import { LANGS, type Lang, t, site, HREFLANG_MAP, getPageContent } from '@/lib/i18n'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
 
 interface Props { params: Promise<{ lang: Lang }> }
@@ -8,41 +8,31 @@ export async function generateStaticParams() { return LANGS.map((l) => ({ lang: 
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params
-  const titles: Record<string, string> = {
-    en: 'About E-Notary Dubai | Private Notary Support',
-    ar: 'عن E-Notary Dubai دبي | دعم التوثيق الخاص',
-    ru: 'О E-Notary Dubai Дубай | Частная нотариальная поддержка',
-    zh: '关于E-Notary Dubai迪拜 | 私人公证支持',
-    es: 'Sobre E-Notary Dubai Dubái | Soporte Notarial Privado',
-  }
-  const descs: Record<string, string> = {
-    en: 'E-Notary Dubai is Dubai\'s private notary support service. We prepare and coordinate POA, attestation, and legal documents — same day, fully online.',
-    ar: 'E-Notary Dubai خدمة دعم التوثيق الخاصة في دبي. نُعِدّ وننسق الوكالات والتصديق والمستندات القانونية — في نفس اليوم، أونلاين بالكامل.',
-    ru: 'E-Notary Dubai — частная нотариальная поддержка в Дубае. Оформляем доверенности, легализацию и юридические документы — в тот же день, полностью онлайн.',
-    zh: 'E-Notary Dubai是迪拜私人公证支持服务。我们准备和协调授权书、认证和法律文件——当日完成，全程线上。',
-    es: 'E-Notary Dubai es el servicio privado de soporte notarial de Dubái. Preparamos y coordinamos poderes, autenticaciones y documentos legales — el mismo día, totalmente en línea.',
-  }
+  const seo = (getPageContent('/about') as any)?.seo
   return {
-    title: titles[lang] || titles.en,
-    description: descs[lang] || descs.en,
+    title: seo?.meta_title?.[lang] ?? seo?.meta_title?.en,
+    description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/about/`,
       'x-default': `https://www.enotarydubai.ae/en/about/`,
         languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/about/`])),
     },
     openGraph: {
-      title: titles[lang] || titles.en,
-      description: descs[lang] || descs.en,
+      title: seo?.meta_title?.[lang] ?? seo?.meta_title?.en,
+      description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
       url: `https://www.enotarydubai.ae/${lang}/about/`,
+      siteName: 'E-Notary Dubai',
+      locale: ({ en: 'en_US', ar: 'ar_AE', ru: 'ru_RU', zh: 'zh_CN', es: 'es_ES' } as Record<string, string>)[lang],
+      type: 'website',
     },
   }
 }
 
 const L = {
   h1:       { en: 'About E-Notary Dubai', ar: 'عن E-Notary Dubai', ru: 'О E-Notary Dubai', zh: '关于E-Notary Dubai', es: 'Sobre E-Notary Dubai' },
-  sub:      { en: 'Dubai\'s private notary support service — not a law firm.', ar: 'خدمة دعم التوثيق الخاصة في دبي — وليست مكتب محاماة.', ru: 'Частная нотариальная поддержка в Дубае — не юридическая фирма.', zh: '迪拜私人公证支持服务——非律师事务所。', es: 'Servicio privado de soporte notarial en Dubái — no es un bufete de abogados.' },
+  sub:      { en: 'Dubai\'s notary facilitation service — not a law firm.', ar: 'خدمة دعم وتنسيق التوثيق في دبي — وليست مكتب محاماة.', ru: 'Служба нотариальной поддержки в Дубае — не юридическая фирма.', zh: '迪拜公证支持与协调服务——非律师事务所。', es: 'Servicio de soporte notarial en Dubái — no es un bufete de abogados.' },
   what_h:   { en: 'What We Do', ar: 'ما نفعله', ru: 'Что мы делаем', zh: '我们的服务', es: 'Qué Hacemos' },
-  what_p:   { en: 'E-Notary Dubai prepares and coordinates all document notarizations in the UAE. All actual notarization is performed by licensed UAE Notary Public authorities (Dubai Courts or Federal Ministry of Justice). We do not provide legal advice — we provide expert document preparation, correct formatting, and full coordination so your documents are accepted first time.', ar: 'E-Notary Dubai تُعد وتنسق جميع توثيقات المستندات في الإمارات. يُنفَّذ التوثيق الفعلي بواسطة كتّاب العدل المرخصين (محاكم دبي أو وزارة العدل الاتحادية). لا نقدم استشارات قانونية — نقدم إعداد متخصص وتنسيق كامل لتُقبل مستنداتك من أول مرة.', ru: 'E-Notary Dubai готовит и координирует все нотариальные заверения в ОАЭ. Фактическое заверение выполняется лицензированными нотариальными органами ОАЭ. Мы не даем юридических консультаций — мы обеспечиваем профессиональную подготовку документов.', zh: 'E-Notary Dubai准备和协调阿联酋所有文件的公证工作。实际公证由持牌阿联酋公证机构执行。我们不提供法律建议——我们提供专业的文件准备和全程协调。', es: 'E-Notary Dubai prepara y coordina todas las notarizaciones de documentos en los EAU. La notarización real es realizada por autoridades notariales con licencia de los EAU. No proporcionamos asesoramiento legal.' },
+  what_p:   { en: 'E-Notary Dubai prepares and coordinates all document notarizations in the UAE. All actual notarization is performed by licensed UAE Notary Public authorities (Dubai Courts or the UAE Ministry of Justice). We do not provide legal advice — we provide expert document preparation, correct formatting, and full coordination so your documents are prepared correctly for submission.', ar: 'E-Notary Dubai تُعد وتنسق جميع توثيقات المستندات في الإمارات. يُنفَّذ التوثيق الفعلي بواسطة كتّاب العدل المرخصين (محاكم دبي أو وزارة العدل الإماراتية). لا نقدم استشارات قانونية — نقدم إعداد متخصص وتنسيق كامل لتُجهَّز مستنداتك بشكل صحيح للتقديم.', ru: 'E-Notary Dubai готовит и координирует все нотариальные заверения в ОАЭ. Фактическое заверение выполняется лицензированными нотариальными органами ОАЭ. Мы не даем юридических консультаций — мы обеспечиваем профессиональную подготовку документов.', zh: 'E-Notary Dubai准备和协调阿联酋所有文件的公证工作。实际公证由持牌阿联酋公证机构执行。我们不提供法律建议——我们提供专业的文件准备和全程协调。', es: 'E-Notary Dubai prepara y coordina todas las notarizaciones de documentos en los EAU. La notarización real es realizada por autoridades notariales con licencia de los EAU. No proporcionamos asesoramiento legal.' },
   why_h:    { en: 'Why E-Notary Dubai?', ar: 'لماذا E-Notary Dubai؟', ru: 'Почему E-Notary Dubai?', zh: '为什么选择E-Notary Dubai？', es: '¿Por qué E-Notary Dubai?' },
   cta_h:    { en: 'Ready to Start?', ar: 'مستعد للبدء؟', ru: 'Готовы начать?', zh: '准备好开始了吗？', es: '¿Listo para Comenzar?' },
   cta_p:    { en: 'WhatsApp us — tell us what you need, we reply in 5 minutes with the exact cost and timeline.', ar: 'راسلنا على واتساب — أخبرنا بما تحتاج، نرد في 5 دقائق بالتكلفة الدقيقة والجدول الزمني.', ru: 'Напишите нам в WhatsApp — расскажите, что вам нужно, мы ответим за 5 минут.', zh: '通过WhatsApp联系我们——告诉我们您需要什么，我们将在5分钟内回复。', es: 'Escríbanos por WhatsApp — díganos lo que necesita, le respondemos en 5 minutos.' },
@@ -54,7 +44,7 @@ const WHY_POINTS = [
   { en: 'Documents accepted first time — correct format, correct authority', ar: 'مستنداتك مقبولة من أول مرة — الصيغة الصحيحة، الجهة الصحيحة', ru: 'Документы принимаются с первого раза', zh: '文件一次性获批——格式正确，机构正确', es: 'Documentos aceptados a la primera — formato correcto, autoridad correcta' },
   { en: 'Fully remote — no office visits required, service from anywhere in the world', ar: 'خدمة عن بُعد بالكامل — لا زيارات مكتبية، الخدمة من أي مكان في العالم', ru: 'Полностью удалённо — без визитов в офис, обслуживание по всему миру', zh: '全程远程——无需到访，全球均可服务', es: 'Totalmente remoto — sin visitas a la oficina, servicio desde cualquier lugar' },
   { en: 'Bilingual Arabic/English — all documents in both languages as required by UAE law', ar: 'ثنائي اللغة عربي/إنجليزي — جميع المستندات بالغتين كما يشترط القانون الإماراتي', ru: 'Двуязычность арабский/английский — все документы по закону ОАЭ', zh: '阿英双语——按阿联酋法律要求提供双语文件', es: 'Bilingüe árabe/inglés — documentos en ambos idiomas según la ley de los EAU' },
-  { en: 'Accepted by all UAE authorities — DLD, RTA, MOFA, Dubai Courts, banks', ar: 'مقبول من جميع جهات الإمارات — دائرة الأراضي، RTA، الخارجية، محاكم دبي، البنوك', ru: 'Принимается всеми органами ОАЭ — DLD, RTA, MOFA, Dubai Courts, банки', zh: '获所有阿联酋机构认可——土地局、RTA、外交部、迪拜法院、银行', es: 'Aceptado por todas las autoridades de los EAU — DLD, RTA, MOFA, Dubai Courts, bancos' },
+  { en: 'Recognized by UAE authorities — DLD, RTA, MOFA, Dubai Courts, banks', ar: 'معترف به لدى جهات الإمارات — دائرة الأراضي، هيئة الطرق، الخارجية، محاكم دبي، البنوك', ru: 'Признаётся органами ОАЭ — DLD, RTA, MOFA, суды Дубая, банки', zh: '获阿联酋各机构认可——土地局、交通局、外交部、迪拜法院、银行', es: 'Reconocido por las autoridades de los EAU — DLD, RTA, MOFA, Tribunales de Dubái, bancos' },
   { en: 'WhatsApp support 7 days — we reply in 5 minutes', ar: 'دعم واتساب 7 أيام — نرد في 5 دقائق', ru: 'WhatsApp поддержка 7 дней — отвечаем за 5 минут', zh: 'WhatsApp全天候7日支持——5分钟内回复', es: 'Soporte por WhatsApp 7 días — respondemos en 5 minutos' },
   { en: 'Transparent pricing — exact cost confirmed before you proceed', ar: 'أسعار شفافة — التكلفة الدقيقة تُؤكَّد قبل البدء', ru: 'Прозрачные цены — точная стоимость подтверждается до начала', zh: '透明定价——开始前确认精确费用', es: 'Precios transparentes — costo exacto confirmado antes de proceder' },
 ]
@@ -65,7 +55,7 @@ const SERVICES = [
   { en: 'Signature Authentication', ar: 'تصديق التوقيع', ru: 'Удостоверение подписи', zh: '签名认证', es: 'Autenticación de Firma', href: 'signature-notarization' },
   { en: 'Certified True Copies', ar: 'النسخ المصدقة', ru: 'Заверенные копии', zh: '公证副本', es: 'Copias Certificadas', href: 'certified-true-copy' },
   { en: 'Last Will & Testament', ar: 'الوصية الأخيرة', ru: 'Завещание', zh: '遗嘱', es: 'Testamento', href: 'last-will-testament-dubai' },
-  { en: 'MOFA Attestation, Apostille, Embassy Attestation', ar: 'تصديق MOFA، الأبوستيل، تصديق السفارة', ru: 'Легализация MOFA, апостиль, аттестация посольства', zh: 'MOFA认证、海牙认证、大使馆认证', es: 'Autenticación MOFA, Apostilla, Autenticación de Embajada', href: 'attestation/mofa' },
+  { en: 'MOFA Attestation & Embassy Attestation', ar: 'تصديق وزارة الخارجية وتصديق السفارات', ru: 'Легализация МИД и посольств', zh: '外交部认证与使馆认证', es: 'Atestación MOFA y de embajadas', href: 'attestation/mofa' },
   { en: 'Legal Translation (certified & court-accepted)', ar: 'الترجمة القانونية (معتمدة ومقبولة للمحاكم)', ru: 'Юридический перевод (сертифицированный, принимаемый судами)', zh: '法律翻译（认证且获法院接受）', es: 'Traducción Legal (certificada y aceptada por tribunales)', href: 'legal-translation' },
   { en: 'Eviction Notices (Article 25 compliant, Tableegh delivery)', ar: 'إشعارات الإخلاء (متوافقة مع المادة 25، تسليم عبر تبليغ)', ru: 'Уведомления о выселении (статья 25, доставка Tableegh)', zh: '驱逐通知（符合第25条，经Tableegh送达）', es: 'Avisos de Desalojo (Artículo 25, entrega por Tableegh)', href: 'legal-notice/eviction' },
   { en: 'Legal Notices (all types)', ar: 'الإنذارات القانونية (جميع الأنواع)', ru: 'Юридические уведомления (все виды)', zh: '法律通知（所有类型）', es: 'Notificaciones Legales (todos los tipos)', href: 'legal-notice' },

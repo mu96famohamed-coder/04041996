@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LANGS, type Lang, t , getPageMeta, HREFLANG_MAP } from '@/lib/i18n'
+import { LANGS, type Lang, t, HREFLANG_MAP } from '@/lib/i18n'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
 import content from '@/data/content.json'
 
@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params
   const titles: Record<string, string> = {
     en: 'Legal Blog & Resources Dubai | E-Notary Dubai',
-    ar: 'المدونة والموارد القانونية دبي | E-Notary Dubai',
+    ar: 'المدونة والموارد القانونية دبي — E-Notary Dubai',
     ru: 'Юридический блог Дубай | E-Notary Dubai',
     zh: '迪拜法律博客 | E-Notary Dubai',
     es: 'Blog Legal Dubái | E-Notary Dubai',
@@ -27,6 +27,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: titles[lang] || titles.en,
     description: descs[lang] || descs.en,
+    openGraph: {
+      title: titles[lang] || titles.en,
+      description: descs[lang] || descs.en,
+      url: `https://www.enotarydubai.ae/${lang}/blog/`,
+      siteName: 'E-Notary Dubai',
+      locale: ({ en: 'en_US', ar: 'ar_AE', ru: 'ru_RU', zh: 'zh_CN', es: 'es_ES' } as Record<string, string>)[lang],
+      type: 'website',
+    },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/blog/`,
       'x-default': `https://www.enotarydubai.ae/en/blog/`,
@@ -71,9 +79,6 @@ const BLOG_SLUGS = [
   'mofa-attestation-guide',
   'mofa-attestation-step-by-step-dubai',
   'mofa-attestation-uae-complete-guide-2026',
-  'apostille-vs-attestation',
-  'apostille-vs-embassy-attestation-uae-guide',
-  'what-is-apostille-uae',
   'eviction-notice-dubai-guide',
   'eviction-notice-requirements-dubai',
   'whatsapp-eviction-notice-dubai-valid',

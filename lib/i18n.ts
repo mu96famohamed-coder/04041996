@@ -117,8 +117,6 @@ export function normalizeFaqItem(item: {
 interface PageContent {
   h1_en?: string
   h1_ar?: string
-  title_en?: string
-  meta_en?: string
   /** Each item is a 5-lang map e.g. { en, ar, ru, zh, es } */
   sections?: Array<Record<string, string>>
   subsections?: Array<Record<string, string>>
@@ -128,7 +126,7 @@ interface PageContent {
   prices?: Array<Record<string, unknown>>
   rich_blocks?: RichBlock[]
   faq?: Array<{ q: Record<string, string>; a: Record<string, string> }>
-  /** Catch-all for per-lang title/meta keys like title_ar, meta_ru, etc. */
+  /** Catch-all for remaining page keys (seo, steps, etc.) */
   [key: string]: unknown
 }
 
@@ -165,17 +163,8 @@ export function getPageBlocks(url: string): RichBlock[] {
   return (pc?.rich_blocks ?? []) as RichBlock[]
 }
 
-/** Get multilingual page metadata (title + description) */
-export function getPageMeta(
-  slug: string,
-  lang: string,
-): { title: string; description: string } {
-  const pc = getPageContent(slug)
-  if (!pc) return { title: '', description: '' }
-  const title = ((pc[`title_${lang}`] as string | undefined) || pc.title_en || '') as string
-  const description = ((pc[`meta_${lang}`] as string | undefined) || pc.meta_en || '') as string
-  return { title, description }
-}
+// getPageMeta removed — single source of truth is page_content[url].seo.*
+// (flat title_/meta_ fields deleted from page_content; blog_content keeps its own)
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Typed top-level exports — import directly from i18n instead of content.json

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
+import { LANGS, type Lang, t, site, HREFLANG_MAP, getPageContent } from '@/lib/i18n'
 
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
 interface Props { params: Promise<{ lang: Lang }> }
@@ -8,23 +8,18 @@ export async function generateStaticParams() { return LANGS.map((lang) => ({ lan
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params
-  const titles: Record<string, string> = {
-    en: 'Our Services — Dubai Private Notary | E-Notary Dubai',
-    ar: 'خدماتنا — كاتب العدل الخاص دبي | E-Notary Dubai',
-    ru: 'Наши услуги — частный нотариус Дубай | E-Notary Dubai',
-    zh: '我们的服务 — 迪拜私人公证 | E-Notary Dubai',
-    es: 'Nuestros Servicios — Notario Privado Dubái | E-Notary Dubai',
-  }
-  const descs: Record<string, string> = {
-    en: 'POA, MOFA attestation, corporate documents, legal notices and more — same-day service. Request an exact quote in 5 minutes via WhatsApp.',
-    ar: 'وكالات وتصديق الخارجية ومستندات شركات وإنذارات قانونية — خدمة نفس اليوم. اطلب عرض سعر دقيق في 5 دقائق عبر واتساب.',
-    ru: 'Доверенности, легализация, корпоративные документы, уведомления — в тот же день. Запросите точный расчёт за 5 минут в WhatsApp.',
-    zh: '授权书、MOFA认证、企业文件、法律通知等——当日服务。5分钟内通过WhatsApp获取准确报价。',
-    es: 'Poderes, autenticación MOFA, documentos corporativos, notificaciones legales y más — el mismo día. Cotización exacta en 5 minutos por WhatsApp.',
-  }
+  const seo = (getPageContent('/pricing') as any)?.seo
   return {
-    title: titles[lang] || titles.en,
-    description: descs[lang] || descs.en,
+    title: seo?.meta_title?.[lang] ?? seo?.meta_title?.en,
+    description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
+    openGraph: {
+      title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
+      description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
+      url: `https://www.enotarydubai.ae/${lang}/pricing/`,
+      siteName: 'E-Notary Dubai',
+      locale: ({ en: 'en_US', ar: 'ar_AE', ru: 'ru_RU', zh: 'zh_CN', es: 'es_ES' } as Record<string, string>)[lang],
+      type: 'website',
+    },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/pricing/`,
       languages: Object.fromEntries(LANGS.map(l => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/pricing/`])),
@@ -75,7 +70,6 @@ const SERVICES = {
     { slug: 'affidavit', en:'Affidavit / Sworn Statement', ar:'إقرار مشفوع باليمين', ru:'Аффидевит / Клятвенное заявление', zh:'宣誓书', es:'Affidávit / Declaración Jurada' },
     { slug: 'last-will-testament-dubai', en:'Last Will & Testament', ar:'الوصية الأخيرة', ru:'Завещание', zh:'遗嘱', es:'Testamento' },
     { slug: 'attestation/mofa', en:'MOFA Attestation', ar:'تصديق وزارة الخارجية', ru:'Легализация MOFA', zh:'MOFA认证', es:'Autenticación MOFA' },
-    { slug: 'attestation/apostille', en:'Apostille Certification', ar:'تصديق الأبوستيل', ru:'Апостиль', zh:'海牙认证', es:'Apostilla' },
     { slug: 'attestation/embassy', en:'Embassy Attestation', ar:'تصديق السفارة', ru:'Легализация в посольстве', zh:'大使馆认证', es:'Autenticación de Embajada' },
     { slug: 'legal-translation', en:'Legal Translation', ar:'ترجمة قانونية', ru:'Юридический перевод', zh:'法律翻译', es:'Traducción Legal' },
   ],
@@ -125,7 +119,7 @@ export default async function ServicesPage({ params }: Props) {
       {/* Hero */}
       <div className="hero-bg py-14">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
-          <p className="overline-label mb-3 text-gold-400/80">{t({en:'Dubai Private Notary Office',ar:'كاتب العدل الخاص دبي',ru:'Частный нотариус Дубай',zh:'迪拜私人公证办公室',es:'Oficina Notarial Privada Dubái'}, lang)}</p>
+          <p className="overline-label mb-3 text-gold-400/80">{t({en:'Dubai Notary Support Services',ar:'خدمات دعم الكاتب العدل دبي',ru:'Нотариальная поддержка Дубай',zh:'迪拜公证支持服务',es:'Servicios de Soporte Notarial Dubái'}, lang)}</p>
           <h1 className="font-serif text-3xl font-bold text-white sm:text-4xl mb-4">{t(L.h1, lang)}</h1>
           <p className="text-navy-300 text-sm leading-relaxed max-w-2xl mb-8">{t(L.sub, lang)}</p>
           <a href={waUrl} target="_blank" rel="noopener noreferrer"

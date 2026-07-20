@@ -16,7 +16,6 @@ const FOOTER_LINKS = {
   ],
   notary: [
     { href: '/attestation/mofa',      en: 'MOFA Attestation',      ar: 'تصديق الخارجية',     ru: 'Легализация MOFA',           zh: '外交部认证',   es: 'Autenticación MOFA' },
-    { href: '/attestation/apostille', en: 'Apostille',             ar: 'أبوستيل',            ru: 'Апостиль',                   zh: '附加证明书',   es: 'Apostilla' },
     { href: '/attestation/embassy',   en: 'Embassy Attestation',   ar: 'تصديق السفارة',      ru: 'Легализация посольства',     zh: '使馆认证',     es: 'Atestación Embajada' },
     { href: '/attestation/degree',    en: 'Degree Attestation',    ar: 'تصديق الشهادات',     ru: 'Легализация диплома',        zh: '学历证书认证', es: 'Título Educativo' },
     { href: '/attestation/marriage',  en: 'Marriage Certificate',  ar: 'تصديق عقد الزواج',   ru: 'Свидетельство о браке',      zh: '结婚证认证',   es: 'Acta Matrimonio' },
@@ -184,7 +183,7 @@ export default function Footer({ lang }: Props) {
             logoHeight={48}
             gap={14}
             speed={40}
-            title={t({ en: 'Accepted by All UAE Government Entities', ar: 'مقبول لدى جميع الجهات الحكومية الإماراتية', ru: 'Принимается всеми органами ОАЭ', zh: '所有阿联酋政府机构接受', es: 'Aceptado por todas las autoridades de los EAU' }, lang)}
+            title={t({ en: 'Recognized by UAE Government Entities', ar: 'معترف به لدى الجهات الحكومية الإماراتية', ru: 'Признаётся органами ОАЭ', zh: '获阿联酋各政府机构认可', es: 'Reconocido por las autoridades de los EAU' }, lang)}
             showTitle={true}
           />
         </div>

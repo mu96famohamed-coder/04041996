@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { LANGS, type Lang, t, site , getPageMeta, HREFLANG_MAP } from '@/lib/i18n'
+import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
 import content from '@/data/content.json'
 import FAQSection from '@/components/FAQSection'
 
@@ -20,9 +20,6 @@ const BLOG_SLUGS = [
   'mofa-attestation-guide',
   'mofa-attestation-step-by-step-dubai',
   'mofa-attestation-uae-complete-guide-2026',
-  'apostille-vs-attestation',
-  'apostille-vs-embassy-attestation-uae-guide',
-  'what-is-apostille-uae',
   'eviction-notice-dubai-guide',
   'eviction-notice-requirements-dubai',
   'whatsapp-eviction-notice-dubai-valid',
@@ -59,6 +56,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title,
     description,
+    openGraph: {
+      title,
+      description,
+      url: `https://www.enotarydubai.ae/${lang}/blog/${slug}/`,
+      siteName: 'E-Notary Dubai',
+      locale: ({ en: 'en_US', ar: 'ar_AE', ru: 'ru_RU', zh: 'zh_CN', es: 'es_ES' } as Record<string, string>)[lang],
+      type: 'article',
+    },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/blog/${slug}/`,
       'x-default': `https://www.enotarydubai.ae/en/blog/${slug}/`,
@@ -138,7 +143,7 @@ export default async function BlogArticlePage({ params }: Props) {
               </time>
               {bc.date_updated && bc.date_updated !== bc.date && (
                 <span className="text-xs text-navy-500">
-                  · {t({ en: 'Updated', ar: 'محدّث', ru: 'Обновلено', zh: '已更新', es: 'Actualizado' }, lang)} {new Date(bc.date_updated).toLocaleDateString(
+                  · {t({ en: 'Updated', ar: 'محدّث', ru: 'Обновлено', zh: '已更新', es: 'Actualizado' }, lang)} {new Date(bc.date_updated).toLocaleDateString(
                     lang === 'ar' ? 'ar-AE' : lang === 'zh' ? 'zh-CN' : lang === 'ru' ? 'ru-RU' : lang === 'es' ? 'es-ES' : 'en-GB',
                     { year: 'numeric', month: 'short' }
                   )}

@@ -26,17 +26,17 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params
   const titles: Record<string, string> = {
     en: 'Notary Support Dubai | POA & Attestation | E-Notary Dubai',
-    ar: 'دعم كاتب العدل دبي 2026 | وكالات وتصديق | E-Notary Dubai',
+    ar: 'دعم كاتب العدل دبي — وكالات وتصديق — E-Notary Dubai',
     ru: 'Нотариальная поддержка Дубай 2026 | Доверенность | E-Notary Dubai',
     zh: '迪拜公证支持 2026 | 授权委托书及认证 | E-Notary Dubai',
     es: 'Soporte Notarial Dubái 2026 | Poder Notarial | E-Notary Dubai',
   }
   const descs: Record<string, string> = {
-    en: 'Dubai private notary support — POA, MOFA attestation, legal notices & corporate documents. Same-day. Remote e-notary.',
-    ar: 'دعم كاتب العدل الخاص في دبي — وكالات، تصديق الخارجية، إنذارات قانونية. خدمة في نفس اليوم.',
-    ru: 'Частная нотариальная поддержка в Дубае — доверенности, легализация MOFA. В тот же день.',
-    zh: '迪拜私人公证支持 — 授权委托书，外交部认证。当日服务。',
-    es: 'Soporte notarial privado en Dubái — Poderes, autenticación MOFA. Mismo día.',
+    en: 'Dubai notary support — POA, MOFA attestation, legal notices & corporate documents. Same-day service via video call notarization.',
+    ar: 'دعم كاتب العدل في دبي — وكالات، تصديق الخارجية، إنذارات قانونية. خدمة في نفس اليوم.',
+    ru: 'Нотариальная поддержка в Дубае — доверенности, легализация MOFA. В тот же день.',
+    zh: '迪拜公证支持 — 授权委托书，外交部认证。当日服务。',
+    es: 'Soporte notarial en Dubái — Poderes, autenticación MOFA. Mismo día.',
   }
   return {
     title: titles[lang] || titles.en,

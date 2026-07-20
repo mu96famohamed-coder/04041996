@@ -57,7 +57,7 @@ export function ServiceSchema({
 }) {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'LegalService',
+    '@type': 'ProfessionalService',
     name,
     url,
     description,
@@ -87,7 +87,7 @@ export function ServiceSchema({
 //
 // Pure server component, prop-driven (no headers(), no dynamic APIs). The
 // page knows its own canonical path at build time, so each statically
-// generated page emits its own LegalService schema with zero runtime cost.
+// generated page emits its own ProfessionalService schema with zero runtime cost.
 // SSG is fully preserved.
 //
 // Usage from a route segment page:
@@ -111,9 +111,8 @@ function serviceNameFor(path: string, lang: Lang): string | null {
     (pc[`h1_${lang}`] as string | undefined) ||
     (pc.h1_en as string | undefined)
   if (h1) return h1
-  const title =
-    (pc[`title_${lang}`] as string | undefined) ||
-    (pc.title_en as string | undefined)
+  const seo = pc.seo as { meta_title?: Record<string, string> } | undefined
+  const title = seo?.meta_title?.[lang] || seo?.meta_title?.en
   return title || null
 }
 
@@ -121,9 +120,8 @@ function serviceNameFor(path: string, lang: Lang): string | null {
 function serviceDescriptionFor(path: string, lang: Lang): string | null {
   const pc = getPageContent(path) as Record<string, unknown> | null
   if (!pc) return null
-  const desc =
-    (pc[`meta_${lang}`] as string | undefined) ||
-    (pc.meta_en as string | undefined)
+  const seo = pc.seo as { meta_description?: Record<string, string> } | undefined
+  const desc = seo?.meta_description?.[lang] || seo?.meta_description?.en
   return desc || null
 }
 
@@ -198,11 +196,11 @@ export function LegalServiceSchema({
     serviceNameFor(path, lang) || `${BRAND_NAME} — Notary Support Services`
   const description =
     serviceDescriptionFor(path, lang) ||
-    'Private notary support in Dubai — POA drafting, MOFA attestation, legal notices, eviction notices, and legal translation. Same-day service.'
+    'Notary support in Dubai — POA drafting, MOFA attestation, legal notices, eviction notices, and legal translation. Same-day service.'
 
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'LegalService',
+    '@type': 'ProfessionalService',
     '@id': `${url}#service`,
     name,
     description,
@@ -241,11 +239,11 @@ export function LegalServiceSchema({
 export function LocalBusinessSchema() {
   const schema = {
     '@context': 'https://schema.org',
-    '@type': 'LegalService',
+    '@type': 'ProfessionalService',
     '@id': 'https://www.enotarydubai.ae/#business',
     name: 'E-Notary Dubai',
     alternateName: 'E-Notary Dubai',
-    description: 'Private notary support service in Dubai — POA drafting, MOFA attestation, eviction notices, legal translation. Same-day service.',
+    description: 'Notary support service in Dubai — POA drafting, MOFA attestation, eviction notices, legal translation. Same-day service.',
     url: 'https://enotarydubai.ae',
     // image: 'https://www.enotarydubai.ae/logo.png',
     // TODO: uncomment when logo.png is added to public/
@@ -268,7 +266,6 @@ export function LocalBusinessSchema() {
       'MOFA Attestation',
       'Eviction Notices',
       'Legal Translation',
-      'Apostille Services',
       'Rental Dispute Center (RDC) Filings',
       'Dubai Land Department (DLD) Procedures',
       'Last Will and Testament for Expats',

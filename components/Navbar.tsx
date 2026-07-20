@@ -79,7 +79,6 @@ function buildNav(lang: Lang) {
       label: { en: 'Notarization', ar: 'التوثيق والتصديق', ru: 'Нотариат', zh: '公证与认证', es: 'Notarización' },
       items: [
         { href: `/${l}/attestation/mofa`,          label: { en: 'MOFA Attestation',     ar: 'تصديق الخارجية',     ru: 'Легализация MOFA',      zh: '外交部认证',   es: 'MOFA' } },
-        { href: `/${l}/attestation/apostille`,     label: { en: 'Apostille',            ar: 'أبوستيل',            ru: 'Апостиль',              zh: '附加证明书',   es: 'Apostilla' } },
         { href: `/${l}/attestation/embassy`,       label: { en: 'Embassy Attestation',  ar: 'تصديق السفارة',      ru: 'Легализация посольства', zh: '使馆认证',     es: 'Embajada' } },
         { href: `/${l}/attestation/degree`,        label: { en: 'Degree Attestation',   ar: 'تصديق الشهادات',     ru: 'Легализация диплома',   zh: '学历证书认证', es: 'Título Educativo' } },
         { href: `/${l}/attestation/marriage`,      label: { en: 'Marriage Certificate', ar: 'تصديق عقد الزواج',   ru: 'Свидетельство о браке', zh: '结婚证认证',   es: 'Acta Matrimonio' } },

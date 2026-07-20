@@ -1,0 +1,71 @@
+# E-Notary Dubai
+
+> E-Notary Dubai is a document drafting and notarization support service in Dubai, UAE. We prepare and coordinate Powers of Attorney (POA), MOFA attestation, legal notices, corporate documents, wills, and affidavits. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. We are a facilitation and support service — not a law firm and not a notary public.
+
+Languages: English (/en/), Arabic (/ar/), Russian (/ru/), Chinese (/zh/), Spanish (/es/). All service pages are available in all five languages.
+
+## Powers of Attorney (POA)
+- [Power of Attorney Dubai](https://www.enotarydubai.ae/en/power-of-attorney/)
+- [Bank POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/bank/)
+- [Child Travel NOC Dubai](https://www.enotarydubai.ae/en/power-of-attorney/child-travel/)
+- [Company Formation POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/company-formation/)
+- [Court Case POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/court/)
+- [General POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/general/)
+- [Inheritance POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/inheritance/)
+- [MOHRE POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/mohre/)
+- [Property Hiba POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/property-gifting/)
+- [Real Estate POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/real-estate/)
+- [Property Management POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/real-estate/management/)
+- [Property Purchase POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/real-estate/purchase/)
+- [Property Sale POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/real-estate/sale/)
+- [Special POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/special/)
+- [Vehicle POA Dubai Guide](https://www.enotarydubai.ae/en/power-of-attorney/vehicle/)
+- [Vehicle Export POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/vehicle/export/)
+- [Vehicle Management POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/vehicle/management/)
+- [Vehicle Sale POA Dubai](https://www.enotarydubai.ae/en/power-of-attorney/vehicle/sale/)
+
+## Attestation
+- [Degree Attestation Dubai](https://www.enotarydubai.ae/en/attestation/degree/)
+- [Embassy Attestation Dubai](https://www.enotarydubai.ae/en/attestation/embassy/)
+- [Marriage Certificate Attestation](https://www.enotarydubai.ae/en/attestation/marriage/)
+- [MOFA Attestation Dubai](https://www.enotarydubai.ae/en/attestation/mofa/)
+
+## Corporate Documents
+- [Board Resolution Dubai](https://www.enotarydubai.ae/en/corporate/board-resolution/)
+- [Commercial Contract Drafting Dubai](https://www.enotarydubai.ae/en/corporate/contract/)
+- [Company Liquidation Dubai](https://www.enotarydubai.ae/en/corporate/liquidation/)
+- [Corporate Drafting Dubai](https://www.enotarydubai.ae/en/corporate/moa/)
+- [MOA Amendment Dubai](https://www.enotarydubai.ae/en/corporate/moa-amendment/)
+- [Share Transfer Dubai](https://www.enotarydubai.ae/en/corporate/share-transfer/)
+- [Shareholder Agreement Dubai](https://www.enotarydubai.ae/en/corporate/shareholder-agreement/)
+
+## Legal Notices
+- [Legal Notice Services Dubai](https://www.enotarydubai.ae/en/legal-notice/)
+- [Eviction Notice Dubai](https://www.enotarydubai.ae/en/legal-notice/eviction/)
+- [POA Cancellation Notice Dubai](https://www.enotarydubai.ae/en/legal-notice/poa-cancellation/)
+- [RDC Dubai](https://www.enotarydubai.ae/en/rdc-support/)
+- [What is Tableegh Dubai?](https://www.enotarydubai.ae/en/what-is-tableegh/)
+
+## Wills & Affidavits
+- [Affidavit Drafting Dubai](https://www.enotarydubai.ae/en/affidavit/)
+- [Last Will Drafting Dubai](https://www.enotarydubai.ae/en/last-will-testament-dubai/)
+
+## Other Services
+- [Certified True Copy Dubai](https://www.enotarydubai.ae/en/certified-true-copy/)
+- [Rejected Document Fix Dubai](https://www.enotarydubai.ae/en/document-rejection/)
+- [E-Notary Dubai](https://www.enotarydubai.ae/en/e-notary/)
+- [Emergency Notary Support Dubai](https://www.enotarydubai.ae/en/emergency-notary/)
+- [Legal Translation Dubai](https://www.enotarydubai.ae/en/legal-translation/)
+- [Court Translation Dubai](https://www.enotarydubai.ae/en/legal-translation/court/)
+- [Mobile Notary Dubai](https://www.enotarydubai.ae/en/mobile-notary/)
+- [POA Cancellation Dubai](https://www.enotarydubai.ae/en/poa-cancellation/)
+- [Why POA Gets Rejected in Dubai](https://www.enotarydubai.ae/en/why-poa-rejected-dubai/)
+
+## General
+- [Services Overview](https://www.enotarydubai.ae/en/pricing/)
+- [About](https://www.enotarydubai.ae/en/about/)
+- [FAQ](https://www.enotarydubai.ae/en/faq/)
+- [Blog](https://www.enotarydubai.ae/en/blog/)
+- [Contact](https://www.enotarydubai.ae/en/contact/)
+
+Sitemap: https://www.enotarydubai.ae/sitemap.xml

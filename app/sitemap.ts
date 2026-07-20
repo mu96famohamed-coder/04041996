@@ -2,6 +2,20 @@ import { MetadataRoute } from 'next'
 import { LANGS, HREFLANG_MAP } from '@/lib/i18n'
 import content from '@/data/content.json'
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Manual content timestamp — bump ONLY when page content genuinely changes.
+// Never use new Date() here: it resets every URL's lastModified on each deploy,
+// burning crawl budget re-crawling unchanged pages (root cause of 55/400 indexed).
+// ─────────────────────────────────────────────────────────────────────────────
+const LAST_CONTENT_UPDATE = new Date('2026-07-20')
+
+/** Real per-article lastModified from blog_content.date_updated (fallback: date). */
+function blogLastModified(slug: string): Date {
+  const bc = (content.blog_content as Record<string, { date?: string; date_updated?: string }>)[slug]
+  const d = bc?.date_updated || bc?.date
+  return d ? new Date(d) : LAST_CONTENT_UPDATE
+}
+
 const BASE = 'https://www.enotarydubai.ae'
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -57,9 +71,6 @@ const BLOG_SLUGS = [
   'mofa-attestation-guide',
   'mofa-attestation-step-by-step-dubai',
   'mofa-attestation-uae-complete-guide-2026',
-  'apostille-vs-attestation',
-  'apostille-vs-embassy-attestation-uae-guide',
-  'what-is-apostille-uae',
   'eviction-notice-dubai-guide',
   'eviction-notice-requirements-dubai',
   'whatsapp-eviction-notice-dubai-valid',
@@ -125,7 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const lang of LANGS) {
       entries.push({
         url: `${BASE}/${lang}${cleanPath}/`,
-        lastModified: new Date(),
+        lastModified: LAST_CONTENT_UPDATE,
         changeFrequency,
         priority,
         alternates: {
@@ -141,7 +152,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const lang of LANGS) {
       entries.push({
         url: `${BASE}/${lang}${cleanPath}/`,
-        lastModified: new Date(),
+        lastModified: blogLastModified(slug),
         changeFrequency: 'monthly' as const,
         priority: 0.7,
         alternates: {

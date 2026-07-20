@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { type Lang, t, services, steps, faq, cta, site, trust_badges, LANGS } from '@/lib/i18n'
+import { type Lang, t, services, steps, faq, cta, site, trust_badges, LANGS, getPageContent } from '@/lib/i18n'
 import FAQSection from '@/components/FAQSection'
 import { FAQSchema, LegalServiceSchema } from '@/components/SchemaMarkup'
 import AcceptedByMarquee from '@/components/AcceptedByMarquee'
@@ -8,24 +8,19 @@ import AcceptedByMarquee from '@/components/AcceptedByMarquee'
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: Lang }> }): Promise<Metadata> {
   const { lang } = await params
-  const titles: Record<string, string> = {
-    en: 'POA & Attestation Dubai 2026 | E-Notary Dubai',
-    ar: 'دعم كاتب العدل دبي 2026 | وكالات وتصديق وإنذارات قانونية | E-Notary Dubai',
-    ru: 'Нотариальная поддержка Дубай 2026 | Доверенности, легализация | E-Notary Dubai',
-    zh: '迪拜公证支持 2026 | 授权委托书及认证 | E-Notary Dubai',
-    es: 'Soporte Notarial Dubái 2026 | Poderes, Autenticación | E-Notary Dubai',
-  }
-  const descs: Record<string, string> = {
-    en: 'Dubai private notary support — POA, MOFA attestation, legal notices & corporate documents. Same-day. Remote e-notary. Accepted by all UAE authorities.',
-    ar: 'دعم كاتب العدل الخاص في دبي — وكالات، تصديق الخارجية، إنذارات قانونية ومستندات شركات. خدمة في نفس اليوم. مقبول من جميع الجهات الإماراتية.',
-    ru: 'Частная нотариальная поддержка в Дубае — доверенности, легализация MOFA, юридические уведомления. В тот же день. Принимается всеми органами ОАЭ.',
-    zh: '迪拜私人公证支持 — 授权委托书，外交部认证，法律通知及企业文件。当日服务。阿联酋所有机构接受。',
-    es: 'Soporte notarial privado en Dubái — Poderes, autenticación MOFA, avisos legales y documentos corporativos. Mismo día. Aceptado por todas las autoridades de los EAU.',
-  }
+  const seo = (getPageContent('/') as any)?.seo
   return {
-    title: titles[lang] || titles.en,
-    description: descs[lang] || descs.en,
+    title: seo?.meta_title?.[lang] ?? seo?.meta_title?.en,
+    description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     robots: 'index, follow',
+    openGraph: {
+      title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
+      description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
+      url: `https://www.enotarydubai.ae/${lang}/`,
+      siteName: 'E-Notary Dubai',
+      locale: ({ en: 'en_US', ar: 'ar_AE', ru: 'ru_RU', zh: 'zh_CN', es: 'es_ES' } as Record<string, string>)[lang],
+      type: 'website',
+    },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/`,
       languages: {
@@ -56,7 +51,7 @@ const H = {
   b3: { en:'Dubai Courts Approved', ar:'معتمد من محاكم دبي', ru:'Одобрено Dubai Courts', zh:'迪拜法院认可', es:'Aprobado por Dubai Courts' },
   start: { en:'Start on WhatsApp', ar:'ابدأ عبر واتساب', ru:'Начать в WhatsApp', zh:'通过WhatsApp开始', es:'Iniciar en WhatsApp' },
   all_svc: { en:'View All Services', ar:'جميع الخدمات', ru:'Все услуги', zh:'查看所有服务', es:'Ver Todos los Servicios' },
-  accepted: { en:'Accepted by all UAE Authorities', ar:'مقبول من جميع الجهات الإماراتية', ru:'Принимается всеми органами ОАЭ', zh:'获所有阿联酋机构认可', es:'Aceptado por todas las Autoridades de los EAU' },
+  accepted: { en:'Recognized by UAE Authorities', ar:'معترف به لدى الجهات الإماراتية', ru:'Признаётся органами ОАЭ', zh:'获阿联酋各机构认可', es:'Reconocido por las Autoridades de los EAU' },
   poa_h: { en:'Power of Attorney', ar:'خدمات الوكالة الرسمية', ru:'Доверенность (POA)', zh:'授权委托书', es:'Poder Notarial (POA)' },
   poa_s: { en:'All types — drafted, notarized, delivered same day', ar:'جميع الأنواع — صياغة وتوثيق وتسليم في نفس اليوم', ru:'Все виды — составление, заверение и доставка в тот же день', zh:'所有类型——当日起草、公证并送达', es:'Todos los tipos — redactados, notarizados y entregados el mismo día' },
   all_poa: { en:'View all POA types →', ar:'← جميع أنواع الوكالات', ru:'Все виды доверенностей →', zh:'查看所有授权类型 →', es:'Ver todos los tipos de POA →' },
