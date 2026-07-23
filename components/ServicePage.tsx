@@ -35,6 +35,7 @@ export interface ServicePageProps {
   breadcrumb?: Array<{ label: string; href: string }>
   relatedServices?: Array<{ label: Record<string,string>; href: string }>
   richBlocks?: RichBlock[]
+  expressTimeline?: boolean
   children?: React.ReactNode
 }
 
@@ -50,6 +51,9 @@ const L = {
   cta_h:       { en:'Same-Day Service', ar:'خدمة نفس اليوم', ru:'Услуга в тот же день', zh:'当日服务', es:'Servicio el Mismo Día' },
   cta_sub:     { en:'Contact before 2 PM for same-day processing.', ar:'تواصل قبل 2 ظهراً للمعالجة في نفس اليوم.', ru:'Свяжитесь до 14:00 для обработки в тот же день.', zh:'下午2点前联系即可当日处理。', es:'Contacte antes de las 2 PM para el mismo día.' },
   same_day:    { en:'Same-Day Service — Contact Before 2 PM', ar:'خدمة نفس اليوم — تواصل قبل 2 ظهراً', ru:'В тот же день — до 14:00', zh:'当日服务 — 下午2点前', es:'Mismo Día — Antes de las 2 PM' },
+  cta_h_exp:   { en:'Express Service', ar:'الخدمة السريعة', ru:'Экспресс-услуга', zh:'加急服务', es:'Servicio Exprés' },
+  cta_sub_exp: { en:'Express 1–2 business day MOFA processing available.', ar:'خدمة سريعة بمعالجة MOFA خلال 1-2 يوم عمل.', ru:'Экспресс-обработка MOFA за 1–2 рабочих дня.', zh:'可提供1-2个工作日的外交部加急处理。', es:'Procesamiento exprés del MOFA en 1-2 días hábiles.' },
+  express:     { en:'Express Service — 1–2 Business Days', ar:'خدمة سريعة — 1-2 يوم عمل', ru:'Экспресс — 1–2 рабочих дня', zh:'加急服务 — 1-2个工作日', es:'Exprés — 1–2 Días Hábiles' },
   related_h:   { en:'Related Services', ar:'خدمات ذات صلة', ru:'Похожие услуги', zh:'相关服务', es:'Servicios Relacionados' },
   no_hidden:   { en:'No hidden fees', ar:'بدون رسوم خفية', ru:'Без скрытых сборов', zh:'无隐藏费用', es:'Sin cargos ocultos' },
   qr_code:     { en:'QR-Verified', ar:'مُتحقَّق منه QR', ru:'QR-верификация', zh:'二维码验证', es:'Verificado QR' },
@@ -69,7 +73,7 @@ function shouldSkip(section: ContentSection): boolean {
 export default function ServicePage({
   lang, title, subtitle, description, authority, waMessage,
   bullets, sections, subsections, bodyContent, requiredDocs,
-  faqItems, extraButtons, isTableegh, breadcrumb, relatedServices, richBlocks, children
+  faqItems, extraButtons, isTableegh, breadcrumb, relatedServices, richBlocks, expressTimeline, children
 }: ServicePageProps) {
   const waUrl = getWaUrl(waMessage)
   const isRTL = lang === 'ar'
@@ -156,7 +160,7 @@ export default function ServicePage({
                   <svg className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                   </svg>
-                  {t(L.same_day, lang)}
+                  {t(expressTimeline ? L.express : L.same_day, lang)}
                 </span>
                 <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded-md"
                   style={{background:'rgba(74,106,150,.2)',color:'#b8cde0',border:'1px solid rgba(74,106,150,.3)'}}>
@@ -167,7 +171,7 @@ export default function ServicePage({
               {/* Stats row */}
               <div className="hero-stats-row mb-5">
                 <div className="hero-stat-item">
-                  <span className="hero-stat-num">500+</span>
+                  <span className="hero-stat-num">5,000+</span>
                   <div className="hero-stat-label">
                     <strong>{t({en:'Documents',ar:'وثيقة',ru:'Документов',zh:'份文件',es:'Documentos'}, lang)}</strong>
                     {t({en:'Notarized',ar:'موثقة',ru:'Заверено',zh:'已公证',es:'Notarizados'}, lang)}
@@ -175,10 +179,10 @@ export default function ServicePage({
                 </div>
                 <div className="hero-stat-sep" />
                 <div className="hero-stat-item">
-                  <span className="hero-stat-num">100%</span>
+                  <span className="hero-stat-num">5</span>
                   <div className="hero-stat-label">
-                    <strong>{t({en:'First-Try',ar:'من الأولى',ru:'С первого',zh:'一次通过',es:'Primera Vez'}, lang)}</strong>
-                    {t({en:'Accepted',ar:'مقبولة',ru:'Принято',zh:'接受率',es:'Aceptado'}, lang)}
+                    <strong>{t({en:'Languages',ar:'لغات',ru:'Языков',zh:'种语言',es:'Idiomas'}, lang)}</strong>
+                    {t({en:'Supported',ar:'مدعومة',ru:'Поддержка',zh:'支持',es:'Soportados'}, lang)}
                   </div>
                 </div>
               </div>
@@ -364,8 +368,8 @@ export default function ServicePage({
 
               {/* Mobile CTA */}
               <div className="lg:hidden cta-block">
-                <p className="text-gold-400 text-xs font-bold uppercase tracking-widest mb-1">{t(L.cta_h, lang)}</p>
-                <p className="text-navy-400 text-xs mb-5">{t(L.cta_sub, lang)}</p>
+                <p className="text-gold-400 text-xs font-bold uppercase tracking-widest mb-1">{t(expressTimeline ? L.cta_h_exp : L.cta_h, lang)}</p>
+                <p className="text-navy-400 text-xs mb-5">{t(expressTimeline ? L.cta_sub_exp : L.cta_sub, lang)}</p>
                 <div className="flex flex-wrap gap-3 justify-center">
                   <a href={waUrl} target="_blank" rel="noopener noreferrer"
                     className="btn-wa px-8 py-3.5">
@@ -389,10 +393,10 @@ export default function ServicePage({
                 {/* CTA card */}
                 <div className="rounded-xl overflow-hidden" style={{background:'#060e1f',border:'1px solid rgba(212,180,58,.12)'}}>
                   <div className="px-5 py-3" style={{background:'rgba(212,180,58,.08)',borderBottom:'1px solid rgba(212,180,58,.12)'}}>
-                    <p className="text-[10px] font-bold uppercase tracking-[.14em]" style={{color:'#d4b43a'}}>{t(L.cta_h, lang)}</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[.14em]" style={{color:'#d4b43a'}}>{t(expressTimeline ? L.cta_h_exp : L.cta_h, lang)}</p>
                   </div>
                   <div className="px-5 py-4">
-                    <p className="text-xs leading-relaxed mb-4" style={{color:'#4a6a96',fontWeight:300}}>{t(L.cta_sub, lang)}</p>
+                    <p className="text-xs leading-relaxed mb-4" style={{color:'#4a6a96',fontWeight:300}}>{t(expressTimeline ? L.cta_sub_exp : L.cta_sub, lang)}</p>
                     <a href={waUrl} target="_blank" rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 w-full font-bold text-sm text-white rounded-lg py-3 mb-2.5 transition-colors hover:opacity-90"
                       style={{background:'#25D366'}}>

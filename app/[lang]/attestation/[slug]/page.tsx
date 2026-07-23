@@ -79,6 +79,7 @@ export default async function AttestationPage({ params }: Props) {
         waMessage={waMessage}
         faqItems={faqItems.length > 0 ? faqItems : undefined}
         richBlocks={getPageBlocks(pageSlug)}
+        expressTimeline
       />
     </>
   )

@@ -117,8 +117,8 @@ export default async function HomePage({ params }: Props) {
               {/* Stats */}
               <div className="flex flex-wrap gap-4 mt-8 pt-6 border-t border-navy-800">
                 {[
-                  {num:'10,000+', a:{en:'Documents',ar:'وثيقة',ru:'Документов',zh:'文件',es:'Documentos'}, b:{en:'Notarized',ar:'موثقة',ru:'Заверено',zh:'公证完成',es:'Notarizados'}},
-                  {num:'100%', a:{en:'First-Time',ar:'من الأولى',ru:'С первого раза',zh:'一次通过',es:'Primera Vez'}, b:{en:'Accepted',ar:'مقبولة',ru:'Принято',zh:'获批',es:'Aceptado'}},
+                  {num:'5,000+', a:{en:'Documents',ar:'وثيقة',ru:'Документов',zh:'文件',es:'Documentos'}, b:{en:'Notarized',ar:'موثقة',ru:'Заверено',zh:'公证完成',es:'Notarizados'}},
+                  {num:'5', a:{en:'Languages',ar:'لغات',ru:'Языков',zh:'种语言',es:'Idiomas'}, b:{en:'Supported',ar:'مدعومة',ru:'Поддержка',zh:'支持',es:'Soportados'}},
                   {num:'7', a:{en:'Days/Week',ar:'أيام أسبوعياً',ru:'Дней/неделю',zh:'天/周',es:'Días/Semana'}, b:{en:'Support',ar:'دعم',ru:'Поддержка',zh:'支持',es:'Soporte'}},
                 ].map((s,i) => (
                   <div key={i} className="flex items-center gap-2">

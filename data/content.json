@@ -654,11 +654,11 @@
             "es": "Legalización de Títulos y Certificados Educativos"
           },
           "desc": {
-            "en": "Free pickup in Dubai.",
-            "ar": "استلام مجاني في دبي.",
-            "ru": "Бесплатный выезд в Дубае.",
-            "zh": "迪拜免费取件。",
-            "es": "Recogida gratuita en Dubái."
+            "en": "MOFA attestation support for degrees, diplomas, and transcripts.",
+            "ar": "دعم تصديق الشهادات والدبلومات والسجلات الأكاديمية لدى وزارة الخارجية.",
+            "ru": "Поддержка аттестации дипломов и академических документов в MOFA.",
+            "zh": "学位、文凭及成绩单的外交部认证支持。",
+            "es": "Apoyo en la atestación MOFA de títulos, diplomas y expedientes académicos."
           },
           "wa_message": "I need degree/educational certificate attestation in Dubai"
         },
@@ -672,11 +672,11 @@
             "es": "Legalización de Acta de Matrimonio en Dubái"
           },
           "desc": {
-            "en": "Same-day service available.",
-            "ar": "خدمة في نفس اليوم.",
-            "ru": "В тот же день.",
-            "zh": "当日服务。",
-            "es": "Servicio el mismo día."
+            "en": "UAE-side attestation for marriage certificates.",
+            "ar": "تصديق شهادات الزواج داخل الإمارات.",
+            "ru": "Легализация свидетельств о браке внутри ОАЭ.",
+            "zh": "阿联酋境内的结婚证认证。",
+            "es": "Atestación de certificados de matrimonio dentro de los EAU."
           },
           "wa_message": "I need marriage certificate attestation in Dubai"
         }
@@ -1272,7 +1272,7 @@
           "es": "¿Cómo Emito un Aviso de Desalojo Válido de 12 Meses en Dubái?"
         },
         "a": {
-          "en": "A valid 12-month eviction notice in Dubai must: (1) be in the correct bilingual Arabic/English format, (2) state the legal reason for eviction under Law No. 33 of 2008, (3) be served through a licensed licensed notification service officer or registered Emirates Post mail, and (4) give the tenant exactly 12 months from the date of confirmed delivery.",
+          "en": "A valid 12-month eviction notice in Dubai must: (1) be in the correct bilingual Arabic/English format, (2) state the legal reason for eviction under Law No. 33 of 2008, (3) be served through a licensed notification service officer or registered Emirates Post mail, and (4) give the tenant exactly 12 months from the date of confirmed delivery.",
           "ar": "يجب أن يستوفي إشعار الإخلاء لمدة 12 شهراً في دبي: (1) الصيغة الثنائية اللغة الصحيحة عربي/إنجليزي، (2) ذكر السبب القانوني بموجب القانون رقم 33 لعام 2008، (3) التسليم عبر مزود خدمة الإشعارات المرخَّص مرخصة أو البريد المسجل عبر الإمارات بوست، (4) منح المستأجر 12 شهراً كاملاً من تاريخ التسليم المؤكد.",
           "ru": "Действительное 12-месячное уведомление о выселении в Дубае должно: (1) быть в правильном двуязычном формате, (2) указывать законное основание по Закону № 33/2008, (3) быть вручено через лицензированную службу licensed notification service или заказной почтой Emirates Post, (4) давать арендатору ровно 12 месяцев с даты подтверждённой доставки.",
           "zh": "迪拜有效的12个月驱逐通知必须：(1) 采用正确的阿拉伯语/英语双语格式，(2) 根据2008年第33号法律注明法律驱逐原因，(3) 通过持牌licensed notification service官员或阿联酋邮政挂号信送达，(4) 从确认送达之日起给予租户整整12个月。",
@@ -1370,7 +1370,7 @@
           "es": "¿Puedo Emitir una Notificación Legal si Estoy Fuera de Dubái?"
         },
         "a": {
-          "en": "Yes. E-Notary Dubai handles the full process remotely — you submit your details online, we draft the notice in the correct legal form, you review and approve the draft, we notarize it, and coordinate delivery via licensed licensed notification service service anywhere in Dubai.",
+          "en": "Yes. E-Notary Dubai handles the full process remotely — you submit your details online, we draft the notice in the correct legal form, you review and approve the draft, we notarize it, and coordinate delivery via licensed notification service anywhere in Dubai.",
           "ar": "بموجب قانون المعاملات المدنية الإماراتي — القانون الاتحادي رقم 5 لسنة 1985 — يحمل الإنذار القانوني المُعدّ والمُبلَّغ به بشكل صحيح ثقلاً قانونياً بالغاً: يقطع التقادم، يُنشئ سجلاً رسمياً لمطالبتك، ويُثبت حسن النية أمام أي محكمة.",
           "ru": "Да. E-Notary Dubai берёт на себя весь процесс удалённо — вы подаёте детали онлайн, мы составляем уведомление в правильном формате, координируем нотариальное заверение и доставку licensed notification service.",
           "zh": "是的。E-Notary Dubai远程处理整个流程——您在线提交详情，我们以正确格式起草通知，协调公证和licensed notification service送达。",
@@ -2106,7 +2106,7 @@
           "es": "¿Cuánto Tiempo Tarda la Notarización en Dubái?"
         },
         "a": {
-          "en": "Most documents are notarized same-day when you contact E-Notary Dubai before 2 PM. The standard turnaround is 1–2 business days. MOFA attestation takes 3–5 business days. Express services are available for urgent cases.",
+          "en": "Most documents are notarized same-day when you contact E-Notary Dubai before 2 PM. The standard turnaround is 1–2 business days. MOFA attestation takes 1–3 business days. Express services are available for urgent cases.",
           "ar": "معظم المستندات تُوثَّق في نفس اليوم عند التقديم قبل الساعة 2 ظهراً. التوثيق الاعتيادي يستغرق 1-2 يوم عمل. التوثيق المستعجل متاح عند الطلب للمستندات العاجلة.",
           "ru": "Большинство документов заверяется в тот же день при обращении до 14:00. Стандартное заверение занимает 1–2 рабочих дня. Срочное заверение доступно по запросу.",
           "zh": "大多数文件在下午2点前提交可当天公证。标准公证需要1-2个工作日。紧急文件可按要求当天办理。",
@@ -2404,11 +2404,11 @@
           "es": "¿Cuánto tarda la autenticación MOFA?"
         },
         "a": {
-          "en": "Standard MOFA attestation takes 3–5 business days. Express service is available for 1–2 business day processing at an additional fee. Certain document types may be eligible for same-day processing.",
-          "ar": "تصديق الخارجية العادي يستغرق 3 إلى 5 أيام عمل. الخدمة السريعة متاحة بمعالجة خلال 1 إلى 2 يوم عمل برسوم إضافية. بعض أنواع المستندات قد تستوفي شروط المعالجة في نفس اليوم.",
-          "ru": "Стандартная легализация MOFA занимает 3–5 рабочих дней. Экспресс-услуга доступна с обработкой за 1–2 рабочих дня за дополнительную плату.",
-          "zh": "标准MOFA认证需要3-5个工作日。加急服务可在1-2个工作日内处理，需额外收费。某些文件类型可能符合当日处理条件。",
-          "es": "La autenticación MOFA estándar tarda 3–5 días hábiles. El servicio expreso está disponible con procesamiento en 1–2 días hábiles por un cargo adicional."
+          "en": "Standard MOFA attestation takes 1–3 business days. Express service is available for 1–2 business day processing at an additional fee.",
+          "ar": "تصديق الخارجية القياسي يستغرق 1-3 أيام عمل. الخدمة السريعة متاحة بمعالجة خلال 1-2 يوم عمل برسوم إضافية.",
+          "ru": "Стандартная легализация MOFA занимает 1–3 рабочих дня. Экспресс-услуга доступна с обработкой за 1–2 рабочих дня за дополнительную плату.",
+          "zh": "标准MOFA认证需要1-3个工作日。加急服务可在1-2个工作日内处理，需额外收费。",
+          "es": "La autenticación MOFA estándar tarda 1–3 días hábiles. El servicio expreso está disponible con procesamiento en 1–2 días hábiles por un cargo adicional."
         }
       },
       {
@@ -2420,7 +2420,7 @@
           "es": "¿Puede E-Notary Dubai recoger y presentar documentos en mi nombre?"
         },
         "a": {
-          "en": "Yes. E-Notary Dubai handles the full MOFA attestation process on your behalf — we collect your documents (or you send via courier), prepare the submission package, submit to MOFA, track the status, and deliver the attested document back to you digitally or by courier. Free pickup is available for clients in the Dubai Business Bay area.",
+          "en": "Yes. E-Notary Dubai handles the full MOFA attestation process on your behalf — we collect your documents (or you send via courier), prepare the submission package, submit to MOFA, track the status, and deliver the attested document back to you digitally or by courier.",
           "ar": "نعم. تتولى E-Notary Dubai إجراءات تصديق وزارة الخارجية بالكامل نيابةً عنك — نستلم وثائقك أو ترسلها بالبريد، ونُعد حزمة التقديم، ونقدمها لوزارة الخارجية، ونتابع الحالة، ونسلمك الوثيقة المصدقة رقمياً أو بالبريد.",
           "ru": "Да. E-Notary Dubai берёт на себя весь процесс легализации MOFA — мы забираем ваши документы (или вы отправляете курьером), готовим пакет для подачи, подаём в MOFA, отслеживаем статус и доставляем заверенный документ.",
           "zh": "是的。E-Notary Dubai代表您处理整个MOFA认证流程——我们取走您的文件（或您用快递发送），准备提交包，提交至MOFA，跟踪状态，并以数字方式或快递方式将认证文件退还给您。",
@@ -2454,11 +2454,11 @@
           "es": "¿Cuánto tarda la autenticación de embajada?"
         },
         "a": {
-          "en": "Embassy attestation typically takes 3–7 business days per embassy after MOFA attestation is complete. Some embassies require appointments made in advance. The total timeline from notarization to final attested document is typically 5–12 business days. E-Notary Dubai coordinates all submissions and tracks progress on your behalf.",
-          "ar": "يستغرق تصديق السفارة عادةً 3-7 أيام عمل لكل سفارة بعد اكتمال تصديق الخارجية. تتطلب بعض السفارات مواعيد مسبقة. يتراوح الجدول الزمني الإجمالي من التوثيق حتى الوثيقة المصدقة النهائية بين 5-12 يوم عمل.",
-          "ru": "Легализация в посольстве занимает обычно 3–7 рабочих дней после завершения легализации MOFA. Некоторые посольства требуют предварительной записи. Общий срок от нотариального заверения до финального документа — 5–12 рабочих дней.",
-          "zh": "大使馆认证通常在MOFA认证完成后每个大使馆需要3-7个工作日。一些大使馆需要提前预约。从公证到最终认证文件的总时间通常为5-12个工作日。",
-          "es": "La autenticación de embajada suele tardar 3-7 días hábiles por embajada después de que se complete la autenticación MOFA. Algunas embajadas requieren citas previas. El plazo total desde la notarización hasta el documento final es tipicamente 5-12 días hábiles."
+          "en": "Embassy attestation typically takes 2–7 business days per embassy after MOFA attestation is complete, depending on the embassy. Some embassies require appointments made in advance. MOFA attestation (1–3 business days) is always completed first. E-Notary Dubai coordinates all submissions and tracks progress on your behalf.",
+          "ar": "يستغرق تصديق السفارة عادةً 2-7 أيام عمل لكل سفارة بعد اكتمال تصديق الخارجية، بحسب السفارة. تتطلب بعض السفارات مواعيد مسبقة. تصديق الخارجية (1-3 أيام عمل) يُستكمل أولاً دائماً. تُنسِّق E-Notary Dubai جميع التقديمات وتتابع التقدم نيابة عنك.",
+          "ru": "Легализация в посольстве занимает обычно 2–7 рабочих дней в зависимости от посольства, после завершения легализации MOFA. Некоторые посольства требуют предварительной записи. Легализация MOFA (1–3 рабочих дня) всегда выполняется первой. E-Notary Dubai координирует все подачи и отслеживает статус.",
+          "zh": "大使馆认证通常在MOFA认证完成后需要2-7个工作日，视大使馆而定。一些大使馆需要提前预约。外交部认证（1-3个工作日）始终首先完成。E-Notary Dubai协调所有提交并跟踪进度。",
+          "es": "La autenticación de embajada suele tardar 2-7 días hábiles por embajada después de completarse la autenticación MOFA, según la embajada. Algunas embajadas requieren citas previas. La autenticación MOFA (1-3 días hábiles) siempre se completa primero. E-Notary Dubai coordina todas las presentaciones y da seguimiento en su nombre."
         }
       },
       {
@@ -13642,11 +13642,11 @@
           "es": "Documentos que Atestamos"
         },
         {
-          "en": "Processing Times and Free Pickup",
-          "ar": "أوقات المعالجة والاستلام المجاني",
-          "ru": "Сроки обработки и бесплатный сбор",
-          "zh": "处理时间和免费取件",
-          "es": "Tiempos de Procesamiento y Recogida Gratuita"
+          "en": "Processing Times",
+          "ar": "أوقات المعالجة",
+          "ru": "Сроки обработки",
+          "zh": "处理时间",
+          "es": "Tiempos de Procesamiento"
         }
       ],
       "subsections": [
@@ -13702,11 +13702,11 @@
           "es": "Tras la atestación del MOFA, los documentos usados en el extranjero se legalizan en la embajada del país de destino en EAU y, cuando corresponda, en su ministerio de exteriores."
         },
         {
-          "en": "We offer free document pickup from your home or office anywhere in Dubai. Contact us via WhatsApp, schedule a time, and our team collects your documents. After MOFA processing, we deliver the attested documents back to your door. Standard turnaround: 1-3 business days. Express same-day and next-day available.",
-          "ar": "نُقدّم استلام مجاني للوثائق من منزلك أو مكتبك في أي مكان بدبي. تواصل معنا عبر واتساب وحدد وقتاً ويستلم فريقنا وثائقك. بعد معالجة وزارة الخارجية، نُوصّل الوثائق المصدّقة إلى بابك. المدة المعيارية: 1-3 أيام عمل. السريعة في نفس اليوم أو اليوم التالي متاحة.",
-          "ru": "Бесплатный сбор документов в Дубае. Стандартный срок 1-3 рабочих дня. Экспресс в тот же или следующий день. Доставка аттестованных документов обратно.",
-          "zh": "我们在迪拜任何地方免费取件。标准周期1-3个工作日。当天或次日快速服务可用。认证文件送回您门。",
-          "es": "Recogida gratuita en Dubái. Plazo estándar 1-3 días hábiles. Exprés mismo día/siguiente disponible. Entrega de documentos atestados de vuelta a su domicilio."
+          "en": "Contact us via WhatsApp and our team coordinates the submission. After MOFA processing, we deliver the attested documents back to you by courier or digitally. Standard turnaround: 1-3 business days. Express 1–2 business day processing available.",
+          "ar": "تواصل معنا عبر واتساب وينسّق فريقنا عملية التقديم. بعد معالجة وزارة الخارجية، نُوصّل الوثائق المصدّقة إليك بالبريد أو رقمياً. المدة القياسية: 1-3 أيام عمل. الخدمة السريعة متاحة بمعالجة خلال 1-2 يوم عمل.",
+          "ru": "Свяжитесь с нами в WhatsApp — наша команда координирует подачу. После обработки в MOFA мы возвращаем заверенные документы курьером или в цифровом виде. Стандартный срок: 1-3 рабочих дня. Экспресс-обработка за 1–2 рабочих дня доступна.",
+          "zh": "通过WhatsApp联系我们，我们的团队将协调提交事宜。外交部处理完成后，我们通过快递或数字方式将认证文件送还给您。标准周期：1-3个工作日。可提供1-2个工作日的加急处理。",
+          "es": "Contáctenos por WhatsApp y nuestro equipo coordina la presentación. Tras el procesamiento del MOFA, le devolvemos los documentos atestados por mensajería o digitalmente. Plazo estándar: 1-3 días hábiles. Procesamiento exprés de 1-2 días hábiles disponible."
         }
       ],
       "list_items": [
@@ -13786,11 +13786,11 @@
             "es": "¿Cuánto tarda la autenticación MOFA?"
           },
           "a": {
-            "en": "Standard MOFA attestation takes 2-3 business days. Express same-day service is available for certain document types when submitted before 10 AM. We handle the entire submission and collection process on your behalf.",
-            "ar": "يستغرق تصديق الخارجية القياسي 2-3 أيام عمل. تتوفر خدمة سريعة في نفس اليوم لأنواع معينة من المستندات عند التقديم قبل 10 صباحاً. نتولى عملية التقديم والاستلام بأكملها نيابة عنك.",
-            "ru": "Стандартная легализация MOFA занимает 2-3 рабочих дня. Экспресс-сервис в тот же день доступен для некоторых типов документов при подаче до 10:00. Мы берём на себя весь процесс подачи и получения.",
-            "zh": "标准外交部认证需要2-3个工作日。对于在上午10点前提交的某些文件类型，可提供当日快速服务。我们代表您处理整个提交和领取过程。",
-            "es": "La autenticación estándar del MOFA toma 2-3 días hábiles. El servicio expreso el mismo día está disponible para ciertos tipos de documentos presentados antes de las 10 AM."
+            "en": "Standard MOFA attestation takes 1–3 business days. Express service with 1–2 business day processing is available for an additional fee. We handle the submission and collection at MOFA in Dubai on your behalf.",
+            "ar": "يستغرق تصديق الخارجية القياسي 1-3 أيام عمل. الخدمة السريعة متاحة بمعالجة خلال 1-2 يوم عمل برسوم إضافية. نتولى التقديم والاستلام لدى وزارة الخارجية في دبي نيابة عنك.",
+            "ru": "Стандартная легализация MOFA занимает 1–3 рабочих дня. Экспресс-услуга с обработкой за 1–2 рабочих дня доступна за дополнительную плату. Мы берём на себя подачу и получение документов в MOFA в Дубае.",
+            "zh": "标准外交部认证需要1-3个工作日。加急服务可在1-2个工作日内处理，需额外收费。我们代表您在迪拜外交部办理提交和领取手续。",
+            "es": "La autenticación estándar del MOFA toma 1-3 días hábiles. El servicio expreso con procesamiento en 1-2 días hábiles está disponible por un cargo adicional."
           }
         }
       ],
@@ -13813,16 +13813,16 @@
         "meta_title": {
           "en": "MOFA Attestation Dubai | Document Processing Assistance",
           "ar": "تصديق الخارجية دبي — دعم وتجهيز الوثائق",
-          "ru": "Аттестация MOFA Дубай 2026 | Бесплатный сбор документов",
-          "zh": "迪拜MOFA外交部认证 2026 | 免费取件送件 | E-Notary Dubai",
-          "es": "Atestación MOFA Dubái 2026 | Recogida y Entrega Gratuita"
+          "ru": "Аттестация MOFA Дубай 2026 | Оформление 1-3 рабочих дня",
+          "zh": "迪拜MOFA外交部认证 2026 | 1-3个工作日办理 | E-Notary Dubai",
+          "es": "Atestación MOFA Dubái 2026 | Procesamiento 1-3 Días Hábiles"
         },
         "meta_description": {
-          "en": "Need MOFA attestation in Dubai? We assist with preparing and submitting personal and commercial documents to the UAE Ministry of Foreign Affairs. Free pickup.",
-          "ar": "نقدم لك المساعدة في تجهيز وتقديم وثائقك الشخصية والتجارية إلى وزارة الخارجية الإماراتية للتصديق الرسمي. خدمة استلام وتسليم مجانية في دبي.",
-          "ru": "Аттестация MOFA для всех документов ОАЭ. Бесплатный сбор и доставка в Дубае. Оформление 1-3 рабочих дня.",
-          "zh": "所有阿联酋文件的MOFA外交部认证。迪拜免费取件送件。1-3个工作日处理。",
-          "es": "Atestación MOFA para todos los documentos de los EAU. Recogida y entrega gratuita en Dubái. Procesamiento 1-3 días hábiles."
+          "en": "Need MOFA attestation in Dubai? We assist with preparing and submitting personal and commercial documents to the UAE Ministry of Foreign Affairs. 1–3 business days.",
+          "ar": "نقدم لك المساعدة في تجهيز وتقديم وثائقك الشخصية والتجارية إلى وزارة الخارجية الإماراتية للتصديق الرسمي. الإنجاز خلال 1-3 أيام عمل.",
+          "ru": "Аттестация MOFA для всех документов ОАЭ. Оформление 1-3 рабочих дня.",
+          "zh": "所有阿联酋文件的MOFA外交部认证。1-3个工作日处理。",
+          "es": "Atestación MOFA para todos los documentos de los EAU. Procesamiento 1-3 días hábiles."
         },
         "wa_message": {
           "en": "I need MOFA attestation in Dubai",
@@ -13925,6 +13925,23 @@
         {
           "type": "info",
           "title": {
+            "en": "Documents Issued Outside the UAE",
+            "ar": "الوثائق الصادرة من خارج الإمارات",
+            "ru": "Документы, выданные за пределами ОАЭ",
+            "zh": "阿联酋境外签发的文件",
+            "es": "Documentos Emitidos Fuera de los EAU"
+          },
+          "text": {
+            "en": "If your document was issued outside the UAE, it must first be attested in its country of issue — by that country's Ministry of Foreign Affairs and the UAE Embassy there — before UAE MOFA will attest it. Those steps are completed in the issuing country by you or an agent there. Once the document reaches us bearing the required stamps, we complete the MOFA attestation in Dubai.",
+            "ar": "إذا كانت وثيقتك صادرة من خارج الإمارات، فيجب تصديقها أولاً في بلد الإصدار — من وزارة خارجية ذلك البلد ثم سفارة الإمارات هناك — قبل أن تصدّقها وزارة الخارجية الإماراتية. هذه الخطوات تتم في بلد الإصدار بمعرفتك أو بمعرفة وكيل هناك. وبعد وصول الوثيقة إلينا بالأختام المطلوبة، نُكمل تصديق الوزارة في دبي.",
+            "ru": "Если ваш документ выдан за пределами ОАЭ, он сначала должен быть заверен в стране выдачи — в МИД этой страны и в посольстве ОАЭ там — прежде чем MOFA ОАЭ его заверит. Эти этапы выполняются в стране выдачи вами или вашим представителем. Когда документ поступает к нам с необходимыми отметками, мы выполняем аттестацию MOFA в Дубае.",
+            "zh": "如果您的文件是在阿联酋境外签发的，必须先在签发国完成认证——经该国外交部及当地阿联酋大使馆认证——阿联酋外交部才会对其认证。这些步骤在签发国由您本人或当地代理人完成。文件带着所需印章送达我们后，我们在迪拜完成外交部 (MOFA) 认证。",
+            "es": "Si su documento fue emitido fuera de los EAU, primero debe ser atestado en su país de emisión —por el Ministerio de Relaciones Exteriores de ese país y la Embajada de los EAU allí— antes de que el MOFA de los EAU lo ateste. Esos pasos se completan en el país de emisión por usted o un agente local. Una vez que el documento nos llega con los sellos requeridos, completamos la atestación del MOFA en Dubái."
+          }
+        },
+        {
+          "type": "info",
+          "title": {
             "en": "Processing Times and Fees",
             "ar": "مدد المعالجة والرسوم",
             "ru": "Сроки обработки и сборы",
@@ -13932,11 +13949,11 @@
             "es": "Tiempos de Procesamiento y Tarifas"
           },
           "text": {
-            "en": "Standard MOFA attestation: 1–3 business days. Express same-day service available for urgent documents (additional fee). Fees are set by the UAE government and vary by document type — personal documents (birth, marriage, degree) and commercial documents (trade licence, MOA) have different fee tiers. Contact us for a complete cost estimate before proceeding.",
-            "ar": "تصديق وزارة الخارجية الاعتيادي: 1 إلى 3 أيام عمل. تتوفر الخدمة السريعة في اليوم ذاته للوثائق العاجلة (برسوم إضافية). الرسوم محددة من الحكومة الإماراتية وتتفاوت بحسب نوع الوثيقة — الوثائق الشخصية (الميلاد والزواج والشهادات) والوثائق التجارية (الرخص والعقود) لها فئات رسوم مختلفة. تواصل معنا للحصول على تقدير تفصيلي للتكاليف قبل المتابعة.",
-            "ru": "Стандартная легализация MOFA: 1–3 рабочих дня. Экспресс-услуга в тот же день — для срочных документов (дополнительная плата). Сборы установлены правительством ОАЭ и варьируются по типу документа.",
-            "zh": "标准外交部认证：1至3个工作日。急件可提供当天快速服务（额外收费）。费用由阿联酋政府设定，根据文件类型而异——个人文件（出生证、结婚证、学历证书）和商业文件（营业执照、章程）有不同的费用层级。",
-            "es": "Autenticación MOFA estándar: 1–3 días hábiles. Servicio express el mismo día disponible para documentos urgentes (tarifa adicional). Las tarifas son fijadas por el gobierno de los EAU y varían según el tipo de documento."
+            "en": "Standard MOFA attestation: 1–3 business days. Express 1–2 business day service available for urgent documents (additional fee). Fees are set by the UAE government and vary by document type — personal documents (birth, marriage, degree) and commercial documents (trade licence, MOA) have different fee tiers. Contact us for a complete cost estimate before proceeding.",
+            "ar": "تصديق وزارة الخارجية الاعتيادي: 1 إلى 3 أيام عمل. تتوفر الخدمة السريعة بمعالجة خلال 1-2 يوم عمل للوثائق العاجلة (برسوم إضافية). الرسوم محددة من الحكومة الإماراتية وتتفاوت بحسب نوع الوثيقة — الوثائق الشخصية (الميلاد والزواج والشهادات) والوثائق التجارية (الرخص والعقود) لها فئات رسوم مختلفة. تواصل معنا للحصول على تقدير تفصيلي للتكاليف قبل المتابعة.",
+            "ru": "Стандартная легализация MOFA: 1–3 рабочих дня. Экспресс-услуга с обработкой за 1–2 рабочих дня доступна для срочных документов (за доплату). Сборы установлены правительством ОАЭ и варьируются по типу документа.",
+            "zh": "标准外交部认证：1至3个工作日。急件可提供1-2个工作日的加急服务（额外收费）。费用由阿联酋政府设定，根据文件类型而异——个人文件（出生证、结婚证、学历证书）和商业文件（营业执照、章程）有不同的费用层级。",
+            "es": "Autenticación MOFA estándar: 1–3 días hábiles. Servicio exprés con procesamiento en 1-2 días hábiles disponible para documentos urgentes (tarifa adicional). Las tarifas son fijadas por el gobierno de los EAU y varían según el tipo de documento."
           }
         }
       ]
@@ -14027,8 +14044,8 @@
           "es": "La atestación de embajada es necesaria para documentos de los EAU que van a países que NO son miembros del Convenio de La Haya. Después de MOFA, debe obtener la certificación de la embajada relevante en los EAU."
         },
         {
-          "en": "Step 1 — MOFA attestation (mandatory for all countries, always first). Step 2 — Embassy/consulate attestation of the destination country located in the UAE. We manage both steps — free document pickup, MOFA submission, embassy submission, and delivery back to you. Countries requiring embassy attestation include: Saudi Arabia, Egypt, Jordan, Lebanon, China, Philippines and most Arab and Asian countries.",
-          "ar": "الخطوة 1 — تصديق وزارة الخارجية (إلزامي لجميع الدول، دائماً أولاً). الخطوة 2 — تصديق سفارة الدولة المستهدفة أو قنصليتها في الإمارات. ندير كلا الخطوتين — استلام مجاني وتقديم لوزارة الخارجية وتقديم للسفارة وتوصيل إليك. تشمل الدول التي تتطلب تصديق السفارة: المملكة العربية السعودية ومصر والأردن ولبنان والصين والفلبين ومعظم الدول العربية والآسيوية.",
+          "en": "Step 1 — MOFA attestation (mandatory for all countries, always first). Step 2 — Embassy/consulate attestation of the destination country located in the UAE. We manage both steps — MOFA submission, embassy submission, and delivery back to you. Countries requiring embassy attestation include: Saudi Arabia, Egypt, Jordan, Lebanon, China, Philippines and most Arab and Asian countries.",
+          "ar": "الخطوة 1 — تصديق وزارة الخارجية (إلزامي لجميع الدول، دائماً أولاً). الخطوة 2 — تصديق سفارة الدولة المستهدفة أو قنصليتها في الإمارات. ندير كلا الخطوتين — تقديم لوزارة الخارجية وتقديم للسفارة وتوصيل إليك. تشمل الدول التي تتطلب تصديق السفارة: المملكة العربية السعودية ومصر والأردن ولبنان والصين والفلبين ومعظم الدول العربية والآسيوية.",
           "ru": "Шаг 1 — MOFA (обязательно для всех стран, всегда первым). Шаг 2 — Посольство страны назначения в ОАЭ. Управляем обоими шагами. Страны, требующие посольства: Саудовская Аравия, Египет, Иордания, Ливан, Китай, Филиппины.",
           "zh": "第1步——MOFA认证（所有国家必须，始终先行）。第2步——目的地国家驻阿联酋大使馆或领事馆认证。我们管理两个步骤。需要大使馆认证的国家包括：沙特阿拉伯、埃及、约旦、黎巴嫩、中国、菲律宾和大多数阿拉伯和亚洲国家。",
           "es": "Paso 1 — MOFA (obligatorio para todos los países, siempre primero). Paso 2 — Embajada del país de destino en los EAU. Gestionamos ambos pasos. Países que requieren embajada: Arabia Saudita, Egipto, Jordania, Líbano, China, Filipinas."
@@ -14104,10 +14121,10 @@
             "es": "¿Cuánto tarda la atestación de embajada en Dubái?"
           },
           "a": {
-            "en": "Timeline varies by embassy: Saudi Arabia Embassy typically 2-3 business days; Egyptian Embassy 3-5 days; Indian Embassy 5-7 days; Philippines Embassy 3-5 days. MOFA attestation (required first) adds 2-3 days. We track your documents throughout and update you at each stage.",
-            "ar": "يختلف الجدول الزمني حسب السفارة: السفارة السعودية عادة 2-3 أيام عمل، السفارة المصرية 3-5 أيام، السفارة الهندية 5-7 أيام، سفارة الفلبين 3-5 أيام. تصديق الخارجية (المطلوب أولاً) يضيف 2-3 أيام.",
-            "ru": "Сроки зависят от посольства: Саудовская Аравия — 2-3 рабочих дня; Египет — 3-5 дней; Индия — 5-7 дней; Филиппины — 3-5 дней. Легализация MOFA (обязательная первой) добавляет 2-3 дня.",
-            "zh": "时间因大使馆而异：沙特阿拉伯大使馆通常2-3个工作日；埃及大使馆3-5天；印度大使馆5-7天；菲律宾大使馆3-5天。外交部认证（必须先完成）需额外增加2-3天。",
+            "en": "Timeline varies by embassy: Saudi Arabia Embassy typically 2-3 business days; Egyptian Embassy 3-5 days; Indian Embassy 5-7 days; Philippines Embassy 3-5 days. MOFA attestation (required first) adds 1–3 business days. We track your documents throughout and update you at each stage.",
+            "ar": "يختلف الجدول الزمني حسب السفارة: السفارة السعودية عادة 2-3 أيام عمل، السفارة المصرية 3-5 أيام، السفارة الهندية 5-7 أيام، سفارة الفلبين 3-5 أيام. تصديق الخارجية (المطلوب أولاً) يضيف 1-3 أيام عمل.",
+            "ru": "Сроки зависят от посольства: Саудовская Аравия — 2-3 рабочих дня; Египет — 3-5 дней; Индия — 5-7 дней; Филиппины — 3-5 дней. Легализация MOFA (обязательная первой) добавляет 1–3 рабочих дня.",
+            "zh": "时间因大使馆而异：沙特阿拉伯大使馆通常2-3个工作日；埃及大使馆3-5天；印度大使馆5-7天；菲律宾大使馆3-5天。外交部认证（必须先完成）需额外增加1-3个工作日。",
             "es": "El plazo varía según la embajada: Embajada de Arabia Saudita generalmente 2-3 días hábiles; Embajada de Egipto 3-5 días; Embajada de India 5-7 días; Embajada de Filipinas 3-5 días."
           }
         }
@@ -14134,11 +14151,11 @@
           "es": "Atestación de Embajada Dubái | Todos los Países y Embajadas"
         },
         "meta_description": {
-          "en": "Navigating embassy attestation? We facilitate document preparation and coordination for MOFA and consulate submissions across 100+ countries.",
-          "ar": "نقدم لك المساعدة في تجهيز وثائقك وتنسيق معاملات التصديق لدى وزارة الخارجية وسفارات وقنصليات أكثر من 100 دولة في دبي.",
-          "ru": "Аттестация посольства в Дубае для документов ОАЭ — Саудовская Аравия, Египет, Великобритания, Китай, Филиппины и 100+ стран. Бесплатный сбор и доставка.",
-          "zh": "迪拜大使馆认证，适用于阿联酋文件——沙特阿拉伯、埃及、英国、中国、菲律宾及100+目的地国家。免费取件送件。",
-          "es": "Atestación de embajada en Dubái para documentos de EAU — Arabia Saudita, Egipto, Reino Unido, China, Filipinas y más de 100 destinos. Recogida gratuita."
+          "en": "Navigating embassy attestation? We facilitate document preparation and coordination for MOFA and destination-country embassy submissions inside the UAE.",
+          "ar": "نقدم لك المساعدة في تجهيز وثائقك وتنسيق معاملات التصديق لدى وزارة الخارجية وسفارات وقنصليات دول الوجهة داخل الإمارات.",
+          "ru": "Аттестация посольства в Дубае для документов ОАЭ — подача в MOFA и посольства стран назначения внутри ОАЭ.",
+          "zh": "迪拜大使馆认证，适用于阿联酋文件——在阿联酋境内完成外交部及目的地国大使馆的提交。",
+          "es": "Atestación de embajada en Dubái para documentos de EAU — presentaciones al MOFA y a las embajadas del país de destino dentro de los EAU."
         },
         "wa_message": {
           "en": "I need Embassy attestation in Dubai",
@@ -14163,11 +14180,11 @@
           "type": "para",
           "accent": true,
           "text": {
-            "en": "We provide a complete, end-to-end embassy attestation chain for UAE documents intended for use abroad. This official legalization process is mandatory for your documents to be legally recognized in countries such as Saudi Arabia, Egypt, the UK, the Philippines, India, and China.",
-            "ar": "نوفر سلسلة تصديق متكاملة من السفارات للمستندات الإماراتية المراد استخدامها في الخارج. عملية التوثيق الرسمية هذه إلزامية ليتم الاعتراف بمستنداتك قانونياً في دول مثل السعودية، مصر، بريطانيا، الفلبين، الهند، والصين.",
-            "ru": "Мы предоставляем полный цикл легализации в посольствах для документов ОАЭ, предназначенных для использования за рубежом. Этот официальный процесс обязателен для юридического признания ваших документов в таких странах, как Саудовская Аравия, Египет, Великобритания, Филиппины, Индия и Китай.",
-            "zh": "我们为计划在国外使用的阿联酋文件提供完整的端到端大使馆认证链。这种官方合法化过程是强制性的，以确保您的文件在沙特阿拉伯、埃及、英国、菲律宾、印度和中国等国家获得法律认可。",
-            "es": "Proporcionamos una cadena de atestación de embajada completa para documentos de los EAU destinados a usarse en el extranjero. Este proceso de legalización oficial es obligatorio para que sus documentos sean reconocidos legalmente en países como Arabia Saudita, Egipto, el Reino Unido, Filipinas, India y China."
+            "en": "We provide a complete, end-to-end embassy attestation chain for UAE documents intended for use abroad. This official legalization process is mandatory for your documents to be legally recognized in countries such as Saudi Arabia, Egypt, the UK, the Philippines, India, and China. (For documents issued outside the UAE, the country-of-origin attestation must be completed there before the UAE-side steps.)",
+            "ar": "نوفر سلسلة تصديق متكاملة من السفارات للمستندات الإماراتية المراد استخدامها في الخارج. عملية التوثيق الرسمية هذه إلزامية ليتم الاعتراف بمستنداتك قانونياً في دول مثل السعودية، مصر، بريطانيا، الفلبين، الهند، والصين. (بالنسبة للوثائق الصادرة من خارج الإمارات، يجب إتمام تصديق بلد الإصدار هناك قبل الخطوات داخل الإمارات.)",
+            "ru": "Мы предоставляем полный цикл легализации в посольствах для документов ОАЭ, предназначенных для использования за рубежом. Этот официальный процесс обязателен для юридического признания ваших документов в таких странах, как Саудовская Аравия, Египет, Великобритания, Филиппины, Индия и Китай. (Для документов, выданных за пределами ОАЭ, заверение в стране выдачи должно быть выполнено там до этапов внутри ОАЭ.)",
+            "zh": "我们为计划在国外使用的阿联酋文件提供完整的端到端大使馆认证链。这种官方合法化过程是强制性的，以确保您的文件在沙特阿拉伯、埃及、英国、菲律宾、印度和中国等国家获得法律认可。（对于阿联酋境外签发的文件，须先在签发国完成当地认证，然后才能进行阿联酋境内的步骤。）",
+            "es": "Proporcionamos una cadena de atestación de embajada completa para documentos de los EAU destinados a usarse en el extranjero. Este proceso de legalización oficial es obligatorio para que sus documentos sean reconocidos legalmente en países como Arabia Saudita, Egipto, el Reino Unido, Filipinas, India y China. (Para documentos emitidos fuera de los EAU, la atestación del país de emisión debe completarse allí antes de los pasos dentro de los EAU.)"
           }
         },
         {
@@ -14519,7 +14536,7 @@
           "es": "Aviso bilingüe árabe/inglés en el formato legal correcto"
         },
         {
-          "en": "Delivery via licensed licensed notification service",
+          "en": "Delivery via licensed notification service",
           "ar": "التسليم عبر خدمة التبليغ المرخصة licensed notification service",
           "ru": "Доставка через лицензированную службу уведомлений licensed notification service",
           "zh": "通过持牌licensed notification service通知服务送达",
@@ -18894,11 +18911,11 @@
           "es": "Las solicitudes en el mismo día después de las 12:00 pueden requerir gestión expedita. Contáctenos para obtener un presupuesto urgente personalizado."
         },
         {
-          "en": "We handle same-day notarization for: all types of Power of Attorney, affidavits and sworn statements, corporate documents (board resolutions, MOAs), eviction notices, legal notices, certified true copies, and signature authentication. For MOFA attestation, standard is 1-3 business days — but we offer express same-day submission.",
-          "ar": "نتولى التوثيق في نفس اليوم لـ: جميع أنواع الوكالات الرسمية، والإقرارات والتصريحات المحلفة، ووثائق الشركات (قرارات مجلس الإدارة وعقود التأسيس)، وإشعارات الإخلاء، والإنذارات القانونية، والنسخ المصدقة، وتوثيق التوقيع. لتصديق وزارة الخارجية، المعيار 1-3 أيام عمل — لكن نقدم التقديم السريع في نفس اليوم.",
-          "ru": "Срочное заверение в тот же день: все виды доверенностей, аффидевиты, корпоративные документы, уведомления о выселении, юридические уведомления, заверенные копии, аутентификация подписи. Для MOFA — стандарт 1-3 дня, но предлагаем экспресс в тот же день.",
-          "zh": "当日公证处理：所有类型授权委托书、宣誓书和声明、公司文件（董事会决议、公司章程）、驱逐通知、法律通知、经认证的真实副本和签名认证。MOFA认证标准1-3个工作日，但我们提供当日快速提交。",
-          "es": "Notarización urgente el mismo día para: todos los tipos de poderes notariales, declaraciones juradas, documentos corporativos, avisos de desalojo, avisos legales, copias certificadas, autenticación de firma. Para MOFA — estándar 1-3 días, pero ofrecemos presentación exprés el mismo día."
+          "en": "We handle same-day notarization for: all types of Power of Attorney, affidavits and sworn statements, corporate documents (board resolutions, MOAs), eviction notices, legal notices, certified true copies, and signature authentication. For MOFA attestation, standard is 1-3 business days — express 1–2 business day processing is available.",
+          "ar": "نتولى التوثيق في نفس اليوم لـ: جميع أنواع الوكالات الرسمية، والإقرارات والتصريحات المحلفة، ووثائق الشركات (قرارات مجلس الإدارة وعقود التأسيس)، وإشعارات الإخلاء، والإنذارات القانونية، والنسخ المصدقة، وتوثيق التوقيع. لتصديق وزارة الخارجية، المعيار 1-3 أيام عمل — والخدمة السريعة متاحة بمعالجة خلال 1-2 يوم عمل.",
+          "ru": "Срочное заверение в тот же день: все виды доверенностей, аффидевиты, корпоративные документы, уведомления о выселении, юридические уведомления, заверенные копии, аутентификация подписи. Для MOFA — стандарт 1-3 дня, экспресс-обработка за 1–2 рабочих дня доступна.",
+          "zh": "当日公证处理：所有类型授权委托书、宣誓书和声明、公司文件（董事会决议、公司章程）、驱逐通知、法律通知、经认证的真实副本和签名认证。MOFA认证标准1-3个工作日，可提供1-2个工作日的加急处理。",
+          "es": "Notarización urgente el mismo día para: todos los tipos de poderes notariales, declaraciones juradas, documentos corporativos, avisos de desalojo, avisos legales, copias certificadas, autenticación de firma. Para MOFA — estándar 1-3 días, el procesamiento exprés de 1-2 días hábiles está disponible."
         },
         {
           "en": "Contact before 2 PM Dubai time for same-day processing on most documents. For documents received after 2 PM, we aim to complete by 10 AM the following morning. WhatsApp us with your document details and we confirm availability immediately.",
@@ -24587,11 +24604,11 @@
             "es": "¿Cuánto Tiempo Tarda la Notarización en Dubái?"
           },
           "a": {
-            "en": "Most documents are notarized same-day when you contact E-Notary Dubai before 2 PM. The standard turnaround is 1–2 business days. MOFA attestation takes 3–5 business days. Express services are available for urgent cases.",
-            "ar": "مع خدمتنا لتوثيق الوكالات إلكترونياً، يتم الإنجاز في نفس اليوم للطلبات المكتملة قبل الساعة 2 ظهراً. الوثائق المعقدة أو التي تتطلب تصديق السفارات قد تستغرق من يوم إلى يومي عمل.",
-            "ru": "Большинство документов нотариально заверяются в тот же день при обращении до 14:00. Стандартный срок — 1–2 рабочих дня. MOFA занимает ещё 2–5 дней, посольская легализация — 3–7 дней дополнительно.",
-            "zh": "大多数文件在下午2点前联系E-Notary Dubai即可当天公证。标准处理时间为1-2个工作日。MOFA额外需要2-5天，大使馆认证额外需要3-7天。",
-            "es": "La mayoría de los documentos se notarizan el mismo día si contacta a E-Notary Dubai antes de las 2 PM. El plazo estándar es 1-2 días hábiles. MOFA requiere 2-5 días adicionales, la autenticación de embajada 3-7 días más."
+            "en": "Most documents are notarized same-day when you contact E-Notary Dubai before 2 PM. The standard turnaround is 1–2 business days. MOFA attestation takes 1–3 business days. Express services are available for urgent cases.",
+            "ar": "معظم المستندات تُوثَّق في نفس اليوم عند التواصل قبل الساعة 2 ظهراً. التوثيق القياسي يستغرق 1-2 يوم عمل. تصديق الخارجية يضيف 1-3 أيام عمل، وتصديق السفارات يضيف مدة إضافية بحسب السفارة.",
+            "ru": "Большинство документов нотариально заверяются в тот же день при обращении до 14:00. Стандартный срок — 1–2 рабочих дня. MOFA занимает ещё 1–3 дня, посольская легализация — 3–7 дней дополнительно.",
+            "zh": "大多数文件在下午2点前联系E-Notary Dubai即可当天公证。标准处理时间为1-2个工作日。MOFA额外需要1-3天，大使馆认证额外需要3-7天。",
+            "es": "La mayoría de los documentos se notarizan el mismo día si contacta a E-Notary Dubai antes de las 2 PM. El plazo estándar es 1-2 días hábiles. MOFA requiere 1-3 días adicionales, la autenticación de embajada 3-7 días más."
           }
         },
         {
@@ -25311,9 +25328,9 @@
         "meta_description": {
           "en": "We assist with the official processing of your university degrees and educational certificates for attestation by relevant UAE authorities.",
           "ar": "نوفر خدمات التجهيز والمساعدة في التقديم لتصديق شهاداتك الجامعية والتعليمية عبر الجهات الرسمية في الإمارات لأغراض التوظيف والتأشيرات.",
-          "ru": "Легализация дипломов и образовательных документов в Дубае — подготовка и подача в МИД ОАЭ. Бесплатный выезд курьера.",
-          "zh": "迪拜免费取件。",
-          "es": "Atestación de títulos universitarios y certificados educativos en Dubái — preparación y presentación ante el MOFA. Recogida gratuita."
+          "ru": "Легализация дипломов и образовательных документов в Дубае — подготовка и подача в МИД ОАЭ. Обработка 1-3 рабочих дня.",
+          "zh": "迪拜学位及教育证书认证——准备并提交至阿联酋外交部。处理周期1-3个工作日。",
+          "es": "Atestación de títulos universitarios y certificados educativos en Dubái — preparación y presentación ante el MOFA. Procesamiento 1-3 días hábiles."
         },
         "wa_message": {
           "en": "I need degree/educational certificate attestation in Dubai",
@@ -25338,11 +25355,11 @@
           "type": "para",
           "accent": true,
           "text": {
-            "en": "We provide a seamless authentication chain for your educational qualifications. Whether you are moving abroad for a new career, pursuing higher studies, or applying for an investment visa, our team ensures your degree is legally recognized by the UAE Ministry of Foreign Affairs (MOFA) and international embassies.",
-            "ar": "نوفر سلسلة متكاملة لتوثيق مؤهلاتك التعليمية. سواء كنت تنتقل للخارج لبدء مسار مهني جديد، أو متابعة الدراسات العليا، أو التقدم للحصول على تأشيرة استثمار، يضمن فريقنا الاعتراف القانوني بشهادتك من قبل وزارة الخارجية الإماراتية والسفارات الدولية.",
-            "ru": "Мы обеспечиваем бесшовную цепочку аутентификации ваших образовательных документов. Если вы переезжаете за границу ради карьеры, продолжаете обучение или подаете документы на инвестиционную визу, мы готовим ваш диплом для юридического признания в МИД ОАЭ и иностранных посольствах.",
-            "zh": "我们为您的教育资格提供无缝的认证链。无论您是移居海外开启新职业、继续深造还是申请投资签证，我们的团队都会确保您的学位得到阿联酋外交部 (MOFA) 和国际大使馆的法律认可。",
-            "es": "Ofrecemos una cadena de autenticación perfecta para sus calificaciones educativas. Ya sea que se mude al extranjero para una nueva carrera, realice estudios superiores o solicite una visa de inversión, preparamos su título para el reconocimiento legal ante el MOFA de los EAU y las embajadas internacionales."
+            "en": "We provide a seamless authentication chain for your educational qualifications. Whether you are moving abroad for a new career, pursuing higher studies, or applying for an investment visa, our team ensures your degree is legally recognized by the UAE Ministry of Foreign Affairs (MOFA) and international embassies. For degrees issued outside the UAE, our role begins once the document has been attested in its country of issue.",
+            "ar": "نوفر سلسلة متكاملة لتوثيق مؤهلاتك التعليمية. سواء كنت تنتقل للخارج لبدء مسار مهني جديد، أو متابعة الدراسات العليا، أو التقدم للحصول على تأشيرة استثمار، يضمن فريقنا الاعتراف القانوني بشهادتك من قبل وزارة الخارجية الإماراتية والسفارات الدولية. أما الشهادات الصادرة من خارج الإمارات، فيبدأ دورنا بعد إتمام تصديقها في بلد الإصدار.",
+            "ru": "Мы обеспечиваем бесшовную цепочку аутентификации ваших образовательных документов. Если вы переезжаете за границу ради карьеры, продолжаете обучение или подаете документы на инвестиционную визу, мы готовим ваш диплом для юридического признания в МИД ОАЭ и иностранных посольствах. Для дипломов, выданных за пределами ОАЭ, наша работа начинается после их заверения в стране выдачи.",
+            "zh": "我们为您的教育资格提供无缝的认证链。无论您是移居海外开启新职业、继续深造还是申请投资签证，我们的团队都会确保您的学位得到阿联酋外交部 (MOFA) 和国际大使馆的法律认可。对于阿联酋境外签发的学历，我们的工作在文件于签发国完成认证后开始。",
+            "es": "Ofrecemos una cadena de autenticación perfecta para sus calificaciones educativas. Ya sea que se mude al extranjero para una nueva carrera, realice estudios superiores o solicite una visa de inversión, preparamos su título para el reconocimiento legal ante el MOFA de los EAU y las embajadas internacionales. Para títulos emitidos fuera de los EAU, nuestra labor comienza una vez que el documento haya sido atestado en su país de emisión."
           }
         },
         {
@@ -25360,6 +25377,23 @@
             "ru": "Независимо от страны назначения, Министерство иностранных дел ОАЭ (MOFA) должно сначала заверить документ.",
             "zh": "无论您的目的地是哪里，都必须先由阿联酋外交部 (MOFA) 对文件进行认证。",
             "es": "Independientemente de su destino, el Ministerio de Relaciones Exteriores de los EAU (MOFA) debe autenticar el documento primero."
+          }
+        },
+        {
+          "type": "info",
+          "title": {
+            "en": "Degrees Issued Outside the UAE",
+            "ar": "الشهادات الصادرة من خارج الإمارات",
+            "ru": "Дипломы, выданные за пределами ОАЭ",
+            "zh": "阿联酋境外签发的学历",
+            "es": "Títulos Emitidos Fuera de los EAU"
+          },
+          "text": {
+            "en": "A degree issued abroad must first be attested in its country of issue — by that country's Ministry of Foreign Affairs and then the UAE Embassy there. These steps take place in the issuing country and are completed by you or an agent there. Once the document arrives in the UAE with those attestations, we complete the MOFA attestation in Dubai and any destination-embassy legalization inside the UAE.",
+            "ar": "الشهادة الصادرة من الخارج يجب تصديقها أولاً في بلد الإصدار — من وزارة خارجية ذلك البلد ثم سفارة الإمارات هناك. هذه الخطوات تتم في بلد الإصدار وتُستكمل بمعرفتك أو بمعرفة وكيل هناك. وبعد وصول الوثيقة إلى الإمارات بهذه التصديقات، نُكمل تصديق وزارة الخارجية الإماراتية في دبي وأي تصديق لسفارة دولة الوجهة داخل الإمارات.",
+            "ru": "Диплом, выданный за границей, сначала должен быть заверен в стране выдачи — в МИД этой страны, а затем в посольстве ОАЭ там. Эти этапы выполняются в стране выдачи вами или вашим представителем. Когда документ прибывает в ОАЭ с этими отметками, мы выполняем аттестацию MOFA в Дубае и, при необходимости, легализацию в посольстве страны назначения внутри ОАЭ.",
+            "zh": "国外签发的学历必须先在签发国完成认证——先经该国外交部认证，再经当地的阿联酋大使馆认证。这些步骤在签发国进行，由您本人或当地代理人完成。文件带着这些认证到达阿联酋后，我们在迪拜完成外交部 (MOFA) 认证，以及在阿联酋境内所需的目的地国大使馆合法化。",
+            "es": "Un título emitido en el extranjero debe ser atestado primero en su país de emisión: por el Ministerio de Relaciones Exteriores de ese país y luego por la Embajada de los EAU allí. Estos pasos se realizan en el país de emisión y los completa usted o un agente local. Una vez que el documento llega a los EAU con esas atestaciones, completamos la atestación del MOFA en Dubái y cualquier legalización de embajada de destino dentro de los EAU."
           }
         },
         {
@@ -25498,11 +25532,11 @@
                 "es": "Nivel de Servicio"
               },
               "sub": {
-                "en": "Same-day processing available",
-                "ar": "خيارات المعالجة في نفس اليوم",
-                "ru": "Доступна обработка в тот же день",
-                "zh": "可提供当日处理",
-                "es": "Procesamiento en el mismo día disponible"
+                "en": "1–2 business day processing",
+                "ar": "معالجة خلال 1-2 يوم عمل",
+                "ru": "Обработка за 1–2 рабочих дня",
+                "zh": "1-2个工作日处理",
+                "es": "Procesamiento en 1-2 días hábiles"
               }
             }
           ]
@@ -25559,9 +25593,9 @@
         "meta_description": {
           "en": "Need your marriage certificate attested for a UAE visa? We provide processing support for MOFA and embassy submissions to save you time.",
           "ar": "هل تحتاج لتصديق عقد زواجك لإجراءات الإقامة؟ نقدم لك المساعدة في تجهيز المستندات وتنسيق تقديمها لدى الخارجية والسفارات المعنية في دبي.",
-          "ru": "Легализация свидетельства о браке в Дубае — подготовка и подача в МИД ОАЭ и посольства. Услуга в тот же день.",
-          "zh": "当日服务。",
-          "es": "Atestación de certificados de matrimonio en Dubái — preparación y presentación ante el MOFA y embajadas. Servicio el mismo día."
+          "ru": "Легализация свидетельства о браке в Дубае — подготовка и подача в МИД ОАЭ и посольства. Обработка MOFA 1–3 рабочих дня.",
+          "zh": "迪拜结婚证认证——准备并提交至阿联酋外交部及大使馆。外交部处理1-3个工作日。",
+          "es": "Atestación de certificados de matrimonio en Dubái — preparación y presentación ante el MOFA y embajadas. Procesamiento MOFA en 1-3 días hábiles."
         },
         "wa_message": {
           "en": "I need marriage certificate attestation in Dubai",
@@ -25586,11 +25620,11 @@
           "type": "para",
           "accent": true,
           "text": {
-            "en": "We provide official attestation for marriage certificates issued inside the UAE or abroad. This legal authentication is strictly required for spousal visas, immigration, joint property ownership, inheritance, and overseas legal matters.",
-            "ar": "نوفر خدمة التصديق الرسمي لشهادات الزواج الصادرة داخل دولة الإمارات أو خارجها. هذا التوثيق القانوني مطلوب بشكل صارم لتأشيرات الزوجة/الزوج، والهجرة، والملكية المشتركة للعقارات، والميراث، والمسائل القانونية في الخارج.",
-            "ru": "Мы предоставляем официальную легализацию свидетельств о браке, выданных в ОАЭ или за рубежом. Это юридическое заверение строго обязательно для супружеских виз, иммиграции, совместного владения недвижимостью, наследства и зарубежных правовых вопросов.",
-            "zh": "我们为在阿联酋境内或境外签发的结婚证提供官方认证。这种法律认证是配偶签证、移民、共有财产所有权、继承和海外法律事务的严格要求。",
-            "es": "Proporcionamos atestación oficial para certificados de matrimonio emitidos dentro de los EAU o en el extranjero. Esta autenticación legal es estrictamente requerida para visas de cónyuge, inmigración, propiedad conjunta, herencia y asuntos legales en el extranjero."
+            "en": "We provide UAE-side attestation for marriage certificates: attestation by the UAE Ministry of Foreign Affairs (MOFA) in Dubai, followed — where required — by legalization at the destination country's embassy in the UAE. This legal authentication is strictly required for spousal visas, immigration, joint property ownership, inheritance, and overseas legal matters. For certificates issued abroad, our service begins after the certificate has been attested in its country of issue.",
+            "ar": "نقدم خدمات التصديق داخل الإمارات لشهادات الزواج: تصديق وزارة الخارجية الإماراتية (MOFA) في دبي، ثم — عند الحاجة — تصديق سفارة دولة الوجهة داخل الإمارات. هذا التصديق القانوني مطلوب لتأشيرات الأزواج والهجرة والملكية العقارية المشتركة والميراث والمعاملات القانونية في الخارج. أما الشهادات الصادرة من خارج الدولة، فتبدأ خدمتنا بعد إتمام تصديقها في بلد الإصدار.",
+            "ru": "Мы предоставляем услуги легализации свидетельств о браке на территории ОАЭ: аттестация в Министерстве иностранных дел ОАЭ (MOFA) в Дубае, а затем — при необходимости — легализация в посольстве страны назначения в ОАЭ. Эта юридическая аутентификация строго требуется для супружеских виз, иммиграции, совместной собственности, наследства и юридических вопросов за рубежом. Для свидетельств, выданных за границей, наша услуга начинается после их заверения в стране выдачи.",
+            "zh": "我们提供阿联酋境内的结婚证认证服务：在迪拜完成阿联酋外交部 (MOFA) 认证，如有需要，再在阿联酋境内的目的地国大使馆完成合法化。此法律认证是配偶签证、移民、共同房产、继承及海外法律事务的严格要求。对于国外签发的证书，我们的服务在证书于签发国完成认证后开始。",
+            "es": "Ofrecemos la atestación dentro de los EAU para certificados de matrimonio: atestación del Ministerio de Relaciones Exteriores de los EAU (MOFA) en Dubái y, cuando se requiera, legalización en la embajada del país de destino dentro de los EAU. Esta autenticación legal es estrictamente necesaria para visas de cónyuge, inmigración, propiedad conjunta, herencia y asuntos legales en el extranjero. Para certificados emitidos en el extranjero, nuestro servicio comienza después de que el certificado haya sido atestado en su país de emisión."
           }
         },
         {
@@ -25603,11 +25637,11 @@
             "es": "Certificados Emitidos en los EAU vs. en el Extranjero"
           },
           "text": {
-            "en": "The exact process depends on where you got married. UAE-issued certificates need MOFA attestation before going to foreign embassies. Foreign-issued certificates must first be attested in the country of origin before the UAE MOFA will stamp them.",
-            "ar": "تعتمد العملية الدقيقة على مكان زواجك. تحتاج الشهادات الصادرة في الإمارات إلى تصديق وزارة الخارجية (MOFA) قبل التوجه إلى السفارات الأجنبية. أما الشهادات الصادرة في الخارج، فيجب تصديقها أولاً في بلد المنشأ قبل أن تختمها وزارة الخارجية الإماراتية.",
-            "ru": "Точный процесс зависит от того, где вы заключили брак. Свидетельства, выданные в ОАЭ, требуют легализации в MOFA перед обращением в иностранные посольства. Свидетельства, выданные за рубежом, должны быть сначала заверены в стране происхождения, прежде чем MOFA ОАЭ поставит свою печать.",
-            "zh": "确切的流程取决于您结婚的地点。阿联酋签发的证书在送交外国大使馆之前需要经过 MOFA 认证。外国签发的证书必须先在原籍国进行认证，然后阿联酋外交部才会盖章。",
-            "es": "El proceso exacto depende de dónde se casó. Los certificados emitidos en los EAU necesitan la atestación del MOFA antes de ir a las embajadas extranjeras. Los certificados emitidos en el extranjero primero deben ser atestados en el país de origen antes de que el MOFA de los EAU los selle."
+            "en": "The exact process depends on where you got married. UAE-issued certificates need MOFA attestation before going to foreign embassies. Foreign-issued certificates must first be attested in the country of origin before the UAE MOFA will stamp them. Important: the country-of-origin steps (your country's Ministry of Foreign Affairs and the UAE Embassy there) take place in that country and must be completed by you or an agent there before we receive the document. Our service covers the steps inside the UAE only.",
+            "ar": "تعتمد العملية الدقيقة على مكان زواجك. تحتاج الشهادات الصادرة في الإمارات إلى تصديق وزارة الخارجية (MOFA) قبل التوجه إلى السفارات الأجنبية. أما الشهادات الصادرة في الخارج، فيجب تصديقها أولاً في بلد المنشأ قبل أن تختمها وزارة الخارجية الإماراتية. تنبيه مهم: خطوات بلد الإصدار (وزارة خارجية بلدك ثم سفارة الإمارات هناك) تتم في ذلك البلد ويجب إتمامها بمعرفتك أو بمعرفة وكيل هناك قبل استلامنا للوثيقة — نطاق خدمتنا يشمل الخطوات داخل الإمارات فقط.",
+            "ru": "Точный процесс зависит от того, где вы заключили брак. Свидетельства, выданные в ОАЭ, требуют легализации в MOFA перед обращением в иностранные посольства. Свидетельства, выданные за рубежом, должны быть сначала заверены в стране происхождения, прежде чем MOFA ОАЭ поставит свою печать. Важно: этапы в стране выдачи (МИД вашей страны и посольство ОАЭ там) выполняются в этой стране вами или вашим представителем до передачи нам документа — наша услуга охватывает только этапы внутри ОАЭ.",
+            "zh": "确切的流程取决于您结婚的地点。阿联酋签发的证书在送交外国大使馆之前需要经过 MOFA 认证。外国签发的证书必须先在原籍国进行认证，然后阿联酋外交部才会盖章。重要提示：签发国的步骤（贵国外交部及当地阿联酋大使馆的认证）须在该国由您本人或当地代理人完成，然后我们才能接收文件——我们的服务仅涵盖阿联酋境内的步骤。",
+            "es": "El proceso exacto depende de dónde se casó. Los certificados emitidos en los EAU necesitan la atestación del MOFA antes de ir a las embajadas extranjeras. Los certificados emitidos en el extranjero primero deben ser atestados en el país de origen antes de que el MOFA de los EAU los selle. Importante: los pasos en el país de emisión (el Ministerio de Relaciones Exteriores de su país y la Embajada de los EAU allí) se realizan en ese país y deben ser completados por usted o un agente local antes de que recibamos el documento; nuestro servicio cubre únicamente los pasos dentro de los EAU."
           }
         },
         {
@@ -25757,20 +25791,20 @@
           "type": "stats",
           "items": [
             {
-              "value": "Same-Day",
+              "value": "1–3",
               "label": {
-                "en": "Processing Available",
-                "ar": "المعالجة السريعة متاحة",
-                "ru": "Доступна срочная обработка",
-                "zh": "可提供当日处理",
-                "es": "Procesamiento Disponible"
+                "en": "Business Days",
+                "ar": "أيام عمل",
+                "ru": "Рабочих дня",
+                "zh": "个工作日",
+                "es": "Días Hábiles"
               },
               "sub": {
-                "en": "For specific MOFA steps",
-                "ar": "لخطوات محددة في الخارجية",
-                "ru": "Для определенных этапов в MOFA",
-                "zh": "针对特定的 MOFA 步骤",
-                "es": "Para pasos específicos del MOFA"
+                "en": "Standard MOFA processing",
+                "ar": "معالجة الخارجية القياسية",
+                "ru": "Стандартная обработка MOFA",
+                "zh": "标准外交部处理",
+                "es": "Procesamiento MOFA estándar"
               }
             },
             {
@@ -25802,11 +25836,11 @@
             "es": "Obtenga la Atestación de su Certificado de Matrimonio Hoy"
           },
           "text": {
-            "en": "Send us a quick WhatsApp message. Tell us where your marriage certificate was issued and where you plan to use it. Our team will handle the entire MOFA and embassy process quickly and securely.",
-            "ar": "أرسل لنا رسالة واتساب سريعة. أخبرنا بمكان إصدار شهادة زواجك وأين تخطط لاستخدامها. سيتولى فريقنا عملية تصديق وزارة الخارجية والسفارة بالكامل بسرعة وأمان.",
-            "ru": "Отправьте нам быстрое сообщение в WhatsApp. Скажите нам, где было выдано ваше свидетельство о браке и где вы планируете его использовать. Наша команда быстро и безопасно проведет весь процесс через MOFA и посольство.",
-            "zh": "向我们发送快速的 WhatsApp 消息。告诉我们您的结婚证是在哪里签发的，以及您打算在哪里使用它。我们的团队将快速安全地处理整个外交部和大使馆流程。",
-            "es": "Envíenos un mensaje rápido por WhatsApp. Díganos dónde se emitió su certificado de matrimonio y dónde planea usarlo. Nuestro equipo manejará todo el proceso del MOFA y la embajada de manera rápida y segura."
+            "en": "Send us a quick WhatsApp message. Tell us where your marriage certificate was issued and where you plan to use it. Our team will handle the MOFA and embassy steps inside the UAE quickly and securely.",
+            "ar": "أرسل لنا رسالة واتساب سريعة. أخبرنا بمكان إصدار شهادة زواجك وأين تخطط لاستخدامها. سيتولى فريقنا خطوات تصديق وزارة الخارجية والسفارة داخل الإمارات بسرعة وأمان.",
+            "ru": "Отправьте нам быстрое сообщение в WhatsApp. Скажите нам, где было выдано ваше свидетельство о браке и где вы планируете его использовать. Наша команда быстро и безопасно выполнит этапы MOFA и посольства внутри ОАЭ.",
+            "zh": "向我们发送快速的 WhatsApp 消息。告诉我们您的结婚证是在哪里签发的，以及您打算在哪里使用它。我们的团队将快速安全地处理阿联酋境内的外交部和大使馆认证步骤。",
+            "es": "Envíenos un mensaje rápido por WhatsApp. Díganos dónde se emitió su certificado de matrimonio y dónde planea usarlo. Nuestro equipo gestionará los pasos del MOFA y la embajada dentro de los EAU de manera rápida y segura."
           }
         },
         {
@@ -28312,7 +28346,7 @@
       ],
       "content": [
         {
-          "en": "The notice is drafted and notarized by a UAE-licensed Notary Public, then delivered via a licensed licensed notification service (notification) service — which physically serves it to the tenant and issues an official Proof of Delivery certificate. This is the legally strongest method. E-Notary Dubai coordinates both steps across all Dubai areas.",
+          "en": "The notice is drafted and notarized by a UAE-licensed Notary Public, then delivered via a licensed notification service — which physically serves it to the tenant and issues an official Proof of Delivery certificate. This is the legally strongest method. E-Notary Dubai coordinates both steps across all Dubai areas.",
           "ar": "يُعدَّ إشعار الإخلاء ويُوثَّق من كاتب عدل مرخَّص في الإمارات، ثم يُسلَّم عبر مزود خدمة الإشعارات المرخَّص مرخَّصة تُوصله إلى المستأجر مباشرةً وتُصدر شهادة تسليم رسمية. تُعدّ هذه الطريقة الأقوى قانونياً. وتتولى E-Notary Dubai تنسيق الخطوتين معاً.",
           "ru": "Уведомление о выселении составляется и нотариально заверяется лицензированным нотариусом ОАЭ, затем вручается через лицензированную компанию licensed notification service — службу юридической доставки, которая лично вручает уведомление арендатору и выдаёт официальное свидетельство о вручении. Это юридически наиболее надёжный метод. E-Notary Dubai координирует оба этапа.",
           "zh": "驱逐通知由阿联酋持牌公证人起草并公证，然后通过持牌licensed notification service通知公司送达——该公司直接向租户送达并签发官方送达证书。这是法律效力最强的方式。E-Notary Dubai协调处理两个步骤。",
@@ -28916,9 +28950,9 @@
       "title_ru": "Аттестация MOFA ОАЭ 2026: Полное пошаговое руководство",
       "title_zh": "阿联酋MOFA认证2026：完整分步指南",
       "title_es": "Atestación MOFA EAU 2026: Guía Completa Paso a Paso",
-      "meta_en": "Complete guide to MOFA attestation in UAE 2026. Which documents require it, the full process, fees, turnaround times, and how to get free document pickup and delivery in Dubai.",
+      "meta_en": "Complete guide to MOFA attestation in UAE 2026. Which documents require it, the full process, fees, turnaround times, and how the submission works in Dubai.",
       "meta_ar": "الدليل الكامل لتصديق وزارة الخارجية في الإمارات 2026. أي الوثائق تحتاجه والعملية الكاملة والرسوم وأوقات التسليم.",
-      "meta_ru": "Полное руководство по аттестации MOFA в ОАЭ 2026. Документы, процесс, сборы, сроки и бесплатный сбор документов.",
+      "meta_ru": "Полное руководство по аттестации MOFA в ОАЭ 2026. Документы, процесс, сборы и сроки.",
       "meta_zh": "2026年阿联酋MOFA认证完整指南。哪些文件需要认证、完整流程、费用、周转时间。",
       "meta_es": "Guía completa de atestación MOFA en los EAU 2026. Documentos requeridos, proceso completo, tasas y tiempos.",
       "date": "2026-03-01",
@@ -28953,11 +28987,11 @@
           "es": "Atestación MOFA y legalización de embajada — la cadena completa"
         },
         {
-          "en": "Free Document Pickup and Delivery in Dubai",
-          "ar": "استلام وتوصيل مجاني للوثائق في دبي",
-          "ru": "Бесплатный сбор и доставка документов в Дубае",
-          "zh": "迪拜免费文件取件和送件",
-          "es": "Recogida y entrega gratuita de documentos en Dubái"
+          "en": "Document Collection, Submission, and Delivery in Dubai",
+          "ar": "استلام الوثائق وتقديمها وتسليمها في دبي",
+          "ru": "Сбор, подача и доставка документов в Дубае",
+          "zh": "迪拜文件收取、提交与送还",
+          "es": "Recogida, presentación y entrega de documentos en Dubái"
         }
       ],
       "content": [
@@ -28976,8 +29010,8 @@
           "es": "Documentos que suelen requerir MOFA: títulos educativos, certificados de matrimonio/nacimiento/defunción, poderes notariales para uso en el extranjero, documentos comerciales."
         },
         {
-          "en": "The attestation process: Step 1 — Notarization (if the document requires it first). Step 2 — MOFA attestation: submit to MOFA with the original document and copies. Standard processing 1-3 business days; express same-day or next-day available. We manage all three steps for you.",
-          "ar": "عملية التصديق: الخطوة 1 — التوثيق (إذا كانت الوثيقة تتطلبه أولاً). الخطوة 2 — تصديق وزارة الخارجية: تقديم للوزارة مع الوثيقة الأصلية والنسخ. المعالجة المعتادة 1-3 أيام عمل؛ السريعة في نفس اليوم أو التالي متاحة.",
+          "en": "The attestation process: Step 1 — Notarization (if the document requires it first). Step 2 — MOFA attestation: submit to MOFA with the original document and copies. Standard processing 1-3 business days; express 1–2 business day processing available. We manage all three steps for you.",
+          "ar": "عملية التصديق: الخطوة 1 — التوثيق (إذا كانت الوثيقة تتطلبه أولاً). الخطوة 2 — تصديق وزارة الخارجية: تقديم للوزارة مع الوثيقة الأصلية والنسخ. المعالجة المعتادة 1-3 أيام عمل؛ الخدمة السريعة متاحة بمعالجة خلال 1-2 يوم عمل.",
           "ru": "Процесс: Шаг 1 — нотариальное заверение. Шаг 2 — аттестация MOFA (1-3 рабочих дня).",
           "zh": "认证流程：步骤1——公证（如需要）。步骤2——MOFA认证：标准1-3个工作日。",
           "es": "Proceso: Paso 1 — notarización. Paso 2 — atestación MOFA (1-3 días hábiles)."
@@ -28990,11 +29024,11 @@
           "es": "MOFA es necesaria para todos los países."
         },
         {
-          "en": "E-Notary Dubai offers free document pickup from your home or office anywhere in Dubai for all MOFA attestation requests. We collect your original documents, submit to MOFA, and deliver the attested documents back to your door. No travel, no queues. Standard turnaround 1-3 business days. Express processing available. All government fees are confirmed upfront.",
-          "ar": "تقدم E-Notary Dubai خدمة الاستلام المجاني للوثائق من منزلك أو مكتبك في أي مكان بدبي لجميع طلبات تصديق وزارة الخارجية. نستلم وثائقك الأصلية ونقدمها لوزارة الخارجية ونوصل الوثائق المصدقة إلى بابك. لا سفر، لا طوابير.",
-          "ru": "E-Notary Dubai предлагает бесплатный сбор документов в Дубае. Забираем оригиналы, подаём в MOFA, возвращаем аттестованные документы. 1-3 рабочих дня.",
-          "zh": "E-Notary Dubai为迪拜所有MOFA认证申请提供免费文件取件服务。我们收取您的原始文件，提交MOFA，并将认证文件送回您门。",
-          "es": "E-Notary Dubai ofrece recogida gratuita de documentos en Dubái para todas las solicitudes MOFA. Recogemos sus documentos originales, los entregamos a MOFA y le devolvemos los documentos atestados."
+          "en": "We collect your original documents, submit to MOFA, and deliver the attested documents back to you. No travel, no queues. Standard turnaround 1-3 business days. Express 1–2 business day processing available. All government fees are confirmed upfront.",
+          "ar": "نستلم وثائقك الأصلية ونقدمها لوزارة الخارجية ونوصل الوثائق المصدقة إليك. لا سفر، لا طوابير. المدة القياسية 1-3 أيام عمل. الخدمة السريعة متاحة بمعالجة خلال 1-2 يوم عمل. تُؤكَّد جميع الرسوم الحكومية مقدماً.",
+          "ru": "Мы забираем оригиналы, подаём в MOFA и возвращаем аттестованные документы. Стандартный срок 1-3 рабочих дня. Экспресс-обработка за 1–2 рабочих дня доступна. Все государственные сборы подтверждаются заранее.",
+          "zh": "我们收取您的原件，提交至外交部，并将认证文件送还给您。标准周期1-3个工作日。可提供1-2个工作日的加急处理。所有政府费用提前确认。",
+          "es": "Recogemos sus documentos originales, los presentamos al MOFA y le devolvemos los documentos atestados. Plazo estándar de 1-3 días hábiles. Procesamiento exprés de 1-2 días hábiles disponible. Todas las tasas gubernamentales se confirman por adelantado."
         }
       ],
       "list_items": [
@@ -29044,11 +29078,11 @@
             "es": "¿Cuánto tiempo tarda la atestación MOFA en Dubái?"
           },
           "a": {
-            "en": "Standard processing is 1-3 business days. Express same-day and next-day processing is available on request. E-Notary Dubai confirms exact timing via WhatsApp before proceeding.",
-            "ar": "المعالجة المعتادة 1-3 أيام عمل. المعالجة السريعة في نفس اليوم أو اليوم التالي متاحة عند الطلب. تؤكد E-Notary Dubai التوقيت الدقيق عبر واتساب قبل المتابعة.",
-            "ru": "Стандартно 1-3 рабочих дня. Экспресс в тот же/следующий день по запросу.",
-            "zh": "标准处理1-3个工作日。应要求可当天或次日快速处理。",
-            "es": "El procesamiento estándar es de 1-3 días hábiles. El procesamiento exprés el mismo día o al día siguiente está disponible a pedido."
+            "en": "Standard processing is 1-3 business days. Express 1–2 business day processing is available on request. E-Notary Dubai confirms exact timing via WhatsApp before proceeding.",
+            "ar": "المعالجة المعتادة 1-3 أيام عمل. المعالجة السريعة خلال 1-2 يوم عمل متاحة عند الطلب. تؤكد E-Notary Dubai التوقيت الدقيق عبر واتساب قبل المتابعة.",
+            "ru": "Стандартно 1-3 рабочих дня. Экспресс-обработка за 1–2 рабочих дня по запросу.",
+            "zh": "标准处理1-3个工作日。应要求可提供1-2个工作日的加急处理。",
+            "es": "El procesamiento estándar es de 1-3 días hábiles. El procesamiento exprés de 1-2 días hábiles está disponible a pedido."
           }
         }
       ]

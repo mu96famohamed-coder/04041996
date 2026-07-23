@@ -196,7 +196,7 @@ export function LegalServiceSchema({
     serviceNameFor(path, lang) || `${BRAND_NAME} — Notary Support Services`
   const description =
     serviceDescriptionFor(path, lang) ||
-    'Notary support in Dubai — POA drafting, MOFA attestation, legal notices, eviction notices, and legal translation. Same-day service.'
+    'Notary support in Dubai — POA drafting, MOFA attestation, legal notices, eviction notices, and legal translation. Same-day notarization available.'
 
   const schema = {
     '@context': 'https://schema.org',
@@ -243,7 +243,7 @@ export function LocalBusinessSchema() {
     '@id': 'https://www.enotarydubai.ae/#business',
     name: 'E-Notary Dubai',
     alternateName: 'E-Notary Dubai',
-    description: 'Notary support service in Dubai — POA drafting, MOFA attestation, eviction notices, legal translation. Same-day service.',
+    description: 'Notary support service in Dubai — POA drafting, MOFA attestation, eviction notices, legal translation. Same-day notarization available.',
     url: 'https://enotarydubai.ae',
     // image: 'https://www.enotarydubai.ae/logo.png',
     // TODO: uncomment when logo.png is added to public/

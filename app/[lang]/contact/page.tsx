@@ -248,8 +248,8 @@ export default async function Page({ params }: Props) {
             <div className="rounded-2xl bg-navy-900 p-6">
               <div className="grid grid-cols-2 gap-4">
                 {[
-                  { num: '500+', label: { en: 'Documents Notarized', ar: 'وثيقة موثقة', ru: 'Документов заверено', zh: '份文件已公证', es: 'Documentos Notarizados' } },
-                  { num: '100%', label: { en: 'First-Time Accepted', ar: 'مقبولة من الأولى', ru: 'Принято с первого раза', zh: '一次性接受', es: 'Aceptados a la Primera' } },
+                  { num: '5,000+', label: { en: 'Documents Notarized', ar: 'وثيقة موثقة', ru: 'Документов заверено', zh: '份文件已公证', es: 'Documentos Notarizados' } },
+                  { num: '5', label: { en: 'Languages Supported', ar: 'لغات مدعومة', ru: 'Языков поддерживается', zh: '种语言支持', es: 'Idiomas Soportados' } },
                   { num: '5 min', label: { en: 'WhatsApp Reply', ar: 'رد واتساب', ru: 'Ответ WhatsApp', zh: 'WhatsApp回复', es: 'Respuesta WhatsApp' } },
                   { num: '7/7', label: { en: 'Days Available', ar: 'أيام في الأسبوع', ru: 'Дней в неделю', zh: '天可用', es: 'Días Disponible' } },
                 ].map((stat) => (
