@@ -22540,6 +22540,13 @@
               "ru": "Освобождение управляющего или изменение условий назначения",
               "zh": "免除经理职务或修改其任命条件",
               "es": "Cese de un gerente o modificación de sus condiciones de nombramiento"
+            },
+            {
+              "en": "Issuing a Company Power of Attorney to an external agent or law firm",
+              "ar": "إصدار وكالة عن الشركة لوكيل خارجي أو مكتب محاماة",
+              "ru": "Выдача доверенности от компании внешнему агенту или юридической фирме",
+              "zh": "向外部代理人或律师事务所出具公司授权委托书",
+              "es": "Otorgar un poder de la empresa a un agente externo o despacho"
             }
           ]
         },
@@ -22634,6 +22641,13 @@
               "es": "Apertura de cuenta bancaria corporativa y designación de firmantes autorizados"
             },
             {
+              "en": "Buying, selling or mortgaging company real estate at the DLD",
+              "ar": "شراء عقار للشركة أو بيعه أو رهنه لدى دائرة الأراضي",
+              "ru": "Покупка, продажа или залог недвижимости компании в DLD",
+              "zh": "在迪拜土地局购买、出售或抵押公司房产",
+              "es": "Comprar, vender o hipotecar inmuebles de la empresa ante el DLD"
+            },
+            {
               "en": "Distributing profits and losses among the partners",
               "ar": "توزيع الأرباح والخسائر بين الشركاء",
               "ru": "Распределение прибыли и убытков между партнёрами",
@@ -22646,63 +22660,13 @@
               "ru": "Ликвидация и назначение ликвидатора",
               "zh": "公司解散及清算人的任命",
               "es": "Disolución y nombramiento del liquidador"
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "text": {
-            "en": "When Is a Notarized Board Resolution Required?",
-            "ar": "متى يُشترط قرار مجلس إدارة موثَّق؟",
-            "ru": "Когда требуется нотариально заверенное решение совета директоров?",
-            "zh": "何时需要经公证的董事会决议？",
-            "es": "¿Cuándo Se Requiere una Resolución de Junta Notarizada?"
-          }
-        },
-        {
-          "type": "checklist",
-          "items": [
-            {
-              "en": "Opening a corporate bank account at any UAE bank (Emirates NBD, ADCB, FAB, Mashreq, etc.)",
-              "ar": "فتح حساب مصرفي شركاتي في أي بنك إماراتي",
-              "ru": "Открытие корпоративного банковского счёта в любом банке ОАЭ",
-              "zh": "在任何阿联酋银行开设企业银行账户",
-              "es": "Abrir una cuenta bancaria corporativa en cualquier banco de los EAU"
             },
             {
-              "en": "Appointing or changing authorized signatories on a corporate bank account",
-              "ar": "تعيين مُفوَّضين بالتوقيع على حساب مصرفي شركاتي أو تغييرهم",
-              "ru": "Назначение или изменение уполномоченных подписантов",
-              "zh": "任命或更改企业银行账户的授权签字人",
-              "es": "Nombrar o cambiar firmantes autorizados en una cuenta bancaria corporativa"
-            },
-            {
-              "en": "Authorizing the purchase, sale, or mortgage of company-owned real estate at DLD",
-              "ar": "تفويض شراء أو بيع أو رهن عقارات مملوكة للشركة في دائرة الأراضي",
-              "ru": "Авторизация купли, продажи или ипотеки корпоративной недвижимости в DLD",
-              "zh": "授权在土地局购买、出售或抵押公司拥有的房地产",
-              "es": "Autorizar compra, venta o hipoteca de bienes raíces de la empresa en DLD"
-            },
-            {
-              "en": "Issuing a Company Power of Attorney to an external agent or law firm",
-              "ar": "إصدار وكالة شركاتية لوكيل خارجي أو شركة محاماة",
-              "ru": "Выдача корпоративной доверенности внешнему агенту или юридической фирме",
-              "zh": "向外部代理人或律师事务所颁发公司授权委托书",
-              "es": "Emitir un Poder Notarial Corporativo a un agente externo o firma de abogados"
-            },
-            {
-              "en": "Amending the Memorandum of Association or Articles of Association",
-              "ar": "تعديل عقد التأسيس أو النظام الأساسي",
-              "ru": "Внесение изменений в Меморандум или Устав",
-              "zh": "修改公司章程或公司规章",
-              "es": "Modificar el Memorándum de Asociación o los Artículos de Asociación"
-            },
-            {
-              "en": "Entering major contracts above a specified financial threshold",
-              "ar": "إبرام عقود رئيسية تتجاوز حداً مالياً محدداً",
-              "ru": "Заключение крупных контрактов выше установленного финансового порога",
-              "zh": "签订超过规定财务门槛的重大合同",
-              "es": "Celebrar contratos importantes por encima de un umbral financiero especificado"
+              "en": "Entering contracts above the financial threshold set in the MOA",
+              "ar": "إبرام عقود تتجاوز الحد المالي المقرر في عقد التأسيس",
+              "ru": "Заключение договоров сверх финансового порога, установленного в MOA",
+              "zh": "签订超过公司章程规定财务限额的合同",
+              "es": "Celebrar contratos por encima del umbral fijado en el MOA"
             }
           ]
         },
@@ -22798,13 +22762,6 @@
               "es": "Firman todos los socios — en persona o mediante poder."
             },
             {
-              "en": "Every partner signs — in person or by power of attorney.",
-              "ar": "توقيع كل الشركاء — بشخصهم أو بوكالة.",
-              "ru": "Подписывают все партнёры — лично или по доверенности.",
-              "zh": "全体合伙人签字——本人或凭授权委托书。",
-              "es": "Firman todos los socios — en persona o mediante poder."
-            },
-            {
               "en": "Emirates ID for each signatory. A passport-only partner issues a power of attorney at the Ministry of Justice — using the passport — to another partner or an authorised signatory who holds an Emirates ID.",
               "ar": "هوية إماراتية لكل موقِّع. ومن يحمل جواز سفر فقط يحرّر وكالة لدى وزارة العدل بجواز سفره لشريك آخر أو مفوَّض بالتوقيع يحمل هوية إماراتية.",
               "ru": "Emirates ID для каждого подписанта. Партнёр только с паспортом оформляет доверенность в Министерстве юстиции по паспорту на другого партнёра или доверенное лицо с Emirates ID.",
@@ -22824,71 +22781,21 @@
           }
         },
         {
-          "type": "heading",
-          "text": {
-            "en": "Meeting Minutes for Opening a Corporate Bank Account",
-            "ar": "محضر الاجتماع لفتح حساب مصرفي للشركة",
-            "ru": "Протокол собрания для открытия корпоративного счёта",
-            "zh": "开设公司银行账户的会议记录",
-            "es": "Acta de Reunión para Abrir una Cuenta Bancaria Corporativa"
-          }
-        },
-        {
-          "type": "para",
-          "text": {
-            "en": "A bank will not act on a decision it cannot verify. The minutes must name the authorised signatories and match the licence and MOA exactly — a name mismatch is enough for the file to be returned.",
-            "ar": "البنك لا يعمل بقرار لا يستطيع التحقق منه. يجب أن يسمّي المحضر المفوَّضين بالتوقيع وأن يطابق الرخصة وعقد التأسيس تماماً — واختلاف الاسم كافٍ لإعادة الملف.",
-            "ru": "Банк не будет действовать по решению, которое не может проверить. Протокол должен называть лиц с правом подписи и точно совпадать с лицензией и MOA — расхождения в наименовании достаточно для возврата.",
-            "zh": "银行不会依据无法核实的决定办理。会议记录须载明授权签字人，并与执照和公司章程完全一致——名称不符即足以导致材料被退回。",
-            "es": "Un banco no actuará sobre una decisión que no pueda verificar. El acta debe designar a los firmantes autorizados y coincidir exactamente con la licencia y el MOA — una discrepancia de nombre basta para que se devuelva."
-          }
-        },
-        {
-          "type": "checklist",
+          "type": "info",
           "title": {
-            "en": "What the Minutes Must Name",
-            "ar": "ما يجب أن يسمّيه المحضر",
-            "ru": "Что должен назвать протокол",
-            "zh": "会议记录必须载明的内容",
-            "es": "Lo que el Acta Debe Designar"
+            "en": "For a Bank Account",
+            "ar": "لفتح حساب مصرفي",
+            "ru": "Для банковского счёта",
+            "zh": "用于开设银行账户",
+            "es": "Para una Cuenta Bancaria"
           },
-          "items": [
-            {
-              "en": "The company exactly as it appears on the trade licence — registered name, not a trade name",
-              "ar": "اسم الشركة كما هو في الرخصة التجارية بالضبط — الاسم المسجَّل لا الاسم التجاري",
-              "ru": "Наименование компании точно как в торговой лицензии — зарегистрированное, а не коммерческое",
-              "zh": "与营业执照完全一致的公司名称——注册名称而非商号",
-              "es": "La empresa exactamente como figura en la licencia comercial — nombre registrado, no comercial"
-            },
-            {
-              "en": "The decision to open the account, and the bank it is being opened with",
-              "ar": "قرار فتح الحساب، والبنك الذي سيُفتح لديه",
-              "ru": "Решение об открытии счёта и банк, в котором он открывается",
-              "zh": "开户的决定，以及开户所在的银行",
-              "es": "El acuerdo de apertura de la cuenta y el banco en el que se abre"
-            },
-            {
-              "en": "The authorised signatories by name and ID number, and the capacity each signs in",
-              "ar": "المفوَّضون بالتوقيع بأسمائهم وأرقام هوياتهم، والصفة التي يوقّع بها كل منهم",
-              "ru": "Лица с правом подписи — имена, номера удостоверений и статус, в котором каждый подписывает",
-              "zh": "授权签字人的姓名与证件号码，以及各自的签字身份",
-              "es": "Los firmantes autorizados con nombre y número de identificación, y la calidad en que firma cada uno"
-            },
-            {
-              "en": "The quorum recital referencing your MOA’s threshold, so the bank can verify the decision was properly taken",
-              "ar": "بند النصاب بالإحالة إلى النسبة المقررة في عقد تأسيسكم، ليتمكن البنك من التحقق من صحة اتخاذ القرار",
-              "ru": "Пункт о кворуме со ссылкой на порог из вашего MOA, чтобы банк мог убедиться в правомерности решения",
-              "zh": "援引贵公司章程门槛的法定人数条款，以便银行核实该决定系依法作出",
-              "es": "La cláusula de quórum que remite al umbral de su MOA, para que el banco verifique que el acuerdo se adoptó correctamente"
-            },
-            {
-              "en": "Signature blocks for every partner whose approval the MOA requires for the decision",
-              "ar": "خانات توقيع لكل شريك يشترط عقد التأسيس موافقته على القرار",
-              "ru": "Блоки подписей для каждого партнёра, чьё согласие требует MOA для данного решения",
-              "zh": "为公司章程就该决定要求其同意的每位合伙人设置签字栏",
-              "es": "Bloques de firma para cada socio cuya aprobación exija el MOA para el acuerdo"
-            }
-          ]
+          "text": {
+            "en": "The minutes must also name the bank, the authorised signatories with their ID numbers and the capacity each signs in, and the company exactly as it appears on the trade licence — a name mismatch is enough for the file to be returned.",
+            "ar": "يجب أن يسمّي المحضر كذلك البنك، والمفوَّضين بالتوقيع بأرقام هوياتهم والصفة التي يوقّع بها كلٌّ منهم، واسم الشركة كما هو في الرخصة التجارية بالضبط — واختلاف الاسم كافٍ لإعادة الملف.",
+            "ru": "Протокол должен также назвать банк, лиц с правом подписи с номерами удостоверений и статусом, а также компанию точно как в лицензии — расхождения в наименовании достаточно для возврата.",
+            "zh": "会议记录还须载明银行、授权签字人及其证件号码与签字身份，以及与营业执照完全一致的公司名称——名称不符即足以导致材料被退回。",
+            "es": "El acta debe designar además el banco, los firmantes autorizados con sus números de identificación y su calidad, y la empresa tal como figura en la licencia — una discrepancia de nombre basta para su devolución."
+          }
         },
         {
           "type": "info",
@@ -22942,11 +22849,18 @@
               "es": "Memorandum of Association y sus modificaciones"
             },
             {
-              "en": "Emirates ID of every partner — or the passport of a partner who will sign through a power of attorney",
-              "ar": "هوية إماراتية لكل شريك — أو جواز سفر الشريك الذي سيوقّع بوكالة",
-              "ru": "Emirates ID каждого партнёра — либо паспорт партнёра, который будет подписывать по доверенности",
-              "zh": "每位合伙人的阿联酋身份证——或将通过授权委托书签署的合伙人的护照",
-              "es": "Emirates ID de cada socio — o el pasaporte del socio que firmará mediante poder"
+              "en": "Emirates ID of every partner",
+              "ar": "هوية إماراتية لكل شريك",
+              "ru": "Emirates ID каждого партнёра",
+              "zh": "每位合伙人的阿联酋身份证",
+              "es": "Emirates ID de cada socio"
+            },
+            {
+              "en": "For a partner signing by proxy: the notarized power of attorney and the representative’s Emirates ID",
+              "ar": "وللشريك الذي يوقّع بوكالة: الوكالة الموثقة وهوية الوكيل الإماراتية",
+              "ru": "Для партнёра, подписывающего по доверенности: заверенная доверенность и Emirates ID представителя",
+              "zh": "对于通过代理签署的合伙人：经公证的授权委托书及代理人的阿联酋身份证",
+              "es": "Para el socio que firme por poder: el poder notarizado y el Emirates ID del representante"
             },
             {
               "en": "The decision you need recorded, and the authority or bank it is going to",
