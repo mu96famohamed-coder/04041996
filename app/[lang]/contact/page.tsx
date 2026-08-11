@@ -224,7 +224,7 @@ export default async function Page({ params }: Props) {
             {/* Authority logos */}
             <div className="rounded-2xl border border-navy-100 bg-navy-50 p-6">
               <h3 className="text-xs font-bold text-navy-400 uppercase tracking-widest mb-4">
-                {t({ en: 'Recognized by UAE Government Entities', ar: 'معترف به لدى الجهات الحكومية الإماراتية', ru: 'Признаётся органами ОАЭ', zh: '获阿联酋各政府机构认可', es: 'Reconocido por las autoridades de los EAU' }, lang)}
+                {t({ en: 'Authorities We Prepare Documents For', ar: 'جهات نُجهّز المستندات لتقديمها إليها', ru: 'Органы, для которых мы готовим документы', zh: '我们为以下机构准备文件', es: 'Autoridades para las que preparamos documentos' }, lang)}
               </h3>
               <div className="grid grid-cols-4 gap-4">
                 {[

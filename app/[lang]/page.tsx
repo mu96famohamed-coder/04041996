@@ -44,14 +44,14 @@ interface Props { params: Promise<{ lang: Lang }> }
 const WA_ICON = <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
 
 const H = {
-  h1: { en:'Notary Support Dubai — POA, Attestation & Legal Notices', ar:'دعم كاتب العدل في دبي — وكالات، تصديق وإنذارات قانونية', ru:'Нотариальная поддержка в Дубае — доверенности, легализация и уведомления', zh:'迪拜公证支持 — 授权书、认证及法律通知', es:'Soporte Notarial en Dubái — Poderes, Autenticación y Notificaciones' },
+  h1: { en:'Notary Public Dubai — POA, Attestation & Legal Notices', ar:'كاتب العدل دبي — وكالات، تصديق وإنذارات قانونية', ru:'Нотариальная поддержка в Дубае — доверенности, легализация и уведомления', zh:'迪拜公证支持 — 授权书、认证及法律通知', es:'Soporte Notarial en Dubái — Poderes, Autenticación y Notificaciones' },
   sub: { en:'Professional drafting, notarization, and attestation — same-day, fully online. Trusted by individuals and corporations across the UAE.', ar:'صياغة وتوثيق وتصديق احترافي — في نفس اليوم، أونلاين بالكامل. موثوق به من الأفراد والشركات في جميع أنحاء الإمارات.', ru:'Профессиональное составление, заверение и легализация — в тот же день, полностью онлайн. Доверяют физические и юридические лица по всем ОАЭ.', zh:'专业起草、公证和认证服务——当日完成，全程在线。深受阿联酋个人及企业信赖。', es:'Redacción, notarización y autenticación profesional — el mismo día, totalmente en línea. Con la confianza de particulares y empresas en todo los EAU.' },
   b1: { en:'Same-Day Service', ar:'خدمة نفس اليوم', ru:'В тот же день', zh:'当日服务', es:'Servicio el Mismo Día' },
   b2: { en:'Fully Online', ar:'أونلاين بالكامل', ru:'Полностью онлайн', zh:'全程在线', es:'Totalmente en Línea' },
-  b3: { en:'Dubai Courts Approved', ar:'معتمد من محاكم دبي', ru:'Одобрено Dubai Courts', zh:'迪拜法院认可', es:'Aprobado por Dubai Courts' },
+  b3: { en:'Via Dubai Courts & MOJ', ar:'عبر محاكم دبي ووزارة العدل', ru:'Через Суды Дубая и Минюст', zh:'经迪拜法院与司法部办理', es:'Vía Tribunales de Dubái y MOJ' },
   start: { en:'Start on WhatsApp', ar:'ابدأ عبر واتساب', ru:'Начать в WhatsApp', zh:'通过WhatsApp开始', es:'Iniciar en WhatsApp' },
   all_svc: { en:'View All Services', ar:'جميع الخدمات', ru:'Все услуги', zh:'查看所有服务', es:'Ver Todos los Servicios' },
-  accepted: { en:'Recognized by UAE Authorities', ar:'معترف به لدى الجهات الإماراتية', ru:'Признаётся органами ОАЭ', zh:'获阿联酋各机构认可', es:'Reconocido por las Autoridades de los EAU' },
+  accepted: { en:'Authorities We Prepare Documents For', ar:'جهات نُجهّز المستندات لتقديمها إليها', ru:'Органы, для которых мы готовим документы', zh:'我们为以下机构准备文件', es:'Autoridades para las que preparamos documentos' },
   poa_h: { en:'Power of Attorney', ar:'خدمات الوكالة الرسمية', ru:'Доверенность (POA)', zh:'授权委托书', es:'Poder Notarial (POA)' },
   poa_s: { en:'All types — drafted, notarized, delivered same day', ar:'جميع الأنواع — صياغة وتوثيق وتسليم في نفس اليوم', ru:'Все виды — составление, заверение и доставка в тот же день', zh:'所有类型——当日起草、公证并送达', es:'Todos los tipos — redactados, notarizados y entregados el mismo día' },
   all_poa: { en:'View all POA types →', ar:'← جميع أنواع الوكالات', ru:'Все виды доверенностей →', zh:'查看所有授权类型 →', es:'Ver todos los tipos de POA →' },
@@ -65,6 +65,8 @@ const H = {
   mobile_d: { en:'We come to your home, office, or hotel in Dubai.', ar:'نأتي إلى منزلك أو مكتبك أو فندقك في دبي.', ru:'Мы приедем к вам домой, в офис или отель в Дубае.', zh:'我们上门前往您在迪拜的住所、办公室或酒店。', es:'Vamos a su hogar, oficina u hotel en Dubái.' },
   how_h: { en:'How It Works — 5 Steps, Fully Online', ar:'كيف تسير المعاملة — 5 خطوات أونلاين', ru:'Как это работает — 5 шагов, онлайн', zh:'服务流程 — 5个步骤，全程在线', es:'Cómo Funciona — 5 Pasos, en Línea' },
   how_s: { en:'From document submission to delivery — you approve the draft before we notarize anything.', ar:'من تقديم المستندات حتى التسليم — توافق على المسودة قبل أي توثيق.', ru:'От подачи до доставки — вы утверждаете черновик перед заверением.', zh:'从文件提交到交付——公证前须先确认草稿。', es:'Desde la presentación hasta la entrega — aprueba el borrador antes de que notaricemos.' },
+  wnp_h: { en:'What Is a Notary Public in Dubai?', ar:'من هو كاتب العدل في دبي؟', ru:'Кто такой нотариус в Дубае?', zh:'什么是迪拜公证人？', es:'¿Qué Es un Notario Público en Dubái?' },
+  wnp_a: { en:'A Notary Public in Dubai is a government official who verifies the identities of signatories and notarizes legal documents such as powers of attorney, affidavits and contracts. A notary does not give legal advice. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. E-Notary Dubai is a notary support service: we draft your document and prepare it for that appointment.', ar:'كاتب العدل في دبي موظف حكومي يختص بالتحقق من هويات الموقِّعين وتوثيق الوثائق القانونية مثل الوكالات والإقرارات والعقود، ولا يقدّم استشارات قانونية. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. وE-Notary Dubai خدمة دعم توثيق: نصيغ مستندك ونجهّزه لهذا الموعد.', ru:'Нотариус в Дубае — государственный служащий, который проверяет личности подписантов и заверяет юридические документы: доверенности, аффидевиты, договоры. Юридических консультаций он не даёт. Заверение проходит по видеозвонку через Суды Дубая или Министерство юстиции ОАЭ. E-Notary Dubai — служба нотариальной поддержки: мы составляем документ и готовим его к этой встрече.', zh:'迪拜的公证人是政府官员，负责核实签署人身份并对授权委托书、宣誓书、合同等法律文件进行公证，但不提供法律建议。公证通过迪拜法院或阿联酋司法部的视频通话完成。E-Notary Dubai 是公证支持服务：我们起草您的文件并为该环节做好准备。', es:'Un Notario Público en Dubái es un funcionario gubernamental que verifica las identidades de los firmantes y notariza documentos legales como poderes notariales, declaraciones juradas y contratos; no presta asesoramiento legal. La notarización se realiza a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada. E-Notary Dubai es un servicio de apoyo notarial: redactamos su documento y lo preparamos para esa cita.' },
   faq_h: { en:'Frequently Asked Questions', ar:'الأسئلة الشائعة', ru:'Часто задаваемые вопросы', zh:'常见问题', es:'Preguntas Frecuentes' },
   faq_all: { en:'View all FAQs', ar:'عرض كل الأسئلة', ru:'Все вопросы', zh:'查看所有常见问题', es:'Ver todas las preguntas' },
   now5: { en:'Start Now — Reply in 5 Minutes', ar:'ابدأ الآن — رد خلال 5 دقائق', ru:'Начать — ответ за 5 минут', zh:'立即开始 — 5分钟内回复', es:'Comenzar — Respuesta en 5 Minutos' },
@@ -151,6 +153,14 @@ export default async function HomePage({ params }: Props) {
             title={t(H.accepted, lang)}
             showTitle={true}
           />
+        </div>
+      </section>
+
+      {/* What is a Notary Public — direct answer */}
+      <section className="bg-white py-12 border-t border-navy-100">
+        <div className="mx-auto max-w-4xl px-4 lg:px-8">
+          <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 sm:text-3xl mb-4">{t(H.wnp_h, lang)}</h2>
+          <p className="text-navy-600 text-base leading-relaxed">{t(H.wnp_a, lang)}</p>
         </div>
       </section>
 

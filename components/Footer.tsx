@@ -31,7 +31,7 @@ const FOOTER_LINKS = {
     { href: '/rdc-support',                   en: 'RDC Support',             ar: 'دعم مركز النزاعات',     ru: 'Поддержка RDC',             zh: 'RDC支持',        es: 'Soporte RDC' },
     { href: '/last-will-testament-dubai',     en: 'Last Will & Testament',   ar: 'الوصية الأخيرة',        ru: 'Завещание',                 zh: '遗嘱',          es: 'Testamento' },
     { href: '/affidavit',                     en: 'Affidavit',               ar: 'إقرارات',              ru: 'Аффидевиты',                zh: '宣誓书',         es: 'Declaraciones' },
-    { href: '/certified-true-copy',           en: 'Certified Copy',          ar: 'نسخة مصدقة',           ru: 'Заверенная копия',          zh: '经认证副本',     es: 'Copia Compulsada' },
+    { href: '/certified-true-copy',           en: 'Certified Copy',          ar: 'نسخة طبق الأصل',           ru: 'Заверенная копия',          zh: '核证副本',     es: 'Copia Compulsada' },
   ],
   resources: [
     { href: '/pricing',                  en: 'All Services',          ar: 'جميع الخدمات',          ru: 'Все услуги',                zh: '全部服务',    es: 'Todos los Servicios' },
@@ -183,7 +183,7 @@ export default function Footer({ lang }: Props) {
             logoHeight={48}
             gap={14}
             speed={40}
-            title={t({ en: 'Recognized by UAE Government Entities', ar: 'معترف به لدى الجهات الحكومية الإماراتية', ru: 'Признаётся органами ОАЭ', zh: '获阿联酋各政府机构认可', es: 'Reconocido por las autoridades de los EAU' }, lang)}
+            title={t({ en: 'Authorities We Prepare Documents For', ar: 'جهات نُجهّز المستندات لتقديمها إليها', ru: 'Органы, для которых мы готовим документы', zh: '我们为以下机构准备文件', es: 'Autoridades para las que preparamos documentos' }, lang)}
             showTitle={true}
           />
         </div>

@@ -154,8 +154,27 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/:lang(en|ar|ru|zh|es)/corporate/meeting-minutes/',
+        destination: '/:lang/corporate/board-resolution/',
+        permanent: true,
+      },
+      {
         source: '/eviction-notice/',
         destination: '/en/legal-notice/eviction/',
+        permanent: true,
+      },
+      // 301 permanent: bare (un-prefixed) paths → default language.
+      // Fixes the GSC 404 report (/faq, /contact, /power-of-attorney/vehicle …).
+      // Must stay last: it is a catch-all and would otherwise shadow the
+      // specific rules above. Excludes real top-level assets and API routes.
+      {
+        source: '/:path((?!en|ar|ru|zh|es|_next|assets|api|favicon\\.ico|robots\\.txt|sitemap\\.xml|llms\\.txt|manifest\\.webmanifest)[^/]+)',
+        destination: '/en/:path/',
+        permanent: true,
+      },
+      {
+        source: '/:path((?!en|ar|ru|zh|es|_next|assets|api)[^/]+)/:rest+',
+        destination: '/en/:path/:rest+/',
         permanent: true,
       },
     ]

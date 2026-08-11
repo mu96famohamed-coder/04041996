@@ -36,6 +36,8 @@ export interface ServicePageProps {
   relatedServices?: Array<{ label: Record<string,string>; href: string }>
   richBlocks?: RichBlock[]
   expressTimeline?: boolean
+  hideQrBadge?: boolean
+  preparedStat?: boolean
   children?: React.ReactNode
 }
 
@@ -73,7 +75,7 @@ function shouldSkip(section: ContentSection): boolean {
 export default function ServicePage({
   lang, title, subtitle, description, authority, waMessage,
   bullets, sections, subsections, bodyContent, requiredDocs,
-  faqItems, extraButtons, isTableegh, breadcrumb, relatedServices, richBlocks, expressTimeline, children
+  faqItems, extraButtons, isTableegh, breadcrumb, relatedServices, richBlocks, expressTimeline, hideQrBadge, preparedStat, children
 }: ServicePageProps) {
   const waUrl = getWaUrl(waMessage)
   const isRTL = lang === 'ar'
@@ -162,10 +164,12 @@ export default function ServicePage({
                   </svg>
                   {t(expressTimeline ? L.express : L.same_day, lang)}
                 </span>
+                {!hideQrBadge && (
                 <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded-md"
                   style={{background:'rgba(74,106,150,.2)',color:'#b8cde0',border:'1px solid rgba(74,106,150,.3)'}}>
                   {t(L.qr_code, lang)}
                 </span>
+                )}
               </div>
 
               {/* Stats row */}
@@ -174,7 +178,9 @@ export default function ServicePage({
                   <span className="hero-stat-num">5,000+</span>
                   <div className="hero-stat-label">
                     <strong>{t({en:'Documents',ar:'وثيقة',ru:'Документов',zh:'份文件',es:'Documentos'}, lang)}</strong>
-                    {t({en:'Notarized',ar:'موثقة',ru:'Заверено',zh:'已公证',es:'Notarizados'}, lang)}
+                    {t(preparedStat
+                      ? {en:'Prepared',ar:'مُجهَّزة',ru:'Подготовлено',zh:'已办理',es:'Preparados'}
+                      : {en:'Notarized',ar:'موثقة',ru:'Заверено',zh:'已公证',es:'Notarizados'}, lang)}
                   </div>
                 </div>
                 <div className="hero-stat-sep" />

@@ -64,7 +64,7 @@ function buildNav(lang: Lang) {
       label: { en: 'Corporate', ar: 'الشركات', ru: 'Корпоративные', zh: '企业', es: 'Corporativo' },
       items: [
         { href: `/${l}/corporate/moa`,                   label: { en: 'MOA Notarization',     ar: 'توثيق عقد التأسيس',  ru: 'Заверение MOA',       zh: '章程公证',    es: 'MOA' } },
-        { href: `/${l}/corporate/board-resolution`,      label: { en: 'Board Resolution',     ar: 'قرار مجلس الإدارة',  ru: 'Решение директоров',  zh: '董事会决议',  es: 'Resolución' } },
+        { href: `/${l}/corporate/board-resolution`,      label: { en: 'Board Resolution',     ar: 'محضر اجتماع الشركاء',  ru: 'Решение / протокол',  zh: '决议与会议记录',  es: 'Resolución y Acta' } },
         { href: `/${l}/corporate/moa-amendment`,         label: { en: 'MOA Amendment',        ar: 'تعديل عقد التأسيس',  ru: 'Поправка MOA',        zh: '章程修正',    es: 'Enmienda MOA' } },
         { href: `/${l}/corporate/share-transfer`,        label: { en: 'Share Transfer',       ar: 'نقل الحصص',          ru: 'Передача акций',       zh: '股权转让',    es: 'Acciones' } },
         { href: `/${l}/corporate/shareholder-agreement`, label: { en: 'Shareholder Agree.',   ar: 'اتفاقية المساهمين',  ru: 'Акционер. соглашение',zh: '股东协议',    es: 'Acuerdo Acc.' } },
@@ -86,7 +86,7 @@ function buildNav(lang: Lang) {
         { href: `/${l}/mobile-notary`,             label: { en: 'Mobile Notary',        ar: 'كاتب عدل متنقل',     ru: 'Выездной нотариус',     zh: '上门公证',     es: 'Notario Móvil' } },
         { href: `/${l}/emergency-notary`,          label: { en: 'Same-Day Urgent',      ar: 'توثيق عاجل نفس اليوم', ru: 'Срочно в тот же день', zh: '当日紧急公证', es: 'Urgente Mismo Día' } },
         { href: `/${l}/affidavit`,                 label: { en: 'Affidavit',            ar: 'إقرارات',             ru: 'Аффидевиты',            zh: '宣誓书',       es: 'Declaraciones' } },
-        { href: `/${l}/certified-true-copy`,       label: { en: 'Certified Copy',       ar: 'نسخة مصدقة',         ru: 'Заверенная копия',      zh: '经认证副本',   es: 'Copia Certif.' } },
+        { href: `/${l}/certified-true-copy`,       label: { en: 'Certified Copy',       ar: 'نسخة طبق الأصل',         ru: 'Заверенная копия',      zh: '核证副本',   es: 'Copia Certif.' } },
         { href: `/${l}/legal-translation`,         label: { en: 'Legal Translation',    ar: 'ترجمة قانونية',      ru: 'Юрид. перевод',         zh: '法律翻译',     es: 'Traducción Legal' } },
         { href: `/${l}/legal-translation/court`,   label: { en: '↳ Court Translation',  ar: '↳ ترجمة للمحاكم',    ru: '↳ Судебный перевод',    zh: '↳ 法院翻译',   es: '↳ Trad. Judicial' } },
       ],

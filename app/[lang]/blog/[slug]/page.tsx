@@ -51,7 +51,8 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang, slug } = await params
   const bc = (content.blog_content as Record<string, Record<string, string>>)[slug]
-  const title = bc?.[`title_${lang}`] || bc?.title_en || `${slugToTitle(slug)} | E-Notary Dubai`
+  const rawTitle = bc?.[`title_${lang}`] || bc?.title_en || slugToTitle(slug)
+  const title = `${rawTitle} | E-Notary Dubai`
   const description = bc?.[`meta_${lang}`] || bc?.meta_en || ''
   return {
     title,

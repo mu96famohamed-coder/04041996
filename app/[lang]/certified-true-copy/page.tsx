@@ -47,6 +47,8 @@ export default async function Page({ params }: Props) {
         waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
         faqItems={getPageFaq('/certified-true-copy')}
         richBlocks={getPageBlocks('/certified-true-copy')}
+        hideQrBadge
+        preparedStat
       />
     </>
   )
