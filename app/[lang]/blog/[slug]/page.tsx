@@ -4,7 +4,7 @@ import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
 import content from '@/data/content.json'
 import FAQSection from '@/components/FAQSection'
 
-import { ArticleSchema } from '@/components/SchemaMarkup'
+import { ArticleSchema, FAQSchema, BreadcrumbSchema } from '@/components/SchemaMarkup'
 interface Props { params: Promise<{ lang: Lang; slug: string }> }
 
 const BLOG_SLUGS = [
@@ -91,7 +91,8 @@ const blogData = content.blog_content as Record<string, {
   date_updated?: string
   h2?: Array<Record<string,string>>
   content?: Array<Record<string,string>>
-  list_items?: Array<Record<string,string>>
+  list_items?: Array<Record<string,string> & { s?: number }>
+  related?: string[]
   faq?: Array<{q: Record<string,string>; a: Record<string,string>}>
 }>
 
@@ -110,7 +111,10 @@ export default async function BlogArticlePage({ params }: Props) {
   const faqItems = bc?.faq || []
 
   // Get 3 related articles (exclude current)
-  const related = BLOG_SLUGS.filter(s => s !== slug).slice(0, 3)
+  const curated = (bc as any)?.related as string[] | undefined
+  const related = (curated && curated.length ? curated : BLOG_SLUGS.filter(s => s !== slug))
+    .filter(s => s !== slug && BLOG_SLUGS.includes(s))
+    .slice(0, 3)
 
   function getText(item: Record<string,string>) {
     return item[lang] || item.en || ''
@@ -118,6 +122,12 @@ export default async function BlogArticlePage({ params }: Props) {
 
   return (
     <article className="bg-white min-h-[80vh]">
+      {faqItems.length > 0 && <FAQSchema items={faqItems} lang={lang} />}
+      <BreadcrumbSchema items={[
+        { name: 'Home', url: `https://www.enotarydubai.ae/${lang}/` },
+        { name: 'Blog', url: `https://www.enotarydubai.ae/${lang}/blog/` },
+        { name: title, url: `https://www.enotarydubai.ae/${lang}/blog/${slug}/` },
+      ]} />
       <ArticleSchema
         headline={title}
         url={`https://www.enotarydubai.ae/${lang}/blog/${slug}/`}
@@ -173,8 +183,9 @@ export default async function BlogArticlePage({ params }: Props) {
                * 3. All h2 sections always render (even without paragraphs)
                */
               const sCount = sections.length
-              const listsPerSec = listItems.length > 0 ? Math.floor(listItems.length / sCount) : 0
-              const listsRemainder = listItems.length > 0 ? listItems.length % sCount : 0
+              const mapped = listItems.some((li: any) => typeof li?.s === 'number')
+              const listsPerSec = !mapped && listItems.length > 0 ? Math.floor(listItems.length / sCount) : 0
+              const listsRemainder = !mapped && listItems.length > 0 ? listItems.length % sCount : 0
               let listOffset = 0
 
               return sections.map((sec, i) => {
@@ -185,9 +196,14 @@ export default async function BlogArticlePage({ params }: Props) {
                 const secPara = i < paragraphs.length ? paragraphs[i] : null
 
                 // Evenly distributed list items (extra items go to earlier sections)
-                const listsForThis = listsPerSec + (i < listsRemainder ? 1 : 0)
-                const secLis = listItems.slice(listOffset, listOffset + listsForThis)
-                listOffset += listsForThis
+                let secLis
+                if (mapped) {
+                  secLis = listItems.filter((li: any) => li?.s === i)
+                } else {
+                  const listsForThis = listsPerSec + (i < listsRemainder ? 1 : 0)
+                  secLis = listItems.slice(listOffset, listOffset + listsForThis)
+                  listOffset += listsForThis
+                }
 
                 const paraText = secPara ? getText(secPara) : ''
 
