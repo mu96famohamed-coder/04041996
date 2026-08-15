@@ -67,8 +67,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/blog/${slug}/`,
-      'x-default': `https://www.enotarydubai.ae/en/blog/${slug}/`,
-      languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/blog/${slug}/`]))
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/blog/${slug}/`])),
+        'x-default': `https://www.enotarydubai.ae/en/blog/${slug}/`,
+      }
     },
   }
 }

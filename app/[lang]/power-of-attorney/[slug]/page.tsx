@@ -36,8 +36,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/power-of-attorney/${slug}/`,
-      'x-default': `https://www.enotarydubai.ae/en/power-of-attorney/${slug}/`,
-        languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/power-of-attorney/${slug}/`])),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/power-of-attorney/${slug}/`])),
+        'x-default': `https://www.enotarydubai.ae/en/power-of-attorney/${slug}/`,
+      },
     },
   }
 }

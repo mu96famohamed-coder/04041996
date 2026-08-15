@@ -11,23 +11,23 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang } = await params
-  const seo = (getPageContent('/legal-translation/court') as any)?.seo
+  const seo = (getPageContent('/rdc-support/execution') as any)?.seo
   return {
     title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     openGraph: {
       title:       seo?.meta_title?.[lang]       ?? seo?.meta_title?.en,
       description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
-      url: `https://www.enotarydubai.ae/${lang}/legal-translation/court/`,
+      url: `https://www.enotarydubai.ae/${lang}/rdc-support/execution/`,
       siteName: 'E-Notary Dubai',
       locale: ({ en: 'en_US', ar: 'ar_AE', ru: 'ru_RU', zh: 'zh_CN', es: 'es_ES' } as Record<string, string>)[lang],
       type: 'website',
     },
     alternates: {
-      canonical: `https://www.enotarydubai.ae/${lang}/legal-translation/court/`,
+      canonical: `https://www.enotarydubai.ae/${lang}/rdc-support/execution/`,
       languages: {
-        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/legal-translation/court/`])),
-        'x-default': `https://www.enotarydubai.ae/en/legal-translation/court/`,
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/rdc-support/execution/`])),
+        'x-default': `https://www.enotarydubai.ae/en/rdc-support/execution/`,
       },
     },
   }
@@ -35,18 +35,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function Page({ params }: Props) {
   const { lang } = await params
-  const seo = (getPageContent('/legal-translation/court') as any)?.seo
+  const seo = (getPageContent('/rdc-support/execution') as any)?.seo
   return (
     <>
-      <LegalServiceSchema lang={lang} path="/legal-translation/court" />
+      <LegalServiceSchema lang={lang} path="/rdc-support/execution" />
       <ServicePage
         lang={lang}
         title={seo?.h1}
         description={seo?.meta_description}
         authority={seo?.authority}
         waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
-        faqItems={getPageFaq('/legal-translation/court')}
-        richBlocks={getPageBlocks('/legal-translation/court')}
+        faqItems={getPageFaq('/rdc-support/execution')}
+        richBlocks={getPageBlocks('/rdc-support/execution')}
+        hideQrBadge
+        preparedStat
+        noTimeline
+        relatedServices={[
+          { href: `/${lang}/rdc-support/e-requests`, label: { en: 'E-Requests', ar: 'الطلبات الإلكترونية', ru: 'Э-запросы', zh: '电子申请', es: 'Solicitudes Electrónicas' } },
+          { href: `/${lang}/rdc-support/bounced-cheque`, label: { en: 'Bounced Rent Cheque', ar: 'شيك إيجاري مرتجع', ru: 'Возвращённый чек', zh: '租金支票退票', es: 'Cheque Devuelto' } },
+          { href: `/${lang}/rdc-support`, label: { en: 'RDC Support', ar: 'مركز فض المنازعات الإيجارية', ru: 'Поддержка RDC', zh: 'RDC支持', es: 'Apoyo RDC' } },
+        ]}
       />
     </>
   )

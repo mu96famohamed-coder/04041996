@@ -37,6 +37,7 @@ export interface ServicePageProps {
   richBlocks?: RichBlock[]
   expressTimeline?: boolean
   hideQrBadge?: boolean
+  noTimeline?: boolean
   preparedStat?: boolean
   children?: React.ReactNode
 }
@@ -55,6 +56,8 @@ const L = {
   same_day:    { en:'Same-Day Service — Contact Before 2 PM', ar:'خدمة نفس اليوم — تواصل قبل 2 ظهراً', ru:'В тот же день — до 14:00', zh:'当日服务 — 下午2点前', es:'Mismo Día — Antes de las 2 PM' },
   cta_h_exp:   { en:'Express Service', ar:'الخدمة السريعة', ru:'Экспресс-услуга', zh:'加急服务', es:'Servicio Exprés' },
   cta_sub_exp: { en:'Express 1–2 business day MOFA processing available.', ar:'خدمة سريعة بمعالجة MOFA خلال 1-2 يوم عمل.', ru:'Экспресс-обработка MOFA за 1–2 рабочих дня.', zh:'可提供1-2个工作日的外交部加急处理。', es:'Procesamiento exprés del MOFA en 1-2 días hábiles.' },
+  cta_h_file:  { en:'Start Your File', ar:'ابدأ ملفك', ru:'Начните дело', zh:'开始您的案卷', es:'Inicie su Expediente' },
+  cta_sub_file:{ en:'Send the documents you have and we review the file.', ar:'أرسل المستندات المتوفرة لديك ونراجع الملف.', ru:'Пришлите имеющиеся документы — мы изучим дело.', zh:'发送您手头的文件，我们会审核案卷。', es:'Envíe los documentos que tenga y revisamos el expediente.' },
   express:     { en:'Express Service — 1–2 Business Days', ar:'خدمة سريعة — 1-2 يوم عمل', ru:'Экспресс — 1–2 рабочих дня', zh:'加急服务 — 1-2个工作日', es:'Exprés — 1–2 Días Hábiles' },
   related_h:   { en:'Related Services', ar:'خدمات ذات صلة', ru:'Похожие услуги', zh:'相关服务', es:'Servicios Relacionados' },
   no_hidden:   { en:'No hidden fees', ar:'بدون رسوم خفية', ru:'Без скрытых сборов', zh:'无隐藏费用', es:'Sin cargos ocultos' },
@@ -75,7 +78,7 @@ function shouldSkip(section: ContentSection): boolean {
 export default function ServicePage({
   lang, title, subtitle, description, authority, waMessage,
   bullets, sections, subsections, bodyContent, requiredDocs,
-  faqItems, extraButtons, isTableegh, breadcrumb, relatedServices, richBlocks, expressTimeline, hideQrBadge, preparedStat, children
+  faqItems, extraButtons, isTableegh, breadcrumb, relatedServices, richBlocks, expressTimeline, hideQrBadge, noTimeline, preparedStat, children
 }: ServicePageProps) {
   const waUrl = getWaUrl(waMessage)
   const isRTL = lang === 'ar'
@@ -157,6 +160,7 @@ export default function ServicePage({
                     {typeof authority === 'string' ? authority : t(authority as Record<string,string>, lang)}
                   </span>
                 )}
+                {!noTimeline && (
                 <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded-md"
                   style={{background:'rgba(37,211,102,.08)',color:'#25D366',border:'1px solid rgba(37,211,102,.2)'}}>
                   <svg className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" strokeWidth={2.5} viewBox="0 0 24 24">
@@ -164,6 +168,7 @@ export default function ServicePage({
                   </svg>
                   {t(expressTimeline ? L.express : L.same_day, lang)}
                 </span>
+                )}
                 {!hideQrBadge && (
                 <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold px-3 py-1.5 rounded-md"
                   style={{background:'rgba(74,106,150,.2)',color:'#b8cde0',border:'1px solid rgba(74,106,150,.3)'}}>
@@ -374,8 +379,8 @@ export default function ServicePage({
 
               {/* Mobile CTA */}
               <div className="lg:hidden cta-block">
-                <p className="text-gold-400 text-xs font-bold uppercase tracking-widest mb-1">{t(expressTimeline ? L.cta_h_exp : L.cta_h, lang)}</p>
-                <p className="text-navy-400 text-xs mb-5">{t(expressTimeline ? L.cta_sub_exp : L.cta_sub, lang)}</p>
+                <p className="text-gold-400 text-xs font-bold uppercase tracking-widest mb-1">{t(noTimeline ? L.cta_h_file : expressTimeline ? L.cta_h_exp : L.cta_h, lang)}</p>
+                <p className="text-navy-400 text-xs mb-5">{t(noTimeline ? L.cta_sub_file : expressTimeline ? L.cta_sub_exp : L.cta_sub, lang)}</p>
                 <div className="flex flex-wrap gap-3 justify-center">
                   <a href={waUrl} target="_blank" rel="noopener noreferrer"
                     className="btn-wa px-8 py-3.5">
@@ -399,10 +404,10 @@ export default function ServicePage({
                 {/* CTA card */}
                 <div className="rounded-xl overflow-hidden" style={{background:'#060e1f',border:'1px solid rgba(212,180,58,.12)'}}>
                   <div className="px-5 py-3" style={{background:'rgba(212,180,58,.08)',borderBottom:'1px solid rgba(212,180,58,.12)'}}>
-                    <p className="text-[10px] font-bold uppercase tracking-[.14em]" style={{color:'#d4b43a'}}>{t(expressTimeline ? L.cta_h_exp : L.cta_h, lang)}</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[.14em]" style={{color:'#d4b43a'}}>{t(noTimeline ? L.cta_h_file : expressTimeline ? L.cta_h_exp : L.cta_h, lang)}</p>
                   </div>
                   <div className="px-5 py-4">
-                    <p className="text-xs leading-relaxed mb-4" style={{color:'#4a6a96',fontWeight:300}}>{t(expressTimeline ? L.cta_sub_exp : L.cta_sub, lang)}</p>
+                    <p className="text-xs leading-relaxed mb-4" style={{color:'#4a6a96',fontWeight:300}}>{t(noTimeline ? L.cta_sub_file : expressTimeline ? L.cta_sub_exp : L.cta_sub, lang)}</p>
                     <a href={waUrl} target="_blank" rel="noopener noreferrer"
                       className="flex items-center justify-center gap-2 w-full font-bold text-sm text-white rounded-lg py-3 mb-2.5 transition-colors hover:opacity-90"
                       style={{background:'#25D366'}}>

@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/what-is-tableegh/`,
-      'x-default': `https://www.enotarydubai.ae/en/what-is-tableegh/`,
-        languages: Object.fromEntries(
-        LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/what-is-tableegh/`])
-      ),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/what-is-tableegh/`])),
+        'x-default': `https://www.enotarydubai.ae/en/what-is-tableegh/`,
+      },
     },
   }
 }

@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/emergency-notary/`,
-      'x-default': `https://www.enotarydubai.ae/en/emergency-notary/`,
-        languages: Object.fromEntries(
-        LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/emergency-notary/`])
-      ),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/emergency-notary/`])),
+        'x-default': `https://www.enotarydubai.ae/en/emergency-notary/`,
+      },
     },
   }
 }

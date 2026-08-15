@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/corporate/shareholder-agreement/`,
-      'x-default': `https://www.enotarydubai.ae/en/corporate/shareholder-agreement/`,
-        languages: Object.fromEntries(
-        LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/corporate/shareholder-agreement/`])
-      ),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/corporate/shareholder-agreement/`])),
+        'x-default': `https://www.enotarydubai.ae/en/corporate/shareholder-agreement/`,
+      },
     },
   }
 }

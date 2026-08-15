@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/affidavit/`,
-      'x-default': `https://www.enotarydubai.ae/en/affidavit/`,
-        languages: Object.fromEntries(
-        LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/affidavit/`])
-      ),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/affidavit/`])),
+        'x-default': `https://www.enotarydubai.ae/en/affidavit/`,
+      },
     },
   }
 }

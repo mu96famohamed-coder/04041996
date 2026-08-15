@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/legal-notice/poa-cancellation/`,
-      'x-default': `https://www.enotarydubai.ae/en/legal-notice/poa-cancellation/`,
-        languages: Object.fromEntries(
-        LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/legal-notice/poa-cancellation/`])
-      ),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/legal-notice/poa-cancellation/`])),
+        'x-default': `https://www.enotarydubai.ae/en/legal-notice/poa-cancellation/`,
+      },
     },
   }
 }

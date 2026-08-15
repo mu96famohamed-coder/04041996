@@ -14,8 +14,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: seo?.meta_description?.[lang] ?? seo?.meta_description?.en,
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/about/`,
-      'x-default': `https://www.enotarydubai.ae/en/about/`,
-        languages: Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/about/`])),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/about/`])),
+        'x-default': `https://www.enotarydubai.ae/en/about/`,
+      },
     },
     openGraph: {
       title: seo?.meta_title?.[lang] ?? seo?.meta_title?.en,

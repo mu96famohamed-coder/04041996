@@ -98,13 +98,46 @@ function buildNav(lang: Lang) {
       label: { en: 'Tenancy & Legal', ar: 'الإيجار والقانون', ru: 'Аренда и право', zh: '租赁与法律', es: 'Arrendamiento' },
       items: [
         { href: `/${l}/legal-notice/eviction`,         label: { en: 'Eviction Notice',         ar: 'إشعار الإخلاء',       ru: 'Уведомление о выселении',  zh: '驱逐通知',      es: 'Desalojo' } },
-        { href: `/${l}/rdc-support`,                   label: { en: 'RDC Support',             ar: 'دعم مركز النزاعات',    ru: 'Поддержка RDC',            zh: 'RDC支持',        es: 'RDC' } },
         { href: `/${l}/legal-notice`,                  label: { en: 'Legal Notice',            ar: 'إنذار قانوني',         ru: 'Юридическое уведомление',  zh: '法律通知',      es: 'Aviso Legal' } },
         { href: `/${l}/legal-notice/poa-cancellation`, label: { en: '↳ POA Cancellation Notice', ar: '↳ إنذار إلغاء وكالة', ru: '↳ Отмена доверенности',   zh: '↳ 撤销授权通知', es: '↳ Aviso Cancelación' } },
         { href: `/${l}/poa-cancellation`,              label: { en: 'POA Cancellation',        ar: 'إلغاء الوكالة',        ru: 'Отмена доверенности',      zh: '撤销授权委托书', es: 'Cancelación POA' } },
         { href: `/${l}/last-will-testament-dubai`,     label: { en: 'Last Will & Testament',   ar: 'الوصية الأخيرة',       ru: 'Завещание',                zh: '遗嘱',          es: 'Testamento' } },
         { href: `/${l}/what-is-tableegh`,              label: { en: 'What is Tableegh?',       ar: 'ما هو التبليغ؟',        ru: 'Что такое Tableegh?',      zh: '什么是Tableegh?', es: '¿Qué es Tableegh?' } },
       ],
+    },
+
+    // ── 5. RENTAL DISPUTES (RDC) ─────────────────────────────────────────────
+    {
+      key: 'rdc',
+      label: { en: 'Rental Disputes', ar: 'المنازعات الإيجارية', ru: 'Арендные споры', zh: '租赁纠纷', es: 'Disputas de Alquiler' },
+      mega: true,
+      cols: [
+        {
+          heading: { en: 'Landlord', ar: 'المؤجر', ru: 'Арендодатель', zh: '房东', es: 'Propietario' },
+          items: [
+            { href: `/${l}/rdc-support/eviction-case`,    label: { en: 'Eviction Case',      ar: 'دعوى الإخلاء',        ru: 'Дело о выселении',  zh: '驱逐诉讼',     es: 'Demanda de Desalojo' } },
+            { href: `/${l}/rdc-support/rent-claim`,       label: { en: 'Unpaid Rent Claim',  ar: 'المطالبة بالأجرة',    ru: 'Взыскание аренды',  zh: '追讨拖欠租金', es: 'Alquiler Impagado' } },
+            { href: `/${l}/rdc-support/bounced-cheque`,   label: { en: 'Bounced Rent Cheque',ar: 'شيك إيجاري مرتجع',    ru: 'Возвращённый чек',  zh: '租金支票退票', es: 'Cheque Devuelto' } },
+          ],
+        },
+        {
+          heading: { en: 'Tenant', ar: 'المستأجر', ru: 'Арендатор', zh: '租客', es: 'Inquilino' },
+          items: [
+            { href: `/${l}/rdc-support/offer-and-deposit`, label: { en: 'Offer and Deposit',    ar: 'العرض والإيداع',   ru: 'Оферта и депонирование', zh: '提存申请',   es: 'Oferta y Consignación' } },
+            { href: `/${l}/rdc-support/contract-renewal`,  label: { en: 'Tenancy Renewal',      ar: 'دعوى التجديد',     ru: 'Продление аренды',       zh: '租赁续约',   es: 'Renovación' } },
+            { href: `/${l}/rdc-support/tenant-defence`,    label: { en: 'Responding to a Case', ar: 'الرد على دعوى',    ru: 'Ответ на дело',          zh: '应对诉讼',   es: 'Responder a una Demanda' } },
+          ],
+        },
+        {
+          heading: { en: 'Both Sides', ar: 'الطرفان', ru: 'Обе стороны', zh: '双方', es: 'Ambas Partes' },
+          items: [
+            { href: `/${l}/rdc-support/urgent-orders`, label: { en: 'Urgent Orders',  ar: 'الأوامر المستعجلة',    ru: 'Срочные меры',          zh: '紧急命令',   es: 'Órdenes Urgentes' } },
+            { href: `/${l}/rdc-support/execution`,     label: { en: 'Execution File', ar: 'ملف التنفيذ',          ru: 'Исполнительное дело',   zh: '执行案卷',   es: 'Ejecución' } },
+            { href: `/${l}/rdc-support/e-requests`,    label: { en: 'E-Requests',     ar: 'الطلبات الإلكترونية',  ru: 'Э-запросы',             zh: '电子申请',   es: 'Solicitudes Electrónicas' } },
+          ],
+        },
+      ],
+      cta: { href: `/${l}/rdc-support`, label: { en: 'All RDC Services →', ar: '← جميع خدمات مركز فض المنازعات الإيجارية', ru: 'Все услуги RDC →', zh: '全部RDC服务 →', es: 'Todos los Servicios RDC →' } },
     },
 
     // ── 5. RESOURCES ─────────────────────────────────────────────────────────

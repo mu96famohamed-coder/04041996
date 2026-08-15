@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/corporate/moa-amendment/`,
-      'x-default': `https://www.enotarydubai.ae/en/corporate/moa-amendment/`,
-        languages: Object.fromEntries(
-        LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/corporate/moa-amendment/`])
-      ),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/corporate/moa-amendment/`])),
+        'x-default': `https://www.enotarydubai.ae/en/corporate/moa-amendment/`,
+      },
     },
   }
 }

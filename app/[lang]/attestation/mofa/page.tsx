@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/attestation/mofa/`,
-      'x-default': `https://www.enotarydubai.ae/en/attestation/mofa/`,
-        languages: Object.fromEntries(
-        LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/attestation/mofa/`])
-      ),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/attestation/mofa/`])),
+        'x-default': `https://www.enotarydubai.ae/en/attestation/mofa/`,
+      },
     },
   }
 }

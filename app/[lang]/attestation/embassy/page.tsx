@@ -25,10 +25,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     alternates: {
       canonical: `https://www.enotarydubai.ae/${lang}/attestation/embassy/`,
-      'x-default': `https://www.enotarydubai.ae/en/attestation/embassy/`,
-        languages: Object.fromEntries(
-        LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/attestation/embassy/`])
-      ),
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.enotarydubai.ae/${l}/attestation/embassy/`])),
+        'x-default': `https://www.enotarydubai.ae/en/attestation/embassy/`,
+      },
     },
   }
 }
