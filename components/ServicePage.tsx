@@ -75,6 +75,8 @@ function shouldSkip(section: ContentSection): boolean {
   return SKIP_PHRASES.some(s => enText.includes(s))
 }
 
+import PaymentMethods from '@/components/PaymentMethods'
+
 export default function ServicePage({
   lang, title, subtitle, description, authority, waMessage,
   bullets, sections, subsections, bodyContent, requiredDocs,
@@ -422,6 +424,9 @@ export default function ServicePage({
                       {site.phone_display}
                     </a>
                   </div>
+                  <div className="px-5 pb-4 pt-1" style={{borderTop:'1px solid rgba(74,106,150,.18)'}}>
+                      <PaymentMethods lang={lang} tone="dark" />
+                    </div>
                 </div>
 
                 {/* No hidden fees */}

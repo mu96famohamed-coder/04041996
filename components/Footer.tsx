@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { type Lang, t, footer, site, cta } from '@/lib/i18n'
+import PaymentMethods from '@/components/PaymentMethods'
 import AcceptedByMarquee from './AcceptedByMarquee'
 
 interface Props { lang: Lang }
@@ -186,6 +187,11 @@ export default function Footer({ lang }: Props) {
             title={t({ en: 'Authorities We Prepare Documents For', ar: 'جهات نُجهّز المستندات لتقديمها إليها', ru: 'Органы, для которых мы готовим документы', zh: '我们为以下机构准备文件', es: 'Autoridades para las que preparamos documentos' }, lang)}
             showTitle={true}
           />
+        </div>
+
+        {/* ── Payment methods ── */}
+        <div className="mt-6 pt-6 border-t border-navy-800">
+          <PaymentMethods lang={lang} tone="dark" />
         </div>
 
         {/* ── Bottom bar ── */}
