@@ -42,16 +42,16 @@ const LABEL = {
   es: 'Métodos de pago',
 }
 
-/* Official Tabby / Tamara files are dropped into public/pay by the owner —
-   see public/pay/README.txt. Present → rendered as an image; absent → text chip.
+/* Official Tabby / Tamara files are dropped into public/assets/pay by the owner —
+   see public/assets/pay/README.txt. Present → rendered as an image; absent → text chip.
    Their brand rules forbid an approximated redraw, so nothing is drawn here. */
 const BNPL = ['Tabby', 'Tamara'].map((name) => {
   const base = name.toLowerCase()
   const found = ['svg', 'png'].find((ext) => {
-    try { return fs.existsSync(path.join(process.cwd(), 'public', 'pay', `${base}.${ext}`)) }
+    try { return fs.existsSync(path.join(process.cwd(), 'public', 'assets', 'pay', `${base}.${ext}`)) }
     catch { return false }
   })
-  return { name, file: found ? `/pay/${base}.${found}` : null }
+  return { name, file: found ? `/assets/pay/${base}.${found}` : null }
 })
 
 export default function PaymentMethods({ lang, tone = 'dark' }: { lang: Lang; tone?: 'dark' | 'light' }) {
