@@ -87,6 +87,104 @@ const CORP_SERVICES = [
   { slug: 'contract', en: 'Commercial Contract', ar: 'عقد تجاري', ru: 'Коммерческий договор', zh: '商业合同', es: 'Contrato Comercial', desc_en: 'Service agreements & business partnerships', desc_ar: 'اتفاقيات الخدمات والشراكات التجارية', desc_ru: 'Договоры услуг и деловые партнёрства', desc_es: 'Acuerdos de servicio y asociaciones comerciales' },
 ]
 
+// Services with live pages that had no card in the homepage body.
+// Card copy is condensed from each page's own meta description.
+
+// RDC case-type pages — own homepage section.
+const RDC_SERVICES = [
+  { href: 'rdc-support/eviction-case',
+    t: { en:'Eviction Case', ar:'دعوى الإخلاء', ru:'Дело о выселении', zh:'驱逐案件', es:'Caso de Desalojo' },
+    d: { en:'Notice period expired and the tenant has not vacated. We prepare the case file and register it.', ar:'انتهت مهلة الإنذار ولم يُخلِ المستأجر. نجهّز ملف الدعوى ونقيّده.', ru:'Срок уведомления истёк, а арендатор не съехал. Готовим дело и регистрируем его.', zh:'通知期已届满而租客未搬离。我们备妥案卷并办理立案。', es:'El plazo del aviso venció y el inquilino no ha desalojado. Preparamos el expediente y lo registramos.' } },
+  { href: 'rdc-support/rent-claim',
+    t: { en:'Unpaid Rent Claim', ar:'المطالبة بالأجرة المتأخرة', ru:'Иск о задолженности по аренде', zh:'欠租索赔', es:'Reclamación de Alquiler Impagado' },
+    d: { en:'A financial claim at the RDC does not need a notarized notice. We prepare the claim and its documents.', ar:'المطالبة المالية أمام المركز لا تستلزم إنذاراً عدلياً. نجهّز الدعوى ومستنداتها.', ru:'Денежный иск в RDC не требует нотариального уведомления. Готовим иск и документы.', zh:'向租赁纠纷中心提出金钱请求无需经公证的通知。我们备妥诉状与证据。', es:'Una reclamación económica ante el RDC no requiere aviso notarizado. Preparamos la demanda y sus documentos.' } },
+  { href: 'rdc-support/bounced-cheque',
+    t: { en:'Bounced Rental Cheque', ar:'الشيك الإيجاري المرتجع', ru:'Возвращённый арендный чек', zh:'租金退票', es:'Cheque de Alquiler Devuelto' },
+    d: { en:'The RDC registers a cheque execution file to collect its value. We prepare the documents and submit it.', ar:'يقيّد المركز ملف تنفيذ الشيكات المرتجعة لتحصيل قيمتها. نجهّز المستندات ونقدّمها.', ru:'RDC открывает исполнительное дело по чеку для взыскания его суммы. Готовим документы и подаём.', zh:'租赁纠纷中心可就退票立执行案卷以追收票款。我们备妥文件并提交。', es:'El RDC registra un expediente de ejecución del cheque para cobrar su importe. Preparamos los documentos y lo presentamos.' } },
+  { href: 'rdc-support/execution',
+    t: { en:'Enforcing a Judgment', ar:'تنفيذ الأحكام الإيجارية', ru:'Исполнение решения', zh:'判决执行', es:'Ejecución de Sentencia' },
+    d: { en:'A judgment nobody enforces changes nothing. We open the execution file and follow it through.', ar:'الحكم الذي لا يُنفَّذ لا يغيّر شيئاً. نفتح ملف التنفيذ ونتابعه حتى النهاية.', ru:'Неисполненное решение ничего не меняет. Открываем исполнительное дело и ведём его до конца.', zh:'无人执行的判决毫无意义。我们开立执行案卷并跟进到底。', es:'Una sentencia que nadie ejecuta no cambia nada. Abrimos el expediente de ejecución y lo seguimos.' } },
+  { href: 'rdc-support/e-requests',
+    t: { en:'Execution E-Requests', ar:'الطلبات الإلكترونية للتنفيذ', ru:'Электронные ходатайства', zh:'执行电子申请', es:'Solicitudes Electrónicas' },
+    d: { en:'An execution file that sits still collects nothing. We prepare the e-requests and follow them.', ar:'ملف التنفيذ الساكن لا يحصّل شيئاً. نعِدّ الطلبات الإلكترونية ونتابعها.', ru:'Стоящее исполнительное дело ничего не взыщет. Готовим электронные ходатайства и ведём их.', zh:'停滞的执行案卷收不回任何款项。我们备妥电子申请并跟进。', es:'Un expediente de ejecución detenido no cobra nada. Preparamos las solicitudes electrónicas y las seguimos.' } },
+  { href: 'rdc-support/contract-renewal',
+    t: { en:'Tenancy Renewal Case', ar:'دعوى تجديد عقد الإيجار', ru:'Дело о продлении аренды', zh:'租约续期案件', es:'Caso de Renovación de Alquiler' },
+    d: { en:'Renewal is a first-instance claim at the RDC and the judgment is enforceable. We review and prepare the file.', ar:'التجديد دعوى ابتدائية أمام المركز، والحكم الصادر بها قابل للتنفيذ. ندرس الملف ونجهّزه.', ru:'Продление — иск первой инстанции в RDC, решение подлежит исполнению. Изучаем и готовим дело.', zh:'续期属于租赁纠纷中心的一审案件，判决可强制执行。我们审阅并备妥案卷。', es:'La renovación es una demanda de primera instancia ante el RDC y la sentencia es ejecutable. Revisamos y preparamos el expediente.' } },
+  { href: 'rdc-support/tenant-defence',
+    t: { en:'Defending a Case', ar:'الرد على دعوى مرفوعة ضدك', ru:'Защита по делу', zh:'案件应诉', es:'Defensa de un Caso' },
+    d: { en:'The reply is built from documents, not statements. We review the file and prepare the response.', ar:'الرد يُبنى على مستندات لا على أقوال. نراجع الملف ونجهّز الرد ومرفقاته.', ru:'Возражение строится на документах, а не на заявлениях. Изучаем дело и готовим ответ.', zh:'答辩须以文件为据，而非口头陈述。我们审阅案卷并备妥答辩及附件。', es:'La respuesta se construye con documentos, no con declaraciones. Revisamos el expediente y preparamos la contestación.' } },
+  { href: 'rdc-support/urgent-orders',
+    t: { en:'Urgent Petition Orders', ar:'الأوامر على العرائض', ru:'Срочные обеспечительные меры', zh:'紧急申请令', es:'Órdenes Urgentes' },
+    d: { en:'Utilities cut off or damage that needs recording. A petition order is an interim measure binding on both sides.', ar:'انقطاع المرافق أو أضرار تحتاج إثباتاً. الأمر على عريضة إجراء وقتي ملزم للطرفين.', ru:'Отключены коммуникации или нужен акт об ущербе. Приказ по заявлению — обеспечительная мера для обеих сторон.', zh:'公用服务被切断或损害需固定证据。申请令是对双方均有约束力的临时措施。', es:'Suministros cortados o daños que deben acreditarse. La orden por petición es una medida provisional vinculante para ambas partes.' } },
+  { href: 'rdc-support/offer-and-deposit',
+    t: { en:'Offer and Deposit', ar:'العرض والإيداع', ru:'Предложение и депонирование', zh:'提存与交付', es:'Oferta y Consignación' },
+    d: { en:'Landlord refusing your rent or cheques. The request puts the rent or the keys before the RDC judge.', ar:'المؤجر يرفض استلام الأجرة أو الشيكات. الطلب يعرض الأجرة أو المفاتيح على قاضي المركز.', ru:'Арендодатель отказывается принять плату или чеки. Заявление передаёт аренду или ключи судье RDC.', zh:'房东拒收租金或支票。该申请将租金或钥匙提交租赁纠纷中心法官。', es:'El propietario rechaza su alquiler o cheques. La solicitud pone el alquiler o las llaves ante el juez del RDC.' } },
+]
+
+// Sub-pages under existing sections that had no card.
+const EXTRA_POA2 = [
+  { href: 'power-of-attorney/real-estate/sale',
+    t: { en:'Property Sale POA', ar:'وكالة بيع عقار', ru:'Доверенность на продажу', zh:'房产出售授权书', es:'POA de Venta de Inmueble' },
+    d: { en:'Your agent signs Form F, transfers at the DLD and hands you the Title Deed.', ar:'وكيلك يوقّع النموذج F وينقل الملكية لدى دائرة الأراضي ويسلّمك سند الملكية.', ru:'Поверенный подписывает Форму F, оформляет переход в DLD и передаёт вам титул.', zh:'代理人签署F表格、在土地局办理过户并将产权证书交付给您。', es:'Su agente firma el Formulario F, transfiere en el DLD y le entrega la escritura.' } },
+  { href: 'power-of-attorney/real-estate/purchase',
+    t: { en:'Property Purchase POA', ar:'وكالة شراء عقار', ru:'Доверенность на покупку', zh:'房产购买授权书', es:'POA de Compra de Inmueble' },
+    d: { en:'Your agent signs the SPA, registers at the DLD and collects the Title Deed in your name.', ar:'وكيلك يوقّع عقد البيع ويسجّل لدى دائرة الأراضي ويستلم سند الملكية باسمك.', ru:'Поверенный подписывает SPA, регистрирует в DLD и получает титул на ваше имя.', zh:'代理人签署买卖合同、在土地局登记并以您的名义领取产权证书。', es:'Su agente firma el SPA, registra en el DLD y recoge la escritura a su nombre.' } },
+  { href: 'power-of-attorney/real-estate/management',
+    t: { en:'Property Management POA', ar:'وكالة إدارة عقار', ru:'Доверенность на управление', zh:'房产管理授权书', es:'POA de Gestión de Inmueble' },
+    d: { en:'Ejari leases, rent collection into your account, tenants and disputes.', ar:'توقيع عقود إيجاري، وتحصيل الإيجار وإيداعه في حسابك، ومتابعة المستأجرين والمنازعات.', ru:'Договоры Ejari, сбор арендной платы на ваш счёт, арендаторы и споры.', zh:'Ejari 租约、收租入账、租客与纠纷处理。', es:'Contratos Ejari, cobro del alquiler en su cuenta, inquilinos y disputas.' } },
+  { href: 'power-of-attorney/vehicle/sale',
+    t: { en:'Vehicle Sale POA', ar:'وكالة بيع مركبة', ru:'Доверенность на продажу авто', zh:'车辆出售授权书', es:'POA de Venta de Vehículo' },
+    d: { en:'Drafted for RTA ownership transfer procedures.', ar:'مُعدّة لإجراءات نقل الملكية لدى هيئة الطرق والمواصلات.', ru:'Составляется для процедур переоформления в RTA.', zh:'为道路交通局过户手续起草。', es:'Redactado para los trámites de transferencia de titularidad ante la RTA.' } },
+  { href: 'power-of-attorney/vehicle/management',
+    t: { en:'Vehicle Management POA', ar:'وكالة إدارة مركبة', ru:'Доверенность на управление авто', zh:'车辆管理授权书', es:'POA de Gestión de Vehículo' },
+    d: { en:'Covers registration, fine payments and RTA transactions.', ar:'تغطي التسجيل ودفع المخالفات ومعاملات هيئة الطرق والمواصلات.', ru:'Охватывает регистрацию, оплату штрафов и операции в RTA.', zh:'涵盖登记、缴纳罚款及道路交通局各项业务。', es:'Cubre matriculación, pago de multas y trámites ante la RTA.' } },
+  { href: 'power-of-attorney/vehicle/export',
+    t: { en:'Vehicle Export POA', ar:'وكالة تصدير مركبة', ru:'Доверенность на экспорт авто', zh:'车辆出口授权书', es:'POA de Exportación de Vehículo' },
+    d: { en:'Prepared for RTA and UAE Customs export procedures.', ar:'مُعدّة لإجراءات التصدير لدى هيئة الطرق والمواصلات والجمارك الإماراتية.', ru:'Подготовлена для экспортных процедур RTA и таможни ОАЭ.', zh:'为道路交通局及阿联酋海关出口手续备妥。', es:'Preparado para los trámites de exportación ante la RTA y la Aduana de los EAU.' } },
+]
+
+const EXTRA_REMOTE2 = [
+  { href: 'legal-translation/court',
+    t: { en:'Court Document Translation', ar:'ترجمة وثائق المحاكم', ru:'Перевод судебных документов', zh:'法院文件翻译', es:'Traducción de Documentos Judiciales' },
+    d: { en:'Judgments, evidence and pleadings translated through our sworn translator network.', ar:'ترجمة الأحكام والمذكرات والأدلة القضائية عبر شبكتنا من المترجمين المحلفين.', ru:'Решения, доказательства и состязательные бумаги — через сеть присяжных переводчиков.', zh:'判决书、证据与诉状，经我们的宣誓翻译网络翻译。', es:'Sentencias, pruebas y escritos traducidos mediante nuestra red de traductores jurados.' } },
+]
+
+const EXTRA_POA = [
+  { href: 'power-of-attorney/real-estate/handover',
+    t: { en:'Property Handover POA', ar:'وكالة استلام عقار', ru:'Доверенность на приёмку', zh:'房产交付授权书', es:'POA de Entrega de Inmueble' },
+    d: { en:'Your agent receives the keys, signs the acceptance certificate and completes Title Deed registration.', ar:'وكيلك يستلم المفاتيح ويوقّع شهادة الاستلام ويستكمل تسجيل سند الملكية.', ru:'Поверенный получает ключи, подписывает акт приёмки и завершает регистрацию права собственности.', zh:'代理人领取钥匙、签署接收证明并完成产权证书登记。', es:'Su agente recibe las llaves, firma el acta de aceptación y completa el registro de la escritura.' } },
+  { href: 'poa-cancellation',
+    t: { en:'POA Cancellation', ar:'إلغاء الوكالة الرسمية', ru:'Отзыв доверенности', zh:'授权书撤销', es:'Cancelación de POA' },
+    d: { en:'Preparing your cancellation documents for submission to the Notary Public.', ar:'تجهيز مستندات الإلغاء وتنسيق تقديمها لدى كاتب العدل.', ru:'Подготовка документов об отзыве для подачи нотариусу.', zh:'办理撤销文件并协调向公证人提交。', es:'Preparación de los documentos de cancelación para presentarlos al Notario Público.' } },
+]
+
+const EXTRA_ATTEST = [
+  { href: 'certified-true-copy',
+    t: { en:'Certified True Copy', ar:'النسخة طبق الأصل', ru:'Заверенная копия', zh:'认证副本', es:'Copia Certificada' },
+    d: { en:'Passports, Emirates ID, degrees, title deeds and trade licences.', ar:'جوازات السفر والهوية الإماراتية والشهادات وسندات الملكية والرخص التجارية.', ru:'Паспорта, Emirates ID, дипломы, титулы и торговые лицензии.', zh:'护照、酋长国身份证、学位证、产权证书及贸易执照。', es:'Pasaportes, Emirates ID, títulos, escrituras y licencias comerciales.' } },
+  { href: 'affidavit',
+    t: { en:'Affidavit', ar:'الإقرارات الرسمية', ru:'Аффидевит', zh:'宣誓书', es:'Affidávit' },
+    d: { en:'Affidavit of support, single status, income and NOC affidavits.', ar:'إقرار إعالة، أو عزوبية، أو دخل، أو تنازل.', ru:'Аффидевиты о поддержке, семейном положении, доходе и NOC.', zh:'资助宣誓书、单身状况、收入及无异议声明。', es:'Affidávits de manutención, estado civil, ingresos y NOC.' } },
+]
+
+const EXTRA_TENANCY = [
+  { href: 'rdc-support',
+    t: { en:'RDC Support', ar:'مركز فض النزاعات الإيجارية', ru:'Поддержка RDC', zh:'租赁纠纷中心支持', es:'Apoyo RDC' },
+    d: { en:'We prepare Rental Disputes Centre cases, draft the documents and file them.', ar:'نجهّز قضايا مركز فض المنازعات الإيجارية ونصوغ المستندات ونقيّدها.', ru:'Готовим дела в Центре арендных споров, составляем документы и подаём их.', zh:'我们办理租赁纠纷中心案件、起草文件并提交立案。', es:'Preparamos casos del Centro de Disputas de Alquiler, redactamos los documentos y los presentamos.' } },
+  { href: 'legal-notice/poa-cancellation',
+    t: { en:'POA Cancellation Notice', ar:'إشعار إلغاء الوكالة', ru:'Уведомление об отзыве доверенности', zh:'授权书撤销通知', es:'Notificación de Cancelación de POA' },
+    d: { en:'Formally notify your agent through the official Tableegh process via Dubai Courts.', ar:'إبلاغ وكيلك رسمياً عبر نظام التبليغ الرسمي لمحاكم دبي.', ru:'Официальное уведомление поверенного через систему Tableegh судов Дубая.', zh:'通过迪拜法院的官方 Tableegh 程序正式通知您的代理人。', es:'Notifique formalmente a su agente mediante el proceso oficial Tableegh de los Tribunales de Dubái.' } },
+  { href: 'last-will-testament-dubai',
+    t: { en:'Last Will & Testament', ar:'الوصية الأخيرة', ru:'Завещание', zh:'遗嘱', es:'Testamento' },
+    d: { en:'Wills for non-Muslim expats, with registration through DIFC Courts or Dubai Courts.', ar:'وصايا لغير المسلمين، مع إجراءات التسجيل لدى محاكم مركز دبي المالي العالمي أو محاكم دبي.', ru:'Завещания для немусульман с регистрацией в судах DIFC или судах Дубая.', zh:'为非穆斯林外籍人士起草遗嘱，并在 DIFC 法院或迪拜法院办理登记。', es:'Testamentos para expatriados no musulmanes, con registro ante los Tribunales del DIFC o de Dubái.' } },
+]
+
+const EXTRA_REMOTE = [
+  { href: 'emergency-notary',
+    t: { en:'Same-Day Urgent Notary', ar:'توثيق عاجل نفس اليوم', ru:'Срочный нотариус в тот же день', zh:'当日加急公证', es:'Notaría Urgente el Mismo Día' },
+    d: { en:'Expedited drafting and fast-track submission coordination for Dubai Courts and Federal Notary services.', ar:'صياغة عاجلة وتنسيق سريع للتقديم لدى كاتب العدل بمحاكم دبي أو وزارة العدل الإماراتية.', ru:'Ускоренное составление и координация подачи в суды Дубая и федеральную нотариальную службу.', zh:'加急起草并协调向迪拜法院及联邦公证服务快速提交。', es:'Redacción acelerada y coordinación de presentación rápida ante los Tribunales de Dubái y la Notaría Federal.' } },
+]
+
 export default async function HomePage({ params }: Props) {
   const { lang } = await params
   const waMsg = t({ en:'I need notary support in Dubai', ar:'أحتاج مساعدة في التوثيق بدبي', ru:'Мне нужна нотариальная поддержка', zh:'我需要迪拜公证支持', es:'Necesito soporte notarial en Dubái' }, lang)
@@ -189,6 +287,28 @@ export default async function HomePage({ params }: Props) {
                 <span className="text-xs text-gold-600 font-semibold group-hover:text-gold-500 transition-colors">{t(cta.learn_more, lang)} →</span>
               </Link>
             ))}
+            {EXTRA_POA.map((svc, i) => (
+              <Link key={svc.href} href={`/${lang}/${svc.href}`}
+                className={`group relative bg-gradient-to-br ${POA_COLORS[(services.poa.types.length + i) % POA_COLORS.length]} border rounded-2xl p-5 hover:-translate-y-0.5 transition-all duration-200 hover:shadow-lg`}>
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="font-bold text-navy-900 text-sm leading-snug group-hover:text-navy-700 flex-1 pe-2">{t(svc.t, lang)}</h3>
+                  <span className="shrink-0 text-xs font-semibold text-gold-600 bg-white/60 px-2 py-0.5 rounded-full border border-white/80">{t(H.same_day,lang)}</span>
+                  {EXTRA_POA2.map((svc, i) => (
+              <Link key={svc.href} href={`/${lang}/${svc.href}`}
+                className={`group relative bg-gradient-to-br ${POA_COLORS[(services.poa.types.length + EXTRA_POA.length + i) % POA_COLORS.length]} border rounded-2xl p-5 hover:-translate-y-0.5 transition-all duration-200 hover:shadow-lg`}>
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="font-bold text-navy-900 text-sm leading-snug group-hover:text-navy-700 flex-1 pe-2">{t(svc.t, lang)}</h3>
+                  <span className="shrink-0 text-xs font-semibold text-gold-600 bg-white/60 px-2 py-0.5 rounded-full border border-white/80">{t(H.same_day,lang)}</span>
+                </div>
+                <p className="text-xs text-navy-500 leading-relaxed mb-3 line-clamp-2">{t(svc.d, lang)}</p>
+                <span className="text-xs text-gold-600 font-semibold group-hover:text-gold-500 transition-colors">{t(cta.learn_more, lang)} →</span>
+              </Link>
+            ))}
+          </div>
+                <p className="text-xs text-navy-500 leading-relaxed mb-3 line-clamp-2">{t(svc.d, lang)}</p>
+                <span className="text-xs text-gold-600 font-semibold group-hover:text-gold-500 transition-colors">{t(cta.learn_more, lang)} →</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -239,6 +359,13 @@ export default async function HomePage({ params }: Props) {
                 <span className="text-xs font-semibold text-gold-600">{t(cta.learn_more, lang)} →</span>
               </Link>
             ))}
+            {EXTRA_ATTEST.map((svc) => (
+              <Link key={svc.href} href={`/${lang}/${svc.href}`} className="service-card group">
+                <h3 className="font-bold text-navy-900 text-sm mb-2 group-hover:text-navy-700">{t(svc.t, lang)}</h3>
+                <p className="text-xs text-navy-500 leading-relaxed mb-3">{t(svc.d, lang)}</p>
+                <span className="text-xs font-semibold text-gold-600">{t(cta.learn_more, lang)} →</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -259,6 +386,33 @@ export default async function HomePage({ params }: Props) {
               <p className="text-xs text-navy-500 leading-relaxed mb-3">{t(services.legal_notice.desc, lang)}</p>
               <span className="text-xs font-semibold text-gold-600">{t(cta.learn_more, lang)} →</span>
             </Link>
+            {EXTRA_TENANCY.map((svc) => (
+              <Link key={svc.href} href={`/${lang}/${svc.href}`} className="service-card group">
+                <h3 className="font-bold text-navy-900 text-sm mb-2">{t(svc.t, lang)}</h3>
+                <p className="text-xs text-navy-500 leading-relaxed mb-3">{t(svc.d, lang)}</p>
+                <span className="text-xs font-semibold text-gold-600">{t(cta.learn_more, lang)} →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* RDC — Rental Disputes Centre */}
+      <section className="bg-white py-16 border-t border-navy-100">
+        <div className="mx-auto max-w-7xl px-4 lg:px-8">
+          <div className="mb-10">
+            <p className="overline-label mb-2">{t({en:'Rental Disputes Settlement Centre',ar:'مركز فض المنازعات الإيجارية',ru:'Центр разрешения арендных споров',zh:'租赁纠纷解决中心',es:'Centro de Resolución de Disputas de Alquiler'}, lang)}</p>
+            <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 sm:text-3xl">{t({en:'RDC Case Support',ar:'دعم قضايا مركز فض المنازعات',ru:'Поддержка дел в RDC',zh:'租赁纠纷中心案件支持',es:'Apoyo en Casos del RDC'}, lang)}</h2>
+            <p className="mt-2 text-navy-500 text-sm">{t({en:'Filing, defending and enforcing rental cases in Dubai.',ar:'تقييد القضايا الإيجارية في دبي والرد عليها وتنفيذها.',ru:'Подача, защита и исполнение арендных дел в Дубае.',zh:'在迪拜提起、应诉与执行租赁案件。',es:'Presentación, defensa y ejecución de casos de alquiler en Dubái.'}, lang)}</p>
+          </div>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {RDC_SERVICES.map((svc) => (
+              <Link key={svc.href} href={`/${lang}/${svc.href}`} className="service-card group">
+                <h3 className="font-bold text-navy-900 text-sm mb-2 group-hover:text-navy-700">{t(svc.t, lang)}</h3>
+                <p className="text-xs text-navy-500 leading-relaxed mb-3">{t(svc.d, lang)}</p>
+                <span className="text-xs font-semibold text-gold-600">{t(cta.learn_more, lang)} →</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -280,6 +434,20 @@ export default async function HomePage({ params }: Props) {
               <h3 className="font-bold text-white text-sm mb-2 group-hover:text-gold-400 transition-colors">{t(H.mobile_t, lang)}</h3>
               <p className="text-xs text-navy-400 leading-relaxed">{t(H.mobile_d, lang)}</p>
             </Link>
+            {EXTRA_REMOTE.map((svc) => (
+              <Link key={svc.href} href={`/${lang}/${svc.href}`} className="service-card-dark group">
+                <h3 className="font-bold text-white text-sm mb-2 group-hover:text-gold-400 transition-colors">{t(svc.t, lang)}</h3>
+                <p className="text-xs text-navy-400 leading-relaxed mb-3">{t(svc.d, lang)}</p>
+                <span className="text-xs font-semibold text-gold-500">{t(cta.learn_more, lang)} →</span>
+              </Link>
+            ))}
+            {EXTRA_REMOTE2.map((svc) => (
+              <Link key={svc.href} href={`/${lang}/${svc.href}`} className="service-card-dark group">
+                <h3 className="font-bold text-white text-sm mb-2 group-hover:text-gold-400 transition-colors">{t(svc.t, lang)}</h3>
+                <p className="text-xs text-navy-400 leading-relaxed mb-3">{t(svc.d, lang)}</p>
+                <span className="text-xs font-semibold text-gold-500">{t(cta.learn_more, lang)} →</span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

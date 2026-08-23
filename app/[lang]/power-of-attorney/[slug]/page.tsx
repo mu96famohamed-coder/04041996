@@ -91,6 +91,15 @@ export default async function POATypePage({ params }: Props) {
     faqItems = getServiceFaq(FAQ_KEY[slug]).slice(0, 3)
   }
 
+  // Hub-only: the real-estate page links out to its five child pages.
+  const related = slug === 'real-estate' ? [
+    { href: `/${lang}/power-of-attorney/real-estate/sale`, label: { en: 'Property Sale POA', ar: 'وكالة بيع عقار', ru: 'Доверенность на продажу', zh: '房产出售授权书', es: 'POA de Venta de Inmueble' } },
+    { href: `/${lang}/power-of-attorney/real-estate/purchase`, label: { en: 'Property Purchase POA', ar: 'وكالة شراء عقار', ru: 'Доверенность на покупку', zh: '房产购买授权书', es: 'POA de Compra de Inmueble' } },
+    { href: `/${lang}/power-of-attorney/real-estate/handover`, label: { en: 'Property Handover POA', ar: 'وكالة استلام عقار', ru: 'Доверенность на приёмку', zh: '房产交付授权书', es: 'POA de Entrega de Inmueble' } },
+    { href: `/${lang}/power-of-attorney/real-estate/management`, label: { en: 'Property Management POA', ar: 'وكالة إدارة عقار', ru: 'Доверенность на управление', zh: '房产管理授权书', es: 'POA de Gestión de Inmueble' } },
+    { href: `/${lang}/power-of-attorney/property-gifting`, label: { en: 'Property Gifting POA', ar: 'وكالة هبة عقار', ru: 'Доверенность на дарение', zh: '房产赠与授权书', es: 'POA de Donación de Inmueble' } },
+  ] : undefined
+
   return (
     <>
       <LegalServiceSchema lang={lang} path={`/power-of-attorney/${slug}`} />
@@ -104,6 +113,7 @@ export default async function POATypePage({ params }: Props) {
         requiredDocs={getRequiredDocs(DOCS_KEY[slug] ?? '')}
         faqItems={faqItems.length > 0 ? faqItems : undefined}
         richBlocks={getPageBlocks(pageSlug)}
+        relatedServices={related}
       />
     </>
   )
