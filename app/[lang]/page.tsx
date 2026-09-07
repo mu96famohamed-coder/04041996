@@ -160,7 +160,7 @@ const EXTRA_POA = [
 
 const EXTRA_ATTEST = [
   { href: 'certified-true-copy',
-    t: { en:'Certified True Copy', ar:'النسخة طبق الأصل', ru:'Заверенная копия', zh:'认证副本', es:'Copia Certificada' },
+    t: { en:'Certified True Copy', ar:'النسخة طبق الأصل', ru:'Заверенная копия', zh:'核证副本', es:'Copia Certificada' },
     d: { en:'Passports, Emirates ID, degrees, title deeds and trade licences.', ar:'جوازات السفر والهوية الإماراتية والشهادات وسندات الملكية والرخص التجارية.', ru:'Паспорта, Emirates ID, дипломы, титулы и торговые лицензии.', zh:'护照、酋长国身份证、学位证、产权证书及贸易执照。', es:'Pasaportes, Emirates ID, títulos, escrituras y licencias comerciales.' } },
   { href: 'affidavit',
     t: { en:'Affidavit', ar:'الإقرارات الرسمية', ru:'Аффидевит', zh:'宣誓书', es:'Affidávit' },
@@ -169,7 +169,7 @@ const EXTRA_ATTEST = [
 
 const EXTRA_TENANCY = [
   { href: 'rdc-support',
-    t: { en:'RDC Support', ar:'مركز فض النزاعات الإيجارية', ru:'Поддержка RDC', zh:'租赁纠纷中心支持', es:'Apoyo RDC' },
+    t: { en:'RDC Support', ar:'مركز فض المنازعات الإيجارية', ru:'Поддержка RDC', zh:'租赁纠纷中心支持', es:'Apoyo RDC' },
     d: { en:'We prepare Rental Disputes Centre cases, draft the documents and file them.', ar:'نجهّز قضايا مركز فض المنازعات الإيجارية ونصوغ المستندات ونقيّدها.', ru:'Готовим дела в Центре арендных споров, составляем документы и подаём их.', zh:'我们办理租赁纠纷中心案件、起草文件并提交立案。', es:'Preparamos casos del Centro de Disputas de Alquiler, redactamos los documentos y los presentamos.' } },
   { href: 'legal-notice/poa-cancellation',
     t: { en:'POA Cancellation Notice', ar:'إشعار إلغاء الوكالة', ru:'Уведомление об отзыве доверенности', zh:'授权书撤销通知', es:'Notificación de Cancelación de POA' },

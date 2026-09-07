@@ -29,7 +29,7 @@ const FOOTER_LINKS = {
     { href: '/legal-notice/eviction',         en: 'Eviction Notice',         ar: 'إشعار الإخلاء',        ru: 'Уведомление о выселении',   zh: '驱逐通知',      es: 'Aviso de Desalojo' },
     { href: '/legal-notice',                  en: 'Legal Notice',            ar: 'إنذار قانوني',          ru: 'Юридическое уведомление',   zh: '法律通知',      es: 'Notificación Legal' },
     { href: '/legal-notice/poa-cancellation', en: 'POA Cancellation Notice', ar: 'إنذار إلغاء وكالة',    ru: 'Уведомление об отмене POA', zh: '撤销授权通知',  es: 'Aviso Cancelación' },
-    { href: '/rdc-support',                   en: 'RDC Support',             ar: 'دعم مركز النزاعات',     ru: 'Поддержка RDC',             zh: 'RDC支持',        es: 'Soporte RDC' },
+    { href: '/rdc-support',                   en: 'RDC Support',             ar: 'دعم مركز المنازعات',     ru: 'Поддержка RDC',             zh: 'RDC支持',        es: 'Soporte RDC' },
     { href: '/last-will-testament-dubai',     en: 'Last Will & Testament',   ar: 'الوصية الأخيرة',        ru: 'Завещание',                 zh: '遗嘱',          es: 'Testamento' },
     { href: '/affidavit',                     en: 'Affidavit',               ar: 'إقرارات',              ru: 'Аффидевиты',                zh: '宣誓书',         es: 'Declaraciones' },
     { href: '/certified-true-copy',           en: 'Certified Copy',          ar: 'نسخة طبق الأصل',           ru: 'Заверенная копия',          zh: '核证副本',     es: 'Copia Compulsada' },

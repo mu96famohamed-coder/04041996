@@ -1,6 +1,9 @@
-'use client'
+// No 'use client': this component is pure render (no state, no handlers).
+// Keeping it server-side also stops the raw block copy from being shipped
+// to the browser in the client payload.
 import React from 'react'
 import { type Lang, t } from '@/lib/i18n'
+import { linkify } from './linkify'
 
 // ── Types ────────────────────────────────────────────────────────────────────
 
@@ -64,7 +67,7 @@ function HeadingBlock({ block, lang }: { block: Extract<RichBlock, {type:'headin
 function ParaBlock({ block, lang }: { block: Extract<RichBlock, {type:'para'}>, lang: Lang }) {
   return (
     <p className={`text-sm leading-relaxed mb-1 ${block.accent ? 'text-navy-800 font-medium' : 'text-navy-600'}`}>
-      {t(block.text, lang)}
+      {linkify(t(block.text, lang), lang)}
     </p>
   )
 }

@@ -87,16 +87,17 @@ async function main() {
     console.log(`✓ ${file.padEnd(16)} ${size}x${size}  (${buf.length} bytes)`)
   }
 
-  // ── favicon.ico (white background, 16x16 + 32x32 multi-size) ──
-  const png16 = await renderPng(16, { background: WHITE })
-  const png32 = await renderPng(32, { background: WHITE })
-  const ico = buildIco([
-    { buffer: png16, size: 16 },
-    { buffer: png32, size: 32 },
-  ])
+  // ── favicon.ico (white background, 16 + 32 + 48 + 96 multi-size) ──
+  // 48px is the size Google Search reads; 96px covers hi-DPI browser tabs.
+  const icoSizes = [16, 32, 48, 96]
+  const icoEntries = []
+  for (const size of icoSizes) {
+    icoEntries.push({ buffer: await renderPng(size, { background: WHITE }), size })
+  }
+  const ico = buildIco(icoEntries)
   const icoPath = join(PUBLIC, 'favicon.ico')
   await writeFile(icoPath, ico)
-  console.log(`✓ favicon.ico      16+32     (${ico.length} bytes)`)
+  console.log(`✓ favicon.ico      ${icoSizes.join("+")}  (${ico.length} bytes)`)
 
   console.log('\nAll icons written to public/.')
 }

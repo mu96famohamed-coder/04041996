@@ -51,17 +51,17 @@ const WHY_POINTS = [
   { en: 'Transparent pricing — exact cost confirmed before you proceed', ar: 'أسعار شفافة — التكلفة الدقيقة تُؤكَّد قبل البدء', ru: 'Прозрачные цены — точная стоимость подтверждается до начала', zh: '透明定价——开始前确认精确费用', es: 'Precios transparentes — costo exacto confirmado antes de proceder' },
 ]
 
-const SERVICES = [
-  { en: 'All types of Power of Attorney (General, Real Estate, Vehicle, Bank, Court, Corporate)', ar: 'جميع أنواع الوكالات (العامة، العقارية، المركبات، المصرفية، القضائية، الشركاتية)', ru: 'Все виды доверенностей (общие, недвижимость, транспорт, банк, суд, корпоративные)', zh: '所有类型授权委托书（一般、房产、车辆、银行、法院、企业）', es: 'Todos los tipos de Poderes Notariales', href: 'power-of-attorney' },
+const SERVICES: ({ href?: string } & Record<string, string>)[] = [
+  { en: 'All types of Power of Attorney (General, Real Estate, Vehicle, Bank, Court, Corporate)', ar: 'جميع أنواع الوكالات (العامة، العقارية، المركبات، المصرفية، القضائية، وكالات الشركات)', ru: 'Все виды доверенностей (общие, недвижимость, транспорт, банк, суд, корпоративные)', zh: '所有类型授权委托书（一般、房产、车辆、银行、法院、企业）', es: 'Todos los tipos de Poderes Notariales', href: 'power-of-attorney' },
   { en: 'Affidavits and Sworn Statements', ar: 'الإقرارات والتصريحات', ru: 'Аффидевиты и присяжные заявления', zh: '宣誓书及宣誓声明', es: 'Declaraciones Juradas', href: 'affidavit' },
-  { en: 'Signature Authentication', ar: 'تصديق التوقيع', ru: 'Удостоверение подписи', zh: '签名认证', es: 'Autenticación de Firma', href: 'signature-notarization' },
+  { en: 'Signature Authentication', ar: 'تصديق التوقيع', ru: 'Удостоверение подписи', zh: '签名认证', es: 'Autenticación de Firma' },
   { en: 'Certified True Copies', ar: 'النسخ طبق الأصل', ru: 'Заверенные копии', zh: '核证副本', es: 'Copias Certificadas', href: 'certified-true-copy' },
   { en: 'Last Will & Testament', ar: 'الوصية الأخيرة', ru: 'Завещание', zh: '遗嘱', es: 'Testamento', href: 'last-will-testament-dubai' },
   { en: 'MOFA Attestation & Embassy Attestation', ar: 'تصديق وزارة الخارجية وتصديق السفارات', ru: 'Легализация МИД и посольств', zh: '外交部认证与使馆认证', es: 'Atestación MOFA y de embajadas', href: 'attestation/mofa' },
   { en: 'Legal Translation (certified & court-accepted)', ar: 'الترجمة القانونية (معتمدة ومقبولة للمحاكم)', ru: 'Юридический перевод (сертифицированный, принимаемый судами)', zh: '法律翻译（认证且获法院接受）', es: 'Traducción Legal (certificada y aceptada por tribunales)', href: 'legal-translation' },
   { en: 'Eviction Notices (Article 25 compliant, Tableegh delivery)', ar: 'إشعارات الإخلاء (متوافقة مع المادة 25، تسليم عبر تبليغ)', ru: 'Уведомления о выселении (статья 25, доставка Tableegh)', zh: '驱逐通知（符合第25条，经Tableegh送达）', es: 'Avisos de Desalojo (Artículo 25, entrega por Tableegh)', href: 'legal-notice/eviction' },
   { en: 'Legal Notices (all types)', ar: 'الإنذارات القانونية (جميع الأنواع)', ru: 'Юридические уведомления (все виды)', zh: '法律通知（所有类型）', es: 'Notificaciones Legales (todos los tipos)', href: 'legal-notice' },
-  { en: 'RDC Support (Rental Disputes Centre)', ar: 'دعم مركز فض النزاعات الإيجارية', ru: 'Поддержка RDC (Центр по арендным спорам)', zh: 'RDC支持（租赁纠纷中心）', es: 'Soporte RDC (Centro de Disputas de Arrendamiento)', href: 'rdc-support' },
+  { en: 'RDC Support (Rental Disputes Centre)', ar: 'دعم مركز فض المنازعات الإيجارية', ru: 'Поддержка RDC (Центр по арендным спорам)', zh: 'RDC支持（租赁纠纷中心）', es: 'Soporte RDC (Centro de Disputas de Arrendamiento)', href: 'rdc-support' },
   { en: 'Remote E-Notary via video call (Dubai Courts approved)', ar: 'التوثيق الإلكتروني عن بُعد (معتمد من محاكم دبي)', ru: 'Удалённый е-нотариус по видеосвязи (одобрено Dubai Courts)', zh: '远程视频公证（迪拜法院认可）', es: 'E-Notario Remoto por videollamada (aprobado por Dubai Courts)', href: 'e-notary' },
   { en: 'Corporate Documents (MOA, Board Resolutions, Share Transfers)', ar: 'مستندات الشركات (عقد التأسيس، قرارات مجلس الإدارة، نقل الحصص)', ru: 'Корпоративные документы (MOA, решения совета, передача акций)', zh: '企业文件（章程、董事会决议、股权转让）', es: 'Documentos Corporativos (MOA, Resoluciones del Directorio, Transferencias)', href: 'corporate/board-resolution' },
 ]
@@ -96,13 +96,24 @@ export default async function AboutPage({ params }: Props) {
           <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 mb-6 inline-block">{t(L.what_h, lang)}</h2>
           <p className="text-navy-600 leading-relaxed mb-6">{t(L.what_p, lang)}</p>
           <div className="grid gap-2 sm:grid-cols-2">
-            {SERVICES.map((svc, i) => (
-              <Link key={i} href={`/${lang}/${svc.href}`}
-                className="flex items-start gap-2 p-3 rounded-xl border border-navy-100 hover:border-gold-400/40 bg-navy-50 hover:bg-white transition-all group">
-                <span className="text-gold-500 font-bold mt-0.5 shrink-0 text-sm">✓</span>
-                <span className="text-sm text-navy-700 group-hover:text-navy-900">{t(svc, lang)}</span>
-              </Link>
-            ))}
+            {SERVICES.map((svc, i) => {
+              const inner = (
+                <>
+                  <span className="text-gold-500 font-bold mt-0.5 shrink-0 text-sm">✓</span>
+                  <span className="text-sm text-navy-700 group-hover:text-navy-900">{t(svc, lang)}</span>
+                </>
+              )
+              const cls = "flex items-start gap-2 p-3 rounded-xl border border-navy-100 bg-navy-50 transition-all group"
+              // an entry with no href has no page of its own — render it as plain text
+              return svc.href ? (
+                <Link key={i} href={`/${lang}/${svc.href}`}
+                  className={cls + " hover:border-gold-400/40 hover:bg-white"}>
+                  {inner}
+                </Link>
+              ) : (
+                <div key={i} className={cls}>{inner}</div>
+              )
+            })}
           </div>
         </div>
 

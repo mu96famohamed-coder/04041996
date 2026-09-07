@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, getServiceFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
+import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -57,6 +58,7 @@ export default async function Page({ params }: Props) {
           { href: `/${lang}/rdc-support/offer-and-deposit`, label: { en: 'Offer and Deposit', ar: 'العرض والإيداع', ru: 'Оферта и депонирование', zh: '提存申请', es: 'Oferta y Consignación' } },
           { href: `/${lang}/power-of-attorney/court`,    label: { en: 'Court Case POA',      ar: 'وكالة قضائية',     ru: 'Судебная доверенность',     zh: '法院授权书',   es: 'Poder Judicial' } },
         ]}
+      breadcrumb={breadcrumbFor(lang, '/rdc-support')}
       />
     </>
   )

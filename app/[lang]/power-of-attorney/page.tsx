@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { LANGS, type Lang, getPageContent, getPageBlocks, getServiceFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
+import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -52,6 +53,8 @@ export default async function Page({ params }: Props) {
         waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
         faqItems={getServiceFaq('poa_general')}
         richBlocks={getPageBlocks('/power-of-attorney')}
+      relatedServices={relatedFor(lang, '/power-of-attorney')}
+      breadcrumb={breadcrumbFor(lang, '/power-of-attorney')}
       />
     </>
   )

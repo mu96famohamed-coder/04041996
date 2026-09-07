@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
+import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -55,6 +56,7 @@ export default async function Page({ params }: Props) {
           { href: `/${lang}/rdc-support/bounced-cheque`, label: { en: 'Bounced Rent Cheque', ar: 'شيك إيجاري مرتجع', ru: 'Возвращённый чек', zh: '租金支票退票', es: 'Cheque Devuelto' } },
           { href: `/${lang}/rdc-support`, label: { en: 'RDC Support', ar: 'مركز فض المنازعات الإيجارية', ru: 'Поддержка RDC', zh: 'RDC支持', es: 'Apoyo RDC' } },
         ]}
+      breadcrumb={breadcrumbFor(lang, '/rdc-support/execution')}
       />
     </>
   )

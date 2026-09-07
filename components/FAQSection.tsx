@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { linkify } from './linkify'
 import { type Lang, t } from '@/lib/i18n'
 
 interface FAQItem {
@@ -12,9 +13,12 @@ interface Props {
   items: FAQItem[]
   lang: Lang
   variant?: 'default' | 'dark'
+  /** Optional server-rendered answers (used when the copy carries inline links),
+      so the raw link tokens are never shipped in the client payload. */
+  answerNodes?: React.ReactNode[]
 }
 
-export default function FAQSection({ items, lang, variant = 'default' }: Props) {
+export default function FAQSection({ items, lang, variant = 'default', answerNodes }: Props) {
   const [open, setOpen] = useState<number | null>(null)
 
   const isDark = variant === 'dark'
@@ -64,7 +68,7 @@ export default function FAQSection({ items, lang, variant = 'default' }: Props) 
                 <p className={`px-5 pb-5 pt-1 text-sm leading-relaxed border-t ${
                   isDark ? 'text-navy-300 border-navy-700' : 'text-navy-600 border-navy-100'
                 }`}>
-                  {answer}
+                  {answerNodes?.[i] ?? linkify(answer, lang)}
                 </p>
               </div>
             </div>

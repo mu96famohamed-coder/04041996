@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
+import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -55,6 +56,7 @@ export default async function Page({ params }: Props) {
           { href: `/${lang}/rdc-support/tenant-defence`, label: { en: 'Responding to a Case', ar: 'الرد على الدعوى', ru: 'Ответ на дело', zh: '应对诉讼', es: 'Responder a una Demanda' } },
           { href: `/${lang}/rdc-support`, label: { en: 'RDC Support', ar: 'مركز فض المنازعات الإيجارية', ru: 'Поддержка RDC', zh: 'RDC支持', es: 'Apoyo RDC' } },
         ]}
+      breadcrumb={breadcrumbFor(lang, '/rdc-support/contract-renewal')}
       />
     </>
   )

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
+import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -52,6 +53,7 @@ export default async function Page({ params }: Props) {
           { href: `/${lang}/power-of-attorney/real-estate/sale`, label: { en: 'Property Sale POA', ar: 'وكالة بيع عقار', ru: 'Доверенность на продажу', zh: '房产出售授权书', es: 'POA de Venta de Inmueble' } },
           { href: `/${lang}/power-of-attorney/real-estate`, label: { en: 'Real Estate POA', ar: 'الوكالة العقارية', ru: 'Доверенность на недвижимость', zh: '房地产授权书', es: 'POA Inmobiliario' } },
         ]}
+      breadcrumb={breadcrumbFor(lang, '/power-of-attorney/real-estate/purchase')}
       />
     </>
   )

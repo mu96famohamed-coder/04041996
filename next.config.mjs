@@ -168,7 +168,11 @@ const nextConfig = {
       // Must stay last: it is a catch-all and would otherwise shadow the
       // specific rules above. Excludes real top-level assets and API routes.
       {
-        source: '/:path((?!en|ar|ru|zh|es|_next|assets|api|favicon\\.ico|robots\\.txt|sitemap\\.xml|llms\\.txt|manifest\\.webmanifest)[^/]+)',
+        // [^/.]+ excludes every root-level file (anything with an extension):
+        // favicon.ico, favicon.svg, site.webmanifest, icon-*.png, robots.txt,
+        // sitemap.xml, llms.txt — and anything added later. No page slug on this
+        // site contains a dot, so real pages still redirect normally.
+        source: '/:path((?!en|ar|ru|zh|es|_next|assets|api)[^/.]+)',
         destination: '/en/:path/',
         permanent: true,
       },

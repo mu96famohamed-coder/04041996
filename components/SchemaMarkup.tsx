@@ -1,4 +1,5 @@
 import { type Lang, getPageContent } from '@/lib/i18n'
+import { stripLinks } from './linkify'
 
 interface BreadcrumbItem {
   name: string
@@ -38,7 +39,7 @@ export function FAQSchema({ items, lang }: { items: FAQItem[]; lang: Lang }) {
       name: item.q[lang] || item.q.en,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: item.a[lang] || item.a.en,
+        text: stripLinks(item.a[lang] || item.a.en),
       },
     })),
   }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
+import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -47,6 +48,8 @@ export default async function Page({ params }: Props) {
         waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
         faqItems={getPageFaq('/attestation/embassy')}
         richBlocks={getPageBlocks('/attestation/embassy')}
+        relatedServices={relatedFor(lang, '/attestation/embassy')}
+        breadcrumb={breadcrumbFor(lang, '/attestation/embassy')}
       />
     </>
   )

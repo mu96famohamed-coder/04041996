@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
+import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -55,6 +56,7 @@ export default async function Page({ params }: Props) {
           { href: `/${lang}/legal-notice/eviction`,  label: { en: 'Eviction Notice',    ar: 'إنذار الإخلاء',               ru: 'Уведомление о выселении', zh: '驱逐通知', es: 'Aviso de Desalojo' } },
           { href: `/${lang}/power-of-attorney/court`,label: { en: 'Court Case POA',     ar: 'وكالة قضائية',                ru: 'Судебная доверенность',   zh: '法院授权书', es: 'Poder Judicial' } },
         ]}
+      breadcrumb={breadcrumbFor(lang, '/rdc-support/bounced-cheque')}
       />
     </>
   )

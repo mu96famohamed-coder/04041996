@@ -78,7 +78,7 @@ const SERVICES = {
   tenancy: [
     { slug: 'legal-notice/eviction', en:'Eviction Notice (Article 25)', ar:'إشعار إخلاء (المادة 25)', ru:'Уведомление о выселении', zh:'驱逐通知（第25条）', es:'Aviso de Desalojo (Art. 25)' },
     { slug: 'legal-notice', en:'Legal Notice (All Types)', ar:'إنذار قانوني (جميع الأنواع)', ru:'Юридическое уведомление', zh:'法律通知', es:'Notificación Legal' },
-    { slug: 'rdc-support', en:'RDC Case Support', ar:'دعم مركز فض النزاعات', ru:'Поддержка RDC', zh:'RDC案件支持', es:'Apoyo RDC' },
+    { slug: 'rdc-support', en:'RDC Case Support', ar:'دعم مركز فض المنازعات', ru:'Поддержка RDC', zh:'RDC案件支持', es:'Apoyo RDC' },
     { slug: 'legal-notice/poa-cancellation', en:'POA Cancellation Notice', ar:'إشعار إلغاء الوكالة', ru:'Уведомление об отзыве доверенности', zh:'授权书取消通知', es:'Cancelación de POA' },
   ],
   remote: [

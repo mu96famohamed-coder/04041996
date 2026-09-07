@@ -38,6 +38,7 @@ function buildNav(lang: Lang) {
             { href: `/${l}/power-of-attorney/real-estate`,       label: { en: 'Real Estate POA',     ar: 'وكالة عقارية',    ru: 'На недвижимость', zh: '房地产授权书', es: 'Inmobiliario' } },
             { href: `/${l}/power-of-attorney/real-estate/sale`,  label: { en: '↳ Sale',              ar: '↳ بيع عقار',      ru: '↳ Продажа',       zh: '↳ 出售',       es: '↳ Venta' } },
             { href: `/${l}/power-of-attorney/real-estate/purchase`, label: { en: '↳ Purchase',       ar: '↳ شراء عقار',     ru: '↳ Покупка',       zh: '↳ 购买',       es: '↳ Compra' } },
+            { href: `/${l}/power-of-attorney/real-estate/handover`, label: { en: '↳ Handover',       ar: '↳ استلام عقار',   ru: '↳ Приёмка',       zh: '↳ 交付',       es: '↳ Entrega' } },
             { href: `/${l}/power-of-attorney/real-estate/management`, label: { en: '↳ Management',  ar: '↳ إدارة عقار',    ru: '↳ Управление',    zh: '↳ 管理',       es: '↳ Gestión' } },
             { href: `/${l}/power-of-attorney/bank`,              label: { en: 'Bank POA',            ar: 'وكالة بنكية',     ru: 'Банковская',      zh: '银行授权书',   es: 'Bancario' } },
             { href: `/${l}/power-of-attorney/property-gifting`,  label: { en: 'Property Gifting',    ar: 'هبة عقار',        ru: 'Дарение',         zh: '房产赠与',     es: 'Donación' } },
@@ -55,7 +56,7 @@ function buildNav(lang: Lang) {
           ],
         },
       ],
-      cta: { href: `/${l}/power-of-attorney`, label: { en: 'All 13 POA Types →', ar: '← جميع أنواع الوكالات (13)', ru: 'Все 13 типов →', zh: '全部13种 →', es: 'Los 13 Tipos →' } },
+      cta: { href: `/${l}/power-of-attorney`, label: { en: 'All POA Types →', ar: '← جميع أنواع الوكالات', ru: 'Все типы →', zh: '全部类型 →', es: 'Todos los Tipos →' } },
     },
 
     // ── 2. CORPORATE ─────────────────────────────────────────────────────────
@@ -232,11 +233,17 @@ export default function Navbar({ lang }: Props) {
                   </button>
 
                   {/* ── Mega Menu (POA — 3 cols) ── */}
-                  {isActive && (item as any).mega && (
+                  {/* Always rendered so the links exist in the served HTML and are
+                      crawlable; visibility is CSS-driven, not conditional mounting. */}
+                  {(item as any).mega && (
                     <>
-                      <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
+                      {isActive && (
+                        <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
+                      )}
                       <div
-                        className="absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 z-50 p-5"
+                        className={`absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 z-50 p-5 transition-opacity duration-150 ${
+                          isActive ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
+                        }`}
                         style={{
                           width: 'min(720px, calc(100vw - 2rem))',
                           left: '50%',
@@ -291,11 +298,15 @@ export default function Navbar({ lang }: Props) {
                   )}
 
                   {/* ── Regular Dropdown ── */}
-                  {isActive && !(item as any).mega && (item as any).items && (
+                  {!(item as any).mega && (item as any).items && (
                     <>
-                      <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
+                      {isActive && (
+                        <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
+                      )}
                       <div
-                        className="absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 p-2 z-50"
+                        className={`absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 p-2 z-50 transition-opacity duration-150 ${
+                          isActive ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
+                        }`}
                         style={{
                           minWidth: 260,
                           maxWidth: 'calc(100vw - 2rem)',

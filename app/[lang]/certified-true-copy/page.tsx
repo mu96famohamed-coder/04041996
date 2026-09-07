@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
+import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -49,6 +50,8 @@ export default async function Page({ params }: Props) {
         richBlocks={getPageBlocks('/certified-true-copy')}
         hideQrBadge
         preparedStat
+        relatedServices={relatedFor(lang, '/certified-true-copy')}
+        breadcrumb={breadcrumbFor(lang, '/certified-true-copy')}
       />
     </>
   )
