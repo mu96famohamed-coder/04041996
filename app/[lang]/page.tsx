@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import type { Metadata } from 'next'
-import { type Lang, t, services, steps, faq, cta, site, trust_badges, LANGS, getPageContent } from '@/lib/i18n'
+import { type Lang, t, services, steps, faq, cta, site, LANGS, getPageContent } from '@/lib/i18n'
 import FAQSection from '@/components/FAQSection'
 import { FAQSchema, LegalServiceSchema } from '@/components/SchemaMarkup'
 import AcceptedByMarquee from '@/components/AcceptedByMarquee'
@@ -44,33 +44,33 @@ interface Props { params: Promise<{ lang: Lang }> }
 const WA_ICON = <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
 
 const H = {
-  h1: { en:'Notary Public Dubai — POA, Attestation & Legal Notices', ar:'كاتب العدل دبي — وكالات، تصديق وإنذارات قانونية', ru:'Нотариальная поддержка в Дубае — доверенности, легализация и уведомления', zh:'迪拜公证支持 — 授权书、认证及法律通知', es:'Soporte Notarial en Dubái — Poderes, Autenticación y Notificaciones' },
-  sub: { en:'Professional drafting, notarization, and attestation — same-day, fully online. Trusted by individuals and corporations across the UAE.', ar:'صياغة وتوثيق وتصديق احترافي — في نفس اليوم، أونلاين بالكامل. موثوق به من الأفراد والشركات في جميع أنحاء الإمارات.', ru:'Профессиональное составление, заверение и легализация — в тот же день, полностью онлайн. Доверяют физические и юридические лица по всем ОАЭ.', zh:'专业起草、公证和认证服务——当日完成，全程在线。深受阿联酋个人及企业信赖。', es:'Redacción, notarización y autenticación profesional — el mismo día, totalmente en línea. Con la confianza de particulares y empresas en todo los EAU.' },
+  h1: { en:'Notary Public Dubai — POA, Attestation & Legal Notices', ar:'خدمات كاتب العدل في دبي — وكالات وتصديق وإنذارات قانونية', ru:'Нотариальная поддержка в Дубае — доверенности, легализация и уведомления', zh:'迪拜公证支持 — 授权书、认证及法律通知', es:'Soporte Notarial en Dubái — Poderes, Autenticación y Notificaciones' },
+  sub: { en:'Professional document drafting and notary-process support in Dubai. We prepare the file, confirm the appropriate official route, and coordinate the next step.', ar:'صياغة احترافية للمستندات ودعم معاملات الكاتب العدل في دبي. نجهّز الملف، ونتحقق من المسار الرسمي المناسب، وننسّق الخطوة التالية.', ru:'Профессиональная подготовка документов и поддержка нотариальных процедур в Дубае. Мы готовим пакет, проверяем подходящий официальный маршрут и координируем следующий этап.', zh:'迪拜专业文件起草与公证流程支持。我们准备材料、确认合适的官方办理渠道并协调下一步。', es:'Redacción profesional de documentos y apoyo en trámites notariales en Dubái. Preparamos el expediente, confirmamos la vía oficial adecuada y coordinamos el siguiente paso.' },
   b1: { en:'Same-Day Service', ar:'خدمة نفس اليوم', ru:'В тот же день', zh:'当日服务', es:'Servicio el Mismo Día' },
-  b2: { en:'Fully Online', ar:'أونلاين بالكامل', ru:'Полностью онлайн', zh:'全程在线', es:'Totalmente en Línea' },
-  b3: { en:'Via Dubai Courts & MOJ', ar:'عبر محاكم دبي ووزارة العدل', ru:'Через Суды Дубая и Минюст', zh:'经迪拜法院与司法部办理', es:'Vía Tribunales de Dubái y MOJ' },
+  b2: { en:'Online Support', ar:'دعم إلكتروني', ru:'Онлайн-поддержка', zh:'在线支持', es:'Soporte en Línea' },
+  b3: { en:'Dubai Courts & UAE Notary Routes', ar:'مسارات محاكم دبي والكاتب العدل في الإمارات', ru:'Маршруты Dubai Courts и нотариата ОАЭ', zh:'迪拜法院与阿联酋公证渠道', es:'Vías de Dubai Courts y Notaría de los EAU' },
   start: { en:'Start on WhatsApp', ar:'ابدأ عبر واتساب', ru:'Начать в WhatsApp', zh:'通过WhatsApp开始', es:'Iniciar en WhatsApp' },
   all_svc: { en:'View All Services', ar:'جميع الخدمات', ru:'Все услуги', zh:'查看所有服务', es:'Ver Todos los Servicios' },
   accepted: { en:'Authorities We Prepare Documents For', ar:'جهات نُجهّز المستندات لتقديمها إليها', ru:'Органы, для которых мы готовим документы', zh:'我们为以下机构准备文件', es:'Autoridades para las que preparamos documentos' },
   poa_h: { en:'Power of Attorney', ar:'خدمات الوكالة الرسمية', ru:'Доверенность (POA)', zh:'授权委托书', es:'Poder Notarial (POA)' },
-  poa_s: { en:'All types — drafted, notarized, delivered same day', ar:'جميع الأنواع — صياغة وتوثيق وتسليم في نفس اليوم', ru:'Все виды — составление, заверение и доставка в тот же день', zh:'所有类型——当日起草、公证并送达', es:'Todos los tipos — redactados, notarizados y entregados el mismo día' },
+  poa_s: { en:'General, special and transaction-specific POAs — drafted for the correct authority and purpose', ar:'وكالات عامة وخاصة ومخصصة للمعاملة — بصياغة تناسب الجهة والغرض', ru:'Общие, специальные и целевые доверенности — с формулировками под нужный орган и цель', zh:'一般、特别及交易专项授权书——按主管机构和用途起草', es:'Poderes generales, especiales y específicos — redactados para la autoridad y finalidad correctas' },
   all_poa: { en:'View all POA types →', ar:'← جميع أنواع الوكالات', ru:'Все виды доверенностей →', zh:'查看所有授权类型 →', es:'Ver todos los tipos de POA →' },
   corp_h: { en:'Corporate & Commercial Documents', ar:'مستندات الشركات والتجارة', ru:'Корпоративные и коммерческие документы', zh:'企业及商业文件', es:'Documentos Corporativos y Comerciales' },
-  corp_s: { en:'Company formation, governance, and restructuring documents — notarized same day', ar:'مستندات تأسيس الشركات والحوكمة وإعادة الهيكلة — توثيق في نفس اليوم', ru:'Документы для регистрации, управления и реструктуризации компаний — заверение в тот же день', zh:'公司成立、治理及重组文件——当日公证', es:'Documentos de constitución, gobernanza y reestructuración empresarial — notarizados el mismo día' },
+  corp_s: { en:'Company formation, governance and restructuring documents — prepared for the applicable signing and notarization route', ar:'مستندات تأسيس الشركات والحوكمة وإعادة الهيكلة — مجهزة لمسار التوقيع والتوثيق المناسب', ru:'Документы по созданию, управлению и реструктуризации компаний — подготовлены для подходящего порядка подписания и нотариата', zh:'公司设立、治理及重组文件——按适用的签署与公证流程准备', es:'Documentos de constitución, gobernanza y reestructuración — preparados para la vía de firma y notarización aplicable' },
   all_corp: { en:'View all corporate services →', ar:'← جميع خدمات الشركات', ru:'Все корпоративные услуги →', zh:'查看所有企业服务 →', es:'Ver todos los servicios corporativos →' },
   attest_h: { en:'Attestation & Authentication', ar:'التصديق والمصادقة', ru:'Легализация и аутентификация', zh:'认证与鉴证', es:'Autenticación y Legalización' },
   tenancy_h: { en:'Tenancy & Legal Notices', ar:'الإيجار والإنذارات القانونية', ru:'Аренда и юридические уведомления', zh:'租赁及法律通知', es:'Arrendamiento y Notificaciones Legales' },
-  remote_h: { en:'Remote & Online Services', ar:'الخدمات عن بُعد وأونلاين', ru:'Удалённые и онлайн услуги', zh:'远程及在线服务', es:'Servicios Remotos y en Línea' },
-  mobile_t: { en:'Mobile Notary', ar:'كاتب عدل متنقل', ru:'Выездной нотариус', zh:'上门公证服务', es:'Notario Móvil' },
-  mobile_d: { en:'We come to your home, office, or hotel in Dubai.', ar:'نأتي إلى منزلك أو مكتبك أو فندقك في دبي.', ru:'Мы приедем к вам домой, в офис или отель в Дубае.', zh:'我们上门前往您在迪拜的住所、办公室或酒店。', es:'Vamos a su hogar, oficina u hotel en Dubái.' },
-  how_h: { en:'How It Works — 5 Steps, Fully Online', ar:'كيف تسير المعاملة — 5 خطوات أونلاين', ru:'Как это работает — 5 шагов, онлайн', zh:'服务流程 — 5个步骤，全程在线', es:'Cómo Funciona — 5 Pasos, en Línea' },
-  how_s: { en:'From document submission to delivery — you approve the draft before we notarize anything.', ar:'من تقديم المستندات حتى التسليم — توافق على المسودة قبل أي توثيق.', ru:'От подачи до доставки — вы утверждаете черновик перед заверением.', zh:'从文件提交到交付——公证前须先确认草稿。', es:'Desde la presentación hasta la entrega — aprueba el borrador antes de que notaricemos.' },
+  remote_h: { en:'Remote & Online Services', ar:'الخدمات عن بُعد والإلكترونية', ru:'Удалённые и онлайн услуги', zh:'远程及在线服务', es:'Servicios Remotos y en Línea' },
+  mobile_t: { en:'VIP Mobile Notary', ar:'خدمة مميزة للكاتب العدل المتنقل', ru:'VIP-выезд нотариуса', zh:'VIP上门公证', es:'Notario Móvil VIP' },
+  mobile_d: { en:'Private home, office, hospital and agreed-location visits for eligible notarizations — document preparation and visit coordination included.', ar:'زيارات خاصة إلى المنزل أو المكتب أو المستشفى أو موقع متفق عليه للمعاملات المؤهلة — مع تجهيز المستند وتنسيق الزيارة.', ru:'Частные визиты домой, в офис, больницу или другое согласованное место для подходящих нотариальных действий — с подготовкой документов и координацией визита.', zh:'符合条件的公证可安排私人住宅、办公室、医院或约定地点访问——包含文件准备及访问协调。', es:'Visitas privadas a domicilio, oficina, hospital u otro lugar acordado para notarizaciones elegibles — con preparación documental y coordinación.' },
+  how_h: { en:'How It Works — 5 Steps', ar:'كيف تسير المعاملة — 5 خطوات', ru:'Как это работает — 5 шагов', zh:'服务流程 — 5个步骤', es:'Cómo Funciona — 5 Pasos' },
+  how_s: { en:'From document submission to delivery — you approve the draft before it is sent through the appropriate official notarization route.', ar:'من تقديم المستندات حتى التسليم — توافق على المسودة قبل إرسالها عبر مسار التوثيق الرسمي المناسب.', ru:'От подачи до передачи результата — вы утверждаете проект до его направления по соответствующей официальной нотариальной процедуре.', zh:'从提交文件到交付结果——文件进入适用的官方公证流程前，您先确认草稿。', es:'Desde la presentación del documento hasta la entrega — usted aprueba el borrador antes de enviarlo por la vía oficial de notarización correspondiente.' },
   wnp_h: { en:'What Is a Notary Public in Dubai?', ar:'من هو كاتب العدل في دبي؟', ru:'Кто такой нотариус в Дубае?', zh:'什么是迪拜公证人？', es:'¿Qué Es un Notario Público en Dubái?' },
-  wnp_a: { en:'A Notary Public in Dubai is a government official who verifies the identities of signatories and notarizes legal documents such as powers of attorney, affidavits and contracts. A notary does not give legal advice. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. E-Notary Dubai is a notary support service: we draft your document and prepare it for that appointment.', ar:'كاتب العدل في دبي موظف حكومي يختص بالتحقق من هويات الموقِّعين وتوثيق الوثائق القانونية مثل الوكالات والإقرارات والعقود، ولا يقدّم استشارات قانونية. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. وE-Notary Dubai خدمة دعم توثيق: نصيغ مستندك ونجهّزه لهذا الموعد.', ru:'Нотариус в Дубае — государственный служащий, который проверяет личности подписантов и заверяет юридические документы: доверенности, аффидевиты, договоры. Юридических консультаций он не даёт. Заверение проходит по видеозвонку через Суды Дубая или Министерство юстиции ОАЭ. E-Notary Dubai — служба нотариальной поддержки: мы составляем документ и готовим его к этой встрече.', zh:'迪拜的公证人是政府官员，负责核实签署人身份并对授权委托书、宣誓书、合同等法律文件进行公证，但不提供法律建议。公证通过迪拜法院或阿联酋司法部的视频通话完成。E-Notary Dubai 是公证支持服务：我们起草您的文件并为该环节做好准备。', es:'Un Notario Público en Dubái es un funcionario gubernamental que verifica las identidades de los firmantes y notariza documentos legales como poderes notariales, declaraciones juradas y contratos; no presta asesoramiento legal. La notarización se realiza a través de los Tribunales de Dubái o el Ministerio de Justicia de los EAU mediante videollamada. E-Notary Dubai es un servicio de apoyo notarial: redactamos su documento y lo preparamos para esa cita.' },
+  wnp_a: { en:'A Notary Public is a regulated official or licensed notarial professional who performs the notarial act permitted by the competent UAE framework. The exact route depends on the document and service and may be electronic, require virtual attendance, or require an in-person step. E-Notary Dubai is a support service: we prepare documents and coordinate the appropriate official route; we do not replace the Notary Public.', ar:'كاتب العدل جهة أو مهني توثيق مرخّص يباشر أعمال التوثيق التي يجيزها الإطار القانوني المختص في الإمارات. ويختلف المسار بحسب المستند والخدمة؛ فقد يكون إلكترونياً أو يتطلب حضوراً افتراضياً أو خطوة حضورية. E-Notary Dubai خدمة دعم: نجهّز المستندات وننسّق المسار الرسمي المناسب ولا نحل محل كاتب العدل.', ru:'Нотариус — регулируемое должностное лицо или лицензированный нотариальный специалист, выполняющий нотариальные действия в рамках компетентного законодательства ОАЭ. Маршрут зависит от документа и услуги и может быть электронным, требовать виртуального присутствия или очного этапа. E-Notary Dubai готовит документы и координирует официальный процесс, но не заменяет нотариуса.', zh:'公证人是受监管的官方人员或持牌公证专业人士，依阿联酋主管法律框架办理获准的公证事项。具体流程取决于文件和服务，可能为电子办理、需要线上出席或需要现场步骤。E-Notary Dubai 提供文件准备与流程协调支持，并不取代公证人。', es:'El Notario Público es un funcionario o profesional notarial autorizado que realiza el acto permitido por el marco competente de los EAU. La vía depende del documento y servicio y puede ser electrónica, requerir comparecencia virtual o un paso presencial. E-Notary Dubai prepara documentos y coordina la vía oficial; no sustituye al Notario Público.' },
   faq_h: { en:'Frequently Asked Questions', ar:'الأسئلة الشائعة', ru:'Часто задаваемые вопросы', zh:'常见问题', es:'Preguntas Frecuentes' },
   faq_all: { en:'View all FAQs', ar:'عرض كل الأسئلة', ru:'Все вопросы', zh:'查看所有常见问题', es:'Ver todas las preguntas' },
-  now5: { en:'Start Now — Reply in 5 Minutes', ar:'ابدأ الآن — رد خلال 5 دقائق', ru:'Начать — ответ за 5 минут', zh:'立即开始 — 5分钟内回复', es:'Comenzar — Respuesta en 5 Minutos' },
-  same_day: { en:'Same-Day', ar:'نفس اليوم', ru:'День в день', zh:'当日', es:'Mismo Día' },
+  now5: { en:'Start Now — Fast WhatsApp Reply', ar:'ابدأ الآن — رد سريع عبر واتساب', ru:'Начать — быстрый ответ в WhatsApp', zh:'立即开始 — WhatsApp快速回复', es:'Comenzar — Respuesta Rápida por WhatsApp' },
+  same_day: { en:'Same-Day', ar:'خدمة عاجلة', ru:'День в день', zh:'当日', es:'Mismo Día' },
 }
 
 const UNIFIED_CARD_STYLE = 'from-slate-500/10 to-slate-500/5 border-slate-200 hover:border-slate-300'
@@ -161,7 +161,7 @@ const EXTRA_POA = [
 const EXTRA_ATTEST = [
   { href: 'certified-true-copy',
     t: { en:'Certified True Copy', ar:'النسخة طبق الأصل', ru:'Заверенная копия', zh:'核证副本', es:'Copia Certificada' },
-    d: { en:'Passports, Emirates ID, degrees, title deeds and trade licences.', ar:'جوازات السفر والهوية الإماراتية والشهادات وسندات الملكية والرخص التجارية.', ru:'Паспорта, Emirates ID, дипломы, титулы и торговые лицензии.', zh:'护照、酋长国身份证、学位证、产权证书及贸易执照。', es:'Pasaportes, Emirates ID, títulos, escrituras y licencias comerciales.' } },
+    d: { en:'Passports, Emirates ID, bank/KYC and corporate documents — same-day service available for standard files.', ar:'جوازات السفر والهوية وملفات البنوك وKYC ومستندات الشركات — مع خدمة في نفس اليوم للمستندات القياسية.', ru:'Паспорта, Emirates ID, банковские/KYC и корпоративные документы — для стандартных файлов доступна услуга в тот же день.', zh:'护照、Emirates ID、银行/KYC及公司文件——标准文件可提供当日服务。', es:'Pasaportes, Emirates ID, documentos bancarios/KYC y corporativos — servicio el mismo día para archivos estándar.' } },
   { href: 'affidavit',
     t: { en:'Affidavit', ar:'الإقرارات الرسمية', ru:'Аффидевит', zh:'宣誓书', es:'Affidávit' },
     d: { en:'Affidavit of support, single status, income and NOC affidavits.', ar:'إقرار إعالة، أو عزوبية، أو دخل، أو تنازل.', ru:'Аффидевиты о поддержке, семейном положении, доходе и NOC.', zh:'资助宣誓书、单身状况、收入及无异议声明。', es:'Affidávits de manutención, estado civil, ingresos y NOC.' } },
@@ -173,7 +173,7 @@ const EXTRA_TENANCY = [
     d: { en:'We prepare Rental Disputes Centre cases, draft the documents and file them.', ar:'نجهّز قضايا مركز فض المنازعات الإيجارية ونصوغ المستندات ونقيّدها.', ru:'Готовим дела в Центре арендных споров, составляем документы и подаём их.', zh:'我们办理租赁纠纷中心案件、起草文件并提交立案。', es:'Preparamos casos del Centro de Disputas de Alquiler, redactamos los documentos y los presentamos.' } },
   { href: 'legal-notice/poa-cancellation',
     t: { en:'POA Cancellation Notice', ar:'إشعار إلغاء الوكالة', ru:'Уведомление об отзыве доверенности', zh:'授权书撤销通知', es:'Notificación de Cancelación de POA' },
-    d: { en:'Formally notify your agent through the official Tableegh process via Dubai Courts.', ar:'إبلاغ وكيلك رسمياً عبر نظام التبليغ الرسمي لمحاكم دبي.', ru:'Официальное уведомление поверенного через систему Tableegh судов Дубая.', zh:'通过迪拜法院的官方 Tableegh 程序正式通知您的代理人。', es:'Notifique formalmente a su agente mediante el proceso oficial Tableegh de los Tribunales de Dubái.' } },
+    d: { en:'Prepare a formal notice to your former agent and coordinate the service route appropriate to the cancellation record and intended use.', ar:'إعداد إشعار رسمي للوكيل السابق وتنسيق مسار التبليغ المناسب بحسب قيد الإلغاء والغرض من الإشعار.', ru:'Подготовка официального уведомления бывшему поверенному и координация подходящего способа вручения с учётом записи об отзыве и цели.', zh:'为原代理人准备正式通知，并根据撤销记录和使用目的协调合适的送达方式。', es:'Preparar una notificación formal al antiguo apoderado y coordinar la vía de entrega adecuada según el registro de revocación y su finalidad.' } },
   { href: 'last-will-testament-dubai',
     t: { en:'Last Will & Testament', ar:'الوصية الأخيرة', ru:'Завещание', zh:'遗嘱', es:'Testamento' },
     d: { en:'Wills for non-Muslim expats, with registration through DIFC Courts or Dubai Courts.', ar:'وصايا لغير المسلمين، مع إجراءات التسجيل لدى محاكم مركز دبي المالي العالمي أو محاكم دبي.', ru:'Завещания для немусульман с регистрацией в судах DIFC или судах Дубая.', zh:'为非穆斯林外籍人士起草遗嘱，并在 DIFC 法院或迪拜法院办理登记。', es:'Testamentos para expatriados no musulmanes, con registro ante los Tribunales del DIFC o de Dubái.' } },
@@ -236,7 +236,10 @@ export default async function HomePage({ params }: Props) {
             <div className="hidden lg:flex items-center justify-center">
               <div className="relative">
                 <div className="absolute -inset-4 rounded-3xl" style={{background:'radial-gradient(ellipse at center, rgba(212,180,58,.07) 0%, transparent 70%)'}} />
-                <img src="/assets/hero/poa-doc.png" alt="UAE Notary Document" className="relative w-[480px] xl:w-[500px] h-auto" style={{filter:'drop-shadow(0 0 40px rgba(212,180,58,.13))'}} />
+                <picture>
+                  <source srcSet="/assets/hero/poa-doc.webp" type="image/webp" />
+                  <img src="/assets/hero/poa-doc.png" alt="UAE Notary Document" width={793} height={651} decoding="async" fetchPriority="high" className="relative w-[480px] xl:w-[500px] h-auto" style={{filter:'drop-shadow(0 0 40px rgba(212,180,58,.13))'}} />
+                </picture>
               </div>
             </div>
           </div>
@@ -349,7 +352,7 @@ export default async function HomePage({ params }: Props) {
       {/* Attestation */}
       <section className="bg-white py-16 border-t border-navy-100">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <p className="overline-label mb-2">{t({en:'Government & Embassy',ar:'الحكومة والسفارة',ru:'Правительство и посольство',zh:'政府及大使馆',es:'Gobierno y Embajada'}, lang)}</p>
+          <p className="overline-label mb-2">{t({en:'Government & Embassy',ar:'الجهات الحكومية والبعثات الدبلوماسية',ru:'Правительство и посольство',zh:'政府及大使馆',es:'Gobierno y Embajada'}, lang)}</p>
           <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 sm:text-3xl mb-8">{t(H.attest_h, lang)}</h2>
           <div className="grid gap-4 grid-cols-1 sm:grid-cols-3">
             {services.attestation.types.map((type) => (
@@ -373,7 +376,7 @@ export default async function HomePage({ params }: Props) {
       {/* Tenancy */}
       <section className="bg-navy-50 py-16 border-t border-navy-100">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <p className="overline-label mb-2">{t({en:'Tenant & Landlord',ar:'مستأجر ومالك',ru:'Арендатор и арендодатель',zh:'租客及房东',es:'Inquilino y Propietario'}, lang)}</p>
+          <p className="overline-label mb-2">{t({en:'Tenant & Landlord',ar:'المستأجر والمؤجر',ru:'Арендатор и арендодатель',zh:'租客及房东',es:'Inquilino y Propietario'}, lang)}</p>
           <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 sm:text-3xl mb-8">{t(H.tenancy_h, lang)}</h2>
           <div className="grid gap-4 sm:grid-cols-2">
             <Link href={`/${lang}/legal-notice/eviction`} className="service-card group">
@@ -402,7 +405,7 @@ export default async function HomePage({ params }: Props) {
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
           <div className="mb-10">
             <p className="overline-label mb-2">{t({en:'Rental Disputes Settlement Centre',ar:'مركز فض المنازعات الإيجارية',ru:'Центр разрешения арендных споров',zh:'租赁纠纷解决中心',es:'Centro de Resolución de Disputas de Alquiler'}, lang)}</p>
-            <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 sm:text-3xl">{t({en:'RDC Case Support',ar:'دعم قضايا مركز فض المنازعات',ru:'Поддержка дел в RDC',zh:'租赁纠纷中心案件支持',es:'Apoyo en Casos del RDC'}, lang)}</h2>
+            <h2 className="gold-line font-serif text-2xl font-bold text-navy-900 sm:text-3xl">{t({en:'RDC Case Support',ar:'دعم قضايا مركز فض المنازعات الإيجارية',ru:'Поддержка дел в RDC',zh:'租赁纠纷中心案件支持',es:'Apoyo en Casos del RDC'}, lang)}</h2>
             <p className="mt-2 text-navy-500 text-sm">{t({en:'Filing, defending and enforcing rental cases in Dubai.',ar:'تقييد القضايا الإيجارية في دبي والرد عليها وتنفيذها.',ru:'Подача, защита и исполнение арендных дел в Дубае.',zh:'在迪拜提起、应诉与执行租赁案件。',es:'Presentación, defensa y ejecución de casos de alquiler en Dubái.'}, lang)}</p>
           </div>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -420,7 +423,7 @@ export default async function HomePage({ params }: Props) {
       {/* Remote */}
       <section className="bg-navy-900 py-16 border-t border-navy-800">
         <div className="mx-auto max-w-7xl px-4 lg:px-8">
-          <p className="overline-label mb-2 text-gold-500/70">{t({en:'No Office Visit Required',ar:'بدون زيارة مكتب',ru:'Без визита в офис',zh:'无需到访办公室',es:'Sin Visita Necesaria'}, lang)}</p>
+          <p className="overline-label mb-2 text-gold-500/70">{t({en:'No Office Visit Required',ar:'من دون زيارة المكتب',ru:'Без визита в офис',zh:'无需到访办公室',es:'Sin Visita Necesaria'}, lang)}</p>
           <h2 className="gold-line font-serif text-2xl font-bold text-white sm:text-3xl mb-8">{t(H.remote_h, lang)}</h2>
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {[services.e_notary, services.legal_translation].map((s) => (

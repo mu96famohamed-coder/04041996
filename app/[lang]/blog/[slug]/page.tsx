@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
 import content from '@/data/content.json'
 import FAQSection from '@/components/FAQSection'
+import RichContent, { type RichBlock } from '@/components/RichContent'
 
 import { ArticleSchema, FAQSchema, BreadcrumbSchema } from '@/components/SchemaMarkup'
 interface Props { params: Promise<{ lang: Lang; slug: string }> }
@@ -11,24 +12,15 @@ const BLOG_SLUGS = [
   'how-to-get-poa-dubai',
   'power-of-attorney-types-dubai',
   'difference-between-general-and-special-poa-uae',
-  'how-to-cancel-poa-dubai',
-  'poa-rejected-by-authority-what-to-do',
   'poa-for-banking-uae-guide',
   'corporate-poa-vs-individual-poa-uae',
-  'power-of-attorney-property-sale-dubai',
-  'dld-property-gift-transfer-dubai',
   'mofa-attestation-guide',
-  'mofa-attestation-step-by-step-dubai',
-  'mofa-attestation-uae-complete-guide-2026',
-  'eviction-notice-dubai-guide',
   'eviction-notice-requirements-dubai',
   'whatsapp-eviction-notice-dubai-valid',
   'rdc-filing-guide-dubai',
   'how-to-attend-rdc-hearing-dubai-2026',
-  'legal-translation-dubai-guide',
   'last-will-testament-dubai-expats',
   'travelling-minor-child-uae-rules',
-  'same-day-notary-dubai',
   'notary-public-vs-lawyer-dubai',
   'notarize-documents-without-visiting-uae',
   'affidavit-dubai-complete-guide',
@@ -50,7 +42,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang, slug } = await params
-  const bc = (content.blog_content as Record<string, Record<string, string>>)[slug]
+  // content.json is a literal type; bridge through `unknown` because the
+  // literal's per-slug shapes differ and TS refuses the direct assertion.
+  const bc = (content.blog_content as unknown as Record<string, Record<string, string>>)[slug]
   const rawTitle = bc?.[`title_${lang}`] || bc?.title_en || slugToTitle(slug)
   const title = `${rawTitle} | E-Notary Dubai`
   const description = bc?.[`meta_${lang}`] || bc?.meta_en || ''
@@ -78,13 +72,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const LABELS = {
   back:    { en: '← Back to Blog', ar: '← العودة للمدونة', ru: '← Назад к блогу', zh: '← 返回博客', es: '← Volver al Blog' },
   cta:     { en: 'Need professional help with this?', ar: 'تحتاج مساعدة متخصصة في هذا الموضوع؟', ru: 'Нужна профессиональная помощь?', zh: '需要专业帮助？', es: '¿Necesita ayuda profesional?' },
-  wa:      { en: 'Chat on WhatsApp — Reply in 5 Minutes', ar: 'تحدث على واتساب — رد خلال 5 دقائق', ru: 'Чат в WhatsApp — ответ за 5 минут', zh: 'WhatsApp聊天——5分钟内回复', es: 'Chat en WhatsApp — Respuesta en 5 Minutos' },
+  wa:      { en: 'Chat on WhatsApp — Fast Reply', ar: 'تحدث معنا عبر واتساب — رد سريع', ru: 'Чат в WhatsApp — быстрый ответ', zh: 'WhatsApp聊天——快速回复', es: 'Chat en WhatsApp — Respuesta Rápida' },
   faq_h:   { en: 'Frequently Asked Questions', ar: 'الأسئلة الشائعة', ru: 'Часто задаваемые вопросы', zh: '常见问题', es: 'Preguntas Frecuentes' },
   related: { en: 'Related Articles', ar: 'مقالات ذات صلة', ru: 'Похожие статьи', zh: '相关文章', es: 'Artículos Relacionados' },
   read:    { en: 'Read article →', ar: '← اقرأ المقال', ru: 'Читать →', zh: '阅读 →', es: 'Leer →' },
 }
 
-const blogData = content.blog_content as Record<string, {
+// Bridged through `unknown`: the JSON literal type has heterogeneous
+// per-article shapes, so a direct assertion is rejected (TS2352).
+const blogData = content.blog_content as unknown as Record<string, {
   title_en?: string; title_ar?: string; title_ru?: string; title_zh?: string; title_es?: string;
   meta_en?: string; meta_ar?: string; meta_ru?: string; meta_zh?: string; meta_es?: string;
   date?: string
@@ -94,6 +90,7 @@ const blogData = content.blog_content as Record<string, {
   list_items?: Array<Record<string,string> & { s?: number }>
   related?: string[]
   faq?: Array<{q: Record<string,string>; a: Record<string,string>}>
+  rich_blocks?: RichBlock[]
 }>
 
 export default async function BlogArticlePage({ params }: Props) {
@@ -109,6 +106,7 @@ export default async function BlogArticlePage({ params }: Props) {
   const paragraphs = bc?.content || []
   const listItems = bc?.list_items || []
   const faqItems = bc?.faq || []
+  const richBlocks = bc?.rich_blocks || []
 
   // Get 3 related articles (exclude current)
   const curated = (bc as any)?.related as string[] | undefined
@@ -170,7 +168,9 @@ export default async function BlogArticlePage({ params }: Props) {
       {/* Content */}
       <div className="mx-auto max-w-3xl px-4 lg:px-8 py-12">
 
-        {sections.length === 0 && paragraphs.length === 0 ? (
+        {richBlocks.length > 0 ? (
+          <RichContent blocks={richBlocks} lang={lang} />
+        ) : sections.length === 0 && paragraphs.length === 0 ? (
           <p className="text-navy-500 mb-8 text-sm">
             {t({en:'Full article coming soon.',ar:'المقال الكامل قريباً.',ru:'Полная статья скоро.',zh:'完整文章即将推出。',es:'Artículo completo próximamente.'}, lang)}
           </p>
@@ -273,7 +273,7 @@ export default async function BlogArticlePage({ params }: Props) {
         {/* CTA */}
         <div className="rounded-2xl bg-navy-900 p-8 text-center mt-12">
           <h2 className="font-serif text-lg font-bold text-white mb-2">{t(LABELS.cta, lang)}</h2>
-          <p className="text-navy-400 text-xs mb-5">{t({en:'We reply in 5 minutes — no obligation.', ar:'نرد في 5 دقائق — بدون أي التزام.', ru:'Ответим за 5 минут.', zh:'5分钟内回复。', es:'Respondemos en 5 minutos.'}, lang)}</p>
+          <p className="text-navy-400 text-xs mb-5">{t({en:'Quick WhatsApp reply — no obligation.', ar:'رد سريع عبر واتساب — دون أي التزام.', ru:'Быстрый ответ в WhatsApp — без обязательств.', zh:'WhatsApp 快速回复，无需承诺。', es:'Respuesta rápida por WhatsApp — sin compromiso.'}, lang)}</p>
           <a href={waUrl} target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold px-8 py-3 rounded-xl hover:bg-[#20b958] transition-colors text-sm">
             <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

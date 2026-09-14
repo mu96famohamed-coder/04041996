@@ -33,7 +33,8 @@ function maybeCleanup(now: number) {
   cleanupCounter++
   if (cleanupCounter < 500) return
   cleanupCounter = 0
-  for (const [key, rec] of rateStore.entries()) {
+  // Array.from avoids requiring --downlevelIteration for Map iterators
+  for (const [key, rec] of Array.from(rateStore.entries())) {
     if (rec.resetAt < now) rateStore.delete(key)
   }
 }
@@ -106,6 +107,13 @@ const ALLOWED_UA_PATTERNS = [
   /whatsapp/i,
   /telegrambot/i,
   /applebot/i,
+  // Answer-engine / AI crawlers — allowed past the scraper deny-list.
+  // This list affects the BOT FILTER ONLY. It grants no rate-limit privilege.
+  /OAI-SearchBot/i,
+  /PerplexityBot/i,
+  /Perplexity-User/i,
+  /Claude-SearchBot/i,
+  /Claude-User/i,
 ]
 
 function isBlockedBot(userAgent: string): boolean {
@@ -130,6 +138,15 @@ const BLOCKED_PATH_PATTERNS = [
   /\.map$/i, // block any .map file access attempt
 ]
 
+const SAFE_METHODS = new Set(['GET', 'HEAD'])
+
+// The in-memory limiter applies to API routes and to any non-safe method.
+// It is never enabled or disabled on the basis of the User-Agent header.
+function needsRateLimit(req: NextRequest, pathname: string): boolean {
+  if (pathname.startsWith('/api/')) return true
+  return !SAFE_METHODS.has(req.method)
+}
+
 function isBlockedPath(pathname: string): boolean {
   return BLOCKED_PATH_PATTERNS.some((re) => re.test(pathname))
 }
@@ -150,25 +167,30 @@ export function middleware(req: NextRequest) {
     return new NextResponse('Forbidden', { status: 403 })
   }
 
-  // 3. Rate limiting
-  const ip = getClientIp(req)
-  const { allowed, remaining } = checkRateLimit(ip)
-  if (!allowed) {
-    return new NextResponse('Too Many Requests', {
-      status: 429,
-      headers: {
-        'Retry-After': '60',
-        'X-RateLimit-Limit': String(RATE_MAX_REQUESTS),
-        'X-RateLimit-Remaining': '0',
-      },
-    })
+  // 3. Rate limiting — scoped, never granted or waived by User-Agent.
+  //    Ordinary public page reads (GET/HEAD outside /api) skip the in-memory
+  //    limiter entirely: it cannot protect a CDN-cached static route and only
+  //    penalised shared-IP visitors. Everything else stays limited.
+  if (needsRateLimit(req, pathname)) {
+    const ip = getClientIp(req)
+    const { allowed, remaining } = checkRateLimit(ip)
+    if (!allowed) {
+      return new NextResponse('Too Many Requests', {
+        status: 429,
+        headers: {
+          'Retry-After': '60',
+          'X-RateLimit-Limit': String(RATE_MAX_REQUESTS),
+          'X-RateLimit-Remaining': '0',
+        },
+      })
+    }
+    const limited = NextResponse.next()
+    limited.headers.set('X-RateLimit-Limit', String(RATE_MAX_REQUESTS))
+    limited.headers.set('X-RateLimit-Remaining', String(remaining))
+    return limited
   }
 
-  // Pass through with rate-limit info
-  const res = NextResponse.next()
-  res.headers.set('X-RateLimit-Limit', String(RATE_MAX_REQUESTS))
-  res.headers.set('X-RateLimit-Remaining', String(remaining))
-  return res
+  return NextResponse.next()
 }
 
 // Matcher: run middleware on everything EXCEPT:

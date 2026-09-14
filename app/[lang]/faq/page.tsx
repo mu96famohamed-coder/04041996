@@ -29,15 +29,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-const SECTIONS = [
-  { key: 'faq_page', label: { en: 'General Questions', ar: 'أسئلة عامة', ru: 'Общие вопросы', zh: '常见问题', es: 'Preguntas Generales' } },
-  { key: 'poa_general', label: { en: 'Power of Attorney', ar: 'الوكالات الرسمية', ru: 'Доверенности', zh: '授权委托书', es: 'Poder Notarial' } },
-  { key: 'attestation_mofa', label: { en: 'MOFA & Embassy Attestation', ar: 'تصديق وزارة الخارجية والسفارات', ru: 'Заверение МИД и посольств', zh: '外交部与使馆认证', es: 'Atestación MOFA y embajadas' } },
-  { key: 'eviction_notice', label: { en: 'Eviction Notices', ar: 'إشعارات الإخلاء', ru: 'Уведомления о выселении', zh: '驱逐通知', es: 'Avisos de Desalojo' } },
-  { key: 'legal_notice', label: { en: 'Legal Notices', ar: 'الإنذارات القانونية', ru: 'Юридические уведомления', zh: '法律通知', es: 'Notificaciones Legales' } },
-  { key: 'overseas_poa', label: { en: 'POA from Outside UAE', ar: 'وكالة من خارج الإمارات', ru: 'Доверенность из-за рубежа', zh: '海外授权书', es: 'POA desde el Exterior' } },
-  { key: 'e_notary', label: { en: 'E-Notary & Remote Services', ar: 'التوثيق الإلكتروني والخدمات عن بُعد', ru: 'Электронный нотариус', zh: '电子公证与远程服务', es: 'Notario Electrónico' } },
-  { key: 'pricing_page', label: { en: 'Pricing & Fees', ar: 'الأسعار والرسوم', ru: 'Цены и сборы', zh: '价格与费用', es: 'Precios y Tarifas' } },
+// Each section reads from the canonical page-level FAQ (page_content[path].faq).
+// `serviceKey` is used only for topics that have no dedicated page.
+const SECTIONS: Array<{ path?: string; serviceKey?: string; label: Record<string, string> }> = [
+  { path: '/faq', label: { en: 'General Questions', ar: 'أسئلة عامة', ru: 'Общие вопросы', zh: '常见问题', es: 'Preguntas Generales' } },
+  { path: '/power-of-attorney', label: { en: 'Power of Attorney', ar: 'الوكالات الرسمية', ru: 'Доверенности', zh: '授权委托书', es: 'Poder Notarial' } },
+  { path: '/attestation/mofa', label: { en: 'MOFA & Embassy Attestation', ar: 'تصديق وزارة الخارجية والسفارات', ru: 'Заверение МИД и посольств', zh: '外交部与使馆认证', es: 'Atestación MOFA y embajadas' } },
+  { path: '/legal-notice/eviction', label: { en: 'Eviction Notices', ar: 'إشعارات الإخلاء', ru: 'Уведомления о выселении', zh: '驱逐通知', es: 'Avisos de Desalojo' } },
+  { path: '/legal-notice', label: { en: 'Legal Notices', ar: 'الإنذارات القانونية', ru: 'Юридические уведомления', zh: '法律通知', es: 'Notificaciones Legales' } },
+  { serviceKey: 'overseas_poa', label: { en: 'POA from Outside UAE', ar: 'وكالة من خارج الإمارات', ru: 'Доверенность из-за рубежа', zh: '海外授权书', es: 'POA desde el Exterior' } },
+  { path: '/e-notary', label: { en: 'E-Notary & Remote Services', ar: 'التوثيق الإلكتروني والخدمات عن بُعد', ru: 'Электронный нотариус', zh: '电子公证与远程服务', es: 'Notario Electrónico' } },
+  { path: '/pricing', label: { en: 'Pricing & Fees', ar: 'الأسعار والرسوم', ru: 'Цены и сборы', zh: '价格与费用', es: 'Precios y Tarifas' } },
 ]
 
 export default async function FAQPage({ params }: Props) {
@@ -58,11 +60,11 @@ export default async function FAQPage({ params }: Props) {
       </div>
 
       <div className="mx-auto max-w-4xl px-4 lg:px-8 py-12 space-y-12">
-        {SECTIONS.map(({ key, label }) => {
-          const items = getServiceFaq(key)
+        {SECTIONS.map(({ path, serviceKey, label }) => {
+          const items = path ? getPageFaq(path) : getServiceFaq(serviceKey as string)
           if (!items.length) return null
           return (
-            <div key={key}>
+            <div key={path ?? serviceKey}>
               <h2 className="gold-line font-serif text-xl font-bold text-navy-900 mb-6 inline-block">
                 {t(label, lang)}
               </h2>

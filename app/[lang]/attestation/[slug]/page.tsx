@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { LANGS, type Lang, t, services, getPageContent, getPageBlocks, getPageFaq, getServiceFaq, HREFLANG_MAP } from '@/lib/i18n'
+import { LANGS, type Lang, t, services, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
 import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
@@ -43,10 +43,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-const FAQ_KEY: Record<string, string> = {
-  mofa:      'attestation_mofa',
-}
-
 const SUBTITLE = {
   en: 'Attestation · Dubai',
   ar: 'التصديق · دبي',
@@ -62,14 +58,13 @@ export default async function AttestationPage({ params }: Props) {
 
   const pageSlug = `/attestation/${slug}`
   const seo      = (getPageContent(pageSlug) as any)?.seo
+  const hasDedicatedRoute = slug === 'mofa' || slug === 'embassy'
 
   const pageTitle = seo?.h1 ?? type.title
   const waMessage = seo?.wa_message?.[lang] ?? seo?.wa_message?.en ?? type.wa_message
 
-  let faqItems = getPageFaq(pageSlug)
-  if (faqItems.length === 0 && FAQ_KEY[slug]) {
-    faqItems = getServiceFaq(FAQ_KEY[slug]).slice(0, 3)
-  }
+  // FAQ: page_content[path].faq is the single canonical source
+  const faqItems = getPageFaq(pageSlug)
 
   return (
     <>
@@ -77,12 +72,13 @@ export default async function AttestationPage({ params }: Props) {
       <ServicePage
         lang={lang}
         title={pageTitle}
-        subtitle={SUBTITLE}
+        subtitle={hasDedicatedRoute ? undefined : SUBTITLE}
         description={seo?.meta_description ?? type.desc}
+        authority={hasDedicatedRoute ? seo?.authority : undefined}
         waMessage={waMessage}
         faqItems={faqItems.length > 0 ? faqItems : undefined}
         richBlocks={getPageBlocks(pageSlug)}
-        expressTimeline
+        expressTimeline={!hasDedicatedRoute}
         relatedServices={relatedFor(lang, '/attestation/' + slug)}
         breadcrumb={breadcrumbFor(lang, '/attestation/' + slug)}
       />

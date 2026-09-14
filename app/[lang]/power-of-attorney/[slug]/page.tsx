@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
-import { LANGS, type Lang, t, services, getPageContent, getPageBlocks, getPageFaq, getServiceFaq, getRequiredDocs, HREFLANG_MAP } from '@/lib/i18n'
+import { LANGS, type Lang, t, services, getPageContent, getPageBlocks, getPageFaq, getRequiredDocs, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
 import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
@@ -45,20 +45,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-const FAQ_KEY: Record<string, string> = {
-  general:            'poa_general',
-  special:            'poa_special',
-  'real-estate':      'poa_real_estate',
-  vehicle:            'poa_vehicle',
-  bank:               'poa_bank',
-  'child-travel':     'poa_child_travel',
-  court:              'poa_court',
-  inheritance:        'poa_inheritance',
-  mohre:              'poa_mohre',
-  'company-formation':'poa_company_formation',
-  'property-gifting': 'poa_property_gifting',
-}
-
 const DOCS_KEY: Record<string, string> = {
   general:       'poa_general',
   'real-estate': 'poa_real_estate',
@@ -86,11 +72,8 @@ export default async function POATypePage({ params }: Props) {
   // WA message: seo.wa_message first, fallback to type.wa_message
   const waMessage = seo?.wa_message?.[lang] ?? seo?.wa_message?.en ?? type.wa_message
 
-  // FAQ: page-level first, then service-level fallback
-  let faqItems = getPageFaq(pageSlug)
-  if (faqItems.length === 0 && FAQ_KEY[slug]) {
-    faqItems = getServiceFaq(FAQ_KEY[slug]).slice(0, 3)
-  }
+  // FAQ: page_content[path].faq is the single canonical source
+  const faqItems = getPageFaq(pageSlug)
 
   // Hub-only: the real-estate page links out to its five child pages.
   const related = slug === 'real-estate' ? [

@@ -29,10 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const L = {
-  h1:    { en: 'Contact Us', ar: 'تواصل معنا', ru: 'Свяжитесь с нами', zh: '联系我们', es: 'Contáctenos' },
-  sub:   { en: 'We reply within 5 minutes via WhatsApp — 7 days a week.', ar: 'نرد خلال 5 دقائق عبر واتساب — 7 أيام في الأسبوع.', ru: 'Отвечаем в течение 5 минут через WhatsApp — 7 дней в неделю.', zh: '我们每周7天在5分钟内通过WhatsApp回复。', es: 'Respondemos en 5 minutos por WhatsApp — 7 días a la semana.' },
-  wa_h:  { en: 'WhatsApp — Fastest', ar: 'واتساب — الأسرع', ru: 'WhatsApp — Быстрее всего', zh: 'WhatsApp——最快', es: 'WhatsApp — Lo más rápido' },
-  wa_p:  { en: 'Send us your document type and we reply with exact cost and timeline within 5 minutes.', ar: 'أرسل لنا نوع وثيقتك وسنرد بالتكلفة الدقيقة والمدة الزمنية خلال 5 دقائق.', ru: 'Сообщите тип документа — ответим с точной стоимостью и сроками за 5 минут.', zh: '告诉我们您的文件类型，我们将在5分钟内回复确切费用和时间。', es: 'Envíenos el tipo de documento y le responderemos con el costo exacto y el plazo en 5 minutos.' },
+  h1:    { en: 'Contact E-Notary Dubai', ar: 'تواصل مع E-Notary Dubai', ru: 'Связаться с E-Notary Dubai', zh: '联系 E-Notary Dubai', es: 'Contacte E-Notary Dubai' },
+  sub:   { en: 'Fast WhatsApp replies — 7 days a week.', ar: 'رد سريع عبر واتساب طوال أيام الأسبوع.', ru: 'Быстрые ответы в WhatsApp — 7 дней в неделю.', zh: 'WhatsApp 快速回复——每周7天。', es: 'Respuestas rápidas por WhatsApp — 7 días a la semana.' },
+  wa_h:  { en: 'WhatsApp — Fastest', ar: 'واتساب — للتواصل السريع', ru: 'WhatsApp — Быстрее всего', zh: 'WhatsApp——最快', es: 'WhatsApp — Lo más rápido' },
+  wa_p:  { en: 'Send us your document type and we review the requirements, quote and estimated timeline for the service.', ar: 'أرسل نوع المستند لنراجع المتطلبات ونوضح عرض السعر والمدة التقديرية للخدمة.', ru: 'Сообщите тип документа — мы проверим требования и сообщим расчёт и ориентировочный срок.', zh: '告诉我们文件类型，我们会审核要求并说明报价及预计时间。', es: 'Envíenos el tipo de documento y revisamos requisitos, cotización y plazo estimado del servicio.' },
   wa_btn:{ en: 'Open WhatsApp', ar: 'فتح واتساب', ru: 'Открыть WhatsApp', zh: '打开WhatsApp', es: 'Abrir WhatsApp' },
   ph_h:  { en: 'Phone', ar: 'الهاتف', ru: 'Телефон', zh: '电话', es: 'Teléfono' },
   em_h:  { en: 'Email', ar: 'البريد الإلكتروني', ru: 'Эл. почта', zh: '电子邮件', es: 'Correo Electrónico' },
@@ -46,7 +46,7 @@ const L = {
   form_service: { en: 'Service Needed', ar: 'الخدمة المطلوبة', ru: 'Нужная услуга', zh: '所需服务', es: 'Servicio Necesario' },
   form_msg: { en: 'Your Message', ar: 'رسالتك', ru: 'Ваше сообщение', zh: '您的消息', es: 'Su Mensaje' },
   form_send: { en: 'Send via WhatsApp', ar: 'أرسل عبر واتساب', ru: 'Отправить через WhatsApp', zh: '通过WhatsApp发送', es: 'Enviar por WhatsApp' },
-  note:  { en: 'Note: WhatsApp is the fastest way to reach us. Your message will open WhatsApp directly.', ar: 'ملاحظة: واتساب هو أسرع طريقة للتواصل معنا. ستُفتح المحادثة مباشرة.', ru: 'Примечание: WhatsApp — самый быстрый способ связи. Сообщение откроет WhatsApp напрямую.', zh: '注意：WhatsApp是联系我们最快的方式。您的消息将直接打开WhatsApp。', es: 'Nota: WhatsApp es la forma más rápida de contactarnos. Su mensaje abrirá WhatsApp directamente.' },
+  note:  { en: 'Note: WhatsApp is the fastest way to reach us. Your message will open WhatsApp directly.', ar: 'ملاحظة: يمكنك التواصل معنا مباشرة عبر واتساب، وستُفتح المحادثة في التطبيق أو المتصفح.', ru: 'Примечание: WhatsApp — самый быстрый способ связи. Сообщение откроет WhatsApp напрямую.', zh: '注意：WhatsApp是联系我们最快的方式。您的消息将直接打开WhatsApp。', es: 'Nota: WhatsApp es la forma más rápida de contactarnos. Su mensaje abrirá WhatsApp directamente.' },
 }
 
 const WA_ICON = <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
@@ -87,7 +87,7 @@ export default async function Page({ params }: Props) {
                 </div>
                 <div>
                   <h2 className="font-bold text-navy-900 text-base">{t(L.wa_h, lang)}</h2>
-                  <p className="text-xs text-navy-500">{t({ en: 'Reply in 5 minutes · 7 days a week', ar: 'رد في 5 دقائق · 7 أيام في الأسبوع', ru: 'Ответ за 5 минут · 7 дней в неделю', zh: '5分钟内回复·每周7天', es: 'Respuesta en 5 min · 7 días a la semana' }, lang)}</p>
+                  <p className="text-xs text-navy-500">{t({ en: 'Fast WhatsApp reply · 7 days a week', ar: 'رد سريع عبر واتساب · 7 أيام في الأسبوع', ru: 'Быстрый ответ в WhatsApp · 7 дней в неделю', zh: 'WhatsApp 快速回复 · 每周7天', es: 'Respuesta rápida por WhatsApp · 7 días a la semana' }, lang)}</p>
                 </div>
               </div>
               <p className="text-sm text-navy-600 mb-4">{t(L.wa_p, lang)}</p>
@@ -252,7 +252,7 @@ export default async function Page({ params }: Props) {
                 {[
                   { num: '5,000+', label: { en: 'Documents Notarized', ar: 'وثيقة موثقة', ru: 'Документов заверено', zh: '份文件已公证', es: 'Documentos Notarizados' } },
                   { num: '5', label: { en: 'Languages Supported', ar: 'لغات مدعومة', ru: 'Языков поддерживается', zh: '种语言支持', es: 'Idiomas Soportados' } },
-                  { num: '5 min', label: { en: 'WhatsApp Reply', ar: 'رد واتساب', ru: 'Ответ WhatsApp', zh: 'WhatsApp回复', es: 'Respuesta WhatsApp' } },
+                  { num: 'Fast', label: { en: 'WhatsApp Reply', ar: 'رد واتساب', ru: 'Ответ WhatsApp', zh: 'WhatsApp回复', es: 'Respuesta WhatsApp' } },
                   { num: '7/7', label: { en: 'Days Available', ar: 'أيام في الأسبوع', ru: 'Дней в неделю', zh: '天可用', es: 'Días Disponible' } },
                 ].map((stat) => (
                   <div key={stat.num} className="text-center p-3 rounded-xl bg-navy-800">

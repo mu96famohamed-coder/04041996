@@ -68,9 +68,8 @@ const nextConfig = {
   // Strict React mode
   reactStrictMode: true,
 
-  typescript: {
-    ignoreBuildErrors: true,
-  },
+  // typescript.ignoreBuildErrors removed 2026-09-10: `tsc --noEmit` is clean,
+  // so any new type error must break the build instead of being hidden.
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -102,6 +101,89 @@ const nextConfig = {
       {
         source: '/:lang(en|ar|ru|zh|es)/attestation/apostille/',
         destination: '/:lang/attestation/mofa/',
+        permanent: true,
+      },
+      // 301 permanent: consolidate thin/overlapping MOFA blog URLs into the evergreen master guide.
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/:slug(mofa-attestation-step-by-step-dubai|mofa-attestation-uae-complete-guide-2026)',
+        destination: '/:lang/blog/mofa-attestation-guide/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/:slug(mofa-attestation-step-by-step-dubai|mofa-attestation-uae-complete-guide-2026)/',
+        destination: '/:lang/blog/mofa-attestation-guide/',
+        permanent: true,
+      },
+      // 301 permanent: consolidate the duplicate eviction guide into the Article 25 master.
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/eviction-notice-dubai-guide',
+        destination: '/:lang/blog/eviction-notice-requirements-dubai/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/eviction-notice-dubai-guide/',
+        destination: '/:lang/blog/eviction-notice-requirements-dubai/',
+        permanent: true,
+      },
+      // 301 permanent: retire thin/overlapping blog URLs into their canonical service pages.
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/poa-rejected-by-authority-what-to-do',
+        destination: '/:lang/why-poa-rejected-dubai/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/poa-rejected-by-authority-what-to-do/',
+        destination: '/:lang/why-poa-rejected-dubai/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/dld-property-gift-transfer-dubai',
+        destination: '/:lang/power-of-attorney/property-gifting/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/dld-property-gift-transfer-dubai/',
+        destination: '/:lang/power-of-attorney/property-gifting/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/power-of-attorney-property-sale-dubai',
+        destination: '/:lang/power-of-attorney/real-estate/sale/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/power-of-attorney-property-sale-dubai/',
+        destination: '/:lang/power-of-attorney/real-estate/sale/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/same-day-notary-dubai',
+        destination: '/:lang/emergency-notary/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/same-day-notary-dubai/',
+        destination: '/:lang/emergency-notary/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/legal-translation-dubai-guide',
+        destination: '/:lang/legal-translation/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/legal-translation-dubai-guide/',
+        destination: '/:lang/legal-translation/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/how-to-cancel-poa-dubai',
+        destination: '/:lang/poa-cancellation/',
+        permanent: true,
+      },
+      {
+        source: '/:lang(en|ar|ru|zh|es)/blog/how-to-cancel-poa-dubai/',
+        destination: '/:lang/poa-cancellation/',
         permanent: true,
       },
       // 301 permanent: deleted apostille blog articles → MOFA attestation guide

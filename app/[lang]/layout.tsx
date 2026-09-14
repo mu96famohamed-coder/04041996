@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   }
   const descs: Record<string, string> = {
     en: 'Dubai notary support — POA, MOFA attestation, legal notices & corporate documents. Same-day service via video call notarization.',
-    ar: 'دعم كاتب العدل في دبي — وكالات، تصديق الخارجية، إنذارات قانونية. خدمة في نفس اليوم.',
+    ar: 'دعم كاتب العدل في دبي — وكالات، تصديق الخارجية، إنذارات قانونية.',
     ru: 'Нотариальная поддержка в Дубае — доверенности, легализация MOFA. В тот же день.',
     zh: '迪拜公证支持 — 授权委托书，外交部认证。当日服务。',
     es: 'Soporte notarial en Dubái — Poderes, autenticación MOFA. Mismo día.',

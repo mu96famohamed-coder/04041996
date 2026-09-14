@@ -9,6 +9,30 @@ import content from '@/data/content.json'
 // ─────────────────────────────────────────────────────────────────────────────
 const LAST_CONTENT_UPDATE = new Date('2026-07-20')
 
+// Per-page overrides. Add a path here ONLY when that page's visible/indexable
+// content materially changed — never for code-only or technical patches.
+const PAGE_LAST_MODIFIED: Record<string, Date> = (() => {
+  const SEP_2026 = new Date('2026-09-09')
+  const rebuiltPoaPages = [
+    '/power-of-attorney',
+    '/power-of-attorney/general',
+    '/power-of-attorney/special',
+    '/power-of-attorney/real-estate',
+    '/power-of-attorney/vehicle',
+    '/power-of-attorney/bank',
+    '/power-of-attorney/court',
+    '/power-of-attorney/company-formation',
+    '/power-of-attorney/child-travel',
+  ]
+  const map: Record<string, Date> = {}
+  for (const path of rebuiltPoaPages) map[path] = SEP_2026
+  return map
+})()
+
+function pageLastModified(path: string): Date {
+  return PAGE_LAST_MODIFIED[path] ?? LAST_CONTENT_UPDATE
+}
+
 /** Real per-article lastModified from blog_content.date_updated (fallback: date). */
 function blogLastModified(slug: string): Date {
   const bc = (content.blog_content as Record<string, { date?: string; date_updated?: string }>)[slug]
@@ -62,24 +86,15 @@ const BLOG_SLUGS = [
   'how-to-get-poa-dubai',
   'power-of-attorney-types-dubai',
   'difference-between-general-and-special-poa-uae',
-  'how-to-cancel-poa-dubai',
-  'poa-rejected-by-authority-what-to-do',
   'poa-for-banking-uae-guide',
   'corporate-poa-vs-individual-poa-uae',
-  'power-of-attorney-property-sale-dubai',
-  'dld-property-gift-transfer-dubai',
   'mofa-attestation-guide',
-  'mofa-attestation-step-by-step-dubai',
-  'mofa-attestation-uae-complete-guide-2026',
-  'eviction-notice-dubai-guide',
   'eviction-notice-requirements-dubai',
   'whatsapp-eviction-notice-dubai-valid',
   'rdc-filing-guide-dubai',
   'how-to-attend-rdc-hearing-dubai-2026',
-  'legal-translation-dubai-guide',
   'last-will-testament-dubai-expats',
   'travelling-minor-child-uae-rules',
-  'same-day-notary-dubai',
   'notary-public-vs-lawyer-dubai',
   'notarize-documents-without-visiting-uae',
   'affidavit-dubai-complete-guide',
@@ -136,7 +151,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const lang of LANGS) {
       entries.push({
         url: `${BASE}/${lang}${cleanPath}/`,
-        lastModified: LAST_CONTENT_UPDATE,
+        lastModified: pageLastModified(path),
         changeFrequency,
         priority,
         alternates: {

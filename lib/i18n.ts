@@ -76,6 +76,7 @@ export type RichBlock =
   | { type: 'compare';   left: { title: Record<string, string>; items: Array<Record<string, string>> }; right: { title: Record<string, string>; items: Array<Record<string, string>> } }
   | { type: 'stats';     items: Array<{ value: string; label: Record<string, string>; sub?: Record<string, string> }> }
   | { type: 'table';     headers: Array<Record<string, string>>; rows: Array<Array<Record<string, string>>> }
+  | { type: 'sources';   title?: Record<string, string>; updated?: string; links: Array<{ label: Record<string, string>; url: string }> }
   | { type: 'divider' }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -115,15 +116,6 @@ export function normalizeFaqItem(item: {
 // PageContent type — matches the real shape in content.json exactly
 // ─────────────────────────────────────────────────────────────────────────────
 interface PageContent {
-  h1_en?: string
-  h1_ar?: string
-  /** Each item is a 5-lang map e.g. { en, ar, ru, zh, es } */
-  sections?: Array<Record<string, string>>
-  subsections?: Array<Record<string, string>>
-  content?: Array<Record<string, string>>
-  list_items?: Array<Record<string, string>>
-  /** price rows — shape varies per page, keep loose */
-  prices?: Array<Record<string, unknown>>
   rich_blocks?: RichBlock[]
   faq?: Array<{ q: Record<string, string>; a: Record<string, string> }>
   /** Catch-all for remaining page keys (seo, steps, etc.) */
@@ -132,7 +124,9 @@ interface PageContent {
 
 /** Get page-specific content from content.json */
 export function getPageContent(url: string): PageContent | null {
-  const pc = content.page_content as Record<string, PageContent>
+  // Bridged through `unknown`: page_content's literal type has 60 distinct
+  // per-page shapes, so TS rejects the direct assertion to a uniform record.
+  const pc = content.page_content as unknown as Record<string, PageContent>
   return pc[url] ?? pc[url + '/'] ?? null
 }
 
@@ -176,12 +170,4 @@ export const footer       = content.footer
 export const cta          = content.cta
 export const steps        = content.steps
 export const services     = content.services
-export const trust_badges = content.trust_badges
 export const faq          = content.faq
-
-export const ui_buttons = content.ui_buttons as Record<string, Record<string, string>>
-
-export const pricing = content.pricing as Record<
-  string,
-  Array<{ service: Record<string, string>; href: string }>
->

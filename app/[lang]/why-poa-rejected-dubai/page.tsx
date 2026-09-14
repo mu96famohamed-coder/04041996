@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, getServiceFaq, HREFLANG_MAP } from '@/lib/i18n'
+import { LANGS, type Lang, getPageContent, getPageBlocks, getPageFaq, HREFLANG_MAP } from '@/lib/i18n'
 import ServicePage from '@/components/ServicePage'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
 import { relatedFor, breadcrumbFor } from '@/lib/serviceLinks'
@@ -37,10 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function Page({ params }: Props) {
   const { lang } = await params
   const seo = (getPageContent('/why-poa-rejected-dubai') as any)?.seo
-  let faqItems = getPageFaq('/why-poa-rejected-dubai')
-  if (faqItems.length === 0) {
-    faqItems = getServiceFaq('poa_rejection')
-  }
+  const faqItems = getPageFaq('/why-poa-rejected-dubai')
   return (
     <>
       <LegalServiceSchema lang={lang} path="/why-poa-rejected-dubai" />
