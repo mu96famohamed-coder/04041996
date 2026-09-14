@@ -22,7 +22,7 @@ const FOOTER_LINKS = {
     { href: '/attestation/marriage',  en: 'Marriage Certificate',  ar: 'تصديق عقد الزواج',   ru: 'Свидетельство о браке',      zh: '结婚证认证',   es: 'Acta Matrimonio' },
     { href: '/e-notary',              en: 'E-Notary (Remote)',      ar: 'الكاتب الإلكتروني',  ru: 'Электронный нотариус',       zh: '电子公证',     es: 'E-Notario' },
     { href: '/mobile-notary',         en: 'Mobile Notary',         ar: 'كاتب عدل متنقل',     ru: 'Выездной нотариус',          zh: '上门公证',     es: 'Notario Móvil' },
-    { href: '/emergency-notary',      en: 'Same-Day Urgent',       ar: 'توثيق عاجل نفس اليوم', ru: 'Срочно в тот же день',     zh: '当日紧急公证', es: 'Urgente Mismo Día' },
+    { href: '/emergency-notary',      en: 'Same-Day Urgent',       ar: 'توثيق عاجل', ru: 'Срочно в тот же день',     zh: '当日紧急公证', es: 'Urgente Mismo Día' },
     { href: '/legal-translation',     en: 'Legal Translation',     ar: 'ترجمة قانونية',       ru: 'Юридический перевод',        zh: '法律翻译',     es: 'Traducción Legal' },
   ],
   tenancy: [

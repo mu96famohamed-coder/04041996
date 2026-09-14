@@ -17,9 +17,10 @@ export type RichBlock =
   | { type: 'checklist';  title?: Record<string,string>; items: Array<Record<string,string>> }
   | { type: 'compare';    left: { title: Record<string,string>; items: Array<Record<string,string>> }; right: { title: Record<string,string>; items: Array<Record<string,string>> } }
   | { type: 'table';      headers: Array<Record<string,string>>; rows: Array<Array<Record<string,string>>> }
-  | { type: 'law';        ref: string; text: Record<string,string> }
+  | { type: 'law';        ref: string; ref_ar?: string; text: Record<string,string> }
   | { type: 'process';    items: Array<{ icon: string; title: Record<string,string>; body: Record<string,string> }> }
   | { type: 'stats';      items: Array<{ value: string; label: Record<string,string>; sub?: Record<string,string> }> }
+  | { type: 'sources';    title?: Record<string,string>; updated?: string; links: Array<{ label: Record<string,string>; url: string }> }
   | { type: 'divider' }
 
 // ── Check icon ───────────────────────────────────────────────────────────────
@@ -136,7 +137,7 @@ function LawBlock({ block, lang }: { block: Extract<RichBlock, {type:'law'}>, la
       <div className="px-5 py-2.5 flex items-center gap-2"
         style={{background:'rgba(212,180,58,.12)',borderBottom:'1px solid rgba(212,180,58,.2)'}}>
         <span style={{color:'#d4b43a',flexShrink:0}}><LawIcon /></span>
-        <span className="text-[10px] font-bold uppercase tracking-[.12em]" style={{color:'#d4b43a'}}>{block.ref}</span>
+        <span className="text-[10px] font-bold uppercase tracking-[.12em]" style={{color:'#d4b43a'}}>{lang === 'ar' && block.ref_ar ? block.ref_ar : block.ref}</span>
       </div>
       <div className={`px-5 py-4 ${isRTL ? 'text-right' : ''}`}
         style={{borderLeft: isRTL ? 'none' : '3px solid #d4b43a', borderRight: isRTL ? '3px solid #d4b43a' : 'none'}}>
@@ -256,7 +257,7 @@ function TableBlock({ block, lang }: { block: Extract<RichBlock, {type:'table'}>
             <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-navy-50'}>
               {row.map((cell, j) => (
                 <td key={j} className="px-4 py-3 text-navy-700 leading-relaxed">
-                  {t(cell, lang)}
+                  {linkify(t(cell, lang), lang)}
                 </td>
               ))}
             </tr>
@@ -297,6 +298,29 @@ function StatsBlock({ block, lang }: { block: Extract<RichBlock, {type:'stats'}>
   )
 }
 
+function SourcesBlock({ block, lang }: { block: Extract<RichBlock, {type:'sources'}>, lang: Lang }) {
+  const isRTL = lang === 'ar'
+  const heading = block.title ? t(block.title, lang) : ({ en:'Official sources', ar:'المصادر الرسمية', ru:'Официальные источники', zh:'官方来源', es:'Fuentes oficiales' } as Record<string,string>)[lang]
+  const reviewed = ({ en:'Reviewed', ar:'آخر مراجعة', ru:'Проверено', zh:'审核日期', es:'Revisado' } as Record<string,string>)[lang]
+  return (
+    <div className={`my-6 rounded-xl border border-navy-200 bg-white p-5 ${isRTL ? 'text-right' : ''}`}>
+      <div className={`flex flex-wrap items-center justify-between gap-2 mb-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
+        <p className="text-xs font-bold uppercase tracking-wider text-navy-800">{heading}</p>
+        {block.updated && <span className="text-[11px] text-navy-400">{reviewed}: {block.updated}</span>}
+      </div>
+      <ul className="space-y-2">
+        {block.links.map((item, i) => (
+          <li key={i}>
+            <a href={item.url} target="_blank" rel="noopener noreferrer" className="text-sm text-navy-700 underline decoration-gold-400/60 underline-offset-4 hover:text-navy-900">
+              {t(item.label, lang)}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  )
+}
+
 function DividerBlock() {
   return <div className="h-px bg-gradient-to-r from-transparent via-gold-400/40 to-transparent my-8" />
 }
@@ -327,6 +351,7 @@ export default function RichContent({ blocks, lang }: Props) {
           case 'table':     node = <TableBlock     block={block} lang={lang} />; break
           case 'process':   node = <ProcessBlock   block={block} lang={lang} />; break
           case 'stats':     node = <StatsBlock     block={block} lang={lang} />; break
+          case 'sources':   node = <SourcesBlock   block={block} lang={lang} />; break
           case 'divider':   node = <DividerBlock />; break
           default:          node = null
         }

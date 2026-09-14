@@ -17,11 +17,11 @@ const DEFAULT_MSG = {
 }
 
 const TOOLTIP = {
-  en: 'Reply in 5 min',
-  ar: 'رد خلال 5 دقائق',
-  ru: 'Ответ за 5 мин',
-  zh: '5分钟内回复',
-  es: 'Respuesta en 5 min',
+  en: 'Fast WhatsApp reply',
+  ar: 'رد سريع عبر واتساب',
+  ru: 'Быстрый ответ в WhatsApp',
+  zh: 'WhatsApp 快速回复',
+  es: 'Respuesta rápida por WhatsApp',
 }
 
 const WA_SVG = (

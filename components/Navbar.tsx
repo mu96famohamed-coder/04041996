@@ -85,7 +85,7 @@ function buildNav(lang: Lang) {
         { href: `/${l}/attestation/marriage`,      label: { en: 'Marriage Certificate', ar: 'تصديق عقد الزواج',   ru: 'Свидетельство о браке', zh: '结婚证认证',   es: 'Acta Matrimonio' } },
         { href: `/${l}/e-notary`,                  label: { en: 'E-Notary (Remote)',    ar: 'الكاتب الإلكتروني',  ru: 'Электр. нотариус',      zh: '电子公证',     es: 'E-Notario' } },
         { href: `/${l}/mobile-notary`,             label: { en: 'Mobile Notary',        ar: 'كاتب عدل متنقل',     ru: 'Выездной нотариус',     zh: '上门公证',     es: 'Notario Móvil' } },
-        { href: `/${l}/emergency-notary`,          label: { en: 'Same-Day Urgent',      ar: 'توثيق عاجل نفس اليوم', ru: 'Срочно в тот же день', zh: '当日紧急公证', es: 'Urgente Mismo Día' } },
+        { href: `/${l}/emergency-notary`,          label: { en: 'Same-Day Urgent',      ar: 'توثيق عاجل', ru: 'Срочно в тот же день', zh: '当日紧急公证', es: 'Urgente Mismo Día' } },
         { href: `/${l}/affidavit`,                 label: { en: 'Affidavit',            ar: 'إقرارات',             ru: 'Аффидевиты',            zh: '宣誓书',       es: 'Declaraciones' } },
         { href: `/${l}/certified-true-copy`,       label: { en: 'Certified Copy',       ar: 'نسخة طبق الأصل',         ru: 'Заверенная копия',      zh: '核证副本',   es: 'Copia Certif.' } },
         { href: `/${l}/legal-translation`,         label: { en: 'Legal Translation',    ar: 'ترجمة قانونية',      ru: 'Юрид. перевод',         zh: '法律翻译',     es: 'Traducción Legal' } },

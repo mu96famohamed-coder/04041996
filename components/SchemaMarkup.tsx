@@ -65,7 +65,7 @@ export function ServiceSchema({
     provider: {
       '@type': 'Organization',
       name: 'E-Notary Dubai',
-      url: 'https://enotarydubai.ae',
+      url: 'https://www.enotarydubai.ae',
       telephone: '+971528997280',
       address: {
         '@type': 'PostalAddress',
@@ -108,11 +108,11 @@ const BRAND_URL = 'https://www.enotarydubai.ae'
 function serviceNameFor(path: string, lang: Lang): string | null {
   const pc = getPageContent(path) as Record<string, unknown> | null
   if (!pc) return null
-  const h1 =
-    (pc[`h1_${lang}`] as string | undefined) ||
-    (pc.h1_en as string | undefined)
-  if (h1) return h1
-  const seo = pc.seo as { meta_title?: Record<string, string> } | undefined
+  const seo = pc.seo as { h1?: Record<string, string>; meta_title?: Record<string, string> } | undefined
+  // Every page_content record carries a complete localized seo.h1, so the
+  // legacy top-level h1_<lang> fallback was removed with those fields.
+  const seoH1 = seo?.h1?.[lang] || seo?.h1?.en
+  if (seoH1) return seoH1
   const title = seo?.meta_title?.[lang] || seo?.meta_title?.en
   return title || null
 }
@@ -245,7 +245,7 @@ export function LocalBusinessSchema() {
     name: 'E-Notary Dubai',
     alternateName: 'E-Notary Dubai',
     description: 'Notary support service in Dubai — POA drafting, MOFA attestation, eviction notices, legal translation. Same-day notarization available.',
-    url: 'https://enotarydubai.ae',
+    url: 'https://www.enotarydubai.ae',
     // image: 'https://www.enotarydubai.ae/logo.png',
     // TODO: uncomment when logo.png is added to public/
     telephone: '+971528997280',

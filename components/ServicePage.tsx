@@ -52,22 +52,22 @@ const WA_ICON = <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"
 
 const L = {
   price_from:  { en:'From', ar:'من', ru:'От', zh:'从', es:'Desde' },
-  accepted_by: { en:'Accepted by', ar:'مقبول لدى', ru:'Принимается', zh:'被以下机构接受', es:'Aceptado por' },
-  start_wa:    { en:'Start on WhatsApp — Reply in 5 Min', ar:'ابدأ عبر واتساب — رد خلال 5 دقائق', ru:'Начать в WhatsApp — ответ за 5 мин', zh:'通过 WhatsApp 开始 — 5分钟内回复', es:'Iniciar en WhatsApp — Respuesta en 5 Min' },
-  tableegh:    { en:'⚠️ Tableegh delivery required for legal validity in Dubai Courts.', ar:'⚠️ التسليم عبر تبليغ مطلوب للصلاحية القانونية في محاكم دبي.', ru:'⚠️ Доставка через Tableegh обязательна для юридической силы в Dubai Courts.', zh:'⚠️ Tableegh送达是在Dubai Courts具有法律效力的必要条件。', es:'⚠️ La entrega por Tableegh es obligatoria para la validez legal en Dubai Courts.' },
+  accepted_by: { en:'Accepted by', ar:'جهات التقديم الشائعة', ru:'Принимается', zh:'被以下机构接受', es:'Aceptado por' },
+  start_wa:    { en:'Start on WhatsApp — Fast Reply', ar:'ابدأ عبر واتساب — رد سريع', ru:'Начать в WhatsApp — быстрый ответ', zh:'通过 WhatsApp 开始 — 快速回复', es:'Iniciar en WhatsApp — Respuesta Rápida' },
+  tableegh:    { en:'⚠️ Tableegh delivery required for legal validity in Dubai Courts.', ar:'⚠️ قد يلزم التبليغ الرسمي وإثباته بحسب نوع الإجراء والمتطلبات المطبقة.', ru:'⚠️ Доставка через Tableegh обязательна для юридической силы в Dubai Courts.', zh:'⚠️ Tableegh送达是在Dubai Courts具有法律效力的必要条件。', es:'⚠️ La entrega por Tableegh es obligatoria para la validez legal en Dubai Courts.' },
   faq_h:       { en:'Frequently Asked Questions', ar:'الأسئلة الشائعة', ru:'Часто задаваемые вопросы', zh:'常见问题', es:'Preguntas Frecuentes' },
   req_docs_h:  { en:'Documents Required', ar:'المستندات المطلوبة', ru:'Необходимые документы', zh:'所需文件', es:'Documentos Requeridos' },
-  cta_h:       { en:'Same-Day Service', ar:'خدمة نفس اليوم', ru:'Услуга в тот же день', zh:'当日服务', es:'Servicio el Mismo Día' },
-  cta_sub:     { en:'Contact before 2 PM for same-day processing.', ar:'تواصل قبل 2 ظهراً للمعالجة في نفس اليوم.', ru:'Свяжитесь до 14:00 для обработки в тот же день.', zh:'下午2点前联系即可当日处理。', es:'Contacte antes de las 2 PM para el mismo día.' },
-  same_day:    { en:'Same-Day Service — Contact Before 2 PM', ar:'خدمة نفس اليوم — تواصل قبل 2 ظهراً', ru:'В тот же день — до 14:00', zh:'当日服务 — 下午2点前', es:'Mismo Día — Antes de las 2 PM' },
+  cta_h:       { en:'Same-Day Service', ar:'خدمة في نفس اليوم', ru:'Услуга в тот же день', zh:'当日服务', es:'Servicio el Mismo Día' },
+  cta_sub:     { en:'Contact us early for same-day processing availability.', ar:'تواصل معنا مبكراً للتحقق من إمكانية الإنجاز في نفس اليوم بحسب المعاملة والمسار الرسمي.', ru:'Свяжитесь с нами заранее, чтобы проверить возможность обработки в тот же день.', zh:'尽早联系我们以确认是否可提供当日处理。', es:'Contáctenos con antelación para confirmar disponibilidad el mismo día.' },
+  same_day:    { en:'Same-Day Service Available', ar:'خدمة في نفس اليوم متاحة', ru:'Доступна услуга в тот же день', zh:'可提供当日服务', es:'Servicio el Mismo Día Disponible' },
   cta_h_exp:   { en:'Express Service', ar:'الخدمة السريعة', ru:'Экспресс-услуга', zh:'加急服务', es:'Servicio Exprés' },
-  cta_sub_exp: { en:'Express 1–2 business day MOFA processing available.', ar:'خدمة سريعة بمعالجة MOFA خلال 1-2 يوم عمل.', ru:'Экспресс-обработка MOFA за 1–2 рабочих дня.', zh:'可提供1-2个工作日的外交部加急处理。', es:'Procesamiento exprés del MOFA en 1-2 días hábiles.' },
+  cta_sub_exp: { en:'Express 1–2 business day MOFA processing available.', ar:'تتوفر خدمة سريعة لتصديق وزارة الخارجية بحسب المسار الرسمي وتوفر الخدمة.', ru:'Экспресс-обработка MOFA за 1–2 рабочих дня.', zh:'可提供1-2个工作日的外交部加急处理。', es:'Procesamiento exprés del MOFA en 1-2 días hábiles.' },
   cta_h_file:  { en:'Start Your File', ar:'ابدأ ملفك', ru:'Начните дело', zh:'开始您的案卷', es:'Inicie su Expediente' },
   cta_sub_file:{ en:'Send the documents you have and we review the file.', ar:'أرسل المستندات المتوفرة لديك ونراجع الملف.', ru:'Пришлите имеющиеся документы — мы изучим дело.', zh:'发送您手头的文件，我们会审核案卷。', es:'Envíe los documentos que tenga y revisamos el expediente.' },
-  express:     { en:'Express Service — 1–2 Business Days', ar:'خدمة سريعة — 1-2 يوم عمل', ru:'Экспресс — 1–2 рабочих дня', zh:'加急服务 — 1-2个工作日', es:'Exprés — 1–2 Días Hábiles' },
+  express:     { en:'Express Service — 1–2 Business Days', ar:'خدمة سريعة — بحسب المسار الرسمي', ru:'Экспресс — 1–2 рабочих дня', zh:'加急服务 — 1-2个工作日', es:'Exprés — 1–2 Días Hábiles' },
   related_h:   { en:'Related Services', ar:'خدمات ذات صلة', ru:'Похожие услуги', zh:'相关服务', es:'Servicios Relacionados' },
-  no_hidden:   { en:'No hidden fees', ar:'بدون رسوم خفية', ru:'Без скрытых сборов', zh:'无隐藏费用', es:'Sin cargos ocultos' },
-  qr_code:     { en:'QR-Verified', ar:'مُتحقَّق منه QR', ru:'QR-верификация', zh:'二维码验证', es:'Verificado QR' },
+  no_hidden:   { en:'No hidden fees', ar:'توضيح الرسوم قبل المتابعة', ru:'Без скрытых сборов', zh:'无隐藏费用', es:'Sin cargos ocultos' },
+  qr_code:     { en:'QR-Verified', ar:'قابل للتحقق عبر رمز QR', ru:'QR-верификация', zh:'二维码验证', es:'Verificado QR' },
   home:        { en:'Home', ar:'الرئيسية', ru:'Главная', zh:'首页', es:'Inicio' },
 }
 
@@ -241,9 +241,13 @@ export default function ServicePage({
               <div className="relative">
                 <div className="absolute -inset-4 rounded-3xl"
                   style={{background:'radial-gradient(ellipse at center, rgba(212,180,58,.06) 0%, transparent 70%)'}} />
-                <img src="/assets/hero/poa-doc.png" alt="UAE Notary Document"
-                  className="relative w-[340px] h-auto"
-                  style={{filter:'drop-shadow(0 0 30px rgba(212,180,58,.12))'}} />
+                <picture>
+                  <source srcSet="/assets/hero/poa-doc.webp" type="image/webp" />
+                  <img src="/assets/hero/poa-doc.png" alt="UAE Notary Document"
+                    width={793} height={651} decoding="async"
+                    className="relative w-[340px] h-auto"
+                    style={{filter:'drop-shadow(0 0 30px rgba(212,180,58,.12))'}} />
+                </picture>
               </div>
             </div>
           </div>
