@@ -49,7 +49,7 @@ const SuccessIcon = () => (
 )
 
 const LawIcon = () => (
-  <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <svg className="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3"/>
   </svg>
 )
@@ -90,12 +90,12 @@ function WarningBlock({ block, lang }: { block: Extract<RichBlock, {type:'warnin
                 <li key={i} className={`flex items-start gap-2 text-sm leading-relaxed ${isRTL ? 'flex-row-reverse' : ''}`}
                   style={{color:'#5a4800', borderBottom: i < block.items!.length - 1 ? '1px solid rgba(212,180,58,.15)' : 'none', paddingBottom: i < block.items!.length - 1 ? '0.5rem' : 0}}>
                   <span className="shrink-0 font-bold" style={{color:'#c9a227'}}>{i + 1}.</span>
-                  <span style={{fontWeight:300}}>{t(item, lang)}</span>
+                  <span style={{fontWeight:300}}>{linkify(t(item, lang), lang)}</span>
                 </li>
               ))}
             </ul>
           ) : (
-            block.text && <p className="text-sm leading-relaxed" style={{color:'#5a4800', fontWeight:300}}>{t(block.text, lang)}</p>
+            block.text && <p className="text-sm leading-relaxed" style={{color:'#5a4800', fontWeight:300}}>{linkify(t(block.text, lang), lang)}</p>
           )}
         </div>
       </div>
@@ -110,7 +110,7 @@ function InfoBlock({ block, lang }: { block: Extract<RichBlock, {type:'info'}>, 
       <span className="text-navy-400 mt-0.5"><InfoIcon /></span>
       <div className="min-w-0">
         {block.title && <p className="text-navy-700 text-xs font-bold uppercase tracking-wide mb-1">{t(block.title, lang)}</p>}
-        <p className="text-navy-600 text-sm leading-relaxed">{t(block.text, lang)}</p>
+        <p className="text-navy-600 text-sm leading-relaxed">{linkify(t(block.text, lang), lang)}</p>
       </div>
     </div>
   )
@@ -123,7 +123,7 @@ function SuccessBlock({ block, lang }: { block: Extract<RichBlock, {type:'succes
       <span className="text-green-500 mt-0.5"><SuccessIcon /></span>
       <div className="min-w-0">
         {block.title && <p className="text-green-800 text-xs font-bold uppercase tracking-wide mb-1">{t(block.title, lang)}</p>}
-        <p className="text-green-700 text-sm leading-relaxed">{t(block.text, lang)}</p>
+        <p className="text-green-700 text-sm leading-relaxed">{linkify(t(block.text, lang), lang)}</p>
       </div>
     </div>
   )
@@ -141,7 +141,7 @@ function LawBlock({ block, lang }: { block: Extract<RichBlock, {type:'law'}>, la
       </div>
       <div className={`px-5 py-4 ${isRTL ? 'text-right' : ''}`}
         style={{borderLeft: isRTL ? 'none' : '3px solid #d4b43a', borderRight: isRTL ? '3px solid #d4b43a' : 'none'}}>
-        <p className="text-sm leading-[1.8]" style={{color:'#b8cde0',fontStyle:'italic',fontWeight:300}}>{t(block.text, lang)}</p>
+        <p className="text-sm leading-[1.8]" style={{color:'#b8cde0',fontStyle:'italic',fontWeight:300}}>{linkify(t(block.text, lang), lang)}</p>
       </div>
     </div>
   )
@@ -163,7 +163,7 @@ function StepsBlock({ block, lang }: { block: Extract<RichBlock, {type:'steps'}>
           </div>
           <div className={`pb-6 min-w-0 ${isRTL ? 'text-right' : ''}`}>
             <p className="font-semibold text-navy-900 text-sm mb-1">{t(item.title, lang)}</p>
-            <p className="text-navy-600 text-sm leading-relaxed">{t(item.body, lang)}</p>
+            <p className="text-navy-600 text-sm leading-relaxed">{linkify(t(item.body, lang), lang)}</p>
           </div>
         </div>
       ))}
@@ -192,7 +192,7 @@ function ChecklistBlock({ block, lang }: { block: Extract<RichBlock, {type:'chec
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/>
               </svg>
             </span>
-            <span className="text-sm leading-relaxed" style={{color:'#2a3a5a',fontWeight:300}}>{t(item, lang)}</span>
+            <span className="text-sm leading-relaxed" style={{color:'#2a3a5a',fontWeight:300}}>{linkify(t(item, lang), lang)}</span>
           </li>
         ))}
       </ul>
@@ -212,7 +212,7 @@ function CompareBlock({ block, lang }: { block: Extract<RichBlock, {type:'compar
           {block.left.items.map((item, i) => (
             <li key={i} className="flex items-start gap-3 px-5 py-3">
               <CheckIcon />
-              <span className="text-sm text-navy-700 leading-relaxed">{t(item, lang)}</span>
+              <span className="text-sm text-navy-700 leading-relaxed">{linkify(t(item, lang), lang)}</span>
             </li>
           ))}
         </ul>
@@ -230,7 +230,7 @@ function CompareBlock({ block, lang }: { block: Extract<RichBlock, {type:'compar
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                 </svg>
               </span>
-              <span className="text-sm text-navy-700 leading-relaxed">{t(item, lang)}</span>
+              <span className="text-sm text-navy-700 leading-relaxed">{linkify(t(item, lang), lang)}</span>
             </li>
           ))}
         </ul>
@@ -241,22 +241,22 @@ function CompareBlock({ block, lang }: { block: Extract<RichBlock, {type:'compar
 
 function TableBlock({ block, lang }: { block: Extract<RichBlock, {type:'table'}>, lang: Lang }) {
   return (
-    <div className="my-6 overflow-x-auto rounded-2xl border border-navy-200">
-      <table className="w-full text-sm">
+    <div className="rich-table-wrapper">
+      <table className="rich-table">
         <thead>
-          <tr className="bg-navy-900">
+          <tr>
             {block.headers.map((h, i) => (
-              <th key={i} className="text-left px-4 py-3 text-gold-400 text-xs font-bold uppercase tracking-wider">
+              <th key={i}>
                 {t(h, lang)}
               </th>
             ))}
           </tr>
         </thead>
-        <tbody className="divide-y divide-navy-100">
+        <tbody>
           {block.rows.map((row, i) => (
-            <tr key={i} className={i % 2 === 0 ? 'bg-white' : 'bg-navy-50'}>
+            <tr key={i}>
               {row.map((cell, j) => (
-                <td key={j} className="px-4 py-3 text-navy-700 leading-relaxed">
+                <td key={j}>
                   {linkify(t(cell, lang), lang)}
                 </td>
               ))}
@@ -276,7 +276,7 @@ function ProcessBlock({ block, lang }: { block: Extract<RichBlock, {type:'proces
         <div key={i} className={`bg-navy-50 rounded-xl border border-navy-100 p-5 ${isRTL ? 'text-right' : ''}`}>
           <div className="text-2xl mb-3">{item.icon}</div>
           <p className="font-semibold text-navy-900 text-sm mb-2">{t(item.title, lang)}</p>
-          <p className="text-navy-600 text-xs leading-relaxed">{t(item.body, lang)}</p>
+          <p className="text-navy-600 text-xs leading-relaxed">{linkify(t(item.body, lang), lang)}</p>
         </div>
       ))}
     </div>

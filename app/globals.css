@@ -394,16 +394,42 @@
     @apply bg-navy-900 rounded-2xl p-5 text-center;
   }
 
-  /* Table */
+/* Wrapper — prevents the PAGE from scrolling horizontally */
+  .rich-content .rich-table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    margin-block: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid #e8ecf5;
+  }
+  .rich-content .rich-table-wrapper::-webkit-scrollbar {
+    height: 6px;
+  }
+  .rich-content .rich-table-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(212, 180, 58, 0.4);
+    border-radius: 999px;
+  }
+  .rich-content .rich-table-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Base table — desktop */
   .rich-content .rich-table {
-    @apply w-full text-sm overflow-hidden;
+    @apply w-full text-sm;
     border-collapse: collapse;
+    min-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   .rich-content .rich-table thead tr {
     @apply bg-navy-900;
   }
   .rich-content .rich-table thead th {
     @apply text-left px-4 py-3 text-gold-400 text-xs font-bold uppercase tracking-wider;
+    vertical-align: top;
   }
   [dir="rtl"] .rich-content .rich-table thead th {
     @apply text-right;
@@ -413,6 +439,51 @@
   }
   .rich-content .rich-table tbody td {
     @apply px-4 py-3 text-navy-700 leading-relaxed text-sm;
+    vertical-align: top;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* ── ≤ 768px: tighter padding, smaller font ── */
+  @media (max-width: 768px) {
+    .rich-content .rich-table thead th {
+      padding: 8px 8px;
+      font-size: 10px;
+      letter-spacing: 0.02em;
+      line-height: 1.3;
+    }
+    .rich-content .rich-table tbody td {
+      padding: 10px 8px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+
+  /* ── ≤ 480px: tightest for small phones ── */
+  @media (max-width: 480px) {
+    .rich-content .rich-table thead th {
+      padding: 6px 5px;
+      font-size: 9px;
+      letter-spacing: 0;
+      line-height: 1.25;
+    }
+    .rich-content .rich-table tbody td {
+      padding: 8px 5px;
+      font-size: 11px;
+      line-height: 1.45;
+    }
+  }
+
+  /* ── ≤ 380px: extra tight for very small phones ── */
+  @media (max-width: 380px) {
+    .rich-content .rich-table thead th {
+      padding: 5px 4px;
+      font-size: 8.5px;
+    }
+    .rich-content .rich-table tbody td {
+      padding: 7px 4px;
+      font-size: 10.5px;
+    }
   }
 
   /* Section divider */

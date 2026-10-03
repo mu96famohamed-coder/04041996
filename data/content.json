@@ -15,37 +15,37 @@
       "friday": "Fri: WhatsApp only"
     }
   },
-  "languages": [
-    {
-      "code": "en",
-      "label": "EN",
-      "title": "English",
-      "dir": "ltr"
-    },
-    {
-      "code": "ar",
-      "label": "ع",
-      "title": "عربي",
-      "dir": "rtl"
-    },
-    {
-      "code": "ru",
-      "label": "РУ",
-      "title": "Русский",
-      "dir": "ltr"
-    },
-    {
-      "code": "zh",
-      "label": "中",
-      "title": "中文",
-      "dir": "ltr"
-    },
-    {
-      "code": "es",
-      "label": "ES",
-      "title": "Español",
-      "dir": "ltr"
-    }
+"languages": [
+  {
+    "code": "en",
+    "label": "English",
+    "title": "English",
+    "dir": "ltr"
+  },
+  {
+    "code": "ar",
+    "label": "العربية",
+    "title": "عربي",
+    "dir": "rtl"
+  },
+  {
+    "code": "ru",
+    "label": "Русский",
+    "title": "Русский",
+    "dir": "ltr"
+  },
+  {
+    "code": "zh",
+    "label": "中文",
+    "title": "中文",
+    "dir": "ltr"
+  },
+  {
+    "code": "es",
+    "label": "Español",
+    "title": "Español",
+    "dir": "ltr"
+  }
   ],
   "nav": {
     "poa": {
@@ -107,11 +107,11 @@
       "es": "Servicios notariales profesionales en Dubái, EAU"
     },
     "disclaimer": {
-      "en": "Not a law firm — a professional support service.",
-      "ar": "لسنا مكتب محاماة — خدمة دعم احترافية.",
-      "ru": "Не юридическая фирма — служба профессиональной поддержки.",
-      "zh": "非律师事务所——专业支持服务机构。",
-      "es": "No es un bufete de abogados — un servicio de soporte profesional."
+      "en": "A professional support service.",
+      "ar": "خدمة دعم احترافية.",
+      "ru": "Служба профессиональной поддержки.",
+      "zh": "专业支持服务机构。",
+      "es": "Un servicio de soporte profesional."
     },
     "copyright": {
       "en": "© 2026 E-Notary Dubai. All rights reserved.",
@@ -438,7 +438,7 @@
         {
           "slug": "child-travel",
           "title": {
-            "en": "Child Travel Auth.",
+            "en": "Child Travel Auth",
             "ar": "إذن سفر طفل",
             "ru": "Разрешение на выезд ребенка",
             "zh": "儿童旅行授权",
@@ -30631,6 +30631,1056 @@
     }
   },
   "blog_content": {
+
+
+
+"poa-cancellation-dubai-revoke": {
+  "title_en": "Cancelling a Power of Attorney in Dubai: A Practical Guide to Revocation",
+  "title_ar": "إلغاء الوكالة في دبي: دليل عملي لعزل الوكيل",
+  "title_ru": "Отмена доверенности в Дубае: практическое руководство по отзыву",
+  "title_zh": "迪拜撤销授权委托书：撤销代理权的实用指南",
+  "title_es": "Cancelar un Poder Notarial en Dubái: Guía Práctica de Revocación",
+  "meta_en": "How to cancel a Power of Attorney in Dubai when the task is finished or the agent is no longer trusted. Learn the revocation route, notification, and evidence to keep.",
+  "meta_ar": "كيف تلغي وكالة في دبي بعد انتهاء المهمة أو فقدان الثقة بالوكيل. تعرف على مسار الإلغاء، وإخطار الوكيل، والأدلة التي تحتفظ بها.",
+  "meta_ru": "Как отменить доверенность в Дубае, когда задача завершена или представитель больше не вызывает доверия. Узнайте о процедуре, уведомлении и доказательствах.",
+  "meta_zh": "当任务完成或不再信任代理人时，如何在迪拜撤销授权委托书。了解撤销路径、通知代理人及需保留的证据。",
+  "meta_es": "Cómo cancelar un poder notarial en Dubái cuando la tarea termina o ya no confía en el agente. Conozca la vía de revocación, la notificación y las pruebas a conservar.",
+  "date": "2026-10-03",
+  "date_updated": "2026-10-03",
+  "rich_blocks": [
+    {
+      "type": "para",
+      "accent": true,
+      "text": {
+        "en": "A Power of Attorney is a practical tool. It lets someone sign for you, collect a document, manage a property, or appear before an authority while you are unavailable. But the same flexibility creates a question people often postpone: **what happens when you no longer want that authority to exist?** A transaction completes. A relationship changes. Or you simply want to reduce exposure on a document you signed years ago. Understanding how to cancel a POA in Dubai is not about distrust — it is part of managing the document responsibly. If you are at that stage now, this guide explains the revocation route and how to document it properly. For direct help, see our [[/poa-cancellation|POA cancellation service]].",
+        "ar": "الوكالة أداة عملية. فهي تتيح لشخص آخر أن يوقّع نيابة عنك، أو يستلم مستنداً، أو يدير عقاراً، أو يمثلك أمام جهة رسمية أثناء غيابك. لكن هذه المرونة نفسها تطرح سؤالاً يؤجله كثيرون: **ماذا يحدث عندما لا تعود ترغب في استمرار هذه الصلاحية؟** تنتهي معاملة. تتغير علاقة. أو تريد ببساطة تقليل المخاطر المرتبطة بمستند وقّعته منذ سنوات. لا يتعلق إلغاء الوكالة في دبي بعدم الثقة، بل هو جزء من إدارة المستند بمسؤولية. وإذا وصلت إلى هذه المرحلة الآن، يشرح هذا الدليل مسار الإلغاء وكيفية توثيقه بشكل صحيح. للمساعدة المباشرة، راجع [[/poa-cancellation|خدمة إلغاء الوكالة]].",
+        "ru": "Доверенность — практичный инструмент. Она позволяет другому лицу подписывать за вас, получать документы, управлять недвижимостью или представлять вас в органах, пока вы недоступны. Но та же гибкость создаёт вопрос, который часто откладывают: **что происходит, когда вы больше не хотите, чтобы эти полномочия существовали?** Сделка завершена. Отношения изменились. Или вы просто хотите снизить риски по документу, подписанному годы назад. Отмена доверенности в Дубае — это не про недоверие, а часть ответственного управления документом. Если вы сейчас на этом этапе, это руководство объясняет процедуру отзыва и правильное оформление. Для прямой помощи см. [[/poa-cancellation|услугу отмены доверенности]].",
+        "zh": "授权委托书是一种实用工具。它允许他人在您无法亲自办理时，代您签署、领取文件、管理房产或在机构前代表您。但同样的灵活性也带来一个常被推迟的问题：**当您不再希望这项授权继续存在时，该怎么办？** 交易完成了。关系改变了。或者您只是想降低多年前签署文件所带来的风险。在迪拜撤销授权委托书并不是关于不信任，而是负责任地管理文件的一部分。如果您正处于这一阶段，本指南将说明撤销路径以及如何妥善留存证据。如需直接协助，请参阅我们的[[/poa-cancellation|授权撤销服务]]。",
+        "es": "Un poder notarial es una herramienta práctica. Permite que otra persona firme por usted, recoja un documento, gestione una propiedad o comparezca ante una autoridad mientras usted no está disponible. Pero esa misma flexibilidad crea una pregunta que muchos posponen: **¿qué ocurre cuando ya no desea que esa autoridad exista?** Una operación termina. Una relación cambia. O simplemente quiere reducir la exposición de un documento firmado hace años. Cancelar un poder en Dubái no se trata de desconfianza, sino de gestionar el documento con responsabilidad. Si está en esa etapa, esta guía explica la vía de revocación y cómo documentarla correctamente. Para ayuda directa, consulte nuestro [[/poa-cancellation|servicio de cancelación de POA]]."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "Why Cancelling a POA Is More Than a Formality",
+        "ar": "لماذا لا يُعد إلغاء الوكالة مجرد إجراء شكلي؟",
+        "ru": "Почему отмена доверенности — не просто формальность",
+        "zh": "为什么撤销授权不仅仅是形式",
+        "es": "Por Qué Cancelar un POA Es Más Que una Formalidad"
+      }
+    },
+    {
+      "type": "para",
+      "text": {
+        "en": "A notarized POA can continue to look valid to a receiving authority, a bank, or a government counter long after the underlying transaction is finished. If the document is not cancelled through the proper channel, and if the agent is not formally notified, the practical risk continues even if you no longer intend to rely on it. This is why cancellation has two parts that people often confuse: the **legal act of revocation** and the **evidence of notification**. The first changes the authority. The second proves that the agent knew about it. Both matter, and depending on the POA type and circumstances, one may need to happen before the other.",
+        "ar": "قد تظل الوكالة الموثقة تبدو سارية أمام جهة مستلمة أو بنك أو شباك حكومي بعد انتهاء المعاملة الأساسية بمدة طويلة. وإذا لم يُلغَ المستند عبر القناة الصحيحة، ولم يُخطَر الوكيل رسمياً، فإن الخطر العملي يستمر حتى لو لم تعد تنوي الاعتماد عليه. لذلك يتكون الإلغاء من جزأين كثيراً ما يختلطان: **الفعل القانوني للعزل** و**إثبات الإخطار**. الأول يغيّر الصفة القانونية، والثاني يثبت أن الوكيل قد علم بذلك. وكلاهما مهم، وقد يحتاج أحدهما إلى أن يسبق الآخر بحسب نوع الوكالة والظروف.",
+        "ru": "Нотариально заверенная доверенность может выглядеть действительной для принимающего органа, банка или государственного окна ещё долго после завершения сделки. Если документ не отменён через надлежащий канал и представитель официально не уведомлён, практический риск сохраняется, даже если вы больше не намерены на него полагаться. Поэтому отмена состоит из двух частей, которые часто путают: **юридический акт отзыва** и **доказательство уведомления**. Первый меняет полномочия. Второй подтверждает, что представитель о них знал. Оба важны, и в зависимости от типа доверенности и обстоятельств один может предшествовать другому.",
+        "zh": "经公证的授权委托书可能在基础交易完成后很久，仍被接收机构、银行或政府窗口视为有效。如果未通过正确渠道撤销文件，且代理人未被正式通知，即使您不再打算依赖该文件，实际风险仍然存在。因此，撤销包含两个常被混淆的部分：**撤销的法律行为**和**通知的证据**。前者改变授权，后者证明代理人已知悉。两者都重要，并视授权书类型及具体情况，可能其中一个需要先于另一个进行。",
+        "es": "Un poder notarizado puede seguir pareciendo válido ante una autoridad receptora, un banco o una ventanilla oficial mucho después de que la operación subyacente haya terminado. Si el documento no se cancela por el canal correcto y el agente no es notificado formalmente, el riesgo práctico continúa aunque usted ya no piense usarlo. Por eso la cancelación tiene dos partes que suelen confundirse: el **acto jurídico de revocación** y la **prueba de notificación**. El primero cambia la autoridad. El segundo demuestra que el agente lo sabía. Ambos importan y, según el tipo de poder y las circunstancias, uno puede tener que ocurrir antes que el otro."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "When Do You Actually Need to Cancel a POA?",
+        "ar": "متى تحتاج فعلياً إلى إلغاء الوكالة؟",
+        "ru": "Когда действительно нужно отменять доверенность?",
+        "zh": "何时确实需要撤销授权委托书？",
+        "es": "¿Cuándo Necesita Realmente Cancelar un POA?"
+      }
+    },
+    {
+      "type": "checklist",
+      "items": [
+        {
+          "en": "The transaction or purpose stated in the POA has been completed, and you no longer need the document to exist in anyone's hands.",
+          "ar": "انتهت المعاملة أو الغرض المذكور في الوكالة، ولم تعد بحاجة إلى وجود المستند في يد أي طرف.",
+          "ru": "Сделка или цель, указанная в доверенности, завершена, и вам больше не нужно, чтобы документ существовал у кого-либо.",
+          "zh": "授权书所载交易或目的已经完成，您不再需要该文件留在任何人手中。",
+          "es": "La operación o finalidad indicada en el poder ha concluido y ya no necesita que el documento exista en manos de nadie."
+        },
+        {
+          "en": "The relationship with the agent has changed, and you want to stop further dealings in your name.",
+          "ar": "تغيرت العلاقة مع الوكيل، وتريد إيقاف أي تعامل آخر باسمك.",
+          "ru": "Отношения с представителем изменились, и вы хотите прекратить дальнейшие действия от вашего имени.",
+          "zh": "与代理人的关系发生变化，您希望停止其继续以您的名义办理事务。",
+          "es": "La relación con el agente ha cambiado y desea detener nuevas actuaciones en su nombre."
+        },
+        {
+          "en": "You are concerned that a broadly worded POA may be used for something outside the purpose you originally intended.",
+          "ar": "تخشى أن تُستخدم وكالة واسعة الصياغة لأغراض خارج ما قصدته في الأصل.",
+          "ru": "Вы опасаетесь, что широкая доверенность может быть использована вне изначальной цели.",
+          "zh": "您担心措辞宽泛的授权书可能被用于原先意图之外的事项。",
+          "es": "Le preocupa que un poder redactado de forma amplia se use para algo distinto del propósito original."
+        },
+        {
+          "en": "A bank, authority, or counterparty has asked you to confirm that the POA is no longer active.",
+          "ar": "طلب منك بنك أو جهة رسمية أو طرف متعاقد تأكيد أن الوكالة لم تعد سارية.",
+          "ru": "Банк, орган или контрагент попросил подтвердить, что доверенность больше не действует.",
+          "zh": "银行、机构或对方要求您确认授权书已不再有效。",
+          "es": "Un banco, autoridad o contraparte le ha pedido confirmar que el poder ya no está activo."
+        },
+        {
+          "en": "You signed the POA outside the UAE, and want the UAE-side record to reflect that the authority has ended.",
+          "ar": "وقّعت الوكالة خارج الإمارات، وتريد أن يعكس السجل داخل الدولة انتهاء الصلاحية.",
+          "ru": "Вы подписали доверенность за пределами ОАЭ и хотите, чтобы запись в ОАЭ отражала прекращение полномочий.",
+          "zh": "您在阿联酋境外签署了授权书，希望阿联酋境内记录反映授权已经终止。",
+          "es": "Firmó el poder fuera de los EAU y desea que el registro local refleje que la autoridad ha terminado."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "Revocation and Notification Are Not the Same Step",
+        "ar": "العزل والإخطار ليسا الخطوة نفسها",
+        "ru": "Отзыв и уведомление — не один и тот же шаг",
+        "zh": "撤销与通知并非同一步骤",
+        "es": "Revocación y Notificación No Son el Mismo Paso"
+      }
+    },
+    {
+      "type": "compare",
+      "left": {
+        "title": {
+          "en": "Revocation / Cancellation",
+          "ar": "العزل أو الإلغاء",
+          "ru": "Отзыв / отмена",
+          "zh": "撤销／注销",
+          "es": "Revocación / Cancelación"
+        },
+        "items": [
+          {
+            "en": "Concerns the legal authority itself.",
+            "ar": "يتعلق بالصلاحية القانونية نفسها.",
+            "ru": "Касается самих полномочий.",
+            "zh": "针对授权本身。",
+            "es": "Afecta a la autoridad jurídica en sí."
+          },
+          {
+            "en": "Is completed through the applicable official revocation route.",
+            "ar": "يتم عبر مسار الإلغاء الرسمي المطبق.",
+            "ru": "Оформляется через применимую официальную процедуру.",
+            "zh": "通过适用的官方撤销路径完成。",
+            "es": "Se completa por la vía oficial de revocación aplicable."
+          },
+          {
+            "en": "Produces the legal effect that the agent can no longer rely on the instrument.",
+            "ar": "ينتج الأثر القانوني بعدم إمكانية اعتماد الوكيل على المحرر.",
+            "ru": "Создаёт правовой эффект: представитель больше не может полагаться на документ.",
+            "zh": "产生代理人不再能依据该文件行事的法律效果。",
+            "es": "Produce el efecto de que el agente ya no puede ampararse en el instrumento."
+          }
+        ]
+      },
+      "right": {
+        "title": {
+          "en": "Notification / Proof of Awareness",
+          "ar": "الإخطار أو إثبات العلم",
+          "ru": "Уведомление / доказательство осведомлённости",
+          "zh": "通知／知情证明",
+          "es": "Notificación / Prueba de Conocimiento"
+        },
+        "items": [
+          {
+            "en": "Concerns whether the agent actually knows the authority has ended.",
+            "ar": "يتعلق بمعرفة الوكيل الفعلية بانتهاء الصلاحية.",
+            "ru": "Касается того, знает ли представитель о прекращении полномочий.",
+            "zh": "涉及代理人是否实际知悉授权已经终止。",
+            "es": "Se refiere a si el agente sabe realmente que la autoridad terminó."
+          },
+          {
+            "en": "Is documented through a formal notice or another provable written route.",
+            "ar": "يوثق عبر إنذار رسمي أو طريق كتابي آخر قابل للإثبات.",
+            "ru": "Оформляется официальным уведомлением или иным доказуемым письменным способом.",
+            "zh": "通过正式通知或其他可证明的书面方式留存证据。",
+            "es": "Se documenta mediante notificación formal u otra vía escrita acreditable."
+          },
+          {
+            "en": "Matters where the date of the agent's knowledge becomes relevant to the dispute or transaction.",
+            "ar": "يهم عندما يصبح تاريخ علم الوكيل ذا صلة بالنزاع أو المعاملة.",
+            "ru": "Важно, когда дата осведомлённости представителя имеет значение для спора или сделки.",
+            "zh": "当代理人知悉日期与争议或交易相关时尤其重要。",
+            "es": "Importa cuando la fecha de conocimiento del agente es relevante para la disputa u operación."
+          }
+        ]
+      }
+    },
+    {
+      "type": "info",
+      "title": {
+        "en": "A notarized cancellation record does not force every third party to update instantly",
+        "ar": "قيد الإلغاء الموثق لا يجبر كل طرف ثالث على التحديث الفوري",
+        "ru": "Запись об отмене не обязывает третьих лиц обновляться мгновенно",
+        "zh": "撤销公证记录并不迫使所有第三方即时更新",
+        "es": "Un registro notarizado no obliga a todos los terceros a actualizarse al instante"
+      },
+      "text": {
+        "en": "Banks, land departments, free zones, and other institutions may each need to see the revocation through their own channel before their internal records stop showing the POA as active. If an authority is currently relying on the old document, notifying that authority is part of prudent practice, not just notifying the agent.",
+        "ar": "قد يحتاج كل من البنوك ودوائر الأراضي والمناطق الحرة وغيرها من المؤسسات إلى الاطلاع على الإلغاء عبر قناته الخاصة قبل أن تتوقف سجلاته الداخلية عن إظهار الوكالة كسارية. وإذا كانت جهة ما تعتمد حالياً على المستند القديم، فإن إخطار تلك الجهة جزء من الممارسة الحصيفة، وليس فقط إخطار الوكيل.",
+        "ru": "Банки, земельные департаменты, свободные зоны и другие организации могут нуждаться в получении информации об отмене по своему каналу, прежде чем их внутренние записи перестанут показывать доверенность как действующую. Если орган сейчас полагается на старый документ, его уведомление — часть осмотрительной практики, а не только уведомление представителя.",
+        "zh": "银行、土地部门、自由区及其他机构可能需要通过各自渠道获知撤销，才能在其内部记录中停止显示该授权有效。若某机构目前仍依赖旧文件，通知该机构也是谨慎做法的一部分，而不仅仅是通知代理人。",
+        "es": "Bancos, departamentos de tierras, zonas francas y otras instituciones pueden necesitar ver la revocación por su propio canal antes de que sus registros internos dejen de mostrar el poder como activo. Si una autoridad se apoya actualmente en el documento antiguo, notificarla forma parte de una práctica prudente, no solo notificar al agente."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "A Step-by-Step Look at the Cancellation Route",
+        "ar": "نظرة خطوة بخطوة على مسار الإلغاء",
+        "ru": "Пошаговый взгляд на процедуру отмены",
+        "zh": "撤销路径的分步说明",
+        "es": "La Ruta de Cancelación Paso a Paso"
+      }
+    },
+    {
+      "type": "steps",
+      "items": [
+        {
+          "title": {
+            "en": "1. Identify the POA and what you want to stop",
+            "ar": "1. حدد الوكالة وما تريد إيقافه",
+            "ru": "1. Определите доверенность и то, что нужно прекратить",
+            "zh": "1. 确认授权书及拟停止的事项",
+            "es": "1. Identifique el POA y lo que desea detener"
+          },
+          "body": {
+            "en": "Collect the POA document or its details: type, date of notarization, issuing channel, and the specific powers you want to cancel. A copy is usually enough for the initial review.",
+            "ar": "اجمع مستند الوكالة أو بياناته: النوع، وتاريخ التوثيق، والقناة المصدرة، والصلاحيات التي تريد إلغاءها. عادةً تكفي نسخة للمراجعة الأولية.",
+            "ru": "Соберите документ или его данные: тип, дата заверения, канал выдачи и конкретные полномочия, которые вы хотите отменить. Для первичной проверки обычно достаточно копии.",
+            "zh": "收集授权书或其信息：类型、公证日期、签发渠道及拟撤销的具体权限。初步审核通常只需副本。",
+            "es": "Reúna el documento o sus datos: tipo, fecha de notarización, canal de emisión y facultades que desea cancelar. Normalmente basta una copia para la revisión inicial."
+          }
+        },
+        {
+          "title": {
+            "en": "2. Confirm the applicable revocation route",
+            "ar": "2. تأكد من مسار الإلغاء المنطبق",
+            "ru": "2. Подтвердите применимую процедуру отзыва",
+            "zh": "2. 确认适用的撤销路径",
+            "es": "2. Confirme la vía de revocación aplicable"
+          },
+          "body": {
+            "en": "A POA issued inside the UAE and a POA issued abroad do not always follow the same cancellation path. The same is true for POAs tied to a specific authority or a specific asset. The route should be confirmed before documents are prepared.",
+            "ar": "الوكالة الصادرة داخل الإمارات والوكالة الصادرة خارجها لا تتبعان دائماً مسار إلغاء واحداً. وينطبق الشيء نفسه على الوكالات المرتبطة بجهة محددة أو بأصل محدد. ويجب تأكيد المسار قبل تجهيز المستندات.",
+            "ru": "Доверенность, выданная в ОАЭ, и доверенность, выданная за рубежом, не всегда отменяются одинаково. То же касается доверенностей, привязанных к конкретному органу или активу. Процедуру следует подтвердить до подготовки документов.",
+            "zh": "在阿联酋境内签发和境外签发的授权书，撤销路径未必相同。与特定机构或特定资产关联的授权书也是如此。准备文件前应先确认适用路径。",
+            "es": "Un poder emitido en los EAU y uno emitido en el extranjero no siempre siguen la misma vía de cancelación. Lo mismo ocurre con poderes vinculados a una autoridad o activo concreto. Debe confirmarse la vía antes de preparar documentos."
+          }
+        },
+        {
+          "title": {
+            "en": "3. Prepare the revocation documents",
+            "ar": "3. جهز مستندات الإلغاء",
+            "ru": "3. Подготовьте документы об отмене",
+            "zh": "3. 准备撤销文件",
+            "es": "3. Prepare los documentos de revocación"
+          },
+          "body": {
+            "en": "Depending on the route, the file can include the revocation wording itself, your identification, the POA reference, and any supporting document the competent channel requires. A separate notice to the agent may also be prepared if you want to prove awareness.",
+            "ar": "بحسب المسار، قد يشمل الملف صياغة الإلغاء نفسها، وهوية الموكّل، ومرجع الوكالة، وأي مستند داعم تطلبه القناة المختصة. كما يمكن تجهيز إنذار منفصل للوكيل إذا كنت تريد إثبات علمه.",
+            "ru": "В зависимости от процедуры файл может включать текст отмены, удостоверение личности доверителя, реквизиты доверенности и подтверждающие документы, требуемые компетентным каналом. При необходимости можно подготовить отдельное уведомление представителю, чтобы доказать осведомлённость.",
+            "zh": "视具体路径而定，材料可能包括撤销文本、委托人身份证明、授权书参考信息，以及主管渠道要求的支持文件。如希望证明代理人知情，还可另行准备致代理人的通知。",
+            "es": "Según la vía, el expediente puede incluir el texto de revocación, su identificación, la referencia del poder y cualquier documento de respaldo exigido por el canal competente. También puede prepararse una notificación separada al agente para probar el conocimiento."
+          }
+        },
+        {
+          "title": {
+            "en": "4. Complete the official cancellation step",
+            "ar": "4. استكمل خطوة الإلغاء الرسمية",
+            "ru": "4. Завершите официальный этап отмены",
+            "zh": "4. 完成官方撤销步骤",
+            "es": "4. Complete el paso oficial de cancelación"
+          },
+          "body": {
+            "en": "The cancellation is not completed simply because you stopped using the document. It is completed when the applicable official step is carried out through the competent route.",
+            "ar": "لا يكتمل الإلغاء بمجرد توقفك عن استخدام المستند، بل يكتمل عند تنفيذ الخطوة الرسمية المنطبقة عبر القناة المختصة.",
+            "ru": "Отмена не завершается просто потому, что вы перестали использовать документ. Она завершается после выполнения соответствующего официального шага через компетентный канал.",
+            "zh": "仅因您停止使用文件，并不意味着撤销已经完成；必须通过主管渠道完成适用官方步骤后方为完成。",
+            "es": "La cancelación no se completa solo porque usted dejó de usar el documento. Se completa cuando se realiza el paso oficial aplicable por el canal competente."
+          }
+        },
+        {
+          "title": {
+            "en": "5. Notify the agent and any relevant authority",
+            "ar": "5. أخطِر الوكيل وأي جهة ذات صلة",
+            "ru": "5. Уведомите представителя и соответствующий орган",
+            "zh": "5. 通知代理人及相关机构",
+            "es": "5. Notifique al agente y a la autoridad pertinente"
+          },
+          "body": {
+            "en": "If proving the agent's awareness matters, use a provable written route. If a bank, land department, or other institution is currently relying on the old POA, tell them separately so their internal records can be updated.",
+            "ar": "إذا كان إثبات علم الوكيل مهماً، فاستخدم طريقاً كتابياً قابلاً للإثبات. وإذا كان بنك أو دائرة أراضٍ أو مؤسسة أخرى تعتمد حالياً على الوكالة القديمة، فأخطرها بشكل منفصل حتى تُحدَّث سجلاتها الداخلية.",
+            "ru": "Если важно доказать осведомлённость представителя, используйте доказуемый письменный способ. Если банк, земельный департамент или иная организация сейчас полагается на старую доверенность, уведомьте её отдельно для обновления внутренних записей.",
+            "zh": "若需证明代理人知情，应采用可证明的书面方式。如某银行、土地部门或其他机构目前仍依赖旧授权书，应另行通知其更新内部记录。",
+            "es": "Si importa probar el conocimiento del agente, utilice una vía escrita acreditable. Si un banco, departamento de tierras u otra institución se apoya actualmente en el poder antiguo, notifíquelo por separado para actualizar sus registros."
+          }
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": {
+        "en": "A cancelled POA does not automatically undo what has already been done",
+        "ar": "الوكالة الملغاة لا تلغي تلقائياً ما تم إنجازه بالفعل",
+        "ru": "Отменённая доверенность не отменяет автоматически уже совершённые действия",
+        "zh": "已撤销的授权书并不自动推翻已经完成的行为",
+        "es": "Un POA cancelado no deshace automáticamente lo ya realizado"
+      },
+      "text": {
+        "en": "Cancelling a POA stops the authority going forward. It does not, by itself, reverse a transaction the agent already completed within the scope of the authority, and it does not resolve a dispute about whether an act was inside or outside that scope. If a completed transaction or a contested act is involved, the revocation should be planned alongside the transaction-specific rules rather than treated as a standalone fix.",
+        "ar": "إلغاء الوكالة يوقف الصلاحية للأمام، لكنه لا يعكس بذاته معاملة أنجزها الوكيل فعلاً داخل نطاق الصلاحية، ولا يحسم نزاعاً حول ما إذا كان التصرف داخلاً في النطاق أم خارجه. وإذا كانت هناك معاملة منجزة أو تصرف محل نزاع، فيجب التخطيط للإلغاء جنباً إلى جنب مع القواعد الخاصة بالمعاملة بدل التعامل معه كحل قائم بذاته.",
+        "ru": "Отмена доверенности прекращает полномочия на будущее. Она сама по себе не отменяет сделку, уже совершённую представителем в пределах полномочий, и не разрешает спор о том, было ли действие в пределах объёма. Если есть завершённая сделка или оспариваемое действие, отмену следует планировать вместе с правилами конкретной сделки, а не как отдельное решение.",
+        "zh": "撤销授权书会终止此后的授权，但其本身不会推翻代理人此前在授权范围内已经完成的交易，也不会解决某项行为是否越权的争议。若涉及已完成交易或有争议行为，应将撤销与具体交易规则一并考虑，而不是视为单独的补救措施。",
+        "es": "Cancelar un poder detiene la autoridad hacia adelante. Por sí solo no revierte una operación que el agente ya completó dentro del alcance de la autoridad, ni resuelve una disputa sobre si un acto estuvo dentro o fuera de ese alcance. Si hay una operación completada o un acto controvertido, la revocación debe planificarse junto con las reglas específicas de la operación, no como una solución aislada."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "Special Cases That Change the Cancellation Analysis",
+        "ar": "حالات خاصة تغيّر تحليل الإلغاء",
+        "ru": "Особые случаи, меняющие анализ отмены",
+        "zh": "会改变撤销分析的特殊情形",
+        "es": "Casos Especiales que Cambian el Análisis de Cancelación"
+      }
+    },
+    {
+      "type": "table",
+      "headers": [
+        {
+          "en": "Case",
+          "ar": "الحالة",
+          "ru": "Случай",
+          "zh": "情形",
+          "es": "Caso"
+        },
+        {
+          "en": "What matters",
+          "ar": "ما الذي يهم؟",
+          "ru": "Что важно",
+          "zh": "关键点",
+          "es": "Qué importa"
+        },
+        {
+          "en": "Where to look next",
+          "ar": "أين تبحث تالياً؟",
+          "ru": "Куда смотреть дальше",
+          "zh": "下一步查看",
+          "es": "Dónde mirar después"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Property POA used or to be used at DLD",
+            "ar": "وكالة عقارية استُخدمت أو ستُستخدم لدى دائرة الأراضي",
+            "ru": "Доверенность на недвижимость для DLD",
+            "zh": "用于 DLD 的房产授权书",
+            "es": "POA inmobiliario usado o por usar ante el DLD"
+          },
+          {
+            "en": "DLD's acceptance rules, verification requirements, and the specific transaction status matter. A cancelled POA can affect an ongoing transaction differently from a completed one.",
+            "ar": "تهم قواعد القبول لدى دائرة الأراضي ومتطلبات التحقق وحالة المعاملة المحددة. وقد يؤثر إلغاء الوكالة في معاملة جارية بشكل مختلف عن معاملة مكتملة.",
+            "ru": "Важны правила принятия DLD, требования проверки и статус конкретной сделки. Отмена может влиять на текущую сделку иначе, чем на завершённую.",
+            "zh": "DLD 的受理规则、核验要求及具体交易状态均重要。撤销对进行中的交易和已完成交易的影响可能不同。",
+            "es": "Importan las reglas de aceptación del DLD, las verificaciones y el estado de la operación. Una cancelación afecta de modo distinto a una operación en curso que a una completada."
+          },
+          {
+            "en": "[[/power-of-attorney/real-estate|Real Estate POA]]",
+            "ar": "[[/power-of-attorney/real-estate|الوكالة العقارية]]",
+            "ru": "[[/power-of-attorney/real-estate|Доверенность на недвижимость]]",
+            "zh": "[[/power-of-attorney/real-estate|房产授权书]]",
+            "es": "[[/power-of-attorney/real-estate|POA inmobiliario]]"
+          }
+        ],
+        [
+          {
+            "en": "Bank POA or authority to operate an account",
+            "ar": "وكالة بنكية أو صلاحية تشغيل حساب",
+            "ru": "Банковская доверенность",
+            "zh": "银行授权书或账户操作权限",
+            "es": "POA bancario o autoridad sobre cuenta"
+          },
+          {
+            "en": "The bank may need separate notice through its own channel to update its internal records and stop treating the POA as active. Do not assume the notarial cancellation alone changes the bank's records.",
+            "ar": "قد يحتاج البنك إلى إخطار منفصل عبر قناته الخاصة لتحديث سجلاته الداخلية والتوقف عن اعتبار الوكالة سارية. لا تفترض أن قيد الإلغاء لدى الكاتب العدل وحده يغيّر سجلات البنك.",
+            "ru": "Банку может потребоваться отдельное уведомление по своему каналу для обновления записей и прекращения учёта доверенности. Не считайте, что нотариальная отмена сама меняет записи банка.",
+            "zh": "银行可能需通过其自身渠道另行获知，才能更新内部记录并停止将该授权视为有效。不要以为公证撤销本身会改变银行记录。",
+            "es": "El banco puede necesitar notificación por su canal para actualizar registros y dejar de tratar el poder como activo. No asuma que la cancelación notarial por sí sola cambia los registros del banco."
+          },
+          {
+            "en": "[[/power-of-attorney/bank|Bank POA]]",
+            "ar": "[[/power-of-attorney/bank|الوكالة البنكية]]",
+            "ru": "[[/power-of-attorney/bank|Банковская доверенность]]",
+            "zh": "[[/power-of-attorney/bank|银行授权书]]",
+            "es": "[[/power-of-attorney/bank|POA bancario]]"
+          }
+        ],
+        [
+          {
+            "en": "POA issued outside the UAE, now being cancelled from Dubai",
+            "ar": "وكالة صادرة خارج الإمارات ويُراد إلغاؤها من دبي",
+            "ru": "Доверенность, выданная за пределами ОАЭ и отменяемая из Дубая",
+            "zh": "在阿联酋境外签发、现拟在迪拜撤销的授权书",
+            "es": "Poder emitido fuera de EAU que se cancela desde Dubái"
+          },
+          {
+            "en": "A UAE-side cancellation or notice may affect the local picture, but it may not change the record in the issuing jurisdiction. Confirm whether action is also required where the POA was originally notarized.",
+            "ar": "قد يؤثر الإلغاء أو الإخطار داخل الإمارات في الصورة المحلية، لكنه قد لا يغيّر السجل لدى جهة الإصدار. تأكد مما إذا كان يلزم إجراء في المكان الذي وُثّقت فيه الوكالة أصلاً.",
+            "ru": "Отмена или уведомление в ОАЭ может изменить местную картину, но не запись в юрисдикции выдачи. Проверьте, нужны ли действия там, где доверенность изначально заверена.",
+            "zh": "在阿联酋境内的撤销或通知可能改变本地情况，但未必改变签发地记录。应确认是否还需在原始公证地采取措施。",
+            "es": "Una cancelación o notificación en EAU puede afectar la situación local, pero no necesariamente el registro en la jurisdicción de emisión. Confirme si también hace falta actuar donde se notarizó originalmente."
+          },
+          {
+            "en": "[[/blog/notarize-documents-without-visiting-uae|Notarizing documents without visiting the UAE]]",
+            "ar": "[[/blog/notarize-documents-without-visiting-uae|إنجاز المستندات دون زيارة الإمارات]]",
+            "ru": "[[/blog/notarize-documents-without-visiting-uae|Оформление документов без поездки в ОАЭ]]",
+            "zh": "[[/blog/notarize-documents-without-visiting-uae|无需前往阿联酋办理文件]]",
+            "es": "[[/blog/notarize-documents-without-visiting-uae|Notarizar documentos sin visitar los EAU]]"
+          }
+        ],
+        [
+          {
+            "en": "POA issued for a specific court case",
+            "ar": "وكالة صادرة لقضية قضائية محددة",
+            "ru": "Доверенность для конкретного судебного дела",
+            "zh": "为特定法院案件出具的授权书",
+            "es": "POA emitido para un caso judicial concreto"
+          },
+          {
+            "en": "Court representation has its own procedural rules. The effect of cancelling a litigation POA during an active case depends on the applicable court procedure and on how and when the cancellation is communicated.",
+            "ar": "للتمثيل القضائي قواعد إجرائية خاصة. ويعتمد أثر إلغاء وكالة الخصومة أثناء سير الدعوى على قواعد المحكمة المطبقة وعلى كيفية وتوقيت إبلاغ الإلغاء.",
+            "ru": "Судебное представительство имеет собственные процессуальные правила. Эффект отмены судебной доверенности во время активного дела зависит от применимых процессуальных норм и от того, как и когда отмена сообщена.",
+            "zh": "诉讼代理有其程序规则。在案件进行中撤销诉讼授权书的效力，取决于适用的法院程序及撤销通知的方式和时间。",
+            "es": "La representación judicial tiene reglas procesales propias. El efecto de cancelar un poder litigioso durante un caso activo depende del procedimiento aplicable y de cómo y cuándo se comunica la cancelación."
+          },
+          {
+            "en": "[[/power-of-attorney/court|Court POA]]",
+            "ar": "[[/power-of-attorney/court|الوكالة القضائية]]",
+            "ru": "[[/power-of-attorney/court|Судебная доверенность]]",
+            "zh": "[[/power-of-attorney/court|法院授权书]]",
+            "es": "[[/power-of-attorney/court|POA judicial]]"
+          }
+        ],
+        [
+          {
+            "en": "POA where the agent or a third party has an interest",
+            "ar": "وكالة يتعلق بها حق للوكيل أو للغير",
+            "ru": "Доверенность, связанная с интересом представителя или третьего лица",
+            "zh": "涉及代理人或第三方权益的授权书",
+            "es": "POA con interés del agente o de un tercero"
+          },
+          {
+            "en": "Not every POA can be cancelled unilaterally in the same way. Where the authority is connected to a right of the agent or a third party, the legal position should be reviewed before taking a step.",
+            "ar": "ليست كل وكالة قابلة للإلغاء بطريقة انفرادية واحدة. فإذا كانت الصلاحية مرتبطة بحق للوكيل أو للغير، فيجب مراجعة الموقف القانوني قبل اتخاذ خطوة.",
+            "ru": "Не каждую доверенность можно отменить односторонне одинаковым способом. Если полномочия связаны с правом представителя или третьего лица, следует сначала проверить правовую позицию.",
+            "zh": "并非所有授权书都能以相同方式单方撤销。若授权与代理人或第三方权利相关，采取行动前应先审查法律立场。",
+            "es": "No todo poder puede cancelarse unilateralmente del mismo modo. Si la autoridad está vinculada a un derecho del agente o de un tercero, debe revisarse la posición jurídica antes de actuar."
+          },
+          {
+            "en": "[[/blog/difference-between-general-and-special-poa-uae|General vs Special POA in the UAE]]",
+            "ar": "[[/blog/difference-between-general-and-special-poa-uae|الفرق بين الوكالة العامة والخاصة في الإمارات]]",
+            "ru": "[[/blog/difference-between-general-and-special-poa-uae|Общая и специальная доверенность в ОАЭ]]",
+            "zh": "[[/blog/difference-between-general-and-special-poa-uae|阿联酋一般授权与特别授权]]",
+            "es": "[[/blog/difference-between-general-and-special-poa-uae|Poder General vs Especial en EAU]]"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "What Documents Should You Keep After a Cancellation?",
+        "ar": "ما المستندات التي يجب الاحتفاظ بها بعد الإلغاء؟",
+        "ru": "Какие документы хранить после отмены?",
+        "zh": "撤销后应保留哪些文件？",
+        "es": "¿Qué Documentos Debe Conservar Tras una Cancelación?"
+      }
+    },
+    {
+      "type": "checklist",
+      "items": [
+        {
+          "en": "The cancellation record or official document issued through the applicable channel.",
+          "ar": "قيد الإلغاء أو المستند الرسمي الصادر عبر القناة المطبقة.",
+          "ru": "Запись об отмене или официальный документ, выданный по применимому каналу.",
+          "zh": "通过适用渠道签发的撤销记录或官方文件。",
+          "es": "El registro de cancelación o documento oficial emitido por el canal aplicable."
+        },
+        {
+          "en": "A copy of the notice sent to the agent and any proof of its delivery or result.",
+          "ar": "نسخة من الإنذار المُرسل إلى الوكيل وأي دليل على تبليغه أو نتيجته.",
+          "ru": "Копия уведомления, направленного представителю, и подтверждение его вручения или результата.",
+          "zh": "发送给代理人的通知副本及其送达或结果证明。",
+          "es": "Copia de la notificación al agente y prueba de entrega o resultado."
+        },
+        {
+          "en": "Any acknowledgement, reply, or record received from the agent or from a relevant authority after the notification.",
+          "ar": "أي إقرار أو رد أو سجل تم استلامه من الوكيل أو من جهة ذات صلة بعد الإخطار.",
+          "ru": "Любое подтверждение, ответ или запись, полученные от представителя или соответствующего органа после уведомления.",
+          "zh": "通知后从代理人或相关机构收到的任何确认、回复或记录。",
+          "es": "Cualquier acuse, respuesta o registro recibido del agente o de una autoridad tras la notificación."
+        },
+        {
+          "en": "A copy of the original POA itself, so the cancelled document can be identified precisely if a question arises later.",
+          "ar": "نسخة من الوكالة الأصلية نفسها، ليكون تحديد المستند الملغى دقيقاً إذا نشأ سؤال لاحق.",
+          "ru": "Копия самой исходной доверенности, чтобы отменённый документ можно было точно идентифицировать при необходимости.",
+          "zh": "原授权书本身的副本，以便日后出现问题时能准确识别已撤销文件。",
+          "es": "Copia del propio poder original, para identificar con precisión el documento cancelado si surge una pregunta posterior."
+        }
+      ]
+    },
+    {
+      "type": "success",
+      "title": {
+        "en": "Treat cancellation as part of responsible document management",
+        "ar": "تعامل مع الإلغاء كجزء من الإدارة المسؤولة للمستند",
+        "ru": "Относитесь к отмене как к части ответственного управления документами",
+        "zh": "将撤销视为负责任文件管理的一部分",
+        "es": "Trate la cancelación como parte de una gestión responsable"
+      },
+      "text": {
+        "en": "A POA that has served its purpose should not be left open indefinitely. Confirming the correct revocation route, completing it through the competent channel, and keeping a clean record of notification protects you and avoids confusion for anyone who encounters the document later. If the situation involves a bank, a specific authority, a court case, or a POA issued abroad, use the relevant page above or contact us through [[/power-of-attorney|our Power of Attorney services]] to confirm the correct route before proceeding.",
+        "ar": "الوكالة التي أدت غرضها لا ينبغي تركها مفتوحة إلى أجل غير مسمى. فتأكيد مسار الإلغاء الصحيح، وإتمامه عبر القناة المختصة، والاحتفاظ بسجل نظيف للإخطار، يحميك ويتجنب الارتباك لأي شخص يصادف المستند لاحقاً. وإذا كانت الحالة تتعلق ببنك أو جهة محددة أو قضية قضائية أو وكالة صادرة من خارج الإمارات، فاستخدم الصفحة ذات الصلة أعلاه أو تواصل معنا عبر [[/power-of-attorney|خدمات الوكالات]] لتأكيد المسار الصحيح قبل الإجراء.",
+        "ru": "Доверенность, выполнившая свою задачу, не должна оставаться открытой бессрочно. Подтверждение правильной процедуры отмены, её завершение через компетентный канал и аккуратная запись уведомления защищают вас и предотвращают путаницу для тех, кто столкнётся с документом позже. Если ситуация связана с банком, конкретным органом, судебным делом или доверенностью, выданной за рубежом, используйте соответствующую страницу выше или свяжитесь с нами через [[/power-of-attorney|наши услуги по доверенностям]] для подтверждения правильной процедуры.",
+        "zh": "已完成使命的授权书不应无限期留存在外。确认正确的撤销路径、通过主管渠道完成撤销，并妥善保存通知记录，可以保护您并避免日后接触该文件的人产生混淆。若涉及银行、特定机构、法院案件或境外签发的授权书，请使用上方相关页面，或通过[[/power-of-attorney|我们的授权委托书服务]]联系我们，在行动前确认正确路径。",
+        "es": "Un poder que ya cumplió su propósito no debe quedar abierto indefinidamente. Confirmar la vía correcta de revocación, completarla por el canal competente y conservar un registro limpio de la notificación le protege y evita confusión a quien encuentre el documento después. Si la situación implica un banco, una autoridad concreta, un caso judicial o un poder emitido en el extranjero, utilice la página correspondiente arriba o contáctenos mediante [[/power-of-attorney|nuestros servicios de Poder Notarial]] para confirmar la vía correcta antes de actuar."
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "en": "Can I cancel a Power of Attorney without the agent's consent?",
+        "ar": "هل يمكنني إلغاء الوكالة دون موافقة الوكيل؟",
+        "ru": "Можно ли отменить доверенность без согласия представителя?",
+        "zh": "我可以不经代理人同意撤销授权委托书吗？",
+        "es": "¿Puedo cancelar un poder sin el consentimiento del agente?"
+      },
+      "a": {
+        "en": "In many cases, yes, because revocation is normally the principal's decision. However, the position can change if the POA is connected to a right belonging to the agent or a third party, or if a specific legal rule restricts unilateral revocation. If the agent has an interest in the authority, the legal position should be reviewed before acting.",
+        "ar": "في كثير من الحالات نعم، لأن العزل في الأصل قرار الموكِّل. لكن الموقف قد يتغير إذا كانت الوكالة مرتبطة بحق للوكيل أو للغير، أو إذا قيّدت قاعدة قانونية معينة العزل الانفرادي. وإذا كان للوكيل مصلحة في الصلاحية، فينبغي مراجعة الموقف القانوني قبل الإجراء.",
+        "ru": "Во многих случаях да, поскольку отзыв обычно является решением доверителя. Однако ситуация может измениться, если доверенность связана с правом представителя или третьего лица, либо если специальная норма ограничивает односторонний отзыв. Если у представителя есть интерес в полномочиях, следует проверить правовую позицию.",
+        "zh": "多数情况下可以，因为撤销通常由委托人决定。但如果授权与代理人或第三方权利相关，或有特定法律规则限制单方撤销，情况可能不同。若代理人在授权中有利益，行动前应先审查法律立场。",
+        "es": "En muchos casos sí, porque la revocación normalmente es decisión del poderdante. Sin embargo, la posición puede cambiar si el poder está vinculado a un derecho del agente o de un tercero, o si una norma específica limita la revocación unilateral. Si el agente tiene interés, debe revisarse la posición jurídica antes de actuar."
+      }
+    },
+    {
+      "q": {
+        "en": "Does cancelling a POA automatically stop a transaction already in progress?",
+        "ar": "هل يوقف إلغاء الوكالة تلقائياً معاملة جارية بالفعل؟",
+        "ru": "Останавливает ли отмена доверенности уже начатую сделку?",
+        "zh": "撤销授权书会自动停止已在进行的交易吗？",
+        "es": "¿Cancelar un poder detiene automáticamente una operación en curso?"
+      },
+      "a": {
+        "en": "Not automatically. The effect depends on the stage of the transaction, the rules of the receiving authority, and how and when the cancellation is communicated. A completed act performed within the authority is not undone merely by cancelling the POA. Where a transaction is in progress, the cancellation should be planned carefully and communicated through the correct channel.",
+        "ar": "لا بشكل تلقائي. يعتمد الأثر على مرحلة المعاملة، وقواعد الجهة المستلمة، وكيفية وتوقيت إبلاغ الإلغاء. والتصرف المنجز داخل نطاق الصلاحية لا يُلغى بمجرد إلغاء الوكالة. وإذا كانت المعاملة جارية، فيجب التخطيط للإلغاء بعناية وإبلاغه عبر القناة الصحيحة.",
+        "ru": "Не автоматически. Эффект зависит от стадии сделки, правил принимающего органа и того, как и когда сообщено об отмене. Действие, совершённое в пределах полномочий, не отменяется лишь отменой доверенности. Если сделка продолжается, отмену следует планировать и сообщать по правильному каналу.",
+        "zh": "并非自动停止。效果取决于交易阶段、接收机构规则，以及撤销通知的方式和时间。在授权范围内已经完成的行为，不会仅因撤销授权书而被推翻。若交易正在进行中，应谨慎规划撤销并通过正确渠道通知。",
+        "es": "No automáticamente. El efecto depende de la fase de la operación, las reglas de la autoridad receptora y cómo y cuándo se comunica la cancelación. Un acto ya realizado dentro de la autoridad no se deshace por cancelar el poder. Si hay una operación en curso, la cancelación debe planificarse y comunicarse por el canal correcto."
+      }
+    },
+    {
+      "q": {
+        "en": "Do I need to notify the agent after cancelling the POA?",
+        "ar": "هل يجب إخطار الوكيل بعد إلغاء الوكالة؟",
+        "ru": "Нужно ли уведомлять представителя после отмены?",
+        "zh": "撤销授权书后需要通知代理人吗？",
+        "es": "¿Debo notificar al agente tras cancelar el poder?"
+      },
+      "a": {
+        "en": "Notification is often important, especially where the agent may still act, or where a dispute may later raise the question of what the agent knew and when. Using a provable written route creates a clearer record than an informal message.",
+        "ar": "غالباً ما يكون الإخطار مهماً، خصوصاً إذا كان الوكيل قد يتصرف لاحقاً أو إذا قد يثير نزاع لاحقاً مسألة ما علمه الوكيل وتوقيته. واستخدام طريق كتابي قابل للإثبات يكوّن سجلاً أوضح من الرسالة غير الرسمية.",
+        "ru": "Уведомление часто важно, особенно если представитель может продолжать действовать или если в споре позже возникнет вопрос, что и когда он знал. Доказуемый письменный способ создаёт более ясную запись, чем неформальное сообщение.",
+        "zh": "通知往往很重要，尤其当代理人可能继续行事，或日后争议可能涉及代理人知悉什么及何时知悉时。采用可证明的书面方式比非正式信息形成更清晰的记录。",
+        "es": "La notificación suele ser importante, sobre todo si el agente puede seguir actuando o si una disputa posterior plantea qué sabía y cuándo. Una vía escrita acreditable deja un registro más claro que un mensaje informal."
+      }
+    },
+    {
+      "q": {
+        "en": "Can a UAE authority keep relying on a POA after it has been cancelled?",
+        "ar": "هل يمكن لجهة في الإمارات أن تستمر في الاعتماد على الوكالة بعد إلغائها؟",
+        "ru": "Может ли орган ОАЭ продолжать полагаться на отменённую доверенность?",
+        "zh": "阿联酋机构能否在授权撤销后继续依赖该授权书？",
+        "es": "¿Puede una autoridad de los EAU seguir usando un poder cancelado?"
+      },
+      "a": {
+        "en": "Internal records do not always update instantly across every institution. A bank, land department, free zone, or other authority may need separate notice through its own channel before its records reflect the cancellation. If the old POA is still being relied on, notify the relevant institution separately.",
+        "ar": "لا تُحدَّث السجلات الداخلية فوراً في كل المؤسسات. وقد يحتاج البنك أو دائرة الأراضي أو المنطقة الحرة أو أي جهة أخرى إلى إخطار منفصل عبر قناتها الخاصة قبل أن تعكس سجلاتها الإلغاء. وإذا كانت الوكالة القديمة لا تزال معتمداً عليها، فأخطر المؤسسة المعنية بشكل منفصل.",
+        "ru": "Внутренние записи обновляются не мгновенно во всех организациях. Банк, земельный департамент, свободная зона или иной орган может нуждаться в отдельном уведомлении по своему каналу, чтобы записи отразили отмену. Если старый документ всё ещё используется, уведомьте соответствующее учреждение отдельно.",
+        "zh": "各机构内部记录未必即时更新。银行、土地部门、自由区或其他机构可能需要通过自身渠道另行获知，记录才会反映撤销。若旧授权书仍被使用，请另行通知相关机构。",
+        "es": "Los registros internos no se actualizan instantáneamente en todas las instituciones. Un banco, departamento de tierras, zona franca u otra autoridad puede necesitar notificación por su canal para reflejar la cancelación. Si aún se usa el poder antiguo, notifique por separado a la institución correspondiente."
+      }
+    },
+    {
+      "q": {
+        "en": "What is the difference between cancelling a POA and serving a revocation notice?",
+        "ar": "ما الفرق بين إلغاء الوكالة وتبليغ إنذار الإلغاء؟",
+        "ru": "В чём разница между отменой доверенности и вручением уведомления об отзыве?",
+        "zh": "撤销授权书与送达撤销通知有何区别？",
+        "es": "¿Cuál es la diferencia entre cancelar un poder y notificar una revocación?"
+      },
+      "a": {
+        "en": "Cancelling a POA addresses the legal authority itself and is completed through the applicable official route. A revocation notice addresses evidence of the agent's awareness and is used where proving that awareness matters. The two steps are related but not identical, and both may be relevant in the same file.",
+        "ar": "إلغاء الوكالة يتعلق بالصلاحية القانونية نفسها ويتم عبر المسار الرسمي المطبق. أما إنذار الإلغاء فيتعلق بإثبات علم الوكيل ويُستخدم عندما يكون إثبات هذا العلم مهماً. والخطوتان مرتبطتان لكنهما غير متطابقتين، وقد تكونان معاً ذات صلة في الملف نفسه.",
+        "ru": "Отмена доверенности касается самих полномочий и завершается по применимой официальной процедуре. Уведомление об отзыве касается доказательства осведомлённости представителя и используется, когда важно доказать эту осведомлённость. Шаги связаны, но не идентичны, и оба могут быть актуальны в одном деле.",
+        "zh": "撤销授权书针对授权本身，并通过适用官方路径完成。撤销通知针对代理人的知情证明，在需要证明其知情时使用。两者相关但并不相同，同一事项中可能都需要。",
+        "es": "Cancelar un poder afecta a la autoridad jurídica y se completa por la vía oficial aplicable. La notificación de revocación se refiere a probar el conocimiento del agente y se utiliza cuando importa acreditarlo. Son pasos relacionados pero no idénticos, y ambos pueden ser relevantes en el mismo expediente."
+      }
+    },
+    {
+      "q": {
+        "en": "What if I do not have a copy of the original POA?",
+        "ar": "ماذا لو لم تكن لدي نسخة من الوكالة الأصلية؟",
+        "ru": "Что если у меня нет копии исходной доверенности?",
+        "zh": "如果我没有原授权书的副本怎么办？",
+        "es": "¿Y si no tengo copia del poder original?"
+      },
+      "a": {
+        "en": "A copy makes the file easier and more precise, but it is not always required for the initial review. What matters most is identifying the document accurately: type, approximate date, issuing channel, and the authority that holds or accepted it. The correct route can be confirmed after that identification.",
+        "ar": "النسخة تجعل الملف أسهل وأكثر دقة، لكنها ليست مطلوبة دائماً للمراجعة الأولية. الأهم هو تحديد المستند بدقة: النوع، والتاريخ التقريبي، والقناة المصدرة، والجهة التي تحتفظ به أو قبلته. ويمكن تأكيد المسار الصحيح بعد هذا التحديد.",
+        "ru": "Копия облегчает и уточняет работу, но не всегда нужна для первичной проверки. Важнее точно идентифицировать документ: тип, примерная дата, канал выдачи и орган, который его хранит или принял. После этого можно подтвердить правильный маршрут.",
+        "zh": "副本有助于提高效率和准确性，但初步审核未必要求。最关键的是准确识别文件：类型、大致日期、签发渠道，以及持有或已受理该文件的机构。确认后即可确定正确路径。",
+        "es": "Una copia facilita y hace más precisa la revisión, pero no siempre es necesaria para el análisis inicial. Lo más importante es identificar con precisión el documento: tipo, fecha aproximada, canal de emisión y autoridad que lo conserva o aceptó. Después puede confirmarse la vía correcta."
+      }
+    },
+    {
+      "q": {
+        "en": "Can a POA issued in another country be cancelled from Dubai?",
+        "ar": "هل يمكن إلغاء وكالة صادرة في دولة أخرى من دبي؟",
+        "ru": "Можно ли отменить доверенность, выданную в другой стране, из Дубая?",
+        "zh": "在另一国签发的授权书可以从迪拜撤销吗？",
+        "es": "¿Puede cancelarse desde Dubái un poder emitido en otro país?"
+      },
+      "a": {
+        "en": "The UAE-side steps can be taken, but they may not change the record held by the issuing authority in the original jurisdiction. If the POA was notarized abroad, check whether action is also needed where it was originally issued.",
+        "ar": "يمكن اتخاذ الخطوات داخل الإمارات، لكنها قد لا تغيّر السجل لدى جهة الإصدار في الاختصاص الأصلي. وإذا وُثّقت الوكالة خارج الدولة، فتحقق مما إذا كان يلزم إجراء في المكان الذي صدرت فيه أصلاً.",
+        "ru": "Действия на стороне ОАЭ можно предпринять, но они могут не изменить запись органа выдачи в исходной юрисдикции. Если доверенность заверена за рубежом, проверьте, нужны ли действия там, где она изначально выдана.",
+        "zh": "可在阿联酋境内采取措施，但未必会改变原始签发管辖区的记录。若授权书在境外公证，应确认是否还需在原始签发地采取措施。",
+        "es": "Pueden adoptarse medidas en los EAU, pero no necesariamente cambian el registro de la autoridad emisora en la jurisdicción original. Si el poder se notarizó en el extranjero, compruebe si también hace falta actuar donde se emitió originalmente."
+      }
+    },
+    {
+      "q": {
+        "en": "How long does cancelling a POA take?",
+        "ar": "كم يستغرق إلغاء الوكالة؟",
+        "ru": "Сколько времени занимает отмена доверенности?",
+        "zh": "撤销授权书需要多长时间？",
+        "es": "¿Cuánto tarda cancelar un poder?"
+      },
+      "a": {
+        "en": "There is no single answer because the timing depends on the route, the POA type, the channel used, and whether notification or third-party updates are involved. Document preparation can often be done quickly, but the official step and any authority-side updates follow their own timing.",
+        "ar": "لا توجد إجابة واحدة، لأن المدة تعتمد على المسار ونوع الوكالة والقناة المستخدمة وما إذا كان التبليغ أو تحديث بيانات الغير مطلوباً. يمكن غالباً إنجاز تجهيز المستندات بسرعة، لكن الخطوة الرسمية وأي تحديثات من جانب الجهات تتبع توقيتها الخاص.",
+        "ru": "Единого ответа нет: срок зависит от маршрута, типа доверенности, используемого канала и необходимости уведомления или обновления данных третьих лиц. Подготовка документов часто быстрая, но официальный этап и обновления на стороне органов идут по своим срокам.",
+        "zh": "没有统一答案，因为时间取决于路径、授权书类型、所用渠道，以及是否涉及通知或第三方更新。文件准备通常较快，但官方步骤及机构一侧的更新按各自时限进行。",
+        "es": "No hay una única respuesta: el plazo depende de la vía, el tipo de poder, el canal utilizado y si implica notificación o actualizaciones de terceros. La preparación documental suele ser rápida, pero el paso oficial y las actualizaciones de las autoridades siguen sus propios plazos."
+      }
+    }
+  ],
+  "related": [
+    "how-to-get-poa-dubai",
+    "difference-between-general-and-special-poa-uae",
+    "notarize-documents-without-visiting-uae"
+  ]
+},
+
+
+	  
+	  "special-power-of-attorney-uae-guide": {
+  "title_en": "Special Power of Attorney in the UAE: When and How to Use an SPA",
+  "title_ar": "الوكالة الخاصة في الإمارات: متى وكيف تستخدمها؟",
+  "title_ru": "Специальная доверенность в ОАЭ: когда и как её использовать",
+  "title_zh": "阿联酋特别授权委托书：何时以及如何使用",
+  "title_es": "Poder Notarial Especial en los EAU: Cuándo y Cómo Usarlo",
+  "meta_en": "Learn when a Special Power of Attorney (SPA) is required in the UAE, how it differs from a General POA, and how to draft one that authorities accept. 2026 guide.",
+  "meta_ar": "تعرف على متى تحتاج إلى وكالة خاصة في الإمارات، وما الفرق بينها وبين الوكالة العامة، وكيف تصوغ واحدة تقبلها الجهات الرسمية.",
+  "meta_ru": "Узнайте, когда требуется специальная доверенность в ОАЭ, чем она отличается от общей, и как составить документ, который примут органы.",
+  "meta_zh": "了解在阿联酋何时需要特别授权委托书、它与一般授权书的区别，以及如何起草一份能获得当局认可的授权书。",
+  "meta_es": "Descubra cuándo se requiere un Poder Notarial Especial en los EAU, en qué se diferencia de un Poder General y cómo redactar uno que las autoridades acepten.",
+  "date": "2026-10-01",
+  "date_updated": "2026-10-01",
+  "rich_blocks": [
+    {
+      "type": "para",
+      "accent": true,
+      "text": {
+        "en": "Life in the UAE often requires you to authorize someone else to act on your behalf. Whether you are selling a property in Dubai, managing a bank account, or handling a court case, you may need to delegate authority. The critical question is: how much authority should you grant? A [[/power-of-attorney/general|General Power of Attorney]] offers broad powers, but it also carries significant risk. That is where a **Special Power of Attorney (SPA)** comes in. This guide explains what an SPA is, when to use it, and how it protects your assets by limiting your agent's authority to a single, clearly defined task.",
+        "ar": "غالبًا ما تتطلب الحياة في الإمارات أن تفوض شخصًا آخر للتصرف نيابة عنك. سواء كنت تبيع عقارًا في دبي، أو تدير حسابًا بنكيًا، أو تتعامل مع قضية قضائية، قد تحتاج إلى تفويض الصلاحيات. السؤال الحاسم هو: ما مقدار الصلاحية التي يجب أن تمنحها؟ تقدم [[/power-of-attorney/general|الوكالة العامة]] صلاحيات واسعة، لكنها تحمل أيضًا مخاطر كبيرة. هنا يأتي دور **الوكالة الخاصة (SPA)**. يشرح هذا الدليل ماهية الوكالة الخاصة، ومتى يجب استخدامها، وكيف تحمي أصولك من خلال تقييد صلاحيات الوكيل لمهمة واحدة محددة بوضوح.",
+        "ru": "Жизнь в ОАЭ часто требует, чтобы вы уполномочили кого-то другого действовать от вашего имени. Будь то продажа недвижимости в Дубае, управление банковским счетом или ведение судебного дела, вам может потребоваться делегировать полномочия. Критический вопрос: какой объем полномочий следует предоставить? [[/power-of-attorney/general|Общая доверенность]] предлагает широкие полномочия, но она также несет значительный риск. Здесь на помощь приходит **Специальная доверенность (SPA)**. Это руководство объясняет, что такое SPA, когда его использовать и как он защищает ваши активы, ограничивая полномочия представителя одной четко определенной задачей.",
+        "zh": "在阿联酋生活，您经常需要授权他人代表您行事。无论是出售迪拜的房产、管理银行账户，还是处理法院案件，您都可能需要委托权限。关键问题是：您应该授予多少权限？[[/power-of-attorney/general|一般授权委托书]]提供广泛的权限，但也带来重大风险。这正是**特别授权委托书 (SPA)** 的用武之地。本指南解释了什么是 SPA、何时使用它，以及它如何通过将代理人的权限限制在单一、明确的任务中来保护您的资产。",
+        "es": "La vida en los EAU a menudo requiere que autorice a otra persona para actuar en su nombre. Ya sea que esté vendiendo una propiedad en Dubái, gestionando una cuenta bancaria o manejando un caso judicial, puede necesitar delegar autoridad. La pregunta crítica es: ¿cuánta autoridad debería otorgar? Un [[/power-of-attorney/general|Poder Notarial General]] ofrece amplias facultades, pero también conlleva un riesgo significativo. Aquí es donde entra en juego un **Poder Notarial Especial (SPA)**. Esta guía explica qué es un SPA, cuándo usarlo y cómo protege sus activos limitando la autoridad de su agente a una única tarea claramente definida."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "What Is a Special Power of Attorney?",
+        "ar": "ما هي الوكالة الخاصة؟",
+        "ru": "Что такое специальная доверенность?",
+        "zh": "什么是特别授权委托书？",
+        "es": "¿Qué es un Poder Notarial Especial?"
+      }
+    },
+    {
+      "type": "para",
+      "text": {
+        "en": "A Special Power of Attorney (SPA) is a legal document in which you (the **principal**) appoint another person (the **agent**) to perform one specific legal act or a clearly defined set of acts on your behalf. Unlike a General POA, which can grant sweeping authority over your affairs, an SPA is precise. The document names exactly what the agent can do—and nothing more. The authority automatically ends once the task is completed. This precision is what makes an SPA the safer choice when you only need to delegate a single transaction.",
+        "ar": "الوكالة الخاصة (SPA) هي وثيقة قانونية تقوم فيها أنت (**الموكل**) بتعيين شخص آخر (**الوكيل**) لأداء تصرف قانوني واحد محدد أو مجموعة محددة بوضوح من التصرفات نيابة عنك. على عكس الوكالة العامة التي تمنح صلاحيات واسعة، فإن الوكالة الخاصة دقيقة. تحدد الوثيقة بدقة ما يمكن للوكيل فعله - ولا شيء أكثر من ذلك. تنتهي الصلاحية تلقائيًا بمجرد إتمام المهمة. هذه الدقة هي ما يجعل الوكالة الخاصة الخيار الأكثر أمانًا عندما تحتاج فقط إلى تفويض معاملة واحدة.",
+        "ru": "Специальная доверенность (SPA) — это юридический документ, в котором вы (**доверитель**) назначаете другое лицо (**представителя**) для совершения одного конкретного юридического действия или четко определенной совокупности действий от вашего имени. В отличие от общей доверенности, которая может предоставить широкие полномочия, специальная доверенность точна. В документе точно указано, что представитель может делать — и ничего больше. Полномочия автоматически прекращаются после выполнения задачи. Именно эта точность делает SPA более безопасным выбором, когда вам нужно делегировать только одну сделку.",
+        "zh": "特别授权委托书 (SPA) 是一份法律文件，您（**委托人**）在其中指定另一人（**代理人**）代表您执行一项特定的法律行为或一组明确界定的行为。与可能授予广泛事务权限的一般授权书不同，SPA 非常精确。文件明确规定了代理人可以做什么——仅此而已。任务完成后，授权自动终止。当您只需要委托一项交易时，这种精确性使 SPA 成为更安全的选择。",
+        "es": "Un Poder Notarial Especial (SPA) es un documento legal en el que usted (el **poderdante**) nombra a otra persona (el **apoderado**) para realizar un acto legal específico o un conjunto claramente definido de actos en su nombre. A diferencia de un Poder General, que puede otorgar una autoridad amplia sobre sus asuntos, un SPA es preciso. El documento nombra exactamente lo que el agente puede hacer, y nada más. La autoridad termina automáticamente una vez que se completa la tarea. Esta precisión es lo que hace que un SPA sea la opción más segura cuando solo necesita delegar una única transacción."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "When Should You Use a Special Power of Attorney?",
+        "ar": "متى يجب أن تستخدم وكالة خاصة؟",
+        "ru": "Когда следует использовать специальную доверенность?",
+        "zh": "何时应使用特别授权委托书？",
+        "es": "¿Cuándo Debe Usar un Poder Notarial Especial?"
+      }
+    },
+    {
+      "type": "checklist",
+      "items": [
+        {
+          "en": "Selling, buying, or leasing a specific property in Dubai",
+          "ar": "بيع أو شراء أو تأجير عقار محدد في دبي",
+          "ru": "Продажа, покупка или аренда конкретной недвижимости в Дубае",
+          "zh": "出售、购买或租赁迪拜的特定房产",
+          "es": "Vender, comprar o arrendar una propiedad específica en Dubái"
+        },
+        {
+          "en": "Opening or closing a specific bank account",
+          "ar": "فتح أو إغلاق حساب بنكي محدد",
+          "ru": "Открытие или закрытие конкретного банковского счета",
+          "zh": "开立或关闭特定银行账户",
+          "es": "Abrir o cerrar una cuenta bancaria específica"
+        },
+        {
+          "en": "Representing you in a specific court case",
+          "ar": "تمثيلك في قضية قضائية محددة",
+          "ru": "Представление ваших интересов в конкретном судебном деле",
+          "zh": "在特定法院案件中代表您",
+          "es": "Representarle en un caso judicial específico"
+        },
+        {
+          "en": "Selling or transferring a specific vehicle at the RTA",
+          "ar": "بيع أو نقل ملكية مركبة محددة في هيئة الطرق والمواصلات",
+          "ru": "Продажа или переоформление конкретного автомобиля в RTA",
+          "zh": "在 RTA 出售或转让特定车辆",
+          "es": "Vender o transferir un vehículo específico en la RTA"
+        },
+        {
+          "en": "Signing the Memorandum of Association for a new company",
+          "ar": "توقيع عقد التأسيس لشركة جديدة",
+          "ru": "Подписание устава для новой компании",
+          "zh": "签署新公司的公司章程",
+          "es": "Firmar el Acta Constitutiva de una nueva empresa"
+        }
+      ]
+    },
+    {
+      "type": "para",
+      "text": {
+        "en": "In each of these scenarios, the agent only needs authority for that specific transaction. Granting broader powers would expose you to unnecessary risk. For a deeper comparison, see our guide on [[/blog/difference-between-general-and-special-poa-uae|General vs Special POA]].",
+        "ar": "في كل من هذه السيناريوهات، يحتاج الوكيل فقط إلى صلاحية لتلك المعاملة المحددة. منح صلاحيات أوسع سيعرضك لمخاطر غير ضرورية. لمقارنة أعمق، راجع دليلنا حول [[/blog/difference-between-general-and-special-poa-uae|الفرق بين الوكالة العامة والخاصة]].",
+        "ru": "В каждом из этих сценариев представителю нужны полномочия только для этой конкретной сделки. Предоставление более широких полномочий подвергнет вас ненужному риску. Для более глубокого сравнения см. наше руководство [[/blog/difference-between-general-and-special-poa-uae|Общая и специальная доверенность]].",
+        "zh": "在上述每种情况下，代理人只需要该特定交易的权限。授予更广泛的权限会使您面临不必要的风险。如需更深入的比较，请参阅我们的[[/blog/difference-between-general-and-special-poa-uae|一般授权与特别授权]]指南。",
+        "es": "En cada uno de estos escenarios, el agente solo necesita autoridad para esa transacción específica. Otorgar poderes más amplios le expondría a riesgos innecesarios. Para una comparación más profunda, consulte nuestra guía sobre [[/blog/difference-between-general-and-special-poa-uae|Poder General vs Especial]]."
+      }
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "General POA vs. Special POA: The Key Differences",
+        "ar": "الوكالة العامة مقابل الوكالة الخاصة: الفروق الرئيسية",
+        "ru": "Общая доверенность против специальной: ключевые различия",
+        "zh": "一般授权委托书与特别授权委托书：关键区别",
+        "es": "Poder General vs. Poder Especial: Las Diferencias Clave"
+      }
+    },
+    {
+      "type": "table",
+      "headers": [
+        {
+          "en": "Point of Comparison",
+          "ar": "وجه المقارنة",
+          "ru": "Критерий сравнения",
+          "zh": "比较点",
+          "es": "Punto de Comparación"
+        },
+        {
+          "en": "General POA",
+          "ar": "الوكالة العامة",
+          "ru": "Общая доверенность",
+          "zh": "一般授权委托书",
+          "es": "Poder General"
+        },
+        {
+          "en": "Special POA",
+          "ar": "الوكالة الخاصة",
+          "ru": "Специальная доверенность",
+          "zh": "特别授权委托书",
+          "es": "Poder Especial"
+        }
+      ],
+      "rows": [
+        [
+          {
+            "en": "Scope",
+            "ar": "النطاق",
+            "ru": "Объем",
+            "zh": "范围",
+            "es": "Alcance"
+          },
+          {
+            "en": "Broad authority over many actions",
+            "ar": "صلاحيات واسعة على العديد من التصرفات",
+            "ru": "Широкие полномочия на многие действия",
+            "zh": "对多种行为的广泛授权",
+            "es": "Amplia autoridad sobre muchas acciones"
+          },
+          {
+            "en": "Limited to one specific task or subject",
+            "ar": "محدودة بمهمة أو موضوع واحد محدد",
+            "ru": "Ограничена одной конкретной задачей или предметом",
+            "zh": "仅限于一项特定任务或主题",
+            "es": "Limitado a una tarea o tema específico"
+          }
+        ],
+        [
+          {
+            "en": "Risk Level",
+            "ar": "مستوى المخاطرة",
+            "ru": "Уровень риска",
+            "zh": "风险水平",
+            "es": "Nivel de Riesgo"
+          },
+          {
+            "en": "High — agent may dispose of assets broadly",
+            "ar": "مرتفع — قد يتصرف الوكيل في الأصول على نطاق واسع",
+            "ru": "Высокий — представитель может широко распоряжаться активами",
+            "zh": "高——代理人可广泛处置资产",
+            "es": "Alto — el agente puede disponer ampliamente de los activos"
+          },
+          {
+            "en": "Low — authority restricted to one purpose",
+            "ar": "منخفض — الصلاحية مقصورة على غرض واحد",
+            "ru": "Низкий — полномочия ограничены одной целью",
+            "zh": "低——权限仅限于一个目的",
+            "es": "Bajo — autoridad restringida a un propósito"
+          }
+        ],
+        [
+          {
+            "en": "Duration",
+            "ar": "المدة",
+            "ru": "Срок действия",
+            "zh": "期限",
+            "es": "Duración"
+          },
+          {
+            "en": "Usually long-term until revoked",
+            "ar": "عادةً طويلة الأجل حتى الإلغاء",
+            "ru": "Обычно долгосрочная до отзыва",
+            "zh": "通常为长期，直至撤销",
+            "es": "Generalmente a largo plazo hasta su revocación"
+          },
+          {
+            "en": "Ends when the task is completed",
+            "ar": "تنتهي عند إتمام المهمة",
+            "ru": "Прекращается по завершении задачи",
+            "zh": "任务完成时终止",
+            "es": "Termina cuando se completa la tarea"
+          }
+        ]
+      ]
+    },
+    {
+      "type": "heading",
+      "text": {
+        "en": "How to Draft a Valid Special Power of Attorney",
+        "ar": "كيف تصوغ وكالة خاصة صحيحة؟",
+        "ru": "Как составить действительную специальную доверенность",
+        "zh": "如何起草有效的特别授权委托书",
+        "es": "Cómo Redactar un Poder Notarial Especial Válido"
+      }
+    },
+    {
+      "type": "steps",
+      "items": [
+        {
+          "title": {
+            "en": "1. Define the exact task",
+            "ar": "1. حدد المهمة الدقيقة",
+            "ru": "1. Определите точную задачу",
+            "zh": "1. 明确具体任务",
+            "es": "1. Defina la tarea exacta"
+          },
+          "body": {
+            "en": "Identify the single transaction the agent will perform. Be specific: name the property, the vehicle, the bank account, or the court case.",
+            "ar": "حدد المعاملة الواحدة التي سيقوم بها الوكيل. كن محددًا: اذكر العقار أو المركبة أو الحساب البنكي أو القضية.",
+            "ru": "Определите единственную сделку, которую выполнит представитель. Будьте конкретны: укажите недвижимость, автомобиль, банковский счет или судебное дело.",
+            "zh": "确定代理人将执行的单一交易。要具体：说明房产、车辆、银行账户或法院案件。",
+            "es": "Identifique la transacción única que realizará el agente. Sea específico: nombre la propiedad, el vehículo, la cuenta bancaria o el caso judicial."
+          }
+        },
+        {
+          "title": {
+            "en": "2. State the powers expressly",
+            "ar": "2. اذكر الصلاحيات صراحةً",
+            "ru": "2. Укажите полномочия прямо",
+            "zh": "2. 明确列明权限",
+            "es": "2. Indique las facultades expresamente"
+          },
+          "body": {
+            "en": "List the specific acts the agent is authorized to perform. Vague wording such as \"manage all matters\" may be rejected by authorities.",
+            "ar": "اذكر التصرفات المحددة التي يخول للوكيل القيام بها. قد ترفض الجهات الصياغة الغامضة مثل \"إدارة جميع الأمور\".",
+            "ru": "Перечислите конкретные действия, которые уполномочен совершать представитель. Расплывчатые формулировки, такие как «управлять всеми делами», могут быть отклонены органами.",
+            "zh": "列出授权代理人执行的具体行为。模糊的措辞如“管理所有事务”可能会被当局拒绝。",
+            "es": "Enumere los actos específicos que el agente está autorizado a realizar. La redacción vaga como \"gestionar todos los asuntos\" puede ser rechazada por las autoridades."
+          }
+        },
+        {
+          "title": {
+            "en": "3. Prepare supporting documents",
+            "ar": "3. جهز المستندات الداعمة",
+            "ru": "3. Подготовьте подтверждающие документы",
+            "zh": "3. 准备支持文件",
+            "es": "3. Prepare los documentos de respaldo"
+          },
+          "body": {
+            "en": "You will typically need the principal's Emirates ID or passport, the agent's identity documents, and documents relating to the specific transaction (e.g., title deed, Mulkiya, or case number).",
+            "ar": "ستحتاج عادةً إلى الهوية الإماراتية أو جواز سفر الموكل، ومستندات هوية الوكيل، ومستندات تتعلق بالمعاملة المحددة (مثل سند الملكية أو الملكية أو رقم القضية).",
+            "ru": "Как правило, вам понадобятся Emirates ID или паспорт доверителя, документы, удостоверяющие личность представителя, и документы, относящиеся к конкретной сделке (например, свидетельство о праве собственности, Mulkiya или номер дела).",
+            "zh": "您通常需要委托人的阿联酋身份证或护照、代理人的身份证明文件，以及与具体交易相关的文件（例如产权证、Mulkiya 或案件编号）。",
+            "es": "Normalmente necesitará el Emirates ID o pasaporte del poderdante, los documentos de identidad del agente y documentos relacionados con la transacción específica (por ejemplo, título de propiedad, Mulkiya o número de caso)."
+          }
+        },
+        {
+          "title": {
+            "en": "4. Notarize through the correct channel",
+            "ar": "4. وثق عبر القناة الصحيحة",
+            "ru": "4. Заверьте через правильный канал",
+            "zh": "4. 通过正确渠道进行公证",
+            "es": "4. Notarice a través del canal correcto"
+          },
+          "body": {
+            "en": "The SPA must be notarized before a UAE Notary Public or a licensed private notary. For remote notarization, ensure both parties meet the eligibility criteria. For more information, see our [[/power-of-attorney/special|Special Power of Attorney service]].",
+            "ar": "يجب توثيق الوكالة الخاصة أمام كاتب عدل إماراتي أو كاتب عدل خاص مرخص. للتوثيق عن بُعد، تأكد من استيفاء الطرفين لمعايير الأهلية. لمزيد من المعلومات، راجع [[/power-of-attorney/special|خدمة الوكالة الخاصة]].",
+            "ru": "SPA должна быть заверена нотариусом ОАЭ или лицензированным частным нотариусом. Для дистанционного заверения убедитесь, что обе стороны соответствуют критериям. Для получения дополнительной информации см. нашу [[/power-of-attorney/special|услугу специальной доверенности]].",
+            "zh": "SPA 必须由阿联酋公证人或持牌私人公证人公证。对于远程公证，请确保双方符合资格标准。有关更多信息，请参阅我们的[[/power-of-attorney/special|特别授权委托书服务]]。",
+            "es": "El SPA debe ser notarizado ante un Notario Público de los EAU o un notario privado autorizado. Para la notarización remota, asegúrese de que ambas partes cumplan con los criterios de elegibilidad. Para obtener más información, consulte nuestro [[/power-of-attorney/special|servicio de Poder Notarial Especial]]."
+          }
+        }
+      ]
+    },
+    {
+      "type": "warning",
+      "title": {
+        "en": "Do Not Use a General POA When a Special POA Is Required",
+        "ar": "لا تستخدم وكالة عامة عندما تكون هناك حاجة إلى وكالة خاصة",
+        "ru": "Не используйте общую доверенность, когда требуется специальная",
+        "zh": "当需要特别授权时，不要使用一般授权",
+        "es": "No Utilice un Poder General Cuando se Requiere un Poder Especial"
+      },
+      "text": {
+        "en": "Using a General POA for a task that only requires a Special POA exposes you to serious risks. The agent could potentially sell other assets, incur debts, or act in ways you never intended. Authorities, including DLD and banks, increasingly reject General POAs for specific transactions and require explicit, limited wording. Always match the scope of the POA to the task.",
+        "ar": "استخدام وكالة عامة لمهمة تتطلب فقط وكالة خاصة يعرضك لمخاطر جسيمة. قد يبيع الوكيل أصولًا أخرى، أو يتكبد ديونًا، أو يتصرف بطرق لم تقصدها أبدًا. ترفض الجهات، بما في ذلك دائرة الأراضي والبنوك، بشكل متزايد الوكالات العامة للمعاملات المحددة وتتطلب صياغة صريحة ومحدودة. طابق دائمًا نطاق الوكالة مع المهمة.",
+        "ru": "Использование общей доверенности для задачи, требующей только специальной, подвергает вас серьезным рискам. Представитель потенциально может продать другие активы, incur debts или действовать способами, которые вы никогда не предполагали. Органы, включая DLD и банки, все чаще отклоняют общие доверенности для конкретных сделок и требуют явных, ограниченных формулировок. Всегда соотносите объем доверенности с задачей.",
+        "zh": "对只需要特别授权的任务使用一般授权会使您面临严重风险。代理人可能会出售其他资产、产生债务或以您从未打算的方式行事。包括 DLD 和银行在内的当局越来越多地拒绝将一般授权委托书用于特定交易，并要求明确、有限的措辞。始终使授权书的范围与任务相匹配。",
+        "es": "Usar un Poder General para una tarea que solo requiere un Poder Especial le expone a serios riesgos. El agente podría vender otros activos, contraer deudas o actuar de maneras que nunca pretendió. Las autoridades, incluido el DLD y los bancos, rechazan cada vez más los Poderes Generales para transacciones específicas y exigen una redacción explícita y limitada. Siempre haga coincidir el alcance del poder con la tarea."
+      }
+    },
+    {
+      "type": "para",
+      "text": {
+        "en": "A Special Power of Attorney is not just a legal formality—it is a risk management tool. By defining the exact scope of your agent's authority, you protect your assets while still getting the job done. If you need to delegate a specific task in the UAE, the safest approach is to draft a Special POA tailored to that transaction. For general ongoing representation, you may need a [[/power-of-attorney/general|General Power of Attorney]]. For help with either, see our [[/power-of-attorney|Power of Attorney services]].",
+        "ar": "الوكالة الخاصة ليست مجرد شكلية قانونية - إنها أداة لإدارة المخاطر. من خلال تحديد النطاق الدقيق لصلاحيات وكيلك، تحمي أصولك مع إنجاز المهمة. إذا كنت بحاجة إلى تفويض مهمة محددة في الإمارات، فإن النهج الأكثر أمانًا هو صياغة وكالة خاصة مصممة لتلك المعاملة. للتمثيل العام المستمر، قد تحتاج إلى [[/power-of-attorney/general|وكالة عامة]]. للمساعدة في أي منهما، راجع [[/power-of-attorney|خدمات الوكالات]].",
+        "ru": "Специальная доверенность — это не просто юридическая формальность, а инструмент управления рисками. Определив точный объем полномочий представителя, вы защищаете свои активы и при этом выполняете задачу. Если вам нужно делегировать конкретную задачу в ОАЭ, самый безопасный подход — составить специальную доверенность, адаптированную к этой сделке. Для общего постоянного представительства вам может понадобиться [[/power-of-attorney/general|общая доверенность]]. Для помощи в любом из этих случаев см. наши [[/power-of-attorney|услуги по доверенностям]].",
+        "zh": "特别授权委托书不仅仅是一种法律形式——它是一种风险管理工具。通过明确界定代理人权限的准确范围，您可以在完成任务的同时保护您的资产。如果您需要在阿联酋委托一项特定任务，最安全的方法是针对该交易起草一份特别授权委托书。对于一般性的持续代理，您可能需要一份[[/power-of-attorney/general|一般授权委托书]]。如需帮助，请参阅我们的[[/power-of-attorney|授权委托书服务]]。",
+        "es": "Un Poder Notarial Especial no es solo una formalidad legal: es una herramienta de gestión de riesgos. Al definir el alcance exacto de la autoridad de su agente, protege sus activos mientras realiza la tarea. Si necesita delegar una tarea específica en los EAU, el enfoque más seguro es redactar un Poder Especial adaptado a esa transacción. Para representación general continua, puede necesitar un [[/power-of-attorney/general|Poder Notarial General]]. Para obtener ayuda con cualquiera de los dos, consulte nuestros [[/power-of-attorney|servicios de Poder Notarial]]."
+      }
+    }
+  ],
+  "faq": [
+    {
+      "q": {
+        "en": "When should I use a Special Power of Attorney instead of a General POA?",
+        "ar": "متى يجب أن أستخدم وكالة خاصة بدلاً من وكالة عامة؟",
+        "ru": "Когда следует использовать специальную доверенность вместо общей?",
+        "zh": "何时应使用特别授权委托书而不是一般授权？",
+        "es": "¿Cuándo debo usar un Poder Especial en lugar de un Poder General?"
+      },
+      "a": {
+        "en": "Use a Special POA when you need to authorize a specific transaction only—such as selling one property, operating one bank account, or representing you in one court case. It limits the agent's authority and automatically ends when the task is done.",
+        "ar": "استخدم وكالة خاصة عندما تحتاج إلى تفويض معاملة محددة فقط - مثل بيع عقار واحد، أو تشغيل حساب بنكي واحد، أو تمثيلك في قضية قضائية واحدة. تحد من صلاحيات الوكيل وتنتهي تلقائيًا عند إتمام المهمة.",
+        "ru": "Используйте специальную доверенность, когда вам нужно уполномочить только конкретную сделку — например, продажу одной недвижимости, управление одним банковским счетом или представление ваших интересов в одном судебном деле. Она ограничивает полномочия представителя и автоматически прекращается после выполнения задачи.",
+        "zh": "当您只需要授权一项特定交易时——例如出售一处房产、操作一个银行账户或在某一法院案件中代表您——请使用特别授权委托书。它限制了代理人的权限，并在任务完成后自动终止。",
+        "es": "Use un Poder Especial cuando solo necesite autorizar una transacción específica, como vender una propiedad, operar una cuenta bancaria o representarle en un caso judicial. Limita la autoridad del agente y termina automáticamente cuando se completa la tarea."
+      }
+    },
+    {
+      "q": {
+        "en": "Does a Special Power of Attorney expire?",
+        "ar": "هل تنتهي صلاحية الوكالة الخاصة؟",
+        "ru": "Истекает ли срок действия специальной доверенности?",
+        "zh": "特别授权委托书会过期吗？",
+        "es": "¿Caduca un Poder Notarial Especial?"
+      },
+      "a": {
+        "en": "A Special POA ends automatically once the specific task is completed. It can also have a stated expiry date (e.g., one year). The principal may also revoke it at any time through the proper notarial procedure.",
+        "ar": "تنتهي الوكالة الخاصة تلقائيًا بمجرد إتمام المهمة المحددة. يمكن أن يكون لها أيضًا تاريخ انتهاء محدد (مثل سنة واحدة). يمكن للموكل أيضًا إلغاؤها في أي وقت من خلال الإجراء التوثيقي المناسب.",
+        "ru": "Специальная доверенность прекращается автоматически после выполнения конкретной задачи. Она также может иметь указанную дату истечения (например, один год). Доверитель также может отозвать её в любое время через надлежащую нотариальную процедуру.",
+        "zh": "特别授权委托书在特定任务完成后自动终止。它也可以有指定的到期日（例如一年）。委托人也可以通过适当的公证程序随时撤销它。",
+        "es": "Un Poder Especial termina automáticamente una vez que se completa la tarea específica. También puede tener una fecha de caducidad indicada (por ejemplo, un año). El poderdante también puede revocarlo en cualquier momento mediante el procedimiento notarial adecuado."
+      }
+    },
+    {
+      "q": {
+        "en": "Can a Special Power of Attorney be revoked?",
+        "ar": "هل يمكن إلغاء الوكالة الخاصة؟",
+        "ru": "Можно ли отозвать специальную доверенность?",
+        "zh": "特别授权委托书可以撤销吗？",
+        "es": "¿Se puede revocar un Poder Notarial Especial?"
+      },
+      "a": {
+        "en": "Yes. The principal can revoke a Special POA at any time by visiting a notary public to issue a Notice of Revocation and officially notifying the agent. It is important to document this notification to prevent future actions by the agent.",
+        "ar": "نعم. يمكن للموكل إلغاء الوكالة الخاصة في أي وقت من خلال زيارة كاتب العدل لإصدار إشعار بالإلغاء وإخطار الوكيل رسميًا. من المهم توثيق هذا الإخطار لمنع أي تصرفات مستقبلية من الوكيل.",
+        "ru": "Да. Доверитель может отозвать специальную доверенность в любое время, обратившись к нотариусу для выдачи уведомления об отзыве и официально уведомив представителя. Важно задокументировать это уведомление, чтобы предотвратить будущие действия представителя.",
+        "zh": "可以。委托人可以随时通过前往公证处发出撤销通知并正式通知代理人来撤销特别授权委托书。记录此通知以防止代理人未来采取行动非常重要。",
+        "es": "Sí. El poderdante puede revocar un Poder Especial en cualquier momento visitando a un notario para emitir un Aviso de Revocación y notificar oficialmente al agente. Es importante documentar esta notificación para evitar acciones futuras del agente."
+      }
+    },
+    {
+      "q": {
+        "en": "Can I use a General POA for a property sale in Dubai?",
+        "ar": "هل يمكنني استخدام وكالة عامة لبيع عقار في دبي؟",
+        "ru": "Можно ли использовать общую доверенность для продажи недвижимости в Дубае?",
+        "zh": "我可以使用一般授权委托书在迪拜出售房产吗？",
+        "es": "¿Puedo usar un Poder General para vender una propiedad en Dubái?"
+      },
+      "a": {
+        "en": "It is not recommended. DLD and other authorities often require explicit, transaction-specific powers for property sales. A General POA may be rejected. For property transactions, a Special Real Estate POA is the safer and more reliable option. See our [[/power-of-attorney/real-estate|Real Estate POA service]].",
+        "ar": "لا ينصح بذلك. غالبًا ما تتطلب دائرة الأراضي والجهات الأخرى صلاحيات صريحة خاصة بالمعاملة لبيع العقارات. قد يتم رفض الوكالة العامة. لمعاملات العقارات، تعتبر الوكالة العقارية الخاصة الخيار الأكثر أمانًا وموثوقية. راجع [[/power-of-attorney/real-estate|خدمة الوكالة العقارية]].",
+        "ru": "Это не рекомендуется. DLD и другие органы часто требуют явных, специфичных для сделки полномочий для продажи недвижимости. Общая доверенность может быть отклонена. Для сделок с недвижимостью специальная доверенность на недвижимость является более безопасным и надежным вариантом. См. нашу [[/power-of-attorney/real-estate|услугу доверенности на недвижимость]].",
+        "zh": "不建议这样做。DLD 和其他当局通常要求房产销售具有明确的、针对具体交易的权限。一般授权委托书可能会被拒绝。对于房产交易，特别房地产授权委托书是更安全、更可靠的选择。请参阅我们的[[/power-of-attorney/real-estate|房地产授权委托书服务]]。",
+        "es": "No se recomienda. El DLD y otras autoridades a menudo exigen facultades explícitas y específicas de la transacción para la venta de propiedades. Un Poder General puede ser rechazado. Para transacciones inmobiliarias, un Poder Especial Inmobiliario es la opción más segura y confiable. Consulte nuestro [[/power-of-attorney/real-estate|servicio de Poder Inmobiliario]]."
+      }
+    }
+  ],
+  "related": [
+    "power-of-attorney-types-dubai",
+    "difference-between-general-and-special-poa-uae",
+    "how-to-get-poa-dubai"
+  ]
+},
+
+
     "power-of-attorney-types-dubai": {
       "title_en": "Types of Power of Attorney in Dubai — Choose by Transaction, Not by Label",
       "title_ar": "أنواع الوكالات في دبي — اختر الوكالة بحسب المعاملة لا بحسب الاسم",
@@ -31403,6 +32453,11 @@
         "poa-for-banking-uae-guide"
       ]
     },
+	
+	
+	
+	
+	
     "affidavit-dubai-complete-guide": {
       "title_en": "Affidavit in Dubai — When You Need a Notarized Declaration (and When You Don’t)",
       "title_ar": "الإقرار المصدق في دبي — متى تحتاجه ومتى لا يكون هو المسار الصحيح؟",
@@ -31733,6 +32788,12 @@
         "notarize-documents-without-visiting-uae",
         "last-will-testament-dubai-expats"
       ],
+	  
+	  
+	  
+	  
+	  
+	  
       "rich_blocks": [
         {
           "type": "para",

@@ -16,7 +16,6 @@ const WA_ICON = (
 function buildNav(lang: Lang) {
   const l = lang
   return [
-    // ── 1. POWER OF ATTORNEY — Mega Menu (3 columns) ──────────────────────────
     {
       key: 'poa',
       label: { en: 'Power of Attorney', ar: 'الوكالات الرسمية', ru: 'Доверенности', zh: '授权委托书', es: 'Poderes Notariales' },
@@ -27,7 +26,7 @@ function buildNav(lang: Lang) {
           items: [
             { href: `/${l}/power-of-attorney/general`,           label: { en: 'General POA',         ar: 'وكالة عامة',      ru: 'Генеральная',     zh: '一般授权书',   es: 'POA General' } },
             { href: `/${l}/power-of-attorney/special`,           label: { en: 'Special POA',         ar: 'وكالة خاصة',      ru: 'Специальная',     zh: '特别授权书',   es: 'POA Especial' } },
-            { href: `/${l}/power-of-attorney/child-travel`,      label: { en: 'Child Travel Auth.',  ar: 'إذن سفر طفل',     ru: 'Выезд ребёнка',   zh: '儿童旅行授权', es: 'Viaje Menor' } },
+            { href: `/${l}/power-of-attorney/child-travel`,      label: { en: 'Child Travel Auth',  ar: 'إذن سفر طفل',     ru: 'Выезд ребёнка',   zh: '儿童旅行授权', es: 'Viaje Menor' } },
             { href: `/${l}/power-of-attorney/inheritance`,       label: { en: 'Inheritance POA',     ar: 'وكالة ميراث',     ru: 'На наследство',   zh: '继承授权书',   es: 'Herencia' } },
             { href: `/${l}/power-of-attorney/court`,             label: { en: 'Court Case POA',      ar: 'وكالة قضائية',    ru: 'Судебная',        zh: '法院授权书',   es: 'Judicial' } },
           ],
@@ -58,8 +57,6 @@ function buildNav(lang: Lang) {
       ],
       cta: { href: `/${l}/power-of-attorney`, label: { en: 'All POA Types →', ar: '← جميع أنواع الوكالات', ru: 'Все типы →', zh: '全部类型 →', es: 'Todos los Tipos →' } },
     },
-
-    // ── 2. CORPORATE ─────────────────────────────────────────────────────────
     {
       key: 'corporate',
       label: { en: 'Corporate', ar: 'الشركات', ru: 'Корпоративные', zh: '企业', es: 'Corporativo' },
@@ -73,8 +70,6 @@ function buildNav(lang: Lang) {
         { href: `/${l}/corporate/contract`,              label: { en: 'Commercial Contract',  ar: 'عقد تجاري',           ru: 'Коммерч. договор',     zh: '商业合同',    es: 'Contrato' } },
       ],
     },
-
-    // ── 3. NOTARIZATION & ATTESTATION ────────────────────────────────────────
     {
       key: 'notarization',
       label: { en: 'Notarization', ar: 'التوثيق والتصديق', ru: 'Нотариат', zh: '公证与认证', es: 'Notarización' },
@@ -92,8 +87,6 @@ function buildNav(lang: Lang) {
         { href: `/${l}/legal-translation/court`,   label: { en: '↳ Court Translation',  ar: '↳ ترجمة للمحاكم',    ru: '↳ Судебный перевод',    zh: '↳ 法院翻译',   es: '↳ Trad. Judicial' } },
       ],
     },
-
-    // ── 4. TENANCY & LEGAL ───────────────────────────────────────────────────
     {
       key: 'tenancy',
       label: { en: 'Tenancy & Legal', ar: 'الإيجار والقانون', ru: 'Аренда и право', zh: '租赁与法律', es: 'Arrendamiento' },
@@ -106,8 +99,6 @@ function buildNav(lang: Lang) {
         { href: `/${l}/what-is-tableegh`,              label: { en: 'What is Tableegh?',       ar: 'ما هو التبليغ؟',        ru: 'Что такое Tableegh?',      zh: '什么是Tableegh?', es: '¿Qué es Tableegh?' } },
       ],
     },
-
-    // ── 5. RENTAL DISPUTES (RDC) ─────────────────────────────────────────────
     {
       key: 'rdc',
       label: { en: 'Rental Disputes', ar: 'المنازعات الإيجارية', ru: 'Арендные споры', zh: '租赁纠纷', es: 'Disputas de Alquiler' },
@@ -140,8 +131,6 @@ function buildNav(lang: Lang) {
       ],
       cta: { href: `/${l}/rdc-support`, label: { en: 'All RDC Services →', ar: '← جميع خدمات مركز فض المنازعات الإيجارية', ru: 'Все услуги RDC →', zh: '全部RDC服务 →', es: 'Todos los Servicios RDC →' } },
     },
-
-    // ── 5. RESOURCES ─────────────────────────────────────────────────────────
     {
       key: 'resources',
       label: { en: 'Resources', ar: 'المصادر', ru: 'Ресурсы', zh: '资源', es: 'Recursos' },
@@ -159,10 +148,12 @@ function buildNav(lang: Lang) {
 }
 
 export default function Navbar({ lang }: Props) {
-  const [mobileOpen, setMobileOpen] = useState(false)
+  const [drawerOpen, setDrawerOpen] = useState(false)
+  const [expanded, setExpanded] = useState<string | null>(null)
+  const [langOpen, setLangOpen] = useState(false)
   const [activeKey, setActiveKey] = useState<string | null>(null)
-  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null)
   const pathname = usePathname()
+  const langTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const navItems = buildNav(lang)
   const isRTL = lang === 'ar'
@@ -179,6 +170,11 @@ export default function Navbar({ lang }: Props) {
 
   function openDropdown(key: string) {
     if (timeoutRef.current) clearTimeout(timeoutRef.current)
+    if (langTimeoutRef.current) {
+      clearTimeout(langTimeoutRef.current)
+      langTimeoutRef.current = null
+    }
+    setLangOpen(false)
     setActiveKey(key)
   }
 
@@ -186,313 +182,423 @@ export default function Navbar({ lang }: Props) {
     timeoutRef.current = setTimeout(() => setActiveKey(null), 300)
   }
 
-  useEffect(() => () => { if (timeoutRef.current) clearTimeout(timeoutRef.current) }, [])
+  function openLang() {
+    if (langTimeoutRef.current) {
+      clearTimeout(langTimeoutRef.current)
+      langTimeoutRef.current = null
+    }
+    setLangOpen(true)
+  }
+
+  function scheduleLangClose() {
+    if (langTimeoutRef.current) clearTimeout(langTimeoutRef.current)
+    langTimeoutRef.current = setTimeout(() => {
+      setLangOpen(false)
+      langTimeoutRef.current = null
+    }, 250)
+  }
+
+  useEffect(() => {
+    if (drawerOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = ''
+    }
+    return () => { document.body.style.overflow = '' }
+  }, [drawerOpen])
+
+  useEffect(() => {
+    setDrawerOpen(false)
+    setExpanded(null)
+    setActiveKey(null)
+  }, [pathname])
+
+  useEffect(() => () => {
+    if (langTimeoutRef.current) clearTimeout(langTimeoutRef.current)
+    if (timeoutRef.current) clearTimeout(timeoutRef.current)
+  }, [])
 
   return (
-    <header className="sticky top-0 z-50 shadow-xl shadow-navy-900/30" style={{ background: '#0a1628', borderBottom: '1px solid rgba(212,180,58,0.12)' }}>
-      <div className="mx-auto max-w-7xl px-4 lg:px-8">
-        <div className="flex h-16 items-center justify-between gap-4">
+    <>
+      <header
+        className="sticky top-0 z-40 shadow-xl shadow-navy-900/30"
+        style={{ background: '#0a1628', borderBottom: '1px solid rgba(212,180,58,0.12)' }}
+      >
+        {/* ✅ Dynamic container */}
+        <div className="mx-auto w-full max-w-[min(1920px,98vw)] px-[clamp(0.75rem,2.5vw,2rem)]">
+          <div className="flex h-16 items-center justify-between gap-3 lg:gap-4 xl:gap-5">
 
-          {/* ── Logo ── */}
-          <Link href={`/${lang}`} className="flex items-center gap-3 shrink-0 group">
-            <div className="w-9 h-9 rounded-xl bg-gold-400 flex items-center justify-center shadow-md shadow-gold-400/20 group-hover:bg-gold-300 transition-colors">
-              <span className="font-serif font-bold text-navy-900 text-lg leading-none">P</span>
-            </div>
-            <div className="hidden sm:block leading-none">
-              <div className="font-serif font-bold text-white text-[15px] tracking-tight group-hover:text-gold-100 transition-colors">E-Notary Dubai</div>
-              <div className="text-[9px] text-gold-500/60 uppercase tracking-[0.15em] mt-0.5">LICENSED NOTARY SUPPORT · DUBAI</div>
-            </div>
-          </Link>
+            <Link href={`/${lang}`} className="flex items-center gap-1.5 shrink-0 group min-w-0">
+              <div className="w-7 h-7 lg:w-8 lg:h-8 rounded-lg lg:rounded-xl bg-navy-700 flex items-center justify-center shadow-md shadow-gold-400/20 group-hover:bg-gold-300 transition-colors overflow-hidden shrink-0">
+                <img src="/logo.png" alt="E-Notary Dubai" className="w-full h-full object-contain p-0.5 lg:p-1" />
+              </div>
+              <div className="hidden md:block leading-none min-w-0">
+                <div className="font-serif font-bold text-white text-[11px] lg:text-[12px] xl:text-[13px] 2xl:text-[15px] tracking-tight group-hover:text-gold-100 transition-colors whitespace-nowrap">E-Notary Dubai</div>
+                <div className="text-[7.5px] lg:text-[8px] xl:text-[9px] text-gold-500/60 uppercase tracking-[0.1em] lg:tracking-[0.12em] xl:tracking-[0.15em] mt-0.5 whitespace-nowrap">LICENSED NOTARY SUPPORT · DUBAI</div>
+              </div>
+            </Link>
 
-          {/* ── Desktop Nav ── */}
-          <nav className="hidden lg:flex items-center gap-0.5 flex-1 justify-center">
-            {navItems.map((item) => {
-              const label = t(item.label, lang)
-              const isActive = activeKey === item.key
-              return (
-                <div
-                  key={item.key}
-                  className="relative"
-                  onMouseEnter={() => openDropdown(item.key)}
-                  onMouseLeave={scheduleClose}
-                >
-                  <button
-                    className={`flex items-center gap-1.5 px-3.5 py-2 text-sm font-medium rounded-lg transition-all duration-150 ${
-                      isActive
-                        ? 'text-gold-400 bg-white/[0.07]'
-                        : 'text-navy-300 hover:text-white hover:bg-white/[0.05]'
-                    }`}
+            {/* ── Desktop Nav — أفقي، يظهر من lg+ ── */}
+            <nav className="hidden lg:flex items-center flex-1 justify-center min-w-0">
+              {navItems.map((item) => {
+                const label = t(item.label, lang)
+                const isActive = activeKey === item.key
+                return (
+                  <div
+                    key={item.key}
+                    className="relative shrink-0"
+                    onMouseEnter={() => openDropdown(item.key)}
+                    onMouseLeave={scheduleClose}
                   >
-                    {label}
-                    <svg
-                      className={`w-3 h-3 transition-transform duration-200 ${isActive ? 'rotate-180 text-gold-400' : 'opacity-40'}`}
-                      fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    <button
+                      className={`flex items-center gap-0.5 xl:gap-1 px-1.5 xl:px-2 2xl:px-2.5 py-2 text-[11px] xl:text-[12px] 2xl:text-[13px] font-medium rounded-lg transition-all duration-150 whitespace-nowrap ${
+                        isActive
+                          ? 'text-gold-400 bg-white/[0.07]'
+                          : 'text-navy-300 hover:text-white hover:bg-white/[0.05]'
+                      }`}
                     >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
-                    </svg>
-                  </button>
-
-                  {/* ── Mega Menu (POA — 3 cols) ── */}
-                  {/* Always rendered so the links exist in the served HTML and are
-                      crawlable; visibility is CSS-driven, not conditional mounting. */}
-                  {(item as any).mega && (
-                    <>
-                      {isActive && (
-                        <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
-                      )}
-                      <div
-                        className={`absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 z-50 p-5 transition-opacity duration-150 ${
-                          isActive ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
-                        }`}
-                        style={{
-                          width: 'min(720px, calc(100vw - 2rem))',
-                          left: '50%',
-                          transform: 'translateX(-50%)',
-                          maxWidth: 'calc(100vw - 2rem)',
-                        }}
-                        onMouseEnter={() => openDropdown(item.key)}
-                        onMouseLeave={scheduleClose}
+                      {label}
+                      <svg
+                        className={`w-2.5 h-2.5 transition-transform duration-200 ${isActive ? 'rotate-180 text-gold-400' : 'opacity-40'}`}
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24"
                       >
-                        <div className="grid grid-cols-3 gap-x-6">
-                          {(item as any).cols.map((col: any, ci: number) => (
-                            <div key={ci}>
-                              <div className="flex items-center gap-2 mb-3 px-2">
-                                <div className="h-px flex-1 bg-navy-100" />
-                                <p className="text-[9px] font-bold uppercase tracking-[0.14em] text-navy-400 shrink-0">
-                                  {t(col.heading, lang)}
-                                </p>
-                                <div className="h-px flex-1 bg-navy-100" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
+                      </svg>
+                    </button>
+
+                    {/* ── Mega Menu (POA / RDC — 3 columns) ── */}
+                    {(item as any).mega && (
+                      <>
+                        {isActive && (
+                          <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
+                        )}
+                        <div
+                          className={`absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 z-50 p-5 transition-opacity duration-150 ${
+                            isActive ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
+                          }`}
+                          style={{
+                            width: 'min(720px, calc(100vw - 2rem))',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
+                            maxWidth: 'calc(100vw - 2rem)',
+                          }}
+                          onMouseEnter={() => openDropdown(item.key)}
+                          onMouseLeave={scheduleClose}
+                        >
+                          <div className="grid grid-cols-3 gap-x-6">
+                            {(item as any).cols.map((col: any, ci: number) => (
+                              <div key={ci}>
+                                <div className="flex items-center gap-2 mb-3 px-2">
+                                  <div className="h-px flex-1 bg-navy-100" />
+                                  <p className="text-[9px] font-bold uppercase tracking-[0.14em] text-navy-400 shrink-0">
+                                    {t(col.heading, lang)}
+                                  </p>
+                                  <div className="h-px flex-1 bg-navy-100" />
+                                </div>
+                                <div className="space-y-0.5">
+                                  {col.items.map((sub: any) => (
+                                    <Link
+                                      key={sub.href}
+                                      href={sub.href}
+                                      className="flex items-center gap-2 px-2 py-1.5 text-sm text-navy-700 hover:text-navy-900 hover:bg-navy-50 rounded-lg transition-colors group"
+                                    >
+                                      <span className="w-1 h-1 rounded-full bg-gold-400 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                      {t(sub.label, lang)}
+                                    </Link>
+                                  ))}
+                                </div>
                               </div>
-                              <div className="space-y-0.5">
-                                {col.items.map((sub: any) => (
-                                  <Link
-                                    key={sub.href}
-                                    href={sub.href}
-                                    className="flex items-center gap-2 px-2 py-1.5 text-sm text-navy-700 hover:text-navy-900 hover:bg-navy-50 rounded-lg transition-colors group"
-                                    onClick={() => setActiveKey(null)}
-                                  >
-                                    <span className="w-1 h-1 rounded-full bg-gold-400 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
-                                    {t(sub.label, lang)}
-                                  </Link>
-                                ))}
-                              </div>
+                            ))}
+                          </div>
+
+                          {(item as any).cta && (
+                            <div className="mt-4 pt-3 border-t border-navy-100">
+                              <Link
+                                href={(item as any).cta.href}
+                                className="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-bold transition-all group"
+                                style={{ background: 'linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%)' }}
+                              >
+                                <span className="text-white group-hover:text-gold-300 transition-colors">{t((item as any).cta.label, lang)}</span>
+                                <svg className="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isRTL ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"} />
+                                </svg>
+                              </Link>
                             </div>
+                          )}
+                        </div>
+                      </>
+                    )}
+
+                    {/* ── Regular Dropdown ── */}
+                    {!(item as any).mega && (item as any).items && (
+                      <>
+                        {isActive && (
+                          <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
+                        )}
+                        <div
+                          className={`absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 p-2 z-50 transition-opacity duration-150 ${
+                            isActive ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
+                          }`}
+                          style={{
+                            minWidth: 240,
+                            maxWidth: 'calc(100vw - 2rem)',
+                            insetInlineStart: isRTL ? 'auto' : '-4px',
+                            insetInlineEnd: isRTL ? '-4px' : 'auto',
+                          }}
+                          onMouseEnter={() => openDropdown(item.key)}
+                          onMouseLeave={scheduleClose}
+                        >
+                          {(item as any).items.map((sub: any) => (
+                            <Link
+                              key={sub.href}
+                              href={sub.href}
+                              className="flex items-center gap-2.5 px-3 py-2 text-sm text-navy-600 hover:text-navy-900 hover:bg-gold-400/5 rounded-lg transition-all group border border-transparent hover:border-gold-400/15"
+                            >
+                              <svg className="w-3.5 h-3.5 text-gold-400 shrink-0 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-x-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d={isRTL ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"} />
+                              </svg>
+                              <span className="font-medium">{t(sub.label, lang)}</span>
+                            </Link>
                           ))}
                         </div>
-                        {/* CTA bar */}
-                        <div className="mt-4 pt-3 border-t border-navy-100">
-                          <Link
-                            href={(item as any).cta.href}
-                            className="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-bold transition-all group"
-                            style={{ background: 'linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%)' }}
-                            onClick={() => setActiveKey(null)}
-                          >
-                            <span className="text-white group-hover:text-gold-300 transition-colors">{t((item as any).cta.label, lang)}</span>
-                            <svg className="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={isRTL ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"} />
-                            </svg>
-                          </Link>
-                        </div>
-                      </div>
-                    </>
-                  )}
+                      </>
+                    )}
+                  </div>
+                )
+              })}
+            </nav>
 
-                  {/* ── Regular Dropdown ── */}
-                  {!(item as any).mega && (item as any).items && (
-                    <>
-                      {isActive && (
-                        <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
-                      )}
-                      <div
-                        className={`absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 p-2 z-50 transition-opacity duration-150 ${
-                          isActive ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
-                        }`}
-                        style={{
-                          minWidth: 260,
-                          maxWidth: 'calc(100vw - 2rem)',
-                          insetInlineStart: isRTL ? 'auto' : '-4px',
-                          insetInlineEnd: isRTL ? '-4px' : 'auto',
-                        }}
-                        onMouseEnter={() => openDropdown(item.key)}
-                        onMouseLeave={scheduleClose}
-                      >
-                        {(item as any).items.map((sub: any) => (
-                          <Link
-                            key={sub.href}
-                            href={sub.href}
-                            className="flex items-center gap-2.5 px-3 py-2 text-sm text-navy-600 hover:text-navy-900 hover:bg-gold-400/5 rounded-lg transition-all group border border-transparent hover:border-gold-400/15"
-                            onClick={() => setActiveKey(null)}
-                          >
-                            <svg className="w-3.5 h-3.5 text-gold-400 shrink-0 opacity-0 group-hover:opacity-100 transition-all -translate-x-1 group-hover:translate-x-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d={isRTL ? "M15 19l-7-7 7-7" : "M9 5l7 7-7 7"} />
-                            </svg>
-                            <span className="font-medium">{t(sub.label, lang)}</span>
-                          </Link>
-                        ))}
-                      </div>
-                    </>
-                  )}
-                </div>
-              )
-            })}
-          </nav>
-
-          {/* ── Right side ── */}
-          <div className="flex items-center gap-2 shrink-0">
-            {/* Language switcher */}
-            <div className="hidden sm:flex items-center">
-              {languages.map((l, i) => (
-                <span key={l.code} className="flex items-center">
-                  {i > 0 && <span className="text-navy-600 text-xs mx-0.5">|</span>}
-                  <Link
-                    href={switchLangPath(l.code)}
-                    className={`text-xs font-semibold px-1.5 py-1 rounded transition-colors ${
-                      lang === l.code
-                        ? 'text-gold-400'
-                        : 'text-navy-400 hover:text-gold-400'
-                    }`}
-                    title={l.title}
-                  >
-                    {l.label}
-                  </Link>
-                </span>
-              ))}
-            </div>
-
-            {/* Phone */}
-            <a
-              href={`tel:${site.phone}`}
-              className="hidden md:flex items-center gap-1.5 text-sm font-semibold text-navy-300 hover:text-white px-3 py-1.5 rounded-lg border border-navy-700 hover:border-navy-500 transition-colors whitespace-nowrap"
-            >
-              <span dir="ltr" className="inline-block">{site.phone_display}</span>
-            </a>
-
-            {/* WhatsApp CTA */}
-            <a
-              href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1.5 text-sm font-bold px-3.5 py-1.5 rounded-lg transition-colors text-white"
-              style={{ background: '#25D366' }}
-            >
-              {WA_ICON}
-              <span className="hidden sm:inline">{t(cta.whatsapp, lang)}</span>
-            </a>
-
-            {/* Mobile hamburger */}
-            <button
-              onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 rounded-lg text-navy-300 hover:text-white hover:bg-navy-800 transition-colors"
-              aria-label="Menu"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {mobileOpen
-                  ? <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                  : <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                }
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        {/* ── Mobile menu ── */}
-        {mobileOpen && (
-          <div className="lg:hidden border-t border-navy-700/50 py-3 max-h-[80vh] overflow-y-auto">
-            {/* Language row */}
-            <div className="flex items-center gap-1 px-4 pb-3 mb-2 border-b border-navy-700/50">
-              {languages.map((l, i) => (
-                <span key={l.code} className="flex items-center">
-                  {i > 0 && <span className="text-navy-600 text-xs mx-0.5">|</span>}
-                  <Link
-                    href={switchLangPath(l.code)}
-                    className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
-                      lang === l.code ? 'text-gold-400' : 'text-navy-400 hover:text-gold-400'
-                    }`}
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    {l.label}
-                  </Link>
-                </span>
-              ))}
-            </div>
-
-            {navItems.map((item) => (
-              <div key={item.key} className="mb-1">
+            <div className="flex items-center gap-1 xl:gap-1.5 shrink-0">
+              <div className="relative hidden sm:block">
                 <button
-                  onClick={() => setMobileExpanded(mobileExpanded === item.key ? null : item.key)}
-                  className="w-full flex items-center justify-between px-4 py-2.5 text-sm font-semibold text-white hover:text-gold-400 transition-colors"
+                  onClick={() => setLangOpen((v) => !v)}
+                  onMouseEnter={openLang}
+                  onMouseLeave={scheduleLangClose}
+                  className={`flex items-center gap-1 px-1.5 xl:px-2.5 py-1.5 text-xs font-semibold rounded-lg transition-colors ${
+                    langOpen ? 'text-gold-400 bg-white/[0.07]' : 'text-navy-300 hover:text-white hover:bg-white/[0.05]'
+                  }`}
                 >
-                  <span>{t(item.label, lang)}</span>
-                  <svg
-                    className={`w-4 h-4 text-navy-400 transition-transform ${mobileExpanded === item.key ? 'rotate-180' : ''}`}
-                    fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                  >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                  </svg>
+                  <span className="hidden xl:inline whitespace-nowrap">{languages.find((l) => l.code === lang)?.title || 'English'}</span>
+                  <svg className={`w-3 h-3 transition-transform ${langOpen ? 'rotate-180' : 'opacity-50'}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
 
-                {mobileExpanded === item.key && (
-                  <div className="bg-navy-800/50 mx-3 rounded-xl mb-1 py-1">
-                    {/* Mega menu — flatten all cols */}
-                    {(item as any).mega && (item as any).cols.map((col: any) =>
-                      col.items.map((sub: any) => (
+                {langOpen && (
+                  <>
+                    <div className="absolute top-full left-0 right-0 h-2 z-40" onMouseEnter={openLang} onMouseLeave={scheduleLangClose} />
+                    <div
+                      className="absolute top-full mt-2 bg-white rounded-xl shadow-2xl border border-navy-100/80 p-1.5 z-50 min-w-[160px]"
+                      style={{ [isRTL ? 'left' : 'right']: 0 }}
+                      onMouseEnter={openLang}
+                      onMouseLeave={scheduleLangClose}
+                    >
+                      {languages.map((l) => (
+                        <Link
+                          key={l.code}
+                          href={switchLangPath(l.code)}
+                          className={`flex items-center justify-between gap-4 px-3 py-2 text-sm rounded-lg transition-colors ${
+                            lang === l.code ? 'bg-gold-50 text-gold-600 font-bold' : 'text-navy-600 hover:bg-navy-50 hover:text-navy-900 font-medium'
+                          }`}
+                          onClick={() => setLangOpen(false)}
+                        >
+                          <span>{l.title}</span>
+                          {lang === l.code && (
+                            <svg className="w-3.5 h-3.5 text-gold-500 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+                            </svg>
+                          )}
+                        </Link>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+
+              <a
+                href={`tel:${site.phone}`}
+                className="hidden 2xl:flex items-center gap-1.5 text-xs xl:text-sm font-semibold text-navy-300 hover:text-white px-2 xl:px-3 py-1.5 rounded-lg border border-navy-700 hover:border-navy-500 transition-colors whitespace-nowrap"
+              >
+                <span dir="ltr" className="inline-block">{site.phone_display}</span>
+              </a>
+
+              <a
+                href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-1.5 text-xs xl:text-sm font-bold h-10 sm:h-auto px-2.5 xl:px-3.5 py-1.5 rounded-lg transition-colors text-white shrink-0"
+                style={{ background: '#25D366' }}
+              >
+                <span className="w-4 h-4 shrink-0 inline-flex items-center justify-center">{WA_ICON}</span>
+                <span className="hidden xl:inline whitespace-nowrap">{t(cta.whatsapp, lang)}</span>
+              </a>
+
+              <button
+                onClick={() => setDrawerOpen(true)}
+                className="p-2.5 rounded-lg text-navy-300 hover:text-white hover:bg-navy-800 transition-colors"
+                aria-label="Open menu"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div
+        className={`fixed inset-0 z-50 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${
+          drawerOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+        }`}
+        onClick={() => setDrawerOpen(false)}
+        aria-hidden="true"
+      />
+
+      <aside
+        className={`fixed top-0 bottom-0 z-50 w-[85vw] max-w-sm bg-[#0a1628] shadow-2xl transition-transform duration-300 ease-out flex flex-col ${
+          drawerOpen
+            ? 'translate-x-0'
+            : isRTL ? '-translate-x-full' : 'translate-x-full'
+        }`}
+        style={{
+          [isRTL ? 'left' : 'right']: 0,
+          borderLeft: isRTL ? 'none' : '1px solid rgba(212,180,58,0.15)',
+          borderRight: isRTL ? '1px solid rgba(212,180,58,0.15)' : 'none',
+        }}
+        role="dialog"
+        aria-modal="true"
+      >
+        <div className="flex items-center justify-between px-5 py-4 border-b border-navy-800 shrink-0">
+          <span className="font-serif font-bold text-white text-base">Menu</span>
+          <button
+            onClick={() => setDrawerOpen(false)}
+            className="p-2 rounded-lg text-navy-300 hover:text-white hover:bg-navy-800 transition-colors"
+            aria-label="Close menu"
+          >
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto px-3 py-3">
+          <div className="flex items-center gap-1 px-2 pb-3 mb-2 border-b border-navy-800">
+            {languages.map((l, i) => (
+              <span key={l.code} className="flex items-center">
+                {i > 0 && <span className="text-navy-700 text-xs mx-0.5">|</span>}
+                <Link
+                  href={switchLangPath(l.code)}
+                  className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
+                    lang === l.code ? 'text-gold-400' : 'text-navy-400 hover:text-gold-400'
+                  }`}
+                  onClick={() => setDrawerOpen(false)}
+                >
+                  {l.label}
+                </Link>
+              </span>
+            ))}
+          </div>
+
+          {navItems.map((item) => (
+            <div key={item.key} className="mb-1">
+              <button
+                onClick={() => setExpanded(expanded === item.key ? null : item.key)}
+                className="w-full flex items-center justify-between px-3 py-3 text-sm font-semibold text-white hover:text-gold-400 rounded-lg hover:bg-white/[0.04] transition-colors"
+              >
+                <span>{t(item.label, lang)}</span>
+                <svg
+                  className={`w-4 h-4 text-navy-400 transition-transform ${expanded === item.key ? 'rotate-180' : ''}`}
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {expanded === item.key && (
+                <div className="bg-navy-800/50 mx-1 rounded-xl mb-2 py-1">
+                  {(item as any).mega && (item as any).cols.map((col: any, ci: number) => (
+                    <div key={ci}>
+                      {col.heading && (
+                        <p className="px-4 pt-2 pb-1 text-[10px] font-bold uppercase tracking-[0.14em] text-gold-500/70">
+                          {t(col.heading, lang)}
+                        </p>
+                      )}
+                      {col.items.map((sub: any) => (
                         <Link
                           key={sub.href}
                           href={sub.href}
                           className="block px-4 py-2 text-sm text-navy-300 hover:text-gold-400 transition-colors"
-                          onClick={() => setMobileOpen(false)}
+                          onClick={() => setDrawerOpen(false)}
                         >
                           {t(sub.label, lang)}
                         </Link>
-                      ))
-                    )}
-                    {/* Regular items */}
-                    {!(item as any).mega && (item as any).items?.map((sub: any) => (
-                      <Link
-                        key={sub.href}
-                        href={sub.href}
-                        className="block px-4 py-2 text-sm text-navy-300 hover:text-gold-400 transition-colors"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {t(sub.label, lang)}
-                      </Link>
-                    ))}
-                    {/* POA view all */}
-                    {(item as any).cta && (
-                      <Link
-                        href={(item as any).cta.href}
-                        className="block px-4 py-2 text-sm font-semibold text-gold-400 hover:text-gold-300 transition-colors border-t border-navy-700/50 mt-1 pt-2"
-                        onClick={() => setMobileOpen(false)}
-                      >
-                        {t((item as any).cta.label, lang)}
-                      </Link>
-                    )}
-                  </div>
-                )}
-              </div>
-            ))}
+                      ))}
+                    </div>
+                  ))}
 
-            {/* Mobile phone + WA */}
-            <div className="px-4 pt-3 mt-2 border-t border-navy-700/50 flex flex-col gap-2">
-              <a href={`tel:${site.phone}`} className="flex items-center gap-2 text-sm font-semibold text-navy-300 hover:text-white transition-colors">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/>
-                </svg>
-                <span dir="ltr" className="inline-block">{site.phone_display}</span>
-              </a>
-              <a
-                href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
-                target="_blank" rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm font-bold text-white px-4 py-2.5 rounded-xl"
-                style={{ background: '#25D366' }}
-              >
-                {WA_ICON}
-                {t(cta.whatsapp, lang)}
-              </a>
+                  {!(item as any).mega && (item as any).items?.map((sub: any) => (
+                    <Link
+                      key={sub.href}
+                      href={sub.href}
+                      className="block px-4 py-2 text-sm text-navy-300 hover:text-gold-400 transition-colors"
+                      onClick={() => setDrawerOpen(false)}
+                    >
+                      {t(sub.label, lang)}
+                    </Link>
+                  ))}
+
+                  {(item as any).cta && (
+                    <Link
+                      href={(item as any).cta.href}
+                      className="block px-4 py-2 text-sm font-semibold text-gold-400 hover:text-gold-300 transition-colors border-t border-navy-700/50 mt-1 pt-2"
+                      onClick={() => setDrawerOpen(false)}
+                    >
+                      {t((item as any).cta.label, lang)}
+                    </Link>
+                  )}
+                </div>
+              )}
             </div>
-          </div>
-        )}
-      </div>
-    </header>
+          ))}
+        </div>
+
+        <div className="px-4 py-4 border-t border-navy-800 flex flex-col gap-2 shrink-0">
+          <a
+            href={`tel:${site.phone}`}
+            className="flex items-center gap-2 text-sm font-semibold text-navy-300 hover:text-white transition-colors"
+          >
+            <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.948V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z"/>
+            </svg>
+            <span dir="ltr" className="inline-block">{site.phone_display}</span>
+          </a>
+
+          <a
+            href={`mailto:${site.email}`}
+            className="flex items-center justify-center gap-2 text-sm font-bold text-navy-900 px-4 py-2.5 rounded-xl bg-white hover:bg-gold-50 transition-colors w-full"
+          >
+            <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
+            {t({ en:'Email Us', ar:'راسلنا', ru:'Почта', zh:'邮件', es:'Email' }, lang)}
+          </a>
+
+          <a
+            href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 text-sm font-bold text-white px-4 py-2.5 rounded-xl w-full"
+            style={{ background: '#25D366' }}
+          >
+            <span className="w-4 h-4 shrink-0 inline-flex items-center justify-center">{WA_ICON}</span>
+            {t(cta.whatsapp, lang)}
+          </a>
+        </div>
+      </aside>
+    </>
   )
 }

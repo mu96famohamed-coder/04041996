@@ -68,24 +68,13 @@ const blogContent = content.blog_content as Record<string, {
   date?: string;
 }>
 
-const BLOG_SLUGS = [
-  'how-to-get-poa-dubai',
-  'power-of-attorney-types-dubai',
-  'difference-between-general-and-special-poa-uae',
-  'poa-for-banking-uae-guide',
-  'corporate-poa-vs-individual-poa-uae',
-  'mofa-attestation-guide',
-  'eviction-notice-requirements-dubai',
-  'whatsapp-eviction-notice-dubai-valid',
-  'rdc-filing-guide-dubai',
-  'how-to-attend-rdc-hearing-dubai-2026',
-  'last-will-testament-dubai-expats',
-  'travelling-minor-child-uae-rules',
-  'notary-public-vs-lawyer-dubai',
-  'notarize-documents-without-visiting-uae',
-  'affidavit-dubai-complete-guide',
-  'corporate-documents-dubai',
-]
+const BLOG_SLUGS = Object.keys(blogContent)
+  .filter((slug) => blogContent[slug] && (blogContent[slug] as any).title_en)
+  .sort((a, b) => {
+    const dateA = blogContent[a]?.date ? new Date(blogContent[a].date).getTime() : 0
+    const dateB = blogContent[b]?.date ? new Date(blogContent[b].date).getTime() : 0
+    return dateB - dateA
+  })
 
 export default async function BlogPage({ params }: Props) {
   const { lang } = await params
@@ -121,9 +110,8 @@ export default async function BlogPage({ params }: Props) {
               { year: 'numeric', month: 'short', day: 'numeric' }
             ) : null
             return (
-              <Link
+              <div
                 key={slug}
-                href={`/${lang}/blog/${slug}`}
                 className="blog-card group"
               >
                 <div className="flex items-center justify-between mb-3">
@@ -135,15 +123,17 @@ export default async function BlogPage({ params }: Props) {
                   </span>
                 </div>
                 <h2 className="font-serif font-bold text-navy-900 text-sm leading-snug mb-2 group-hover:text-gold-600 transition-colors line-clamp-2">
-                  {title}
+                  <Link
+                    href={`/${lang}/blog/${slug}`}
+                    className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none focus-visible:after:ring-2 focus-visible:after:ring-gold-400 focus-visible:after:rounded-2xl"
+                  >
+                    {title}
+                  </Link>
                 </h2>
                 {desc && (
-                  <p className="text-xs text-navy-500 leading-relaxed mb-4 line-clamp-2">{desc}</p>
+                  <p className="text-xs text-navy-500 leading-relaxed line-clamp-2">{desc}</p>
                 )}
-                <span className="inline-flex items-center gap-1 text-xs font-semibold text-gold-600 group-hover:gap-2 transition-all duration-200">
-                  {t(LABELS.read, lang)}
-                </span>
-              </Link>
+              </div>
             )
           })}
         </div>

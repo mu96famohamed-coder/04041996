@@ -284,23 +284,22 @@ export default async function BlogArticlePage({ params }: Props) {
         </div>
 
         {/* Related articles */}
-        <div className="mt-12">
-          <h2 className="font-serif text-lg font-bold text-navy-900 mb-4">{t(LABELS.related, lang)}</h2>
-          <div className="grid gap-3 sm:grid-cols-3">
-            {related.map(relSlug => {
-              const relBc = blogData[relSlug]
-              const relTitleKey = `title_${lang}` as keyof typeof relBc
-              const relTitle = (relBc?.[relTitleKey] as string) || relBc?.title_en || slugToTitle(relSlug)
-              return (
-                <Link key={relSlug} href={`/${lang}/blog/${relSlug}`}
-                  className="group bg-navy-50 rounded-xl p-4 border border-navy-100 hover:border-gold-400/40 transition-colors">
-                  <p className="text-xs font-semibold text-navy-800 leading-snug mb-2 group-hover:text-navy-600 line-clamp-2">{relTitle}</p>
-                  <span className="text-xs text-gold-600 font-semibold">{t(LABELS.read, lang)}</span>
-                </Link>
-              )
-            })}
-          </div>
-        </div>
+<div className="mt-12">
+  <h2 className="font-serif text-lg font-bold text-navy-900 mb-4">{t(LABELS.related, lang)}</h2>
+  <div className="grid gap-3 sm:grid-cols-3">
+    {related.map(relSlug => {
+      const relBc = blogData[relSlug]
+      const relTitleKey = `title_${lang}` as keyof typeof relBc
+      const relTitle = (relBc?.[relTitleKey] as string) || relBc?.title_en || slugToTitle(relSlug)
+      return (
+        <Link key={relSlug} href={`/${lang}/blog/${relSlug}`}
+          className="group bg-navy-50 rounded-xl p-4 border border-navy-100 hover:border-gold-400/40 transition-colors">
+          <p className="text-xs font-semibold text-navy-800 leading-snug group-hover:text-gold-600 transition-colors line-clamp-2">{relTitle}</p>
+        </Link>
+      )
+    })}
+  </div>
+</div>
       </div>
     </article>
   )
