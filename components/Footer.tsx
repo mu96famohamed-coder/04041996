@@ -55,17 +55,12 @@ const HEADERS = {
 }
 
 export default function Footer({ lang }: Props) {
+  // Dynamic year — updates automatically every January 1st
+  const currentYear = new Date().getFullYear()
+
   return (
     <footer className="bg-navy-900 border-t border-navy-800">
       <div className="mx-auto w-full max-w-[min(1920px,98vw)] px-[clamp(0.75rem,2.5vw,2rem)] py-12">
-
-        {/* ══════════════════════════════════════════════════════════════════
-            LAYOUT:
-              - ≥ 1280px : Brand (2 cols) + 4 link columns + contact  → صف واحد
-              - 768-1279 : Brand كامل في صف، ثم 4 أعمدة في صف آخر
-              - 640-767  : Brand كامل، ثم 2×2 أعمدة
-              - < 640    : عمود واحد
-           ══════════════════════════════════════════════════════════════════ */}
 
         {/* ── Brand section ── */}
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pb-8 mb-8 border-b border-navy-800">
@@ -194,7 +189,7 @@ export default function Footer({ lang }: Props) {
             </ul>
           </div>
         </div>
-
+ 
         {/* ── Marquee ── */}
         <div className="mt-10 pt-8 border-t border-navy-800" dir="ltr">
           <AcceptedByMarquee
@@ -206,7 +201,7 @@ export default function Footer({ lang }: Props) {
             showTitle={true}
           />
         </div>
-
+    
         {/* ── Payment methods ── */}
         <div className="mt-6 pt-6 border-t border-navy-800">
           <PaymentMethods lang={lang} tone="dark" />
@@ -214,7 +209,9 @@ export default function Footer({ lang }: Props) {
 
         {/* ── Bottom bar ── */}
         <div className="mt-6 pt-6 border-t border-navy-800 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-navy-500 text-center sm:text-start">{t(footer.copyright, lang)}</p>
+          <p className="text-xs text-navy-500 text-center sm:text-start">
+            © {currentYear} E-Notary Dubai
+          </p>
           <p className="text-xs text-navy-600 text-center sm:text-end">{t(footer.disclaimer, lang)}</p>
         </div>
       </div>
