@@ -178,7 +178,24 @@ export default function ServicePage({
                 )}
               </div>
 
-              {/* Stats row — same as homepage */}
+              {/* ── CTA buttons — same sizing as homepage ── */}
+              <div className="flex flex-wrap gap-3 mt-8">
+                <a href={waUrl} target="_blank" rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#20b958] transition-colors text-sm">
+                  {WA_ICON} {t(L.start_wa, lang)}
+                </a>
+                {extraButtons?.map((btn) => (
+                  <Link key={btn.href} href={btn.href}
+                    className={`inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-sm transition-colors ${
+                      btn.variant === 'primary' ? 'bg-gold-400 text-navy-900 hover:bg-gold-300'
+                      : 'bg-navy-800 text-navy-200 hover:bg-navy-700 border border-navy-700'
+                    }`}>
+                    {t(btn.label, lang)}
+                  </Link>
+                ))}
+              </div>
+
+              {/* ── Stats row — same as homepage ── */}
               <div className="flex flex-nowrap items-center justify-between sm:justify-start mt-8 pt-6 border-t border-navy-800">
                 <div className="flex items-center min-w-0">
                   <span className="font-serif font-bold text-gold-400 text-[clamp(1rem,5vw,1.875rem)]">5,000+</span>
@@ -195,23 +212,6 @@ export default function ServicePage({
                     <div>{t({en:'Supported',ar:'مدعومة',ru:'Поддержка',zh:'支持',es:'Soportados'}, lang)}</div>
                   </div>
                 </div>
-              </div>
-
-              {/* CTA buttons — same sizing as homepage */}
-              <div className="flex flex-wrap gap-3 mt-8">
-                <a href={waUrl} target="_blank" rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold px-7 py-3.5 rounded-xl hover:bg-[#20b958] transition-colors text-sm">
-                  {WA_ICON} {t(L.start_wa, lang)}
-                </a>
-                {extraButtons?.map((btn) => (
-                  <Link key={btn.href} href={btn.href}
-                    className={`inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-bold text-sm transition-colors ${
-                      btn.variant === 'primary' ? 'bg-gold-400 text-navy-900 hover:bg-gold-300'
-                      : 'bg-navy-800 text-navy-200 hover:bg-navy-700 border border-navy-700'
-                    }`}>
-                    {t(btn.label, lang)}
-                  </Link>
-                ))}
               </div>
             </div>
 
