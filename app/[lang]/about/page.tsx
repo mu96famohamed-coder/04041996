@@ -32,9 +32,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 const L = {
   h1:       { en: 'About E-Notary Dubai', ar: 'عن E-Notary Dubai', ru: 'О E-Notary Dubai', zh: '关于E-Notary Dubai', es: 'Sobre E-Notary Dubai' },
-  sub:      { en: 'Dubai\'s notary facilitation service — not a law firm.', ar: 'خدمة دعم وتنسيق التوثيق في دبي — وليست مكتب محاماة.', ru: 'Служба нотариальной поддержки в Дубае — не юридическая фирма.', zh: '迪拜公证支持与协调服务——非律师事务所。', es: 'Servicio de soporte notarial en Dubái — no es un bufete de abogados.' },
+  sub:      { en: 'Dubai\'s notary facilitation service', ar: 'خدمة دعم وتنسيق التوثيق في دبي', ru: 'Служба нотариальной поддержки в Дубае', zh: '迪拜公证支持与协调服务', es: 'Servicio de soporte notarial en Dubái' },
   what_h:   { en: 'What We Do', ar: 'ما نفعله', ru: 'Что мы делаем', zh: '我们的服务', es: 'Qué Hacemos' },
-  what_p:   { en: 'E-Notary Dubai prepares documents and coordinates the relevant notary, attestation, translation and filing process. Where official notarization or attestation is required, approval is issued by the competent authority or licensed provider — not by E-Notary Dubai. We are not a law firm and do not provide legal advice.', ar: 'E-Notary Dubai تُعد المستندات وتنسق مسار التوثيق أو التصديق أو الترجمة أو التقديم المناسب. وعندما يلزم اعتماد رسمي، يصدر من الجهة المختصة أو مقدم الخدمة المرخص — وليس من E-Notary Dubai. لسنا مكتب محاماة ولا نقدم استشارات قانونية.', ru: 'E-Notary Dubai готовит документы и координирует соответствующие нотариальные, аттестационные, переводческие и подачные процедуры. Официальное заверение или аттестация выдаётся компетентным органом или лицензированным провайдером, а не E-Notary Dubai. Мы не юридическая фирма и не даём юридических консультаций.', zh: 'E-Notary Dubai 负责文件准备，并协调相应的公证、认证、翻译及提交流程。需要官方批准时，由主管机关或持牌服务方作出，而不是由 E-Notary Dubai 作出。我们不是律师事务所，也不提供法律意见。', es: 'E-Notary Dubai prepara documentos y coordina la vía de notarización, atestación, traducción y presentación que corresponda. La aprobación oficial la emite la autoridad competente o proveedor autorizado, no E-Notary Dubai. No somos un bufete ni prestamos asesoramiento jurídico.' },
+  what_p:   { en: 'E-Notary Dubai prepares documents and coordinates the relevant notary, attestation, translation and filing process. Where official notarization or attestation is required, approval is issued by the competent authority or licensed provider — not by E-Notary Dubai.', ar: 'E-Notary Dubai تُعد المستندات وتنسق مسار التوثيق أو التصديق أو الترجمة أو التقديم المناسب. وعندما يلزم اعتماد رسمي، يصدر من الجهة المختصة أو مقدم الخدمة المرخص — وليس من E-Notary Dubai.', ru: 'E-Notary Dubai готовит документы и координирует соответствующие нотариальные, аттестационные, переводческие и подачные процедуры. Официальное заверение или аттестация выдаётся компетентным органом или лицензированным провайдером, а не E-Notary Dubai.', zh: 'E-Notary Dubai 负责文件准备，并协调相应的公证、认证、翻译及提交流程。需要官方批准时，由主管机关或持牌服务方作出，而不是由 E-Notary Dubai 作出。', es: 'E-Notary Dubai prepara documentos y coordina la vía de notarización, atestación, traducción y presentación que corresponda. La aprobación oficial la emite la autoridad competente o proveedor autorizado, no E-Notary Dubai.' },
   why_h:    { en: 'Why E-Notary Dubai?', ar: 'لماذا E-Notary Dubai؟', ru: 'Почему E-Notary Dubai?', zh: '为什么选择E-Notary Dubai？', es: '¿Por qué E-Notary Dubai?' },
   cta_h:    { en: 'Ready to Start?', ar: 'مستعد للبدء؟', ru: 'Готовы начать?', zh: '准备好开始了吗？', es: '¿Listo para Comenzar?' },
   cta_p:    { en: 'WhatsApp us — tell us what you need and we will review the request, quote and estimated timeline for the service.', ar: 'راسلنا على واتساب — أخبرنا بما تحتاج، وسنراجع الطلب ونوضح عرض السعر والمدة التقديرية بحسب الخدمة.', ru: 'Напишите нам в WhatsApp — расскажите, что нужно, и мы проверим запрос, расчёт и ориентировочный срок.', zh: '通过WhatsApp告诉我们您的需求，我们会审核请求并说明报价和预计时间。', es: 'Escríbanos por WhatsApp — díganos qué necesita y revisaremos la solicitud, cotización y plazo estimado.' },
@@ -69,6 +69,8 @@ const SERVICES: ({ href?: string } & Record<string, string>)[] = [
 export default async function AboutPage({ params }: Props) {
   const { lang } = await params
   const waUrl = `https://wa.me/${site.phone.replace(/\D/g,'')}?text=${encodeURIComponent('I need notary support in Dubai')}`
+  // Dynamic year — updates automatically every January 1st
+  const currentYear = new Date().getFullYear()
 
   return (
     <div className="bg-white">
@@ -77,8 +79,8 @@ export default async function AboutPage({ params }: Props) {
       <div className="hero-bg py-14">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-14 h-14 rounded-2xl bg-navy-700 flex items-center justify-center">
-              <span className="font-serif font-bold text-gold-400 text-2xl">P</span>
+            <div className="w-14 h-14 rounded-2xl bg-navy-700 flex items-center justify-center overflow-hidden shadow-lg shadow-gold-400/20 shrink-0">
+              <img src="/logo.png" alt="E-Notary Dubai" className="w-full h-full object-contain p-1.5" />
             </div>
             <div>
               <div className="font-serif font-bold text-white text-xl">E-Notary Dubai</div>
@@ -89,7 +91,7 @@ export default async function AboutPage({ params }: Props) {
           <p className="text-navy-300 text-base leading-relaxed max-w-2xl">{t(L.sub, lang)}</p>
         </div>
       </div>
-
+ 
       <div className="mx-auto max-w-4xl px-4 lg:px-8 py-14 space-y-14">
         {/* What we do */}
         <div>
@@ -129,16 +131,16 @@ export default async function AboutPage({ params }: Props) {
             ))}
           </div>
         </div>
-
+  
         {/* Disclaimer */}
         <div className="bg-amber-50 border border-amber-200 rounded-2xl p-6">
           <p className="text-amber-800 text-sm leading-relaxed">
             {t({
-              en: 'E-Notary Dubai is a document preparation and coordination service — not a law firm or government authority. We do not provide legal advice. Official notarization or attestation is issued by the competent authority or licensed provider. © 2026 E-Notary Dubai · Dubai',
-              ar: 'E-Notary Dubai خدمة إعداد وتنسيق مستندات — وليست مكتب محاماة أو جهة حكومية. لا نقدم استشارات قانونية. يصدر التوثيق أو التصديق الرسمي من الجهة المختصة أو مقدم الخدمة المرخص.',
-              ru: 'E-Notary Dubai — служба подготовки документов и координации, а не юридическая фирма или государственный орган. Мы не предоставляем юридические консультации. Официальное нотариальное заверение или аттестацию выдаёт компетентный орган или лицензированный провайдер.',
-              zh: 'E-Notary Dubai 提供文件准备与流程协调服务，并非律师事务所或政府机关。我们不提供法律意见。正式公证或认证由主管机关或持牌服务方作出。',
-              es: 'E-Notary Dubai es un servicio de preparación documental y coordinación, no un bufete ni una autoridad pública. No prestamos asesoramiento jurídico. La notarización o atestación oficial la emite la autoridad competente o un proveedor autorizado.'
+              en: `E-Notary Dubai provides document preparation and coordination services. Official notarization or attestation is issued by the competent authority or licensed provider. © ${currentYear} E-Notary Dubai · Dubai`,
+              ar: `E-Notary Dubai تقدم خدمات إعداد وتنسيق المستندات. يصدر التوثيق أو التصديق الرسمي من الجهة المختصة أو مقدم الخدمة المرخص. © ${currentYear} E-Notary Dubai · دبي`,
+              ru: `E-Notary Dubai предоставляет услуги по подготовке и координации документов. Официальное нотариальное заверение или аттестацию выдаёт компетентный орган или лицензированный провайдер. © ${currentYear} E-Notary Dubai · Дубай`,
+              zh: `E-Notary Dubai 提供文件准备与流程协调服务。正式公证或认证由主管机关或持牌服务方作出。© ${currentYear} E-Notary Dubai · 迪拜`,
+              es: `E-Notary Dubai ofrece servicios de preparación y coordinación documental. La notarización o atestación oficial la emite la autoridad competente o un proveedor autorizado. © ${currentYear} E-Notary Dubai · Dubái`
             }, lang)}
           </p>
         </div>
