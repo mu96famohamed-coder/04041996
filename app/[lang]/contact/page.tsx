@@ -151,18 +151,18 @@ export default async function Page({ params }: Props) {
                 className="space-y-4"
               >
                 <div>
-                  <label className="block text-xs font-semibold text-navy-600 mb-1.5">{t(L.form_name, lang)}</label>
+                  <label htmlFor="contact-name" className="block text-xs font-semibold text-navy-600 mb-1.5">{t(L.form_name, lang)}</label>
                   <input
                     type="text"
-                    name="name"
+                    id="contact-name" name="name"
                     placeholder={t({ en: 'Enter your name', ar: 'أدخل اسمك', ru: 'Введите имя', zh: '输入您的姓名', es: 'Ingrese su nombre' }, lang)}
                     className="w-full rounded-xl border border-navy-200 px-4 py-2.5 text-sm focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400 bg-white"
                   />
                 </div>
                 <div>
-                  <label className="block text-xs font-semibold text-navy-600 mb-1.5">{t(L.form_service, lang)}</label>
+                  <label htmlFor="contact-service" className="block text-xs font-semibold text-navy-600 mb-1.5">{t(L.form_service, lang)}</label>
                   <select
-                    name="service"
+                    id="contact-service" name="service"
                     className="w-full rounded-xl border border-navy-200 px-4 py-2.5 text-sm focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400 bg-white"
                   >
                     <option value="">{t({ en: 'Select a service', ar: 'اختر خدمة', ru: 'Выберите услугу', zh: '选择服务', es: 'Seleccione un servicio' }, lang)}</option>
@@ -170,9 +170,9 @@ export default async function Page({ params }: Props) {
                   </select>
                 </div>
                 <div>
-                  <label className="block text-xs font-semibold text-navy-600 mb-1.5">{t(L.form_msg, lang)}</label>
+                  <label htmlFor="contact-message" className="block text-xs font-semibold text-navy-600 mb-1.5">{t(L.form_msg, lang)}</label>
                   <textarea
-                    name="message"
+                    id="contact-message" name="message"
                     rows={3}
                     placeholder={t({ en: 'Describe what you need...', ar: 'اشرح ما تحتاجه...', ru: 'Опишите, что вам нужно...', zh: '描述您的需求...', es: 'Describa lo que necesita...' }, lang)}
                     className="w-full rounded-xl border border-navy-200 px-4 py-2.5 text-sm focus:border-gold-400 focus:outline-none focus:ring-1 focus:ring-gold-400 bg-white resize-none"
@@ -230,16 +230,16 @@ export default async function Page({ params }: Props) {
               </h3>
               <div className="grid grid-cols-4 gap-4">
                 {[
-                  { src: '/assets/logos/dubai_courts.png', name: 'Dubai Courts' },
-                  { src: '/assets/logos/dld.png', name: 'DLD' },
-                  { src: '/assets/logos/rta.png', name: 'RTA' },
-                  { src: '/assets/logos/mofa.png', name: 'MOFA' },
-                  { src: '/assets/logos/mohre.png', name: 'MOHRE' },
-                  { src: '/assets/logos/moj.png', name: 'MOJ' },
-                  { src: '/assets/logos/rdc.png', name: 'RDC' },
+                  { src: '/assets/logos/dubai_courts.png', width: 298, height: 80, name: 'Dubai Courts' },
+                  { src: '/assets/logos/dld.png', width: 326, height: 80, name: 'DLD' },
+                  { src: '/assets/logos/rta.png', width: 347, height: 80, name: 'RTA' },
+                  { src: '/assets/logos/mofa.png', width: 126, height: 80, name: 'MOFA' },
+                  { src: '/assets/logos/mohre.png', width: 108, height: 80, name: 'MOHRE' },
+                  { src: '/assets/logos/moj.png', width: 396, height: 80, name: 'MOJ' },
+                  { src: '/assets/logos/rdc.png', width: 306, height: 80, name: 'RDC' },
                 ].map((logo) => (
                   <div key={logo.name} className="flex flex-col items-center gap-1.5 p-3 bg-white rounded-xl border border-navy-100">
-                    <img src={logo.src} alt={logo.name} className="h-8 w-auto object-contain" />
+                    <img src={logo.src} alt={logo.name} width={logo.width} height={logo.height} loading="lazy" decoding="async" className="h-8 w-auto object-contain" />
                     <span className="text-[10px] text-navy-500 font-semibold text-center">{logo.name}</span>
                   </div>
                 ))}

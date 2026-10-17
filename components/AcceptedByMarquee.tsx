@@ -1,15 +1,15 @@
 'use client'
 
-import { useRef, useEffect, useState } from 'react'
+import { useState } from 'react'
 
 const LOGOS = [
-  { src: '/assets/logos/dubai_courts.png', alt: 'Dubai Courts - محاكم دبي' },
-  { src: '/assets/logos/dld.png',          alt: 'Dubai Land Department - دائرة الأراضي والأملاك' },
-  { src: '/assets/logos/rta.png',          alt: 'Roads and Transport Authority RTA' },
-  { src: '/assets/logos/mofa.png',         alt: 'UAE Ministry of Foreign Affairs - وزارة الخارجية' },
-  { src: '/assets/logos/mohre.png',        alt: 'Ministry of Human Resources and Emiratisation' },
-  { src: '/assets/logos/moj.png',          alt: 'UAE Ministry of Justice - وزارة العدل' },
-  { src: '/assets/logos/rdc.png',          alt: 'Rental Disputes Center Dubai - مركز فض المنازعات الإيجارية' },
+  { src: '/assets/logos/dubai_courts.webp', width: 298, height: 80, alt: 'Dubai Courts - محاكم دبي' },
+  { src: '/assets/logos/dld.webp', width: 326, height: 80, alt: 'Dubai Land Department - دائرة الأراضي والأملاك' },
+  { src: '/assets/logos/rta.webp', width: 347, height: 80, alt: 'Roads and Transport Authority RTA' },
+  { src: '/assets/logos/mofa.webp', width: 126, height: 80, alt: 'UAE Ministry of Foreign Affairs - وزارة الخارجية' },
+  { src: '/assets/logos/mohre.webp', width: 108, height: 80, alt: 'Ministry of Human Resources and Emiratisation' },
+  { src: '/assets/logos/moj.webp', width: 396, height: 80, alt: 'UAE Ministry of Justice - وزارة العدل' },
+  { src: '/assets/logos/rdc.webp', width: 306, height: 80, alt: 'Rental Disputes Center Dubai - مركز فض المنازعات الإيجارية' },
 ]
 
 const WHITE_LOGOS = LOGOS.map(l => ({
@@ -41,8 +41,6 @@ export default function AcceptedByMarquee({
   showTitle = true,
 }: Props) {
   const [isPaused, setIsPaused] = useState(false)
-  const [trackWidth, setTrackWidth] = useState(0)
-  const trackRef = useRef<HTMLDivElement>(null)
 
   const logos = variant === 'dark' ? WHITE_LOGOS : LOGOS
   const doubled = [...logos, ...logos]
@@ -52,19 +50,9 @@ export default function AcceptedByMarquee({
   const fadeColor = isDark ? '#0B1121' : '#FFFFFF'
   const titleColor = isDark ? '#C9A84C' : '#222222'
 
-  useEffect(() => {
-    if (trackRef.current) {
-      const children = trackRef.current.children
-      const half = children.length / 2
-      let w = 0
-      for (let i = 0; i < half; i++) {
-        w += (children[i] as HTMLElement).offsetWidth
-      }
-      w += half * gap
-      setTrackWidth(w)
-    }
-  }, [gap])
+  const trackWidth = logos.reduce((width, logo) => width + Math.max(120, logoHeight * logo.width / logo.height) + gap, 0)
 
+  const animationName = `marqueeScroll${Math.round(trackWidth * 100)}`
   const duration = trackWidth > 0 ? trackWidth / speed : 20
 
   return (
@@ -103,13 +91,13 @@ export default function AcceptedByMarquee({
 
         {/* Scrolling track */}
         <div
-          ref={trackRef}
+          className="marquee-track"
           style={{
             display: 'flex',
             alignItems: 'center',
             gap: `${gap}px`,
             width: 'max-content',
-            animation: `marqueeScroll ${duration}s linear infinite`,
+            animation: `${animationName} ${duration}s linear infinite`,
             animationPlayState: isPaused ? 'paused' : 'running',
           }}
         >
@@ -119,10 +107,14 @@ export default function AcceptedByMarquee({
               src={logo.src}
               alt={logo.alt}
               title={logo.alt}
+              width={logo.width}
+              height={logo.height}
+              decoding="async"
+              aria-hidden={i >= logos.length ? true : undefined}
               style={{
                 height: `${logoHeight}px`,
                 minWidth: '120px',
-                width: 'auto',
+                width: `${Math.max(120, logoHeight * logo.width / logo.height)}px`,
                 objectFit: 'contain' as const,
                 flexShrink: 0,
                 opacity: isDark ? 0.75 : 0.85,
@@ -136,9 +128,9 @@ export default function AcceptedByMarquee({
       </div>
 
       <style>{`
-        @keyframes marqueeScroll {
+        @keyframes ${animationName} {
           0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          100% { transform: translateX(-${trackWidth}px); }
         }
       `}</style>
     </div>

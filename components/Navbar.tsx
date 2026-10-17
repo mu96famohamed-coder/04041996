@@ -152,6 +152,12 @@ export default function Navbar({ lang }: Props) {
   const [expanded, setExpanded] = useState<string | null>(null)
   const [langOpen, setLangOpen] = useState(false)
   const [activeKey, setActiveKey] = useState<string | null>(null)
+  const drawerRef = useRef<HTMLElement>(null)
+  const rowRef = useRef<HTMLDivElement>(null)
+  const brandRef = useRef<HTMLAnchorElement>(null)
+  const desktopNavRef = useRef<HTMLElement>(null)
+  const actionsRef = useRef<HTMLDivElement>(null)
+  const [navFits, setNavFits] = useState(true)
   const pathname = usePathname()
   const langTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null)
@@ -199,6 +205,43 @@ export default function Navbar({ lang }: Props) {
   }
 
   useEffect(() => {
+    const row = rowRef.current
+    const nav = desktopNavRef.current
+    if (!row || !nav) return
+    const measure = () => {
+      if (!nav.getClientRects().length) return
+      const gap = parseFloat(getComputedStyle(row).gap) || 0
+      const needed = Array.from(nav.children).reduce((total, item) => total + (item as HTMLElement).offsetWidth, 0)
+      const available = row.clientWidth - (brandRef.current?.offsetWidth || 0) - (actionsRef.current?.offsetWidth || 0) - 2 * gap
+      setNavFits(needed <= available)
+    }
+    const observer = new ResizeObserver(measure)
+    observer.observe(row)
+    // Optional fonts never swap late; this also handles cached fonts and text zoom.
+    document.fonts.ready.then(measure)
+    measure()
+    return () => observer.disconnect()
+  }, [lang])
+
+  useEffect(() => {
+    if (!drawerOpen) return
+    const previousFocus = document.activeElement as HTMLElement | null
+    const drawer = drawerRef.current
+    const focusable = () => Array.from(drawer?.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), [tabindex="0"]') ?? []).filter(el => el.getClientRects().length > 0)
+    focusable()[0]?.focus()
+    const handleKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') { setDrawerOpen(false); return }
+      if (event.key !== 'Tab') return
+      const elements = focusable()
+      const first = elements[0], last = elements[elements.length - 1]
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus() }
+      else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus() }
+    }
+    document.addEventListener('keydown', handleKey)
+    return () => { document.removeEventListener('keydown', handleKey); previousFocus?.focus() }
+  }, [drawerOpen])
+
+  useEffect(() => {
     if (drawerOpen) {
       document.body.style.overflow = 'hidden'
     } else {
@@ -226,11 +269,11 @@ export default function Navbar({ lang }: Props) {
       >
         {/* ✅ Dynamic container */}
         <div className="mx-auto w-full max-w-[min(1920px,98vw)] px-[clamp(0.75rem,2.5vw,2rem)]">
-          <div className="flex h-16 items-center justify-between gap-3 lg:gap-4 xl:gap-5">
+          <div ref={rowRef} className="flex h-16 items-center justify-between gap-3 lg:gap-4 xl:gap-5">
 
-            <Link href={`/${lang}`} className="flex items-center gap-1.5 shrink-0 group min-w-0">
+            <Link ref={brandRef} prefetch={false} href={`/${lang}`} className="flex items-center gap-1.5 shrink-0 group min-w-0">
               <div className="w-7 h-7 lg:w-8 lg:h-8 rounded-lg lg:rounded-xl bg-navy-700 flex items-center justify-center shadow-md shadow-gold-400/20 group-hover:bg-gold-300 transition-colors overflow-hidden shrink-0">
-                <img src="/logo.png" alt="E-Notary Dubai" className="w-full h-full object-contain p-0.5 lg:p-1" />
+                <img src="/logo-128.webp" width={128} height={143} decoding="async" alt="E-Notary Dubai" className="w-full h-full object-contain p-0.5 lg:p-1" />
               </div>
               <div className="hidden md:block leading-none min-w-0">
                 <div className="font-serif font-bold text-white text-[11px] lg:text-[12px] xl:text-[13px] 2xl:text-[15px] tracking-tight group-hover:text-gold-100 transition-colors whitespace-nowrap">E-Notary Dubai</div>
@@ -239,7 +282,10 @@ export default function Navbar({ lang }: Props) {
             </Link>
 
             {/* ── Desktop Nav — أفقي، يظهر من lg+ ── */}
-            <nav className="hidden lg:flex items-center flex-1 justify-center min-w-0">
+            <nav ref={desktopNavRef}
+              aria-hidden={!navFits}
+              {...(!navFits ? { inert: "" } as any : {})}
+              className={`hidden lg:flex items-center flex-1 justify-center min-w-0 ${navFits ? '' : 'invisible overflow-hidden pointer-events-none'}`}>
               {navItems.map((item) => {
                 const label = t(item.label, lang)
                 const isActive = activeKey === item.key
@@ -251,6 +297,9 @@ export default function Navbar({ lang }: Props) {
                     onMouseLeave={scheduleClose}
                   >
                     <button
+                      aria-expanded={isActive}
+                      onClick={() => isActive ? setActiveKey(null) : openDropdown(item.key)}
+                      onKeyDown={(event) => { if (event.key === 'Escape') setActiveKey(null) }}
                       className={`flex items-center gap-0.5 xl:gap-1 px-1.5 xl:px-2 2xl:px-2.5 py-2 text-[11px] xl:text-[12px] 2xl:text-[13px] font-medium rounded-lg transition-all duration-150 whitespace-nowrap ${
                         isActive
                           ? 'text-gold-400 bg-white/[0.07]'
@@ -273,7 +322,8 @@ export default function Navbar({ lang }: Props) {
                           <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
                         )}
                         <div
-                          className={`absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 z-50 p-5 transition-opacity duration-150 ${
+                          hidden={!isActive}
+                          className={`fixed top-16 mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 z-50 p-5 transition-opacity duration-150 ${
                             isActive ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
                           }`}
                           style={{
@@ -298,6 +348,7 @@ export default function Navbar({ lang }: Props) {
                                 <div className="space-y-0.5">
                                   {col.items.map((sub: any) => (
                                     <Link
+                              prefetch={false}
                                       key={sub.href}
                                       href={sub.href}
                                       className="flex items-center gap-2 px-2 py-1.5 text-sm text-navy-700 hover:text-navy-900 hover:bg-navy-50 rounded-lg transition-colors group"
@@ -314,6 +365,7 @@ export default function Navbar({ lang }: Props) {
                           {(item as any).cta && (
                             <div className="mt-4 pt-3 border-t border-navy-100">
                               <Link
+                              prefetch={false}
                                 href={(item as any).cta.href}
                                 className="flex items-center justify-between px-4 py-2.5 rounded-xl text-sm font-bold transition-all group"
                                 style={{ background: 'linear-gradient(135deg, #0a1628 0%, #1a3a5c 100%)' }}
@@ -336,6 +388,7 @@ export default function Navbar({ lang }: Props) {
                           <div className="absolute top-full left-0 right-0 h-3 z-40" onMouseEnter={() => openDropdown(item.key)} />
                         )}
                         <div
+                          hidden={!isActive}
                           className={`absolute top-full mt-3 bg-white rounded-2xl shadow-2xl border border-navy-100/80 p-2 z-50 transition-opacity duration-150 ${
                             isActive ? 'visible opacity-100 pointer-events-auto' : 'invisible opacity-0 pointer-events-none'
                           }`}
@@ -350,6 +403,7 @@ export default function Navbar({ lang }: Props) {
                         >
                           {(item as any).items.map((sub: any) => (
                             <Link
+                              prefetch={false}
                               key={sub.href}
                               href={sub.href}
                               className="flex items-center gap-2.5 px-3 py-2 text-sm text-navy-600 hover:text-navy-900 hover:bg-gold-400/5 rounded-lg transition-all group border border-transparent hover:border-gold-400/15"
@@ -368,9 +422,11 @@ export default function Navbar({ lang }: Props) {
               })}
             </nav>
 
-            <div className="flex items-center gap-1 xl:gap-1.5 shrink-0">
+            <div ref={actionsRef} className="flex items-center gap-1 xl:gap-1.5 shrink-0">
               <div className="relative hidden sm:block">
                 <button
+                  aria-label={languages.find((l) => l.code === lang)?.title || "English"}
+                  aria-expanded={langOpen}
                   onClick={() => setLangOpen((v) => !v)}
                   onMouseEnter={openLang}
                   onMouseLeave={scheduleLangClose}
@@ -398,6 +454,7 @@ export default function Navbar({ lang }: Props) {
                     >
                       {languages.map((l) => (
                         <Link
+                              prefetch={false}
                           key={l.code}
                           href={switchLangPath(l.code)}
                           className={`flex items-center justify-between gap-4 px-3 py-2 text-sm rounded-lg transition-colors ${
@@ -426,7 +483,8 @@ export default function Navbar({ lang }: Props) {
               </a>
 
               <a
-                href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
+                aria-label={t(cta.whatsapp, lang)}
+                  href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-1.5 text-xs xl:text-sm font-bold h-10 sm:h-auto px-2.5 xl:px-3.5 py-1.5 rounded-lg transition-colors text-white shrink-0"
@@ -459,6 +517,7 @@ export default function Navbar({ lang }: Props) {
       />
 
       <aside
+        ref={drawerRef}
         className={`fixed top-0 bottom-0 z-50 w-[85vw] max-w-sm bg-[#0a1628] shadow-2xl transition-transform duration-300 ease-out flex flex-col ${
           drawerOpen
             ? 'translate-x-0'
@@ -466,11 +525,15 @@ export default function Navbar({ lang }: Props) {
         }`}
         style={{
           [isRTL ? 'left' : 'right']: 0,
+          visibility: drawerOpen ? 'visible' : 'hidden',
           borderLeft: isRTL ? 'none' : '1px solid rgba(212,180,58,0.15)',
           borderRight: isRTL ? '1px solid rgba(212,180,58,0.15)' : 'none',
         }}
         role="dialog"
-        aria-modal="true"
+        aria-modal={drawerOpen ? true : undefined}
+        aria-label={t({en:"Navigation menu",ar:"قائمة التنقل",ru:"Меню навигации",zh:"导航菜单",es:"Menú de navegación"}, lang)}
+        aria-hidden={!drawerOpen}
+        {...(!drawerOpen ? { inert: "" } as any : {})}
       >
         <div className="flex items-center justify-between px-5 py-4 border-b border-navy-800 shrink-0">
           <span className="font-serif font-bold text-white text-base">Menu</span>
@@ -491,6 +554,7 @@ export default function Navbar({ lang }: Props) {
               <span key={l.code} className="flex items-center">
                 {i > 0 && <span className="text-navy-700 text-xs mx-0.5">|</span>}
                 <Link
+                              prefetch={false}
                   href={switchLangPath(l.code)}
                   className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
                     lang === l.code ? 'text-gold-400' : 'text-navy-400 hover:text-gold-400'
@@ -506,6 +570,7 @@ export default function Navbar({ lang }: Props) {
           {navItems.map((item) => (
             <div key={item.key} className="mb-1">
               <button
+                aria-expanded={expanded === item.key}
                 onClick={() => setExpanded(expanded === item.key ? null : item.key)}
                 className="w-full flex items-center justify-between px-3 py-3 text-sm font-semibold text-white hover:text-gold-400 rounded-lg hover:bg-white/[0.04] transition-colors"
               >
@@ -529,6 +594,7 @@ export default function Navbar({ lang }: Props) {
                       )}
                       {col.items.map((sub: any) => (
                         <Link
+                              prefetch={false}
                           key={sub.href}
                           href={sub.href}
                           className="block px-4 py-2 text-sm text-navy-300 hover:text-gold-400 transition-colors"
@@ -542,6 +608,7 @@ export default function Navbar({ lang }: Props) {
 
                   {!(item as any).mega && (item as any).items?.map((sub: any) => (
                     <Link
+                              prefetch={false}
                       key={sub.href}
                       href={sub.href}
                       className="block px-4 py-2 text-sm text-navy-300 hover:text-gold-400 transition-colors"
@@ -553,6 +620,7 @@ export default function Navbar({ lang }: Props) {
 
                   {(item as any).cta && (
                     <Link
+                              prefetch={false}
                       href={(item as any).cta.href}
                       className="block px-4 py-2 text-sm font-semibold text-gold-400 hover:text-gold-300 transition-colors border-t border-navy-700/50 mt-1 pt-2"
                       onClick={() => setDrawerOpen(false)}
@@ -588,7 +656,8 @@ export default function Navbar({ lang }: Props) {
           </a>
 
           <a
-            href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
+            aria-label={t(cta.whatsapp, lang)}
+                  href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 text-sm font-bold text-white px-4 py-2.5 rounded-xl w-full"

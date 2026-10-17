@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
+import { FONT_STYLES } from '@/lib/fontStyles'
 import '../globals.css'
 import { notFound } from 'next/navigation'
 import { isValidLang, getDir, getFontClass, LANGS, type Lang, site } from '@/lib/i18n'
@@ -76,8 +77,9 @@ export default async function LangLayout({ children, params }: Props) {
   return (
     <html lang={lang} dir={dir}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <style dangerouslySetInnerHTML={{ __html: FONT_STYLES.latin + (lang === 'ar' ? FONT_STYLES.ar : lang === 'zh' ? FONT_STYLES.zh : '') }} />
+        <link rel="preload" as="image" fetchPriority="high" href="/assets/hero/courts-bg.webp" />
+        <link rel="preload" as="image" href="/assets/hero/poa-doc.webp" media="(min-width: 1024px)" />
         <meta name="geo.region" content="AE-DU" />
         <meta name="geo.placename" content="Dubai, UAE" />
         <meta name="geo.position" content="25.2048;55.2708" />

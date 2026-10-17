@@ -256,7 +256,7 @@ function CompareBlock({ block, lang }: { block: Extract<RichBlock, {type:'compar
 
 function TableBlock({ block, lang }: { block: Extract<RichBlock, {type:'table'}>, lang: Lang }) {
   return (
-    <div className="rich-table-wrapper">
+    <div className="rich-table-wrapper" tabIndex={0} role="region" aria-label={t({en:"Comparison table",ar:"جدول المقارنة",ru:"Таблица сравнения",zh:"比较表",es:"Tabla comparativa"}, lang)}>
       <table className="rich-table">
         <thead>
           <tr>

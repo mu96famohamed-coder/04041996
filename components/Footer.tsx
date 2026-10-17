@@ -67,7 +67,7 @@ export default function Footer({ lang }: Props) {
           <div className="flex items-center gap-3">
             <div className="w-11 h-11 rounded-xl bg-navy-700 flex items-center justify-center overflow-hidden shrink-0 shadow-md shadow-gold-400/10">
               <img
-                src="/logo.png"
+                loading="lazy" src="/logo-128.webp" width={128} height={143} decoding="async"
                 alt="E-Notary Dubai"
                 className="w-full h-full object-contain p-1"
               />
@@ -104,7 +104,7 @@ export default function Footer({ lang }: Props) {
             <ul className="space-y-2">
               {FOOTER_LINKS.poa.map((link) => (
                 <li key={link.href}>
-                  <Link href={`/${lang}${link.href}`} className="text-sm text-navy-300 hover:text-gold-400 transition-colors">
+                  <Link prefetch={false} href={`/${lang}${link.href}`} className="text-sm text-navy-300 hover:text-gold-400 transition-colors">
                     {t(link, lang)}
                   </Link>
                 </li>
@@ -118,7 +118,7 @@ export default function Footer({ lang }: Props) {
             <ul className="space-y-2">
               {FOOTER_LINKS.notary.map((link) => (
                 <li key={link.href}>
-                  <Link href={`/${lang}${link.href}`} className="text-sm text-navy-300 hover:text-gold-400 transition-colors">
+                  <Link prefetch={false} href={`/${lang}${link.href}`} className="text-sm text-navy-300 hover:text-gold-400 transition-colors">
                     {t(link, lang)}
                   </Link>
                 </li>
@@ -132,7 +132,7 @@ export default function Footer({ lang }: Props) {
             <ul className="space-y-2">
               {FOOTER_LINKS.tenancy.map((link) => (
                 <li key={link.href}>
-                  <Link href={`/${lang}${link.href}`} className="text-sm text-navy-300 hover:text-gold-400 transition-colors">
+                  <Link prefetch={false} href={`/${lang}${link.href}`} className="text-sm text-navy-300 hover:text-gold-400 transition-colors">
                     {t(link, lang)}
                   </Link>
                 </li>
@@ -146,7 +146,7 @@ export default function Footer({ lang }: Props) {
             <ul className="space-y-2">
               {FOOTER_LINKS.resources.map((link) => (
                 <li key={link.href}>
-                  <Link href={`/${lang}${link.href}`} className="text-sm text-navy-300 hover:text-gold-400 transition-colors">
+                  <Link prefetch={false} href={`/${lang}${link.href}`} className="text-sm text-navy-300 hover:text-gold-400 transition-colors">
                     {t(link, lang)}
                   </Link>
                 </li>

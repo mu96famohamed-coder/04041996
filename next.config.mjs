@@ -254,12 +254,12 @@ const nextConfig = {
         // favicon.ico, favicon.svg, site.webmanifest, icon-*.png, robots.txt,
         // sitemap.xml, llms.txt — and anything added later. No page slug on this
         // site contains a dot, so real pages still redirect normally.
-        source: '/:path((?!en|ar|ru|zh|es|_next|assets|api)[^/.]+)',
+        source: '/:path((?!en|ar|ru|zh|es|_next|assets|fonts|api)[^/.]+)',
         destination: '/en/:path/',
         permanent: true,
       },
       {
-        source: '/:path((?!en|ar|ru|zh|es|_next|assets|api)[^/]+)/:rest+',
+        source: '/:path((?!en|ar|ru|zh|es|_next|assets|fonts|api)[^/]+)/:rest+',
         destination: '/en/:path/:rest+/',
         permanent: true,
       },
@@ -268,6 +268,7 @@ const nextConfig = {
 
   async headers() {
     return [
+      { source: '/fonts/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' }] },
       {
         source: '/:path*',
         headers: securityHeaders,

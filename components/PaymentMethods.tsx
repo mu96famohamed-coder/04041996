@@ -74,7 +74,7 @@ export default function PaymentMethods({ lang, tone = 'dark' }: { lang: Lang; to
           /* eslint-disable-next-line @next/next/no-img-element */
           <span key={name} className="inline-flex items-center h-[22px]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={file} alt={name}
+            <img src={file} alt={name} width={46} height={22} loading="lazy" decoding="async"
               className="max-h-[22px] max-w-[46px] w-auto h-auto rounded-[3px] block" />
           </span>
         ) : (

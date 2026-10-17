@@ -249,6 +249,7 @@ export default async function HomePage({ params }: Props) {
               <div className="relative">
                 <div className="absolute -inset-4 rounded-3xl" style={{background:'radial-gradient(ellipse at center, rgba(212,180,58,.07) 0%, transparent 70%)'}} />
                 <picture>
+                  <source media="(max-width: 1023px)" srcSet="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" />
                   <source srcSet="/assets/hero/poa-doc.webp" type="image/webp" />
                   <img src="/assets/hero/poa-doc.png" alt="UAE Notary Document" width={793} height={651} decoding="async" fetchPriority="high" className="relative w-[480px] xl:w-[500px] h-auto" style={{filter:'drop-shadow(0 0 40px rgba(212,180,58,.13))'}} />
                 </picture>

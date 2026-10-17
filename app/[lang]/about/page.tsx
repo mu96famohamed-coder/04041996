@@ -87,7 +87,7 @@ export default async function AboutPage({ params }: Props) {
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
           <div className="flex items-center gap-4 mb-6">
             <div className="w-14 h-14 rounded-2xl bg-navy-700 flex items-center justify-center overflow-hidden shadow-lg shadow-gold-400/20 shrink-0">
-              <img src="/logo.png" alt="E-Notary Dubai" className="w-full h-full object-contain p-1.5" />
+              <img src="/logo-128.webp" width={128} height={143} decoding="async" alt="E-Notary Dubai" className="w-full h-full object-contain p-1.5" />
             </div>
             <div>
               <div className="font-serif font-bold text-white text-xl">E-Notary Dubai</div>
