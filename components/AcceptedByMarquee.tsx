@@ -3,13 +3,13 @@
 import { useState } from 'react'
 
 const LOGOS = [
-  { src: '/assets/logos/dubai_courts.webp', width: 298, height: 80, alt: 'Dubai Courts - محاكم دبي' },
-  { src: '/assets/logos/dld.webp', width: 326, height: 80, alt: 'Dubai Land Department - دائرة الأراضي والأملاك' },
-  { src: '/assets/logos/rta.webp', width: 347, height: 80, alt: 'Roads and Transport Authority RTA' },
-  { src: '/assets/logos/mofa.webp', width: 126, height: 80, alt: 'UAE Ministry of Foreign Affairs - وزارة الخارجية' },
-  { src: '/assets/logos/mohre.webp', width: 108, height: 80, alt: 'Ministry of Human Resources and Emiratisation' },
-  { src: '/assets/logos/moj.webp', width: 396, height: 80, alt: 'UAE Ministry of Justice - وزارة العدل' },
-  { src: '/assets/logos/rdc.webp', width: 306, height: 80, alt: 'Rental Disputes Center Dubai - مركز فض المنازعات الإيجارية' },
+  { src: '/assets/logos/dubai_courts-v2.webp', width: 298, height: 80, alt: 'Dubai Courts - محاكم دبي' },
+  { src: '/assets/logos/dld-v2.webp', width: 326, height: 80, alt: 'Dubai Land Department - دائرة الأراضي والأملاك' },
+  { src: '/assets/logos/rta-v2.webp', width: 347, height: 80, alt: 'Roads and Transport Authority RTA' },
+  { src: '/assets/logos/mofa-v2.webp', width: 126, height: 80, alt: 'UAE Ministry of Foreign Affairs - وزارة الخارجية' },
+  { src: '/assets/logos/mohre-v2.webp', width: 108, height: 80, alt: 'Ministry of Human Resources and Emiratisation' },
+  { src: '/assets/logos/moj-v2.webp', width: 396, height: 80, alt: 'UAE Ministry of Justice - وزارة العدل' },
+  { src: '/assets/logos/rdc-v2.webp', width: 306, height: 80, alt: 'Rental Disputes Center Dubai - مركز فض المنازعات الإيجارية' },
 ]
 
 const WHITE_LOGOS = LOGOS.map(l => ({
@@ -102,8 +102,9 @@ export default function AcceptedByMarquee({
           }}
         >
           {doubled.map((logo, i) => (
+            <picture key={`${logo.alt}-${i}`} style={{ flexShrink: 0 }}>
+            <source srcSet={logo.src.replace('.webp', '.avif')} type="image/avif" />
             <img
-              key={`${logo.alt}-${i}`}
               src={logo.src}
               alt={logo.alt}
               title={logo.alt}
@@ -112,6 +113,7 @@ export default function AcceptedByMarquee({
               decoding="async"
               aria-hidden={i >= logos.length ? true : undefined}
               style={{
+                display: 'block',
                 height: `${logoHeight}px`,
                 minWidth: '120px',
                 width: `${Math.max(120, logoHeight * logo.width / logo.height)}px`,
@@ -123,6 +125,7 @@ export default function AcceptedByMarquee({
               onMouseEnter={(e) => { (e.target as HTMLImageElement).style.opacity = '1' }}
               onMouseLeave={(e) => { (e.target as HTMLImageElement).style.opacity = isDark ? '0.75' : '0.85' }}
             />
+            </picture>
           ))}
         </div>
       </div>

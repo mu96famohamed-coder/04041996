@@ -269,6 +269,7 @@ const nextConfig = {
   async headers() {
     return [
       { source: '/fonts/:path*', headers: [{ key: 'Cache-Control', value: 'public, max-age=86400, stale-while-revalidate=604800' }] },
+      { source: '/fonts/:file([a-f0-9]{16}[.]woff2)', headers: [{ key: 'Cache-Control', value: 'public, max-age=31536000, immutable' }] },
       {
         source: '/:path*',
         headers: securityHeaders,
