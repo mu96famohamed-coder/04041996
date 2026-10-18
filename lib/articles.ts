@@ -21,18 +21,14 @@ const PRESERVED_ROUTE_ORDER: string[] = [
   "notary-public-vs-lawyer-dubai",
   "notarize-documents-without-visiting-uae",
   "affidavit-dubai-complete-guide",
-  "corporate-documents-dubai"
-]
-
-// These existing posts were listed in the blog but omitted from its static-route
-// and sitemap lists. Keep that existing behavior during this storage-only move.
-const PRESERVED_LISTING_ONLY_SLUGS: string[] = [
+  "corporate-documents-dubai",
+  // Existing article URLs previously omitted from the sitemap, now included.
   "poa-cancellation-dubai-revoke",
   "special-power-of-attorney-uae-guide"
 ]
 
 const records = articles as unknown as Record<string, Record<string, unknown>>
-for (const slug of [...PRESERVED_ROUTE_ORDER, ...PRESERVED_LISTING_ONLY_SLUGS]) {
+for (const slug of PRESERVED_ROUTE_ORDER) {
   if (!Object.prototype.hasOwnProperty.call(records, slug)) {
     throw new Error(`Existing article "${slug}" is missing from content/articles.json. Restore its original key to preserve its URL.`)
   }
@@ -54,7 +50,7 @@ for (const [slug, article] of Object.entries(records)) {
   }
 }
 
-const preserved = new Set([...PRESERVED_ROUTE_ORDER, ...PRESERVED_LISTING_ONLY_SLUGS])
+const preserved = new Set(PRESERVED_ROUTE_ORDER)
 
 // Shared by static page generation, related links and sitemap generation.
 // Adding an article requires editing content/articles.json only, then rebuilding.
