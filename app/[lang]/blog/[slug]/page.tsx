@@ -1,31 +1,14 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LANGS, type Lang, t, site, HREFLANG_MAP } from '@/lib/i18n'
-import content from '@/data/content.json'
+import { articles, ARTICLE_SLUGS as BLOG_SLUGS } from '@/lib/articles'
 import FAQSection from '@/components/FAQSection'
 import RichContent, { type RichBlock } from '@/components/RichContent'
 
 import { ArticleSchema, FAQSchema, BreadcrumbSchema } from '@/components/SchemaMarkup'
 interface Props { params: Promise<{ lang: Lang; slug: string }> }
 
-const BLOG_SLUGS = [
-  'how-to-get-poa-dubai',
-  'power-of-attorney-types-dubai',
-  'difference-between-general-and-special-poa-uae',
-  'poa-for-banking-uae-guide',
-  'corporate-poa-vs-individual-poa-uae',
-  'mofa-attestation-guide',
-  'eviction-notice-requirements-dubai',
-  'whatsapp-eviction-notice-dubai-valid',
-  'rdc-filing-guide-dubai',
-  'how-to-attend-rdc-hearing-dubai-2026',
-  'last-will-testament-dubai-expats',
-  'travelling-minor-child-uae-rules',
-  'notary-public-vs-lawyer-dubai',
-  'notarize-documents-without-visiting-uae',
-  'affidavit-dubai-complete-guide',
-  'corporate-documents-dubai',
-]
+
 
 function slugToTitle(slug: string): string {
   return slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
@@ -42,9 +25,9 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { lang, slug } = await params
-  // content.json is a literal type; bridge through `unknown` because the
+  // articles.json is a literal type; bridge through `unknown` because the
   // literal's per-slug shapes differ and TS refuses the direct assertion.
-  const bc = (content.blog_content as unknown as Record<string, Record<string, string>>)[slug]
+  const bc = (articles as unknown as Record<string, Record<string, string>>)[slug]
   const rawTitle = bc?.[`title_${lang}`] || bc?.title_en || slugToTitle(slug)
   const title = `${rawTitle} | E-Notary Dubai`
   const description = bc?.[`meta_${lang}`] || bc?.meta_en || ''
@@ -80,7 +63,7 @@ const LABELS = {
 
 // Bridged through `unknown`: the JSON literal type has heterogeneous
 // per-article shapes, so a direct assertion is rejected (TS2352).
-const blogData = content.blog_content as unknown as Record<string, {
+const blogData = articles as unknown as Record<string, {
   title_en?: string; title_ar?: string; title_ru?: string; title_zh?: string; title_es?: string;
   meta_en?: string; meta_ar?: string; meta_ru?: string; meta_zh?: string; meta_es?: string;
   date?: string

@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next'
 import { LANGS, HREFLANG_MAP } from '@/lib/i18n'
+import { articles, ARTICLE_SLUGS as BLOG_SLUGS } from '@/lib/articles'
 import content from '@/data/content.json'
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -33,9 +34,9 @@ function pageLastModified(path: string): Date {
   return PAGE_LAST_MODIFIED[path] ?? LAST_CONTENT_UPDATE
 }
 
-/** Real per-article lastModified from blog_content.date_updated (fallback: date). */
+/** Real per-article lastModified from content/articles.json date_updated (fallback: date). */
 function blogLastModified(slug: string): Date {
-  const bc = (content.blog_content as Record<string, { date?: string; date_updated?: string }>)[slug]
+  const bc = (articles as Record<string, { date?: string; date_updated?: string }>)[slug]
   const d = bc?.date_updated || bc?.date
   return d ? new Date(d) : LAST_CONTENT_UPDATE
 }
@@ -81,25 +82,8 @@ const REDIRECTED_PATHS = new Set<string>([])
  *  index pages). Added to the sitemap alongside page_content keys. */
 const EXTRA_PATHS: string[] = ['/blog']
 
-// Must stay in sync with BLOG_SLUGS in app/[lang]/blog/page.tsx
-const BLOG_SLUGS = [
-  'how-to-get-poa-dubai',
-  'power-of-attorney-types-dubai',
-  'difference-between-general-and-special-poa-uae',
-  'poa-for-banking-uae-guide',
-  'corporate-poa-vs-individual-poa-uae',
-  'mofa-attestation-guide',
-  'eviction-notice-requirements-dubai',
-  'whatsapp-eviction-notice-dubai-valid',
-  'rdc-filing-guide-dubai',
-  'how-to-attend-rdc-hearing-dubai-2026',
-  'last-will-testament-dubai-expats',
-  'travelling-minor-child-uae-rules',
-  'notary-public-vs-lawyer-dubai',
-  'notarize-documents-without-visiting-uae',
-  'affidavit-dubai-complete-guide',
-  'corporate-documents-dubai',
-]
+// Blog route discovery is shared through lib/articles.ts.
+
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Helpers

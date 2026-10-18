@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LANGS, type Lang, t, HREFLANG_MAP } from '@/lib/i18n'
 import { LegalServiceSchema } from '@/components/SchemaMarkup'
-import content from '@/data/content.json'
+import { articles } from '@/lib/articles'
 
 interface Props { params: Promise<{ lang: Lang }> }
 
@@ -62,7 +62,7 @@ function slugToTitle(slug: string): string {
     .replace('Dld', 'DLD')
 }
 
-const blogContent = content.blog_content as Record<string, {
+const blogContent = articles as Record<string, {
   title_en?: string; title_ar?: string; title_ru?: string; title_zh?: string; title_es?: string;
   meta_en?: string; meta_ar?: string; meta_ru?: string; meta_zh?: string; meta_es?: string;
   date?: string;
