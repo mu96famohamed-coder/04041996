@@ -1,4 +1,556 @@
 {
+	
+	"board-resolution-company-bank-account-uae": {
+    "title_en": "Do You Need a Board Resolution to Open a Bank Account?",
+    "title_ar": "هل يطلب البنك قرار مجلس إدارة لفتح حساب الشركة في الإمارات؟",
+    "title_ru": "Нужно ли решение совета директоров для открытия счёта компании в ОАЭ?",
+    "title_zh": "在阿联酋开立公司银行账户需要董事会决议吗？",
+    "title_es": "¿Hace falta una resolución para abrir una cuenta de empresa?",
+    "meta_en": "Board resolution for opening a bank account in the UAE: when banks ask for it, what the minutes state, and why Dubai Courts notarisation needs Emirates ID.",
+    "meta_ar": "قرار مجلس الإدارة لفتح حساب بنكي للشركة: متى يطلبه البنك، وما الذي يتضمنه المحضر، ولماذا يشترط التوثيق لدى محاكم دبي هوية إماراتية لكل موقّع.",
+    "meta_ru": "Решение для открытия счёта компании в ОАЭ: когда его требует банк, что указать в протоколе и почему в судах Дубая нужно удостоверение личности ОАЭ.",
+    "meta_zh": "开立公司银行账户的董事会决议：银行何时要求、会议纪要应写明什么，以及为何迪拜法院公证要求每位签署人持阿联酋身份证。",
+    "meta_es": "Resolución para abrir la cuenta bancaria de la empresa en los EAU: cuándo la pide el banco, qué incluye el acta y por qué Dubái exige Emirates ID.",
+    "date": "2026-10-31",
+    "date_updated": "2026-10-31",
+    "rich_blocks": [
+      {
+        "type": "para",
+        "accent": true,
+        "text": {
+          "en": "Not always. The bank first reviews the Memorandum of Association (MOA). Where the MOA gives the manager or signatory the power to open, operate and close bank accounts, it may be enough. Where it does not, or a shareholder is a company, the bank asks for a resolution — and some banks ask for notarised meeting minutes naming the authorised signatories. In Dubai, meeting minutes and board resolutions are notarised at Dubai Courts only, and every signatory needs an Emirates ID. For help drafting the document, see [[/corporate/board-resolution|Board Resolution]] and [[/corporate/meeting-minutes|Meeting Minutes]].",
+          "ar": "ليس دائمًا. يراجع البنك أولًا عقد التأسيس؛ فإذا كان العقد يمنح المدير أو المفوَّض بالتوقيع صلاحية فتح الحسابات المصرفية وتشغيلها وإغلاقها، فقد يكون كافيًا. وإذا لم ينص على ذلك، أو كان أحد الشركاء شركة، يطلب البنك قرارًا، وبعض البنوك تطلب محضر اجتماع موثَّقًا يحدد المفوَّضين بالتوقيع. وفي دبي يُوثَّق محضر الاجتماع وقرار مجلس الإدارة لدى محاكم دبي حصرًا، ويجب أن يحمل كل موقّع هوية إماراتية. للمساعدة في إعداد المستندات: [[/corporate/board-resolution|قرار مجلس الإدارة]] و[[/corporate/meeting-minutes|محضر الاجتماع]].",
+          "ru": "Не всегда. Банк сначала изучает учредительный договор. Если он даёт управляющему или подписанту право открывать, вести и закрывать банковские счета, этого может быть достаточно. Если нет или один из участников — компания, банк запрашивает решение, а некоторые банки — нотариально удостоверенный протокол собрания с указанием уполномоченных подписантов. В Дубае протоколы собраний и решения совета директоров удостоверяются только в судах Дубая, и каждому подписанту нужно удостоверение личности ОАЭ. Помощь в оформлении документов: [[/corporate/board-resolution|Решение совета директоров]] и [[/corporate/meeting-minutes|Протокол собрания]].",
+          "zh": "不一定。银行首先审阅公司章程。如章程赋予经理或签署人开立、操作和关闭银行账户的权限，可能已足够。如章程未作规定，或有股东为公司，银行会要求提供决议；部分银行还会要求提供经公证并列明授权签署人的会议纪要。在迪拜，会议纪要和董事会决议仅在迪拜法院公证，且每位签署人均须持阿联酋身份证。文件起草服务：[[/corporate/board-resolution|董事会决议]]和[[/corporate/meeting-minutes|会议纪要]]。",
+          "es": "No siempre. El banco revisa primero la escritura de constitución (MOA). Si otorga al gerente o al firmante la facultad de abrir, operar y cerrar cuentas bancarias, puede bastar. Si no, o si un socio es una sociedad, el banco pide una resolución, y algunos bancos piden un acta de reunión notarizada que nombre a los firmantes autorizados. En Dubái, las actas y las resoluciones del consejo se notarizan solo en los Tribunales de Dubái, y cada firmante necesita Emirates ID. Para la redacción del documento, consulte [[/corporate/board-resolution|Resolución del consejo]] y [[/corporate/meeting-minutes|Acta de reunión]]."
+        }
+      },
+      {
+        "type": "info",
+        "title": {
+          "en": "What one bank’s account-opening guidelines require",
+          "ar": "ما الذي تتضمنه إرشادات فتح الحساب لدى أحد البنوك؟",
+          "ru": "Что сказано в опубликованном перечне одного банка",
+          "zh": "某银行公布的开户清单",
+          "es": "Lo que dice la lista publicada de un banco"
+        },
+        "text": {
+          "en": "One UAE bank’s business account-opening guidelines, published by Dubai Chambers, require a board resolution where the MOA does not mention the banking powers to open, operate and close the account. For a company owned by another company, they require a notarised board resolution or POA with a mandate to open and operate the account and, where that shareholder is established outside the UAE, its constitutional documents attested by the UAE Ministry of Foreign Affairs.",
+          "ar": "تشترط إرشادات فتح الحسابات التجارية لأحد البنوك الإماراتية، المنشورة لدى غرفة دبي، قرارَ مجلس إدارة إذا لم يذكر عقد التأسيس صلاحيات فتح الحساب المصرفي وتشغيله وإغلاقه. وإذا كانت الشركة مملوكة لشركة أخرى، تطلب قرار مجلس إدارة أو وكالة موثَّقة بتفويض فتح الحساب وتشغيله، ومستندات تأسيس الشركة الشريكة مصدقة من وزارة الخارجية الإماراتية إذا كانت مؤسسة خارج الدولة.",
+          "ru": "Опубликованные Торговой палатой Дубая правила открытия бизнес-счетов одного банка ОАЭ требуют предоставить решение совета директоров, если в учредительном договоре не указаны банковские полномочия на открытие, ведение и закрытие счёта. Для компании, принадлежащей другой компании, требуются нотариально удостоверенное решение совета директоров или доверенность с полномочием открыть и вести счёт, а если участник-компания учреждена за пределами ОАЭ — её учредительные документы, легализованные в МИД ОАЭ.",
+          "zh": "迪拜商会刊载的一家阿联酋银行企业开户指引规定：如公司章程未写明开立、操作和关闭银行账户的权限，须提供董事会决议。公司由另一家公司持股时，须提供经公证并授权开立和操作账户的董事会决议或授权委托书；如该公司股东在阿联酋境外设立，其章程文件须经阿联酋外交部认证。",
+          "es": "Las pautas de apertura de cuentas de empresa de un banco de los EAU, publicadas por Dubai Chambers, exigen una resolución del consejo si la escritura no menciona las facultades bancarias para abrir, operar y cerrar la cuenta. Si la empresa pertenece a otra sociedad, exigen una resolución del consejo o un poder notarizado con mandato para abrir y operar la cuenta y, si la sociedad que participa en el capital está constituida fuera de los EAU, sus documentos constitutivos legalizados por el Ministerio de Asuntos Exteriores de los EAU."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "When does the bank ask for a resolution or meeting minutes?",
+          "ar": "متى يطلب البنك قرارًا أو محضر اجتماع؟",
+          "ru": "Когда банк запрашивает решение или протокол собрания?",
+          "zh": "银行何时要求决议或会议纪要？",
+          "es": "¿Cuándo pide el banco una resolución o un acta?"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "en": "Situation",
+            "ar": "الحالة",
+            "ru": "Ситуация",
+            "zh": "情形",
+            "es": "Situación"
+          },
+          {
+            "en": "What the bank usually asks for",
+            "ar": "ما يطلبه البنك عادةً",
+            "ru": "Что обычно просит банк",
+            "zh": "银行通常要求",
+            "es": "Lo que suele pedir el banco"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "en": "The MOA gives the manager power to open, operate and close bank accounts",
+              "ar": "عقد التأسيس يمنح المدير صلاحية فتح الحسابات المصرفية وتشغيلها وإغلاقها",
+              "ru": "Учредительный договор даёт управляющему право открывать, вести и закрывать счета",
+              "zh": "章程赋予经理开立、操作和关闭银行账户的权限",
+              "es": "La escritura otorga al gerente la facultad de abrir, operar y cerrar cuentas"
+            },
+            {
+              "en": "The MOA may be enough; some banks still ask for a resolution in their own format.",
+              "ar": "قد يكفي عقد التأسيس، وبعض البنوك تطلب مع ذلك قرارًا بصيغتها.",
+              "ru": "Договора может быть достаточно; некоторые банки всё же просят решение по своей форме.",
+              "zh": "章程可能已足够；部分银行仍要求按其格式出具决议。",
+              "es": "La escritura puede bastar; algunos bancos piden igualmente una resolución en su formato."
+            }
+          ],
+          [
+            {
+              "en": "The MOA is silent on banking powers",
+              "ar": "عقد التأسيس لا ينص على الصلاحيات المصرفية",
+              "ru": "В учредительном договоре нет банковских полномочий",
+              "zh": "章程未规定银行权限",
+              "es": "La escritura no dice nada sobre facultades bancarias"
+            },
+            {
+              "en": "A resolution authorising the opening of the account and identifying the signatories.",
+              "ar": "قرار يأذن بفتح الحساب ويحدد المفوَّضين بالتوقيع.",
+              "ru": "Решение, разрешающее открыть счёт и называющее подписантов.",
+              "zh": "批准开户并指定签署人的决议。",
+              "es": "Una resolución que autorice la cuenta y nombre a los firmantes."
+            }
+          ],
+          [
+            {
+              "en": "The signatory is not the manager named in the MOA",
+              "ar": "المفوَّض بالتوقيع ليس المدير المذكور في عقد التأسيس",
+              "ru": "Подписант — не управляющий, указанный в учредительном договоре",
+              "zh": "签署人并非章程所列经理",
+              "es": "El firmante no es el gerente nombrado en la escritura"
+            },
+            {
+              "en": "A resolution or minutes naming the signatory and their banking powers.",
+              "ar": "قرار أو محضر يسمّي المفوَّض بالتوقيع وصلاحياته المصرفية.",
+              "ru": "Решение или протокол с указанием подписанта и его банковских полномочий.",
+              "zh": "写明签署人及其银行权限的决议或会议纪要。",
+              "es": "Una resolución o acta que nombre al firmante y sus facultades bancarias."
+            }
+          ],
+          [
+            {
+              "en": "A shareholder is a company",
+              "ar": "أحد الشركاء شركة",
+              "ru": "Участник — компания",
+              "zh": "股东为公司",
+              "es": "Un socio es una sociedad"
+            },
+            {
+              "en": "That company’s own resolution or POA, notarised; if it is established abroad, its documents attested by the UAE Ministry of Foreign Affairs.",
+              "ar": "قرار موثَّق صادر عن الشركة الشريكة نفسها أو وكالة موثَّقة صادرة عنها، ومستنداتها مصدقة من وزارة الخارجية الإماراتية إذا كانت مؤسسة خارج الدولة.",
+              "ru": "Собственное решение или доверенность этой компании, нотариально удостоверенные; если она учреждена за рубежом — её документы, легализованные в МИД ОАЭ.",
+              "zh": "该股东公司本身经公证的决议或授权；如其在境外设立，其文件须经阿联酋外交部认证。",
+              "es": "La resolución o el poder propios de esa sociedad, notarizados; si está constituida en el extranjero, sus documentos legalizados por el Ministerio de Asuntos Exteriores de los EAU."
+            }
+          ],
+          [
+            {
+              "en": "Signatories change on an existing account",
+              "ar": "تغيير المفوَّضين بالتوقيع على حساب قائم",
+              "ru": "Смена подписантов по действующему счёту",
+              "zh": "现有账户更换签署人",
+              "es": "Cambio de firmantes en una cuenta existente"
+            },
+            {
+              "en": "New minutes naming the new signatories.",
+              "ar": "محضر جديد يحدد المفوَّضين الجدد.",
+              "ru": "Новый протокол с новыми подписантами.",
+              "zh": "写明新签署人的新会议纪要。",
+              "es": "Una nueva acta que nombre a los nuevos firmantes."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "para",
+        "accent": false,
+        "text": {
+          "en": "Each bank sets its own document list and format. Ask the bank for its resolution template before the minutes are drafted, so the text matches the bank’s form.",
+          "ar": "يحدد كل بنك المستندات المطلوبة والصيغة التي يعتمدها. اطلب نموذج القرار من البنك قبل إعداد المحضر، لتكون الصياغة متوافقة مع متطلباته.",
+          "ru": "Каждый банк устанавливает свой перечень документов и форму. Запросите у банка шаблон решения до составления протокола, чтобы текст соответствовал его форме.",
+          "zh": "各银行自行规定文件清单和格式。请在起草会议纪要前向银行索取其决议模板，使文本与银行格式一致。",
+          "es": "Cada banco fija su propia lista de documentos y formato. Pida al banco su modelo de resolución antes de redactar el acta, para que el texto coincida con su formulario."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "Board resolution, partners’ resolution or meeting minutes?",
+          "ar": "قرار مجلس إدارة أم قرار شركاء أم محضر اجتماع؟",
+          "ru": "Решение совета директоров, решение участников или протокол собрания?",
+          "zh": "董事会决议、股东决议还是会议纪要？",
+          "es": "¿Resolución del consejo, de los socios o acta de reunión?"
+        }
+      },
+      {
+        "type": "para",
+        "accent": false,
+        "text": {
+          "en": "Banks often say “board resolution” for any company decision. A limited liability company (LLC) is run by managers, not a board of directors, so the bank’s “board resolution” is usually a resolution of the partners recorded in meeting minutes. In a joint stock company, the board of directors signs. The minutes record the meeting and its quorum; the resolution is the decision itself.",
+          "ar": "كثيرًا ما تستخدم البنوك عبارة «قرار مجلس الإدارة» لأي قرار للشركة. والشركة ذات المسؤولية المحدودة يديرها مدير أو أكثر لا مجلس إدارة، فيكون «قرار مجلس الإدارة» الذي يطلبه البنك عادةً قرارًا للشركاء مثبتًا في محضر اجتماع. أما في الشركة المساهمة فيوقّع مجلس الإدارة. ويوثّق المحضر وقائع الاجتماع ونصابه، بينما يتضمن القرار ما جرى إقراره.",
+          "ru": "Банки часто называют «решением совета директоров» любое решение компании. ООО управляется управляющими, а не советом директоров, поэтому «решение совета директоров» для банка — это обычно решение участников, оформленное протоколом собрания. В акционерном обществе подписывает совет директоров. Протокол фиксирует ход собрания и наличие кворума, а решение отражает то, что было принято на собрании.",
+          "zh": "银行常把公司的任何决定都称为“董事会决议”。有限责任公司由经理管理而非董事会，因此银行所说的“董事会决议”通常是记录在会议纪要中的股东决议。股份公司则由董事会签署。会议纪要记录会议及其法定人数，决议则是所作的决定本身。",
+          "es": "Los bancos suelen llamar “resolución del consejo” a cualquier decisión societaria. Una sociedad de responsabilidad limitada (LLC) la dirigen gerentes, no un consejo, por lo que esa “resolución del consejo” suele ser una resolución de los socios recogida en un acta. En una sociedad anónima firma el consejo de administración. El acta documenta la reunión y el quórum, mientras que la resolución recoge la decisión adoptada."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "Notarisation in Dubai: Dubai Courts and Emirates ID",
+          "ar": "التوثيق في دبي: محاكم دبي والهوية الإماراتية",
+          "ru": "Удостоверение в Дубае: суды Дубая и удостоверение личности ОАЭ",
+          "zh": "在迪拜公证：迪拜法院与阿联酋身份证",
+          "es": "Notarización en Dubái: Tribunales de Dubái y Emirates ID"
+        }
+      },
+      {
+        "type": "warning",
+        "title": {
+          "en": "Two rules for notarising the minutes",
+          "ar": "قاعدتان لتوثيق المحضر",
+          "ru": "Два правила удостоверения протокола",
+          "zh": "会议纪要公证的两项规则",
+          "es": "Dos reglas para notarizar el acta"
+        },
+        "text": {
+          "en": "Meeting minutes and board resolutions are notarised at Dubai Courts only, not at the UAE Ministry of Justice; the same applies to the MOA and its amendments. Every signatory needs an Emirates ID, and every partner signs the minutes, either in person or through a representative acting under a POA.",
+          "ar": "يُوثَّق محضر الاجتماع وقرار مجلس الإدارة لدى محاكم دبي حصرًا، لا لدى وزارة العدل الإماراتية، وكذلك عقد التأسيس وتعديله. ويجب أن يحمل كل موقّع هوية إماراتية، ويوقّع المحضرَ كلُّ شريك بنفسه أو بموجب وكالة.",
+          "ru": "Протоколы собраний и решения совета директоров удостоверяются только в судах Дубая, а не в Министерстве юстиции ОАЭ; то же относится к учредительному договору и изменениям в него. Каждому подписанту нужно удостоверение личности ОАЭ, и протокол подписывает каждый участник — сам или через представителя по доверенности.",
+          "zh": "会议纪要和董事会决议仅在迪拜法院公证，不在阿联酋司法部办理；公司章程及其修订亦同。每位签署人均须持阿联酋身份证，且每位股东均须签署会议纪要，可本人签署或由代理人凭授权签署。",
+          "es": "Las actas y las resoluciones del consejo se notarizan solo en los Tribunales de Dubái, no en el Ministerio de Justicia de los EAU; lo mismo vale para la escritura y sus modificaciones. Cada firmante necesita Emirates ID, y cada socio firma el acta, por sí mismo o mediante apoderado con poder."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "A partner without an Emirates ID",
+          "ar": "شريك لا يحمل هوية إماراتية",
+          "ru": "Участник без удостоверения личности ОАЭ",
+          "zh": "没有阿联酋身份证的股东",
+          "es": "Un socio sin Emirates ID"
+        }
+      },
+      {
+        "type": "compare",
+        "left": {
+          "title": {
+            "en": "POA through the UAE Ministry of Justice",
+            "ar": "وكالة عبر وزارة العدل الإماراتية",
+            "ru": "Доверенность через Министерство юстиции ОАЭ",
+            "zh": "通过阿联酋司法部办理授权",
+            "es": "Poder ante el Ministerio de Justicia de los EAU"
+          },
+          "items": [
+            {
+              "en": "The partner issues a POA with the passport only, remotely, without personal attendance.",
+              "ar": "يُصدر الشريك وكالة بجواز السفر فقط، عن بُعد ودون حضور شخصي.",
+              "ru": "Участник оформляет доверенность только по паспорту, дистанционно, без личной явки.",
+              "zh": "股东仅凭护照远程办理授权，无需本人到场。",
+              "es": "El socio otorga un poder solo con pasaporte, a distancia, sin comparecencia personal."
+            },
+            {
+              "en": "The POA authorises another partner or an authorised person who holds an Emirates ID to sign on the partner’s behalf.",
+              "ar": "تخوّل الوكالة شريكًا آخر أو مفوَّضًا يحمل هوية إماراتية بالتوقيع نيابةً عنه.",
+              "ru": "Доверенность уполномочивает другого участника или уполномоченное лицо с удостоверением личности ОАЭ подписывать от его имени.",
+              "zh": "授权另一名股东或持阿联酋身份证的被授权人代其签署。",
+              "es": "El poder autoriza a otro socio o a una persona autorizada con Emirates ID a firmar en su nombre."
+            },
+            {
+              "en": "The POA is notarised through the Ministry of Justice, while the company document is notarised at Dubai Courts.",
+              "ar": "تُوثَّق الوكالة لدى وزارة العدل، بينما تُوثَّق وثيقة الشركة لدى محاكم دبي.",
+              "ru": "Доверенность оформляется через Министерство юстиции, а документ компании по-прежнему удостоверяется в судах Дубая.",
+              "zh": "授权经司法部办理，公司文件仍在迪拜法院公证。",
+              "es": "El poder se tramita ante el Ministerio de Justicia; el documento societario se sigue notarizando en los Tribunales de Dubái."
+            }
+          ]
+        },
+        "right": {
+          "title": {
+            "en": "Earlier notarised minutes",
+            "ar": "محضر اجتماع موثَّق سابق",
+            "ru": "Ранее удостоверенный протокол",
+            "zh": "此前已公证的会议纪要",
+            "es": "Acta notarizada anterior"
+          },
+          "items": [
+            {
+              "en": "Notarised minutes that already appoint who signs on the partner’s behalf.",
+              "ar": "محضر موثَّق يعيّن مسبقًا مَن يوقّع نيابةً عن الشريك.",
+              "ru": "Удостоверенный протокол, в котором уже назначено лицо, подписывающее от имени участника.",
+              "zh": "已公证并指定代该股东签署人员的会议纪要。",
+              "es": "Un acta notarizada que ya designa quién firma en nombre del socio."
+            },
+            {
+              "en": "The appointed person signs with their Emirates ID.",
+              "ar": "يوقّع الشخص المعيَّن بهويته الإماراتية.",
+              "ru": "Назначенное лицо подписывает, предъявив удостоверение личности ОАЭ.",
+              "zh": "被指定人凭其阿联酋身份证签署。",
+              "es": "La persona designada firma con su Emirates ID."
+            }
+          ]
+        }
+      },
+      {
+        "type": "para",
+        "accent": false,
+        "text": {
+          "en": "For the partner’s POA: [[/power-of-attorney|Power of Attorney]].",
+          "ar": "لوكالة الشريك: [[/power-of-attorney|الوكالات]].",
+          "ru": "Доверенность участника: [[/power-of-attorney|Доверенности]].",
+          "zh": "股东授权：[[/power-of-attorney|授权委托书]]。",
+          "es": "Para el poder del socio: [[/power-of-attorney|Poderes notariales]]."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "What the meeting minutes for opening a bank account should include",
+          "ar": "ما الذي يتضمنه محضر فتح الحساب المصرفي؟",
+          "ru": "Что указывается в протоколе для банковского счёта",
+          "zh": "开户会议纪要应写明的内容",
+          "es": "Qué indica el acta para la cuenta bancaria"
+        }
+      },
+      {
+        "type": "checklist",
+        "title": {
+          "en": "Bank account minutes",
+          "ar": "محضر فتح الحساب",
+          "ru": "Протокол для банковского счёта",
+          "zh": "开户会议纪要",
+          "es": "Acta para la cuenta bancaria"
+        },
+        "items": [
+          {
+            "en": "The company’s registered name, not a trading name.",
+            "ar": "اسم الشركة المسجَّل، لا الاسم التجاري.",
+            "ru": "Зарегистрированное наименование компании, а не торговое название.",
+            "zh": "公司注册名称，而非商号。",
+            "es": "La denominación registrada de la empresa, no un nombre comercial."
+          },
+          {
+            "en": "The decision to open the account and the bank’s name.",
+            "ar": "قرار فتح الحساب واسم البنك.",
+            "ru": "Решение об открытии счёта и название банка.",
+            "zh": "开户决定及银行名称。",
+            "es": "La decisión de abrir la cuenta y el nombre del banco."
+          },
+          {
+            "en": "Each authorised signatory by name, Emirates ID number and capacity.",
+            "ar": "اسم كل مفوَّض بالتوقيع، ورقم هويته، وصفته.",
+            "ru": "Каждый уполномоченный подписант — имя, номер удостоверения личности ОАЭ и должность.",
+            "zh": "每位授权签署人的姓名、阿联酋身份证号码和身份。",
+            "es": "Cada firmante autorizado con nombre, número de Emirates ID y cargo."
+          },
+          {
+            "en": "The signatories’ banking powers: open, operate and close the account.",
+            "ar": "الصلاحيات المصرفية للمفوَّضين: فتح الحساب وتشغيله وإغلاقه.",
+            "ru": "Банковские полномочия подписантов: открытие, ведение и закрытие счёта.",
+            "zh": "签署人的银行权限：开立、操作和关闭账户。",
+            "es": "Las facultades bancarias de los firmantes: abrir, operar y cerrar la cuenta."
+          },
+          {
+            "en": "The quorum clause, with a reference to the relevant MOA article.",
+            "ar": "بند النصاب، مع الإشارة إلى المادة ذات الصلة في عقد التأسيس.",
+            "ru": "Положение о кворуме со ссылкой на статью учредительного договора.",
+            "zh": "法定人数条款，并对应章程相关条文。",
+            "es": "La cláusula de quórum, vinculada al artículo de la escritura."
+          },
+          {
+            "en": "Signature blocks for every partner.",
+            "ar": "خانات توقيع لكل شريك.",
+            "ru": "Места для подписи каждого участника.",
+            "zh": "每位股东的签署栏。",
+            "es": "Espacios de firma para cada socio."
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "title": {
+          "en": "Parent company resolutions issued abroad",
+          "ar": "قرارات الشركة الأم الصادرة من الخارج",
+          "ru": "Решения материнской компании, выданные за рубежом",
+          "zh": "境外母公司出具的决议",
+          "es": "Resoluciones de la matriz emitidas en el extranjero"
+        },
+        "text": {
+          "en": "A parent company’s resolution issued abroad is notarised in its country of issue, legalised by that country’s foreign ministry and the UAE embassy, then attested by the UAE Ministry of Foreign Affairs: [[/attestation/mofa|MOFA attestation]]. Where an Arabic version is required: [[/legal-translation|legal translation]].",
+          "ar": "يُوثَّق قرار الشركة الأم الصادر من الخارج في بلد إصداره، ويُصدَّق من وزارة خارجية ذلك البلد وسفارة الإمارات، ثم من وزارة الخارجية الإماراتية: [[/attestation/mofa|تصديق وزارة الخارجية]]. وإذا طُلبت نسخة عربية: [[/legal-translation|الترجمة القانونية]].",
+          "ru": "Решение материнской компании, выданное за рубежом, нотариально удостоверяется в стране выдачи, легализуется в МИД этой страны и посольстве ОАЭ, затем в МИД ОАЭ: [[/attestation/mofa|легализация в МИД]]. Если требуется арабская версия: [[/legal-translation|юридический перевод]].",
+          "zh": "境外母公司出具的决议须在出具国公证，经该国外交部和阿联酋使馆认证后，再经阿联酋外交部认证：[[/attestation/mofa|外交部认证]]。如需阿拉伯语版本：[[/legal-translation|法律翻译]]。",
+          "es": "La resolución de una matriz emitida en el extranjero se notariza en su país de emisión, se legaliza ante el ministerio de exteriores de ese país y la embajada de los EAU, y luego ante el Ministerio de Asuntos Exteriores de los EAU: [[/attestation/mofa|legalización MOFA]]. Si se requiere versión en árabe: [[/legal-translation|traducción jurídica]]."
+        }
+      },
+      {
+        "type": "para",
+        "accent": false,
+        "text": {
+          "en": "Where the bank accepts a POA to operate the account: [[/power-of-attorney/bank|Bank Power of Attorney]]. Where the decision changes what the MOA records, the MOA is amended instead: [[/corporate/moa-amendment|MOA Amendment]].",
+          "ar": "إذا قبل البنك وكالة لتشغيل الحساب: [[/power-of-attorney/bank|الوكالة البنكية]]. وإذا كان القرار يغيّر ما يثبته عقد التأسيس، فيُعدَّل العقد نفسه: [[/corporate/moa-amendment|تعديل عقد التأسيس]].",
+          "ru": "Если банк принимает доверенность на ведение счёта: [[/power-of-attorney/bank|Банковская доверенность]]. Если решение меняет то, что закреплено в учредительном договоре, вносятся изменения в сам договор: [[/corporate/moa-amendment|Изменение учредительного договора]].",
+          "zh": "如银行接受以授权委托书操作账户：[[/power-of-attorney/bank|银行授权委托书]]。如决定改变章程所载内容，则须修订章程：[[/corporate/moa-amendment|章程修订]]。",
+          "es": "Si el banco acepta un poder para operar la cuenta: [[/power-of-attorney/bank|Poder bancario]]. Si la decisión cambia lo que recoge la escritura, se modifica la escritura: [[/corporate/moa-amendment|Modificación de la escritura]]."
+        }
+      },
+      {
+        "type": "success",
+        "title": {
+          "en": "Key points",
+          "ar": "الخلاصة",
+          "ru": "Главное",
+          "zh": "要点",
+          "es": "Puntos clave"
+        },
+        "text": {
+          "en": "A bank asks for a resolution where the MOA does not give banking powers, where a shareholder is a company, or under its own policy; some banks ask for notarised minutes naming the signatories. In Dubai, minutes and board resolutions are notarised at Dubai Courts only, every signatory needs an Emirates ID, and every partner signs. A partner who holds only a passport authorises a representative to sign under a POA issued remotely through the UAE Ministry of Justice.",
+          "ar": "يطلب البنك قرارًا إذا لم يمنح عقد التأسيس الصلاحيات المصرفية، أو كان أحد الشركاء شركة، أو وفق سياسته الخاصة، وبعض البنوك تطلب محضرًا موثَّقًا يحدد المفوَّضين بالتوقيع. وفي دبي يُوثَّق المحضر وقرار مجلس الإدارة لدى محاكم دبي حصرًا، ويجب أن يحمل كل موقّع هوية إماراتية، ويوقّع كل شريك. أما الشريك الذي لا يحمل سوى جواز السفر، فيُصدر وكالة عن بُعد عبر وزارة العدل الإماراتية ليوقّع الوكيل نيابةً عنه.",
+          "ru": "Банк запрашивает решение, если учредительный договор не даёт банковских полномочий, если участник — компания, или по своей политике; некоторые банки требуют удостоверенный протокол с подписантами. В Дубае протоколы и решения совета директоров удостоверяются только в судах Дубая, каждому подписанту нужно удостоверение личности ОАЭ, и подписывает каждый участник. Участник только с паспортом подписывает через доверенность, оформленную дистанционно через Министерство юстиции ОАЭ.",
+          "zh": "如章程未赋予银行权限、有股东为公司或依银行自身政策，银行会要求出具决议；部分银行要求经公证并写明签署人的会议纪要。在迪拜，会议纪要和董事会决议仅在迪拜法院公证，每位签署人须持阿联酋身份证，且每位股东均须签署。仅持护照的股东可凭通过阿联酋司法部远程办理的授权由他人代签。",
+          "es": "El banco pide una resolución si la escritura no otorga facultades bancarias, si un socio es una sociedad o por su propia política; algunos bancos piden un acta notarizada que nombre a los firmantes. En Dubái, actas y resoluciones del consejo se notarizan solo en los Tribunales de Dubái, cada firmante necesita Emirates ID y firma cada socio. Un socio que solo dispone de pasaporte autoriza a un apoderado para que firme en su nombre mediante un poder otorgado a distancia ante el Ministerio de Justicia de los EAU."
+        }
+      },
+      {
+        "type": "sources",
+        "updated": "2026-10-31",
+        "links": [
+          {
+            "label": {
+              "en": "Dubai Chambers — Mashreq Business Banking account opening guidelines",
+              "ar": "غرفة دبي — إرشادات فتح الحسابات التجارية لدى بنك المشرق",
+              "ru": "Торговая палата Дубая — правила открытия бизнес-счетов банка Машрек",
+              "zh": "迪拜商会 — 银行企业账户开户指引",
+              "es": "Dubai Chambers — pautas de apertura de cuentas de empresa de Mashreq"
+            },
+            "url": "https://dubaichambers.com/documents/d/dubai-chambers-1/mashreq-business-banking-account-opening-guidelines_v1-2"
+          },
+          {
+            "label": {
+              "en": "Emirates NBD — Business banking digital account opening FAQs",
+              "ar": "بنك الإمارات دبي الوطني — الأسئلة الشائعة لفتح الحسابات التجارية رقميًا",
+              "ru": "Банк «Эмирейтс НБД» — частые вопросы о цифровом открытии бизнес-счёта",
+              "zh": "阿联酋国民银行 — 企业账户数字开户常见问题",
+              "es": "Emirates NBD — preguntas frecuentes sobre apertura digital de cuentas de empresa"
+            },
+            "url": "https://www.emiratesnbd.com/-/media/enbd/files/bub/2023/bb_dao_faqs.pdf"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": {
+          "en": "Do UAE banks always require a board resolution to open a company account?",
+          "ar": "هل تشترط البنوك في الإمارات دائمًا قرار مجلس إدارة لفتح حساب الشركة؟",
+          "ru": "Всегда ли банки ОАЭ требуют предоставить решение совета директоров для открытия счёта компании?",
+          "zh": "阿联酋银行开立公司账户都要求董事会决议吗？",
+          "es": "¿Exigen siempre los bancos de los EAU una resolución para abrir la cuenta de empresa?"
+        },
+        "a": {
+          "en": "No. Where the MOA gives the manager or signatory the power to open, operate and close bank accounts, it may be enough. Banks ask for a resolution where the MOA does not, where a shareholder is a company, or under their own policy; some banks ask for notarised meeting minutes naming the signatories.",
+          "ar": "لا. إذا منح عقد التأسيس المدير أو المفوَّض بالتوقيع صلاحية فتح الحسابات المصرفية وتشغيلها وإغلاقها فقد يكفي. ويطلب البنك قرارًا إذا لم ينص العقد على ذلك، أو كان أحد الشركاء شركة، أو وفق سياسته الخاصة، وبعض البنوك تطلب محضر اجتماع موثَّقًا يحدد المفوَّضين بالتوقيع.",
+          "ru": "Нет. Если учредительный договор даёт управляющему или подписанту право открывать, вести и закрывать счета, этого может быть достаточно. Банк запрашивает решение, если договор этого не предусматривает, если участник — компания, или по своей политике; некоторые банки требуют удостоверенный протокол собрания с подписантами.",
+          "zh": "不是。如章程赋予经理或签署人开立、操作和关闭银行账户的权限，可能已足够。章程未作规定、有股东为公司或依银行自身政策时，银行会要求决议；部分银行要求经公证并写明签署人的会议纪要。",
+          "es": "No. Si la escritura otorga al gerente o al firmante la facultad de abrir, operar y cerrar cuentas, puede bastar. El banco pide una resolución si la escritura no lo prevé, si un socio es una sociedad o por su propia política; algunos bancos piden un acta notarizada que nombre a los firmantes."
+        }
+      },
+      {
+        "q": {
+          "en": "Where is a board resolution notarised in Dubai?",
+          "ar": "أين يُوثَّق قرار مجلس الإدارة في دبي؟",
+          "ru": "Где удостоверяется решение совета директоров в Дубае?",
+          "zh": "在迪拜，董事会决议在哪里公证？",
+          "es": "¿Dónde se notariza una resolución del consejo en Dubái?"
+        },
+        "a": {
+          "en": "At Dubai Courts only, not at the UAE Ministry of Justice. Every signatory needs an Emirates ID.",
+          "ar": "لدى محاكم دبي حصرًا، لا لدى وزارة العدل الإماراتية، ويجب أن يحمل كل موقّع هوية إماراتية.",
+          "ru": "Только в судах Дубая, а не в Министерстве юстиции ОАЭ. Каждому подписанту нужно удостоверение личности ОАЭ.",
+          "zh": "仅在迪拜法院公证，不在阿联酋司法部办理。每位签署人均须持阿联酋身份证。",
+          "es": "Solo en los Tribunales de Dubái, no en el Ministerio de Justicia de los EAU. Cada firmante necesita Emirates ID."
+        }
+      },
+      {
+        "q": {
+          "en": "Can a partner without an Emirates ID sign the meeting minutes?",
+          "ar": "هل يستطيع شريك لا يحمل هوية إماراتية التوقيع على محضر الاجتماع؟",
+          "ru": "Может ли участник без удостоверения личности ОАЭ подписать протокол собрания?",
+          "zh": "没有阿联酋身份证的股东能签署会议纪要吗？",
+          "es": "¿Puede firmar el acta un socio sin Emirates ID?"
+        },
+        "a": {
+          "en": "Not directly. The partner issues a POA with the passport only, remotely through the UAE Ministry of Justice and without personal attendance, to another partner or an authorised person who holds an Emirates ID; or earlier notarised minutes appoint who signs on the partner’s behalf.",
+          "ar": "ليس مباشرةً. يُصدر الشريك وكالة بجواز السفر فقط، عن بُعد عبر وزارة العدل الإماراتية ودون حضور شخصي، لشريك آخر أو مفوَّض يحمل هوية إماراتية؛ أو يكون هناك محضر موثَّق سابق يعيّن مَن يوقّع نيابةً عنه.",
+          "ru": "Не напрямую. Участник оформляет доверенность только по паспорту, дистанционно через Министерство юстиции ОАЭ и без личной явки, на другого участника или уполномоченное лицо с удостоверением личности ОАЭ; либо ранее удостоверенный протокол назначает лицо, подписывающее от его имени.",
+          "zh": "不能直接签署。该股东可仅凭护照通过阿联酋司法部远程办理授权（无需本人到场），授权另一名股东或持阿联酋身份证的被授权人签署；或依据此前已公证、指定代签人的会议纪要。",
+          "es": "No directamente. El socio otorga un poder solo con pasaporte, a distancia ante el Ministerio de Justicia de los EAU y sin comparecencia personal, a otro socio o a una persona autorizada con Emirates ID; o un acta notarizada anterior designa quién firma en su nombre."
+        }
+      },
+      {
+        "q": {
+          "en": "Do all partners have to sign the minutes?",
+          "ar": "هل يجب أن يوقّع جميع الشركاء على المحضر؟",
+          "ru": "Должны ли все участники подписать протокол?",
+          "zh": "所有股东都必须签署会议纪要吗？",
+          "es": "¿Deben firmar el acta todos los socios?"
+        },
+        "a": {
+          "en": "Yes. Every partner signs, either in person or through a representative acting under a POA.",
+          "ar": "نعم. يوقّع كل شريك بنفسه أو بموجب وكالة.",
+          "ru": "Да. Подписывает каждый участник — сам или через представителя по доверенности.",
+          "zh": "是的。每位股东均须签署，可本人签署或由代理人凭授权签署。",
+          "es": "Sí. Firma cada socio, por sí mismo o mediante apoderado con poder."
+        }
+      },
+      {
+        "q": {
+          "en": "Does an LLC need a board resolution or a partners’ resolution?",
+          "ar": "هل تحتاج الشركة ذات المسؤولية المحدودة إلى قرار مجلس إدارة أم قرار شركاء؟",
+          "ru": "Нужно ли ООО решение совета директоров или решение участников?",
+          "zh": "有限责任公司需要董事会决议还是股东决议？",
+          "es": "¿Una LLC necesita resolución del consejo o de los socios?"
+        },
+        "a": {
+          "en": "An LLC is run by managers, not a board, so the bank’s “board resolution” is usually a partners’ resolution recorded in meeting minutes. In a joint stock company, the board of directors signs.",
+          "ar": "الشركة ذات المسؤولية المحدودة يديرها مدير أو أكثر لا مجلس إدارة، فيكون «قرار مجلس الإدارة» الذي يطلبه البنك عادةً قرارًا للشركاء مثبتًا في محضر اجتماع. أما في الشركة المساهمة فيوقّع مجلس الإدارة.",
+          "ru": "ООО управляется управляющими, а не советом, поэтому «решение совета директоров» для банка — обычно решение участников, оформленное протоколом. В акционерном обществе подписывает совет директоров.",
+          "zh": "有限责任公司由经理而非董事会管理，因此银行所说的“董事会决议”通常是记录在会议纪要中的股东决议。股份公司则由董事会签署。",
+          "es": "Una LLC la dirigen gerentes, no un consejo, por lo que la “resolución del consejo” que pide el banco suele ser una resolución de los socios recogida en acta. En una sociedad anónima firma el consejo de administración."
+        }
+      },
+      {
+        "q": {
+          "en": "What if a shareholder is a foreign company?",
+          "ar": "ماذا لو كان أحد الشركاء شركة أجنبية؟",
+          "ru": "Что делать, если участник — иностранная компания?",
+          "zh": "如果股东是外国公司怎么办？",
+          "es": "¿Y si un socio es una sociedad extranjera?"
+        },
+        "a": {
+          "en": "Banks ask for that company’s own notarised resolution or POA. Issued abroad, it is notarised in its country, legalised by that country’s foreign ministry and the UAE embassy, then attested by the UAE Ministry of Foreign Affairs.",
+          "ar": "تطلب البنوك قرار الشركة الشريكة نفسها أو وكالتها موثَّقة. وإذا صدر في الخارج، يُوثَّق في بلده، ويُصدَّق من وزارة خارجية ذلك البلد وسفارة الإمارات، ثم من وزارة الخارجية الإماراتية.",
+          "ru": "Банки запрашивают собственное нотариально удостоверенное решение или доверенность этой компании. Документ, выданный за рубежом, удостоверяется в стране выдачи, легализуется в МИД этой страны и посольстве ОАЭ, затем в МИД ОАЭ.",
+          "zh": "银行会要求该股东公司本身经公证的决议或授权。如在境外出具，须在当地公证，经该国外交部和阿联酋使馆认证，再经阿联酋外交部认证。",
+          "es": "Los bancos piden la resolución o el poder notarizados de esa sociedad. Si se emite en el extranjero, se notariza en su país, se legaliza ante el ministerio de exteriores de ese país y la embajada de los EAU, y luego ante el Ministerio de Asuntos Exteriores de los EAU."
+        }
+      },
+      {
+        "q": {
+          "en": "Are new minutes needed to change the bank signatories?",
+          "ar": "هل يلزم محضر جديد لتغيير المفوَّضين بالتوقيع لدى البنك؟",
+          "ru": "Нужен ли новый протокол для смены подписантов в банке?",
+          "zh": "更换银行签署人需要新的会议纪要吗？",
+          "es": "¿Hace falta una nueva acta para cambiar los firmantes del banco?"
+        },
+        "a": {
+          "en": "Yes. The bank updates the signatories on the basis of minutes naming the new ones. Where the bank requires them notarised, they are notarised at Dubai Courts.",
+          "ar": "نعم. يعدّل البنك المفوَّضين بالتوقيع بناءً على محضر يحدد المفوَّضين الجدد، وإذا اشترط البنك توثيقه يُوثَّق لدى محاكم دبي.",
+          "ru": "Да. Банк меняет подписантов на основании протокола с новыми подписантами. Если банк требует удостоверения, протокол удостоверяется в судах Дубая.",
+          "zh": "需要。银行依据写明新签署人的会议纪要更新签署人；如银行要求公证，则在迪拜法院公证。",
+          "es": "Sí. El banco actualiza los firmantes con un acta que nombre a los nuevos. Si el banco exige notarizarla, se notariza en los Tribunales de Dubái."
+        }
+      }
+    ],
+    "related": [
+      "corporate-documents-dubai",
+      "corporate-poa-vs-individual-poa-uae",
+      "poa-for-banking-uae-guide"
+    ]
+  },
+	
+	
   "poa-cancellation-dubai-revoke": {
     "title_en": "Cancelling a Power of Attorney in Dubai: A Practical Guide to Revocation",
     "title_ar": "إلغاء الوكالة في دبي: دليل عملي لعزل الوكيل",
