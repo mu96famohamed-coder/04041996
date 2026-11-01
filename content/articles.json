@@ -1,5 +1,524 @@
 {
 	
+	
+	"transfer-car-ownership-dubai-power-of-attorney": {
+    "title_en": "Can a Power of Attorney Transfer Car Ownership in Dubai?",
+    "title_ar": "هل يمكن نقل ملكية سيارتك في دبي بوكالة؟",
+    "title_ru": "Можно ли переоформить автомобиль в Дубае по доверенности?",
+    "title_zh": "在迪拜可以凭授权委托书办理车辆过户吗？",
+    "title_es": "¿Se puede transferir un coche en Dubái con un poder?",
+    "meta_en": "Yes. RTA accepts a legal representative whose POA states the “sale and disposal of vehicles”. Documents, fines, mortgage release and POAs from abroad.",
+    "meta_ar": "نقل ملكية مركبة في دبي بوكالة: تقبل هيئة الطرق والمواصلات الممثل القانوني إذا نصت وكالته على بيع المركبات والتصرف فيها. المستندات والمخالفات وفك الرهن.",
+    "meta_ru": "Да. Управление дорог и транспорта Дубая принимает представителя, если доверенность предусматривает продажу и распоряжение автомобилями. Документы и штрафы.",
+    "meta_zh": "可以。迪拜道路交通管理局接受代理人办理过户，前提是授权写明“出售和处分车辆”。了解所需文件、罚款、解除抵押及境外授权。",
+    "meta_es": "Sí. La RTA acepta un representante cuyo poder indique la “venta y disposición de vehículos”. Documentos, multas, hipoteca y poderes del extranjero.",
+    "date": "2026-11-01",
+    "date_updated": "2026-11-01",
+    "rich_blocks": [
+      {
+        "type": "para",
+        "accent": true,
+        "text": {
+          "en": "Yes. Dubai’s Roads and Transport Authority (RTA) accepts a legal representative for the seller or the buyer, provided the representative’s power of attorney stipulates the “sale and disposal of vehicles”. The owner does not need to attend: the attorney attends the RTA customer happiness or inspection centre in person. If you hold only a passport, you can issue the POA remotely through the UAE Ministry of Justice, without personal attendance. For help drafting the document, see [[/power-of-attorney/vehicle/sale|Vehicle Sale Power of Attorney]].",
+          "ar": "نعم. تقبل هيئة الطرق والمواصلات في دبي الممثل القانوني عن البائع أو المشتري، بشرط أن تنص وكالته على «بيع المركبات والتصرف فيها». ولا يلزم حضور المالك، إذ يحضر الوكيل بنفسه إلى مركز إسعاد المتعاملين أو مركز الفحص التابع للهيئة. وإذا كنت تحمل جواز سفر فقط، يمكنك إصدار وكالة بيع السيارة (توكيل بيع السيارة) عن بُعد عبر وزارة العدل الإماراتية دون حضور شخصي. للمساعدة في إعداد المستندات: [[/power-of-attorney/vehicle/sale|وكالة بيع المركبة]].",
+          "ru": "Да. Управление дорог и транспорта Дубая принимает законного представителя продавца или покупателя, если в его доверенности предусмотрены «продажа и распоряжение транспортными средствами». Владельцу приходить не нужно: представитель лично приходит в центр обслуживания клиентов или центр техосмотра Управления. Если у вас есть только паспорт, доверенность можно оформить дистанционно через Министерство юстиции ОАЭ без личной явки. Помощь в оформлении документов: [[/power-of-attorney/vehicle/sale|Доверенность на продажу автомобиля]].",
+          "zh": "可以。迪拜道路交通管理局接受卖方或买方的法定代理人办理，前提是代理人的授权委托书写明“出售和处分车辆”。车主无需到场，由代理人本人前往该局的客户服务中心或车检中心办理。如果您仅持有护照，可通过阿联酋司法部远程办理授权，无需本人到场。文件起草服务：[[/power-of-attorney/vehicle/sale|车辆出售授权委托书]]。",
+          "es": "Sí. La Autoridad de Carreteras y Transporte de Dubái (RTA) acepta un representante legal del vendedor o del comprador, siempre que su poder estipule la “venta y disposición de vehículos”. El propietario no necesita acudir: el apoderado se presenta en persona en el centro de atención al cliente o de inspección de la RTA. Si solo tiene pasaporte, puede otorgar el poder a distancia ante el Ministerio de Justicia de los EAU, sin comparecencia personal. Para la redacción del documento, consulte [[/power-of-attorney/vehicle/sale|Poder para la venta de vehículos]]."
+        }
+      },
+      {
+        "type": "law",
+        "ref": "Roads and Transport Authority — Apply for Changing a Vehicle Ownership (individuals), service conditions",
+        "text": {
+          "en": "RTA’s conditions for the service: the legal representative must have a power of attorney stipulating the “sale and disposal of vehicles”; all powers of attorney issued outside the UAE must be ratified by the Ministry of Foreign Affairs; you or your legal representative must be present in person when applying at the customer happiness or inspection centres; the online sale and purchase agreement is valid for 14 days; licensing transactions are completed within 14 days to avoid penalties.",
+          "ar": "تنص شروط الخدمة لدى الهيئة على: أن تكون لدى الممثل القانوني وكالة تنص على «بيع المركبات والتصرف فيها»؛ وأن تُصدَّق جميع الوكالات الصادرة خارج الدولة من وزارة الخارجية؛ وأن يحضر المتعامل أو ممثله القانوني بنفسه عند التقديم في مراكز إسعاد المتعاملين أو مراكز الفحص؛ وأن صلاحية عقد البيع والشراء الإلكتروني 14 يومًا؛ وأن تُستكمل معاملات الترخيص خلال 14 يومًا تجنبًا للغرامات.",
+          "ru": "Условия услуги: законный представитель должен иметь доверенность, предусматривающую «продажу и распоряжение транспортными средствами»; все доверенности, выданные за пределами ОАЭ, легализуются в Министерстве иностранных дел; заявитель или его законный представитель лично присутствует при подаче в центрах обслуживания клиентов или техосмотра; электронный договор купли-продажи действует 14 дней; регистрационные действия завершаются в течение 14 дней во избежание штрафов.",
+          "zh": "该局规定的服务条件：法定代理人须持有写明“出售和处分车辆”的授权委托书；在阿联酋境外出具的授权均须经外交部认证；在客户服务中心或车检中心申请时，申请人或其法定代理人须亲自前往；电子买卖协议有效期为14天；须在14天内完成登记手续以免受罚。",
+          "es": "Condiciones del servicio de la RTA: el representante legal debe tener un poder que estipule la “venta y disposición de vehículos”; todos los poderes emitidos fuera de los EAU deben estar ratificados por el Ministerio de Asuntos Exteriores; usted o su representante legal deben presentarse en persona al tramitar en los centros de atención al cliente o de inspección; el acuerdo de compraventa en línea es válido 14 días; los trámites de registro se completan en 14 días para evitar sanciones."
+        },
+        "ref_ar": "هيئة الطرق والمواصلات — خدمة طلب تغيير ملكية مركبة للأفراد، شروط الخدمة"
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "What RTA requires for a vehicle ownership transfer",
+          "ar": "ما الذي تطلبه الهيئة لنقل ملكية المركبة؟",
+          "ru": "Что требует Управление для переоформления автомобиля",
+          "zh": "车辆过户需要满足哪些要求",
+          "es": "Qué exige la RTA para el traspaso de un vehículo"
+        }
+      },
+      {
+        "type": "checklist",
+        "title": {
+          "en": "RTA requirements — individuals",
+          "ar": "متطلبات الهيئة — الأفراد",
+          "ru": "Требования Управления — физические лица",
+          "zh": "道路交通管理局要求 — 个人",
+          "es": "Requisitos de la RTA — particulares"
+        },
+        "items": [
+          {
+            "en": "Valid Emirates ID for the buyer and the seller.",
+            "ar": "هوية إماراتية سارية للمشتري والبائع.",
+            "ru": "Действующие удостоверения личности ОАЭ покупателя и продавца.",
+            "zh": "买方和卖方的有效阿联酋身份证。",
+            "es": "Emirates ID vigente del comprador y del vendedor."
+          },
+          {
+            "en": "Electronic insurance.",
+            "ar": "تأمين إلكتروني.",
+            "ru": "Электронная страховка.",
+            "zh": "电子保险。",
+            "es": "Seguro electrónico."
+          },
+          {
+            "en": "Electronic technical inspection.",
+            "ar": "فحص فني إلكتروني.",
+            "ru": "Электронный техосмотр.",
+            "zh": "电子车检记录。",
+            "es": "Inspección técnica electrónica."
+          },
+          {
+            "en": "A Gulf specifications compliance document if the vehicle is not compliant on the customs card.",
+            "ar": "شهادة مطابقة للمواصفات الخليجية إذا لم تكن المركبة مطابقة في البطاقة الجمركية.",
+            "ru": "Документ о соответствии стандартам стран Залива, если по таможенной карточке автомобиль им не соответствует.",
+            "zh": "如车辆海关卡显示不符合海湾规格，须提供海湾规格符合证明。",
+            "es": "Documento de conformidad con las especificaciones del Golfo si el vehículo no cumple según la tarjeta aduanera."
+          },
+          {
+            "en": "Electronic mortgage release, if the vehicle is mortgaged.",
+            "ar": "فك رهن إلكتروني إذا كانت المركبة مرهونة.",
+            "ru": "Электронное снятие залога, если автомобиль в залоге.",
+            "zh": "如车辆有抵押，须电子解除抵押。",
+            "es": "Liberación electrónica de la hipoteca, si el vehículo está hipotecado."
+          },
+          {
+            "en": "All traffic fines paid, and the non-renewal fine paid if the registration has expired.",
+            "ar": "سداد جميع المخالفات المرورية، وغرامة عدم التجديد إذا كانت الملكية منتهية.",
+            "ru": "Оплата всех штрафов, а также штрафа за непродление, если регистрация истекла.",
+            "zh": "缴清所有交通罚款；如登记已过期，须缴纳未续期罚款。",
+            "es": "Pago de todas las multas de tráfico y de la multa por no renovación si el registro ha vencido."
+          },
+          {
+            "en": "For a representative: a POA stipulating the “sale and disposal of vehicles”.",
+            "ar": "للممثل القانوني: وكالة تنص على «بيع المركبات والتصرف فيها».",
+            "ru": "Для представителя: доверенность, предусматривающая «продажу и распоряжение транспортными средствами».",
+            "zh": "代理人：写明“出售和处分车辆”的授权委托书。",
+            "es": "Para el representante: un poder que estipule la “venta y disposición de vehículos”."
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "title": {
+          "en": "If the owner’s Emirates ID has expired",
+          "ar": "إذا كانت هوية المالك منتهية",
+          "ru": "Если удостоверение личности владельца истекло",
+          "zh": "业主阿联酋身份证已过期时",
+          "es": "Si la Emirates ID del propietario ha vencido"
+        },
+        "text": {
+          "en": "RTA’s published list asks for a valid Emirates ID for the buyer and the seller, and does not state what replaces it when the seller is represented and has left the UAE. Confirm with RTA what it accepts for the owner before the attorney’s visit.",
+          "ar": "تطلب القائمة المنشورة لدى الهيئة هوية إماراتية سارية للمشتري والبائع، ولا تحدد ما يحل محلها إذا كان البائع ممثَّلًا بوكيل وغادر الدولة. تحقّق من الهيئة من مستندات المالك المقبولة قبل توجّه الوكيل لإتمام المعاملة.",
+          "ru": "Опубликованный перечень Управления требует действующее удостоверение личности ОАЭ покупателя и продавца и не уточняет, чем его заменить, если продавца представляет доверенное лицо, а сам он покинул ОАЭ. До визита представителя уточните в Управлении, какие документы владельца будут приняты.",
+          "zh": "该局公布的清单要求买卖双方持有效阿联酋身份证，但未说明卖方委托代理人且已离开阿联酋时以何替代。请在代理人前往办理前，向该局确认可接受的车主证件。",
+          "es": "La lista publicada por la RTA pide Emirates ID vigente del comprador y del vendedor, y no indica qué la sustituye cuando el vendedor está representado y ha salido de los EAU. Antes de que acuda el apoderado, confirme con la RTA qué documentos del propietario se aceptan."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "Which POA does RTA accept?",
+          "ar": "ما الوكالة التي تقبلها الهيئة؟",
+          "ru": "Какую доверенность принимает Управление?",
+          "zh": "道路交通管理局接受哪种授权？",
+          "es": "¿Qué poder acepta la RTA?"
+        }
+      },
+      {
+        "type": "compare",
+        "left": {
+          "title": {
+            "en": "UAE POA — remotely through the UAE Ministry of Justice",
+            "ar": "وكالة إماراتية — عن بُعد عبر وزارة العدل الإماراتية",
+            "ru": "Доверенность ОАЭ — дистанционно через Министерство юстиции ОАЭ",
+            "zh": "阿联酋授权 — 通过阿联酋司法部远程办理",
+            "es": "Poder emitido en los EAU — a distancia ante el Ministerio de Justicia"
+          },
+          "items": [
+            {
+              "en": "Issued with your passport only, without personal attendance.",
+              "ar": "تُصدر بجواز السفر فقط ودون حضور شخصي.",
+              "ru": "Оформляется только по паспорту, без личной явки.",
+              "zh": "仅凭护照办理，无需本人到场。",
+              "es": "Se otorga solo con pasaporte, sin comparecencia personal."
+            },
+            {
+              "en": "Issued in the UAE; RTA’s Ministry of Foreign Affairs ratification applies to POAs issued outside the UAE.",
+              "ar": "تصدر داخل الدولة؛ ويخص شرط تصديق وزارة الخارجية لدى الهيئة الوكالاتِ الصادرة خارج الدولة.",
+              "ru": "Выдаётся в ОАЭ; требование Управления о легализации в МИД касается доверенностей, выданных за пределами ОАЭ.",
+              "zh": "在阿联酋境内出具；该局的外交部认证要求适用于境外出具的授权。",
+              "es": "Se emite en los EAU; la ratificación por el Ministerio de Asuntos Exteriores que exige la RTA se aplica a poderes emitidos fuera de los EAU."
+            },
+            {
+              "en": "States the “sale and disposal of vehicles”.",
+              "ar": "تنص على «بيع المركبات والتصرف فيها».",
+              "ru": "Предусматривает «продажу и распоряжение транспортными средствами».",
+              "zh": "写明“出售和处分车辆”。",
+              "es": "Estipula la “venta y disposición de vehículos”."
+            }
+          ]
+        },
+        "right": {
+          "title": {
+            "en": "POA issued outside the UAE",
+            "ar": "وكالة صادرة خارج الدولة",
+            "ru": "Доверенность, выданная за пределами ОАЭ",
+            "zh": "阿联酋境外出具的授权",
+            "es": "Poder emitido fuera de los EAU"
+          },
+          "items": [
+            {
+              "en": "Attested by the UAE embassy or consulate in the country of issue.",
+              "ar": "تُصدَّق من سفارة الإمارات أو قنصليتها في بلد الإصدار.",
+              "ru": "Легализуется в посольстве или консульстве ОАЭ в стране выдачи.",
+              "zh": "经阿联酋驻出具国使领馆认证。",
+              "es": "Legalizado por la embajada o consulado de los EAU en el país de emisión."
+            },
+            {
+              "en": "Ratified by the UAE Ministry of Foreign Affairs before it is used at RTA.",
+              "ar": "تُصدَّق من وزارة الخارجية الإماراتية قبل استخدامها لدى الهيئة.",
+              "ru": "Легализуется в МИД ОАЭ до использования в Управлении.",
+              "zh": "在该局使用前须经阿联酋外交部认证。",
+              "es": "Ratificado por el Ministerio de Asuntos Exteriores de los EAU antes de usarlo en la RTA."
+            },
+            {
+              "en": "States the “sale and disposal of vehicles”.",
+              "ar": "تنص على «بيع المركبات والتصرف فيها».",
+              "ru": "Предусматривает «продажу и распоряжение транспортными средствами».",
+              "zh": "写明“出售和处分车辆”。",
+              "es": "Estipula la “venta y disposición de vehículos”."
+            }
+          ]
+        }
+      },
+      {
+        "type": "info",
+        "title": {
+          "en": "Attestation in the UAE",
+          "ar": "التصديق داخل الدولة",
+          "ru": "Легализация в ОАЭ",
+          "zh": "在阿联酋境内的认证",
+          "es": "Legalización en los EAU"
+        },
+        "text": {
+          "en": "UAE Ministry of Foreign Affairs attestation is completed in the UAE: [[/attestation/mofa|MOFA attestation]]. Where an Arabic translation is requested: [[/legal-translation|legal translation]].",
+          "ar": "تُستكمل إجراءات تصديق وزارة الخارجية الإماراتية داخل الدولة: [[/attestation/mofa|تصديق وزارة الخارجية]]. وإذا طُلبت ترجمة عربية: [[/legal-translation|الترجمة القانونية]].",
+          "ru": "Легализация в МИД ОАЭ проводится на территории ОАЭ: [[/attestation/mofa|легализация в МИД]]. Если требуется перевод на арабский: [[/legal-translation|юридический перевод]].",
+          "zh": "阿联酋外交部认证在阿联酋境内完成：[[/attestation/mofa|外交部认证]]。如被要求提供阿拉伯语翻译：[[/legal-translation|法律翻译]]。",
+          "es": "La legalización ante el Ministerio de Asuntos Exteriores de los EAU se realiza en los EAU: [[/attestation/mofa|legalización MOFA]]. Si se pide traducción al árabe: [[/legal-translation|traducción jurídica]]."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "Steps when the owner is outside the UAE",
+          "ar": "خطوات نقل الملكية إذا كان المالك خارج الدولة",
+          "ru": "Порядок, если владелец за пределами ОАЭ",
+          "zh": "车主不在阿联酋时的办理步骤",
+          "es": "Pasos cuando el propietario está fuera de los EAU"
+        }
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "title": {
+              "en": "1. Issue the POA",
+              "ar": "1. إصدار الوكالة",
+              "ru": "1. Оформите доверенность",
+              "zh": "1. 办理授权",
+              "es": "1. Otorgue el poder"
+            },
+            "body": {
+              "en": "Through the UAE Ministry of Justice with your passport, stating the “sale and disposal of vehicles”.",
+              "ar": "عبر وزارة العدل الإماراتية بجواز سفرك، على أن تنص على «بيع المركبات والتصرف فيها».",
+              "ru": "Через Министерство юстиции ОАЭ по паспорту, с полномочием на «продажу и распоряжение транспортными средствами».",
+              "zh": "凭护照通过阿联酋司法部办理，并写明“出售和处分车辆”。",
+              "es": "Ante el Ministerio de Justicia de los EAU con su pasaporte, estipulando la “venta y disposición de vehículos”."
+            }
+          },
+          {
+            "title": {
+              "en": "2. Pay the fines and settle the vehicle loan",
+              "ar": "2. سداد المخالفات والتمويل",
+              "ru": "2. Погасите штрафы и кредит",
+              "zh": "2. 缴清罚款和贷款",
+              "es": "2. Liquide multas y financiación"
+            },
+            "body": {
+              "en": "Pay all traffic fines. If the vehicle is financed, settle the loan so the bank releases the mortgage electronically.",
+              "ar": "سدّد جميع المخالفات المرورية. وإذا كانت المركبة ممولة، سدّد القرض ليفك البنك الرهن إلكترونيًا.",
+              "ru": "Оплатите все штрафы. Если автомобиль в кредите, погасите его, чтобы банк электронно снял залог.",
+              "zh": "缴清所有交通罚款。如车辆有贷款，须先结清，由银行以电子方式解除抵押。",
+              "es": "Pague todas las multas. Si el vehículo está financiado, liquide el préstamo para que el banco libere la hipoteca electrónicamente."
+            }
+          },
+          {
+            "title": {
+              "en": "3. Inspection and insurance",
+              "ar": "3. الفحص والتأمين",
+              "ru": "3. Техосмотр и страховка",
+              "zh": "3. 车检和保险",
+              "es": "3. Inspección y seguro"
+            },
+            "body": {
+              "en": "The vehicle undergoes and passes the technical inspection, and the buyer arranges insurance.",
+              "ar": "تجتاز المركبة الفحص الفني، ويؤمّن عليها المشتري.",
+              "ru": "Автомобиль проходит техосмотр, покупатель оформляет страховку.",
+              "zh": "车辆通过技术检测，由买方投保。",
+              "es": "El vehículo supera la inspección técnica y el comprador lo asegura."
+            }
+          },
+          {
+            "title": {
+              "en": "4. Sale and purchase agreement",
+              "ar": "4. عقد البيع والشراء",
+              "ru": "4. Договор купли-продажи",
+              "zh": "4. 买卖协议",
+              "es": "4. Acuerdo de compraventa"
+            },
+            "body": {
+              "en": "The attorney and the buyer complete the agreement; the online agreement is valid for 14 days.",
+              "ar": "يُبرم الوكيل والمشتري العقد، وصلاحية العقد الإلكتروني 14 يومًا.",
+              "ru": "Представитель и покупатель оформляют договор; электронный договор действует 14 дней.",
+              "zh": "代理人与买方签订协议，电子协议有效期为14天。",
+              "es": "El apoderado y el comprador formalizan el acuerdo; el acuerdo en línea es válido 14 días."
+            }
+          },
+          {
+            "title": {
+              "en": "5. Transfer at RTA",
+              "ar": "5. نقل الملكية لدى الهيئة",
+              "ru": "5. Переоформление в Управлении",
+              "zh": "5. 在道路交通管理局过户",
+              "es": "5. Traspaso en la RTA"
+            },
+            "body": {
+              "en": "The attorney attends the customer happiness or inspection centre in person with the POA, and the vehicle is registered in the buyer’s name.",
+              "ar": "يحضر الوكيل بنفسه إلى مركز إسعاد المتعاملين أو مركز الفحص ومعه الوكالة، وتُسجَّل المركبة باسم المشتري.",
+              "ru": "Представитель лично приходит в центр обслуживания клиентов или техосмотра с доверенностью, и автомобиль регистрируется на покупателя.",
+              "zh": "代理人携授权亲自前往客户服务中心或车检中心，车辆登记至买方名下。",
+              "es": "El apoderado acude en persona con el poder al centro de atención al cliente o de inspección, y el vehículo se registra a nombre del comprador."
+            }
+          }
+        ]
+      },
+      {
+        "type": "warning",
+        "title": {
+          "en": "A POA to drive or renew is not a POA to sell",
+          "ar": "وكالة القيادة أو التجديد ليست وكالة بيع",
+          "ru": "Доверенность на управление или продление — не доверенность на продажу",
+          "zh": "驾驶或续期授权不等于出售授权",
+          "es": "Un poder para conducir o renovar no es un poder para vender"
+        },
+        "text": {
+          "en": "A POA to drive the vehicle, renew its registration or manage it does not meet RTA’s condition for a sale. The POA must stipulate the “sale and disposal of vehicles”. Management POAs: [[/power-of-attorney/vehicle/management|Vehicle Management Power of Attorney]].",
+          "ar": "وكالة قيادة المركبة أو تجديد ترخيصها أو إدارتها لا تستوفي شرط الهيئة للبيع، فيجب أن تنص الوكالة على «بيع المركبات والتصرف فيها». لوكالات الإدارة: [[/power-of-attorney/vehicle/management|وكالة إدارة المركبة]].",
+          "ru": "Доверенность на вождение, продление регистрации или управление автомобилем не отвечает условию Управления для продажи. Доверенность должна предусматривать «продажу и распоряжение транспортными средствами». Доверенность на управление: [[/power-of-attorney/vehicle/management|Доверенность на управление автомобилем]].",
+          "zh": "用于驾驶、续期登记或管理车辆的授权不符合该局对出售的要求。授权必须写明“出售和处分车辆”。管理授权：[[/power-of-attorney/vehicle/management|车辆管理授权委托书]]。",
+          "es": "Un poder para conducir el vehículo, renovar su registro o administrarlo no cumple la condición de la RTA para vender. El poder debe estipular la “venta y disposición de vehículos”. Poderes de administración: [[/power-of-attorney/vehicle/management|Poder para administración de vehículos]]."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "If the car is being exported",
+          "ar": "إذا كانت السيارة ستُصدَّر",
+          "ru": "Если автомобиль вывозится из ОАЭ",
+          "zh": "车辆出口时",
+          "es": "Si el coche se exporta"
+        }
+      },
+      {
+        "type": "para",
+        "accent": false,
+        "text": {
+          "en": "Exporting the car is a separate RTA transaction from a local ownership transfer. Export POAs: [[/power-of-attorney/vehicle/export|Vehicle Export Power of Attorney]].",
+          "ar": "تصدير السيارة ونقل ملكيتها داخل الدولة معاملتان منفصلتان لدى الهيئة. لوكالات التصدير: [[/power-of-attorney/vehicle/export|وكالة تصدير المركبة]].",
+          "ru": "Вывоз автомобиля — отдельная процедура Управления, не равная переоформлению внутри страны. Доверенность на экспорт: [[/power-of-attorney/vehicle/export|Доверенность на экспорт автомобиля]].",
+          "zh": "车辆出口是该局与境内过户不同的独立手续。出口授权：[[/power-of-attorney/vehicle/export|车辆出口授权委托书]]。",
+          "es": "Exportar el coche es un trámite de la RTA distinto del traspaso local. Poderes de exportación: [[/power-of-attorney/vehicle/export|Poder para exportación de vehículos]]."
+        }
+      },
+      {
+        "type": "info",
+        "title": {
+          "en": "Company-owned vehicles",
+          "ar": "المركبات المملوكة لشركات",
+          "ru": "Автомобили компаний",
+          "zh": "公司名下车辆",
+          "es": "Vehículos de empresa"
+        },
+        "text": {
+          "en": "For a company vehicle, RTA lists a valid trade licence, a company letter in Arabic for the transfer and registration, the Emirates ID of the person authorised by the company or its legal representative, and the memorandum of association with a legalised Arabic translation. Free-zone companies add a no-objection certificate from the free-zone authority. See [[/blog/corporate-poa-vs-individual-poa-uae|Corporate vs Individual POA]] and [[/legal-translation|legal translation]].",
+          "ar": "لمركبة مملوكة لشركة، تطلب الهيئة رخصة تجارية سارية، وخطابًا من الشركة باللغة العربية لنقل المركبة وتسجيلها، وهوية الشخص المفوَّض من الشركة أو ممثلها القانوني، وعقد التأسيس مع ترجمة عربية مصدقة. وتُقدّم شركات المناطق الحرة أيضًا شهادة عدم ممانعة من سلطة المنطقة الحرة. راجع [[/blog/corporate-poa-vs-individual-poa-uae|وكالة الشركة والوكالة الفردية]] و[[/legal-translation|الترجمة القانونية]].",
+          "ru": "Для автомобиля компании Управление требует действующую торговую лицензию, письмо компании на арабском о передаче и регистрации, удостоверение личности ОАЭ уполномоченного лица компании или её законного представителя и учредительный договор с заверенным переводом на арабский. Компании свободных зон дополнительно представляют письмо об отсутствии возражений от администрации зоны. См. [[/blog/corporate-poa-vs-individual-poa-uae|Корпоративная и личная доверенность]] и [[/legal-translation|юридический перевод]].",
+          "zh": "公司名下车辆，该局要求：有效营业执照、公司就过户和登记出具的阿拉伯语函件、公司授权人或其法定代理人的阿联酋身份证，以及附经认证阿拉伯语译本的公司章程。自由区公司另需自由区管理机构出具的无异议证明。参阅[[/blog/corporate-poa-vs-individual-poa-uae|公司授权与个人授权]]及[[/legal-translation|法律翻译]]。",
+          "es": "Para un vehículo de empresa, la RTA pide licencia comercial vigente, carta de la empresa en árabe para el traspaso y registro, Emirates ID de la persona autorizada por la empresa o de su representante legal, y la escritura de constitución con traducción legalizada al árabe. Las empresas de zona franca añaden un certificado de no objeción de la autoridad de la zona. Vea [[/blog/corporate-poa-vs-individual-poa-uae|Poder corporativo vs individual]] y [[/legal-translation|traducción jurídica]]."
+        }
+      },
+      {
+        "type": "success",
+        "title": {
+          "en": "Key points",
+          "ar": "الخلاصة",
+          "ru": "Главное",
+          "zh": "要点",
+          "es": "Puntos clave"
+        },
+        "text": {
+          "en": "RTA accepts a legal representative whose POA stipulates the “sale and disposal of vehicles”. A passport holder issues that POA remotely through the UAE Ministry of Justice, without personal attendance; a POA issued abroad is ratified by the UAE Ministry of Foreign Affairs. Before the transfer, the fines are paid, the mortgage is released and the inspection and insurance are completed. The online agreement is valid for 14 days.",
+          "ar": "تقبل هيئة الطرق والمواصلات الممثل القانوني إذا نصت وكالته على «بيع المركبات والتصرف فيها». ويُصدر حامل جواز السفر هذه الوكالة عن بُعد عبر وزارة العدل الإماراتية دون حضور شخصي، أما الوكالة الصادرة من الخارج فتُصدَّق من وزارة الخارجية الإماراتية. وقبل نقل الملكية، تُسدَّد المخالفات ويُفك الرهن وتُستكمل إجراءات الفحص والتأمين. وصلاحية العقد الإلكتروني 14 يومًا.",
+          "ru": "Управление принимает законного представителя, если его доверенность предусматривает «продажу и распоряжение транспортными средствами». Владелец паспорта оформляет её дистанционно через Министерство юстиции ОАЭ без личной явки; доверенность из-за рубежа легализуется в МИД ОАЭ. До переоформления необходимо оплатить штрафы, снять залог, пройти техосмотр и оформить страховку. Электронный договор действует 14 дней.",
+          "zh": "该局接受授权写明“出售和处分车辆”的法定代理人。仅持护照者可通过阿联酋司法部远程办理该授权，无需本人到场；境外授权须经阿联酋外交部认证。过户前须缴清罚款、解除抵押、完成车检和保险。电子协议有效期为14天。",
+          "es": "La RTA acepta un representante legal cuyo poder estipule la “venta y disposición de vehículos”. Quien solo tiene pasaporte otorga ese poder a distancia ante el Ministerio de Justicia de los EAU, sin comparecencia personal; un poder emitido en el extranjero se ratifica ante el Ministerio de Asuntos Exteriores de los EAU. Antes del traspaso, deben pagarse las multas, levantarse la garantía del préstamo y completarse la inspección y la contratación del seguro. El acuerdo en línea es válido 14 días."
+        }
+      },
+      {
+        "type": "sources",
+        "updated": "2026-11-01",
+        "links": [
+          {
+            "label": {
+              "en": "Roads and Transport Authority — Apply for Changing a Vehicle Ownership (individuals)",
+              "ar": "هيئة الطرق والمواصلات — طلب تغيير ملكية مركبة (الأفراد)",
+              "ru": "Управление дорог и транспорта Дубая — смена владельца транспортного средства (физические лица)",
+              "zh": "迪拜道路交通管理局 — 车辆所有权变更申请（个人）",
+              "es": "RTA — solicitud de cambio de propiedad de vehículo (particulares)"
+            },
+            "url": "https://www.rta.ae/wps/portal/rta/ae/home/rta-services/service-details?serviceId=600"
+          },
+          {
+            "label": {
+              "en": "Roads and Transport Authority — Apply for Changing a Vehicle Ownership (companies)",
+              "ar": "هيئة الطرق والمواصلات — طلب تغيير ملكية مركبة (الشركات)",
+              "ru": "Управление дорог и транспорта Дубая — смена владельца транспортного средства (компании)",
+              "zh": "迪拜道路交通管理局 — 车辆所有权变更申请（公司）",
+              "es": "RTA — solicitud de cambio de propiedad de vehículo (empresas)"
+            },
+            "url": "https://www.rta.ae/wps/portal/rta/ae/home/rta-services/service-details?serviceId=603"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": {
+          "en": "Can I transfer my car ownership in Dubai with a power of attorney?",
+          "ar": "هل يمكن نقل ملكية سيارتي في دبي بوكالة؟",
+          "ru": "Можно ли переоформить автомобиль в Дубае по доверенности?",
+          "zh": "在迪拜能凭授权委托书办理车辆过户吗？",
+          "es": "¿Puedo transferir la propiedad de mi coche en Dubái con un poder?"
+        },
+        "a": {
+          "en": "Yes. RTA accepts a legal representative whose POA stipulates the “sale and disposal of vehicles”. The representative attends the customer happiness or inspection centre in person.",
+          "ar": "نعم. تقبل هيئة الطرق والمواصلات الممثل القانوني إذا نصت وكالته على «بيع المركبات والتصرف فيها»، ويحضر الممثل بنفسه إلى مركز إسعاد المتعاملين أو مركز الفحص.",
+          "ru": "Да. Управление принимает законного представителя, если доверенность предусматривает «продажу и распоряжение транспортными средствами». Представитель лично приходит в центр обслуживания клиентов или техосмотра.",
+          "zh": "可以。该局接受授权写明“出售和处分车辆”的法定代理人，由代理人亲自前往客户服务中心或车检中心办理。",
+          "es": "Sí. La RTA acepta un representante legal cuyo poder estipule la “venta y disposición de vehículos”. El representante acude en persona al centro de atención al cliente o de inspección."
+        }
+      },
+      {
+        "q": {
+          "en": "Do I need to be in Dubai to sell my car?",
+          "ar": "هل يجب أن أكون في دبي لبيع سيارتي؟",
+          "ru": "Нужно ли находиться в Дубае, чтобы продать автомобиль?",
+          "zh": "出售车辆必须本人在迪拜吗？",
+          "es": "¿Tengo que estar en Dubái para vender mi coche?"
+        },
+        "a": {
+          "en": "No. Your attorney completes the transfer. If you hold only a passport, you can issue the POA remotely through the UAE Ministry of Justice, without personal attendance.",
+          "ar": "لا. يُتم وكيلك نقل الملكية. وإذا كنت تحمل جواز سفر فقط، يمكنك إصدار الوكالة عن بُعد عبر وزارة العدل الإماراتية دون حضور شخصي.",
+          "ru": "Нет. Переоформление завершает представитель. При наличии только паспорта доверенность оформляется дистанционно через Министерство юстиции ОАЭ без личной явки.",
+          "zh": "不必。由代理人完成过户。仅持护照者可通过阿联酋司法部远程办理授权，无需本人到场。",
+          "es": "No. Su apoderado completa el traspaso. Si solo tiene pasaporte, puede otorgar el poder a distancia ante el Ministerio de Justicia de los EAU, sin comparecencia personal."
+        }
+      },
+      {
+        "q": {
+          "en": "Does RTA accept a POA issued outside the UAE?",
+          "ar": "هل تقبل الهيئة وكالة صادرة خارج الدولة؟",
+          "ru": "Принимает ли Управление доверенность, выданную за пределами ОАЭ?",
+          "zh": "该局接受阿联酋境外出具的授权吗？",
+          "es": "¿Acepta la RTA un poder emitido fuera de los EAU?"
+        },
+        "a": {
+          "en": "Yes, once it is attested by the UAE embassy or consulate in the country of issue and ratified by the UAE Ministry of Foreign Affairs. It must stipulate the “sale and disposal of vehicles”.",
+          "ar": "نعم، بعد تصديقها من سفارة الإمارات أو قنصليتها في بلد الإصدار ثم من وزارة الخارجية الإماراتية، على أن تنص على «بيع المركبات والتصرف فيها».",
+          "ru": "Да, после легализации в посольстве или консульстве ОАЭ в стране выдачи и в МИД ОАЭ. Она должна предусматривать «продажу и распоряжение транспортными средствами».",
+          "zh": "接受，但须经阿联酋驻出具国使领馆认证并经阿联酋外交部认证，且须写明“出售和处分车辆”。",
+          "es": "Sí, una vez legalizado por la embajada o consulado de los EAU en el país de emisión y ratificado por el Ministerio de Asuntos Exteriores de los EAU. Debe estipular la “venta y disposición de vehículos”."
+        }
+      },
+      {
+        "q": {
+          "en": "Can a financed car be transferred?",
+          "ar": "هل يمكن نقل ملكية سيارة عليها تمويل؟",
+          "ru": "Можно ли переоформить автомобиль в кредите?",
+          "zh": "有贷款的车辆可以过户吗？",
+          "es": "¿Se puede transferir un coche financiado?"
+        },
+        "a": {
+          "en": "Not before the mortgage is released. RTA requires an electronic mortgage release for a mortgaged vehicle.",
+          "ar": "يجب فك الرهن أولًا؛ إذ تشترط الهيئة فك الرهن إلكترونيًا للمركبة المرهونة.",
+          "ru": "Не раньше снятия залога: Управление требует электронное снятие залога для заложенного автомобиля.",
+          "zh": "须先解除抵押。该局要求有抵押的车辆办理电子解除抵押。",
+          "es": "Primero debe cancelarse la carga del préstamo: la RTA exige su cancelación electrónica cuando el vehículo está gravado."
+        }
+      },
+      {
+        "q": {
+          "en": "Do traffic fines have to be paid before the transfer?",
+          "ar": "هل يجب سداد المخالفات المرورية قبل النقل؟",
+          "ru": "Нужно ли оплатить штрафы до переоформления?",
+          "zh": "过户前必须缴清交通罚款吗？",
+          "es": "¿Hay que pagar las multas antes del traspaso?"
+        },
+        "a": {
+          "en": "Yes. RTA requires all traffic fines to be paid, and the non-renewal fine if the registration has expired.",
+          "ar": "نعم. تشترط الهيئة سداد جميع المخالفات المرورية، وغرامة عدم التجديد إذا كانت الملكية منتهية.",
+          "ru": "Да. Управление требует оплаты всех штрафов, а также штрафа за непродление, если регистрация истекла.",
+          "zh": "是的。该局要求缴清所有交通罚款；如登记已过期，还须缴纳未续期罚款。",
+          "es": "Sí. La RTA exige pagar todas las multas de tráfico y la multa por no renovación si el registro ha vencido."
+        }
+      },
+      {
+        "q": {
+          "en": "How long is the RTA online sale agreement valid?",
+          "ar": "ما مدة صلاحية عقد البيع الإلكتروني لدى الهيئة؟",
+          "ru": "Сколько действует электронный договор купли-продажи Управления?",
+          "zh": "该局的电子买卖协议有效期多久？",
+          "es": "¿Cuánto tiempo es válido el acuerdo de venta en línea de la RTA?"
+        },
+        "a": {
+          "en": "14 days. Licensing transactions are completed within 14 days to avoid penalties.",
+          "ar": "14 يومًا، وتُستكمل معاملات الترخيص خلال 14 يومًا تجنبًا للغرامات.",
+          "ru": "14 дней. Регистрационные действия завершаются в течение 14 дней во избежание штрафов.",
+          "zh": "14天。须在14天内完成登记手续以免受罚。",
+          "es": "14 días. Los trámites de registro se completan en 14 días para evitar sanciones."
+        }
+      }
+    ],
+    "related": [
+      "special-power-of-attorney-uae-guide",
+      "power-of-attorney-types-dubai",
+      "how-to-get-poa-dubai"
+    ]
+  },
+	
 	"board-resolution-company-bank-account-uae": {
     "title_en": "Do You Need a Board Resolution to Open a Bank Account?",
     "title_ar": "هل يطلب البنك قرار مجلس إدارة لفتح حساب الشركة في الإمارات؟",
@@ -549,7 +1068,637 @@
       "poa-for-banking-uae-guide"
     ]
   },
-	
+
+
+
+"sell-dubai-property-from-abroad-poa": {
+    "title_en": "Can You Sell Your Dubai Property From Outside the UAE?",
+    "title_ar": "هل يمكن بيع عقارك في دبي وأنت خارج الإمارات؟",
+    "title_ru": "Можно ли продать недвижимость в Дубае, находясь за пределами ОАЭ?",
+    "title_zh": "人在阿联酋境外，能出售迪拜房产吗？",
+    "title_es": "¿Puede vender su propiedad en Dubái desde fuera de los EAU?",
+    "meta_en": "Yes — through a power of attorney for sale of property. DLD rules on POA wording and validity, payment of the sale price and issuing the POA from abroad.",
+    "meta_ar": "نعم، بوكالة بيع عقار. شروط دائرة الأراضي والأملاك لصياغة الوكالة ومدة صلاحيتها وطريقة استلام الثمن، وكيف تُصدر الوكالة وأنت خارج الدولة.",
+    "meta_ru": "Да — по доверенности на продажу недвижимости. Требования DLD к тексту и сроку, порядок выплаты цены и оформление доверенности из-за рубежа.",
+    "meta_zh": "可以——通过房产出售授权委托书。了解迪拜土地局对授权措辞与有效期的要求、售价支付方式，以及如何在境外办理授权。",
+    "meta_es": "Sí, mediante un poder para la venta de inmuebles. Requisitos del DLD sobre redacción y vigencia, pago del precio y cómo otorgar el poder desde el extranjero.",
+    "date": "2026-10-29",
+    "date_updated": "2026-10-29",
+    "rich_blocks": [
+      {
+        "type": "para",
+        "accent": true,
+        "text": {
+          "en": "Yes. You do not need to travel. A special power of attorney that expressly authorises the sale allows your attorney to sign the sale and complete the transfer at a Real Estate Registration Trustee office: Dubai Land Department (DLD) registers sales between the seller and the buyer or their legally authorised representatives. If you hold only a passport, you can issue the POA remotely through the UAE Ministry of Justice, without personal attendance. For help drafting the document, see [[/power-of-attorney/real-estate/sale|Property Sale Power of Attorney]].",
+          "ar": "نعم، يمكنك بيع عقارك دون السفر إلى الإمارات، من خلال وكالة خاصة (توكيل بيع العقار) تنص صراحةً على البيع وتخوّل وكيلك توقيع اتفاقية البيع وإتمام نقل الملكية لدى أحد مكاتب أمناء التسجيل العقاري، إذ تسجّل دائرة الأراضي والأملاك البيع بين البائع والمشتري أو من يمثلهما قانونًا. وإذا كنت تحمل جواز سفر فقط، يمكنك إصدار الوكالة عن بُعد عبر وزارة العدل الإماراتية دون حضور شخصي. للمساعدة في إعداد المستندات: [[/power-of-attorney/real-estate/sale|وكالة بيع العقار]].",
+          "ru": "Да, приезжать не нужно. Специальная доверенность, прямо предусматривающая продажу, позволяет вашему представителю подписать сделку и завершить переход права в офисе регистрационного доверенного лица по недвижимости: Земельный департамент Дубая (DLD) регистрирует продажу между продавцом и покупателем или их законными представителями. Если у вас есть только паспорт, доверенность можно оформить дистанционно через Министерство юстиции ОАЭ без личной явки. Помощь в оформлении документов: [[/power-of-attorney/real-estate/sale|Доверенность на продажу недвижимости]].",
+          "zh": "可以，无需亲自前往。明确授权出售的专项授权委托书，可授权您的代理人签署买卖协议，并在房地产登记受托办事处完成过户：迪拜土地局（DLD）登记卖方与买方或其合法代表之间的买卖。如果您仅持有护照，可通过阿联酋司法部远程办理授权，无需本人到场。文件起草服务：[[/power-of-attorney/real-estate/sale|房产出售授权委托书]]。",
+          "es": "Sí, sin necesidad de viajar. Un poder especial que autorice expresamente la venta permite a su apoderado firmar la venta y completar la transmisión en una oficina de fideicomisario de registro inmobiliario: el Departamento de Tierras de Dubái (DLD) registra ventas entre vendedor y comprador o sus representantes legales. Si solo tiene pasaporte, puede otorgar el poder a distancia ante el Ministerio de Justicia de los EAU, sin comparecencia personal. Para la redacción del documento, consulte [[/power-of-attorney/real-estate/sale|Poder para la venta de inmuebles]]."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "Two ways to issue the sale POA from abroad",
+          "ar": "طريقتان لإصدار وكالة البيع وأنت خارج الدولة",
+          "ru": "Два способа оформить доверенность на продажу из-за рубежа",
+          "zh": "身在境外时办理出售授权的两种方式",
+          "es": "Dos formas de otorgar el poder de venta desde el extranjero"
+        }
+      },
+      {
+        "type": "compare",
+        "left": {
+          "title": {
+            "en": "UAE POA — remotely through the UAE Ministry of Justice",
+            "ar": "وكالة إماراتية — عن بُعد عبر وزارة العدل الإماراتية",
+            "ru": "Доверенность ОАЭ — дистанционно через Министерство юстиции ОАЭ",
+            "zh": "阿联酋授权 — 通过阿联酋司法部远程办理",
+            "es": "Poder emitido en los EAU — a distancia ante el Ministerio de Justicia"
+          },
+          "items": [
+            {
+              "en": "Issued with your passport only, without personal attendance.",
+              "ar": "تُصدر بجواز السفر فقط ودون حضور شخصي.",
+              "ru": "Оформляется только по паспорту, без личной явки.",
+              "zh": "仅凭护照办理，无需本人到场。",
+              "es": "Se otorga solo con pasaporte, sin comparecencia personal."
+            },
+            {
+              "en": "Issued in the UAE, so no embassy or Ministry of Foreign Affairs attestation is needed.",
+              "ar": "تصدر داخل الدولة، فلا تحتاج إلى تصديق السفارة أو وزارة الخارجية.",
+              "ru": "Выдаётся в ОАЭ, поэтому легализация в посольстве и МИД не нужна.",
+              "zh": "在阿联酋境内出具，无需使馆或外交部认证。",
+              "es": "Se emite en los EAU, por lo que no requiere legalización consular ni del Ministerio de Asuntos Exteriores."
+            },
+            {
+              "en": "DLD verifies Ministry of Justice POAs on the Ministry’s official website.",
+              "ar": "تتحقق دائرة الأراضي والأملاك من وكالات وزارة العدل عبر الموقع الرسمي للوزارة.",
+              "ru": "DLD проверяет доверенности Министерства юстиции на официальном сайте министерства.",
+              "zh": "迪拜土地局通过司法部官方网站核验司法部出具的授权。",
+              "es": "El DLD verifica los poderes del Ministerio de Justicia en el sitio web oficial del Ministerio."
+            }
+          ]
+        },
+        "right": {
+          "title": {
+            "en": "POA signed in your country",
+            "ar": "وكالة موقّعة في بلدك",
+            "ru": "Доверенность, подписанная в вашей стране",
+            "zh": "在您所在国家签署的授权",
+            "es": "Poder firmado en su país"
+          },
+          "items": [
+            {
+              "en": "Notarised there, then attested by that country’s foreign ministry, the UAE embassy or consulate, and the UAE Ministry of Foreign Affairs.",
+              "ar": "تُوثَّق هناك، ثم تُصدَّق من وزارة خارجية ذلك البلد، فسفارة الإمارات أو قنصليتها، فوزارة الخارجية الإماراتية.",
+              "ru": "Заверяется там у нотариуса, затем легализуется в МИД этой страны, посольстве или консульстве ОАЭ и МИД ОАЭ.",
+              "zh": "在当地公证后，依次经该国外交部、阿联酋驻当地使领馆及阿联酋外交部认证。",
+              "es": "Se notariza allí y luego se legaliza ante el ministerio de exteriores de ese país, la embajada o consulado de los EAU y el Ministerio de Asuntos Exteriores de los EAU."
+            },
+            {
+              "en": "A full legal translation into Arabic by a UAE-licensed translator if it is not in Arabic.",
+              "ar": "ترجمة قانونية كاملة إلى العربية من مترجم مرخّص في الدولة إذا لم تكن بالعربية.",
+              "ru": "Полный юридический перевод на арабский язык лицензированным в ОАЭ переводчиком, если документ не на арабском.",
+              "zh": "如非阿拉伯语，须由阿联酋持牌译员出具完整的阿拉伯语法律翻译。",
+              "es": "Traducción jurídica completa al árabe por un traductor con licencia en los EAU si no está en árabe."
+            },
+            {
+              "en": "The original paper POA is presented; scanned or uncertified electronic copies are not accepted.",
+              "ar": "يُقدَّم أصل الوكالة الورقي، ولا تُقبل النسخ الممسوحة ضوئيًا أو الإلكترونية غير المصدقة.",
+              "ru": "Предъявляется бумажный оригинал; сканы и незаверенные электронные копии не принимаются.",
+              "zh": "须出示纸质原件，不接受扫描件或未经认证的电子副本。",
+              "es": "Se presenta el original en papel; no se aceptan copias escaneadas ni electrónicas sin certificar."
+            },
+            {
+              "en": "Issued within the two years before it is submitted.",
+              "ar": "صادرة خلال السنتين السابقتين على تقديمها.",
+              "ru": "Выдана не ранее чем за два года до подачи.",
+              "zh": "须在提交前两年内出具。",
+              "es": "Emitido dentro de los dos años anteriores a su presentación."
+            }
+          ]
+        }
+      },
+      {
+        "type": "info",
+        "title": {
+          "en": "Signed abroad: the steps completed in the UAE",
+          "ar": "الوكالة الموقّعة في الخارج: الخطوات داخل الدولة",
+          "ru": "Подписана за рубежом: этапы в ОАЭ",
+          "zh": "境外签署：在阿联酋完成的步骤",
+          "es": "Firmado en el extranjero: pasos en los EAU"
+        },
+        "text": {
+          "en": "UAE Ministry of Foreign Affairs attestation and the Arabic translation are completed in the UAE before the POA reaches DLD: [[/attestation/mofa|MOFA attestation]] and [[/legal-translation|legal translation]].",
+          "ar": "تُستكمل إجراءات تصديق وزارة الخارجية الإماراتية والترجمة إلى العربية داخل الدولة، قبل تقديم الوكالة إلى الدائرة: [[/attestation/mofa|تصديق وزارة الخارجية]] و[[/legal-translation|الترجمة القانونية]].",
+          "ru": "Легализация в МИД ОАЭ и перевод на арабский выполняются в ОАЭ до подачи доверенности в DLD: [[/attestation/mofa|легализация в МИД]] и [[/legal-translation|юридический перевод]].",
+          "zh": "阿联酋外交部认证和阿拉伯语翻译须在提交迪拜土地局之前于阿联酋境内完成：[[/attestation/mofa|外交部认证]]和[[/legal-translation|法律翻译]]。",
+          "es": "La legalización ante el Ministerio de Asuntos Exteriores de los EAU y la traducción al árabe se completan en los EAU antes de presentar el poder al DLD: [[/attestation/mofa|legalización MOFA]] y [[/legal-translation|traducción jurídica]]."
+        }
+      },
+      {
+        "type": "law",
+        "ref": "Dubai Land Department — Circular No. 29/R/2025 of 16 July 2025 on powers of attorney in real estate transactions",
+        "text": {
+          "en": "The circular governs how DLD accepts and verifies POAs for real estate dispositions in Dubai, including sale. The POA must name the transaction in the approved terms — for a sale, wording such as “sale of real estate”; broad wording such as “full authority to manage the property” is not sufficient. POAs are verified only on the official websites of Dubai Courts, the Abu Dhabi Judicial Department and the UAE Ministry of Justice; QR codes are not used for verification. A POA issued abroad must be issued within the two years before submission, attested, presented in original and translated into Arabic.",
+          "ar": "ينظّم التعميم قبول دائرة الأراضي والأملاك للوكالات في التصرفات العقارية في دبي، ومنها البيع، وطريقة التحقق منها. ويجب أن تنص الوكالة على التصرف بالصيغة المعتمدة، فلا تكفي للبيع عبارات عامة مثل «كامل الصلاحية في إدارة العقار». ويتم التحقق من الوكالات حصرًا عبر المواقع الرسمية لمحاكم دبي ودائرة القضاء في أبوظبي ووزارة العدل الإماراتية، ولا يُعتمد رمز الاستجابة السريعة للتحقق. أما الوكالة الصادرة من الخارج فيجب أن تكون صادرة خلال السنتين السابقتين على تقديمها، ومصدقة، ويُقدَّم أصلها مرفقًا بترجمتها إلى العربية.",
+          "ru": "Циркуляр определяет, как DLD принимает и проверяет доверенности на распоряжение недвижимостью в Дубае, включая продажу. Доверенность должна называть сделку утверждёнными формулировками — для продажи, например, «продажа недвижимости»; общих формулировок вроде «полные полномочия по управлению недвижимостью» недостаточно. Доверенности проверяются только на официальных сайтах судов Дубая, Судебного департамента Абу-Даби и Министерства юстиции ОАЭ; проверка по двумерному коду не применяется. Доверенность, выданная за рубежом, должна быть оформлена не ранее чем за два года до подачи, легализована, представлена в оригинале и переведена на арабский язык.",
+          "zh": "该通告规定迪拜土地局如何接受和核验迪拜房地产处分（包括出售）所用的授权委托书。授权须以核准措辞写明交易——出售时使用如“出售不动产”的措辞；“全权管理房产”之类的笼统表述不足以办理出售。授权仅可通过迪拜法院、阿布扎比司法局和阿联酋司法部的官方网站核验，不以二维码核验。境外出具的授权须在提交前两年内出具、经认证、提交原件并附阿拉伯语翻译。",
+          "es": "La circular regula cómo el DLD acepta y verifica los poderes para actos de disposición inmobiliaria en Dubái, incluida la venta. El poder debe nombrar la operación con los términos aprobados — para una venta, expresiones como “venta de bienes inmuebles”; no basta una redacción amplia como “plenas facultades para administrar el inmueble”. Los poderes se verifican solo en los sitios oficiales de los Tribunales de Dubái, el Departamento Judicial de Abu Dabi y el Ministerio de Justicia de los EAU; no se usan códigos QR para verificar. Un poder emitido en el extranjero debe haberse emitido en los dos años anteriores a su presentación, estar legalizado, presentarse en original y traducido al árabe."
+        },
+        "ref_ar": "دائرة الأراضي والأملاك — تعميم بشأن الوكالات في التصرفات العقارية، صادر في 16 يوليو 2025"
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "What must a power of attorney for sale of property state?",
+          "ar": "ما الذي يجب أن تنص عليه وكالة بيع العقار؟",
+          "ru": "Что должна содержать доверенность на продажу недвижимости?",
+          "zh": "房产出售授权委托书应写明哪些内容？",
+          "es": "¿Qué debe indicar un poder para la venta de inmuebles?"
+        }
+      },
+      {
+        "type": "checklist",
+        "title": {
+          "en": "Sale POA checklist",
+          "ar": "قائمة مراجعة وكالة البيع",
+          "ru": "Проверка доверенности на продажу",
+          "zh": "出售授权核对清单",
+          "es": "Lista de control del poder de venta"
+        },
+        "items": [
+          {
+            "en": "The sale power in DLD’s approved terms; management wording does not cover a sale.",
+            "ar": "صلاحية البيع بالصيغة المعتمدة لدى الدائرة؛ فعبارات الإدارة لا تشمل البيع.",
+            "ru": "Полномочие на продажу в утверждённой DLD формулировке; формулировки об управлении не охватывают продажу.",
+            "zh": "以迪拜土地局核准措辞写明出售权限；管理类措辞不涵盖出售。",
+            "es": "La facultad de venta en los términos aprobados por el DLD; la redacción de administración no cubre la venta."
+          },
+          {
+            "en": "The property details as shown on the title deed.",
+            "ar": "بيانات العقار كما وردت في سند الملكية.",
+            "ru": "Данные объекта в точности как в свидетельстве о праве собственности.",
+            "zh": "与产权证一致的房产信息。",
+            "es": "Los datos del inmueble tal como figuran en el título de propiedad."
+          },
+          {
+            "en": "Names and passport or Emirates ID numbers of the owner and the attorney; DLD cross-checks the owner’s name, Emirates ID and passport number.",
+            "ar": "أسماء المالك والوكيل وأرقام جوازات سفرهما أو هوياتهما؛ إذ تطابق الدائرة اسم المالك ورقم هويته وجوازه مع نظامها.",
+            "ru": "Имена и номера паспортов или удостоверений личности ОАЭ владельца и представителя; DLD сверяет имя, номер удостоверения личности и паспорта владельца.",
+            "zh": "业主与代理人的姓名及护照或阿联酋身份证号码；迪拜土地局会核对业主姓名、身份证号和护照号。",
+            "es": "Nombres y números de pasaporte o Emirates ID del propietario y del apoderado; el DLD coteja el nombre, Emirates ID y pasaporte del propietario."
+          },
+          {
+            "en": "The powers needed to complete the sale: signing the sale agreement, obtaining the developer’s no-objection certificate, dealing with the lender if the property is mortgaged, and signing the transfer at the trustee office.",
+            "ar": "الصلاحيات اللازمة لإتمام البيع: توقيع اتفاقية البيع، واستخراج شهادة عدم الممانعة من المطوّر، والتعامل مع البنك إن كان العقار مرهونًا، والتوقيع على نقل الملكية لدى مكتب أمين التسجيل.",
+            "ru": "Действия, необходимые для продажи: подписание договора купли-продажи, получение письма застройщика об отсутствии возражений, взаимодействие с банком при ипотеке и подписание перехода права в офисе регистрационного доверенного лица.",
+            "zh": "出售所需的各项行为：签署买卖协议、取得开发商无异议证明、房产有抵押时与贷款银行办理相关事宜，以及在登记受托办事处签署过户。",
+            "es": "Los actos que exige la venta: firmar el acuerdo de venta, obtener el certificado de no objeción del promotor, tratar con el banco si el inmueble está hipotecado y firmar la transmisión en la oficina del fideicomisario."
+          },
+          {
+            "en": "The power to receive the price within DLD’s payment rules.",
+            "ar": "صلاحية استلام الثمن وفق قواعد الدفع لدى الدائرة.",
+            "ru": "Полномочие на получение цены в рамках правил оплаты DLD.",
+            "zh": "在迪拜土地局付款规则范围内收取价款的权限。",
+            "es": "La facultad de recibir el precio conforme a las reglas de pago del DLD."
+          },
+          {
+            "en": "Arabic text, or bilingual Arabic–English if a party does not speak Arabic.",
+            "ar": "النص بالعربية، أو ثنائي اللغة عربي–إنجليزي إذا كان أحد الأطراف لا يتحدث العربية.",
+            "ru": "Текст на арабском или на двух языках — арабском и английском, если одна из сторон не говорит по-арабски.",
+            "zh": "以阿拉伯语书写；如一方不懂阿拉伯语，则采用阿英双语。",
+            "es": "Texto en árabe, o bilingüe árabe–inglés si alguna de las partes no habla árabe."
+          }
+        ]
+      },
+      {
+        "type": "info",
+        "title": {
+          "en": "How long is a POA for sale of property valid?",
+          "ar": "كم مدة صلاحية وكالة بيع العقار؟",
+          "ru": "Сколько действует доверенность на продажу недвижимости?",
+          "zh": "房产出售授权的有效期是多久？",
+          "es": "¿Cuánto tiempo es válido un poder de venta de inmuebles?"
+        },
+        "text": {
+          "en": "DLD’s published answer: a POA for sale, mortgage or grant is valid for two years; a POA for purchase is valid for five years from the date of notarisation.",
+          "ar": "توضح دائرة الأراضي والأملاك في أسئلتها الشائعة أن الوكالة لأغراض البيع والرهن والمنح صالحة لمدة سنتين، ولأغراض الشراء خمس سنوات من تاريخ التوثيق لدى الكاتب العدل.",
+          "ru": "Опубликованный ответ DLD: доверенность на продажу, ипотеку или дарение действует два года; доверенность на покупку — пять лет с даты нотариального удостоверения.",
+          "zh": "迪拜土地局公布的答复：用于出售、抵押或赠与的授权有效期为两年；用于购买的授权自公证之日起有效五年。",
+          "es": "Respuesta publicada del DLD: un poder para venta, hipoteca o donación es válido dos años; un poder para compra, cinco años desde la fecha de notarización."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "How is the sale price paid when an attorney signs?",
+          "ar": "كيف يُدفع ثمن البيع عندما يوقّع الوكيل؟",
+          "ru": "Как оплачивается недвижимость, если сделку подписывает представитель?",
+          "zh": "由代理人签署时，售价如何支付？",
+          "es": "¿Cómo se paga el precio cuando firma el apoderado?"
+        }
+      },
+      {
+        "type": "table",
+        "headers": [
+          {
+            "en": "Payment option",
+            "ar": "طريقة الدفع",
+            "ru": "Способ оплаты",
+            "zh": "付款方式",
+            "es": "Forma de pago"
+          },
+          {
+            "en": "Condition",
+            "ar": "الشرط",
+            "ru": "Условие",
+            "zh": "条件",
+            "es": "Condición"
+          }
+        ],
+        "rows": [
+          [
+            {
+              "en": "Manager’s cheque in the seller’s name",
+              "ar": "شيك مصرفي «شيك مدير» باسم البائع",
+              "ru": "Менеджерский чек на имя продавца",
+              "zh": "以卖方为抬头的银行本票",
+              "es": "Cheque de gerencia a nombre del vendedor"
+            },
+            {
+              "en": "For the full sale price.",
+              "ar": "بكامل ثمن البيع.",
+              "ru": "На всю сумму продажи.",
+              "zh": "金额为全部售价。",
+              "es": "Por el precio total de venta."
+            }
+          ],
+          [
+            {
+              "en": "Cheque in the attorney’s name",
+              "ar": "شيك باسم الوكيل",
+              "ru": "Чек на имя представителя",
+              "zh": "以代理人为抬头的支票",
+              "es": "Cheque a nombre del apoderado"
+            },
+            {
+              "en": "Only if the receipt states that the amount was received on behalf of the seller.",
+              "ar": "بشرط أن ينص الإيصال على استلام المبلغ نيابةً عن البائع.",
+              "ru": "Только если в расписке указано, что сумма получена от имени продавца.",
+              "zh": "仅当收据注明该款项系代卖方收取时。",
+              "es": "Solo si el recibo indica que el importe se recibió en nombre del vendedor."
+            }
+          ],
+          [
+            {
+              "en": "Owner’s acknowledgement of receipt",
+              "ar": "إقرار المالك بالاستلام",
+              "ru": "Подтверждение владельца о получении",
+              "zh": "业主收款确认书",
+              "es": "Reconocimiento de recibo del propietario"
+            },
+            {
+              "en": "Notarised.",
+              "ar": "موثَّق لدى الكاتب العدل.",
+              "ru": "Нотариально удостоверенное.",
+              "zh": "须经公证。",
+              "es": "Notarizado."
+            }
+          ]
+        ]
+      },
+      {
+        "type": "para",
+        "accent": false,
+        "text": {
+          "en": "These are the options in DLD Circular No. 29/R/2025 where a POA is used. When the seller signs without an attorney, the cheque is issued in the seller’s name for the full amount.",
+          "ar": "هذه هي الخيارات الواردة في تعميم الدائرة عند استخدام وكالة. أما إذا وقّع البائع بنفسه دون وكيل، فيصدر الشيك باسمه بكامل المبلغ.",
+          "ru": "Это варианты, предусмотренные циркуляром DLD при использовании доверенности. Если продавец подписывает сам, без представителя, чек выписывается на его имя на всю сумму.",
+          "zh": "以上是迪拜土地局通告规定的委托代理人办理交易时的付款方式。卖方本人签署、不经代理人时，支票以卖方为抬头并为全额。",
+          "es": "Estas son las opciones de la Circular 29/R/2025 del DLD cuando se usa un poder. Si el vendedor firma sin apoderado, el cheque se emite a su nombre por el importe total."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "Steps to sell through a POA",
+          "ar": "خطوات البيع بالوكالة",
+          "ru": "Порядок продажи по доверенности",
+          "zh": "通过授权出售的步骤",
+          "es": "Pasos para vender mediante poder"
+        }
+      },
+      {
+        "type": "steps",
+        "items": [
+          {
+            "title": {
+              "en": "1. Issue the sale POA",
+              "ar": "1. إصدار وكالة البيع",
+              "ru": "1. Оформите доверенность на продажу",
+              "zh": "1. 办理出售授权",
+              "es": "1. Otorgue el poder de venta"
+            },
+            "body": {
+              "en": "Through the UAE Ministry of Justice with your passport, or in your country followed by attestation and an Arabic translation.",
+              "ar": "عبر وزارة العدل الإماراتية بجواز سفرك، أو في بلدك ثم التصديق والترجمة إلى العربية.",
+              "ru": "Через Министерство юстиции ОАЭ по паспорту либо в своей стране с последующей легализацией и переводом на арабский.",
+              "zh": "凭护照通过阿联酋司法部办理，或在本国签署后办理认证和阿拉伯语翻译。",
+              "es": "Ante el Ministerio de Justicia de los EAU con su pasaporte, o en su país con la posterior legalización y traducción al árabe."
+            }
+          },
+          {
+            "title": {
+              "en": "2. Agree the sale",
+              "ar": "2. الاتفاق على البيع",
+              "ru": "2. Согласуйте сделку",
+              "zh": "2. 达成买卖",
+              "es": "2. Acuerde la venta"
+            },
+            "body": {
+              "en": "Your attorney signs the sale agreement with the buyer within the powers in the POA.",
+              "ar": "يوقّع وكيلك اتفاقية البيع مع المشتري في حدود صلاحيات الوكالة.",
+              "ru": "Представитель подписывает договор купли-продажи с покупателем в пределах полномочий доверенности.",
+              "zh": "代理人在授权范围内与买方签署买卖协议。",
+              "es": "Su apoderado firma el acuerdo de venta con el comprador dentro de las facultades del poder."
+            }
+          },
+          {
+            "title": {
+              "en": "3. Prepare the property for transfer",
+              "ar": "3. تجهيز العقار للنقل",
+              "ru": "3. Подготовьте объект",
+              "zh": "3. 办妥房产手续",
+              "es": "3. Prepare el inmueble"
+            },
+            "body": {
+              "en": "In freehold areas, obtain the developer’s electronic no-objection certificate. A mortgaged property is sold through DLD’s separate service for mortgaged properties.",
+              "ar": "في مناطق التملك الحر تُستخرج شهادة عدم الممانعة الإلكترونية من المطوّر. أما العقار المرهون فيُباع عبر خدمة الدائرة المخصصة لبيع العقارات المرهونة.",
+              "ru": "В зонах фрихолд оформите электронное письмо застройщика об отсутствии возражений. Объект в ипотеке продаётся через отдельную услугу DLD для заложенной недвижимости.",
+              "zh": "在永久产权区域，须取得开发商的电子无异议证明。有抵押的房产通过迪拜土地局专门的抵押房产出售服务办理。",
+              "es": "En zonas de plena propiedad, obtenga el certificado electrónico de no objeción del promotor. Un inmueble hipotecado se vende mediante el servicio específico del DLD para propiedades hipotecadas."
+            }
+          },
+          {
+            "title": {
+              "en": "4. Transfer at the trustee office",
+              "ar": "4. نقل الملكية لدى مكتب أمين التسجيل",
+              "ru": "4. Переход права в офисе доверенного лица",
+              "zh": "4. 在登记受托办事处过户",
+              "es": "4. Transmisión en la oficina del fideicomisario"
+            },
+            "body": {
+              "en": "Your attorney attends a Real Estate Registration Trustee office with the original POA. DLD verifies the POA on the issuing authority’s official website, the fees are paid and the sale is registered.",
+              "ar": "يحضر وكيلك إلى أحد مكاتب أمناء التسجيل العقاري بأصل الوكالة، وتتحقق الدائرة من الوكالة عبر الموقع الرسمي للجهة المصدرة، ثم تُسدد الرسوم ويُسجَّل البيع.",
+              "ru": "Представитель приходит в офис регистрационного доверенного лица с оригиналом доверенности. DLD проверяет доверенность на официальном сайте выдавшего органа, оплачиваются сборы, продажа регистрируется.",
+              "zh": "代理人携授权原件前往房地产登记受托办事处。迪拜土地局在出具机构的官方网站核验授权，缴费后登记买卖。",
+              "es": "Su apoderado acude a una oficina de fideicomisario de registro inmobiliario con el poder original. El DLD verifica el poder en el sitio oficial de la autoridad emisora, se pagan las tasas y se registra la venta."
+            }
+          },
+          {
+            "title": {
+              "en": "5. New title deed",
+              "ar": "5. سند الملكية الجديد",
+              "ru": "5. Новое свидетельство",
+              "zh": "5. 新产权证",
+              "es": "5. Nuevo título"
+            },
+            "body": {
+              "en": "DLD issues the electronic title deed and map in the buyer’s name, and the price is paid under one of the options above.",
+              "ar": "تُصدر الدائرة سند الملكية والخريطة إلكترونيًا باسم المشتري، ويُسدَّد الثمن بإحدى الطرق المذكورة أعلاه.",
+              "ru": "DLD выдаёт электронное свидетельство о праве собственности и план на имя покупателя, а цена выплачивается одним из способов выше.",
+              "zh": "迪拜土地局以买方名义出具电子产权证和地图，售价按上述方式之一支付。",
+              "es": "El DLD emite el título de propiedad y el plano electrónicos a nombre del comprador, y el precio se paga por una de las vías anteriores."
+            }
+          }
+        ]
+      },
+      {
+        "type": "warning",
+        "title": {
+          "en": "Does a property management POA authorise a sale?",
+          "ar": "وكالة الإدارة لا تخوّل البيع",
+          "ru": "Доверенность на управление не даёт права продажи",
+          "zh": "管理授权不能用于出售",
+          "es": "Un poder de administración no permite vender"
+        },
+        "text": {
+          "en": "A POA to manage, lease or collect rent does not authorise a sale. For a sale, DLD does not accept broad wording such as “full authority to manage the property”. Management POAs: [[/power-of-attorney/real-estate/management|Property Management Power of Attorney]].",
+          "ar": "وكالة الإدارة أو التأجير أو تحصيل الإيجار لا تخوّل البيع، ولا تقبل الدائرة للبيع عبارات عامة مثل «كامل الصلاحية في إدارة العقار». لوكالات الإدارة: [[/power-of-attorney/real-estate/management|وكالة إدارة العقار]].",
+          "ru": "Доверенность на управление, сдачу в аренду или получение арендной платы не даёт права продажи. Для продажи DLD не принимает общие формулировки вроде «полные полномочия по управлению недвижимостью». Доверенность на управление: [[/power-of-attorney/real-estate/management|Доверенность на управление недвижимостью]].",
+          "zh": "用于管理、出租或收租的授权不能用于出售。对于出售，迪拜土地局不接受“全权管理房产”之类的笼统表述。管理授权：[[/power-of-attorney/real-estate/management|房产管理授权委托书]]。",
+          "es": "Un poder para administrar, arrendar o cobrar rentas no autoriza la venta. Para vender, el DLD no acepta redacciones amplias como “plenas facultades para administrar el inmueble”. Poderes de administración: [[/power-of-attorney/real-estate/management|Poder para administración de inmuebles]]."
+        }
+      },
+      {
+        "type": "heading",
+        "text": {
+          "en": "If your POA is old or your passport has changed",
+          "ar": "إذا كانت وكالتك قديمة أو تغيّر جواز سفرك",
+          "ru": "Если доверенность старая или паспорт сменился",
+          "zh": "授权较旧或护照已更换时",
+          "es": "Si su poder es antiguo o cambió su pasaporte"
+        }
+      },
+      {
+        "type": "para",
+        "accent": false,
+        "text": {
+          "en": "A sale POA older than two years is outside DLD’s published validity, so a new POA is issued. If the POA cites an expired passport or Emirates ID, a copy of that document is provided. To end an old POA you no longer use: [[/poa-cancellation|POA cancellation]].",
+          "ar": "وكالة البيع التي مضى عليها أكثر من سنتين تتجاوز مدة الصلاحية المعلنة لدى الدائرة، ولذلك تُصدر وكالة جديدة. وإذا ورد في الوكالة جواز سفر أو هوية منتهية، تُقدَّم نسخة من ذلك المستند. ولإنهاء وكالة قديمة لم تعد تستخدمها: [[/poa-cancellation|إلغاء الوكالة]].",
+          "ru": "Доверенность на продажу старше двух лет выходит за опубликованный DLD срок, поэтому оформляется новая. Если в доверенности указан истёкший паспорт или удостоверение личности, прилагается копия этого документа. Чтобы прекратить старую доверенность: [[/poa-cancellation|отмена доверенности]].",
+          "zh": "超过两年的出售授权已超出迪拜土地局公布的有效期，应办理新授权。如授权中载明的护照或身份证已过期，须提供该证件复印件。如需终止不再使用的旧授权：[[/poa-cancellation|撤销授权]]。",
+          "es": "Un poder de venta con más de dos años queda fuera de la vigencia publicada por el DLD, por lo que se otorga uno nuevo. Si el poder cita un pasaporte o Emirates ID vencido, se aporta copia de ese documento. Para extinguir un poder antiguo que ya no usa: [[/poa-cancellation|revocación de poder]]."
+        }
+      },
+      {
+        "type": "para",
+        "accent": false,
+        "text": {
+          "en": "For the difference between a general and a special POA, see [[/blog/difference-between-general-and-special-poa-uae|General vs Special Power of Attorney]].",
+          "ar": "وللفرق بين الوكالة العامة والوكالة الخاصة راجع [[/blog/difference-between-general-and-special-poa-uae|الفرق بين الوكالة العامة والخاصة]].",
+          "ru": "О разнице между генеральной и специальной доверенностью: [[/blog/difference-between-general-and-special-poa-uae|Генеральная и специальная доверенность]].",
+          "zh": "一般授权与专项授权的区别，请参阅[[/blog/difference-between-general-and-special-poa-uae|一般授权与专项授权]]。",
+          "es": "Sobre la diferencia entre poder general y especial: [[/blog/difference-between-general-and-special-poa-uae|Poder general vs especial]]."
+        }
+      },
+      {
+        "type": "success",
+        "title": {
+          "en": "Key points",
+          "ar": "الخلاصة",
+          "ru": "Главное",
+          "zh": "要点",
+          "es": "Puntos clave"
+        },
+        "text": {
+          "en": "You can sell without travelling through a special POA that names the sale in DLD’s approved terms. A passport holder issues it remotely through the UAE Ministry of Justice, without personal attendance; a POA signed abroad needs attestation, the original and an Arabic translation, and must be issued within two years before submission. The price is paid by manager’s cheque in the seller’s name, a cheque to the attorney with a receipt on the seller’s behalf, or a notarised acknowledgement from the owner.",
+          "ar": "يمكنك البيع دون سفر بوكالة خاصة تنص على البيع بالصيغة المعتمدة لدى الدائرة. ويُصدرها حامل جواز السفر عن بُعد عبر وزارة العدل الإماراتية دون حضور شخصي، أما الوكالة الموقّعة في الخارج فتحتاج إلى التصديق وتقديم الأصل وترجمة عربية، وأن تكون صادرة خلال السنتين السابقتين على تقديمها. ويُدفع الثمن بشيك مصرفي «شيك مدير» باسم البائع، أو شيك باسم الوكيل مع إيصال بالاستلام نيابةً عن البائع، أو إقرار موثَّق من المالك.",
+          "ru": "Продать без поездки можно по специальной доверенности, называющей продажу утверждённой DLD формулировкой. Владелец паспорта оформляет её дистанционно через Министерство юстиции ОАЭ без личной явки; доверенность, подписанная за рубежом, требует легализации, оригинала и перевода на арабский и должна быть выдана не ранее чем за два года до подачи. Цена выплачивается менеджерским чеком на имя продавца, чеком на имя представителя с распиской от имени продавца или нотариальным подтверждением владельца.",
+          "zh": "只需一份以迪拜土地局核准措辞写明出售的专项授权，无需前往即可出售。仅持护照者可通过阿联酋司法部远程办理，无需本人到场；境外签署的授权须经认证、提交原件并附阿拉伯语翻译，且须在提交前两年内出具。价款的支付方式包括：以卖方为抬头的银行本票、以代理人为抬头并附有代卖方收款收据的支票，或由业主出具经公证的收款确认书。",
+          "es": "Puede vender sin viajar con un poder especial que nombre la venta en los términos aprobados por el DLD. Quien solo tiene pasaporte lo otorga a distancia ante el Ministerio de Justicia de los EAU, sin comparecencia personal; un poder firmado en el extranjero requiere legalización, original y traducción al árabe, y debe haberse emitido en los dos años anteriores. El precio se paga con cheque de gerencia a nombre del vendedor, cheque al apoderado con recibo en nombre del vendedor o reconocimiento notarizado del propietario."
+        }
+      },
+      {
+        "type": "sources",
+        "updated": "2026-10-29",
+        "links": [
+          {
+            "label": {
+              "en": "Dubai Land Department — FAQ (POA validity and POAs issued abroad)",
+              "ar": "دائرة الأراضي والأملاك — الأسئلة الشائعة (صلاحية الوكالة والوكالات الصادرة من الخارج)",
+              "ru": "DLD — частые вопросы (срок доверенности и доверенности из-за рубежа)",
+              "zh": "迪拜土地局 — 常见问题（授权有效期与境外授权）",
+              "es": "DLD — preguntas frecuentes (vigencia del poder y poderes emitidos en el extranjero)"
+            },
+            "url": "https://dubailand.gov.ae/en/faq/"
+          },
+          {
+            "label": {
+              "en": "Dubai Land Department — Request for Sale Registration",
+              "ar": "دائرة الأراضي والأملاك — طلب تسجيل بيع",
+              "ru": "DLD — заявка на регистрацию продажи",
+              "zh": "迪拜土地局 — 出售登记申请",
+              "es": "DLD — solicitud de registro de venta"
+            },
+            "url": "https://dubailand.gov.ae/en/eservices/request-for-sale-registration"
+          },
+          {
+            "label": {
+              "en": "BSA — Dubai’s new standards for powers of attorney in property deals (DLD Circular No. 29/R/2025)",
+              "ar": "قراءة في تعميم دائرة الأراضي والأملاك الصادر في 16 يوليو 2025 بشأن الوكالات العقارية",
+              "ru": "Разбор циркуляра DLD от 16 июля 2025 г. о доверенностях в сделках с недвижимостью",
+              "zh": "迪拜土地局2025年7月16日房地产授权通告解读",
+              "es": "BSA — nuevos estándares de Dubái para poderes en operaciones inmobiliarias (Circular DLD 29/R/2025)"
+            },
+            "url": "https://www.bsalaw.com/insight/dubais-new-standards-for-powers-of-attorney-in-property-deals/"
+          }
+        ]
+      }
+    ],
+    "faq": [
+      {
+        "q": {
+          "en": "Can I sell my property in Dubai without travelling to the UAE?",
+          "ar": "هل يمكنني بيع عقاري في دبي دون السفر إلى الإمارات؟",
+          "ru": "Можно ли продать недвижимость в Дубае, не приезжая в ОАЭ?",
+          "zh": "不去阿联酋能出售迪拜房产吗？",
+          "es": "¿Puedo vender mi propiedad en Dubái sin viajar a los EAU?"
+        },
+        "a": {
+          "en": "Yes. Issue a special POA that expressly authorises the sale; your attorney signs the sale and completes the transfer at a Real Estate Registration Trustee office. If you hold only a passport, you can issue the POA remotely through the UAE Ministry of Justice, without personal attendance.",
+          "ar": "نعم. تُصدر وكالة خاصة تنص صراحةً على البيع، فيوقّع وكيلك اتفاقية البيع ويُتم نقل الملكية لدى أحد مكاتب أمناء التسجيل العقاري. وإذا كنت تحمل جواز سفر فقط، يمكنك إصدار الوكالة عن بُعد عبر وزارة العدل الإماراتية دون حضور شخصي.",
+          "ru": "Да. Оформите специальную доверенность с прямым полномочием на продажу; представитель подпишет сделку и завершит переход права в офисе регистрационного доверенного лица. При наличии только паспорта доверенность оформляется дистанционно через Министерство юстиции ОАЭ без личной явки.",
+          "zh": "可以。办理明确授权出售的专项授权，由代理人签署买卖并在房地产登记受托办事处完成过户。仅持护照者可通过阿联酋司法部远程办理授权，无需本人到场。",
+          "es": "Sí. Otorgue un poder especial que autorice expresamente la venta; su apoderado firma la venta y completa la transmisión en una oficina de fideicomisario de registro inmobiliario. Si solo tiene pasaporte, puede otorgar el poder a distancia ante el Ministerio de Justicia de los EAU, sin comparecencia personal."
+        }
+      },
+      {
+        "q": {
+          "en": "Does a POA issued through the UAE Ministry of Justice need MOFA attestation for DLD?",
+          "ar": "هل تحتاج الوكالة الصادرة عبر وزارة العدل الإماراتية إلى تصديق وزارة الخارجية لتقديمها للدائرة؟",
+          "ru": "Нужна ли легализация в МИД для доверенности Министерства юстиции ОАЭ, подаваемой в DLD?",
+          "zh": "通过阿联酋司法部办理的授权提交迪拜土地局，需要外交部认证吗？",
+          "es": "¿Un poder emitido ante el Ministerio de Justicia de los EAU necesita legalización MOFA para el DLD?"
+        },
+        "a": {
+          "en": "No. It is issued in the UAE, and DLD verifies it on the Ministry of Justice’s official website. Embassy and MOFA attestation applies to POAs signed outside the UAE.",
+          "ar": "لا. فهي صادرة داخل الدولة، وتتحقق منها دائرة الأراضي والأملاك عبر الموقع الرسمي لوزارة العدل. أما تصديق السفارة ووزارة الخارجية فيخص الوكالات الموقّعة خارج الإمارات.",
+          "ru": "Нет. Она выдана в ОАЭ, и DLD проверяет её на официальном сайте Министерства юстиции. Легализация в посольстве и МИД нужна для доверенностей, подписанных за пределами ОАЭ.",
+          "zh": "不需要。该授权在阿联酋境内出具，迪拜土地局通过司法部官方网站进行核验。使馆和外交部认证适用于在阿联酋境外签署的授权。",
+          "es": "No. Se emite en los EAU y el DLD lo verifica en el sitio web oficial del Ministerio de Justicia. La legalización consular y MOFA se aplica a los poderes firmados fuera de los EAU."
+        }
+      },
+      {
+        "q": {
+          "en": "How long is a power of attorney for sale of property valid in Dubai?",
+          "ar": "كم مدة صلاحية وكالة بيع العقار في دبي؟",
+          "ru": "Сколько действует доверенность на продажу недвижимости в Дубае?",
+          "zh": "迪拜房产出售授权的有效期是多久？",
+          "es": "¿Cuánto tiempo es válido un poder para vender un inmueble en Dubái?"
+        },
+        "a": {
+          "en": "DLD’s published answer gives two years for sale, mortgage and grant, and five years for purchase from the date of notarisation. A POA issued abroad must also have been issued within the two years before it is submitted.",
+          "ar": "توضح دائرة الأراضي والأملاك في أسئلتها الشائعة أن مدة الصلاحية سنتان للبيع والرهن والمنح، وخمس سنوات للشراء، من تاريخ التوثيق. كما يجب أن تكون الوكالة الصادرة من الخارج صادرة خلال السنتين السابقتين على تقديمها.",
+          "ru": "Опубликованный ответ DLD: два года для продажи, ипотеки и дарения и пять лет для покупки с даты удостоверения. Доверенность из-за рубежа также должна быть выдана не ранее чем за два года до подачи.",
+          "zh": "迪拜土地局公布的答复：出售、抵押和赠与为两年，购买自公证之日起五年。境外出具的授权还须在提交前两年内出具。",
+          "es": "La respuesta publicada del DLD indica dos años para venta, hipoteca y donación, y cinco años para compra desde la notarización. Un poder emitido en el extranjero debe además haberse emitido en los dos años anteriores a su presentación."
+        }
+      },
+      {
+        "q": {
+          "en": "Can my attorney receive the sale money?",
+          "ar": "هل يمكن لوكيلي استلام ثمن البيع؟",
+          "ru": "Может ли представитель получить деньги от продажи?",
+          "zh": "代理人可以代收售房款吗？",
+          "es": "¿Puede mi apoderado recibir el dinero de la venta?"
+        },
+        "a": {
+          "en": "Within DLD’s rules: a manager’s cheque in the seller’s name for the full price, a cheque in the attorney’s name with a receipt stating it was received on the seller’s behalf, or a notarised acknowledgement of receipt from the owner. Include the power to receive the price in the POA.",
+          "ar": "في حدود قواعد الدائرة: شيك مصرفي «شيك مدير» باسم البائع بكامل الثمن، أو شيك باسم الوكيل مع إيصال ينص على الاستلام نيابةً عن البائع، أو إقرار موثَّق من المالك بالاستلام. ويُنص في الوكالة على صلاحية استلام الثمن.",
+          "ru": "В рамках правил DLD: менеджерский чек на имя продавца на всю сумму, чек на имя представителя с распиской о получении от имени продавца или нотариально удостоверенное подтверждение владельца о получении. Полномочие на получение цены включается в доверенность.",
+          "zh": "须符合迪拜土地局规则：以卖方为抬头的全额银行本票；以代理人为抬头的支票并附注明代卖方收取的收据；或经公证的业主收款确认书。授权中应写明收取价款的权限。",
+          "es": "Dentro de las reglas del DLD: cheque de gerencia a nombre del vendedor por el precio total, cheque a nombre del apoderado con recibo que indique que se recibió en nombre del vendedor, o reconocimiento notarizado de recibo del propietario. Incluya en el poder la facultad de recibir el precio."
+        }
+      },
+      {
+        "q": {
+          "en": "Can a general power of attorney sell property in Dubai?",
+          "ar": "هل تكفي الوكالة العامة لبيع عقار في دبي؟",
+          "ru": "Можно ли продать недвижимость в Дубае по генеральной доверенности?",
+          "zh": "一般授权委托书可以出售迪拜房产吗？",
+          "es": "¿Puede un poder general vender un inmueble en Dubái?"
+        },
+        "a": {
+          "en": "Only if it names the sale in DLD’s approved terms. Broad wording such as “full authority to manage the property” is not sufficient for a sale.",
+          "ar": "فقط إذا نصت على البيع بالصيغة المعتمدة لدى الدائرة؛ فالعبارات العامة مثل «كامل الصلاحية في إدارة العقار» لا تكفي للبيع.",
+          "ru": "Только если в ней продажа названа утверждённой DLD формулировкой. Общих формулировок вроде «полные полномочия по управлению недвижимостью» для продажи недостаточно.",
+          "zh": "仅当其以迪拜土地局核准措辞写明出售时可以。“全权管理房产”之类的笼统表述不足以办理出售。",
+          "es": "Solo si nombra la venta en los términos aprobados por el DLD. Una redacción amplia como “plenas facultades para administrar el inmueble” no basta para vender."
+        }
+      },
+      {
+        "q": {
+          "en": "Does a POA signed abroad need an Arabic translation?",
+          "ar": "هل تحتاج الوكالة الموقّعة في الخارج إلى ترجمة عربية؟",
+          "ru": "Нужен ли перевод на арабский для доверенности, подписанной за рубежом?",
+          "zh": "境外签署的授权需要阿拉伯语翻译吗？",
+          "es": "¿Un poder firmado en el extranjero necesita traducción al árabe?"
+        },
+        "a": {
+          "en": "Yes, if it is not in Arabic: a full legal translation by a UAE-licensed translator, together with notarisation in the country of issue, legalisation by the UAE embassy or consulate and attestation by the UAE Ministry of Foreign Affairs.",
+          "ar": "نعم، إذا لم تكن بالعربية: ترجمة قانونية كاملة من مترجم مرخّص في الدولة، إلى جانب توثيقها في بلد الإصدار وتصديقها من سفارة الإمارات أو قنصليتها ثم وزارة الخارجية الإماراتية.",
+          "ru": "Да, если она не на арабском: полный юридический перевод лицензированным в ОАЭ переводчиком, а также нотариальное удостоверение в стране выдачи, легализация в посольстве или консульстве ОАЭ и в МИД ОАЭ.",
+          "zh": "如非阿拉伯语则需要：由阿联酋持牌译员出具完整法律翻译，并在出具国公证、经阿联酋驻当地使领馆和阿联酋外交部认证。",
+          "es": "Sí, si no está en árabe: traducción jurídica completa por un traductor con licencia en los EAU, además de la notarización en el país de emisión, la legalización por la embajada o consulado de los EAU y la del Ministerio de Asuntos Exteriores de los EAU."
+        }
+      },
+      {
+        "q": {
+          "en": "Can I still use the POA if my passport has changed?",
+          "ar": "هل يمكن استخدام الوكالة إذا تغيّر جواز سفري؟",
+          "ru": "Можно ли использовать доверенность, если паспорт сменился?",
+          "zh": "护照更换后还能使用原授权吗？",
+          "es": "¿Puedo usar el poder si cambió mi pasaporte?"
+        },
+        "a": {
+          "en": "A POA issued abroad remains acceptable if your particulars are still accurate when it is submitted. If the POA cites an expired passport or Emirates ID, a copy of that document is provided.",
+          "ar": "تظل الوكالة الصادرة من الخارج مقبولة إذا كانت بياناتك صحيحة وقت تقديمها. وإذا ورد فيها جواز سفر أو هوية منتهية، تُقدَّم نسخة من ذلك المستند.",
+          "ru": "Доверенность из-за рубежа остаётся приемлемой, если ваши данные на момент подачи верны. Если в ней указан истёкший паспорт или удостоверение личности, прилагается копия этого документа.",
+          "zh": "境外授权在提交时如您的身份信息仍然准确，仍可接受。如授权载明的护照或身份证已过期，须提供该证件复印件。",
+          "es": "Un poder emitido en el extranjero sigue siendo aceptable si sus datos son correctos al presentarlo. Si cita un pasaporte o Emirates ID vencido, se aporta copia de ese documento."
+        }
+      }
+    ],
+    "related": [
+      "special-power-of-attorney-uae-guide",
+      "how-to-get-poa-dubai",
+      "notarize-documents-without-visiting-uae"
+    ]
+  },
+  
 	
   "poa-cancellation-dubai-revoke": {
     "title_en": "Cancelling a Power of Attorney in Dubai: A Practical Guide to Revocation",
